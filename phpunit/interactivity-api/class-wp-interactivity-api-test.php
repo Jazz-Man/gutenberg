@@ -189,19 +189,19 @@ class Tests_WP_Interactivity_API extends WP_UnitTestCase {
 		$parse_directive_value->setAccessible( true );
 
 		$result = $parse_directive_value->invoke( $this->interactivity, '', 'myPlugin' );
-		$this->assertNull( $result );
+		$this->assertEquals( array( 'myPlugin', null ), $result );
 
 		$result = $parse_directive_value->invoke( $this->interactivity, 'myPlugin::', 'myPlugin' );
-		$this->assertNull( $result );
+		$this->assertEquals( array( 'myPlugin', null ), $result );
 
 		$result = $parse_directive_value->invoke( $this->interactivity, true, 'myPlugin' );
-		$this->assertNull( $result );
+		$this->assertEquals( array( 'myPlugin', null ), $result );
 
 		$result = $parse_directive_value->invoke( $this->interactivity, false, 'myPlugin' );
-		$this->assertNull( $result );
+		$this->assertEquals( array( 'myPlugin', null ), $result );
 
 		$result = $parse_directive_value->invoke( $this->interactivity, null, 'myPlugin' );
-		$this->assertNull( $result );
+		$this->assertEquals( array( 'myPlugin', null ), $result );
 	}
 
 	public function test_parse_directive_value_invalid_json() {

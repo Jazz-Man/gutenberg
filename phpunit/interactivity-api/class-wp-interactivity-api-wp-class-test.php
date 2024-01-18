@@ -86,12 +86,15 @@ class Tests_WP_Interactivity_API_WP_Class extends WP_UnitTestCase {
 		$this->assertEquals( 'other-class', $p->get_attribute( 'class' ) );
 	}
 
-	public function test_wp_class_sets_class_name_on_truthy() {
+	public function test_wp_class_sets_class_name_on_truthy_values() {
 		$this->interactivity->initial_state( 'myPlugin', array( 'text' => 'some text' ) );
 		$html    = '<div data-wp-class--some-class="myPlugin::state.text">Text</div>';
 		list($p) = $this->process_directives( $html );
 		$this->assertEquals( 'some-class', $p->get_attribute( 'class' ) );
 
-		// ...
+		$this->interactivity->initial_state( 'myPlugin', array( 'array' => array( 1, 2 ) ) );
+		$html    = '<div data-wp-class--some-class="myPlugin::state.array">Text</div>';
+		list($p) = $this->process_directives( $html );
+		$this->assertEquals( 'some-class', $p->get_attribute( 'class' ) );
 	}
 }

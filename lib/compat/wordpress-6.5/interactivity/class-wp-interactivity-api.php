@@ -214,42 +214,35 @@ class WP_Interactivity_API {
 	 *     ( 'otherPlugin::{ "isOpen": false }', 'myPlugin' ) => array( 'otherPlugin', array( 'isOpen' => false ) )
 	 *
 	 * @param string $value             The directive attribute value.
-	 * @param string $default_namespace The default namespace that will be used if no explicit namespace is found on the value.
-	 * @return array The array containing either the JSON or the reference path.
+	 * @param string $default_namespace The default namespace to use if no explicit namespace is found in the value.
+	 * @return null|array An array containing either the JSON or the reference path, or null on failure.
 	 */
 	private function parse_directive_value( $value, $default_namespace = null ) {
-		// Returns null if the value is empty or a boolean.
+		// Return early if the value is empty or a boolean.
 		if ( empty( $value ) || is_bool( $value ) ) {
-			return null;
+			return array( $default_namespace, null );
 		}
 
 		$matches       = array();
-		$has_namespace = preg_match( '/^([\w\-_\/]+)::(.*)$/', $value, $matches );
+		$has_namespace = preg_match( '/^([\w\-_\/]+)::(.*)$/', $value ?? '', $matches );
 
-		if ( $has_namespace && ! isset( $matches[2] ) ) {
-			// If the value contains a namespace but no path, it's not valid.
-			return null;
-		} elseif ( $has_namespace ) {
-			// If there is a valid namespace and value, overwrites them.
-			list( , $default_namespace, $value ) = $matches;
+		// Replace the value and namespace if there is a namespace in the value.
+		if ( $has_namespace ) {
+			$default_namespace = $matches[1];
+			$value             = isset( $matches[2] ) ? $matches[2] : null;
 		}
 
-		if ( empty( $value ) ) {
-			return null;
-		}
-
-		// Tries to decode `$value` as a JSON object. If it works, `$value` is
-		// replaced with the resulting array. The original string is preserved
-		// otherwise. Note that `json_decode` returns `null` both for an invalid
-		// JSON or the `'null'` string (a valid JSON). In the latter case, `$value`
-		// is replaced with `null`.
-		$json = json_decode( $value, true );
-		if ( null !== $json || 'null' === trim( $value ) ) {
-			$value = $json;
+		// Try to decode the value as a JSON object. If it fails and the value isn't
+		// 'null', return as is. Otherwise, return the decoded JSON or null for the
+		// string 'null'.
+		$decoded_json = json_decode( $value, true );
+		if ( null !== $decoded_json || 'null' === trim( $value ) ) {
+				$value = $decoded_json;
 		}
 
 		return array( $default_namespace, $value );
 	}
+
 
 	private function data_wp_interactive_processor( $p, &$context_stack, &$namespace_stack ) {
 		// Remove the last namespace from the stack if this is the closing tag.
