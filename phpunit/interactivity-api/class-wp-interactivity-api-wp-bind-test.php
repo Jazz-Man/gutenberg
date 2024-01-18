@@ -87,13 +87,13 @@ class Tests_WP_Interactivity_API_WP_Bind extends WP_UnitTestCase {
 	}
 
 	public function test_wp_bind_ignores_empty_value() {
-		$html     = '<div data-wp-bind-id="">Text</div>';
+		$html     = '<div data-wp-bind--id="">Text</div>';
 		$new_html = $this->interactivity->process_directives( $html );
 		$this->assertEquals( $html, $new_html );
 	}
 
 	public function test_wp_bind_ignores_without_value() {
-		$html     = '<div data-wp-bind-id>Text</div>';
+		$html     = '<div data-wp-bind--id>Text</div>';
 		$new_html = $this->interactivity->process_directives( $html );
 		$this->assertEquals( $html, $new_html );
 	}

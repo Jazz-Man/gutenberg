@@ -173,6 +173,35 @@ class Tests_WP_Interactivity_API extends WP_UnitTestCase {
 
 		$result = $parse_directive_value->invoke( $this->interactivity, 'otherPlugin::{ "isOpen": false }', 'myPlugin' );
 		$this->assertEquals( array( 'otherPlugin', array( 'isOpen' => false ) ), $result );
+
+		$result = $parse_directive_value->invoke( $this->interactivity, 'true', 'myPlugin' );
+		$this->assertEquals( array( 'myPlugin', true ), $result );
+
+		$result = $parse_directive_value->invoke( $this->interactivity, 'false', 'myPlugin' );
+		$this->assertEquals( array( 'myPlugin', false ), $result );
+
+		$result = $parse_directive_value->invoke( $this->interactivity, 'null', 'myPlugin' );
+		$this->assertEquals( array( 'myPlugin', null ), $result );
+	}
+
+	public function test_parse_directive_value_empty_values() {
+		$parse_directive_value = new ReflectionMethod( $this->interactivity, 'parse_directive_value' );
+		$parse_directive_value->setAccessible( true );
+
+		$result = $parse_directive_value->invoke( $this->interactivity, '', 'myPlugin' );
+		$this->assertNull( $result );
+
+		$result = $parse_directive_value->invoke( $this->interactivity, 'myPlugin::', 'myPlugin' );
+		$this->assertNull( $result );
+
+		$result = $parse_directive_value->invoke( $this->interactivity, true, 'myPlugin' );
+		$this->assertNull( $result );
+
+		$result = $parse_directive_value->invoke( $this->interactivity, false, 'myPlugin' );
+		$this->assertNull( $result );
+
+		$result = $parse_directive_value->invoke( $this->interactivity, null, 'myPlugin' );
+		$this->assertNull( $result );
 	}
 
 	public function test_parse_directive_value_invalid_json() {

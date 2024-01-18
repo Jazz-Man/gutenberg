@@ -150,6 +150,10 @@ class WP_Interactivity_API {
 		// Extract the namespace from the directive attribute value.
 		list( $ns, $path ) = $this->parse_directive_value( $directive_value, $default_namespace );
 
+		if ( empty( $path ) ) {
+			return null;
+		}
+
 		$store = array(
 			'state'   => isset( $this->initial_state[ $ns ] ) ? $this->initial_state[ $ns ] : array(),
 			'context' => isset( $context[ $ns ] ) ? $context[ $ns ] : array(),
@@ -214,13 +218,24 @@ class WP_Interactivity_API {
 	 * @return array The array containing either the JSON or the reference path.
 	 */
 	private function parse_directive_value( $value, $default_namespace = null ) {
-		$matches       = array();
-		$has_namespace = preg_match( '/^([\w\-_\/]+)::(.+)$/', $value, $matches );
+		// Returns null if the value is empty or a boolean.
+		if ( empty( $value ) || is_bool( $value ) ) {
+			return null;
+		}
 
-		// Overwrites both `$default_namespace` and `$value` if `$value` explicitly
-		// contains a namespace.
-		if ( $has_namespace ) {
+		$matches       = array();
+		$has_namespace = preg_match( '/^([\w\-_\/]+)::(.*)$/', $value, $matches );
+
+		if ( $has_namespace && ! isset( $matches[2] ) ) {
+			// If the value contains a namespace but no path, it's not valid.
+			return null;
+		} elseif ( $has_namespace ) {
+			// If there is a valid namespace and value, overwrites them.
 			list( , $default_namespace, $value ) = $matches;
+		}
+
+		if ( empty( $value ) ) {
+			return null;
 		}
 
 		// Tries to decode `$value` as a JSON object. If it works, `$value` is
@@ -228,9 +243,9 @@ class WP_Interactivity_API {
 		// otherwise. Note that `json_decode` returns `null` both for an invalid
 		// JSON or the `'null'` string (a valid JSON). In the latter case, `$value`
 		// is replaced with `null`.
-		$data = json_decode( $value, true );
-		if ( null !== $data || 'null' === trim( $value ) ) {
-			$value = $data;
+		$json = json_decode( $value, true );
+		if ( null !== $json || 'null' === trim( $value ) ) {
+			$value = $json;
 		}
 
 		return array( $default_namespace, $value );
@@ -244,10 +259,10 @@ class WP_Interactivity_API {
 		}
 
 		// Decode the data-wp-interactive attribute. In the case it is not a valid
-		// JSON string, `null` is stored in `$interactive_data`.
-		$interactive      = $p->get_attribute( 'data-wp-interactive' );
-		$interactive_data = is_string( $interactive ) && ! empty( $interactive )
-		? json_decode( $interactive, true )
+		// JSON string, `null` is stored in `$directive_data`.
+		$attribute_value = $p->get_attribute( 'data-wp-interactive' );
+		$directive_data  = is_string( $attribute_value ) && ! empty( $attribute_value )
+		? json_decode( $attribute_value, true )
 		: null;
 
 		// Push the newly defined namespace, or the current one if the
@@ -256,8 +271,8 @@ class WP_Interactivity_API {
 		// namespace from the stack whenever it finds an island's closing tag,
 		// independently of whether the island definition was correct or it
 		// contained a valid namespace.
-		$namespace_stack[] = isset( $interactive_data['namespace'] )
-			? $interactive_data['namespace']
+		$namespace_stack[] = isset( $directive_data['namespace'] )
+			? $directive_data['namespace']
 			: end( $namespace_stack );
 	}
 
@@ -268,17 +283,17 @@ class WP_Interactivity_API {
 			return;
 		}
 
-		$directive_value = $p->get_attribute( 'data-wp-context' );
-		$ns              = end( $namespace_stack );
+		$attribute_value = $p->get_attribute( 'data-wp-context' );
+		$namespace_value = end( $namespace_stack );
 
 		// Separate namespace and value from the context directive attribute.
-		list( $ns, $data ) = is_string( $directive_value ) && ! empty( $directive_value )
-		? $this->parse_directive_value( $directive_value, $ns )
-		: array( $ns, null );
+		list( $namespace_value, $data ) = is_string( $attribute_value ) && ! empty( $attribute_value )
+		? $this->parse_directive_value( $attribute_value, $namespace_value )
+		: array( $namespace_value, null );
 
 		// If there is a proper namespace, we need to add a new context to the stack
 		// with the merge of the previous and new ones.
-		if ( is_string( $ns ) ) {
+		if ( is_string( $namespace_value ) ) {
 			$context = ( end( $context_stack ) !== false ) ? end( $context_stack ) : array();
 
 			// Add parsed data to the context under the corresponding namespace.
@@ -286,7 +301,7 @@ class WP_Interactivity_API {
 				$context_stack,
 				array_replace_recursive(
 					$context,
-					array( $ns => is_array( $data ) ? $data : array() )
+					array( $namespace_value => is_array( $data ) ? $data : array() )
 				)
 			);
 		}
@@ -294,16 +309,16 @@ class WP_Interactivity_API {
 
 	private function data_wp_bind_processor( $p, &$context_stack, &$namespace_stack ) {
 		if ( ! $p->is_tag_closer() ) {
-			$prefixed_attributes = $p->get_attribute_names_with_prefix( 'data-wp-bind--' );
+			$all_bind_directives = $p->get_attribute_names_with_prefix( 'data-wp-bind--' );
 
-			foreach ( $prefixed_attributes as $attribute ) {
-				list( , $bound_attribute ) = $this->extract_directive_prefix_and_suffix( $attribute );
+			foreach ( $all_bind_directives as $attribute_name ) {
+				list( , $bound_attribute ) = $this->extract_directive_prefix_and_suffix( $attribute_name );
 				if ( empty( $bound_attribute ) ) {
-					continue;
+					return;
 				}
 
-				$value  = $p->get_attribute( $attribute );
-				$result = $this->evaluate( $value, end( $namespace_stack ), end( $context_stack ) );
+				$attribute_value = $p->get_attribute( $attribute_name );
+				$result          = $this->evaluate( $attribute_value, end( $namespace_stack ), end( $context_stack ) );
 
 				if ( null !== $result && ( false !== $result || '-' === $bound_attribute[4] ) ) {
 					// If $result is a boolean and the attribute is `aria-` or `data-,
@@ -321,12 +336,35 @@ class WP_Interactivity_API {
 		}
 	}
 
+	private function data_wp_class_processor( $p, &$context_stack, &$namespace_stack ) {
+		if ( ! $p->is_tag_closer() ) {
+			$all_class_directives = $p->get_attribute_names_with_prefix( 'data-wp-class--' );
+
+			foreach ( $all_class_directives as $attribute_name ) {
+				list( , $class_name ) = $this->extract_directive_prefix_and_suffix( $attribute_name );
+				if ( empty( $class_name ) ) {
+					return;
+				}
+
+				$attribute_value = $p->get_attribute( $attribute_name );
+				$result          = $this->evaluate( $attribute_value, end( $namespace_stack ), end( $context_stack ) );
+
+				if ( $result ) {
+					$p->add_class( $class_name );
+				} else {
+					$p->remove_class( $class_name );
+				}
+			}
+		}
+	}
+
 	private function data_wp_text_processor( $p, &$context_stack, &$namespace_stack ) {
 		if ( ! $p->is_tag_closer() ) {
 			// Follows the same logic as Preact and only changes the content if the
 			// value is a string or a number. Otherwise, it removes the content.
-			$value  = $p->get_attribute( 'data-wp-text' );
-			$result = $this->evaluate( $value, end( $namespace_stack ), end( $context_stack ) );
+			$attribute_value = $p->get_attribute( 'data-wp-text' );
+			$result          = $this->evaluate( $attribute_value, end( $namespace_stack ), end( $context_stack ) );
+
 			if ( is_string( $result ) || is_numeric( $result ) ) {
 				$p->set_content_between_balanced_tags( esc_html( $result ) );
 			} else {
