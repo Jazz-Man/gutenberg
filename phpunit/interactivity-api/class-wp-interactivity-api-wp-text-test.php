@@ -71,15 +71,21 @@ class Tests_WP_Interactivity_API_WP_Text extends WP_UnitTestCase {
 	}
 
 	public function test_wp_text_sets_inner_content_with_nested_tags() {
-		$html     = '<div class="test" data-wp-text="myPlugin::state.text"><span>Text</span></div>';
+		$html     = '<div class="test" data-wp-text="myPlugin::state.text"><div><div>Text</div><div>Another text</div></div></div>';
 		$new_html = $this->interactivity->process_directives( $html );
 		$this->assertEquals( '<div class="test" data-wp-text="myPlugin::state.text">Updated</div>', $new_html );
 	}
 
-	public function test_wp_text_sets_inner_content_even_with_unbalanced_tags_inside() {
+	public function test_wp_text_sets_inner_content_even_with_unbalanced_but_different_tags_inside_content() {
 		$html     = '<div class="test" data-wp-text="myPlugin::state.text"><span>Text</div>';
 		$new_html = $this->interactivity->process_directives( $html );
 		$this->assertEquals( '<div class="test" data-wp-text="myPlugin::state.text">Updated</div>', $new_html );
+	}
+
+	public function test_wp_text_fails_with_unbalanced_and_same_tags_inside_content() {
+		$html     = '<div class="test" data-wp-text="myPlugin::state.text">Text<div></div>';
+		$new_html = $this->interactivity->process_directives( $html );
+		$this->assertEquals( '<div class="test" data-wp-text="myPlugin::state.text">Text<div></div>', $new_html );
 	}
 
 	public function test_wp_text_cant_set_inner_html_in_the_content() {
