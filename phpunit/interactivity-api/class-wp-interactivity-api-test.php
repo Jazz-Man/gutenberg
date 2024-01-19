@@ -394,4 +394,6 @@ class Tests_WP_Interactivity_API extends WP_UnitTestCase {
 		$result = $this->invoke_evaluate( 'otherPlugin::context.nested.key' );
 		$this->assertEquals( 'otherPlugin-context-nested', $result );
 	}
+
+	// Test non-existing directives.
 }

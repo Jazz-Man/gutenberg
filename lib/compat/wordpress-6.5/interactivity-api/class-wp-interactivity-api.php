@@ -37,8 +37,7 @@ class WP_Interactivity_API {
 				$initial_state
 			);
 		}
-		return $this->initial_state[ $store_namespace ];
-	}
+		return $this->initial_state[ $store_namespace ];    }
 
 	public function print_client_interactivity_data() {
 		if ( ! empty( $this->initial_state ) ) {
@@ -62,7 +61,7 @@ class WP_Interactivity_API {
 	 * Registers the `@wordpress/interactivity` script modules.
 	 */
 	public function register_script_modules() {
-		wp_register_module(
+		gutenberg_register_module(
 			'@wordpress/interactivity',
 			gutenberg_url( '/build/interactivity/index.min.js' ),
 			array(),

@@ -52,8 +52,8 @@ if ( ! function_exists( 'wp_interactivity' ) ) {
 	/**
 	 * Retrieves the main WP_Interactivity_API instance.
 	 *
-	 * This function provides access to the WP_Interactivity_API instance, creating
-	 * one if it doesn't exist yet.
+	 * This function provides access to the WP_Interactivity_API instance,
+	 * creating one if it doesn't exist yet.
 	 *
 	 * @return WP_Interactivity_API The main WP_Interactivity_API instance.
 	 */
@@ -62,7 +62,7 @@ if ( ! function_exists( 'wp_interactivity' ) ) {
 		if ( is_null( $instance ) ) {
 			$instance = new WP_Interactivity_API();
 			$instance->add_hooks();
-			$instance->regsiter_script_modules();
+			$instance->register_script_modules();
 		}
 		return $instance;
 	}
