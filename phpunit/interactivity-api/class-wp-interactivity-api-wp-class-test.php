@@ -139,6 +139,12 @@ class Tests_WP_Interactivity_API_WP_Class extends WP_UnitTestCase {
 		$this->assertEquals( 'other-class', $p->get_attribute( 'class' ) );
 	}
 
+	public function test_wp_class_works_with_multiple_directives() {
+		$html    = '<div data-wp-class--some-class="myPlugin::state.true" data-wp-class--some-class="myPlugin::state.true">Text</div>';
+		list($p) = $this->process_directives( $html );
+		$this->assertEquals( 'some-class', $p->get_attribute( 'class' ) );
+	}
+
 	public function test_wp_class_sets_class_name_on_truthy_values() {
 		$this->interactivity->initial_state( 'myPlugin', array( 'text' => 'some text' ) );
 		$html    = '<div data-wp-class--some-class="myPlugin::state.text">Text</div>';

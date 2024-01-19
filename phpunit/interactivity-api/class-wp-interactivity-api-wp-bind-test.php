@@ -98,6 +98,12 @@ class Tests_WP_Interactivity_API_WP_Bind extends WP_UnitTestCase {
 		$this->assertEquals( $html, $new_html );
 	}
 
+	public function test_wp_bind_works_with_multiple_directives() {
+		$html    = '<div data-wp-bind--id="myPlugin::state.id" data-wp-bind--id="myPlugin::state.id">Text</div>';
+		list($p) = $this->process_directives( $html );
+		$this->assertEquals( 'some-id', $p->get_attribute( 'id' ) );
+	}
+
 	public function test_wp_bind_adds_boolean_attribute_if_true() {
 		$html               = '<div data-wp-bind--hidden="myPlugin::!state.isOpen">Text</div>';
 		list($p, $new_html) = $this->process_directives( $html );

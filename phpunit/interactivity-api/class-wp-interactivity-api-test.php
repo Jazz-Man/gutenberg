@@ -395,5 +395,29 @@ class Tests_WP_Interactivity_API extends WP_UnitTestCase {
 		$this->assertEquals( 'otherPlugin-context-nested', $result );
 	}
 
-	// Test non-existing directives.
+	public function test_process_directives_doesnt_fail_with_unknown_directives() {
+		$html           = '<div data-wp-uknown="">Text</div>';
+		$processed_html = $this->interactivity->process_directives( $html );
+		$this->assertEquals( $html, $processed_html );
+	}
+
+	public function test_process_directives_process_the_directives_in_the_correct_order() {
+		$html           = '
+			<div
+				data-wp-interactive=\'{ "namespace": "test" }\'
+				data-wp-context=\'{ "isClass": true, "id": "some-id", "text": "Updated", "display": "none" }\'
+				data-wp-bind--id="context.id"
+				data-wp-class--some-class="context.isClass"
+				data-wp-style--display="context.display"
+				data-wp-text="context.text"
+			>Text</div>';
+		$processed_html = $this->interactivity->process_directives( $html );
+		$p              = new WP_HTML_Tag_Processor( $processed_html );
+		$p->next_tag();
+		$this->assertEquals( 'some-id', $p->get_attribute( 'id' ) );
+		$this->assertEquals( 'some-class', $p->get_attribute( 'class' ) );
+		$this->assertEquals( 'display:none;', $p->get_attribute( 'style' ) );
+		$this->assertStringContainsString( 'Updated', $p->get_updated_html() );
+		$this->assertStringNotContainsString( 'Text', $p->get_updated_html() );
+	}
 }

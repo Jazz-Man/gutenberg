@@ -22,12 +22,14 @@ class Tests_Interactivity_API_Functions extends WP_UnitTestCase {
 					return '
 						<div
 							data-wp-interactive=\'{ "namespace": "myPlugin" }\'
-							data-wp-context=\'{ "level": ' . $attributes['level'] . ' }\'
+							data-wp-context=\'{ "block": ' . $attributes['block'] . ' }\'
 						>
-							<input class="interactive-level-' . $attributes['level'] . '-before-content" data-wp-bind--value="context.level">
-								' . $content . '
-							<input class="interactive-level-' . $attributes['level'] . '-after-content" data-wp-bind--value="context.level">
-						</div>';
+							<input
+								class="interactive/block-' . $attributes['block'] . '"
+								data-wp-bind--value="context.block"
+							>' .
+							$content .
+						'</div>';
 				},
 				'supports'        => array(
 					'interactivity' => true,
@@ -38,9 +40,13 @@ class Tests_Interactivity_API_Functions extends WP_UnitTestCase {
 		register_block_type(
 			'test/non-interactive-block',
 			array(
-				'render_callback' => function ( $attributes ) {
-					$directive = isset( $attributes['hasDirective'] ) ? ' data-wp-bind--value="context.level"' : '';
-					return '<input class="non-interactive-level-' . $attributes['level'] . '"' . $directive . '>';
+				'render_callback' => function ( $attributes, $content ) {
+					$directive = isset( $attributes['hasDirective'] ) ? ' data-wp-bind--value="context.block"' : '';
+					return '
+						<div>
+							<input class="non-interactive/block-' . $attributes['block'] . '"' . $directive . '>' .
+							$content .
+						'</div>';
 				},
 			)
 		);
@@ -52,29 +58,120 @@ class Tests_Interactivity_API_Functions extends WP_UnitTestCase {
 		parent::tear_down();
 	}
 
-	public function test_processs_directives_of_a_single_interactive_block() {
-		$post_content    = '<!-- wp:test/interactive-block { "level": 1 } /-->';
+	public function test_processs_directives_of_single_interactive_block() {
+		$post_content    = '<!-- wp:test/interactive-block { "block": 1 } /-->';
 		$rendered_blocks = do_blocks( $post_content );
 		$p               = new WP_HTML_Tag_Processor( $rendered_blocks );
-		$p->next_tag( array( 'class_name' => 'interactive-level-1-before-content' ) );
-		$this->assertSame( '1', $p->get_attribute( 'value' ) );
-		$p->next_tag( array( 'class_name' => 'interactive-level-1-after-content' ) );
-		$this->assertSame( '1', $p->get_attribute( 'value' ) );
+		$p->next_tag( array( 'class_name' => 'interactive/block-1' ) );
+		$this->assertEquals( '1', $p->get_attribute( 'value' ) );
 	}
 
-	public function test_processs_directives_of_a_single_interactive_block_containing_a_non_interactive_block_without_directives() {
+	public function test_processs_directives_of_multiple_interactive_blocks_in_paralell() {
 		$post_content    = '
-			<!-- wp:test/interactive-block { "level": 1 } -->
-				<!-- wp:test/non-interactive-block { "level": 2 } /-->
+			<!-- wp:test/interactive-block { "block": 1 } /-->
+			<!-- wp:test/interactive-block { "block": 2 } /-->
+			<!-- wp:test/non-interactive-block { "block": 3, "hasDirective": true } /-->
+		';
+		$rendered_blocks = do_blocks( $post_content );
+		$p               = new WP_HTML_Tag_Processor( $rendered_blocks );
+		$p->next_tag( array( 'class_name' => 'interactive/block-1' ) );
+		$this->assertEquals( '1', $p->get_attribute( 'value' ) );
+		$p->next_tag( array( 'class_name' => 'interactive/block-2' ) );
+		$this->assertEquals( '2', $p->get_attribute( 'value' ) );
+		$p->next_tag( array( 'class_name' => 'non-interactive/block-3' ) );
+		$this->assertNull( $p->get_attribute( 'value' ) );
+	}
+
+	public function test_processs_directives_of_interactive_block_inside_non_interactive_block() {
+		$post_content    = '
+			<!-- wp:test/non-interactive-block { "block": 1 } -->
+				<!-- wp:test/interactive-block { "block": 2 } /-->
+			<!-- /wp:test/non-interactive-block -->
+		';
+		$rendered_blocks = do_blocks( $post_content );
+		$p               = new WP_HTML_Tag_Processor( $rendered_blocks );
+		$p->next_tag( array( 'class_name' => 'interactive/block-2' ) );
+		$this->assertEquals( '2', $p->get_attribute( 'value' ) );
+	}
+
+	public function test_processs_directives_of_multple_interactive_blocks_inside_non_interactive_block() {
+		$post_content    = '
+			<!-- wp:test/non-interactive-block { "block": 1 } -->
+				<!-- wp:test/interactive-block { "block": 2 } /-->
+				<!-- wp:test/interactive-block { "block": 3 } /-->
+			<!-- /wp:test/non-interactive-block -->
+		';
+		$rendered_blocks = do_blocks( $post_content );
+		$p               = new WP_HTML_Tag_Processor( $rendered_blocks );
+		$p->next_tag( array( 'class_name' => 'interactive/block-2' ) );
+		$this->assertEquals( '2', $p->get_attribute( 'value' ) );
+		$p->next_tag( array( 'class_name' => 'interactive/block-3' ) );
+		$this->assertEquals( '3', $p->get_attribute( 'value' ) );
+	}
+
+	public function test_processs_directives_of_interactive_block_inside_multple_non_interactive_block() {
+		$post_content    = '
+			<!-- wp:test/non-interactive-block { "block": 1 } -->
+				<!-- wp:test/interactive-block { "block": 2 } /-->
+			<!-- /wp:test/non-interactive-block -->
+			<!-- wp:test/non-interactive-block { "block": 3 } -->
+				<!-- wp:test/interactive-block { "block": 4 } /-->
+			<!-- /wp:test/non-interactive-block -->
+		';
+		$rendered_blocks = do_blocks( $post_content );
+		$p               = new WP_HTML_Tag_Processor( $rendered_blocks );
+		$p->next_tag( array( 'class_name' => 'interactive/block-2' ) );
+		$this->assertEquals( '2', $p->get_attribute( 'value' ) );
+		$p->next_tag( array( 'class_name' => 'interactive/block-4' ) );
+		$this->assertEquals( '4', $p->get_attribute( 'value' ) );
+	}
+
+	public function test_processs_directives_of_interactive_block_containing_non_interactive_block_without_directives() {
+		$post_content    = '
+			<!-- wp:test/interactive-block { "block": 1 } -->
+				<!-- wp:test/non-interactive-block { "block": 2 } /-->
 			<!-- /wp:test/interactive-block -->
 		';
 		$rendered_blocks = do_blocks( $post_content );
 		$p               = new WP_HTML_Tag_Processor( $rendered_blocks );
-		$p->next_tag( array( 'class_name' => 'interactive-level-1-before-content' ) );
-		$this->assertSame( '1', $p->get_attribute( 'value' ) );
-		$p->next_tag( array( 'class_name' => 'non-interactive-level-2' ) );
+		$p->next_tag( array( 'class_name' => 'interactive/block-1' ) );
+		$this->assertEquals( '1', $p->get_attribute( 'value' ) );
+		$p->next_tag( array( 'class_name' => 'non-interactive/block-2' ) );
 		$this->assertNull( $p->get_attribute( 'value' ) );
-		$p->next_tag( array( 'class_name' => 'interactive-level-1-after-content' ) );
-		$this->assertSame( '1', $p->get_attribute( 'value' ) );
+	}
+
+	public function test_processs_directives_of_interactive_block_containing_non_interactive_block_with_directives() {
+		$post_content    = '
+			<!-- wp:test/interactive-block { "block": 1 } -->
+				<!-- wp:test/non-interactive-block { "block": 2, "hasDirective": true } /-->
+			<!-- /wp:test/interactive-block -->
+		';
+		$rendered_blocks = do_blocks( $post_content );
+		$p               = new WP_HTML_Tag_Processor( $rendered_blocks );
+		$p->next_tag( array( 'class_name' => 'interactive/block-1' ) );
+		$this->assertEquals( '1', $p->get_attribute( 'value' ) );
+		$p->next_tag( array( 'class_name' => 'non-interactive/block-2' ) );
+		$this->assertEquals( '1', $p->get_attribute( 'value' ) );
+	}
+
+	public function test_processs_directives_of_interactive_block_containing_nested_interactive_and_non_interactive_blocks() {
+		$post_content    = '
+			<!-- wp:test/interactive-block { "block": 1 } -->
+				<!-- wp:test/interactive-block { "block": 2 } -->
+					<!-- wp:test/non-interactive-block { "block": 3, "hasDirective": true } /-->
+				<!-- /wp:test/interactive-block -->
+				<!-- wp:test/non-interactive-block { "block": 4, "hasDirective": true } /-->
+			<!-- /wp:test/interactive-block -->
+		';
+		$rendered_blocks = do_blocks( $post_content );
+		$p               = new WP_HTML_Tag_Processor( $rendered_blocks );
+		$p->next_tag( array( 'class_name' => 'interactive/block-1' ) );
+		$this->assertEquals( '1', $p->get_attribute( 'value' ) );
+		$p->next_tag( array( 'class_name' => 'interactive/block-2' ) );
+		$this->assertEquals( '2', $p->get_attribute( 'value' ) );
+		$p->next_tag( array( 'class_name' => 'non-interactive/block-3' ) );
+		$this->assertEquals( '2', $p->get_attribute( 'value' ) );
+		$p->next_tag( array( 'class_name' => 'non-interactive/block-4' ) );
+		$this->assertEquals( '1', $p->get_attribute( 'value' ) );
 	}
 }

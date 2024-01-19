@@ -178,6 +178,16 @@ class Tests_WP_Interactivity_API_WP_Context extends WP_UnitTestCase {
 		$this->assertEquals( 'some-id-1', $p->get_attribute( 'id' ) );
 	}
 
+	public function test_wp_context_works_with_multiple_directives() {
+		$html    = '
+			<div data-wp-context=\'myPlugin::{ "id": "some-id" }\' data-wp-context=\'myPlugin::{ "id": "some-id" }\'>
+				<div class="test" data-wp-bind--id="myPlugin::context.id">Text</div>
+			</div>
+		';
+		list($p) = $this->process_directives( $html );
+		$this->assertEquals( 'some-id', $p->get_attribute( 'id' ) );
+	}
+
 	public function test_wp_context_directive_doesnt_work_without_any_namespace() {
 		$html    = '
 			<div data-wp-context=\'{ "id": "some-id" }\'>

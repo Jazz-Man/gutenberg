@@ -234,6 +234,12 @@ class Tests_WP_Interactivity_API_WP_Style extends WP_UnitTestCase {
 		$this->assertEquals( 'padding:10px;', $p->get_attribute( 'style' ) );
 	}
 
+	public function test_wp_style_works_with_multiple_directives() {
+		$html    = '<div data-wp-style--color="myPlugin::state.green" data-wp-style--color="myPlugin::state.green">Text</div>';
+		list($p) = $this->process_directives( $html );
+		$this->assertEquals( 'color:green;', $p->get_attribute( 'style' ) );
+	}
+
 	public function test_wp_style_doesnt_do_anything_on_true_values() {
 		$this->interactivity->initial_state( 'myPlugin', array( 'true' => true ) );
 		$html    = '<div data-wp-style--color="myPlugin::state.text">Text</div>';
