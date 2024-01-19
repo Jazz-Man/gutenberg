@@ -54,7 +54,7 @@ import {
 	useResetTemplateAction,
 	deleteTemplateAction,
 	renameTemplateAction,
-} from './template-actions';
+} from './actions';
 import { postRevisionsAction } from '../actions';
 import usePatternSettings from '../page-patterns/use-pattern-settings';
 import { unlock } from '../../lock-unlock';
@@ -83,7 +83,7 @@ const defaultConfigPerViewType = {
 };
 
 const DEFAULT_VIEW = {
-	type: LAYOUT_TABLE,
+	type: window?.__experimentalAdminViews ? LAYOUT_LIST : LAYOUT_TABLE,
 	search: '',
 	page: 1,
 	perPage: 20,
@@ -166,7 +166,7 @@ function Preview( { content, viewType } ) {
 	);
 }
 
-export default function DataviewsTemplatesTemplateParts( { postType } ) {
+export default function PageTemplatesTemplateParts( { postType } ) {
 	const [ postId, setPostId ] = useState( null );
 	const [ view, setView ] = useState( DEFAULT_VIEW );
 	const { records, isResolving: isLoadingData } = useEntityRecords(
@@ -181,6 +181,18 @@ export default function DataviewsTemplatesTemplateParts( { postType } ) {
 	const onSelectionChange = useCallback(
 		( items ) => setPostId( items?.length === 1 ? items[ 0 ].id : null ),
 		[ setPostId ]
+	);
+
+	const onDetailsChange = useCallback(
+		( items ) => {
+			if ( items?.length === 1 ) {
+				history.push( {
+					postId: items[ 0 ].id,
+					postType: TEMPLATE_POST_TYPE,
+				} );
+			}
+		},
+		[ history ]
 	);
 
 	const authors = useMemo( () => {
@@ -396,6 +408,7 @@ export default function DataviewsTemplatesTemplateParts( { postType } ) {
 					view={ view }
 					onChangeView={ onChangeView }
 					onSelectionChange={ onSelectionChange }
+					onDetailsChange={ onDetailsChange }
 					deferredRendering={
 						! view.hiddenFields?.includes( 'preview' )
 					}

@@ -9,10 +9,13 @@ import { privateApis as routerPrivateApis } from '@wordpress/router';
 import PagePatterns from '../page-patterns';
 import DataviewsPatterns from '../page-patterns/dataviews-patterns';
 import PageTemplateParts from '../page-template-parts';
-import DataviewsTemplateParts from '../page-template-parts/dataviews-template-parts';
-import PageTemplates from '../page-templates';
+import PageTemplatesTemplateParts from '../page-templates-template-parts';
 import PagePages from '../page-pages';
 import { unlock } from '../../lock-unlock';
+import {
+	TEMPLATE_POST_TYPE,
+	TEMPLATE_PART_POST_TYPE,
+} from '../../utils/constants';
 
 const { useLocation } = unlock( routerPrivateApis );
 
@@ -25,10 +28,10 @@ export default function PageMain() {
 		path === '/wp_template/all' ||
 		( path === '/wp_template' && window?.__experimentalAdminViews )
 	) {
-		return <PageTemplates />;
+		return <PageTemplatesTemplateParts postType={ TEMPLATE_POST_TYPE } />;
 	} else if ( path === '/wp_template_part/all' ) {
 		return window?.__experimentalAdminViews ? (
-			<DataviewsTemplateParts />
+			<PageTemplatesTemplateParts postType={ TEMPLATE_PART_POST_TYPE } />
 		) : (
 			<PageTemplateParts />
 		);
