@@ -144,8 +144,11 @@ class WP_Interactivity_API {
 
 			// Executes the directive processors.
 			foreach ( $directives_prefixes as $directive_prefix ) {
+				$func = is_array( self::$directive_processors[ $directive_prefix ] )
+					? self::$directive_processors[ $directive_prefix ]
+					: array( $this, self::$directive_processors[ $directive_prefix ] );
 				call_user_func_array(
-					array( $this, self::$directive_processors[ $directive_prefix ] ),
+					$func,
 					array( $p, &$context_stack, &$namespace_stack )
 				);
 			}

@@ -174,4 +174,44 @@ class Tests_Interactivity_API_Functions extends WP_UnitTestCase {
 		$p->next_tag( array( 'class_name' => 'non-interactive/block-4' ) );
 		$this->assertEquals( '1', $p->get_attribute( 'value' ) );
 	}
+
+	private $data_wp_test_processor_count = 0;
+
+	public function data_wp_test_processor( $p ) {
+		if ( ! $p->is_tag_closer() ) {
+			$this->data_wp_test_processor_count = $this->data_wp_test_processor_count + 1;
+		}
+	}
+
+	public function test_process_directives_only_process_the_root_interactive_blocks() {
+		$class                = new ReflectionClass( 'WP_Interactivity_API' );
+		$directive_processors = $class->getProperty( 'directive_processors' );
+		$directive_processors->setAccessible( true );
+		$directive_processors->setValue( null, array( 'data-wp-test' => array( $this, 'data_wp_test_processor' ) ) );
+		$html                               = '<div data-wp-test></div>';
+		$this->data_wp_test_processor_count = 0;
+		wp_interactivity_process_directives( $html );
+		$this->assertEquals( 1, $this->data_wp_test_processor_count );
+
+		register_block_type(
+			'test/custom-directive-block',
+			array(
+				'render_callback' => function ( $attributes, $content ) {
+					return '<div class="test" data-wp-test>' . $content . '</div>';
+				},
+				'supports'        => array(
+					'interactivity' => true,
+				),
+			)
+		);
+		$post_content                       = '
+			<!-- wp:test/custom-directive-block -->
+				<!-- wp:test/custom-directive-block /-->
+			<!-- /wp:test/custom-directive-block -->
+		';
+		$this->data_wp_test_processor_count = 0;
+		do_blocks( $post_content );
+		$this->assertEquals( 2, $this->data_wp_test_processor_count );
+		unregister_block_type( 'test/custom-directive-block' );
+	}
 }
