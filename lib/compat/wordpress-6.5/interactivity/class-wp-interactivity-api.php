@@ -351,6 +351,72 @@ class WP_Interactivity_API {
 		}
 	}
 
+	private function data_wp_style_processor( $p, &$context_stack, &$namespace_stack ) {
+		if ( ! $p->is_tag_closer() ) {
+			$all_style_attributes = $p->get_attribute_names_with_prefix( 'data-wp-style--' );
+
+			foreach ( $all_style_attributes as $attribute_name ) {
+				list( , $style_property ) = $this->extract_directive_prefix_and_suffix( $attribute_name );
+				if ( empty( $style_property ) ) {
+					continue;
+				}
+
+				$directive_attribute_value = $p->get_attribute( $attribute_name );
+				$style_property_value      = $this->evaluate( $directive_attribute_value, end( $namespace_stack ), end( $context_stack ) );
+
+				$style_attribute_value = ( $p->get_attribute( 'style' ) === true ) ? '' : $p->get_attribute( 'style' ) ?? '';
+				if ( $style_property_value || ( ! $style_property_value && $style_attribute_value ) ) {
+					$style_attribute_value = $this->set_style_property( $style_attribute_value, $style_property, $style_property_value );
+					if ( ! empty( $style_attribute_value ) ) {
+						$p->set_attribute( 'style', $style_attribute_value );
+					} else {
+						$p->remove_attribute( 'style' );
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	 * Sets an style property in ...
+	 *
+	 * @param string $style_attribute_value Existing style to amend.
+	 * @param string $style_property_name  Style property name.
+	 * @param string $style_property_value Style property value.
+	 * @return string Amended styles.
+	 */
+	private function set_style_property( $style_attribute_value, $style_property_name, $style_property_value ) {
+		$style_assignments    = explode( ';', $style_attribute_value );
+		$result               = array();
+		$style_property_found = false;
+		$style_property_value = ! empty( $style_property_value ) ? rtrim( trim( $style_property_value ), ';' ) : null;
+
+		// Searches for the style property in the existing properties.
+		foreach ( $style_assignments as $style_assignment ) {
+			if ( empty( trim( $style_assignment ) ) ) {
+				continue;
+			}
+			list( $name, $value ) = explode( ':', $style_assignment );
+			if ( trim( $name ) === $style_property_name ) {
+				// If the value is false, it doesn't add it.
+				if ( $style_property_value ) {
+					$result[] = $style_property_name . ':' . $style_property_value . ';';
+				}
+				$style_property_found = true;
+			} else {
+				$result[] = trim( $name ) . ':' . trim( $value ) . ';';
+			}
+		}
+
+		// If it doesn't find the style property, it adds it at the end of the list.
+		if ( ! $style_property_found && $style_property_value ) {
+			$new_style_assignment = $style_property_name . ':' . $style_property_value . ';';
+			array_push( $result, $new_style_assignment );
+		}
+
+		return implode( '', $result );
+	}
+
 	private function data_wp_text_processor( $p, &$context_stack, &$namespace_stack ) {
 		if ( ! $p->is_tag_closer() ) {
 			// Follows the same logic as Preact and only changes the content if the
