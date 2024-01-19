@@ -58,6 +58,18 @@ class WP_Interactivity_API {
 		}
 	}
 
+	/**
+	 * Registers the `@wordpress/interactivity` script modules.
+	 */
+	public function register_script_modules() {
+		wp_register_module(
+			'@wordpress/interactivity',
+			gutenberg_url( '/build/interactivity/index.min.js' ),
+			array(),
+			defined( 'GUTENBERG_VERSION' ) ? GUTENBERG_VERSION : get_bloginfo( 'version' )
+		);
+	}
+
 	public function add_hooks() {
 		add_action( 'wp_footer', array( $this, 'print_client_interactivity_data' ), 8 );
 	}

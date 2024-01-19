@@ -62,6 +62,7 @@ if ( ! function_exists( 'wp_interactivity' ) ) {
 		if ( is_null( $instance ) ) {
 			$instance = new WP_Interactivity_API();
 			$instance->add_hooks();
+			$instance->regsiter_script_modules();
 		}
 		return $instance;
 	}
