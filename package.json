@@ -21,6 +21,7 @@
 	"config": {
 		"IS_GUTENBERG_PLUGIN": true
 	},
+	"packageManager": "pnpm@8.13.1",
 	"dependencies": {
 		"@wordpress/a11y": "file:packages/a11y",
 		"@wordpress/annotations": "file:packages/annotations",
@@ -346,6 +347,7 @@
 		"test:unit:php:multisite:debug": "npm-run-all test:unit:php:setup:debug test:unit:php:multisite:base",
 		"test:unit:update": "npm run test:unit -- --updateSnapshot",
 		"test:unit:watch": "npm run test:unit -- --watch",
+		"preinstall": "npx only-allow pnpm",
 		"wp-env": "wp-env"
 	},
 	"lint-staged": {
