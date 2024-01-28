@@ -29,7 +29,7 @@
 	"sideEffects": false,
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/is-shallow-equal": "file:../is-shallow-equal"
+		"@wordpress/is-shallow-equal": "workspace:*"
 	},
 	"publishConfig": {
 		"access": "public"

@@ -27,12 +27,12 @@
 	"types": "build-types",
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/components": "file:../components",
-		"@wordpress/compose": "file:../compose",
-		"@wordpress/element": "file:../element",
-		"@wordpress/hooks": "file:../hooks",
-		"@wordpress/icons": "file:../icons",
-		"@wordpress/is-shallow-equal": "file:../is-shallow-equal",
+		"@wordpress/components": "workspace:*",
+		"@wordpress/compose": "workspace:*",
+		"@wordpress/element": "workspace:*",
+		"@wordpress/hooks": "workspace:*",
+		"@wordpress/icons": "workspace:*",
+		"@wordpress/is-shallow-equal": "workspace:*",
 		"memize": "^2.0.1"
 	},
 	"peerDependencies": {

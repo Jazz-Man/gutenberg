@@ -23,12 +23,12 @@
 		"node": ">=14"
 	},
 	"dependencies": {
-		"@wordpress/e2e-test-utils": "file:../e2e-test-utils",
-		"@wordpress/interactivity": "file:../interactivity",
-		"@wordpress/jest-console": "file:../jest-console",
-		"@wordpress/jest-puppeteer-axe": "file:../jest-puppeteer-axe",
-		"@wordpress/scripts": "file:../scripts",
-		"@wordpress/url": "file:../url",
+		"@wordpress/e2e-test-utils": "workspace:*",
+		"@wordpress/interactivity": "workspace:*",
+		"@wordpress/jest-console": "workspace:*",
+		"@wordpress/jest-puppeteer-axe": "workspace:*",
+		"@wordpress/scripts": "workspace:*",
+		"@wordpress/url": "workspace:*",
 		"chalk": "^4.0.0",
 		"expect-puppeteer": "^4.4.0",
 		"filenamify": "^4.2.0",
