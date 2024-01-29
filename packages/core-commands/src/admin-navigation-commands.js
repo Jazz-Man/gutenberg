@@ -13,51 +13,51 @@ import { privateApis as routerPrivateApis } from '@wordpress/router';
 import { useIsTemplatesAccessible, useIsBlockBasedTheme } from './hooks';
 import { unlock } from './lock-unlock';
 
-const { useHistory } = unlock( routerPrivateApis );
+const { useHistory } = unlock(routerPrivateApis);
 
 export function useAdminNavigationCommands() {
 	const history = useHistory();
 	const isTemplatesAccessible = useIsTemplatesAccessible();
 	const isBlockBasedTheme = useIsBlockBasedTheme();
 
-	const isSiteEditor = getPath( window.location.href )?.includes(
+	const isSiteEditor = getPath(window.location.href)?.includes(
 		'site-editor.php'
 	);
 
-	useCommand( {
+	useCommand({
 		name: 'core/add-new-post',
-		label: __( 'Add new post' ),
+		label: __('Add new post'),
 		icon: plus,
 		callback: () => {
 			document.location.href = 'post-new.php';
 		},
-	} );
-	useCommand( {
+	});
+	useCommand({
 		name: 'core/add-new-page',
-		label: __( 'Add new page' ),
+		label: __('Add new page'),
 		icon: plus,
 		callback: () => {
 			document.location.href = 'post-new.php?post_type=page';
 		},
-	} );
-	useCommand( {
+	});
+	useCommand({
 		name: 'core/manage-reusable-blocks',
-		label: __( 'Patterns' ),
+		label: __('Patterns'),
 		icon: symbol,
-		callback: ( { close } ) => {
-			if ( isTemplatesAccessible && isBlockBasedTheme ) {
+		callback: ({ close }) => {
+			if (isTemplatesAccessible && isBlockBasedTheme) {
 				const args = {
 					path: '/patterns',
 				};
-				if ( isSiteEditor ) {
-					history.push( args );
+				if (isSiteEditor) {
+					history.push(args);
 				} else {
-					document.location = addQueryArgs( 'site-editor.php', args );
+					document.location = addQueryArgs('site-editor.php', args);
 				}
 				close();
 			} else {
 				document.location.href = 'edit.php?post_type=wp_block';
 			}
 		},
-	} );
+	});
 }

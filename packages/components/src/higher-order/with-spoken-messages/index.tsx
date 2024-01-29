@@ -17,11 +17,11 @@ import { speak } from '@wordpress/a11y';
  * @return {ComponentType} The wrapped component.
  */
 export default createHigherOrderComponent(
-	( Component ) => ( props ) => (
+	(Component) => (props) => (
 		<Component
-			{ ...props }
-			speak={ speak }
-			debouncedSpeak={ useDebounce( speak, 500 ) }
+			{...props}
+			speak={speak}
+			debouncedSpeak={useDebounce(speak, 500)}
 		/>
 	),
 	'withSpokenMessages'

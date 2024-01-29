@@ -24,16 +24,16 @@ export type ReplaceOption = { action: 'replace'; value: RichTextValue };
 
 export type OptionCompletion = React.ReactNode | InsertOption | ReplaceOption;
 
-type OptionLabel = string | ReactElement | Array< string | ReactElement >;
+type OptionLabel = string | ReactElement | Array<string | ReactElement>;
 export type KeyedOption = {
 	key: string;
 	value: any;
 	label: OptionLabel;
-	keywords: Array< string >;
+	keywords: Array<string>;
 	isDisabled: boolean;
 };
 
-export type WPCompleter< TCompleterOption = any > = {
+export type WPCompleter<TCompleterOption = any> = {
 	/**
 	 * The name of the completer. Useful for identifying a specific completer to
 	 * be overridden via extensibility hooks.
@@ -52,32 +52,32 @@ export type WPCompleter< TCompleterOption = any > = {
 	 * options are rendered and what their completions should be when selected.
 	 */
 	options:
-		| ( (
+		| ((
 				query: string
 		  ) =>
-				| PromiseLike< readonly TCompleterOption[] >
-				| readonly TCompleterOption[] )
+				| PromiseLike<readonly TCompleterOption[]>
+				| readonly TCompleterOption[])
 		| readonly TCompleterOption[];
 	/**
 	 * A function that returns the keywords for the specified option.
 	 */
-	getOptionKeywords?: ( option: TCompleterOption ) => Array< string >;
+	getOptionKeywords?: (option: TCompleterOption) => Array<string>;
 	/**
 	 * A function that returns whether or not the specified option is disabled.
 	 * Disabled options cannot be selected.
 	 */
-	isOptionDisabled?: ( option: TCompleterOption ) => boolean;
+	isOptionDisabled?: (option: TCompleterOption) => boolean;
 	/**
 	 * A function that returns the label for a given option. A label may be a
 	 * string or a mixed array of strings, elements, and components.
 	 */
-	getOptionLabel: ( option: TCompleterOption ) => OptionLabel;
+	getOptionLabel: (option: TCompleterOption) => OptionLabel;
 	/**
 	 * A function that takes a Range before and a Range after the autocomplete
 	 * trigger and query text and returns a boolean indicating whether the
 	 * completer should be considered for that context.
 	 */
-	allowContext?: ( before: string, after: string ) => boolean;
+	allowContext?: (before: string, after: string) => boolean;
 	/**
 	 * A function that takes an option and returns how the option should
 	 * be completed. By default, the result is a value to be inserted in the
@@ -95,7 +95,7 @@ export type WPCompleter< TCompleterOption = any > = {
 	 * Autocomplete UI. These items have uniform shape and have been filtered by
 	 * `AutocompleterUIProps.filterValue`.
 	 */
-	useItems?: ( filterValue: string ) => readonly [ Array< KeyedOption > ];
+	useItems?: (filterValue: string) => readonly [Array<KeyedOption>];
 	/**
 	 * Whether or not changes to the `filterValue` should be debounced.
 	 */
@@ -106,7 +106,7 @@ export type WPCompleter< TCompleterOption = any > = {
 	className?: string;
 };
 
-type ContentRef = React.RefObject< HTMLElement >;
+type ContentRef = React.RefObject<HTMLElement>;
 
 export type AutocompleterUIProps = {
 	/**
@@ -133,11 +133,11 @@ export type AutocompleterUIProps = {
 	/**
 	 * A function to be called when the filterValue changes.
 	 */
-	onChangeOptions: ( items: Array< KeyedOption > ) => void;
+	onChangeOptions: (items: Array<KeyedOption>) => void;
 	/**
 	 * A function to be called when an option is selected.
 	 */
-	onSelect: ( option: KeyedOption ) => void;
+	onSelect: (option: KeyedOption) => void;
 	/**
 	 * A function to be called when the completer is reset
 	 * (e.g. when the user hits the escape key).
@@ -146,7 +146,7 @@ export type AutocompleterUIProps = {
 	/**
 	 * A function that defines the behavior of the completer when it is reset
 	 */
-	reset: ( event: Event ) => void;
+	reset: (event: Event) => void;
 	// This is optional because it's still needed for mobile/native.
 	/**
 	 * The rich text value object the autocompleter is being applied to.
@@ -159,7 +159,7 @@ export type AutocompleterUIProps = {
 	contentRef: ContentRef;
 };
 
-export type CancelablePromise< T = void > = Promise< T > & {
+export type CancelablePromise<T = void> = Promise<T> & {
 	canceled?: boolean;
 };
 
@@ -168,23 +168,23 @@ export type UseAutocompleteProps = {
 	 * The rich text value object the autocompleter is being applied to.
 	 */
 	record: RichTextValue & {
-		start: NonNullable< RichTextValue[ 'start' ] >;
-		end: NonNullable< RichTextValue[ 'end' ] >;
+		start: NonNullable<RichTextValue['start']>;
+		end: NonNullable<RichTextValue['end']>;
 	};
 	/**
 	 * A function to be called when an option is selected to insert into the
 	 * existing text.
 	 */
-	onChange: ( value: RichTextValue ) => void;
+	onChange: (value: RichTextValue) => void;
 	/**
 	 * A function to be called when an option is selected to replace the
 	 * existing text.
 	 */
-	onReplace: ( values: RichTextValue[] ) => void;
+	onReplace: (values: RichTextValue[]) => void;
 	/**
 	 * An array of all of the completers to apply to the current element.
 	 */
-	completers: Array< WPCompleter >;
+	completers: Array<WPCompleter>;
 	/**
 	 * A ref containing the editable element that will serve as the anchor for
 	 * `Autocomplete`'s `Popover`.
@@ -197,7 +197,7 @@ export type AutocompleteProps = UseAutocompleteProps & {
 	 * A function that returns nodes to be rendered within the Autocomplete.
 	 */
 	children: (
-		props: Omit< ReturnType< typeof useAutocomplete >, 'popover' >
+		props: Omit<ReturnType<typeof useAutocomplete>, 'popover'>
 	) => React.ReactNode;
 	/**
 	 * Whether or not the Autocomplte componenet is selected, and if its

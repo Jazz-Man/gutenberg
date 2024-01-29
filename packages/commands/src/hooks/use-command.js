@@ -30,27 +30,28 @@ import { store as commandsStore } from '../store';
  * } );
  * ```
  */
-export default function useCommand( command ) {
-	const { registerCommand, unregisterCommand } = useDispatch( commandsStore );
-	const currentCallback = useRef( command.callback );
-	useEffect( () => {
-		currentCallback.current = command.callback;
-	}, [ command.callback ] );
+export default function useCommand(command) {
+	const { registerCommand, unregisterCommand } = useDispatch(commandsStore);
 
-	useEffect( () => {
-		if ( command.disabled ) {
+	const currentCallback = useRef(command.callback);
+	useEffect(() => {
+		currentCallback.current = command.callback;
+	}, [command.callback]);
+
+	useEffect(() => {
+		if (command.disabled) {
 			return;
 		}
-		registerCommand( {
+		registerCommand({
 			name: command.name,
 			context: command.context,
 			label: command.label,
 			searchLabel: command.searchLabel,
 			icon: command.icon,
-			callback: ( ...args ) => currentCallback.current( ...args ),
-		} );
+			callback: (...args) => currentCallback.current(...args),
+		});
 		return () => {
-			unregisterCommand( command.name );
+			unregisterCommand(command.name);
 		};
 	}, [
 		command.name,
@@ -61,5 +62,5 @@ export default function useCommand( command ) {
 		command.disabled,
 		registerCommand,
 		unregisterCommand,
-	] );
+	]);
 }

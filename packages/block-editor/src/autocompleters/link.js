@@ -16,42 +16,43 @@ const SHOWN_SUGGESTIONS = 10;
  *
  * @return {WPCompleter} A links completer.
  */
+
 function createLinkCompleter() {
 	return {
 		name: 'links',
 		className: 'block-editor-autocompleters__link',
 		triggerPrefix: '[[',
-		options: async ( letters ) => {
-			let options = await apiFetch( {
-				path: addQueryArgs( '/wp/v2/search', {
+		options: async (letters) => {
+			let options = await apiFetch({
+				path: addQueryArgs('/wp/v2/search', {
 					per_page: SHOWN_SUGGESTIONS,
 					search: letters,
 					type: 'post',
 					order_by: 'menu_order',
-				} ),
-			} );
+				}),
+			});
 
-			options = options.filter( ( option ) => option.title !== '' );
+			options = options.filter((option) => option.title !== '');
 
 			return options;
 		},
-		getOptionKeywords( item ) {
-			const expansionWords = item.title.split( /\s+/ );
-			return [ ...expansionWords ];
+		getOptionKeywords(item) {
+			const expansionWords = item.title.split(/\s+/);
+			return [...expansionWords];
 		},
-		getOptionLabel( item ) {
+		getOptionLabel(item) {
 			return (
 				<>
 					<Icon
 						key="icon"
-						icon={ item.subtype === 'page' ? page : post }
+						icon={item.subtype === 'page' ? page : post}
 					/>
-					{ item.title }
+					{item.title}
 				</>
 			);
 		},
-		getOptionCompletion( item ) {
-			return <a href={ item.url }>{ item.title }</a>;
+		getOptionCompletion(item) {
+			return <a href={item.url}>{item.title}</a>;
 		},
 	};
 }

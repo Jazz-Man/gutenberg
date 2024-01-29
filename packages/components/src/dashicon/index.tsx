@@ -12,21 +12,16 @@
 import type { WordPressComponentProps } from '../context';
 import type { DashiconProps } from './types';
 
-function Dashicon( {
+function Dashicon({
 	icon,
 	className,
 	size = 20,
 	style = {},
 	...extraProps
-}: WordPressComponentProps< DashiconProps, 'span', false > ) {
-	const iconClass = [
-		'dashicon',
-		'dashicons',
-		'dashicons-' + icon,
-		className,
-	]
-		.filter( Boolean )
-		.join( ' ' );
+}: WordPressComponentProps<DashiconProps, 'span', false>) {
+	const iconClass = ['dashicon', 'dashicons', 'dashicons-' + icon, className]
+		.filter(Boolean)
+		.join(' ');
 
 	// For retro-compatibility reasons (for example if people are overriding icon size with CSS), we add inline styles just if the size is different to the default
 	const sizeStyles =
@@ -34,9 +29,9 @@ function Dashicon( {
 		// eslint-disable-next-line eqeqeq
 		20 != size
 			? {
-					fontSize: `${ size }px`,
-					width: `${ size }px`,
-					height: `${ size }px`,
+					fontSize: `${size}px`,
+					width: `${size}px`,
+					height: `${size}px`,
 			  }
 			: {};
 
@@ -45,7 +40,7 @@ function Dashicon( {
 		...style,
 	};
 
-	return <span className={ iconClass } style={ styles } { ...extraProps } />;
+	return <span className={iconClass} style={styles} {...extraProps} />;
 }
 
 export default Dashicon;

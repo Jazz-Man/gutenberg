@@ -15,39 +15,36 @@ import WritingFlow from '../writing-flow';
 import { useMouseMoveTypingReset } from '../observe-typing';
 import { useBlockSelectionClearer } from '../block-selection-clearer';
 
-export function ExperimentalBlockCanvas( {
+export function ExperimentalBlockCanvas({
 	shouldIframe = true,
 	height = '300px',
 	children = <BlockList />,
 	styles,
 	contentRef: contentRefProp,
 	iframeProps,
-} ) {
+}) {
 	const resetTypingRef = useMouseMoveTypingReset();
 	const clearerRef = useBlockSelectionClearer();
 	const localRef = useRef();
-	const contentRef = useMergeRefs( [ contentRefProp, clearerRef, localRef ] );
+	const contentRef = useMergeRefs([contentRefProp, clearerRef, localRef]);
 
-	if ( ! shouldIframe ) {
+	if (!shouldIframe) {
 		return (
 			<BlockTools
-				__unstableContentRef={ localRef }
-				style={ { height, display: 'flex' } }
+				__unstableContentRef={localRef}
+				style={{ height, display: 'flex' }}
 			>
-				<EditorStyles
-					styles={ styles }
-					scope=".editor-styles-wrapper"
-				/>
+				<EditorStyles styles={styles} scope=".editor-styles-wrapper" />
 				<WritingFlow
-					ref={ contentRef }
+					ref={contentRef}
 					className="editor-styles-wrapper"
-					tabIndex={ -1 }
-					style={ {
+					tabIndex={-1}
+					style={{
 						height: '100%',
 						width: '100%',
-					} }
+					}}
 				>
-					{ children }
+					{children}
 				</WritingFlow>
 			</BlockTools>
 		);
@@ -55,20 +52,20 @@ export function ExperimentalBlockCanvas( {
 
 	return (
 		<BlockTools
-			__unstableContentRef={ localRef }
-			style={ { height, display: 'flex' } }
+			__unstableContentRef={localRef}
+			style={{ height, display: 'flex' }}
 		>
 			<Iframe
-				{ ...iframeProps }
-				ref={ resetTypingRef }
-				contentRef={ contentRef }
-				style={ {
+				{...iframeProps}
+				ref={resetTypingRef}
+				contentRef={contentRef}
+				style={{
 					...iframeProps?.style,
-				} }
+				}}
 				name="editor-canvas"
 			>
-				<EditorStyles styles={ styles } />
-				{ children }
+				<EditorStyles styles={styles} />
+				{children}
 			</Iframe>
 		</BlockTools>
 	);
@@ -103,10 +100,10 @@ export function ExperimentalBlockCanvas( {
  * @param {Element} props.children Content of the canvas, defaults to the BlockList component.
  * @return {Element}               Block Breadcrumb.
  */
-function BlockCanvas( { children, height, styles } ) {
+function BlockCanvas({ children, height, styles }) {
 	return (
-		<ExperimentalBlockCanvas height={ height } styles={ styles }>
-			{ children }
+		<ExperimentalBlockCanvas height={height} styles={styles}>
+			{children}
 		</ExperimentalBlockCanvas>
 	);
 }

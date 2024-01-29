@@ -29,11 +29,11 @@ const STORE_NAME = 'core/commands';
  * const { open: openCommandCenter } = useDispatch( commandsStore );
  * ```
  */
-export const store = createReduxStore( STORE_NAME, {
+export const store = createReduxStore(STORE_NAME, {
 	reducer,
 	actions,
 	selectors,
-} );
+});
 
-register( store );
-unlock( store ).registerPrivateActions( privateActions );
+register(store);
+unlock(store).registerPrivateActions(privateActions);

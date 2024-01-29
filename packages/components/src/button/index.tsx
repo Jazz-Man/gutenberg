@@ -26,9 +26,9 @@ import { VisuallyHidden } from '../visually-hidden';
 import type { ButtonProps, DeprecatedButtonProps } from './types';
 import { positionToPlacement } from '../popover/utils';
 
-const disabledEventsOnDisabledButton = [ 'onMouseDown', 'onClick' ] as const;
+const disabledEventsOnDisabledButton = ['onMouseDown', 'onClick'] as const;
 
-function useDeprecatedProps( {
+function useDeprecatedProps({
 	isDefault,
 	isPrimary,
 	isSecondary,
@@ -39,7 +39,7 @@ function useDeprecatedProps( {
 	size,
 	variant,
 	...otherProps
-}: ButtonProps & DeprecatedButtonProps ): ButtonProps {
+}: ButtonProps & DeprecatedButtonProps): ButtonProps {
 	let computedSize = size;
 	let computedVariant = variant;
 
@@ -48,33 +48,33 @@ function useDeprecatedProps( {
 		'aria-pressed': isPressed,
 	};
 
-	if ( isSmall ) {
+	if (isSmall) {
 		computedSize ??= 'small';
 	}
 
-	if ( isPrimary ) {
+	if (isPrimary) {
 		computedVariant ??= 'primary';
 	}
 
-	if ( isTertiary ) {
+	if (isTertiary) {
 		computedVariant ??= 'tertiary';
 	}
 
-	if ( isSecondary ) {
+	if (isSecondary) {
 		computedVariant ??= 'secondary';
 	}
 
-	if ( isDefault ) {
-		deprecated( 'Button isDefault prop', {
+	if (isDefault) {
+		deprecated('Button isDefault prop', {
 			since: '5.4',
 			alternative: 'variant="secondary"',
 			version: '6.2',
-		} );
+		});
 
 		computedVariant ??= 'secondary';
 	}
 
-	if ( isLink ) {
+	if (isLink) {
 		computedVariant ??= 'link';
 	}
 
@@ -86,10 +86,7 @@ function useDeprecatedProps( {
 	};
 }
 
-export function UnforwardedButton(
-	props: ButtonProps,
-	ref: ForwardedRef< any >
-) {
+export function UnforwardedButton(props: ButtonProps, ref: ForwardedRef<any>) {
 	const {
 		__next40pxDefaultSize,
 		isBusy,
@@ -110,7 +107,7 @@ export function UnforwardedButton(
 		__experimentalIsFocusable: isFocusable,
 		describedBy,
 		...buttonOrAnchorProps
-	} = useDeprecatedProps( props );
+	} = useDeprecatedProps(props);
 
 	const {
 		href,
@@ -123,26 +120,23 @@ export function UnforwardedButton(
 		? buttonOrAnchorProps
 		: { href: undefined, target: undefined, ...buttonOrAnchorProps };
 
-	const instanceId = useInstanceId(
-		Button,
-		'components-button__description'
-	);
+	const instanceId = useInstanceId(Button, 'components-button__description');
 
 	const hasChildren =
-		( 'string' === typeof children && !! children ) ||
-		( Array.isArray( children ) &&
-			children?.[ 0 ] &&
-			children[ 0 ] !== null &&
+		('string' === typeof children && !!children) ||
+		(Array.isArray(children) &&
+			children?.[0] &&
+			children[0] !== null &&
 			// Tooltip should not considered as a child
-			children?.[ 0 ]?.props?.className !== 'components-tooltip' );
+			children?.[0]?.props?.className !== 'components-tooltip');
 
-	const truthyAriaPressedValues: ( typeof ariaPressed )[] = [
+	const truthyAriaPressedValues: (typeof ariaPressed)[] = [
 		true,
 		'true',
 		'mixed',
 	];
 
-	const classes = classnames( 'components-button', className, {
+	const classes = classnames('components-button', className, {
 		'is-next-40px-default-size': __next40pxDefaultSize,
 		'is-secondary': variant === 'secondary',
 		'is-primary': variant === 'primary',
@@ -150,19 +144,19 @@ export function UnforwardedButton(
 		'is-compact': size === 'compact',
 		'is-tertiary': variant === 'tertiary',
 
-		'is-pressed': truthyAriaPressedValues.includes( ariaPressed ),
+		'is-pressed': truthyAriaPressedValues.includes(ariaPressed),
 		'is-pressed-mixed': ariaPressed === 'mixed',
 
 		'is-busy': isBusy,
 		'is-link': variant === 'link',
 		'is-destructive': isDestructive,
-		'has-text': !! icon && ( hasChildren || text ),
-		'has-icon': !! icon,
-	} );
+		'has-text': !!icon && (hasChildren || text),
+		'has-icon': !!icon,
+	});
 
-	const trulyDisabled = disabled && ! isFocusable;
-	const Tag = href !== undefined && ! trulyDisabled ? 'a' : 'button';
-	const buttonProps: ComponentPropsWithoutRef< 'button' > =
+	const trulyDisabled = disabled && !isFocusable;
+	const Tag = href !== undefined && !trulyDisabled ? 'a' : 'button';
+	const buttonProps: ComponentPropsWithoutRef<'button'> =
 		Tag === 'button'
 			? {
 					type: 'button',
@@ -172,18 +166,18 @@ export function UnforwardedButton(
 					'aria-selected': ariaSelected,
 			  }
 			: {};
-	const anchorProps: ComponentPropsWithoutRef< 'a' > =
+	const anchorProps: ComponentPropsWithoutRef<'a'> =
 		Tag === 'a' ? { href, target } : {};
 
-	if ( disabled && isFocusable ) {
+	if (disabled && isFocusable) {
 		// In this case, the button will be disabled, but still focusable and
 		// perceivable by screen reader users.
-		buttonProps[ 'aria-disabled' ] = true;
-		anchorProps[ 'aria-disabled' ] = true;
+		buttonProps['aria-disabled'] = true;
+		anchorProps['aria-disabled'] = true;
 
-		for ( const disabledEvent of disabledEventsOnDisabledButton ) {
-			additionalProps[ disabledEvent ] = ( event: MouseEvent ) => {
-				if ( event ) {
+		for (const disabledEvent of disabledEventsOnDisabledButton) {
+			additionalProps[disabledEvent] = (event: MouseEvent) => {
+				if (event) {
 					event.stopPropagation();
 					event.preventDefault();
 				}
@@ -193,78 +187,77 @@ export function UnforwardedButton(
 
 	// Should show the tooltip if...
 	const shouldShowTooltip =
-		! trulyDisabled &&
+		!trulyDisabled &&
 		// An explicit tooltip is passed or...
-		( ( showTooltip && label ) ||
+		((showTooltip && label) ||
 			// There's a shortcut or...
 			shortcut ||
 			// There's a label and...
-			( !! label &&
+			(!!label &&
 				// The children are empty and...
-				! ( children as string | ReactElement[] )?.length &&
+				!(children as string | ReactElement[])?.length &&
 				// The tooltip is not explicitly disabled.
-				false !== showTooltip ) );
+				false !== showTooltip));
 
 	const descriptionId = describedBy ? instanceId : undefined;
 
-	const describedById =
-		additionalProps[ 'aria-describedby' ] || descriptionId;
+	const describedById = additionalProps['aria-describedby'] || descriptionId;
 
 	const commonProps = {
 		className: classes,
-		'aria-label': additionalProps[ 'aria-label' ] || label,
+		'aria-label': additionalProps['aria-label'] || label,
 		'aria-describedby': describedById,
 		ref,
 	};
 
 	const elementChildren = (
 		<>
-			{ icon && iconPosition === 'left' && (
-				<Icon icon={ icon } size={ iconSize } />
-			) }
-			{ text && <>{ text }</> }
-			{ icon && iconPosition === 'right' && (
-				<Icon icon={ icon } size={ iconSize } />
-			) }
-			{ children }
+			{icon && iconPosition === 'left' && (
+				<Icon icon={icon} size={iconSize} />
+			)}
+			{text && <>{text}</>}
+			{icon && iconPosition === 'right' && (
+				<Icon icon={icon} size={iconSize} />
+			)}
+			{children}
 		</>
 	);
 
 	const element =
 		Tag === 'a' ? (
 			<a
-				{ ...anchorProps }
-				{ ...( additionalProps as HTMLAttributes< HTMLAnchorElement > ) }
-				{ ...commonProps }
+				{...anchorProps}
+				{...(additionalProps as HTMLAttributes<HTMLAnchorElement>)}
+				{...commonProps}
 			>
-				{ elementChildren }
+				{elementChildren}
 			</a>
 		) : (
 			<button
-				{ ...buttonProps }
-				{ ...( additionalProps as HTMLAttributes< HTMLButtonElement > ) }
-				{ ...commonProps }
+				{...buttonProps}
+				{...(additionalProps as HTMLAttributes<HTMLButtonElement>)}
+				{...commonProps}
 			>
-				{ elementChildren }
+				{elementChildren}
 			</button>
 		);
 
 	// Convert legacy `position` values to be used with the new `placement` prop
 	let computedPlacement;
 	// if `tooltipPosition` is defined, compute value to `placement`
-	if ( tooltipPosition !== undefined ) {
-		computedPlacement = positionToPlacement( tooltipPosition );
+	if (tooltipPosition !== undefined) {
+		computedPlacement = positionToPlacement(tooltipPosition);
 	}
 
-	if ( ! shouldShowTooltip ) {
+	if (!shouldShowTooltip) {
 		return (
 			<>
-				{ element }
-				{ describedBy && (
+				{element}
+				{describedBy && (
 					<VisuallyHidden>
-						<span id={ descriptionId }>{ describedBy }</span>
+						<span id={descriptionId}>{describedBy}</span>
 					</VisuallyHidden>
-				) }
+				)}
 			</>
 		);
 	}
@@ -273,21 +266,20 @@ export function UnforwardedButton(
 		<>
 			<Tooltip
 				text={
-					( children as string | ReactElement[] )?.length &&
-					describedBy
+					(children as string | ReactElement[])?.length && describedBy
 						? describedBy
 						: label
 				}
-				shortcut={ shortcut }
-				placement={ computedPlacement }
+				shortcut={shortcut}
+				placement={computedPlacement}
 			>
-				{ element }
+				{element}
 			</Tooltip>
-			{ describedBy && (
+			{describedBy && (
 				<VisuallyHidden>
-					<span id={ descriptionId }>{ describedBy }</span>
+					<span id={descriptionId}>{describedBy}</span>
 				</VisuallyHidden>
-			) }
+			)}
 		</>
 	);
 }
@@ -307,5 +299,5 @@ export function UnforwardedButton(
  * );
  * ```
  */
-export const Button = forwardRef( UnforwardedButton );
+export const Button = forwardRef(UnforwardedButton);
 export default Button;

@@ -11,6 +11,6 @@ function useCommands() {
 }
 
 export const privateApis = {};
-lock( privateApis, {
+lock(privateApis, {
 	useCommands,
-} );
+});

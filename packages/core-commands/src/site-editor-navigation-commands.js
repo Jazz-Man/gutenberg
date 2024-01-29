@@ -24,7 +24,7 @@ import { useIsTemplatesAccessible, useIsBlockBasedTheme } from './hooks';
 import { unlock } from './lock-unlock';
 import { orderEntityRecordsBySearch } from './utils/order-entity-records-by-search';
 
-const { useHistory, useLocation } = unlock( routerPrivateApis );
+const { useHistory, useLocation } = unlock(routerPrivateApis);
 
 const icons = {
 	post,
@@ -33,15 +33,15 @@ const icons = {
 	wp_template_part: symbolFilled,
 };
 
-const getNavigationCommandLoaderPerPostType = ( postType ) =>
-	function useNavigationCommandLoader( { search } ) {
+const getNavigationCommandLoaderPerPostType = (postType) =>
+	function useNavigationCommandLoader({ search }) {
 		const history = useHistory();
 		const isBlockBasedTheme = useIsBlockBasedTheme();
 		const { records, isLoading } = useSelect(
-			( select ) => {
-				const { getEntityRecords } = select( coreStore );
+			(select) => {
+				const { getEntityRecords } = select(coreStore);
 				const query = {
-					search: !! search ? search : undefined,
+					search: !!search ? search : undefined,
 					per_page: 10,
 					orderby: search ? 'relevance' : 'date',
 					status: [
@@ -53,79 +53,73 @@ const getNavigationCommandLoaderPerPostType = ( postType ) =>
 					],
 				};
 				return {
-					records: getEntityRecords( 'postType', postType, query ),
-					isLoading: ! select( coreStore ).hasFinishedResolution(
+					records: getEntityRecords('postType', postType, query),
+					isLoading: !select(coreStore).hasFinishedResolution(
 						'getEntityRecords',
-						[ 'postType', postType, query ]
+						['postType', postType, query]
 					),
 				};
 			},
-			[ search ]
+			[search]
 		);
 
-		const commands = useMemo( () => {
-			return ( records ?? [] ).map( ( record ) => {
+		const commands = useMemo(() => {
+			return (records ?? []).map((record) => {
 				const command = {
 					name: postType + '-' + record.id,
 					searchLabel: record.title?.rendered + ' ' + record.id,
 					label: record.title?.rendered
 						? record.title?.rendered
-						: __( '(no title)' ),
-					icon: icons[ postType ],
+						: __('(no title)'),
+					icon: icons[postType],
 				};
 
 				if (
 					postType === 'post' ||
-					( postType === 'page' && ! isBlockBasedTheme )
+					(postType === 'page' && !isBlockBasedTheme)
 				) {
 					return {
 						...command,
-						callback: ( { close } ) => {
+						callback: ({ close }) => {
 							const args = {
 								post: record.id,
 								action: 'edit',
 							};
-							const targetUrl = addQueryArgs( 'post.php', args );
+							const targetUrl = addQueryArgs('post.php', args);
 							document.location = targetUrl;
 							close();
 						},
 					};
 				}
 
-				const isSiteEditor = getPath( window.location.href )?.includes(
+				const isSiteEditor = getPath(window.location.href)?.includes(
 					'site-editor.php'
 				);
 				const extraArgs = isSiteEditor
 					? {
-							canvas: getQueryArg(
-								window.location.href,
-								'canvas'
-							),
+							canvas: getQueryArg(window.location.href, 'canvas'),
 					  }
 					: {};
 
 				return {
 					...command,
-					callback: ( { close } ) => {
+					callback: ({ close }) => {
 						const args = {
 							postType,
 							postId: record.id,
 							...extraArgs,
 						};
-						const targetUrl = addQueryArgs(
-							'site-editor.php',
-							args
-						);
-						if ( isSiteEditor ) {
-							history.push( args );
+						const targetUrl = addQueryArgs('site-editor.php', args);
+						if (isSiteEditor) {
+							history.push(args);
 						} else {
 							document.location = targetUrl;
 						}
 						close();
 					},
 				};
-			} );
-		}, [ records, isBlockBasedTheme, history ] );
+			});
+		}, [records, isBlockBasedTheme, history]);
 
 		return {
 			commands,
@@ -133,52 +127,48 @@ const getNavigationCommandLoaderPerPostType = ( postType ) =>
 		};
 	};
 
-const getNavigationCommandLoaderPerTemplate = ( templateType ) =>
-	function useNavigationCommandLoader( { search } ) {
+const getNavigationCommandLoaderPerTemplate = (templateType) =>
+	function useNavigationCommandLoader({ search }) {
 		const history = useHistory();
 		const location = useLocation();
 
 		const isPatternsPage =
 			location?.params?.path === '/patterns' ||
 			location?.params?.postType === 'wp_block';
-		const didAccessPatternsPage =
-			!! location?.params?.didAccessPatternsPage;
+		const didAccessPatternsPage = !!location?.params?.didAccessPatternsPage;
 
 		const isBlockBasedTheme = useIsBlockBasedTheme();
-		const { records, isLoading } = useSelect( ( select ) => {
-			const { getEntityRecords } = select( coreStore );
+		const { records, isLoading } = useSelect((select) => {
+			const { getEntityRecords } = select(coreStore);
 			const query = { per_page: -1 };
 			return {
-				records: getEntityRecords( 'postType', templateType, query ),
-				isLoading: ! select( coreStore ).hasFinishedResolution(
+				records: getEntityRecords('postType', templateType, query),
+				isLoading: !select(coreStore).hasFinishedResolution(
 					'getEntityRecords',
-					[ 'postType', templateType, query ]
+					['postType', templateType, query]
 				),
 			};
-		}, [] );
+		}, []);
 
 		/*
 		 * wp_template and wp_template_part endpoints do not support per_page or orderby parameters.
 		 * We need to sort the results based on the search query to avoid removing relevant
 		 * records below using .slice().
 		 */
-		const orderedRecords = useMemo( () => {
-			return orderEntityRecordsBySearch( records, search ).slice( 0, 10 );
-		}, [ records, search ] );
+		const orderedRecords = useMemo(() => {
+			return orderEntityRecordsBySearch(records, search).slice(0, 10);
+		}, [records, search]);
 
-		const commands = useMemo( () => {
-			if (
-				! isBlockBasedTheme &&
-				! templateType === 'wp_template_part'
-			) {
+		const commands = useMemo(() => {
+			if (!isBlockBasedTheme && !templateType === 'wp_template_part') {
 				return [];
 			}
-			return orderedRecords.map( ( record ) => {
-				const isSiteEditor = getPath( window.location.href )?.includes(
+			return orderedRecords.map((record) => {
+				const isSiteEditor = getPath(window.location.href)?.includes(
 					'site-editor.php'
 				);
 				const extraArgs = isSiteEditor
-					? { canvas: getQueryArg( window.location.href, 'canvas' ) }
+					? { canvas: getQueryArg(window.location.href, 'canvas') }
 					: {};
 
 				return {
@@ -186,33 +176,30 @@ const getNavigationCommandLoaderPerTemplate = ( templateType ) =>
 					searchLabel: record.title?.rendered + ' ' + record.id,
 					label: record.title?.rendered
 						? record.title?.rendered
-						: __( '(no title)' ),
-					icon: icons[ templateType ],
-					callback: ( { close } ) => {
+						: __('(no title)'),
+					icon: icons[templateType],
+					callback: ({ close }) => {
 						const args = {
 							postType: templateType,
 							postId: record.id,
 							didAccessPatternsPage:
-								! isBlockBasedTheme &&
-								( isPatternsPage || didAccessPatternsPage )
+								!isBlockBasedTheme &&
+								(isPatternsPage || didAccessPatternsPage)
 									? 1
 									: undefined,
 							...extraArgs,
 						};
-						const targetUrl = addQueryArgs(
-							'site-editor.php',
-							args
-						);
-						if ( isSiteEditor ) {
-							history.push( args );
+						const targetUrl = addQueryArgs('site-editor.php', args);
+						if (isSiteEditor) {
+							history.push(args);
 						} else {
 							document.location = targetUrl;
 						}
 						close();
 					},
 				};
-			} );
-		}, [ isBlockBasedTheme, orderedRecords, history ] );
+			});
+		}, [isBlockBasedTheme, orderedRecords, history]);
 
 		return {
 			commands,
@@ -221,102 +208,102 @@ const getNavigationCommandLoaderPerTemplate = ( templateType ) =>
 	};
 
 const usePageNavigationCommandLoader =
-	getNavigationCommandLoaderPerPostType( 'page' );
+	getNavigationCommandLoaderPerPostType('page');
 const usePostNavigationCommandLoader =
-	getNavigationCommandLoaderPerPostType( 'post' );
+	getNavigationCommandLoaderPerPostType('post');
 const useTemplateNavigationCommandLoader =
-	getNavigationCommandLoaderPerTemplate( 'wp_template' );
+	getNavigationCommandLoaderPerTemplate('wp_template');
 const useTemplatePartNavigationCommandLoader =
-	getNavigationCommandLoaderPerTemplate( 'wp_template_part' );
+	getNavigationCommandLoaderPerTemplate('wp_template_part');
 
 function useSiteEditorBasicNavigationCommands() {
 	const history = useHistory();
-	const isSiteEditor = getPath( window.location.href )?.includes(
+	const isSiteEditor = getPath(window.location.href)?.includes(
 		'site-editor.php'
 	);
 	const isTemplatesAccessible = useIsTemplatesAccessible();
 	const isBlockBasedTheme = useIsBlockBasedTheme();
-	const commands = useMemo( () => {
+	const commands = useMemo(() => {
 		const result = [];
 
-		if ( ! isTemplatesAccessible || ! isBlockBasedTheme ) {
+		if (!isTemplatesAccessible || !isBlockBasedTheme) {
 			return result;
 		}
 
-		result.push( {
+		result.push({
 			name: 'core/edit-site/open-navigation',
-			label: __( 'Navigation' ),
+			label: __('Navigation'),
 			icon: navigation,
-			callback: ( { close } ) => {
+			callback: ({ close }) => {
 				const args = {
 					path: '/navigation',
 				};
-				const targetUrl = addQueryArgs( 'site-editor.php', args );
-				if ( isSiteEditor ) {
-					history.push( args );
+				const targetUrl = addQueryArgs('site-editor.php', args);
+				if (isSiteEditor) {
+					history.push(args);
 				} else {
 					document.location = targetUrl;
 				}
 				close();
 			},
-		} );
+		});
 
-		result.push( {
+		result.push({
 			name: 'core/edit-site/open-styles',
-			label: __( 'Styles' ),
+			label: __('Styles'),
 			icon: styles,
-			callback: ( { close } ) => {
+			callback: ({ close }) => {
 				const args = {
 					path: '/wp_global_styles',
 				};
-				const targetUrl = addQueryArgs( 'site-editor.php', args );
-				if ( isSiteEditor ) {
-					history.push( args );
+				const targetUrl = addQueryArgs('site-editor.php', args);
+				if (isSiteEditor) {
+					history.push(args);
 				} else {
 					document.location = targetUrl;
 				}
 				close();
 			},
-		} );
+		});
 
-		result.push( {
+		result.push({
 			name: 'core/edit-site/open-pages',
-			label: __( 'Pages' ),
+			label: __('Pages'),
 			icon: page,
-			callback: ( { close } ) => {
+			callback: ({ close }) => {
 				const args = {
 					path: '/page',
 				};
-				const targetUrl = addQueryArgs( 'site-editor.php', args );
-				if ( isSiteEditor ) {
-					history.push( args );
+				const targetUrl = addQueryArgs('site-editor.php', args);
+				if (isSiteEditor) {
+					history.push(args);
 				} else {
 					document.location = targetUrl;
 				}
 				close();
 			},
-		} );
+		});
 
-		result.push( {
+		result.push({
 			name: 'core/edit-site/open-templates',
-			label: __( 'Templates' ),
+			label: __('Templates'),
 			icon: layout,
-			callback: ( { close } ) => {
+			callback: ({ close }) => {
 				const args = {
 					path: '/wp_template',
 				};
-				const targetUrl = addQueryArgs( 'site-editor.php', args );
-				if ( isSiteEditor ) {
-					history.push( args );
+				const targetUrl = addQueryArgs('site-editor.php', args);
+				if (isSiteEditor) {
+					history.push(args);
 				} else {
 					document.location = targetUrl;
 				}
 				close();
 			},
-		} );
+		});
 
 		return result;
-	}, [ history, isSiteEditor, isTemplatesAccessible, isBlockBasedTheme ] );
+	}, [history, isSiteEditor, isTemplatesAccessible, isBlockBasedTheme]);
 
 	return {
 		commands,
@@ -325,25 +312,25 @@ function useSiteEditorBasicNavigationCommands() {
 }
 
 export function useSiteEditorNavigationCommands() {
-	useCommandLoader( {
+	useCommandLoader({
 		name: 'core/edit-site/navigate-pages',
 		hook: usePageNavigationCommandLoader,
-	} );
-	useCommandLoader( {
+	});
+	useCommandLoader({
 		name: 'core/edit-site/navigate-posts',
 		hook: usePostNavigationCommandLoader,
-	} );
-	useCommandLoader( {
+	});
+	useCommandLoader({
 		name: 'core/edit-site/navigate-templates',
 		hook: useTemplateNavigationCommandLoader,
-	} );
-	useCommandLoader( {
+	});
+	useCommandLoader({
 		name: 'core/edit-site/navigate-template-parts',
 		hook: useTemplatePartNavigationCommandLoader,
-	} );
-	useCommandLoader( {
+	});
+	useCommandLoader({
 		name: 'core/edit-site/basic-navigation',
 		hook: useSiteEditorBasicNavigationCommands,
 		context: 'site-editor',
-	} );
+	});
 }

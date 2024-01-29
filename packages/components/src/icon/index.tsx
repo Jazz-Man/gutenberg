@@ -21,8 +21,8 @@ import type { IconKey as DashiconIconKey } from '../dashicon/types';
 
 export type IconType =
 	| DashiconIconKey
-	| ComponentType< { size?: number } >
-	| ( ( props: { size?: number } ) => JSX.Element )
+	| ComponentType<{ size?: number }>
+	| ((props: { size?: number }) => JSX.Element)
 	| JSX.Element;
 
 interface BaseProps {
@@ -41,43 +41,43 @@ interface BaseProps {
 	size?: number;
 }
 
-type AdditionalProps< T > = T extends ComponentType< infer U >
+type AdditionalProps<T> = T extends ComponentType<infer U>
 	? U
 	: T extends DashiconIconKey
-	? SVGProps< SVGSVGElement >
+	? SVGProps<SVGSVGElement>
 	: {};
 
-export type Props = BaseProps & AdditionalProps< IconType >;
+export type Props = BaseProps & AdditionalProps<IconType>;
 
-function Icon( {
+function Icon({
 	icon = null,
 	size = 'string' === typeof icon ? 20 : 24,
 	...additionalProps
-}: Props ) {
-	if ( 'string' === typeof icon ) {
+}: Props) {
+	if ('string' === typeof icon) {
 		return (
 			<Dashicon
-				icon={ icon }
-				size={ size }
-				{ ...( additionalProps as HTMLProps< HTMLSpanElement > ) }
+				icon={icon}
+				size={size}
+				{...(additionalProps as HTMLProps<HTMLSpanElement>)}
 			/>
 		);
 	}
 
-	if ( isValidElement( icon ) && Dashicon === icon.type ) {
-		return cloneElement( icon, {
+	if (isValidElement(icon) && Dashicon === icon.type) {
+		return cloneElement(icon, {
 			...additionalProps,
-		} );
+		});
 	}
 
-	if ( 'function' === typeof icon ) {
-		return createElement( icon, {
+	if ('function' === typeof icon) {
+		return createElement(icon, {
 			size,
 			...additionalProps,
-		} );
+		});
 	}
 
-	if ( icon && ( icon.type === 'svg' || icon.type === SVG ) ) {
+	if (icon && (icon.type === 'svg' || icon.type === SVG)) {
 		const appliedProps = {
 			...icon.props,
 			width: size,
@@ -85,15 +85,15 @@ function Icon( {
 			...additionalProps,
 		};
 
-		return <SVG { ...appliedProps } />;
+		return <SVG {...appliedProps} />;
 	}
 
-	if ( isValidElement( icon ) ) {
-		return cloneElement( icon, {
+	if (isValidElement(icon)) {
+		return cloneElement(icon, {
 			// @ts-ignore Just forwarding the size prop along
 			size,
 			...additionalProps,
-		} );
+		});
 	}
 
 	return icon;

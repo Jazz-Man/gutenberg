@@ -21,7 +21,7 @@ import { store as blockEditorStore } from '../../store';
 import usePopoverScroll from '../block-popover/use-popover-scroll';
 import ZoomOutModeInserters from './zoom-out-mode-inserters';
 
-function selector( select ) {
+function selector(select) {
 	const {
 		getSelectedBlockClientId,
 		getFirstMultiSelectedBlockClientId,
@@ -30,27 +30,27 @@ function selector( select ) {
 		hasMultiSelection,
 		__unstableGetEditorMode,
 		isTyping,
-	} = select( blockEditorStore );
+	} = select(blockEditorStore);
 
 	const clientId =
 		getSelectedBlockClientId() || getFirstMultiSelectedBlockClientId();
 
-	const { name = '', attributes = {} } = getBlock( clientId ) || {};
+	const { name = '', attributes = {} } = getBlock(clientId) || {};
 	const editorMode = __unstableGetEditorMode();
 	const hasSelectedBlock = clientId && name;
-	const isEmptyDefaultBlock = isUnmodifiedDefaultBlock( {
+	const isEmptyDefaultBlock = isUnmodifiedDefaultBlock({
 		name,
 		attributes,
-	} );
+	});
 	const _showEmptyBlockSideInserter =
 		clientId &&
-		! isTyping() &&
+		!isTyping() &&
 		editorMode === 'edit' &&
-		isUnmodifiedDefaultBlock( { name, attributes } );
+		isUnmodifiedDefaultBlock({ name, attributes });
 	const maybeShowBreadcrumb =
 		hasSelectedBlock &&
-		! hasMultiSelection() &&
-		( editorMode === 'navigation' || editorMode === 'zoom-out' );
+		!hasMultiSelection() &&
+		(editorMode === 'navigation' || editorMode === 'zoom-out');
 
 	return {
 		clientId,
@@ -58,13 +58,13 @@ function selector( select ) {
 		isTyping: isTyping(),
 		isZoomOutMode: editorMode === 'zoom-out',
 		showEmptyBlockSideInserter: _showEmptyBlockSideInserter,
-		showBreadcrumb: ! _showEmptyBlockSideInserter && maybeShowBreadcrumb,
+		showBreadcrumb: !_showEmptyBlockSideInserter && maybeShowBreadcrumb,
 		showBlockToolbar:
-			! getSettings().hasFixedToolbar &&
-			! _showEmptyBlockSideInserter &&
+			!getSettings().hasFixedToolbar &&
+			!_showEmptyBlockSideInserter &&
 			hasSelectedBlock &&
-			! isEmptyDefaultBlock &&
-			! maybeShowBreadcrumb,
+			!isEmptyDefaultBlock &&
+			!maybeShowBreadcrumb,
 	};
 }
 
@@ -77,11 +77,11 @@ function selector( select ) {
  * @param {Object} $0.children             The block content and style container.
  * @param {Object} $0.__unstableContentRef Ref holding the content scroll container.
  */
-export default function BlockTools( {
+export default function BlockTools({
 	children,
 	__unstableContentRef,
 	...props
-} ) {
+}) {
 	const {
 		clientId,
 		hasFixedToolbar,
@@ -90,10 +90,10 @@ export default function BlockTools( {
 		showEmptyBlockSideInserter,
 		showBreadcrumb,
 		showBlockToolbar,
-	} = useSelect( selector, [] );
+	} = useSelect(selector, []);
 	const isMatch = useShortcutEventMatch();
 	const { getSelectedBlockClientIds, getBlockRootClientId } =
-		useSelect( blockEditorStore );
+		useSelect(blockEditorStore);
 	const {
 		duplicateBlocks,
 		removeBlocks,
@@ -103,51 +103,51 @@ export default function BlockTools( {
 		selectBlock,
 		moveBlocksUp,
 		moveBlocksDown,
-	} = useDispatch( blockEditorStore );
+	} = useDispatch(blockEditorStore);
 
-	function onKeyDown( event ) {
-		if ( event.defaultPrevented ) return;
+	function onKeyDown(event) {
+		if (event.defaultPrevented) return;
 
-		if ( isMatch( 'core/block-editor/move-up', event ) ) {
+		if (isMatch('core/block-editor/move-up', event)) {
 			const clientIds = getSelectedBlockClientIds();
-			if ( clientIds.length ) {
+			if (clientIds.length) {
 				event.preventDefault();
-				const rootClientId = getBlockRootClientId( clientIds[ 0 ] );
-				moveBlocksUp( clientIds, rootClientId );
+				const rootClientId = getBlockRootClientId(clientIds[0]);
+				moveBlocksUp(clientIds, rootClientId);
 			}
-		} else if ( isMatch( 'core/block-editor/move-down', event ) ) {
+		} else if (isMatch('core/block-editor/move-down', event)) {
 			const clientIds = getSelectedBlockClientIds();
-			if ( clientIds.length ) {
+			if (clientIds.length) {
 				event.preventDefault();
-				const rootClientId = getBlockRootClientId( clientIds[ 0 ] );
-				moveBlocksDown( clientIds, rootClientId );
+				const rootClientId = getBlockRootClientId(clientIds[0]);
+				moveBlocksDown(clientIds, rootClientId);
 			}
-		} else if ( isMatch( 'core/block-editor/duplicate', event ) ) {
+		} else if (isMatch('core/block-editor/duplicate', event)) {
 			const clientIds = getSelectedBlockClientIds();
-			if ( clientIds.length ) {
+			if (clientIds.length) {
 				event.preventDefault();
-				duplicateBlocks( clientIds );
+				duplicateBlocks(clientIds);
 			}
-		} else if ( isMatch( 'core/block-editor/remove', event ) ) {
+		} else if (isMatch('core/block-editor/remove', event)) {
 			const clientIds = getSelectedBlockClientIds();
-			if ( clientIds.length ) {
+			if (clientIds.length) {
 				event.preventDefault();
-				removeBlocks( clientIds );
+				removeBlocks(clientIds);
 			}
-		} else if ( isMatch( 'core/block-editor/insert-after', event ) ) {
+		} else if (isMatch('core/block-editor/insert-after', event)) {
 			const clientIds = getSelectedBlockClientIds();
-			if ( clientIds.length ) {
+			if (clientIds.length) {
 				event.preventDefault();
-				insertAfterBlock( clientIds[ clientIds.length - 1 ] );
+				insertAfterBlock(clientIds[clientIds.length - 1]);
 			}
-		} else if ( isMatch( 'core/block-editor/insert-before', event ) ) {
+		} else if (isMatch('core/block-editor/insert-before', event)) {
 			const clientIds = getSelectedBlockClientIds();
-			if ( clientIds.length ) {
+			if (clientIds.length) {
 				event.preventDefault();
-				insertBeforeBlock( clientIds[ 0 ] );
+				insertBeforeBlock(clientIds[0]);
 			}
-		} else if ( isMatch( 'core/block-editor/unselect', event ) ) {
-			if ( event.target.closest( '[role=toolbar]' ) ) {
+		} else if (isMatch('core/block-editor/unselect', event)) {
+			if (event.target.closest('[role=toolbar]')) {
 				// This shouldn't be necessary, but we have a combination of a few things all combining to create a situation where:
 				// - Because the block toolbar uses createPortal to populate the block toolbar fills, we can't rely on the React event bubbling to hit the onKeyDown listener for the block toolbar
 				// - Since we can't use the React tree, we use the DOM tree which _should_ handle the event bubbling correctly from a `createPortal` element.
@@ -157,14 +157,14 @@ export default function BlockTools( {
 			}
 
 			const clientIds = getSelectedBlockClientIds();
-			if ( clientIds.length ) {
+			if (clientIds.length) {
 				event.preventDefault();
 
 				// If there is more than one block selected, select the first
 				// block so that focus is directed back to the beginning of the selection.
 				// In effect, to the user this feels like deselecting the multi-selection.
-				if ( clientIds.length > 1 ) {
-					selectBlock( clientIds[ 0 ] );
+				if (clientIds.length > 1) {
+					selectBlock(clientIds[0]);
 				} else {
 					clearSelectedBlock();
 				}
@@ -176,59 +176,56 @@ export default function BlockTools( {
 		}
 	}
 
-	const blockToolbarRef = usePopoverScroll( __unstableContentRef );
-	const blockToolbarAfterRef = usePopoverScroll( __unstableContentRef );
+	const blockToolbarRef = usePopoverScroll(__unstableContentRef);
+	const blockToolbarAfterRef = usePopoverScroll(__unstableContentRef);
 
 	return (
 		// eslint-disable-next-line jsx-a11y/no-static-element-interactions
-		<div { ...props } onKeyDown={ onKeyDown }>
-			<InsertionPointOpenRef.Provider value={ useRef( false ) }>
-				{ ! isTyping && (
+		<div {...props} onKeyDown={onKeyDown}>
+			<InsertionPointOpenRef.Provider value={useRef(false)}>
+				{!isTyping && (
 					<InsertionPoint
-						__unstableContentRef={ __unstableContentRef }
+						__unstableContentRef={__unstableContentRef}
 					/>
-				) }
+				)}
 
-				{ showEmptyBlockSideInserter && (
+				{showEmptyBlockSideInserter && (
 					<EmptyBlockInserter
-						__unstableContentRef={ __unstableContentRef }
-						clientId={ clientId }
+						__unstableContentRef={__unstableContentRef}
+						clientId={clientId}
 					/>
-				) }
+				)}
 
-				{ showBlockToolbar && (
+				{showBlockToolbar && (
 					<BlockToolbarPopover
-						__unstableContentRef={ __unstableContentRef }
-						clientId={ clientId }
-						isTyping={ isTyping }
+						__unstableContentRef={__unstableContentRef}
+						clientId={clientId}
+						isTyping={isTyping}
 					/>
-				) }
+				)}
 
-				{ showBreadcrumb && (
+				{showBreadcrumb && (
 					<BlockToolbarBreadcrumb
-						__unstableContentRef={ __unstableContentRef }
-						clientId={ clientId }
+						__unstableContentRef={__unstableContentRef}
+						clientId={clientId}
 					/>
-				) }
+				)}
 
-				{ /* Used for the inline rich text toolbar. Until this toolbar is combined into BlockToolbar, someone implementing their own BlockToolbar will also need to use this to see the image caption toolbar. */ }
-				{ ! isZoomOutMode && ! hasFixedToolbar && (
-					<Popover.Slot
-						name="block-toolbar"
-						ref={ blockToolbarRef }
-					/>
-				) }
-				{ children }
-				{ /* Used for inline rich text popovers. */ }
+				{/* Used for the inline rich text toolbar. Until this toolbar is combined into BlockToolbar, someone implementing their own BlockToolbar will also need to use this to see the image caption toolbar. */}
+				{!isZoomOutMode && !hasFixedToolbar && (
+					<Popover.Slot name="block-toolbar" ref={blockToolbarRef} />
+				)}
+				{children}
+				{/* Used for inline rich text popovers. */}
 				<Popover.Slot
 					name="__unstable-block-tools-after"
-					ref={ blockToolbarAfterRef }
+					ref={blockToolbarAfterRef}
 				/>
-				{ isZoomOutMode && (
+				{isZoomOutMode && (
 					<ZoomOutModeInserters
-						__unstableContentRef={ __unstableContentRef }
+						__unstableContentRef={__unstableContentRef}
 					/>
-				) }
+				)}
 			</InsertionPointOpenRef.Provider>
 		</div>
 	);

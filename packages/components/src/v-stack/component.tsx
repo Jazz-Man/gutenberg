@@ -13,12 +13,12 @@ import { useVStack } from './hook';
 import type { VStackProps } from './types';
 
 function UnconnectedVStack(
-	props: WordPressComponentProps< VStackProps, 'div' >,
-	forwardedRef: ForwardedRef< any >
+	props: WordPressComponentProps<VStackProps, 'div'>,
+	forwardedRef: ForwardedRef<any>
 ) {
-	const vStackProps = useVStack( props );
+	const vStackProps = useVStack(props);
 
-	return <View { ...vStackProps } ref={ forwardedRef } />;
+	return <View {...vStackProps} ref={forwardedRef} />;
 }
 
 /**
@@ -44,6 +44,6 @@ function UnconnectedVStack(
  * }
  * ```
  */
-export const VStack = contextConnect( UnconnectedVStack, 'VStack' );
+export const VStack = contextConnect(UnconnectedVStack, 'VStack');
 
 export default VStack;

@@ -9,13 +9,13 @@ import { useMemo, useSyncExternalStore } from '@wordpress/element';
  * @param {string} [query] Media Query.
  * @return {MediaQueryList|null} A new object for the media query
  */
-function getMediaQueryList( query ) {
+function getMediaQueryList(query) {
 	if (
 		query &&
 		typeof window !== 'undefined' &&
 		typeof window.matchMedia === 'function'
 	) {
-		return window.matchMedia( query );
+		return window.matchMedia(query);
 	}
 
 	return null;
@@ -27,19 +27,19 @@ function getMediaQueryList( query ) {
  * @param {string} [query] Media Query.
  * @return {boolean} return value of the media query.
  */
-export default function useMediaQuery( query ) {
-	const source = useMemo( () => {
-		const mediaQueryList = getMediaQueryList( query );
+export default function useMediaQuery(query) {
+	const source = useMemo(() => {
+		const mediaQueryList = getMediaQueryList(query);
 
 		return {
 			/** @type {(onStoreChange: () => void) => () => void} */
-			subscribe( onStoreChange ) {
-				if ( ! mediaQueryList ) {
+			subscribe(onStoreChange) {
+				if (!mediaQueryList) {
 					return () => {};
 				}
 
 				// Avoid a fatal error when browsers don't support `addEventListener` on MediaQueryList.
-				mediaQueryList.addEventListener?.( 'change', onStoreChange );
+				mediaQueryList.addEventListener?.('change', onStoreChange);
 				return () => {
 					mediaQueryList.removeEventListener?.(
 						'change',
@@ -51,11 +51,7 @@ export default function useMediaQuery( query ) {
 				return mediaQueryList?.matches ?? false;
 			},
 		};
-	}, [ query ] );
+	}, [query]);
 
-	return useSyncExternalStore(
-		source.subscribe,
-		source.getValue,
-		() => false
-	);
+	return useSyncExternalStore(source.subscribe, source.getValue, () => false);
 }

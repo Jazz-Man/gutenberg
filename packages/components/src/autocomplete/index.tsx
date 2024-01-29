@@ -2,6 +2,7 @@
  * External dependencies
  */
 import removeAccents from 'remove-accents';
+import React from 'react';
 
 /**
  * WordPress dependencies
@@ -9,18 +10,17 @@ import removeAccents from 'remove-accents';
 import {
 	renderToString,
 	useEffect,
-	useState,
-	useRef,
 	useMemo,
+	useRef,
+	useState,
 } from '@wordpress/element';
-import { __, _n } from '@wordpress/i18n';
 import { useInstanceId, useMergeRefs, useRefEffect } from '@wordpress/compose';
 import {
 	create,
-	slice,
+	getTextContent,
 	insert,
 	isCollapsed,
-	getTextContent,
+	slice,
 } from '@wordpress/rich-text';
 import { speak } from '@wordpress/a11y';
 import { isAppleOS } from '@wordpress/keycodes';
@@ -41,12 +41,12 @@ import type {
 	WPCompleter,
 } from './types';
 
-const getNodeText = ( node: React.ReactNode ): string => {
-	if ( node === null ) {
+const getNodeText = (node: React.ReactNode): string => {
+	if (node === null) {
 		return '';
 	}
 
-	switch ( typeof node ) {
+	switch (typeof node) {
 		case 'string':
 		case 'number':
 			return node.toString();
@@ -55,11 +55,11 @@ const getNodeText = ( node: React.ReactNode ): string => {
 			return '';
 			break;
 		case 'object': {
-			if ( node instanceof Array ) {
-				return node.map( getNodeText ).join( '' );
+			if (node instanceof Array) {
+				return node.map(getNodeText).join('');
 			}
-			if ( 'props' in node ) {
-				return getNodeText( node.props.children );
+			if ('props' in node) {
+				return getNodeText(node.props.children);
 			}
 			break;
 		}
@@ -72,51 +72,51 @@ const getNodeText = ( node: React.ReactNode ): string => {
 
 const EMPTY_FILTERED_OPTIONS: KeyedOption[] = [];
 
-export function useAutocomplete( {
+export function useAutocomplete({
 	record,
 	onChange,
 	onReplace,
 	completers,
 	contentRef,
-}: UseAutocompleteProps ) {
-	const instanceId = useInstanceId( useAutocomplete );
-	const [ selectedIndex, setSelectedIndex ] = useState( 0 );
+}: UseAutocompleteProps) {
+	const instanceId = useInstanceId(useAutocomplete);
+	const [selectedIndex, setSelectedIndex] = useState(0);
 
-	const [ filteredOptions, setFilteredOptions ] = useState<
-		Array< KeyedOption >
-	>( EMPTY_FILTERED_OPTIONS );
-	const [ filterValue, setFilterValue ] =
-		useState< AutocompleterUIProps[ 'filterValue' ] >( '' );
-	const [ autocompleter, setAutocompleter ] = useState< WPCompleter | null >(
+	const [filteredOptions, setFilteredOptions] = useState<Array<KeyedOption>>(
+		EMPTY_FILTERED_OPTIONS
+	);
+	const [filterValue, setFilterValue] =
+		useState<AutocompleterUIProps['filterValue']>('');
+	const [autocompleter, setAutocompleter] = useState<WPCompleter | null>(
 		null
 	);
-	const [ AutocompleterUI, setAutocompleterUI ] = useState<
-		( ( props: AutocompleterUIProps ) => JSX.Element | null ) | null
-	>( null );
+	const [AutocompleterUI, setAutocompleterUI] = useState<
+		((props: AutocompleterUIProps) => JSX.Element | null) | null
+	>(null);
 
-	const backspacing = useRef( false );
+	const backspacing = useRef(false);
 
-	function insertCompletion( replacement: React.ReactNode ) {
-		if ( autocompleter === null ) {
+	function insertCompletion(replacement: React.ReactNode) {
+		if (autocompleter === null) {
 			return;
 		}
 		const end = record.start;
 		const start =
 			end - autocompleter.triggerPrefix.length - filterValue.length;
-		const toInsert = create( { html: renderToString( replacement ) } );
+		const toInsert = create({ html: renderToString(replacement) });
 
-		onChange( insert( record, toInsert, start, end ) );
+		onChange(insert(record, toInsert, start, end));
 	}
 
-	function select( option: KeyedOption ) {
+	function select(option: KeyedOption) {
 		const { getOptionCompletion } = autocompleter || {};
 
-		if ( option.isDisabled ) {
+		if (option.isDisabled) {
 			return;
 		}
 
-		if ( getOptionCompletion ) {
-			const completion = getOptionCompletion( option.value, filterValue );
+		if (getOptionCompletion) {
+			const completion = getOptionCompletion(option.value, filterValue);
 
 			const isCompletionObject = (
 				obj: OptionCompletion
@@ -131,20 +131,20 @@ export function useAutocomplete( {
 				);
 			};
 
-			const completionObject = isCompletionObject( completion )
+			const completionObject = isCompletionObject(completion)
 				? completion
-				: ( {
+				: ({
 						action: 'insert-at-caret',
 						value: completion,
-				  } as InsertOption );
+				  } as InsertOption);
 
-			if ( 'replace' === completionObject.action ) {
-				onReplace( [ completionObject.value ] );
+			if ('replace' === completionObject.action) {
+				onReplace([completionObject.value]);
 				// When replacing, the component will unmount, so don't reset
 				// state (below) on an unmounted component.
 				return;
-			} else if ( 'insert-at-caret' === completionObject.action ) {
-				insertCompletion( completionObject.value );
+			} else if ('insert-at-caret' === completionObject.action) {
+				insertCompletion(completionObject.value);
 			}
 		}
 
@@ -154,11 +154,11 @@ export function useAutocomplete( {
 	}
 
 	function reset() {
-		setSelectedIndex( 0 );
-		setFilteredOptions( EMPTY_FILTERED_OPTIONS );
-		setFilterValue( '' );
-		setAutocompleter( null );
-		setAutocompleterUI( null );
+		setSelectedIndex(0);
+		setFilteredOptions(EMPTY_FILTERED_OPTIONS);
+		setFilterValue('');
+		setAutocompleter(null);
+		setAutocompleterUI(null);
 	}
 
 	/**
@@ -166,20 +166,20 @@ export function useAutocomplete( {
 	 *
 	 * @param {Array} options
 	 */
-	function onChangeOptions( options: Array< KeyedOption > ) {
+	function onChangeOptions(options: Array<KeyedOption>) {
 		setSelectedIndex(
 			options.length === filteredOptions.length ? selectedIndex : 0
 		);
-		setFilteredOptions( options );
+		setFilteredOptions(options);
 	}
 
-	function handleKeyDown( event: KeyboardEvent ) {
+	function handleKeyDown(event: KeyboardEvent) {
 		backspacing.current = event.key === 'Backspace';
 
-		if ( ! autocompleter ) {
+		if (!autocompleter) {
 			return;
 		}
-		if ( filteredOptions.length === 0 ) {
+		if (filteredOptions.length === 0) {
 			return;
 		}
 
@@ -195,17 +195,17 @@ export function useAutocomplete( {
 			return;
 		}
 
-		switch ( event.key ) {
+		switch (event.key) {
 			case 'ArrowUp': {
 				const newIndex =
-					( selectedIndex === 0
+					(selectedIndex === 0
 						? filteredOptions.length
-						: selectedIndex ) - 1;
-				setSelectedIndex( newIndex );
+						: selectedIndex) - 1;
+				setSelectedIndex(newIndex);
 				// See the related PR as to why this is necessary: https://github.com/WordPress/gutenberg/pull/54902.
-				if ( isAppleOS() ) {
+				if (isAppleOS()) {
 					speak(
-						getNodeText( filteredOptions[ newIndex ].label ),
+						getNodeText(filteredOptions[newIndex].label),
 						'assertive'
 					);
 				}
@@ -213,11 +213,11 @@ export function useAutocomplete( {
 			}
 
 			case 'ArrowDown': {
-				const newIndex = ( selectedIndex + 1 ) % filteredOptions.length;
-				setSelectedIndex( newIndex );
-				if ( isAppleOS() ) {
+				const newIndex = (selectedIndex + 1) % filteredOptions.length;
+				setSelectedIndex(newIndex);
+				if (isAppleOS()) {
 					speak(
-						getNodeText( filteredOptions[ newIndex ].label ),
+						getNodeText(filteredOptions[newIndex].label),
 						'assertive'
 					);
 				}
@@ -225,13 +225,13 @@ export function useAutocomplete( {
 			}
 
 			case 'Escape':
-				setAutocompleter( null );
-				setAutocompleterUI( null );
+				setAutocompleter(null);
+				setAutocompleterUI(null);
 				event.preventDefault();
 				break;
 
 			case 'Enter':
-				select( filteredOptions[ selectedIndex ] );
+				select(filteredOptions[selectedIndex]);
 				break;
 
 			case 'ArrowLeft':
@@ -251,29 +251,29 @@ export function useAutocomplete( {
 	// textContent is a primitive (string), memoizing is not strictly necessary
 	// but this is a preemptive performance improvement, since the autocompleter
 	// is a potential bottleneck for the editor type metric.
-	const textContent = useMemo( () => {
-		if ( isCollapsed( record ) ) {
-			return getTextContent( slice( record, 0 ) );
+	const textContent = useMemo(() => {
+		if (isCollapsed(record)) {
+			return getTextContent(slice(record, 0));
 		}
 		return '';
-	}, [ record ] );
+	}, [record]);
 
-	useEffect( () => {
-		if ( ! textContent ) {
-			if ( autocompleter ) reset();
+	useEffect(() => {
+		if (!textContent) {
+			if (autocompleter) reset();
 			return;
 		}
 
 		// Find the completer with the highest triggerPrefix index in the
 		// textContent.
-		const completer = completers.reduce< WPCompleter | null >(
-			( lastTrigger, currentCompleter ) => {
+		const completer = completers.reduce<WPCompleter | null>(
+			(lastTrigger, currentCompleter) => {
 				const triggerIndex = textContent.lastIndexOf(
 					currentCompleter.triggerPrefix
 				);
 				const lastTriggerIndex =
 					lastTrigger !== null
-						? textContent.lastIndexOf( lastTrigger.triggerPrefix )
+						? textContent.lastIndexOf(lastTrigger.triggerPrefix)
 						: -1;
 
 				return triggerIndex > lastTriggerIndex
@@ -283,13 +283,13 @@ export function useAutocomplete( {
 			null
 		);
 
-		if ( ! completer ) {
-			if ( autocompleter ) reset();
+		if (!completer) {
+			if (autocompleter) reset();
 			return;
 		}
 
 		const { allowContext, triggerPrefix } = completer;
-		const triggerIndex = textContent.lastIndexOf( triggerPrefix );
+		const triggerIndex = textContent.lastIndexOf(triggerPrefix);
 		const textWithoutTrigger = textContent.slice(
 			triggerIndex + triggerPrefix.length
 		);
@@ -300,10 +300,10 @@ export function useAutocomplete( {
 		// significantly. This could happen, for example, if `matchingWhileBackspacing`
 		// is true and one of the "words" end up being too long. If that's the case,
 		// it will be caught by this guard.
-		if ( tooDistantFromTrigger ) return;
+		if (tooDistantFromTrigger) return;
 
 		const mismatch = filteredOptions.length === 0;
-		const wordsFromTrigger = textWithoutTrigger.split( /\s/ );
+		const wordsFromTrigger = textWithoutTrigger.split(/\s/);
 		// We need to allow the effect to run when not backspacing and if there
 		// was a mismatch. i.e when typing a trigger + the match string or when
 		// clicking in an existing trigger word on the page. We do that if we
@@ -324,66 +324,66 @@ export function useAutocomplete( {
 		const matchingWhileBackspacing =
 			backspacing.current && wordsFromTrigger.length <= 3;
 
-		if ( mismatch && ! ( matchingWhileBackspacing || hasOneTriggerWord ) ) {
-			if ( autocompleter ) reset();
+		if (mismatch && !(matchingWhileBackspacing || hasOneTriggerWord)) {
+			if (autocompleter) reset();
 			return;
 		}
 
 		const textAfterSelection = getTextContent(
-			slice( record, undefined, getTextContent( record ).length )
+			slice(record, undefined, getTextContent(record).length)
 		);
 
 		if (
 			allowContext &&
-			! allowContext(
-				textContent.slice( 0, triggerIndex ),
+			!allowContext(
+				textContent.slice(0, triggerIndex),
 				textAfterSelection
 			)
 		) {
-			if ( autocompleter ) reset();
+			if (autocompleter) reset();
 			return;
 		}
 
 		if (
-			/^\s/.test( textWithoutTrigger ) ||
-			/\s\s+$/.test( textWithoutTrigger )
+			/^\s/.test(textWithoutTrigger) ||
+			/\s\s+$/.test(textWithoutTrigger)
 		) {
-			if ( autocompleter ) reset();
+			if (autocompleter) reset();
 			return;
 		}
 
-		if ( ! /[\u0000-\uFFFF]*$/.test( textWithoutTrigger ) ) {
-			if ( autocompleter ) reset();
+		if (!/[\u0000-\uFFFF]*$/.test(textWithoutTrigger)) {
+			if (autocompleter) reset();
 			return;
 		}
 
-		const safeTrigger = escapeRegExp( completer.triggerPrefix );
-		const text = removeAccents( textContent );
+		const safeTrigger = escapeRegExp(completer.triggerPrefix);
+		const text = removeAccents(textContent);
 		const match = text
-			.slice( text.lastIndexOf( completer.triggerPrefix ) )
-			.match( new RegExp( `${ safeTrigger }([\u0000-\uFFFF]*)$` ) );
-		const query = match && match[ 1 ];
+			.slice(text.lastIndexOf(completer.triggerPrefix))
+			.match(new RegExp(`${safeTrigger}([\u0000-\uFFFF]*)$`));
+		const query = match && match[1];
 
-		setAutocompleter( completer );
-		setAutocompleterUI( () =>
+		setAutocompleter(completer);
+		setAutocompleterUI(() =>
 			completer !== autocompleter
-				? getAutoCompleterUI( completer )
+				? getAutoCompleterUI(completer)
 				: AutocompleterUI
 		);
-		setFilterValue( query === null ? '' : query );
+		setFilterValue(query === null ? '' : query);
 		// Temporarily disabling exhaustive-deps to avoid introducing unexpected side effecst.
 		// See https://github.com/WordPress/gutenberg/pull/41820
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [ textContent ] );
+	}, [textContent]);
 
-	const { key: selectedKey = '' } = filteredOptions[ selectedIndex ] || {};
+	const { key: selectedKey = '' } = filteredOptions[selectedIndex] || {};
 	const { className } = autocompleter || {};
-	const isExpanded = !! autocompleter && filteredOptions.length > 0;
+	const isExpanded = !!autocompleter && filteredOptions.length > 0;
 	const listBoxId = isExpanded
-		? `components-autocomplete-listbox-${ instanceId }`
+		? `components-autocomplete-listbox-${instanceId}`
 		: undefined;
 	const activeId = isExpanded
-		? `components-autocomplete-item-${ instanceId }-${ selectedKey }`
+		? `components-autocomplete-item-${instanceId}-${selectedKey}`
 		: null;
 	const hasSelection = record.start !== undefined;
 
@@ -393,62 +393,62 @@ export function useAutocomplete( {
 		onKeyDown: handleKeyDown,
 		popover: hasSelection && AutocompleterUI && (
 			<AutocompleterUI
-				className={ className }
-				filterValue={ filterValue }
-				instanceId={ instanceId }
-				listBoxId={ listBoxId }
-				selectedIndex={ selectedIndex }
-				onChangeOptions={ onChangeOptions }
-				onSelect={ select }
-				value={ record }
-				contentRef={ contentRef }
-				reset={ reset }
+				className={className}
+				filterValue={filterValue}
+				instanceId={instanceId}
+				listBoxId={listBoxId}
+				selectedIndex={selectedIndex}
+				onChangeOptions={onChangeOptions}
+				onSelect={select}
+				value={record}
+				contentRef={contentRef}
+				reset={reset}
 			/>
 		),
 	};
 }
 
-function useLastDifferentValue( value: UseAutocompleteProps[ 'record' ] ) {
-	const history = useRef< Set< typeof value > >( new Set() );
+function useLastDifferentValue(value: UseAutocompleteProps['record']) {
+	const history = useRef<Set<typeof value>>(new Set());
 
-	history.current.add( value );
+	history.current.add(value);
 
 	// Keep the history size to 2.
-	if ( history.current.size > 2 ) {
-		history.current.delete( Array.from( history.current )[ 0 ] );
+	if (history.current.size > 2) {
+		history.current.delete(Array.from(history.current)[0]);
 	}
 
-	return Array.from( history.current )[ 0 ];
+	return Array.from(history.current)[0];
 }
 
-export function useAutocompleteProps( options: UseAutocompleteProps ) {
-	const ref = useRef< HTMLElement >( null );
-	const onKeyDownRef = useRef< ( event: KeyboardEvent ) => void >();
+export function useAutocompleteProps(options: UseAutocompleteProps) {
+	const ref = useRef<HTMLElement>(null);
+	const onKeyDownRef = useRef<(event: KeyboardEvent) => void>();
 	const { record } = options;
-	const previousRecord = useLastDifferentValue( record );
-	const { popover, listBoxId, activeId, onKeyDown } = useAutocomplete( {
+	const previousRecord = useLastDifferentValue(record);
+	const { popover, listBoxId, activeId, onKeyDown } = useAutocomplete({
 		...options,
 		contentRef: ref,
-	} );
+	});
 	onKeyDownRef.current = onKeyDown;
 
-	const mergedRefs = useMergeRefs( [
+	const mergedRefs = useMergeRefs([
 		ref,
-		useRefEffect( ( element: HTMLElement ) => {
-			function _onKeyDown( event: KeyboardEvent ) {
-				onKeyDownRef.current?.( event );
+		useRefEffect((element: HTMLElement) => {
+			function _onKeyDown(event: KeyboardEvent) {
+				onKeyDownRef.current?.(event);
 			}
-			element.addEventListener( 'keydown', _onKeyDown );
+			element.addEventListener('keydown', _onKeyDown);
 			return () => {
-				element.removeEventListener( 'keydown', _onKeyDown );
+				element.removeEventListener('keydown', _onKeyDown);
 			};
-		}, [] ),
-	] );
+		}, []),
+	]);
 
 	// We only want to show the popover if the user has typed something.
 	const didUserInput = record.text !== previousRecord?.text;
 
-	if ( ! didUserInput ) {
+	if (!didUserInput) {
 		return { ref: mergedRefs };
 	}
 
@@ -461,16 +461,16 @@ export function useAutocompleteProps( options: UseAutocompleteProps ) {
 	};
 }
 
-export default function Autocomplete( {
+export default function Autocomplete({
 	children,
 	isSelected,
 	...options
-}: AutocompleteProps ) {
-	const { popover, ...props } = useAutocomplete( options );
+}: AutocompleteProps) {
+	const { popover, ...props } = useAutocomplete(options);
 	return (
 		<>
-			{ children( props ) }
-			{ isSelected && popover }
+			{children(props)}
+			{isSelected && popover}
 		</>
 	);
 }

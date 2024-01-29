@@ -13,24 +13,24 @@ const history = createBrowserHistory();
 const originalHistoryPush = history.push;
 const originalHistoryReplace = history.replace;
 
-function push( params, state ) {
-	const currentArgs = getQueryArgs( window.location.href );
+function push(params, state) {
+	const currentArgs = getQueryArgs(window.location.href);
 	const currentUrlWithoutArgs = removeQueryArgs(
 		window.location.href,
-		...Object.keys( currentArgs )
+		...Object.keys(currentArgs)
 	);
-	const newUrl = addQueryArgs( currentUrlWithoutArgs, params );
-	return originalHistoryPush.call( history, newUrl, state );
+	const newUrl = addQueryArgs(currentUrlWithoutArgs, params);
+	return originalHistoryPush.call(history, newUrl, state);
 }
 
-function replace( params, state ) {
-	const currentArgs = getQueryArgs( window.location.href );
+function replace(params, state) {
+	const currentArgs = getQueryArgs(window.location.href);
 	const currentUrlWithoutArgs = removeQueryArgs(
 		window.location.href,
-		...Object.keys( currentArgs )
+		...Object.keys(currentArgs)
 	);
-	const newUrl = addQueryArgs( currentUrlWithoutArgs, params );
-	return originalHistoryReplace.call( history, newUrl, state );
+	const newUrl = addQueryArgs(currentUrlWithoutArgs, params);
+	return originalHistoryReplace.call(history, newUrl, state);
 }
 
 history.push = push;

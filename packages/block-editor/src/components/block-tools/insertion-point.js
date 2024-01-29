@@ -19,14 +19,23 @@ import { store as blockEditorStore } from '../../store';
 import BlockPopoverInbetween from '../block-popover/inbetween';
 import BlockDropZonePopover from '../block-popover/drop-zone';
 
-export const InsertionPointOpenRef = createContext();
+export const InsertionPointOpenRef = createContext(null);
 
-function InbetweenInsertionPointPopover( {
+/**
+ *
+ * @param  __unstablePopoverSlot.__unstablePopoverSlot
+ * @param  __unstablePopoverSlot
+ * @param  __unstableContentRef
+ * @param  __unstablePopoverSlot.__unstableContentRef
+ * @return {JSX.Element|null}
+ * @class
+ */
+function InbetweenInsertionPointPopover({
 	__unstablePopoverSlot,
 	__unstableContentRef,
-} ) {
-	const { selectBlock, hideInsertionPoint } = useDispatch( blockEditorStore );
-	const openRef = useContext( InsertionPointOpenRef );
+}) {
+	const { selectBlock, hideInsertionPoint } = useDispatch(blockEditorStore);
+	const openRef = useContext(InsertionPointOpenRef);
 	const ref = useRef();
 	const {
 		orientation,
@@ -36,7 +45,7 @@ function InbetweenInsertionPointPopover( {
 		isInserterShown,
 		isDistractionFree,
 		isNavigationMode,
-	} = useSelect( ( select ) => {
+	} = useSelect((select) => {
 		const {
 			getBlockOrder,
 			getBlockListSettings,
@@ -46,23 +55,23 @@ function InbetweenInsertionPointPopover( {
 			getNextBlockClientId,
 			getSettings,
 			isNavigationMode: _isNavigationMode,
-		} = select( blockEditorStore );
+		} = select(blockEditorStore);
 		const insertionPoint = getBlockInsertionPoint();
-		const order = getBlockOrder( insertionPoint.rootClientId );
+		const order = getBlockOrder(insertionPoint.rootClientId);
 
-		if ( ! order.length ) {
+		if (!order.length) {
 			return {};
 		}
 
-		let _previousClientId = order[ insertionPoint.index - 1 ];
-		let _nextClientId = order[ insertionPoint.index ];
+		let _previousClientId = order[insertionPoint.index - 1];
+		let _nextClientId = order[insertionPoint.index];
 
-		while ( isBlockBeingDragged( _previousClientId ) ) {
-			_previousClientId = getPreviousBlockClientId( _previousClientId );
+		while (isBlockBeingDragged(_previousClientId)) {
+			_previousClientId = getPreviousBlockClientId(_previousClientId);
 		}
 
-		while ( isBlockBeingDragged( _nextClientId ) ) {
-			_nextClientId = getNextBlockClientId( _nextClientId );
+		while (isBlockBeingDragged(_nextClientId)) {
+			_nextClientId = getNextBlockClientId(_nextClientId);
 		}
 
 		const settings = getSettings();
@@ -71,35 +80,35 @@ function InbetweenInsertionPointPopover( {
 			previousClientId: _previousClientId,
 			nextClientId: _nextClientId,
 			orientation:
-				getBlockListSettings( insertionPoint.rootClientId )
+				getBlockListSettings(insertionPoint.rootClientId)
 					?.orientation || 'vertical',
 			rootClientId: insertionPoint.rootClientId,
 			isNavigationMode: _isNavigationMode(),
 			isDistractionFree: settings.isDistractionFree,
 			isInserterShown: insertionPoint?.__unstableWithInserter,
 		};
-	}, [] );
+	}, []);
 
 	const disableMotion = useReducedMotion();
 
-	function onClick( event ) {
-		if ( event.target === ref.current && nextClientId ) {
-			selectBlock( nextClientId, -1 );
+	function onClick(event) {
+		if (event.target === ref.current && nextClientId) {
+			selectBlock(nextClientId, -1);
 		}
 	}
 
-	function maybeHideInserterPoint( event ) {
+	function maybeHideInserterPoint(event) {
 		// Only hide the inserter if it's triggered on the wrapper,
 		// and the inserter is not open.
-		if ( event.target === ref.current && ! openRef.current ) {
+		if (event.target === ref.current && !openRef.current) {
 			hideInsertionPoint();
 		}
 	}
 
-	function onFocus( event ) {
+	function onFocus(event) {
 		// Only handle click on the wrapper specifically, and not an event
 		// bubbled from the inserter itself.
-		if ( event.target !== ref.current ) {
+		if (event.target !== ref.current) {
 			openRef.current = true;
 		}
 	}
@@ -134,7 +143,7 @@ function InbetweenInsertionPointPopover( {
 		},
 	};
 
-	if ( isDistractionFree && ! isNavigationMode ) {
+	if (isDistractionFree && !isNavigationMode) {
 		return null;
 	}
 
@@ -145,79 +154,84 @@ function InbetweenInsertionPointPopover( {
 
 	return (
 		<BlockPopoverInbetween
-			previousClientId={ previousClientId }
-			nextClientId={ nextClientId }
-			__unstablePopoverSlot={ __unstablePopoverSlot }
-			__unstableContentRef={ __unstableContentRef }
+			previousClientId={previousClientId}
+			nextClientId={nextClientId}
+			__unstablePopoverSlot={__unstablePopoverSlot}
+			__unstableContentRef={__unstableContentRef}
 		>
 			<motion.div
-				layout={ ! disableMotion }
-				initial={ disableMotion ? 'rest' : 'start' }
+				layout={!disableMotion}
+				initial={disableMotion ? 'rest' : 'start'}
 				animate="rest"
 				whileHover="hover"
 				whileTap="pressed"
 				exit="start"
-				ref={ ref }
-				tabIndex={ -1 }
-				onClick={ onClick }
-				onFocus={ onFocus }
-				className={ classnames( className, {
+				ref={ref}
+				tabIndex={-1}
+				onClick={onClick}
+				onFocus={onFocus}
+				className={classnames(className, {
 					'is-with-inserter': isInserterShown,
-				} ) }
-				onHoverEnd={ maybeHideInserterPoint }
+				})}
+				onHoverEnd={maybeHideInserterPoint}
 			>
 				<motion.div
-					variants={ lineVariants }
+					variants={lineVariants}
 					className="block-editor-block-list__insertion-point-indicator"
 					data-testid="block-list-insertion-point-indicator"
 				/>
-				{ isInserterShown && (
+				{isInserterShown && (
 					<motion.div
-						variants={ inserterVariants }
-						className={ classnames(
+						variants={inserterVariants}
+						className={classnames(
 							'block-editor-block-list__insertion-point-inserter'
-						) }
+						)}
 					>
 						<Inserter
 							position="bottom center"
-							clientId={ nextClientId }
-							rootClientId={ rootClientId }
+							clientId={nextClientId}
+							rootClientId={rootClientId}
 							__experimentalIsQuick
-							onToggle={ ( isOpen ) => {
+							onToggle={(isOpen) => {
 								openRef.current = isOpen;
-							} }
-							onSelectOrClose={ () => {
+							}}
+							onSelectOrClose={() => {
 								openRef.current = false;
-							} }
+							}}
 						/>
 					</motion.div>
-				) }
+				)}
 			</motion.div>
 		</BlockPopoverInbetween>
 	);
 }
 
-export default function InsertionPoint( props ) {
+/**
+ * @param {*} props
+ * @return {JSX.Element|null}
+ * @class
+ */
+export default function InsertionPoint(props) {
 	const { insertionPoint, isVisible, isBlockListEmpty } = useSelect(
-		( select ) => {
+		(select) => {
 			const {
 				getBlockInsertionPoint,
 				isBlockInsertionPointVisible,
 				getBlockCount,
-			} = select( blockEditorStore );
+			} = select(blockEditorStore);
 			const blockInsertionPoint = getBlockInsertionPoint();
 			return {
 				insertionPoint: blockInsertionPoint,
 				isVisible: isBlockInsertionPointVisible(),
 				isBlockListEmpty:
-					getBlockCount( blockInsertionPoint?.rootClientId ) === 0,
+					getBlockCount(blockInsertionPoint?.rootClientId) === 0,
 			};
 		},
 		[]
 	);
 
 	if (
-		! isVisible ||
+		!isVisible ||
 		// Don't render the insertion point if the block list is empty.
 		// The insertion point will be represented by the appender instead.
 		isBlockListEmpty
@@ -232,10 +246,10 @@ export default function InsertionPoint( props ) {
 	return insertionPoint.operation === 'replace' ? (
 		<BlockDropZonePopover
 			// Force remount to trigger the animation.
-			key={ `${ insertionPoint.rootClientId }-${ insertionPoint.index }` }
-			{ ...props }
+			key={`${insertionPoint.rootClientId}-${insertionPoint.index}`}
+			{...props}
 		/>
 	) : (
-		<InbetweenInsertionPointPopover { ...props } />
+		<InbetweenInsertionPointPopover {...props} />
 	);
 }
