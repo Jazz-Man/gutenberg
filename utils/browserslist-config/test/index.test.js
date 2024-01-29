@@ -6,7 +6,7 @@ import browserslist from 'browserslist';
 /**
  * Internal dependencies
  */
-import config from '../';
+import config from '../index';
 
 it( 'should export an array', () => {
 	expect( Array.isArray( config ) ).toBe( true );

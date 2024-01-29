@@ -9,9 +9,6 @@
 		"WordPress",
 		"editor"
 	],
-	"workspaces": [
-		"packages/*"
-	],
 	"homepage": "https://github.com/WordPress/gutenberg/",
 	"repository": "git+https://github.com/WordPress/gutenberg.git",
 	"bugs": {
