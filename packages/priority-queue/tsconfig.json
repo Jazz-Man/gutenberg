@@ -5,5 +5,8 @@
 		"declarationDir": "build-types",
 		"types": [ "requestidlecallback" ]
 	},
-	"include": [ "src/**/*" ]
+	"include": [ "src/**/*" ],
+	"exclude": [
+		"src/test"
+	]
 }

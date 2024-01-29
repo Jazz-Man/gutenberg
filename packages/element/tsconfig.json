@@ -7,6 +7,9 @@
 		"noImplicitAny": false,
 		"strictNullChecks": false
 	},
-	"references": [ { "path": "../escape-html" } ],
-	"include": [ "src/**/*" ]
+//	"references": [ { "path": "../escape-html" } ],
+	"include": [ "src/**/*" ],
+	"exclude": [
+		"src/test"
+	]
 }

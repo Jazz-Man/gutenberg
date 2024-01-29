@@ -8,7 +8,7 @@
 		"module": "esnext",
 		"lib": [ "dom", "esnext" ],
 		"declaration": true,
-		"declarationMap": true,
+		"declarationMap": false,
 		"composite": true,
 		"emitDeclarationOnly": true,
 		"isolatedModules": true,

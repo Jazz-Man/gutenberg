@@ -4,9 +4,10 @@
 		"rootDir": "src",
 		"declarationDir": "build-types"
 	},
-	"references": [ { "path": "../hooks" } ],
 	"include": [ "src/**/*" ],
 	"exclude": [
-		"src/test"
+		"src/store/test",
+		"src/api/test",
+		"src/api/**/test"
 	]
 }

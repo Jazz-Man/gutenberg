@@ -40,5 +40,8 @@
 	},
 	"publishConfig": {
 		"access": "public"
+	},
+	"devDependencies": {
+		"@wordpress/config": "workspace:*"
 	}
 }

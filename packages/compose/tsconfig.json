@@ -14,5 +14,11 @@
 		{ "path": "../priority-queue" },
 		{ "path": "../undo-manager" }
 	],
-	"include": [ "src/**/*" ]
+	"include": [ "src/**/*" ],
+	"exclude": [
+		"src/higher-order/**/test",
+		"src/higher-order/test",
+		"src/hooks/**/test",
+		"src/utils/**/test",
+	]
 }

@@ -16,5 +16,9 @@
 		{ "path": "../i18n" },
 		{ "path": "../keycodes" }
 	],
-	"include": [ "src/**/*" ]
+	"include": [ "src/**/*" ],
+	"exclude": [
+		"src/store/test",
+		"src/test",
+	]
 }

@@ -4,5 +4,8 @@
 		"rootDir": "src",
 		"declarationDir": "build-types"
 	},
-	"include": [ "src/**/*" ]
+	"include": [ "src/**/*" ],
+	"exclude": [
+		"src/test"
+	]
 }
