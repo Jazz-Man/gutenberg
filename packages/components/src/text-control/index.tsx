@@ -7,8 +7,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { forwardRef } from '@wordpress/element';
+import { useInstanceId } from '@gutenberg/compose';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -67,8 +67,8 @@ function UnforwardedTextControl(
  * TextControl components let users enter and edit text.
  *
  * ```jsx
- * import { TextControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { TextControl } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyTextControl = () => {
  *   const [ className, setClassName ] = useState( '' );

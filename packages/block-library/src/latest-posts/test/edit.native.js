@@ -11,9 +11,9 @@ import {
 /**
  * WordPress dependencies
  */
-import { getBlockTypes, unregisterBlockType } from '@wordpress/blocks';
-import { registerCoreBlocks } from '@wordpress/block-library';
-import apiFetch from '@wordpress/api-fetch';
+import { getBlockTypes, unregisterBlockType } from '@gutenberg/blocks';
+import { registerCoreBlocks } from '@gutenberg/block-library';
+import apiFetch from '@gutenberg/api-fetch';
 
 beforeAll( () => {
 	// Register all core blocks

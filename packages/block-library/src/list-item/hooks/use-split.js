@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useCallback, useRef } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { cloneBlock, createBlock } from '@wordpress/blocks';
+import { useCallback, useRef } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { cloneBlock, createBlock } from '@gutenberg/blocks';
 
 export default function useSplit( clientId ) {
 	// We can not rely on the isAfterOriginal parameter of the callback,

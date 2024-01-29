@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { useState, useCallback } from '@wordpress/element';
+import { useSelect } from '@gutenberg/data';
+import { useState, useCallback } from '@gutenberg/element';
 import {
 	useThrottle,
 	__experimentalUseDropZone as useDropZone,
-} from '@wordpress/compose';
-import { isRTL } from '@wordpress/i18n';
+} from '@gutenberg/compose';
+import { isRTL } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

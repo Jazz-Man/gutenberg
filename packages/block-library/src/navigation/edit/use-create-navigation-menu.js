@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { serialize } from '@wordpress/blocks';
-import { store as coreStore } from '@wordpress/core-data';
-import { useDispatch } from '@wordpress/data';
-import { useState, useCallback } from '@wordpress/element';
+import { serialize } from '@gutenberg/blocks';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useDispatch } from '@gutenberg/data';
+import { useState, useCallback } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -1,13 +1,13 @@
 # Entities and Undo/Redo.
 
-The WordPress editors, whether it's the post or site editor, manipulate what we call entity records. These are objects that represent a post, a page, a user, a term, a template, etc. They are the data that is stored in the database and that is manipulated by the editor. Each editor can fetch, edit and save multiple entity records at the same time. 
+The WordPress editors, whether it's the post or site editor, manipulate what we call entity records. These are objects that represent a post, a page, a user, a term, a template, etc. They are the data that is stored in the database and that is manipulated by the editor. Each editor can fetch, edit and save multiple entity records at the same time.
 
 For instance, when opening a page in the site editor:
  - you can edit properties of the page itself (title, content...)
  - you can edit properties of the template of the page (content of the template, design...)
  - you can edit properties of template parts (header, footer) used with the template.
 
-The editor keeps track of all these modifications and orchestrates the saving of all these modified records. This happens within the `@wordpress/core-data` package.
+The editor keeps track of all these modifications and orchestrates the saving of all these modified records. This happens within the `@gutenberg/core-data` package.
 
 
 ## Editing entities
@@ -20,8 +20,8 @@ wp.data.select( 'core' ).getEntityRecord( 'postType', 'post', 1 );
 
 Once the entity is loaded, you can edit it. For example, the following code sets the title of the post to "Hello World". For each fetched entity record, the `core-data` store keeps track of:
  - the "persisted" record: The last state of the record as it was fetched from the backend.
- - A list of "edits": Unsaved local modifications for one or several properties of the record. 
- 
+ - A list of "edits": Unsaved local modifications for one or several properties of the record.
+
 The package also exposes a set of actions to manipulate the fetched entity records.
 
 To edit an entity record, you can call `editEntityRecord`, which takes the entity type, the entity ID and the new entity record as parameters. The following example sets the title of the post with ID 1 to "Hello World".
@@ -42,12 +42,12 @@ Since the WordPress editors allow multiple entity records to be edited at the sa
 
 And to be able to perform both undo and redo operations properly, each modification in the list of edits contains the following information:
 
- - Entity kind and name: Each entity in core-data is identified by the pair _(kind, name)_. This corresponds to the identifier of the modified entity. 
+ - Entity kind and name: Each entity in core-data is identified by the pair _(kind, name)_. This corresponds to the identifier of the modified entity.
  - Entity Record ID: The ID of the modified record.
  - Property: The name of the modified property.
  - From: The previous value of the property (needed to apply the undo operation).
  - To: The new value of the property (needed to apply the redo operation).
- 
+
 For example, let's say a user edits the title of a post, followed by a modification to the post slug, and then a modification of the title of a reusable block used with the post. The following information is stored in the undo/redo stack:
 
  - `[ { kind: 'postType', name: 'post', id: 1, property: 'title', from: '', to: 'Hello World' } ]`

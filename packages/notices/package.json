@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/notices",
+	"name": "@gutenberg/notices",
 	"version": "4.17.0",
 	"description": "State management for notices.",
 	"author": "The WordPress Contributors",
@@ -27,8 +27,8 @@
 	"types": "build-types",
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/a11y": "workspace:*",
-		"@wordpress/data": "workspace:*"
+		"@gutenberg/a11y": "workspace:*",
+		"@gutenberg/data": "workspace:*"
 	},
 	"peerDependencies": {
 		"react": "^18.0.0"

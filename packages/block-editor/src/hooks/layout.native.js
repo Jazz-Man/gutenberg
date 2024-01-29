@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { removeFilter } from '@wordpress/hooks';
+import { removeFilter } from '@gutenberg/hooks';
 
 /**
  * Internal dependencies

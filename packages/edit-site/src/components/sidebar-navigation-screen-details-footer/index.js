@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { humanTimeDiff } from '@wordpress/date';
-import { createInterpolateElement } from '@wordpress/element';
-import { addQueryArgs } from '@wordpress/url';
+import { __, sprintf } from '@gutenberg/i18n';
+import { humanTimeDiff } from '@gutenberg/date';
+import { createInterpolateElement } from '@gutenberg/element';
+import { addQueryArgs } from '@gutenberg/url';
 import {
 	Icon,
 	__experimentalItemGroup as ItemGroup,
-} from '@wordpress/components';
-import { backup } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { backup } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

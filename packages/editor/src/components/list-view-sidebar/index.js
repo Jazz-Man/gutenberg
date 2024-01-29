@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalListView as ListView } from '@wordpress/block-editor';
-import { Button, TabPanel } from '@wordpress/components';
-import { useFocusOnMount, useMergeRefs } from '@wordpress/compose';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { focus } from '@wordpress/dom';
-import { useCallback, useRef, useState } from '@wordpress/element';
-import { __, _x } from '@wordpress/i18n';
-import { closeSmall } from '@wordpress/icons';
-import { useShortcut } from '@wordpress/keyboard-shortcuts';
-import { ESCAPE } from '@wordpress/keycodes';
+import { __experimentalListView as ListView } from '@gutenberg/block-editor';
+import { Button, TabPanel } from '@gutenberg/components';
+import { useFocusOnMount, useMergeRefs } from '@gutenberg/compose';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { focus } from '@gutenberg/dom';
+import { useCallback, useRef, useState } from '@gutenberg/element';
+import { __, _x } from '@gutenberg/i18n';
+import { closeSmall } from '@gutenberg/icons';
+import { useShortcut } from '@gutenberg/keyboard-shortcuts';
+import { ESCAPE } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

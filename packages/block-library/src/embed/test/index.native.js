@@ -19,11 +19,11 @@ import {
 	getBlockTypes,
 	setDefaultBlockName,
 	unregisterBlockType,
-} from '@wordpress/blocks';
-import fetchRequest from '@wordpress/api-fetch';
-import { store as coreStore } from '@wordpress/core-data';
-import { dispatch } from '@wordpress/data';
-import { requestPreview } from '@wordpress/react-native-bridge';
+} from '@gutenberg/blocks';
+import fetchRequest from '@gutenberg/api-fetch';
+import { store as coreStore } from '@gutenberg/core-data';
+import { dispatch } from '@gutenberg/data';
+import { requestPreview } from '@gutenberg/react-native-bridge';
 
 /**
  * Internal dependencies
@@ -41,7 +41,7 @@ jest.mock( 'react-native-modal', () => {
 } );
 
 // Mock debounce to prevent potentially belated state updates.
-jest.mock( '@wordpress/compose/src/utils/debounce', () => ( {
+jest.mock( '@gutenberg/compose/src/utils/debounce', () => ( {
 	debounce: ( fn ) => {
 		fn.cancel = jest.fn();
 		return fn;

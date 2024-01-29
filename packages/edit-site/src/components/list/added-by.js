@@ -7,17 +7,17 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Icon, __experimentalHStack as HStack } from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
-import { useState } from '@wordpress/element';
+import { Icon, __experimentalHStack as HStack } from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
+import { useState } from '@gutenberg/element';
 import {
 	commentAuthorAvatar as authorIcon,
 	layout as themeIcon,
 	plugins as pluginIcon,
 	globe as globeIcon,
-} from '@wordpress/icons';
-import { _x } from '@wordpress/i18n';
+} from '@gutenberg/icons';
+import { _x } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

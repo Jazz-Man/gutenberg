@@ -8,7 +8,7 @@ import { findAll } from 'highlight-words-core';
 /**
  * WordPress dependencies
  */
-import { createElement } from '@wordpress/element';
+import { createElement } from '@gutenberg/element';
 
 /**
  * Source:

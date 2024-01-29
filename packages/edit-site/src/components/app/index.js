@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { SlotFillProvider } from '@wordpress/components';
-import { UnsavedChangesWarning } from '@wordpress/editor';
-import { store as noticesStore } from '@wordpress/notices';
-import { useDispatch } from '@wordpress/data';
-import { __, sprintf } from '@wordpress/i18n';
-import { PluginArea } from '@wordpress/plugins';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { SlotFillProvider } from '@gutenberg/components';
+import { UnsavedChangesWarning } from '@gutenberg/editor';
+import { store as noticesStore } from '@gutenberg/notices';
+import { useDispatch } from '@gutenberg/data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { PluginArea } from '@gutenberg/plugins';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

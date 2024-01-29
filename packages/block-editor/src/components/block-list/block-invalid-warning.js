@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
-import { Button, Modal } from '@wordpress/components';
-import { useState, useCallback, useMemo } from '@wordpress/element';
-import { createBlock, rawHandler } from '@wordpress/blocks';
-import { useDispatch, useSelect } from '@wordpress/data';
+import { __, _x } from '@gutenberg/i18n';
+import { Button, Modal } from '@gutenberg/components';
+import { useState, useCallback, useMemo } from '@gutenberg/element';
+import { createBlock, rawHandler } from '@gutenberg/blocks';
+import { useDispatch, useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

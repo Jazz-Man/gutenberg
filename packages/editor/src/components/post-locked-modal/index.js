@@ -1,19 +1,19 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	Modal,
 	Button,
 	ExternalLink,
 	__experimentalHStack as HStack,
-} from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { addQueryArgs } from '@wordpress/url';
-import { useEffect, createInterpolateElement } from '@wordpress/element';
-import { addAction, removeAction } from '@wordpress/hooks';
-import { useInstanceId } from '@wordpress/compose';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { addQueryArgs } from '@gutenberg/url';
+import { useEffect, createInterpolateElement } from '@gutenberg/element';
+import { addAction, removeAction } from '@gutenberg/hooks';
+import { useInstanceId } from '@gutenberg/compose';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { toggleFormat } from '@wordpress/rich-text';
+import { __ } from '@gutenberg/i18n';
+import { toggleFormat } from '@gutenberg/rich-text';
 import {
 	RichTextToolbarButton,
 	RichTextShortcut,
 	__unstableRichTextInputEvent,
-} from '@wordpress/block-editor';
-import { formatItalic } from '@wordpress/icons';
+} from '@gutenberg/block-editor';
+import { formatItalic } from '@gutenberg/icons';
 
 const name = 'core/italic';
 const title = __( 'Italic' );

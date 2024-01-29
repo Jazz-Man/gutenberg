@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useMemo, useSyncExternalStore } from '@wordpress/element';
+import { useMemo, useSyncExternalStore } from '@gutenberg/element';
 
 /**
  * A new MediaQueryList object for the media query

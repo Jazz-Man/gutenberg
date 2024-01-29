@@ -7,25 +7,25 @@ import scrollIntoView from 'dom-scroll-into-view';
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
-import { __, sprintf, _n } from '@wordpress/i18n';
-import { Component, createRef } from '@wordpress/element';
-import { UP, DOWN, ENTER, TAB } from '@wordpress/keycodes';
+import deprecated from '@gutenberg/deprecated';
+import { __, sprintf, _n } from '@gutenberg/i18n';
+import { Component, createRef } from '@gutenberg/element';
+import { UP, DOWN, ENTER, TAB } from '@gutenberg/keycodes';
 import {
 	BaseControl,
 	Button,
 	Spinner,
 	withSpokenMessages,
 	Popover,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	compose,
 	debounce,
 	withInstanceId,
 	withSafeTimeout,
-} from '@wordpress/compose';
-import { withSelect } from '@wordpress/data';
-import { isURL } from '@wordpress/url';
+} from '@gutenberg/compose';
+import { withSelect } from '@gutenberg/data';
+import { isURL } from '@gutenberg/url';
 
 /**
  * Internal dependencies

@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { useRef } from '@wordpress/element';
-import { useRefEffect } from '@wordpress/compose';
-import { ENTER } from '@wordpress/keycodes';
-import { insert, remove } from '@wordpress/rich-text';
-import { getBlockTransforms, findTransform } from '@wordpress/blocks';
-import { useDispatch, useRegistry } from '@wordpress/data';
+import { useRef } from '@gutenberg/element';
+import { useRefEffect } from '@gutenberg/compose';
+import { ENTER } from '@gutenberg/keycodes';
+import { insert, remove } from '@gutenberg/rich-text';
+import { getBlockTransforms, findTransform } from '@gutenberg/blocks';
+import { useDispatch, useRegistry } from '@gutenberg/data';
 
 /**
  * Internal dependencies

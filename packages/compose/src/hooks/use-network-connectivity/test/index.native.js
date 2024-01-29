@@ -9,7 +9,7 @@ import { act, renderHook } from 'test/helpers';
 import {
 	requestConnectionStatus,
 	subscribeConnectionStatus,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 
 /**
  * Internal dependencies

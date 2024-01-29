@@ -7,7 +7,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { cloneElement, forwardRef } from '@wordpress/element';
+import { cloneElement, forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -87,8 +87,8 @@ function UnforwardedMenuItem(
  * MenuItem is a component which renders a button intended to be used in combination with the `DropdownMenu` component.
  *
  * ```jsx
- * import { MenuItem } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { MenuItem } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyMenuItem = () => {
  * 	const [ isActive, setIsActive ] = useState( true );

@@ -7,8 +7,8 @@ import 'mousetrap/plugins/global-bind/mousetrap-global-bind';
 /**
  * WordPress dependencies
  */
-import { useEffect, useRef } from '@wordpress/element';
-import { isAppleOS } from '@wordpress/keycodes';
+import { useEffect, useRef } from '@gutenberg/element';
+import { isAppleOS } from '@gutenberg/keycodes';
 
 /**
  * A block selection object.

@@ -8,9 +8,9 @@ import {
 	__experimentalSpacer as Spacer,
 	Button,
 	__experimentalText as Text,
-} from '@wordpress/components';
-import { closeSmall } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { closeSmall } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
 
 export default function InspectorPopoverHeader( {
 	title,

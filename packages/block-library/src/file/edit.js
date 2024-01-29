@@ -6,13 +6,13 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { getBlobByURL, isBlobURL, revokeBlobURL } from '@wordpress/blob';
+import { getBlobByURL, isBlobURL, revokeBlobURL } from '@gutenberg/blob';
 import {
 	__unstableGetAnimateClassName as getAnimateClassName,
 	ResizableBox,
 	ToolbarButton,
-} from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
+} from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	BlockControls,
 	BlockIcon,
@@ -22,13 +22,13 @@ import {
 	useBlockProps,
 	store as blockEditorStore,
 	__experimentalGetElementClassName,
-} from '@wordpress/block-editor';
-import { useEffect } from '@wordpress/element';
-import { useCopyToClipboard } from '@wordpress/compose';
-import { __, _x } from '@wordpress/i18n';
-import { file as icon } from '@wordpress/icons';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/block-editor';
+import { useEffect } from '@gutenberg/element';
+import { useCopyToClipboard } from '@gutenberg/compose';
+import { __, _x } from '@gutenberg/i18n';
+import { file as icon } from '@gutenberg/icons';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

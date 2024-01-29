@@ -16,8 +16,8 @@ import {
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { generateHapticFeedback } from '@wordpress/react-native-bridge';
+import { useSelect } from '@gutenberg/data';
+import { generateHapticFeedback } from '@gutenberg/react-native-bridge';
 
 /**
  * Internal dependencies

@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { useRefEffect } from '@wordpress/compose';
-import { useSelect } from '@wordpress/data';
-import { getScrollContainer } from '@wordpress/dom';
+import { useRefEffect } from '@gutenberg/compose';
+import { useSelect } from '@gutenberg/data';
+import { getScrollContainer } from '@gutenberg/dom';
 import {
 	useCallback,
 	useLayoutEffect,
 	useMemo,
 	useState,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 
 /**
  * Internal dependencies

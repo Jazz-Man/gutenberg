@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useReducedMotion } from '@wordpress/compose';
-import { useRef } from '@wordpress/element';
+import { useReducedMotion } from '@gutenberg/compose';
+import { useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

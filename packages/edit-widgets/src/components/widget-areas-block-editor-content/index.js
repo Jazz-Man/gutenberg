@@ -8,11 +8,11 @@ import {
 	BlockSelectionClearer,
 	WritingFlow,
 	__unstableEditorStyles as EditorStyles,
-} from '@wordpress/block-editor';
-import { useViewportMatch } from '@wordpress/compose';
-import { useSelect } from '@wordpress/data';
-import { useMemo } from '@wordpress/element';
-import { store as preferencesStore } from '@wordpress/preferences';
+} from '@gutenberg/block-editor';
+import { useViewportMatch } from '@gutenberg/compose';
+import { useSelect } from '@gutenberg/data';
+import { useMemo } from '@gutenberg/element';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

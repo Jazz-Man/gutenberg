@@ -7,10 +7,10 @@ The Interface Package contains the basis to start a new WordPress screen as Edit
 Install the module
 
 ```bash
-npm install @wordpress/interface --save
+npm install @gutenberg/interface --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## API Usage
 
@@ -80,8 +80,8 @@ Features are boolean values used for toggling specific editor features on or off
 Set the default values for any features on editor initialization:
 
 ```js
-import { dispatch } from '@wordpress/data';
-import { store as interfaceStore } from '@wordpress/interface';
+import { dispatch } from '@gutenberg/data';
+import { store as interfaceStore } from '@gutenberg/interface';
 
 function initialize() {
 	// ...

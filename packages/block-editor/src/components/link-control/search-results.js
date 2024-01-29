@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { VisuallyHidden, MenuGroup } from '@wordpress/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { VisuallyHidden, MenuGroup } from '@gutenberg/components';
 
 /**
  * External dependencies

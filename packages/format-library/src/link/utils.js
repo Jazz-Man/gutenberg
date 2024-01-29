@@ -12,7 +12,7 @@ import {
 	isValidQueryString,
 	getFragment,
 	isValidFragment,
-} from '@wordpress/url';
+} from '@gutenberg/url';
 
 /**
  * Check for issues with the provided href.

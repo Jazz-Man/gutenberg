@@ -14,9 +14,9 @@ module.exports = async ( { slug } ) => {
 
 	info( '' );
 	info(
-		'Installing `@wordpress/scripts` package. It might take a couple of minutes...'
+		'Installing `@gutenberg/scripts` package. It might take a couple of minutes...'
 	);
-	await command( 'npm install @wordpress/scripts --save-dev', {
+	await command( 'npm install @gutenberg/scripts --save-dev', {
 		cwd,
 	} );
 

@@ -7,12 +7,12 @@ import {
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
 	TextControl,
-} from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { useDispatch } from '@wordpress/data';
-import { useState } from '@wordpress/element';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useDispatch } from '@gutenberg/data';
+import { useState } from '@gutenberg/element';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as noticesStore } from '@gutenberg/notices';
 
 export default function AddNewPageModal( { onSave, onClose } ) {
 	const [ isCreatingPage, setIsCreatingPage ] = useState( false );

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { forwardRef, useContext } from '@wordpress/element';
+import { forwardRef, useContext } from '@gutenberg/element';
 
 /**
  * External dependencies

@@ -15,9 +15,9 @@ import {
 /**
  * WordPress dependencies
  */
-import { getBlockTypes, unregisterBlockType } from '@wordpress/blocks';
-import { registerCoreBlocks } from '@wordpress/block-library';
-import { BACKSPACE, ENTER } from '@wordpress/keycodes';
+import { getBlockTypes, unregisterBlockType } from '@gutenberg/blocks';
+import { registerCoreBlocks } from '@gutenberg/block-library';
+import { BACKSPACE, ENTER } from '@gutenberg/keycodes';
 
 beforeAll( () => {
 	// Register all core blocks

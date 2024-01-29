@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { __, _x, sprintf } from '@wordpress/i18n';
-import { __experimentalTruncate as Truncate } from '@wordpress/components';
-import { count as wordCount } from '@wordpress/wordcount';
-import { useSelect } from '@wordpress/data';
-import { decodeEntities } from '@wordpress/html-entities';
-import { store as coreStore, useEntityRecord } from '@wordpress/core-data';
-import { safeDecodeURIComponent } from '@wordpress/url';
+import { __, _x, sprintf } from '@gutenberg/i18n';
+import { __experimentalTruncate as Truncate } from '@gutenberg/components';
+import { count as wordCount } from '@gutenberg/wordcount';
+import { useSelect } from '@gutenberg/data';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { store as coreStore, useEntityRecord } from '@gutenberg/core-data';
+import { safeDecodeURIComponent } from '@gutenberg/url';
 
 /**
  * Internal dependencies

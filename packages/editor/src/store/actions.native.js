@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import RNReactNativeGutenbergBridge from '@wordpress/react-native-bridge';
+import RNReactNativeGutenbergBridge from '@gutenberg/react-native-bridge';
 
 export * from './actions.js';
 

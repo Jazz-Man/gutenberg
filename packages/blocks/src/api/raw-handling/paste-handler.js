@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { getPhrasingContentSchema, removeInvalidHTML } from '@wordpress/dom';
+import { getPhrasingContentSchema, removeInvalidHTML } from '@gutenberg/dom';
 
 /**
  * Internal dependencies

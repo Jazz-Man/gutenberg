@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { PanelBody } from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
+import { PanelBody } from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies

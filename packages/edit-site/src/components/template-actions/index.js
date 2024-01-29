@@ -1,19 +1,19 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { useState } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useState } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	DropdownMenu,
 	MenuGroup,
 	MenuItem,
 	__experimentalConfirmDialog as ConfirmDialog,
-} from '@wordpress/components';
-import { moreVertical } from '@wordpress/icons';
-import { store as noticesStore } from '@wordpress/notices';
-import { decodeEntities } from '@wordpress/html-entities';
+} from '@gutenberg/components';
+import { moreVertical } from '@gutenberg/icons';
+import { store as noticesStore } from '@gutenberg/notices';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Internal dependencies

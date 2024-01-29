@@ -6,15 +6,15 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies
  */
 import Notice from './';
 import styles from './style.scss';
-import { useCallback } from '@wordpress/element';
+import { useCallback } from '@gutenberg/element';
 
 function NoticeList() {
 	const { notices } = useSelect( ( select ) => {

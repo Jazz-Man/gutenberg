@@ -5,12 +5,12 @@ import {
 	__experimentalToolsPanelItem as ToolsPanelItem,
 	__experimentalToggleGroupControl as ToggleGroupControl,
 	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
-} from '@wordpress/components';
-import { useMemo } from '@wordpress/element';
-import { __, _x } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { useMemo } from '@gutenberg/element';
+import { __, _x } from '@gutenberg/i18n';
 
 /**
- * @typedef {import('@wordpress/components/build-types/select-control/types').SelectControlProps} SelectControlProps
+ * @typedef {import('@gutenberg/components/build-types/select-control/types').SelectControlProps} SelectControlProps
  */
 
 /**

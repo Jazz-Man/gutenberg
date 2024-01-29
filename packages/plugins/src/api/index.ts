@@ -7,9 +7,9 @@ import type { ComponentType } from 'react';
 /**
  * WordPress dependencies
  */
-import { applyFilters, doAction } from '@wordpress/hooks';
-import { plugins as pluginsIcon } from '@wordpress/icons';
-import type { IconType } from '@wordpress/components';
+import { applyFilters, doAction } from '@gutenberg/hooks';
+import { plugins as pluginsIcon } from '@gutenberg/icons';
+import type { IconType } from '@gutenberg/components';
 
 /**
  * Defined behavior of a plugin type.
@@ -94,9 +94,9 @@ const plugins = {} as Record< string, WPPlugin >;
  * @example
  * ```js
  * // Using ESNext syntax
- * import { PluginSidebar, PluginSidebarMoreMenuItem } from '@wordpress/edit-post';
- * import { registerPlugin } from '@wordpress/plugins';
- * import { more } from '@wordpress/icons';
+ * import { PluginSidebar, PluginSidebarMoreMenuItem } from '@gutenberg/edit-post';
+ * import { registerPlugin } from '@gutenberg/plugins';
+ * import { more } from '@gutenberg/icons';
  *
  * const Component = () => (
  * 	<>
@@ -201,7 +201,7 @@ export function registerPlugin(
  * @example
  * ```js
  * // Using ESNext syntax
- * import { unregisterPlugin } from '@wordpress/plugins';
+ * import { unregisterPlugin } from '@gutenberg/plugins';
  *
  * unregisterPlugin( 'plugin-name' );
  * ```

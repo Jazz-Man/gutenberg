@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useState } from '@wordpress/element';
+import { useEffect, useState } from '@gutenberg/element';
 import {
 	requestConnectionStatus,
 	subscribeConnectionStatus,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 
 /**
  * @typedef {Object} NetworkInformation

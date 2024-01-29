@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { SelectControl, Dropdown, Button, Notice } from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { __experimentalInspectorPopoverHeader as InspectorPopoverHeader } from '@wordpress/block-editor';
-import { useState, useMemo } from '@wordpress/element';
-import { addTemplate } from '@wordpress/icons';
-import { store as noticesStore } from '@wordpress/notices';
+import { __ } from '@gutenberg/i18n';
+import { SelectControl, Dropdown, Button, Notice } from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { __experimentalInspectorPopoverHeader as InspectorPopoverHeader } from '@gutenberg/block-editor';
+import { useState, useMemo } from '@gutenberg/element';
+import { addTemplate } from '@gutenberg/icons';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

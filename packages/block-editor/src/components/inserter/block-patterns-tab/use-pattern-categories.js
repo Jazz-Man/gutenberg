@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
-import { _x, _n, sprintf } from '@wordpress/i18n';
+import { useMemo } from '@gutenberg/element';
+import { _x, _n, sprintf } from '@gutenberg/i18n';
 
-import { speak } from '@wordpress/a11y';
+import { speak } from '@gutenberg/a11y';
 
 /**
  * Internal dependencies

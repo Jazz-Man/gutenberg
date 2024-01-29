@@ -17,7 +17,7 @@ import {
 /**
  * WordPress dependencies
  */
-import { ENTER } from '@wordpress/keycodes';
+import { ENTER } from '@gutenberg/keycodes';
 
 setupCoreBlocks();
 

@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { ButtonGroup, Button, Slot, Fill } from '@wordpress/components';
-import { Children } from '@wordpress/element';
+import { ButtonGroup, Button, Slot, Fill } from '@gutenberg/components';
+import { Children } from '@gutenberg/element';
 
 const noop = () => {};
 

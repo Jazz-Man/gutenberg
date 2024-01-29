@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { canvas, visitAdminPage } from '@wordpress/e2e-test-utils';
-import { addQueryArgs } from '@wordpress/url';
+import { canvas, visitAdminPage } from '@gutenberg/e2e-test-utils';
+import { addQueryArgs } from '@gutenberg/url';
 
 /**
  * @typedef {import('puppeteer-core').ElementHandle} ElementHandle

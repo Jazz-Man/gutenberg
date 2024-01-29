@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useMemo, useEffect, useRef, useState } from '@wordpress/element';
-import { _n, sprintf } from '@wordpress/i18n';
-import { useDebounce } from '@wordpress/compose';
-import { __experimentalHeading as Heading } from '@wordpress/components';
-import { speak } from '@wordpress/a11y';
+import { useMemo, useEffect, useRef, useState } from '@gutenberg/element';
+import { _n, sprintf } from '@gutenberg/i18n';
+import { useDebounce } from '@gutenberg/compose';
+import { __experimentalHeading as Heading } from '@gutenberg/components';
+import { speak } from '@gutenberg/a11y';
 
 /**
  * Internal dependencies

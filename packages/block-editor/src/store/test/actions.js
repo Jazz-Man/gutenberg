@@ -6,13 +6,13 @@ import deepFreeze from 'deep-freeze';
 /**
  * WordPress dependencies
  */
-import { createRegistry } from '@wordpress/data';
+import { createRegistry } from '@gutenberg/data';
 import {
 	getBlockTypes,
 	unregisterBlockType,
 	registerBlockType,
 	createBlock,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

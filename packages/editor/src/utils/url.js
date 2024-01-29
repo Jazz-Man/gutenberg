@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { cleanForSlug as urlCleanForSlug } from '@wordpress/url';
-import deprecated from '@wordpress/deprecated';
+import { cleanForSlug as urlCleanForSlug } from '@gutenberg/url';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Performs some basic cleanup of a string for use as a post slug

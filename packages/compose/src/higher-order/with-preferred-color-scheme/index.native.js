@@ -7,7 +7,7 @@ import usePreferredColorScheme from '../../hooks/use-preferred-color-scheme';
 /**
  * WordPress dependencies
  */
-import { useCallback } from '@wordpress/element';
+import { useCallback } from '@gutenberg/element';
 
 const withPreferredColorScheme = createHigherOrderComponent(
 	( WrappedComponent ) => ( props ) => {

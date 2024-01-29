@@ -6,14 +6,14 @@ import { paramCase as kebabCase } from 'change-case';
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+import { useState } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
 import {
 	Button,
 	TextControl,
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 function AddCustomGenericTemplateModalContent( { onClose, createTemplate } ) {
 	const [ title, setTitle ] = useState( '' );

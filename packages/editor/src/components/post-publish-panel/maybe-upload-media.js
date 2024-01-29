@@ -7,12 +7,12 @@ import {
 	Spinner,
 	__unstableMotion as motion,
 	__unstableAnimatePresence as AnimatePresence,
-} from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { useState } from '@wordpress/element';
-import { isBlobURL } from '@wordpress/blob';
+} from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { useState } from '@gutenberg/element';
+import { isBlobURL } from '@gutenberg/blob';
 
 /**
  * Internal dependencies

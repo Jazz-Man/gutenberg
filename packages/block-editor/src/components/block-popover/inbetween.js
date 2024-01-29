@@ -6,15 +6,15 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 import {
 	useMemo,
 	createContext,
 	useReducer,
 	useLayoutEffect,
-} from '@wordpress/element';
-import { Popover } from '@wordpress/components';
-import { isRTL } from '@wordpress/i18n';
+} from '@gutenberg/element';
+import { Popover } from '@gutenberg/components';
+import { isRTL } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

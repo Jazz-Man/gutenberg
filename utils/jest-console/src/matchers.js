@@ -25,7 +25,7 @@ const createErrorMessage = ( spyInfo ) => {
 		message +
 		'\n\n' +
 		`console.${ methodName }() should not be used unless explicitly expected\n` +
-		'See https://www.npmjs.com/package/@wordpress/jest-console for details.';
+		'See https://www.npmjs.com/package/@gutenberg/jest-console for details.';
 };
 
 const createSpyInfo = ( spy, matcherName, methodName, expected ) => {

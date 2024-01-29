@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { Icon, starEmpty, starFilled, starHalf } from '@wordpress/icons';
+import { __, sprintf } from '@gutenberg/i18n';
+import { Icon, starEmpty, starFilled, starHalf } from '@gutenberg/icons';
 
 function Stars( { rating } ) {
 	const stars = Math.round( rating / 0.5 ) * 0.5;

@@ -3,7 +3,7 @@
 Slot and Fill are components that have been exposed to allow developers to inject items into some predefined places in the Gutenberg admin experience.
 Please see the [SlotFill component docs](/packages/components/src/slot-fill/README.md) for more details.
 
-In order to use them, we must leverage the [@wordpress/plugins](/packages/plugins/README.md) api to register a plugin that will inject our items.
+In order to use them, we must leverage the [@gutenberg/plugins](/packages/plugins/README.md) api to register a plugin that will inject our items.
 
 ## Usage overview
 
@@ -17,8 +17,8 @@ In order to access the SlotFills, we need to do four things:
 Here is an example using the `PluginPostStatusInfo` slotFill:
 
 ```js
-import { registerPlugin } from '@wordpress/plugins';
-import { PluginPostStatusInfo } from '@wordpress/edit-post';
+import { registerPlugin } from '@gutenberg/plugins';
+import { PluginPostStatusInfo } from '@gutenberg/edit-post';
 
 const PluginPostStatusInfoTest = () => (
 	<PluginPostStatusInfo>
@@ -43,7 +43,7 @@ SlotFills are created using `createSlotFill`. This creates two components, `Slot
 /**
  * WordPress dependencies
  */
-import { createSlotFill, PanelRow } from '@wordpress/components';
+import { createSlotFill, PanelRow } from '@gutenberg/components';
 
 export const { Fill, Slot } = createSlotFill( 'PluginPostStatusInfo' );
 

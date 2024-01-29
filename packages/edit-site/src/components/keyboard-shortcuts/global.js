@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useShortcut } from '@wordpress/keyboard-shortcuts';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
+import { useShortcut } from '@gutenberg/keyboard-shortcuts';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

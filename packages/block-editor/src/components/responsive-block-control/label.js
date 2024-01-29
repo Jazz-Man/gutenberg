@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { VisuallyHidden } from '@wordpress/components';
-import { _x, sprintf } from '@wordpress/i18n';
+import { useInstanceId } from '@gutenberg/compose';
+import { VisuallyHidden } from '@gutenberg/components';
+import { _x, sprintf } from '@gutenberg/i18n';
 
 export default function ResponsiveBlockControlLabel( {
 	property,

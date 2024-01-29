@@ -6,9 +6,9 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 /**
  * WordPress dependencies
  */
-import { useCallback } from '@wordpress/element';
+import { useCallback } from '@gutenberg/element';
 
-/** @typedef {import('@wordpress/element').RefObject} RefObject */
+/** @typedef {import('@gutenberg/element').RefObject} RefObject */
 /** @typedef {import('react-native-reanimated').SharedValue} SharedValue */
 /**
  * Hook to scroll to a specified section by taking into account the Keyboard

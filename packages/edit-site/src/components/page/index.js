@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { NavigableRegion } from '@wordpress/interface';
-import { EditorSnackbars } from '@wordpress/editor';
+import { NavigableRegion } from '@gutenberg/interface';
+import { EditorSnackbars } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

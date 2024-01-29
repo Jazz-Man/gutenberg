@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import '@wordpress/core-data';
-import '@wordpress/format-library';
-import { dispatch } from '@wordpress/data';
-import { store as preferencesStore } from '@wordpress/preferences';
+import '@gutenberg/core-data';
+import '@gutenberg/format-library';
+import { dispatch } from '@gutenberg/data';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

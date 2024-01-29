@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/base-styles",
+	"name": "@gutenberg/base-styles",
 	"version": "4.40.0",
 	"description": "Base SCSS utilities and variables for WordPress.",
 	"author": "The WordPress Contributors",

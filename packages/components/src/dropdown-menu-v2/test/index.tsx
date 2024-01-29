@@ -7,7 +7,7 @@ import { press, click, hover, type } from '@ariakit/test';
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
+import { useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

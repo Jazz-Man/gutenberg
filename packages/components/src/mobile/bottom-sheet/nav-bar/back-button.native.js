@@ -6,9 +6,9 @@ import { View, Platform, Text } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Icon, arrowLeft, close } from '@wordpress/icons';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
+import { __ } from '@gutenberg/i18n';
+import { Icon, arrowLeft, close } from '@gutenberg/icons';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

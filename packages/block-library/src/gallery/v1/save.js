@@ -10,7 +10,7 @@ import {
 	RichText,
 	useBlockProps,
 	__experimentalGetElementClassName,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

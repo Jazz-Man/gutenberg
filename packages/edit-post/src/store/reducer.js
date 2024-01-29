@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { combineReducers } from '@wordpress/data';
+import { combineReducers } from '@gutenberg/data';
 
 export function publishSidebarActive( state = false, action ) {
 	switch ( action.type ) {

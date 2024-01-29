@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	hasBlockSupport,
 	store as blocksStore,
 	switchToBlockType,
 	isTemplatePart,
-} from '@wordpress/blocks';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useCommandLoader } from '@wordpress/commands';
+} from '@gutenberg/blocks';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useCommandLoader } from '@gutenberg/commands';
 import {
 	copy,
 	trash as remove,
@@ -17,7 +17,7 @@ import {
 	group,
 	ungroup,
 	moveTo as move,
-} from '@wordpress/icons';
+} from '@gutenberg/icons';
 
 /**
  * Internal dependencies

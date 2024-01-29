@@ -2,11 +2,11 @@
  * WordPress dependencies
  */
 
-import { BlockControls } from '@wordpress/block-editor';
-import { createHigherOrderComponent } from '@wordpress/compose';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { addFilter } from '@wordpress/hooks';
-import { MoveToWidgetArea } from '@wordpress/widgets';
+import { BlockControls } from '@gutenberg/block-editor';
+import { createHigherOrderComponent } from '@gutenberg/compose';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { addFilter } from '@gutenberg/hooks';
+import { MoveToWidgetArea } from '@gutenberg/widgets';
 
 /**
  * Internal dependencies

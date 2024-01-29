@@ -6,7 +6,7 @@ import {
 	setFreeformContentHandlerName,
 	setUnregisteredTypeHandlerName,
 	setGroupingBlockName,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies
@@ -264,7 +264,7 @@ const getAllBlocks = () => {
  *
  * @example
  * ```js
- * import { __experimentalGetCoreBlocks } from '@wordpress/block-library';
+ * import { __experimentalGetCoreBlocks } from '@gutenberg/block-library';
  *
  * const coreBlocks = __experimentalGetCoreBlocks();
  * ```
@@ -281,7 +281,7 @@ export const __experimentalGetCoreBlocks = () =>
  *
  * @example
  * ```js
- * import { registerCoreBlocks } from '@wordpress/block-library';
+ * import { registerCoreBlocks } from '@gutenberg/block-library';
  *
  * registerCoreBlocks();
  * ```
@@ -309,7 +309,7 @@ export const registerCoreBlocks = (
  * @param {boolean} enableFSEBlocks Whether to enable the full site editing blocks.
  * @example
  * ```js
- * import { __experimentalRegisterExperimentalCoreBlocks } from '@wordpress/block-library';
+ * import { __experimentalRegisterExperimentalCoreBlocks } from '@gutenberg/block-library';
  *
  * __experimentalRegisterExperimentalCoreBlocks( settings );
  * ```

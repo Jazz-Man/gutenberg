@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { DropdownMenu, Icon, MenuGroup, MenuItem } from '@wordpress/components';
-import { check } from '@wordpress/icons';
+import { DropdownMenu, Icon, MenuGroup, MenuItem } from '@gutenberg/components';
+import { check } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

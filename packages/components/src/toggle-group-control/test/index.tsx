@@ -7,8 +7,8 @@ import { press, click, hover, sleep } from '@ariakit/test';
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
-import { formatLowercase, formatUppercase } from '@wordpress/icons';
+import { useState } from '@gutenberg/element';
+import { formatLowercase, formatUppercase } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

@@ -6,21 +6,21 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { ResizableBox, Spinner } from '@wordpress/components';
+import { ResizableBox, Spinner } from '@gutenberg/components';
 import {
 	BlockControls,
 	BlockIcon,
 	MediaPlaceholder,
 	MediaReplaceFlow,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
-import { useViewportMatch } from '@wordpress/compose';
-import { useDispatch } from '@wordpress/data';
-import { forwardRef } from '@wordpress/element';
-import { isBlobURL } from '@wordpress/blob';
-import { store as noticesStore } from '@wordpress/notices';
-import { media as icon } from '@wordpress/icons';
+} from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { useViewportMatch } from '@gutenberg/compose';
+import { useDispatch } from '@gutenberg/data';
+import { forwardRef } from '@gutenberg/element';
+import { isBlobURL } from '@gutenberg/blob';
+import { store as noticesStore } from '@gutenberg/notices';
+import { media as icon } from '@gutenberg/icons';
 
 /**
  * Constants

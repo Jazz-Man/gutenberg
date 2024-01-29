@@ -12,13 +12,13 @@ import {
 	InspectorControls,
 	BlockIcon,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { Flex, FlexBlock, Spinner, Placeholder } from '@wordpress/components';
-import { brush as brushIcon } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
-import { useState, useCallback } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import { useEntityRecord } from '@wordpress/core-data';
+} from '@gutenberg/block-editor';
+import { Flex, FlexBlock, Spinner, Placeholder } from '@gutenberg/components';
+import { brush as brushIcon } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
+import { useState, useCallback } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import { useEntityRecord } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

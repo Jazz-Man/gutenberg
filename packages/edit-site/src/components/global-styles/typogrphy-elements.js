@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	__experimentalItemGroup as ItemGroup,
 	__experimentalVStack as VStack,
 	__experimentalHStack as HStack,
 	FlexItem,
-} from '@wordpress/components';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
+} from '@gutenberg/components';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

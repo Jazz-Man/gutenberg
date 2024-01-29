@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
-import { useMemo, useEffect } from '@wordpress/element';
-import { pipe, useAsyncList } from '@wordpress/compose';
+import { __, _x } from '@gutenberg/i18n';
+import { useMemo, useEffect } from '@gutenberg/element';
+import { pipe, useAsyncList } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

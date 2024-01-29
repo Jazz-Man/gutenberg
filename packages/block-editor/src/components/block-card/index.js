@@ -6,11 +6,11 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
-import { Button } from '@wordpress/components';
-import { chevronLeft, chevronRight } from '@wordpress/icons';
-import { __, isRTL } from '@wordpress/i18n';
-import { useSelect, useDispatch } from '@wordpress/data';
+import deprecated from '@gutenberg/deprecated';
+import { Button } from '@gutenberg/components';
+import { chevronLeft, chevronRight } from '@gutenberg/icons';
+import { __, isRTL } from '@gutenberg/i18n';
+import { useSelect, useDispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies

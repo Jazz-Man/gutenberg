@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Button } from '@wordpress/components';
+import { Button } from '@gutenberg/components';
 
 export default function SidebarButton( props ) {
 	return (

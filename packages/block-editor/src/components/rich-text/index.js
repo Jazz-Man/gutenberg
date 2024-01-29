@@ -11,14 +11,14 @@ import {
 	useCallback,
 	forwardRef,
 	createContext,
-} from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useMergeRefs } from '@wordpress/compose';
+} from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useMergeRefs } from '@gutenberg/compose';
 import {
 	__unstableUseRichText as useRichText,
 	removeFormat,
-} from '@wordpress/rich-text';
-import { Popover } from '@wordpress/components';
+} from '@gutenberg/rich-text';
+import { Popover } from '@gutenberg/components';
 
 /**
  * Internal dependencies

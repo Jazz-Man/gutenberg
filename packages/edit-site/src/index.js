@@ -1,22 +1,22 @@
 /**
  * WordPress dependencies
  */
-import { store as blocksStore } from '@wordpress/blocks';
+import { store as blocksStore } from '@gutenberg/blocks';
 import {
 	registerCoreBlocks,
 	__experimentalGetCoreBlocks,
 	__experimentalRegisterExperimentalCoreBlocks,
-} from '@wordpress/block-library';
-import { dispatch } from '@wordpress/data';
-import deprecated from '@wordpress/deprecated';
-import { createRoot } from '@wordpress/element';
-import { store as editorStore } from '@wordpress/editor';
-import { store as interfaceStore } from '@wordpress/interface';
-import { store as preferencesStore } from '@wordpress/preferences';
+} from '@gutenberg/block-library';
+import { dispatch } from '@gutenberg/data';
+import deprecated from '@gutenberg/deprecated';
+import { createRoot } from '@gutenberg/element';
+import { store as editorStore } from '@gutenberg/editor';
+import { store as interfaceStore } from '@gutenberg/interface';
+import { store as preferencesStore } from '@gutenberg/preferences';
 import {
 	registerLegacyWidgetBlock,
 	registerWidgetGroupBlock,
-} from '@wordpress/widgets';
+} from '@gutenberg/widgets';
 
 /**
  * Internal dependencies

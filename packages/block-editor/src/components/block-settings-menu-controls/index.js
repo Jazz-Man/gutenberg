@@ -6,10 +6,10 @@ import {
 	MenuGroup,
 	MenuItem,
 	__experimentalStyleProvider as StyleProvider,
-} from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { pipe } from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { pipe } from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

@@ -6,16 +6,16 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
 import {
 	AlignmentControl,
 	useBlockProps,
 	BlockControls,
 	RichText,
-} from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
+} from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
 
 export default function SiteTaglineEdit( {
 	attributes,

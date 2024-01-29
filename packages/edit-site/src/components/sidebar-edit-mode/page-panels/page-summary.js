@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalVStack as VStack } from '@wordpress/components';
+import { __experimentalVStack as VStack } from '@gutenberg/components';
 import {
 	PostAuthorPanel,
 	PostURLPanel,
 	PostSchedulePanel,
 	PostTemplatePanel,
-} from '@wordpress/editor';
+} from '@gutenberg/editor';
 
 /**
  * Internal dependencies

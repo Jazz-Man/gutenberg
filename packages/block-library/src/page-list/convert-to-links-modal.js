@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { Button, Modal } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { Button, Modal } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 export const convertDescription = __(
 	"This navigation menu displays your website's pages. Editing it will enable you to add, delete, or reorder pages. However, new pages will no longer be added automatically."

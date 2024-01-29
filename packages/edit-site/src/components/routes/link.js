@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { addQueryArgs, getQueryArgs, removeQueryArgs } from '@wordpress/url';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { addQueryArgs, getQueryArgs, removeQueryArgs } from '@gutenberg/url';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

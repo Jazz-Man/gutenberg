@@ -7,27 +7,27 @@ import SafeArea from 'react-native-safe-area';
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { withSelect } from '@wordpress/data';
+import { Component } from '@gutenberg/element';
+import { withSelect } from '@gutenberg/data';
 import {
 	BottomSheetSettings,
 	FloatingToolbar,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { compose, withPreferredColorScheme } from '@wordpress/compose';
+} from '@gutenberg/block-editor';
+import { compose, withPreferredColorScheme } from '@gutenberg/compose';
 import {
 	HTMLTextInput,
 	KeyboardAvoidingView,
 	NoticeList,
 	Tooltip,
 	__unstableAutocompletionItemsSlot as AutocompletionItemsSlot,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	AutosaveMonitor,
 	OfflineStatus,
 	store as editorStore,
-} from '@wordpress/editor';
-import { sendNativeEditorDidLayout } from '@wordpress/react-native-bridge';
+} from '@gutenberg/editor';
+import { sendNativeEditorDidLayout } from '@gutenberg/react-native-bridge';
 
 /**
  * Internal dependencies

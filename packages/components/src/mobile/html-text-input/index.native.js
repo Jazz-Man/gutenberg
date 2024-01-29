@@ -6,16 +6,16 @@ import { ScrollView, TextInput } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { parse } from '@wordpress/blocks';
-import { withDispatch, withSelect } from '@wordpress/data';
-import { addFilter, removeFilter } from '@wordpress/hooks';
+import { Component } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { parse } from '@gutenberg/blocks';
+import { withDispatch, withSelect } from '@gutenberg/data';
+import { addFilter, removeFilter } from '@gutenberg/hooks';
 import {
 	withInstanceId,
 	compose,
 	withPreferredColorScheme,
-} from '@wordpress/compose';
+} from '@gutenberg/compose';
 
 /**
  * Internal dependencies

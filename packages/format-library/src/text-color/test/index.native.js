@@ -16,10 +16,10 @@ import {
 	registerBlockType,
 	setDefaultBlockName,
 	unregisterBlockType,
-} from '@wordpress/blocks';
-import { coreBlocks } from '@wordpress/block-library';
-import { BlockControls, BlockEdit } from '@wordpress/block-editor';
-import { SlotFillProvider } from '@wordpress/components';
+} from '@gutenberg/blocks';
+import { coreBlocks } from '@gutenberg/block-library';
+import { BlockControls, BlockEdit } from '@gutenberg/block-editor';
+import { SlotFillProvider } from '@gutenberg/components';
 
 /**
  * Internal dependencies

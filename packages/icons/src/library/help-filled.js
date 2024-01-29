@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { SVG, Path } from '@wordpress/primitives';
+import { SVG, Path } from '@gutenberg/primitives';
 
 const helpFilled = (
 	<SVG

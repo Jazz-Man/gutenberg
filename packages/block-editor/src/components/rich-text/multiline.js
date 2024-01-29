@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
-import { useDispatch } from '@wordpress/data';
+import { forwardRef } from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
+import { useDispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies

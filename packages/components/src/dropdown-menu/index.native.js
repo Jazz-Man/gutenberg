@@ -6,9 +6,9 @@ import { Platform } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { BottomSheet, PanelBody } from '@wordpress/components';
-import { withPreferredColorScheme } from '@wordpress/compose';
-import { menu } from '@wordpress/icons';
+import { BottomSheet, PanelBody } from '@gutenberg/components';
+import { withPreferredColorScheme } from '@gutenberg/compose';
+import { menu } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

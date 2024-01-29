@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { SETTINGS_DEFAULTS } from '@wordpress/block-editor';
+import { SETTINGS_DEFAULTS } from '@gutenberg/block-editor';
 
 /**
  * The default post editor settings.

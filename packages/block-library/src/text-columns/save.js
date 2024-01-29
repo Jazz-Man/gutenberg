@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { RichText, useBlockProps } from '@wordpress/block-editor';
+import { RichText, useBlockProps } from '@gutenberg/block-editor';
 
 export default function save( { attributes } ) {
 	const { width, content, columns } = attributes;

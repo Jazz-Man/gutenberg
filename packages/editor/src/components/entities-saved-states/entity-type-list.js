@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { PanelBody, PanelRow } from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
-import { useContext } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { PanelBody, PanelRow } from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
+import { useContext } from '@gutenberg/element';
 
 /**
  * Internal dependencies

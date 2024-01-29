@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	justifyLeft,
 	justifyCenter,
@@ -10,7 +10,7 @@ import {
 	justifyStretch,
 	arrowRight,
 	arrowDown,
-} from '@wordpress/icons';
+} from '@gutenberg/icons';
 import {
 	Button,
 	ToggleControl,
@@ -18,7 +18,7 @@ import {
 	FlexItem,
 	__experimentalToggleGroupControl as ToggleGroupControl,
 	__experimentalToggleGroupControlOptionIcon as ToggleGroupControlOptionIcon,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

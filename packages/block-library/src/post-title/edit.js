@@ -14,11 +14,11 @@ import {
 	PlainText,
 	HeadingLevelDropdown,
 	useBlockEditingMode,
-} from '@wordpress/block-editor';
-import { ToggleControl, TextControl, PanelBody } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
-import { useEntityProp } from '@wordpress/core-data';
+} from '@gutenberg/block-editor';
+import { ToggleControl, TextControl, PanelBody } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
+import { useEntityProp } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

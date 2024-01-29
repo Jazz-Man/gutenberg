@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { store as coreStore, useEntityProp } from '@wordpress/core-data';
-import { __, sprintf } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { store as coreStore, useEntityProp } from '@gutenberg/core-data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
 
 function getAvatarSizes( sizes ) {
 	const minSize = sizes ? sizes[ 0 ] : 24;

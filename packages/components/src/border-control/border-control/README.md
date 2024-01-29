@@ -21,8 +21,8 @@ a "shape" abstraction.
 
 ```jsx
 import { useState } from 'react';
-import { __experimentalBorderControl as BorderControl } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { __experimentalBorderControl as BorderControl } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 const colors = [
 	{ name: 'Blue 20', color: '#72aee6' },

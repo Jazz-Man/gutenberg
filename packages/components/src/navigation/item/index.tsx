@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Icon, chevronLeft, chevronRight } from '@wordpress/icons';
-import { isRTL } from '@wordpress/i18n';
+import { Icon, chevronLeft, chevronRight } from '@gutenberg/icons';
+import { isRTL } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

@@ -8,7 +8,7 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
+import { useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -386,7 +386,7 @@ const getNavigationButton = ( buttonKey: keyof typeof BUTTON_TEXT ) =>
 describe( 'Navigator', () => {
 	const originalGetClientRects = window.Element.prototype.getClientRects;
 
-	// `getClientRects` needs to be mocked so that `isVisible` from the `@wordpress/dom`
+	// `getClientRects` needs to be mocked so that `isVisible` from the `@gutenberg/dom`
 	// `focusable` module can pass, in a JSDOM env where the DOM elements have no width/height.
 	const mockedGetClientRects = jest.fn( () => [
 		{

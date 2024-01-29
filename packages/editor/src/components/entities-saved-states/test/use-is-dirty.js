@@ -8,7 +8,7 @@ import { act, renderHook } from '@testing-library/react';
  */
 import { useIsDirty } from '../hooks/use-is-dirty';
 
-jest.mock( '@wordpress/data', () => {
+jest.mock( '@gutenberg/data', () => {
 	return {
 		useSelect: jest.fn().mockImplementation( ( fn ) => {
 			const select = () => {
@@ -39,7 +39,7 @@ jest.mock( '@wordpress/data', () => {
 	};
 } );
 
-jest.mock( '@wordpress/core-data', () => {
+jest.mock( '@gutenberg/core-data', () => {
 	return {
 		store: {
 			__experimentalGetDirtyEntityRecords: jest.fn(),

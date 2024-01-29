@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { toggleFormat } from '@wordpress/rich-text';
-import { RichTextToolbarButton } from '@wordpress/block-editor';
-import { button } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { toggleFormat } from '@gutenberg/rich-text';
+import { RichTextToolbarButton } from '@gutenberg/block-editor';
+import { button } from '@gutenberg/icons';
 
 const name = 'core/keyboard';
 const title = __( 'Keyboard input' );

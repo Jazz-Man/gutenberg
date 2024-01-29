@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { hasBlockSupport } from '@wordpress/blocks';
+import { hasBlockSupport } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

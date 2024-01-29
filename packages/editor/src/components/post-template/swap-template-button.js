@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { useMemo, useState, useCallback } from '@wordpress/element';
-import { decodeEntities } from '@wordpress/html-entities';
-import { __experimentalBlockPatternsList as BlockPatternsList } from '@wordpress/block-editor';
-import { MenuItem, Modal } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useDispatch } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { parse } from '@wordpress/blocks';
-import { useAsyncList } from '@wordpress/compose';
+import { useMemo, useState, useCallback } from '@gutenberg/element';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { __experimentalBlockPatternsList as BlockPatternsList } from '@gutenberg/block-editor';
+import { MenuItem, Modal } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { parse } from '@gutenberg/blocks';
+import { useAsyncList } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

@@ -48,7 +48,7 @@ Designs with a `MenuItemsChoice` option selected by default make a strong sugges
 
 ```jsx
 import { useState } from 'react';
-import { MenuGroup, MenuItemsChoice } from '@wordpress/components';
+import { MenuGroup, MenuItemsChoice } from '@gutenberg/components';
 
 const MyMenuItemsChoice = () => {
 	const [ mode, setMode ] = useState( 'visual' );

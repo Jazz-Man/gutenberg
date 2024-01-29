@@ -5,7 +5,7 @@
 ## Usage
 
 ```jsx
-import { Spinner } from '@wordpress/components';
+import { Spinner } from '@gutenberg/components';
 
 function Example() {
 	return <Spinner />;

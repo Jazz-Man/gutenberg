@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { toggleFormat, remove, applyFormat } from '@wordpress/rich-text';
+import { __ } from '@gutenberg/i18n';
+import { toggleFormat, remove, applyFormat } from '@gutenberg/rich-text';
 import {
 	RichTextToolbarButton,
 	RichTextShortcut,
-} from '@wordpress/block-editor';
-import { code as codeIcon } from '@wordpress/icons';
+} from '@gutenberg/block-editor';
+import { code as codeIcon } from '@gutenberg/icons';
 
 const name = 'core/code';
 const title = __( 'Inline code' );

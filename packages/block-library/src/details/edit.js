@@ -7,10 +7,10 @@ import {
 	useInnerBlocksProps,
 	store as blockEditorStore,
 	InspectorControls,
-} from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
-import { PanelBody, ToggleControl } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
+import { PanelBody, ToggleControl } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 const TEMPLATE = [
 	[

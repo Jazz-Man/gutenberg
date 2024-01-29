@@ -6,7 +6,7 @@ import { useSnapshot } from 'valtio';
 /**
  * WordPress dependencies
  */
-import { useMemo, useContext } from '@wordpress/element';
+import { useMemo, useContext } from '@gutenberg/element';
 
 /**
  * Internal dependencies

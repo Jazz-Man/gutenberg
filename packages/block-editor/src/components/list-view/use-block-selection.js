@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { speak } from '@wordpress/a11y';
-import { __, sprintf } from '@wordpress/i18n';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useCallback } from '@wordpress/element';
-import { UP, DOWN, HOME, END, ESCAPE } from '@wordpress/keycodes';
-import { store as blocksStore } from '@wordpress/blocks';
+import { speak } from '@gutenberg/a11y';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useCallback } from '@gutenberg/element';
+import { UP, DOWN, HOME, END, ESCAPE } from '@gutenberg/keycodes';
+import { store as blocksStore } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

@@ -12,7 +12,7 @@ Wrapping a component with `withState` provides state as props to the wrapped com
 /**
  * WordPress dependencies
  */
-import { withState } from '@wordpress/compose';
+import { withState } from '@gutenberg/compose';
 
 function MyCounter( { count, setState } ) {
 	return (

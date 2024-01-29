@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/is-shallow-equal",
+	"name": "@gutenberg/is-shallow-equal",
 	"version": "4.49.0",
 	"description": "Test for shallow equality between two objects or arrays.",
 	"author": "The WordPress Contributors",
@@ -42,6 +42,6 @@
 		"access": "public"
 	},
 	"devDependencies": {
-		"@wordpress/config": "workspace:*"
+		"@gutenberg/config": "workspace:*"
 	}
 }

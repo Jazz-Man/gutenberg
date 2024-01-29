@@ -15,14 +15,14 @@ import {
 	useSettings,
 	useInnerBlocksProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	__experimentalUseCustomUnits as useCustomUnits,
 	PanelBody,
 	__experimentalUnitControl as UnitControl,
-} from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { sprintf, __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { sprintf, __ } from '@gutenberg/i18n';
 
 function ColumnEdit( {
 	attributes: { verticalAlignment, width, templateLock, allowedBlocks },

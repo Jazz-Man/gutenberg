@@ -6,32 +6,32 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 import {
 	__unstableMotion as motion,
 	__unstableAnimatePresence as AnimatePresence,
 	__unstableUseNavigateRegions as useNavigateRegions,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	useReducedMotion,
 	useViewportMatch,
 	useResizeObserver,
-} from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
-import { useState } from '@wordpress/element';
-import { NavigableRegion } from '@wordpress/interface';
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
+} from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
+import { useState } from '@gutenberg/element';
+import { NavigableRegion } from '@gutenberg/interface';
+import { store as keyboardShortcutsStore } from '@gutenberg/keyboard-shortcuts';
 import {
 	CommandMenu,
 	privateApis as commandsPrivateApis,
-} from '@wordpress/commands';
-import { store as preferencesStore } from '@wordpress/preferences';
+} from '@gutenberg/commands';
+import { store as preferencesStore } from '@gutenberg/preferences';
 import {
 	privateApis as blockEditorPrivateApis,
 	useBlockCommands,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { privateApis as coreCommandsPrivateApis } from '@wordpress/core-commands';
+} from '@gutenberg/block-editor';
+import { privateApis as coreCommandsPrivateApis } from '@gutenberg/core-commands';
 
 /**
  * Internal dependencies

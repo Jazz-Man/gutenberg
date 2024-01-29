@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { isTextContent } from '@wordpress/dom';
+import { isTextContent } from '@gutenberg/dom';
 
 /**
  * Checks if the given node should be considered inline content, optionally

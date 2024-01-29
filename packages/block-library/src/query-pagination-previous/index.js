@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { queryPaginationPrevious as icon } from '@wordpress/icons';
+import { queryPaginationPrevious as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

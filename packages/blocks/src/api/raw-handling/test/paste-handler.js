@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { pasteHandler } from '@wordpress/blocks';
+import { pasteHandler } from '@gutenberg/blocks';
 /**
  * Internal dependencies
  */

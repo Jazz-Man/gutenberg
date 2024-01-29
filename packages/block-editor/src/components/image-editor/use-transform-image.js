@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useCallback, useMemo, useState } from '@wordpress/element';
-import { applyFilters } from '@wordpress/hooks';
+import { useCallback, useMemo, useState } from '@gutenberg/element';
+import { applyFilters } from '@gutenberg/hooks';
 
 export default function useTransformImage( {
 	url,

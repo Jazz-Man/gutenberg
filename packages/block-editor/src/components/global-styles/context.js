@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createContext } from '@wordpress/element';
+import { createContext } from '@gutenberg/element';
 
 export const DEFAULT_GLOBAL_STYLES_CONTEXT = {
 	user: {},

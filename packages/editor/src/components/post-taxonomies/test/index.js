@@ -6,9 +6,9 @@ import { render, screen } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { select } from '@wordpress/data';
-import { store as editorStore } from '@wordpress/editor';
-import { store as coreStore } from '@wordpress/core-data';
+import { select } from '@gutenberg/data';
+import { store as editorStore } from '@gutenberg/editor';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

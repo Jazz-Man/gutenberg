@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { useRef } from '@wordpress/element';
-import { useRefEffect } from '@wordpress/compose';
+import { useRef } from '@gutenberg/element';
+import { useRefEffect } from '@gutenberg/compose';
 import {
 	pasteHandler,
 	findTransform,
 	getBlockTransforms,
-} from '@wordpress/blocks';
-import { isEmpty, insert, create } from '@wordpress/rich-text';
-import { isURL } from '@wordpress/url';
+} from '@gutenberg/blocks';
+import { isEmpty, insert, create } from '@gutenberg/rich-text';
+import { isURL } from '@gutenberg/url';
 
 /**
  * Internal dependencies
@@ -18,7 +18,7 @@ import { addActiveFormats } from './utils';
 import { splitValue } from './split-value';
 import { getPasteEventData } from '../../utils/pasting';
 
-/** @typedef {import('@wordpress/rich-text').RichTextValue} RichTextValue */
+/** @typedef {import('@gutenberg/rich-text').RichTextValue} RichTextValue */
 
 export function usePasteHandler( props ) {
 	const propsRef = useRef( props );

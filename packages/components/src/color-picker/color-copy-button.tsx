@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useCopyToClipboard } from '@wordpress/compose';
-import { useState, useEffect, useRef } from '@wordpress/element';
-import { copy } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
+import { useCopyToClipboard } from '@gutenberg/compose';
+import { useState, useEffect, useRef } from '@gutenberg/element';
+import { copy } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

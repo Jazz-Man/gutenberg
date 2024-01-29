@@ -8,9 +8,9 @@ import {
 	__experimentalHeading as Heading,
 	__experimentalView as View,
 	__experimentalNavigatorToParentButton as NavigatorToParentButton,
-} from '@wordpress/components';
-import { isRTL, __ } from '@wordpress/i18n';
-import { chevronRight, chevronLeft } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { isRTL, __ } from '@gutenberg/i18n';
+import { chevronRight, chevronLeft } from '@gutenberg/icons';
 
 function ScreenHeader( { title, description, onBack } ) {
 	return (

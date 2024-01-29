@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { removep, autop } from '@wordpress/autop';
+import { removep, autop } from '@gutenberg/autop';
 
 const transforms = {
 	from: [

@@ -11,7 +11,7 @@ import ResizableBox from '..';
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
+import { useState } from '@gutenberg/element';
 
 const meta: Meta< typeof ResizableBox > = {
 	title: 'Components/ResizableBox',

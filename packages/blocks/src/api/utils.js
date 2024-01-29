@@ -8,10 +8,10 @@ import a11yPlugin from 'colord/plugins/a11y';
 /**
  * WordPress dependencies
  */
-import { Component, isValidElement } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
-import { __unstableStripHTML as stripHTML } from '@wordpress/dom';
-import { RichTextData } from '@wordpress/rich-text';
+import { Component, isValidElement } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { __unstableStripHTML as stripHTML } from '@gutenberg/dom';
+import { RichTextData } from '@gutenberg/rich-text';
 
 /**
  * Internal dependencies

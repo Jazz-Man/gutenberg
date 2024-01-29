@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { NoticeList } from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
+import { NoticeList } from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

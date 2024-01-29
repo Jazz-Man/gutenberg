@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	__experimentalToggleGroupControl as ToggleGroupControl,
 	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
 	__experimentalSpacer as Spacer,
-} from '@wordpress/components';
-import { useState } from '@wordpress/element';
+} from '@gutenberg/components';
+import { useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -67,7 +67,7 @@ function ScreenTypographyElement( { element } ) {
 					>
 						<ToggleGroupControlOption
 							value="heading"
-							/* translators: 'All' refers to selecting all heading levels 
+							/* translators: 'All' refers to selecting all heading levels
 							and applying the same style to h1-h6. */
 							label={ __( 'All' ) }
 						/>

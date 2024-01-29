@@ -6,12 +6,12 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __, _x, isRTL } from '@wordpress/i18n';
+import { __, _x, isRTL } from '@gutenberg/i18n';
 import {
 	ToolbarButton,
 	ToggleControl,
 	__experimentalToolsPanelItem as ToolsPanelItem,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	AlignmentControl,
 	BlockControls,
@@ -20,9 +20,9 @@ import {
 	useBlockProps,
 	useSettings,
 	useBlockEditingMode,
-} from '@wordpress/block-editor';
-import { createBlock } from '@wordpress/blocks';
-import { formatLtr } from '@wordpress/icons';
+} from '@gutenberg/block-editor';
+import { createBlock } from '@gutenberg/blocks';
+import { formatLtr } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

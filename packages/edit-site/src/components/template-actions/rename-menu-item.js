@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useState } from '@wordpress/element';
-import { useDispatch } from '@wordpress/data';
+import { __ } from '@gutenberg/i18n';
+import { useState } from '@gutenberg/element';
+import { useDispatch } from '@gutenberg/data';
 import {
 	Button,
 	MenuItem,
@@ -11,10 +11,10 @@ import {
 	TextControl,
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as noticesStore } from '@wordpress/notices';
-import { decodeEntities } from '@wordpress/html-entities';
+} from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Internal dependencies

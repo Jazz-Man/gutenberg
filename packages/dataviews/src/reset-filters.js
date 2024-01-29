@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { Button } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { Button } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 export default function ResetFilter( { view, onChangeView } ) {
 	return (

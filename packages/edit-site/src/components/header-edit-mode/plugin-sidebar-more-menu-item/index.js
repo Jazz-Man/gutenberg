@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { ComplementaryAreaMoreMenuItem } from '@wordpress/interface';
+import { ComplementaryAreaMoreMenuItem } from '@gutenberg/interface';
 
 /**
  * Renders a menu item in `Plugins` group in `More Menu` drop down,
@@ -34,9 +34,9 @@ import { ComplementaryAreaMoreMenuItem } from '@wordpress/interface';
  * @example
  * ```jsx
  * // Using ESNext syntax
- * import { __ } from '@wordpress/i18n';
- * import { PluginSidebarMoreMenuItem } from '@wordpress/edit-site';
- * import { more } from '@wordpress/icons';
+ * import { __ } from '@gutenberg/i18n';
+ * import { PluginSidebarMoreMenuItem } from '@gutenberg/edit-site';
+ * import { more } from '@gutenberg/icons';
  *
  * const MySidebarMoreMenuItem = () => (
  * 	<PluginSidebarMoreMenuItem

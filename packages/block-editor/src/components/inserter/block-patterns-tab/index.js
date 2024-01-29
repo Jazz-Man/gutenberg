@@ -1,17 +1,17 @@
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
-import { __, isRTL } from '@wordpress/i18n';
-import { useViewportMatch } from '@wordpress/compose';
+import { useState } from '@gutenberg/element';
+import { __, isRTL } from '@gutenberg/i18n';
+import { useViewportMatch } from '@gutenberg/compose';
 import {
 	__experimentalItemGroup as ItemGroup,
 	__experimentalItem as Item,
 	__experimentalHStack as HStack,
 	FlexBlock,
 	Button,
-} from '@wordpress/components';
-import { Icon, chevronRight, chevronLeft } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { Icon, chevronRight, chevronLeft } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

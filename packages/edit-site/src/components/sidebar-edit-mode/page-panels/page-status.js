@@ -10,15 +10,15 @@ import {
 	TextControl,
 	RadioControl,
 	VisuallyHidden,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useDispatch } from '@wordpress/data';
-import { useState, useMemo } from '@wordpress/element';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as noticesStore } from '@wordpress/notices';
-import { __experimentalInspectorPopoverHeader as InspectorPopoverHeader } from '@wordpress/block-editor';
-import { useInstanceId } from '@wordpress/compose';
-import { privateApis as editorPrivateApis } from '@wordpress/editor';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch } from '@gutenberg/data';
+import { useState, useMemo } from '@gutenberg/element';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { __experimentalInspectorPopoverHeader as InspectorPopoverHeader } from '@gutenberg/block-editor';
+import { useInstanceId } from '@gutenberg/compose';
+import { privateApis as editorPrivateApis } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

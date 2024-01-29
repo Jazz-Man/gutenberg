@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { DropdownMenu, MenuGroup } from '@wordpress/components';
-import { moreVertical } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { DropdownMenu, MenuGroup } from '@gutenberg/components';
+import { moreVertical } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useEntityProp } from '@wordpress/core-data';
-import { __, sprintf } from '@wordpress/i18n';
+import { useEntityProp } from '@gutenberg/core-data';
+import { __, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

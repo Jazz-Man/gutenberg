@@ -10,12 +10,12 @@ import {
 	__experimentalUnitControl as UnitControl,
 	__experimentalUseCustomUnits as useCustomUnits,
 	__experimentalParseQuantityAndUnitFromRawValue as parseQuantityAndUnitFromRawValue,
-} from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { useState, useMemo } from '@wordpress/element';
-import { usePrevious } from '@wordpress/compose';
-import { __, sprintf } from '@wordpress/i18n';
-import { settings } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { useState, useMemo } from '@gutenberg/element';
+import { usePrevious } from '@gutenberg/compose';
+import { __, sprintf } from '@gutenberg/i18n';
+import { settings } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

@@ -6,13 +6,13 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	Notice,
 	PanelBody,
 	RangeControl,
 	ToggleControl,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 import {
 	InspectorControls,
@@ -22,13 +22,13 @@ import {
 	__experimentalBlockVariationPicker,
 	useBlockProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { withDispatch, useDispatch, useSelect } from '@wordpress/data';
+} from '@gutenberg/block-editor';
+import { withDispatch, useDispatch, useSelect } from '@gutenberg/data';
 import {
 	createBlock,
 	createBlocksFromInnerBlocksTemplate,
 	store as blocksStore,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

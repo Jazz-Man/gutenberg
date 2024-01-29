@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { createBlobURL } from '@wordpress/blob';
-import { createBlock } from '@wordpress/blocks';
-import { select } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { getFilename } from '@wordpress/url';
+import { createBlobURL } from '@gutenberg/blob';
+import { createBlock } from '@gutenberg/blocks';
+import { select } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { getFilename } from '@gutenberg/url';
 
 const transforms = {
 	from: [

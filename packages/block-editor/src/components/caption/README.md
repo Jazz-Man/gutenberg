@@ -11,7 +11,7 @@ This component encapsulates the "caption" behaviour and styles over a `<RichText
 Renders a Caption area:
 
 ```jsx
-import { Caption } from '@wordpress/block-editor';
+import { Caption } from '@gutenberg/block-editor';
 const BlockCaption = ( {
 	onBlur,
 	onChange,

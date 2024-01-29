@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { store as coreDataStore } from '@wordpress/core-data';
-import { createRegistrySelector } from '@wordpress/data';
-import deprecated from '@wordpress/deprecated';
-import { Platform } from '@wordpress/element';
-import { store as preferencesStore } from '@wordpress/preferences';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { store as editorStore } from '@wordpress/editor';
+import { store as coreDataStore } from '@gutenberg/core-data';
+import { createRegistrySelector } from '@gutenberg/data';
+import deprecated from '@gutenberg/deprecated';
+import { Platform } from '@gutenberg/element';
+import { store as preferencesStore } from '@gutenberg/preferences';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

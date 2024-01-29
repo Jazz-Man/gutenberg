@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { login as icon } from '@wordpress/icons';
+import { login as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

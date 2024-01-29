@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { addFilter } from '@wordpress/hooks';
-import { PanelBody, TextControl, ExternalLink } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { hasBlockSupport } from '@wordpress/blocks';
-import { Platform } from '@wordpress/element';
+import { addFilter } from '@gutenberg/hooks';
+import { PanelBody, TextControl, ExternalLink } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { hasBlockSupport } from '@gutenberg/blocks';
+import { Platform } from '@gutenberg/element';
 
 /**
  * Internal dependencies

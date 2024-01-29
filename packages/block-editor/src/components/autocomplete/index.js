@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { applyFilters, hasFilter } from '@wordpress/hooks';
+import { applyFilters, hasFilter } from '@gutenberg/hooks';
 import {
 	Autocomplete,
 	__unstableUseAutocompleteProps as useAutocompleteProps,
-} from '@wordpress/components';
-import { useMemo } from '@wordpress/element';
-import { getDefaultBlockName, getBlockSupport } from '@wordpress/blocks';
+} from '@gutenberg/components';
+import { useMemo } from '@gutenberg/element';
+import { getDefaultBlockName, getBlockSupport } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

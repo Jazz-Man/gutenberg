@@ -10,10 +10,10 @@ import {
 	AlignmentControl,
 	BlockControls,
 	useBlockProps,
-} from '@wordpress/block-editor';
-import { VisuallyHidden } from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
-import { __, sprintf } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { VisuallyHidden } from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
+import { __, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

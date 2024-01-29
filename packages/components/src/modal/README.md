@@ -115,7 +115,7 @@ The following example shows you how to properly implement a modal. For the modal
 
 ```jsx
 import { useState } from 'react';
-import { Button, Modal } from '@wordpress/components';
+import { Button, Modal } from '@gutenberg/components';
 
 const MyModal = () => {
 	const [ isOpen, setOpen ] = useState( false );

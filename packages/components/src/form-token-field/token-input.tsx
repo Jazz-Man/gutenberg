@@ -7,7 +7,7 @@ import type { ChangeEvent, ForwardedRef, FocusEventHandler } from 'react';
 /**
  * WordPress dependencies
  */
-import { forwardRef, useState } from '@wordpress/element';
+import { forwardRef, useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useEffect } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { useEffect } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 /**
  * For the Navigation block editor, we need to force the block editor to contentOnly for that block.

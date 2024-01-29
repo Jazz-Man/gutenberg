@@ -6,17 +6,17 @@ import { TouchableOpacity, TouchableWithoutFeedback, Text } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { View } from '@wordpress/primitives';
+import { View } from '@gutenberg/primitives';
 
-import { __, sprintf } from '@wordpress/i18n';
-import { useRef, useState } from '@wordpress/element';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
-import { requestPreview } from '@wordpress/react-native-bridge';
-import { useSelect } from '@wordpress/data';
-import { store as editorStore } from '@wordpress/editor';
-import { BottomSheet, Icon, TextControl } from '@wordpress/components';
-import { help } from '@wordpress/icons';
-import { BlockIcon } from '@wordpress/block-editor';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useRef, useState } from '@gutenberg/element';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
+import { requestPreview } from '@gutenberg/react-native-bridge';
+import { useSelect } from '@gutenberg/data';
+import { store as editorStore } from '@gutenberg/editor';
+import { BottomSheet, Icon, TextControl } from '@gutenberg/components';
+import { help } from '@gutenberg/icons';
+import { BlockIcon } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

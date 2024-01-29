@@ -7,8 +7,8 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { __experimentalToolsPanel as ToolsPanel } from '@wordpress/components';
-import { useState } from '@wordpress/element';
+import { __experimentalToolsPanel as ToolsPanel } from '@gutenberg/components';
+import { useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -8,11 +8,11 @@ import {
 	InnerBlocks,
 	store as blockEditorStore,
 	RichText,
-} from '@wordpress/block-editor';
-import { Placeholder } from '@wordpress/components';
-import { group as groupIcon } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/block-editor';
+import { Placeholder } from '@gutenberg/components';
+import { group as groupIcon } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
 
 export default function Edit( props ) {
 	const { clientId } = props;

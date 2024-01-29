@@ -6,7 +6,7 @@ import { render } from 'test/helpers';
 /**
  * WordPress dependencies
  */
-import { Icon } from '@wordpress/components';
+import { Icon } from '@gutenberg/components';
 
 /**
  * Internal dependencies
@@ -14,7 +14,7 @@ import { Icon } from '@wordpress/components';
 import SearchEdit from '../edit.native.js';
 // react-native-aztec shouldn't be mocked because these tests are based on
 // snapshot testing where we want to keep the original component.
-jest.unmock( '@wordpress/react-native-aztec' );
+jest.unmock( '@gutenberg/react-native-aztec' );
 
 const defaultAttributes = {
 	label: 'Search',

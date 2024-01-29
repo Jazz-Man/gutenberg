@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useEffect, useRef, useState } from '@wordpress/element';
-import { isRTL } from '@wordpress/i18n';
+import { useEffect, useRef, useState } from '@gutenberg/element';
+import { isRTL } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies
@@ -34,7 +34,7 @@ const noop = () => {};
  *   __experimentalNavigationGroup as NavigationGroup,
  *   __experimentalNavigationItem as NavigationItem,
  *   __experimentalNavigationMenu as NavigationMenu,
- * } from '@wordpress/components';
+ * } from '@gutenberg/components';
  *
  * const MyNavigation = () => (
  *   <Navigation>

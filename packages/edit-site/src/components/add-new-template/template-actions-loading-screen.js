@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { Spinner, Modal } from '@wordpress/components';
+import { Spinner, Modal } from '@gutenberg/components';
 
 export default function TemplateActionsLoadingScreen() {
 	const baseCssClass = 'edit-site-template-actions-loading-screen-modal';

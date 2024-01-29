@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { createQueue } from '@wordpress/priority-queue';
+import { createQueue } from '@gutenberg/priority-queue';
 import {
 	useRef,
 	useCallback,
 	useMemo,
 	useSyncExternalStore,
 	useDebugValue,
-} from '@wordpress/element';
-import isShallowEqual from '@wordpress/is-shallow-equal';
+} from '@gutenberg/element';
+import isShallowEqual from '@gutenberg/is-shallow-equal';
 
 /**
  * Internal dependencies
@@ -250,7 +250,7 @@ function useMappingSelect( suspense, mapSelect, deps ) {
  *
  * @example
  * ```js
- * import { useSelect } from '@wordpress/data';
+ * import { useSelect } from '@gutenberg/data';
  * import { store as myCustomStore } from 'my-custom-store';
  *
  * function HammerPriceDisplay( { currency } ) {
@@ -281,7 +281,7 @@ function useMappingSelect( suspense, mapSelect, deps ) {
  * function because your component won't re-render on a data change.**
  *
  * ```js
- * import { useSelect } from '@wordpress/data';
+ * import { useSelect } from '@gutenberg/data';
  * import { store as myCustomStore } from 'my-custom-store';
  *
  * function Paste( { children } ) {

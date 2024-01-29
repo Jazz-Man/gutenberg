@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { withSelect } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { withSelect } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 function DocumentOutlineCheck( { blocks, children } ) {
 	const headings = blocks.filter(

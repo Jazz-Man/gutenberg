@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
-import { children as childrenSource } from '@wordpress/blocks';
-import { useInstanceId } from '@wordpress/compose';
-import { __unstableCreateElement } from '@wordpress/rich-text';
-import deprecated from '@wordpress/deprecated';
+import { forwardRef } from '@gutenberg/element';
+import { children as childrenSource } from '@gutenberg/blocks';
+import { useInstanceId } from '@gutenberg/compose';
+import { __unstableCreateElement } from '@gutenberg/rich-text';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

@@ -9,7 +9,7 @@ Sometimes you need to get the value something had on the previous render. `usePr
  * WordPress dependencies
  */
 import { useEffect, useState } from 'react';
-import { usePrevious } from '@wordpress/compose';
+import { usePrevious } from '@gutenberg/compose';
 
 function MyCustomElement() {
 	const [ myNumber, setMyNumber ] = useState( 5 );

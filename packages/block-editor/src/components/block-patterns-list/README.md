@@ -13,7 +13,7 @@ For more infos about blocks patterns, read [this](https://make.wordpress.org/cor
 Renders a block patterns list.
 
 ```jsx
-import { BlockPatternsList } from '@wordpress/block-editor';
+import { BlockPatternsList } from '@gutenberg/block-editor';
 
 const MyBlockPatternsList = () => (
 	<BlockPatternsList

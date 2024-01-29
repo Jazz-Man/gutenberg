@@ -8,8 +8,8 @@ Here is the basic InnerBlocks usage.
 
 
 ```js
-import { registerBlockType } from '@wordpress/blocks';
-import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { InnerBlocks, useBlockProps } from '@gutenberg/block-editor';
 
 registerBlockType( 'gutenberg-examples/example-06', {
 	// ...
@@ -154,15 +154,15 @@ When defining a descendent block, use the `ancestor` block setting. This prevent
 
 You can use a react hook called `useInnerBlocksProps` instead of the `InnerBlocks` component. This hook allows you to take more control over the markup of inner blocks areas.
 
-The `useInnerBlocksProps` is exported from the `@wordpress/block-editor` package same as the `InnerBlocks` component itself and supports everything the component does. It also works like the `useBlockProps` hook.
+The `useInnerBlocksProps` is exported from the `@gutenberg/block-editor` package same as the `InnerBlocks` component itself and supports everything the component does. It also works like the `useBlockProps` hook.
 
 Here is the basic `useInnerBlocksProps` hook usage.
 
 
 
 ```js
-import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { useBlockProps, useInnerBlocksProps } from '@gutenberg/block-editor';
 
 registerBlockType( 'gutenberg-examples/example-06', {
 	// ...
@@ -196,8 +196,8 @@ This hook can also pass objects returned from the `useBlockProps` hook to the `u
 
 
 ```js
-import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { useBlockProps, useInnerBlocksProps } from '@gutenberg/block-editor';
 
 registerBlockType( 'gutenberg-examples/example-06', {
 	// ...
@@ -235,8 +235,8 @@ Another benefit to using the hook approach is using the returned value, which is
 
 
 ```js
-import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { useBlockProps, useInnerBlocksProps } from '@gutenberg/block-editor';
 
 registerBlockType( 'gutenberg-examples/example-06', {
 	// ...

@@ -6,20 +6,20 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useViewportMatch } from '@wordpress/compose';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __, _x } from '@wordpress/i18n';
+import { useViewportMatch } from '@gutenberg/compose';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __, _x } from '@gutenberg/i18n';
 import {
 	NavigableToolbar,
 	ToolSelector,
 	store as blockEditorStore,
 	privateApis as blockEditorPrivateApis,
-} from '@wordpress/block-editor';
-import { Button, ToolbarItem } from '@wordpress/components';
-import { listView, plus } from '@wordpress/icons';
-import { useRef, useCallback } from '@wordpress/element';
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { store as preferencesStore } from '@wordpress/preferences';
+} from '@gutenberg/block-editor';
+import { Button, ToolbarItem } from '@gutenberg/components';
+import { listView, plus } from '@gutenberg/icons';
+import { useRef, useCallback } from '@gutenberg/element';
+import { store as keyboardShortcutsStore } from '@gutenberg/keyboard-shortcuts';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

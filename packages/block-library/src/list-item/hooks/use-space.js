@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useRefEffect } from '@wordpress/compose';
-import { SPACE } from '@wordpress/keycodes';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
+import { useRefEffect } from '@gutenberg/compose';
+import { SPACE } from '@gutenberg/keycodes';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

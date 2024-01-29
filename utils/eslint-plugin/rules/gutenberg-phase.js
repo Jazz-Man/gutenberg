@@ -145,7 +145,7 @@ module.exports = {
 		type: 'problem',
 		schema: [],
 		deprecated: true,
-		replacedBy: '@wordpress/is-gutenberg-plugin',
+		replacedBy: '@gutenberg/is-gutenberg-plugin',
 	},
 	create( context ) {
 		return {

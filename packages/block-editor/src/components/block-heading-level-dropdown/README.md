@@ -7,7 +7,7 @@ Uses `<ToolbarDropdownMenu>`.
 
 ```jsx
 
-import { BlockControls, HeadingLevelDropdown } from '@wordpress/block-editor';
+import { BlockControls, HeadingLevelDropdown } from '@gutenberg/block-editor';
 
 const HEADING_LEVELS = [ 0, 1, 2, 3, 4, 5, 6 ];
 

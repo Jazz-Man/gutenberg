@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as richTextStore } from '@wordpress/rich-text';
+import { useMemo } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as richTextStore } from '@gutenberg/rich-text';
 
 function formatTypesSelector( select ) {
 	return select( richTextStore ).getFormatTypes();

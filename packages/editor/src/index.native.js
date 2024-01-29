@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import '@wordpress/block-editor';
-import '@wordpress/core-data';
-import '@wordpress/rich-text';
+import '@gutenberg/block-editor';
+import '@gutenberg/core-data';
+import '@gutenberg/rich-text';
 
 /**
  * Internal dependencies

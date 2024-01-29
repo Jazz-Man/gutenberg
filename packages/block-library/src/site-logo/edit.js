@@ -6,14 +6,14 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { isBlobURL } from '@wordpress/blob';
+import { isBlobURL } from '@gutenberg/blob';
 import {
 	createInterpolateElement,
 	useEffect,
 	useState,
 	useRef,
-} from '@wordpress/element';
-import { __, isRTL } from '@wordpress/i18n';
+} from '@gutenberg/element';
+import { __, isRTL } from '@gutenberg/i18n';
 import {
 	MenuItem,
 	PanelBody,
@@ -29,8 +29,8 @@ import {
 	__experimentalItemGroup as ItemGroup,
 	__experimentalHStack as HStack,
 	__experimentalTruncate as Truncate,
-} from '@wordpress/components';
-import { useViewportMatch } from '@wordpress/compose';
+} from '@gutenberg/components';
+import { useViewportMatch } from '@gutenberg/compose';
 import {
 	BlockControls,
 	InspectorControls,
@@ -41,11 +41,11 @@ import {
 	useBlockProps,
 	store as blockEditorStore,
 	__experimentalImageEditor as ImageEditor,
-} from '@wordpress/block-editor';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { crop, upload } from '@wordpress/icons';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/block-editor';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { crop, upload } from '@gutenberg/icons';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

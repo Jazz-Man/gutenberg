@@ -6,12 +6,12 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { ToolbarButton } from '@wordpress/components';
-import { NavigableToolbar } from '@wordpress/block-editor';
-import { createPortal, useEffect, useState } from '@wordpress/element';
-import { displayShortcut, isAppleOS } from '@wordpress/keycodes';
-import { __, _x, isRTL } from '@wordpress/i18n';
-import { plus, undo as undoIcon, redo as redoIcon } from '@wordpress/icons';
+import { ToolbarButton } from '@gutenberg/components';
+import { NavigableToolbar } from '@gutenberg/block-editor';
+import { createPortal, useEffect, useState } from '@gutenberg/element';
+import { displayShortcut, isAppleOS } from '@gutenberg/keycodes';
+import { __, _x, isRTL } from '@gutenberg/i18n';
+import { plus, undo as undoIcon, redo as redoIcon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

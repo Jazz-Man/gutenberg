@@ -6,15 +6,15 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useMemo, useRef, memo } from '@wordpress/element';
+import { useMemo, useRef, memo } from '@gutenberg/element';
 import {
 	createBlock,
 	createBlocksFromInnerBlocksTemplate,
 	isReusableBlock,
 	isTemplatePart,
-} from '@wordpress/blocks';
-import { __experimentalTruncate as Truncate } from '@wordpress/components';
-import { ENTER, isAppleOS } from '@wordpress/keycodes';
+} from '@gutenberg/blocks';
+import { __experimentalTruncate as Truncate } from '@gutenberg/components';
+import { ENTER, isAppleOS } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

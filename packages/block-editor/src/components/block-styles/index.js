@@ -6,13 +6,13 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
-import { debounce, useViewportMatch } from '@wordpress/compose';
+import { useState } from '@gutenberg/element';
+import { debounce, useViewportMatch } from '@gutenberg/compose';
 import {
 	Button,
 	__experimentalTruncate as Truncate,
 	Popover,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/prettier-config",
+	"name": "@gutenberg/prettier-config",
 	"version": "3.6.0",
 	"description": "WordPress Prettier shared configuration.",
 	"author": "The WordPress Contributors",

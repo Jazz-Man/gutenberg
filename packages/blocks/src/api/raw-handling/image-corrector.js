@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createBlobURL } from '@wordpress/blob';
+import { createBlobURL } from '@gutenberg/blob';
 
 export default function imageCorrector( node ) {
 	if ( node.nodeName !== 'IMG' ) {

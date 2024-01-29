@@ -6,11 +6,11 @@ import createSelector from 'rememo';
 /**
  * WordPress dependencies
  */
-import { parse } from '@wordpress/blocks';
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as editorStore } from '@wordpress/editor';
-import { decodeEntities } from '@wordpress/html-entities';
+import { parse } from '@gutenberg/blocks';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as editorStore } from '@gutenberg/editor';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Internal dependencies

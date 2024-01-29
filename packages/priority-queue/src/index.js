@@ -50,7 +50,7 @@ import requestIdleCallback from './request-idle-callback';
  *
  * @example
  *```js
- * import { createQueue } from '@wordpress/priority-queue';
+ * import { createQueue } from '@gutenberg/priority-queue';
  *
  * const queue = createQueue();
  *

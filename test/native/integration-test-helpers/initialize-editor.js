@@ -7,9 +7,9 @@ import { v4 as uuid } from 'uuid';
 /**
  * WordPress dependencies
  */
-import { createElement, cloneElement } from '@wordpress/element';
+import { createElement, cloneElement } from '@gutenberg/element';
 // eslint-disable-next-line no-restricted-imports
-import { initializeEditor as internalInitializeEditor } from '@wordpress/edit-post';
+import { initializeEditor as internalInitializeEditor } from '@gutenberg/edit-post';
 
 /**
  * Internal dependencies

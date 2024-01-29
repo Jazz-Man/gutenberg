@@ -6,10 +6,10 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useState, useEffect } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { Button, SearchControl } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
+import { useState, useEffect } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { Button, SearchControl } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

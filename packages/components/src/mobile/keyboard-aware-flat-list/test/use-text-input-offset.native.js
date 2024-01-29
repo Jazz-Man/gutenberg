@@ -6,14 +6,14 @@ import { renderHook } from '@testing-library/react-native';
 /**
  * WordPress dependencies
  */
-import RCTAztecView from '@wordpress/react-native-aztec';
+import RCTAztecView from '@gutenberg/react-native-aztec';
 
 /**
  * Internal dependencies
  */
 import useTextInputOffset from '../use-text-input-offset';
 
-jest.mock( '@wordpress/react-native-aztec', () => ( {
+jest.mock( '@gutenberg/react-native-aztec', () => ( {
 	InputState: {
 		getCurrentFocusedElement: jest.fn(),
 	},

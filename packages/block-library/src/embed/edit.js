@@ -23,13 +23,13 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __, _x, sprintf } from '@wordpress/i18n';
-import { useState, useEffect } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useBlockProps } from '@wordpress/block-editor';
-import { store as coreStore } from '@wordpress/core-data';
-import { View } from '@wordpress/primitives';
-import { getAuthority } from '@wordpress/url';
+import { __, _x, sprintf } from '@gutenberg/i18n';
+import { useState, useEffect } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useBlockProps } from '@gutenberg/block-editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { View } from '@gutenberg/primitives';
+import { getAuthority } from '@gutenberg/url';
 
 const EmbedEdit = ( props ) => {
 	const {

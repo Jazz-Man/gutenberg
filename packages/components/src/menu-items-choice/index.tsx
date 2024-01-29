@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { check } from '@wordpress/icons';
+import { check } from '@gutenberg/icons';
 
 /**
  * Internal dependencies
@@ -16,8 +16,8 @@ const noop = () => {};
  *
  *
  * ```jsx
- * import { MenuGroup, MenuItemsChoice } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { MenuGroup, MenuItemsChoice } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyMenuItemsChoice = () => {
  * 	const [ mode, setMode ] = useState( 'visual' );

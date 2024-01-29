@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __, _x, sprintf } from '@wordpress/i18n';
-import { useMemo, useState } from '@wordpress/element';
-import { useDispatch, useSelect, useRegistry } from '@wordpress/data';
+import { __, _x, sprintf } from '@gutenberg/i18n';
+import { useMemo, useState } from '@gutenberg/element';
+import { useDispatch, useSelect, useRegistry } from '@gutenberg/data';
 import {
 	Button,
 	FlexBlock,
@@ -11,9 +11,9 @@ import {
 	SelectControl,
 	__experimentalHStack as HStack,
 	__experimentalSpacer as Spacer,
-} from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

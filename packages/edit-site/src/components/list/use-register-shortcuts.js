@@ -2,10 +2,10 @@
  * WordPress dependencies
  */
 
-import { useDispatch } from '@wordpress/data';
-import { useEffect } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
+import { useDispatch } from '@gutenberg/data';
+import { useEffect } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { store as keyboardShortcutsStore } from '@gutenberg/keyboard-shortcuts';
 
 export default function useRegisterShortcuts() {
 	const { registerShortcut } = useDispatch( keyboardShortcutsStore );

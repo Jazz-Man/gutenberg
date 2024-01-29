@@ -5,10 +5,10 @@ import {
 	TextareaControl,
 	Tooltip,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
-import { useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { Icon, info } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { useState } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { Icon, info } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

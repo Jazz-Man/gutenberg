@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Icon, blockDefault } from '@wordpress/icons';
-import { Tip, ExternalLink } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { Icon, blockDefault } from '@gutenberg/icons';
+import { Tip, ExternalLink } from '@gutenberg/components';
 
 function DownloadableBlocksNoResults() {
 	return (

@@ -6,12 +6,12 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	AlignmentControl,
 	BlockControls,
 	useBlockProps,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 /**
  * Renders the `core/comment-reply-link` block on the editor.

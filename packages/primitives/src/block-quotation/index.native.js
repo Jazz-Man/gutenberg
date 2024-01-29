@@ -5,8 +5,8 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Children, cloneElement, forwardRef } from '@wordpress/element';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
+import { Children, cloneElement, forwardRef } from '@gutenberg/element';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
 /**
  * Internal dependencies
  */

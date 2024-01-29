@@ -14,8 +14,8 @@ import {
 	__experimentalGetBorderClassesAndStyles as getBorderClassesAndStyles,
 	__experimentalGetColorClassesAndStyles as getColorClassesAndStyles,
 	__experimentalGetSpacingClassesAndStyles as getSpacingClassesAndStyles,
-} from '@wordpress/block-editor';
-import { compose } from '@wordpress/compose';
+} from '@gutenberg/block-editor';
+import { compose } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

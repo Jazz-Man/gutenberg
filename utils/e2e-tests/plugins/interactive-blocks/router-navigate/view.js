@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { store, navigate } from '@wordpress/interactivity';
+import { store, navigate } from '@gutenberg/interactivity';
 
 const { state } = store( 'router', {
 	state: {

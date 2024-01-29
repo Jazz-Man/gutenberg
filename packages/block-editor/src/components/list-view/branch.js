@@ -4,9 +4,9 @@
 import {
 	__experimentalTreeGridRow as TreeGridRow,
 	__experimentalTreeGridCell as TreeGridCell,
-} from '@wordpress/components';
-import { memo } from '@wordpress/element';
-import { AsyncModeProvider, useSelect } from '@wordpress/data';
+} from '@gutenberg/components';
+import { memo } from '@gutenberg/element';
+import { AsyncModeProvider, useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

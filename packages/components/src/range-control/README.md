@@ -83,7 +83,7 @@ Render a RangeControl to make a selection from a range of incremental values.
 
 ```jsx
 import { useState } from 'react';
-import { RangeControl } from '@wordpress/components';
+import { RangeControl } from '@gutenberg/components';
 
 const MyRangeControl = () => {
 	const [ columns, setColumns ] = useState( 2 );

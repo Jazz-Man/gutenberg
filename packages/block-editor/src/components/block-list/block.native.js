@@ -13,14 +13,14 @@ import {
 	useState,
 	useRef,
 	memo,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 import {
 	GlobalStylesContext,
 	getMergedGlobalStyles,
 	useMobileGlobalStylesColors,
 	useGlobalStyles,
 	withFilters,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	__experimentalGetAccessibleBlockLabel as getAccessibleBlockLabel,
 	getBlockType,
@@ -28,14 +28,14 @@ import {
 	isUnmodifiedBlock,
 	isUnmodifiedDefaultBlock,
 	switchToBlockType,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 import {
 	useDispatch,
 	useSelect,
 	withDispatch,
 	withSelect,
-} from '@wordpress/data';
-import { compose, ifCondition } from '@wordpress/compose';
+} from '@gutenberg/data';
+import { compose, ifCondition } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

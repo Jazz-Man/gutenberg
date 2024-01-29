@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { View } from '@wordpress/primitives';
+import { __ } from '@gutenberg/i18n';
+import { View } from '@gutenberg/primitives';
 
 /**
  * Internal dependencies

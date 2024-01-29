@@ -4,13 +4,13 @@
 import {
 	BlockInspector,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { Platform, useCallback, useContext } from '@wordpress/element';
-import { isRTL, __ } from '@wordpress/i18n';
-import { drawerLeft, drawerRight } from '@wordpress/icons';
-import { store as interfaceStore } from '@wordpress/interface';
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
+} from '@gutenberg/block-editor';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { Platform, useCallback, useContext } from '@gutenberg/element';
+import { isRTL, __ } from '@gutenberg/i18n';
+import { drawerLeft, drawerRight } from '@gutenberg/icons';
+import { store as interfaceStore } from '@gutenberg/interface';
+import { store as keyboardShortcutsStore } from '@gutenberg/keyboard-shortcuts';
 import {
 	store as editorStore,
 	PageAttributesPanel,
@@ -19,7 +19,7 @@ import {
 	PostFeaturedImagePanel,
 	PostLastRevisionPanel,
 	PostTaxonomiesPanel,
-} from '@wordpress/editor';
+} from '@gutenberg/editor';
 
 /**
  * Internal dependencies
@@ -31,7 +31,7 @@ import PluginDocumentSettingPanel from '../plugin-document-setting-panel';
 import PluginSidebarEditPost from '../plugin-sidebar';
 import TemplateSummary from '../template-summary';
 import { store as editPostStore } from '../../../store';
-import { privateApis as componentsPrivateApis } from '@wordpress/components';
+import { privateApis as componentsPrivateApis } from '@gutenberg/components';
 import { unlock } from '../../../lock-unlock';
 
 const { Tabs } = unlock( componentsPrivateApis );

@@ -6,10 +6,10 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useState, useContext, useEffect, useMemo } from '@wordpress/element';
-import { prependHTTP } from '@wordpress/url';
-import { BottomSheet, BottomSheetContext } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { useState, useContext, useEffect, useMemo } from '@gutenberg/element';
+import { prependHTTP } from '@gutenberg/url';
+import { BottomSheet, BottomSheetContext } from '@gutenberg/components';
 import {
 	create,
 	insert,
@@ -17,8 +17,8 @@ import {
 	applyFormat,
 	getTextContent,
 	slice,
-} from '@wordpress/rich-text';
-import { external, textColor } from '@wordpress/icons';
+} from '@gutenberg/rich-text';
+import { external, textColor } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

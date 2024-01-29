@@ -6,25 +6,25 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __, isRTL, sprintf } from '@wordpress/i18n';
-import { useSelect, useDispatch } from '@wordpress/data';
+import { __, isRTL, sprintf } from '@gutenberg/i18n';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	Button,
 	__experimentalText as Text,
 	__experimentalHStack as HStack,
-} from '@wordpress/components';
-import { BlockIcon } from '@wordpress/block-editor';
+} from '@gutenberg/components';
+import { BlockIcon } from '@gutenberg/block-editor';
 import {
 	chevronLeftSmall,
 	chevronRightSmall,
 	page as pageIcon,
 	navigation as navigationIcon,
 	symbol,
-} from '@wordpress/icons';
-import { displayShortcut } from '@wordpress/keycodes';
-import { useEntityRecord } from '@wordpress/core-data';
-import { store as commandsStore } from '@wordpress/commands';
-import { useState, useEffect, useRef } from '@wordpress/element';
+} from '@gutenberg/icons';
+import { displayShortcut } from '@gutenberg/keycodes';
+import { useEntityRecord } from '@gutenberg/core-data';
+import { store as commandsStore } from '@gutenberg/commands';
+import { useState, useEffect, useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -175,7 +175,7 @@ function BaseDocumentActions( { postType, postId, onBack } ) {
 							as="h1"
 							aria-label={
 								typeLabels[ postType ]
-									? // eslint-disable-next-line @wordpress/valid-sprintf
+									? // eslint-disable-next-line @gutenberg/valid-sprintf
 									  sprintf( typeLabels[ postType ], title )
 									: undefined
 							}

@@ -6,8 +6,8 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
-import { useConvertUnitToMobile } from '@wordpress/components';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
+import { useConvertUnitToMobile } from '@gutenberg/components';
 
 /**
  * Internal dependencies

@@ -6,7 +6,7 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

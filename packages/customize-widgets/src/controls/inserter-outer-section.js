@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { ESCAPE } from '@wordpress/keycodes';
-import { focus } from '@wordpress/dom';
-import { dispatch } from '@wordpress/data';
+import { ESCAPE } from '@gutenberg/keycodes';
+import { focus } from '@gutenberg/dom';
+import { dispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies

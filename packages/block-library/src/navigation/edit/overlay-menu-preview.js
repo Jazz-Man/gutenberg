@@ -5,8 +5,8 @@ import {
 	ToggleControl,
 	__experimentalToggleGroupControl as ToggleGroupControl,
 	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

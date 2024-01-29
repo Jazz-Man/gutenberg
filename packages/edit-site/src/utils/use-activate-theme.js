@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { store as coreStore } from '@wordpress/core-data';
-import { useDispatch } from '@wordpress/data';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useDispatch } from '@gutenberg/data';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

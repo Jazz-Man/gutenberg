@@ -3,7 +3,7 @@
 `MoreMenuFeatureToggle` renders a menu item that can be used as a child of the `MoreMenuDropdown` component. The component
 is connected to the interface package's store, and will toggle the value of a 'feature' between true and false.
 
-This component implements a `MenuItem` component from the `@wordpress/components` package.
+This component implements a `MenuItem` component from the `@gutenberg/components` package.
 
 ## Props
 
@@ -53,7 +53,7 @@ A message read by a screen reader when the feature is deactivated. (e.g. 'Fixed 
 
 A keyboard shortcut for the feature. This is just used for display purposes and the implementation of the shortcut should be handled separately.
 
-Consider using the `displayShortcut` helper from the `@wordpress/keycodes` package for this prop.
+Consider using the `displayShortcut` helper from the `@gutenberg/keycodes` package for this prop.
 
 -   Type: `Array`
 -   Required: No

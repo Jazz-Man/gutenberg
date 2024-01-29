@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createPortal, useState } from '@wordpress/element';
+import { createPortal, useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

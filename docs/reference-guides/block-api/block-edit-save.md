@@ -8,7 +8,7 @@ The `edit` function describes the structure of your block in the context of the 
 
 
 ```jsx
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps } from '@gutenberg/block-editor';
 
 // ...
 const blockSettings = {
@@ -32,7 +32,7 @@ If the element wrapper needs any extra custom HTML attributes, these need to be 
 
 
 ```jsx
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps } from '@gutenberg/block-editor';
 
 // ...
 const blockSettings = {

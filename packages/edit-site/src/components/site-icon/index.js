@@ -6,11 +6,11 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { Icon } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { wordpress } from '@wordpress/icons';
-import { store as coreDataStore } from '@wordpress/core-data';
+import { useSelect } from '@gutenberg/data';
+import { Icon } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { wordpress } from '@gutenberg/icons';
+import { store as coreDataStore } from '@gutenberg/core-data';
 
 function SiteIcon( { className } ) {
 	const { isRequestingSite, siteIconUrl } = useSelect( ( select ) => {

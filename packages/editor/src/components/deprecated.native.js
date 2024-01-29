@@ -22,7 +22,7 @@ import {
 	URLInput,
 	withColors,
 	withFontSizes,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 export {
 	BlockControls,

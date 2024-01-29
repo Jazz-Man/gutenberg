@@ -6,10 +6,10 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useEntityProp, store as coreStore } from '@wordpress/core-data';
-import { useEffect, useMemo, useRef } from '@wordpress/element';
-import { Placeholder, Spinner } from '@wordpress/components';
-import { compose, useResizeObserver } from '@wordpress/compose';
+import { useEntityProp, store as coreStore } from '@gutenberg/core-data';
+import { useEffect, useMemo, useRef } from '@gutenberg/element';
+import { Placeholder, Spinner } from '@gutenberg/components';
+import { compose, useResizeObserver } from '@gutenberg/compose';
 import {
 	withColors,
 	ColorPalette,
@@ -18,11 +18,11 @@ import {
 	useInnerBlocksProps,
 	__experimentalUseGradient,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { isBlobURL } from '@wordpress/blob';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { isBlobURL } from '@gutenberg/blob';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

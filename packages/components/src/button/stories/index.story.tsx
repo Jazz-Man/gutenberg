@@ -13,7 +13,7 @@ import {
 	link,
 	more,
 	wordpress,
-} from '@wordpress/icons';
+} from '@gutenberg/icons';
 
 /**
  * Internal dependencies

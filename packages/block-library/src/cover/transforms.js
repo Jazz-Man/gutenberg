@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { createBlock } from '@wordpress/blocks';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
+import { createBlock } from '@gutenberg/blocks';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

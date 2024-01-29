@@ -11,16 +11,16 @@ import {
 	getDefaultBlockName,
 	__unstableSerializeAndClean,
 	parse,
-} from '@wordpress/blocks';
-import { isInTheFuture, getDate } from '@wordpress/date';
-import { addQueryArgs, cleanForSlug } from '@wordpress/url';
-import { createRegistrySelector } from '@wordpress/data';
-import deprecated from '@wordpress/deprecated';
-import { Platform } from '@wordpress/element';
-import { layout } from '@wordpress/icons';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as preferencesStore } from '@wordpress/preferences';
+} from '@gutenberg/blocks';
+import { isInTheFuture, getDate } from '@gutenberg/date';
+import { addQueryArgs, cleanForSlug } from '@gutenberg/url';
+import { createRegistrySelector } from '@gutenberg/data';
+import deprecated from '@gutenberg/deprecated';
+import { Platform } from '@gutenberg/element';
+import { layout } from '@gutenberg/icons';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies
@@ -355,7 +355,7 @@ export function getEditedPostAttribute( state, attributeName ) {
  * null if there is no autosave for the post.
  *
  * @deprecated since 5.6. Callers should use the `getAutosave( postType, postId, userId )` selector
- * 			   from the '@wordpress/core-data' package and access properties on the returned
+ * 			   from the '@gutenberg/core-data' package and access properties on the returned
  * 			   autosave object using getPostRawValue.
  *
  * @param {Object} state         Global application state.
@@ -602,7 +602,7 @@ export const isEditedPostAutosaveable = createRegistrySelector(
 		// Disable reason - this line causes the side-effect of fetching the autosave
 		// via a resolver, moving below the return would result in the autosave never
 		// being fetched.
-		// eslint-disable-next-line @wordpress/no-unused-vars-before-return
+		// eslint-disable-next-line @gutenberg/no-unused-vars-before-return
 		const autosave = select( coreStore ).getAutosave(
 			postType,
 			postId,

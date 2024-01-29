@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { CustomSelectControl } from '@wordpress/components';
-import { useMemo } from '@wordpress/element';
-import { __, _x, sprintf } from '@wordpress/i18n';
+import { CustomSelectControl } from '@gutenberg/components';
+import { useMemo } from '@gutenberg/element';
+import { __, _x, sprintf } from '@gutenberg/i18n';
 
 const FONT_STYLES = [
 	{

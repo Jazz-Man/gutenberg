@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { NoticeList, SnackbarList } from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
+import { NoticeList, SnackbarList } from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
 
 function Notices() {
 	const { removeNotice } = useDispatch( noticesStore );

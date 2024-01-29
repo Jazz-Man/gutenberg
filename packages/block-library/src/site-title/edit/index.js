@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { __ } from '@wordpress/i18n';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { __ } from '@gutenberg/i18n';
 import {
 	RichText,
 	AlignmentControl,
@@ -16,10 +16,10 @@ import {
 	BlockControls,
 	useBlockProps,
 	HeadingLevelDropdown,
-} from '@wordpress/block-editor';
-import { ToggleControl, PanelBody } from '@wordpress/components';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
-import { decodeEntities } from '@wordpress/html-entities';
+} from '@gutenberg/block-editor';
+import { ToggleControl, PanelBody } from '@gutenberg/components';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 const HEADING_LEVELS = [ 0, 1, 2, 3, 4, 5, 6 ];
 

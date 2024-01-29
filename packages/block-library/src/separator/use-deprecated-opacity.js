@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useState } from '@wordpress/element';
-import { usePrevious } from '@wordpress/compose';
+import { useEffect, useState } from '@gutenberg/element';
+import { usePrevious } from '@gutenberg/compose';
 
 export default function useDeprecatedOpacity(
 	opacity,

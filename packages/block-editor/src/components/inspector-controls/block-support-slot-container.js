@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalToolsPanelContext as ToolsPanelContext } from '@wordpress/components';
-import { useContext, useMemo } from '@wordpress/element';
+import { __experimentalToolsPanelContext as ToolsPanelContext } from '@gutenberg/components';
+import { useContext, useMemo } from '@gutenberg/element';
 
 export default function BlockSupportSlotContainer( {
 	Slot,

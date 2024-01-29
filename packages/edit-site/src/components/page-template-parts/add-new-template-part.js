@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { privateApis as routerPrivateApis } from '@wordpress/router';
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { useState } from '@wordpress/element';
-import { Button } from '@wordpress/components';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useState } from '@gutenberg/element';
+import { Button } from '@gutenberg/components';
 
 /**
  * Internal dependencies

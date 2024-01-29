@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { focus, isFormElement } from '@wordpress/dom';
-import { TAB, ESCAPE } from '@wordpress/keycodes';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useRefEffect, useMergeRefs } from '@wordpress/compose';
-import { useRef } from '@wordpress/element';
+import { focus, isFormElement } from '@gutenberg/dom';
+import { TAB, ESCAPE } from '@gutenberg/keycodes';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useRefEffect, useMergeRefs } from '@gutenberg/compose';
+import { useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

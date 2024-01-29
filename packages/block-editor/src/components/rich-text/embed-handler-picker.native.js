@@ -7,9 +7,9 @@ import {
 	useImperativeHandle,
 	memo,
 	useCallback,
-} from '@wordpress/element';
-import { Picker } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/element';
+import { Picker } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 const noop = () => {};
 

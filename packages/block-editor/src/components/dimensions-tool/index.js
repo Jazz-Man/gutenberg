@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
+import { useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -11,11 +11,11 @@ import ScaleTool from './scale-tool';
 import WidthHeightTool from './width-height-tool';
 
 /**
- * @typedef {import('@wordpress/components/build-types/select-control/types').SelectControlProps} SelectControlProps
+ * @typedef {import('@gutenberg/components/build-types/select-control/types').SelectControlProps} SelectControlProps
  */
 
 /**
- * @typedef {import('@wordpress/components/build-types/unit-control/types').WPUnitControlUnit} WPUnitControlUnit
+ * @typedef {import('@gutenberg/components/build-types/unit-control/types').WPUnitControlUnit} WPUnitControlUnit
  */
 
 /**

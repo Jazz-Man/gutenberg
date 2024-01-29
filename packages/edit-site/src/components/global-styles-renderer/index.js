@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useEffect } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
+import { useEffect } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

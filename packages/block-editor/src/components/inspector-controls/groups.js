@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createSlotFill } from '@wordpress/components';
+import { createSlotFill } from '@gutenberg/components';
 
 const InspectorControlsDefault = createSlotFill( 'InspectorControls' );
 const InspectorControlsAdvanced = createSlotFill( 'InspectorAdvancedControls' );

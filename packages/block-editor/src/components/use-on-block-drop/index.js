@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { useCallback } from '@wordpress/element';
+import { useCallback } from '@gutenberg/element';
 import {
 	cloneBlock,
 	findTransform,
 	getBlockTransforms,
 	pasteHandler,
-} from '@wordpress/blocks';
-import { useDispatch, useSelect, useRegistry } from '@wordpress/data';
-import { getFilesFromDataTransfer } from '@wordpress/dom';
+} from '@gutenberg/blocks';
+import { useDispatch, useSelect, useRegistry } from '@gutenberg/data';
+import { getFilesFromDataTransfer } from '@gutenberg/dom';
 
 /**
  * Internal dependencies

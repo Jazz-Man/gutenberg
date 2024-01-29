@@ -6,7 +6,7 @@
 
 ```jsx
 import { useState } from 'react';
-import { DropZone } from '@wordpress/components';
+import { DropZone } from '@gutenberg/components';
 
 const MyDropZone = () => {
 	const [ hasDropped, setHasDropped ] = useState( false );

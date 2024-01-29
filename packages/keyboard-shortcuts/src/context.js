@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createContext } from '@wordpress/element';
+import { createContext } from '@gutenberg/element';
 
 const globalShortcuts = new Set();
 const globalListener = ( event ) => {

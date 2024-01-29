@@ -11,7 +11,7 @@ _It works properly with the minimum version of Gutenberg `13.8.0` or the minimum
 Install the module
 
 ```bash
-npm install @wordpress/e2e-test-utils --save-dev
+npm install @gutenberg/e2e-test-utils --save-dev
 ```
 
 **Note**: This package requires Node.js 14.0.0 or later. It is not compatible with older versions.

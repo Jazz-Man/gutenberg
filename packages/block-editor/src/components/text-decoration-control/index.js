@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { BaseControl, Button } from '@wordpress/components';
-import { reset, formatStrikethrough, formatUnderline } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
+import { BaseControl, Button } from '@gutenberg/components';
+import { reset, formatStrikethrough, formatUnderline } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
 
 const TEXT_DECORATIONS = [
 	{

@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useState, useCallback, useRef } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { EntityProvider } from '@wordpress/core-data';
+import { useEffect, useState, useCallback, useRef } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { EntityProvider } from '@gutenberg/core-data';
 import {
 	__unstableDisclosureContent as DisclosureContent,
 	Panel,
 	PanelBody,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies
@@ -17,7 +17,7 @@ import WidgetAreaInnerBlocks from './inner-blocks';
 import { store as editWidgetsStore } from '../../../store';
 import useIsDraggingWithin from './use-is-dragging-within';
 
-/** @typedef {import('@wordpress/element').RefObject} RefObject */
+/** @typedef {import('@gutenberg/element').RefObject} RefObject */
 
 export default function WidgetAreaEdit( {
 	clientId,

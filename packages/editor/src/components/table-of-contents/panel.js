@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

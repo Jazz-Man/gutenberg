@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
+import { useInstanceId } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

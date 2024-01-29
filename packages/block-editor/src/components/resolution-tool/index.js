@@ -4,8 +4,8 @@
 import {
 	SelectControl,
 	__experimentalToolsPanelItem as ToolsPanelItem,
-} from '@wordpress/components';
-import { __, _x } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { __, _x } from '@gutenberg/i18n';
 
 const DEFAULT_SIZE_OPTIONS = [
 	{

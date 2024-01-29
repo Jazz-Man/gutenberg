@@ -15,14 +15,14 @@ import {
 	requestImageFailedRetryDialog,
 	requestImageUploadCancelDialog,
 	requestImageFullscreenPreview,
-} from '@wordpress/react-native-bridge';
-import { Component } from '@wordpress/element';
-import { Image } from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { Caption, MediaUploadProgress } from '@wordpress/block-editor';
-import { getProtocol } from '@wordpress/url';
-import { withPreferredColorScheme } from '@wordpress/compose';
-import { arrowLeft, arrowRight, warning } from '@wordpress/icons';
+} from '@gutenberg/react-native-bridge';
+import { Component } from '@gutenberg/element';
+import { Image } from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { Caption, MediaUploadProgress } from '@gutenberg/block-editor';
+import { getProtocol } from '@gutenberg/url';
+import { withPreferredColorScheme } from '@gutenberg/compose';
+import { arrowLeft, arrowRight, warning } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

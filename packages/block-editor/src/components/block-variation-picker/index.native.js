@@ -12,16 +12,16 @@ import {
 /**
  * WordPress dependencies
  */
-import { useDispatch } from '@wordpress/data';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
-import { createBlocksFromInnerBlocksTemplate } from '@wordpress/blocks';
-import { __ } from '@wordpress/i18n';
+import { useDispatch } from '@gutenberg/data';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
+import { createBlocksFromInnerBlocksTemplate } from '@gutenberg/blocks';
+import { __ } from '@gutenberg/i18n';
 import {
 	PanelBody,
 	BottomSheet,
 	FooterMessageControl,
-} from '@wordpress/components';
-import { Icon, close } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { Icon, close } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

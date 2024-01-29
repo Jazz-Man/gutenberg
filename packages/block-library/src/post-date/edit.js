@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useEntityProp, store as coreStore } from '@wordpress/core-data';
-import { useMemo, useState } from '@wordpress/element';
-import { dateI18n, getSettings as getDateSettings } from '@wordpress/date';
+import { useEntityProp, store as coreStore } from '@gutenberg/core-data';
+import { useMemo, useState } from '@gutenberg/element';
+import { dateI18n, getSettings as getDateSettings } from '@gutenberg/date';
 import {
 	AlignmentControl,
 	BlockControls,
@@ -16,18 +16,18 @@ import {
 	useBlockProps,
 	__experimentalDateFormatPicker as DateFormatPicker,
 	__experimentalPublishDateTimePicker as PublishDateTimePicker,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	Dropdown,
 	ToolbarGroup,
 	ToolbarButton,
 	ToggleControl,
 	PanelBody,
-} from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { edit } from '@wordpress/icons';
-import { DOWN } from '@wordpress/keycodes';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { edit } from '@gutenberg/icons';
+import { DOWN } from '@gutenberg/keycodes';
+import { useSelect } from '@gutenberg/data';
 
 export default function PostDateEdit( {
 	attributes: { textAlign, format, isLink, displayType },

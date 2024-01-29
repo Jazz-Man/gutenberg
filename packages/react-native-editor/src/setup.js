@@ -6,12 +6,12 @@ import { I18nManager, LogBox } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { unregisterBlockType, getBlockType } from '@wordpress/blocks';
-import { addAction, addFilter, doAction } from '@wordpress/hooks';
-import * as wpData from '@wordpress/data';
-import { registerCoreBlocks } from '@wordpress/block-library';
+import { unregisterBlockType, getBlockType } from '@gutenberg/blocks';
+import { addAction, addFilter, doAction } from '@gutenberg/hooks';
+import * as wpData from '@gutenberg/data';
+import { registerCoreBlocks } from '@gutenberg/block-library';
 // eslint-disable-next-line no-restricted-imports
-import { initializeEditor } from '@wordpress/edit-post';
+import { initializeEditor } from '@gutenberg/edit-post';
 
 /**
  * Internal dependencies

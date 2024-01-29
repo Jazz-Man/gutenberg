@@ -6,8 +6,8 @@ import memoize from 'memize';
 /**
  * WordPress dependencies
  */
-import { __, _n, sprintf } from '@wordpress/i18n';
-import { getBlockTypes } from '@wordpress/blocks';
+import { __, _n, sprintf } from '@gutenberg/i18n';
+import { getBlockTypes } from '@gutenberg/blocks';
 
 const globalStylesChangesCache = new Map();
 const EMPTY_ARRAY = [];

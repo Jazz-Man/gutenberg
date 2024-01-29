@@ -1,7 +1,7 @@
 # ClipboardButton
 
 <div class="callout callout-alert">
-This component is deprecated. Please use the `useCopyToClipboard` hook from the `@wordpress/compose` package instead.
+This component is deprecated. Please use the `useCopyToClipboard` hook from the `@gutenberg/compose` package instead.
 </div>
 
 With a clipboard button, users copy text (or other elements) with a single click or tap.
@@ -12,7 +12,7 @@ With a clipboard button, users copy text (or other elements) with a single click
 
 ```jsx
 import { useState } from 'react';
-import { ClipboardButton } from '@wordpress/components';
+import { ClipboardButton } from '@gutenberg/components';
 
 const MyClipboardButton = () => {
 	const [ hasCopied, setHasCopied ] = useState( false );

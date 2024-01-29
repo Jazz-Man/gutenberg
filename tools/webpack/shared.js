@@ -9,7 +9,7 @@ const postcss = require( 'postcss' );
 /**
  * WordPress dependencies
  */
-const ReadableJsAssetsWebpackPlugin = require( '@wordpress/readable-js-assets-webpack-plugin' );
+const ReadableJsAssetsWebpackPlugin = require( '@gutenberg/readable-js-assets-webpack-plugin' );
 
 const { NODE_ENV: mode = 'development', WP_DEVTOOL: devtool = 'source-map' } =
 	process.env;

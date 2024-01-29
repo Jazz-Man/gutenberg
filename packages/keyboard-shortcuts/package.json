@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/keyboard-shortcuts",
+	"name": "@gutenberg/keyboard-shortcuts",
 	"version": "4.26.0",
 	"description": "Handling keyboard shortcuts.",
 	"author": "The WordPress Contributors",
@@ -27,9 +27,9 @@
 	"types": "build-types",
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/data": "workspace:*",
-		"@wordpress/element": "workspace:*",
-		"@wordpress/keycodes": "workspace:*",
+		"@gutenberg/data": "workspace:*",
+		"@gutenberg/element": "workspace:*",
+		"@gutenberg/keycodes": "workspace:*",
 		"rememo": "^4.0.2"
 	},
 	"peerDependencies": {

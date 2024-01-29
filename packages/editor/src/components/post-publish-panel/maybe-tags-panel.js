@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Component } from '@wordpress/element';
-import { compose, ifCondition } from '@wordpress/compose';
-import { withSelect } from '@wordpress/data';
-import { PanelBody } from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
+import { __ } from '@gutenberg/i18n';
+import { Component } from '@gutenberg/element';
+import { compose, ifCondition } from '@gutenberg/compose';
+import { withSelect } from '@gutenberg/data';
+import { PanelBody } from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

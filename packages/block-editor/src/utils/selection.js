@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { RichTextData } from '@wordpress/rich-text';
+import { RichTextData } from '@gutenberg/rich-text';
 
 /**
  * A robust way to retain selection position through various

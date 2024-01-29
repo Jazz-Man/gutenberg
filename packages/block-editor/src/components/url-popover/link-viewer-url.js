@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { ExternalLink } from '@wordpress/components';
-import { safeDecodeURI, filterURLForDisplay } from '@wordpress/url';
+import { ExternalLink } from '@gutenberg/components';
+import { safeDecodeURI, filterURLForDisplay } from '@gutenberg/url';
 
 export default function LinkViewerURL( { url, urlLabel, className } ) {
 	const linkClassName = classnames(

@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { InspectorControls } from '@wordpress/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { InspectorControls } from '@gutenberg/block-editor';
 import {
 	TextControl,
 	PanelBody,
 	ToggleControl,
 	SelectControl,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 const OrderedListSettings = ( { setAttributes, reversed, start, type } ) => (
 	<InspectorControls>

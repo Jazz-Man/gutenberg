@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { hasBlockSupport } from '@wordpress/blocks';
-import { PanelBody } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { hasBlockSupport } from '@gutenberg/blocks';
+import { PanelBody } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

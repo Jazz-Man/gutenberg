@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { useViewportMatch } from '@wordpress/compose';
+import { useViewportMatch } from '@gutenberg/compose';
 import {
 	__experimentalPaletteEdit as PaletteEdit,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

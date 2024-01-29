@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { createBlock } from '@wordpress/blocks';
-import { store as coreStore } from '@wordpress/core-data';
+import { createBlock } from '@gutenberg/blocks';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

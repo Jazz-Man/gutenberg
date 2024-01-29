@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { useState, useRef } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { useState, useRef } from '@gutenberg/element';
 import {
 	BlockControls,
 	BlockVerticalAlignmentControl,
@@ -19,7 +19,7 @@ import {
 	__experimentalImageSizeControl as ImageSizeControl,
 	store as blockEditorStore,
 	useBlockEditingMode,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	PanelBody,
 	RangeControl,
@@ -28,10 +28,10 @@ import {
 	ToolbarButton,
 	ExternalLink,
 	FocalPointPicker,
-} from '@wordpress/components';
-import { isBlobURL, getBlobTypeByURL } from '@wordpress/blob';
-import { pullLeft, pullRight } from '@wordpress/icons';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/components';
+import { isBlobURL, getBlobTypeByURL } from '@gutenberg/blob';
+import { pullLeft, pullRight } from '@gutenberg/icons';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

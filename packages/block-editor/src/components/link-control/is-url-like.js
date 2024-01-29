@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { getProtocol, isValidProtocol, isValidFragment } from '@wordpress/url';
+import { getProtocol, isValidProtocol, isValidFragment } from '@gutenberg/url';
 
 /**
  * Determines whether a given value could be a URL. Note this does not

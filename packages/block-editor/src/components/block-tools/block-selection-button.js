@@ -6,10 +6,10 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { dragHandle } from '@wordpress/icons';
-import { Button, Flex, FlexItem } from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useEffect, useRef } from '@wordpress/element';
+import { dragHandle } from '@gutenberg/icons';
+import { Button, Flex, FlexItem } from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useEffect, useRef } from '@gutenberg/element';
 import {
 	BACKSPACE,
 	DELETE,
@@ -21,14 +21,14 @@ import {
 	ESCAPE,
 	ENTER,
 	SPACE,
-} from '@wordpress/keycodes';
+} from '@gutenberg/keycodes';
 import {
 	getBlockType,
 	__experimentalGetAccessibleBlockLabel as getAccessibleBlockLabel,
-} from '@wordpress/blocks';
-import { speak } from '@wordpress/a11y';
-import { focus } from '@wordpress/dom';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/blocks';
+import { speak } from '@gutenberg/a11y';
+import { focus } from '@gutenberg/dom';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

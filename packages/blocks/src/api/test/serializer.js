@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createElement, Component } from '@wordpress/element';
+import { createElement, Component } from '@gutenberg/element';
 
 /**
  * Internal dependencies

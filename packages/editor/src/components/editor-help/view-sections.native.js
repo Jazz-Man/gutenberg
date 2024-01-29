@@ -9,7 +9,7 @@ import { Text, Image, View } from 'react-native';
 import {
 	usePreferredColorScheme,
 	usePreferredColorSchemeStyle,
-} from '@wordpress/compose';
+} from '@gutenberg/compose';
 
 /**
  * Internal dependencies

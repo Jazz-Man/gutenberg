@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useCallback } from '@wordpress/element';
-import { useSelect, useDispatch, useRegistry } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { cloneBlock } from '@wordpress/blocks';
+import { useCallback } from '@gutenberg/element';
+import { useSelect, useDispatch, useRegistry } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { cloneBlock } from '@gutenberg/blocks';
 
 export default function useOutdentListItem() {
 	const registry = useRegistry();

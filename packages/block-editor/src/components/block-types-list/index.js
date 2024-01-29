@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { getBlockMenuDefaultClassName } from '@wordpress/blocks';
-import { useInstanceId } from '@wordpress/compose';
+import { getBlockMenuDefaultClassName } from '@gutenberg/blocks';
+import { useInstanceId } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

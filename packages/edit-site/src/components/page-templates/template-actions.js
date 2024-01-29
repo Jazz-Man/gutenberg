@@ -1,20 +1,20 @@
 /**
  * WordPress dependencies
  */
-import { backup, trash } from '@wordpress/icons';
-import { __, sprintf, _n } from '@wordpress/i18n';
-import { useDispatch } from '@wordpress/data';
-import { useMemo, useState } from '@wordpress/element';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as noticesStore } from '@wordpress/notices';
-import { decodeEntities } from '@wordpress/html-entities';
+import { backup, trash } from '@gutenberg/icons';
+import { __, sprintf, _n } from '@gutenberg/i18n';
+import { useDispatch } from '@gutenberg/data';
+import { useMemo, useState } from '@gutenberg/element';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { decodeEntities } from '@gutenberg/html-entities';
 import {
 	Button,
 	TextControl,
 	__experimentalText as Text,
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

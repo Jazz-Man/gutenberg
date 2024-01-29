@@ -6,14 +6,14 @@ import { render, screen } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies
  */
 import BlockTitle from '../';
 
-jest.mock( '@wordpress/blocks', () => {
+jest.mock( '@gutenberg/blocks', () => {
 	return {
 		getBlockType( name ) {
 			switch ( name ) {
@@ -60,7 +60,7 @@ jest.mock( '../../use-block-display-information', () => {
 	return jest.fn( ( clientId ) => resultsMap[ clientId ] );
 } );
 
-jest.mock( '@wordpress/data/src/components/use-select', () => {
+jest.mock( '@gutenberg/data/src/components/use-select', () => {
 	// This allows us to tweak the returned value on each test.
 	const mock = jest.fn();
 	return mock;

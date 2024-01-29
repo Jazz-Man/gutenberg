@@ -1,21 +1,21 @@
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
-import { useDispatch, useRegistry } from '@wordpress/data';
-import { displayShortcut } from '@wordpress/keycodes';
-import { external } from '@wordpress/icons';
-import { MenuGroup, MenuItem, VisuallyHidden } from '@wordpress/components';
+import { __, _x } from '@gutenberg/i18n';
+import { useDispatch, useRegistry } from '@gutenberg/data';
+import { displayShortcut } from '@gutenberg/keycodes';
+import { external } from '@gutenberg/icons';
+import { MenuGroup, MenuItem, VisuallyHidden } from '@gutenberg/components';
 import {
 	ActionItem,
 	MoreMenuDropdown,
 	store as interfaceStore,
-} from '@wordpress/interface';
+} from '@gutenberg/interface';
 import {
 	PreferenceToggleMenuItem,
 	store as preferencesStore,
-} from '@wordpress/preferences';
-import { store as editorStore } from '@wordpress/editor';
+} from '@gutenberg/preferences';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

@@ -6,11 +6,11 @@ import { Platform } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Picker, ToolbarButton, ToolbarGroup } from '@wordpress/components';
-import { withInstanceId, compose } from '@wordpress/compose';
-import { withSelect, withDispatch } from '@wordpress/data';
-import { useCallback, useEffect, useRef, useState } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { Picker, ToolbarButton, ToolbarGroup } from '@gutenberg/components';
+import { withInstanceId, compose } from '@gutenberg/compose';
+import { withSelect, withDispatch } from '@gutenberg/data';
+import { useCallback, useEffect, useRef, useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

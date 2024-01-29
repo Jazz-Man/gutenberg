@@ -1,17 +1,17 @@
 /**
  * WordPress dependencies
  */
-import { __, _n, sprintf } from '@wordpress/i18n';
+import { __, _n, sprintf } from '@gutenberg/i18n';
 import {
 	Button,
 	Spinner,
 	VisuallyHidden,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
-import { createInterpolateElement } from '@wordpress/element';
-import { decodeEntities } from '@wordpress/html-entities';
-import { getBlockType } from '@wordpress/blocks';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/components';
+import { createInterpolateElement } from '@gutenberg/element';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { getBlockType } from '@gutenberg/blocks';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

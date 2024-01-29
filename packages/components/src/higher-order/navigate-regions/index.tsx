@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useState, useRef } from '@wordpress/element';
+import { useState, useRef } from '@gutenberg/element';
 import {
 	createHigherOrderComponent,
 	useRefEffect,
 	useMergeRefs,
-} from '@wordpress/compose';
-import { isKeyboardEvent } from '@wordpress/keycodes';
-import type { WPKeycodeModifier } from '@wordpress/keycodes';
+} from '@gutenberg/compose';
+import { isKeyboardEvent } from '@gutenberg/keycodes';
+import type { WPKeycodeModifier } from '@gutenberg/keycodes';
 
 const defaultShortcuts = {
 	previous: [
@@ -120,7 +120,7 @@ export function useNavigateRegions( shortcuts: Shortcuts = defaultShortcuts ) {
  * and "Landmark Regions" in the [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/).
  *
  * ```jsx
- * import { navigateRegions } from '@wordpress/components';
+ * import { navigateRegions } from '@gutenberg/components';
  *
  * const MyComponentWithNavigateRegions = navigateRegions( () => (
  * 	<div>

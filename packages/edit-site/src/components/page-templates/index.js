@@ -11,22 +11,22 @@ import {
 	__experimentalText as Text,
 	__experimentalHStack as HStack,
 	VisuallyHidden,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useState, useMemo, useCallback } from '@wordpress/element';
-import { useEntityRecords } from '@wordpress/core-data';
-import { decodeEntities } from '@wordpress/html-entities';
-import { parse } from '@wordpress/blocks';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useState, useMemo, useCallback } from '@gutenberg/element';
+import { useEntityRecords } from '@gutenberg/core-data';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { parse } from '@gutenberg/blocks';
 import {
 	BlockPreview,
 	privateApis as blockEditorPrivateApis,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	DataViews,
 	sortByTextFields,
 	getPaginationResults,
-} from '@wordpress/dataviews';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+} from '@gutenberg/dataviews';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

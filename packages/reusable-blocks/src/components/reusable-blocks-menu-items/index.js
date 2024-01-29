@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { BlockSettingsMenuControls } from '@wordpress/block-editor';
+import { BlockSettingsMenuControls } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

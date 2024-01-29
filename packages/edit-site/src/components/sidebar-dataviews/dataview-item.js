@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { privateApis as routerPrivateApis } from '@wordpress/router';
-import { __experimentalHStack as HStack } from '@wordpress/components';
-import { VIEW_LAYOUTS } from '@wordpress/dataviews';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
+import { __experimentalHStack as HStack } from '@gutenberg/components';
+import { VIEW_LAYOUTS } from '@gutenberg/dataviews';
 
 /**
  * Internal dependencies

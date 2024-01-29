@@ -7,9 +7,9 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { useRef, useState } from '@wordpress/element';
-import { useMergeRefs } from '@wordpress/compose';
-import deprecated from '@wordpress/deprecated';
+import { useRef, useState } from '@gutenberg/element';
+import { useMergeRefs } from '@gutenberg/compose';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies
@@ -159,7 +159,7 @@ const UnconnectedDropdown = (
  * Renders a button that opens a floating content modal when clicked.
  *
  * ```jsx
- * import { Button, Dropdown } from '@wordpress/components';
+ * import { Button, Dropdown } from '@gutenberg/components';
  *
  * const MyDropdown = () => (
  *   <Dropdown

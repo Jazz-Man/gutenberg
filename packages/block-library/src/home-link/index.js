@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { _x } from '@wordpress/i18n';
-import { home } from '@wordpress/icons';
+import { _x } from '@gutenberg/i18n';
+import { home } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

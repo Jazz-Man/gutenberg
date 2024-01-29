@@ -50,7 +50,7 @@ export function getAnimateClassName( options: GetAnimateOptions ) {
  * Simple interface to introduce animations to components.
  *
  * ```jsx
- * import { Animate, Notice } from '@wordpress/components';
+ * import { Animate, Notice } from '@gutenberg/components';
  *
  * const MyAnimatedNotice = () => (
  * 	<Animate type="slide-in" options={ { origin: 'top' } }>

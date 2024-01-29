@@ -9,8 +9,8 @@ import { diffChars } from 'diff/lib/diff/character';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { getSaveContent } from '@wordpress/blocks';
+import { __ } from '@gutenberg/i18n';
+import { getSaveContent } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

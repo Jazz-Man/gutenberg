@@ -6,14 +6,14 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useState } from '@wordpress/element';
-import { upload, Icon } from '@wordpress/icons';
-import { getFilesFromDataTransfer } from '@wordpress/dom';
+import { __ } from '@gutenberg/i18n';
+import { useState } from '@gutenberg/element';
+import { upload, Icon } from '@gutenberg/icons';
+import { getFilesFromDataTransfer } from '@gutenberg/dom';
 import {
 	__experimentalUseDropZone as useDropZone,
 	useReducedMotion,
-} from '@wordpress/compose';
+} from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -29,8 +29,8 @@ import type { WordPressComponentProps } from '../context';
  * `DropZone` is a component creating a drop zone area taking the full size of its parent element. It supports dropping files, HTML content or any other HTML drop event.
  *
  * ```jsx
- * import { DropZone } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { DropZone } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyDropZone = () => {
  *   const [ hasDropped, setHasDropped ] = useState( false );

@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { ToolbarItem, DropdownMenu, Slot } from '@wordpress/components';
-import { chevronDown } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { ToolbarItem, DropdownMenu, Slot } from '@gutenberg/components';
+import { chevronDown } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

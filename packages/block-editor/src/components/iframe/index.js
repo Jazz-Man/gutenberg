@@ -12,16 +12,16 @@ import {
 	forwardRef,
 	useMemo,
 	useEffect,
-} from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
 import {
 	useResizeObserver,
 	useMergeRefs,
 	useRefEffect,
 	useDisabled,
-} from '@wordpress/compose';
-import { __experimentalStyleProvider as StyleProvider } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/compose';
+import { __experimentalStyleProvider as StyleProvider } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

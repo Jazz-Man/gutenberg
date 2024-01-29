@@ -20,7 +20,7 @@ import {
 	requestMediaImport,
 	subscribeMediaAppend,
 	subscribeParentToggleHTMLMode,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 
 setupCoreBlocks();
 

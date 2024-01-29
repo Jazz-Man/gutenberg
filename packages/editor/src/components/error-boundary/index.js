@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { Button } from '@wordpress/components';
-import { select } from '@wordpress/data';
-import { Warning } from '@wordpress/block-editor';
-import { useCopyToClipboard } from '@wordpress/compose';
-import { doAction } from '@wordpress/hooks';
+import { Component } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { Button } from '@gutenberg/components';
+import { select } from '@gutenberg/data';
+import { Warning } from '@gutenberg/block-editor';
+import { useCopyToClipboard } from '@gutenberg/compose';
+import { doAction } from '@gutenberg/hooks';
 
 /**
  * Internal dependencies

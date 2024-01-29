@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createInterpolateElement } from '@wordpress/element';
+import { createInterpolateElement } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -14,7 +14,7 @@ import type { TextHighlightProps } from './types';
  * each match with a `<mark>` tag which provides browser default styling.
  *
  * ```jsx
- * import { TextHighlight } from '@wordpress/components';
+ * import { TextHighlight } from '@gutenberg/components';
  *
  * const MyTextHighlight = () => (
  *   <TextHighlight

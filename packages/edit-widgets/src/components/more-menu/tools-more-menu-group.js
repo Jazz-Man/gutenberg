@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createSlotFill } from '@wordpress/components';
+import { createSlotFill } from '@gutenberg/components';
 
 const { Fill: ToolsMoreMenuGroup, Slot } = createSlotFill(
 	'EditWidgetsToolsMoreMenuGroup'

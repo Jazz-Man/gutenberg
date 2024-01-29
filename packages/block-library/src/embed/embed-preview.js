@@ -11,15 +11,15 @@ import classnames from 'classnames/dedupe';
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { Placeholder, SandBox } from '@wordpress/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { Placeholder, SandBox } from '@gutenberg/components';
 import {
 	RichText,
 	BlockIcon,
 	__experimentalGetElementClassName,
-} from '@wordpress/block-editor';
-import { Component } from '@wordpress/element';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
+} from '@gutenberg/block-editor';
+import { Component } from '@gutenberg/element';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

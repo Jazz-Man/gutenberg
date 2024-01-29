@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useCallback, useEffect, useRef, useState } from '@wordpress/element';
-import { useResizeObserver } from '@wordpress/compose';
+import { useCallback, useEffect, useRef, useState } from '@gutenberg/element';
+import { useResizeObserver } from '@gutenberg/compose';
 
 const noop = () => {};
 

@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { isEntirelySelected } from '@wordpress/dom';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __unstableUseShortcutEventMatch as useShortcutEventMatch } from '@wordpress/keyboard-shortcuts';
-import { useRefEffect } from '@wordpress/compose';
+import { isEntirelySelected } from '@gutenberg/dom';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __unstableUseShortcutEventMatch as useShortcutEventMatch } from '@gutenberg/keyboard-shortcuts';
+import { useRefEffect } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

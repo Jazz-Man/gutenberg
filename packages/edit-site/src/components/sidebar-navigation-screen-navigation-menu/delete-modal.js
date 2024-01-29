@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalConfirmDialog as ConfirmDialog } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { __experimentalConfirmDialog as ConfirmDialog } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 export default function RenameModal( { onClose, onConfirm } ) {
 	return (

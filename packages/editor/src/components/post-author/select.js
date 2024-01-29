@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useMemo } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { decodeEntities } from '@wordpress/html-entities';
-import { SelectControl } from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
+import { __ } from '@gutenberg/i18n';
+import { useMemo } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { SelectControl } from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

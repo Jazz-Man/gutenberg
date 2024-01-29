@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { ResizableBox } from '@wordpress/components';
+import { ResizableBox } from '@gutenberg/components';
 
 /**
  * Internal dependencies

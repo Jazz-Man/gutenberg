@@ -8,10 +8,10 @@ import {
 	MenuGroup,
 	MenuItemsChoice,
 	ExternalLink,
-} from '@wordpress/components';
-import { __, _x } from '@wordpress/i18n';
-import { Icon } from '@wordpress/icons';
-import { useMemo, createInterpolateElement } from '@wordpress/element';
+} from '@gutenberg/components';
+import { __, _x } from '@gutenberg/i18n';
+import { Icon } from '@gutenberg/icons';
+import { useMemo, createInterpolateElement } from '@gutenberg/element';
 
 /**
  * Internal dependencies

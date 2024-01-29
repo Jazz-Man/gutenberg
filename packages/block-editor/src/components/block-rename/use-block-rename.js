@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { getBlockSupport } from '@wordpress/blocks';
+import { getBlockSupport } from '@gutenberg/blocks';
 
 export default function useBlockRename( name ) {
 	return {

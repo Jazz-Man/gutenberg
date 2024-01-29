@@ -57,7 +57,7 @@ export type {
  * Example:
  *
  * ```ts
- * import type { Context } from '@wordpress/core-data';
+ * import type { Context } from '@gutenberg/core-data';
  * // ...
  *
  * interface Client {
@@ -72,7 +72,7 @@ export type {
  *   // ...
  * }
  *
- * declare module '@wordpress/core-data' {
+ * declare module '@gutenberg/core-data' {
  *     export interface PerPackageEntityRecords< C extends Context > {
  *         myPlugin: Client | Order<C>>
  *     }

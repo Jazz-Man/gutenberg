@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { ExternalLink } from '@wordpress/components';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { ExternalLink } from '@gutenberg/components';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

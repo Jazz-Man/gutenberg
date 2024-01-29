@@ -16,8 +16,8 @@ import {
 	useEffect,
 	forwardRef,
 	useCallback,
-} from '@wordpress/element';
-import { usePreferredColorScheme } from '@wordpress/compose';
+} from '@gutenberg/element';
+import { usePreferredColorScheme } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

@@ -6,11 +6,11 @@ import { ActionSheetIOS } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Component, forwardRef, useContext } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { BottomSheetContext } from '@wordpress/components';
-import { usePreferredColorScheme } from '@wordpress/compose';
+import { __ } from '@gutenberg/i18n';
+import { Component, forwardRef, useContext } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { BottomSheetContext } from '@gutenberg/components';
+import { usePreferredColorScheme } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

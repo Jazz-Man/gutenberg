@@ -31,15 +31,15 @@ import {
 	useState,
 	useCallback,
 	createPortal,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 import {
 	useViewportMatch,
 	useMergeRefs,
 	__experimentalUseDialog as useDialog,
-} from '@wordpress/compose';
-import { close } from '@wordpress/icons';
-import deprecated from '@wordpress/deprecated';
-import { Path, SVG } from '@wordpress/primitives';
+} from '@gutenberg/compose';
+import { close } from '@gutenberg/icons';
+import deprecated from '@gutenberg/deprecated';
+import { Path, SVG } from '@gutenberg/primitives';
 
 /**
  * Internal dependencies
@@ -512,8 +512,8 @@ const UnconnectedPopover = (
  * `Popover` renders its content in a floating modal. If no explicit anchor is passed via props, it anchors to its parent element by default.
  *
  * ```jsx
- * import { Button, Popover } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { Button, Popover } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyPopover = () => {
  * 	const [ isVisible, setIsVisible ] = useState( false );

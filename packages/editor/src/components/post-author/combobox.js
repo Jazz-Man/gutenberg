@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { debounce } from '@wordpress/compose';
-import { useState, useMemo } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { ComboboxControl } from '@wordpress/components';
-import { decodeEntities } from '@wordpress/html-entities';
-import { store as coreStore } from '@wordpress/core-data';
+import { debounce } from '@gutenberg/compose';
+import { useState, useMemo } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { ComboboxControl } from '@gutenberg/components';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

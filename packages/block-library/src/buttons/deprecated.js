@@ -5,7 +5,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
+import { InnerBlocks, useBlockProps } from '@gutenberg/block-editor';
 
 /**
  * @param {Object} attributes Block's attributes.

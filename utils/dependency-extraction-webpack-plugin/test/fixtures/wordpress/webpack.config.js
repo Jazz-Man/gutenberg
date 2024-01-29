@@ -8,7 +8,7 @@ module.exports = {
 		new DependencyExtractionWebpackPlugin( {
 			requestToExternalModule( request ) {
 				return (
-					request.startsWith( '@wordpress/' ) || request === 'lodash'
+					request.startsWith( '@gutenberg/' ) || request === 'lodash'
 				);
 			},
 		} ),

@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useState } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { useState } from '@gutenberg/element';
 import {
 	getTextContent,
 	applyFormat,
@@ -11,15 +11,15 @@ import {
 	isCollapsed,
 	insert,
 	create,
-} from '@wordpress/rich-text';
-import { isURL, isEmail } from '@wordpress/url';
+} from '@gutenberg/rich-text';
+import { isURL, isEmail } from '@gutenberg/url';
 import {
 	RichTextToolbarButton,
 	RichTextShortcut,
-} from '@wordpress/block-editor';
-import { decodeEntities } from '@wordpress/html-entities';
-import { link as linkIcon, linkOff } from '@wordpress/icons';
-import { speak } from '@wordpress/a11y';
+} from '@gutenberg/block-editor';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { link as linkIcon, linkOff } from '@gutenberg/icons';
+import { speak } from '@gutenberg/a11y';
 
 /**
  * Internal dependencies

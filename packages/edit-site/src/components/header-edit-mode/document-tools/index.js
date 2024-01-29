@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { useViewportMatch } from '@wordpress/compose';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { chevronUpDown } from '@wordpress/icons';
-import { Button, ToolbarItem } from '@wordpress/components';
+import { useViewportMatch } from '@gutenberg/compose';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { chevronUpDown } from '@gutenberg/icons';
+import { Button, ToolbarItem } from '@gutenberg/components';
 import {
 	store as editorStore,
 	privateApis as editorPrivateApis,
-} from '@wordpress/editor';
+} from '@gutenberg/editor';
 
 /**
  * Internal dependencies

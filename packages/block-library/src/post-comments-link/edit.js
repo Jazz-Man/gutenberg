@@ -11,13 +11,13 @@ import {
 	BlockControls,
 	Warning,
 	useBlockProps,
-} from '@wordpress/block-editor';
-import { useState, useEffect } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import apiFetch from '@wordpress/api-fetch';
-import { addQueryArgs } from '@wordpress/url';
-import { __, sprintf, _n } from '@wordpress/i18n';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/block-editor';
+import { useState, useEffect } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import apiFetch from '@gutenberg/api-fetch';
+import { addQueryArgs } from '@gutenberg/url';
+import { __, sprintf, _n } from '@gutenberg/i18n';
+import { store as coreStore } from '@gutenberg/core-data';
 
 function PostCommentsLinkEdit( { context, attributes, setAttributes } ) {
 	const { textAlign } = attributes;

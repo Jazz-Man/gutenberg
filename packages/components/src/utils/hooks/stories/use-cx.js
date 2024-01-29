@@ -6,8 +6,8 @@ import { css } from '@emotion/react';
 /**
  * WordPress dependencies
  */
-import { __unstableIframe as Iframe } from '@wordpress/block-editor';
-import { useMemo } from '@wordpress/element';
+import { __unstableIframe as Iframe } from '@gutenberg/block-editor';
+import { useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

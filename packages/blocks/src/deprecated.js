@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * A Higher Order Component used to inject BlockContent using context to the

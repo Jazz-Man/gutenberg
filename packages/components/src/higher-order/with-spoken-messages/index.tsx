@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { createHigherOrderComponent, useDebounce } from '@wordpress/compose';
-import { speak } from '@wordpress/a11y';
+import { createHigherOrderComponent, useDebounce } from '@gutenberg/compose';
+import { speak } from '@gutenberg/a11y';
 
 /** @typedef {import('react').ComponentType} ComponentType */
 

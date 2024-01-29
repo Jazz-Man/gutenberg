@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useRef } from '@wordpress/element';
-import { useRefEffect } from '@wordpress/compose';
-import { insert, isCollapsed } from '@wordpress/rich-text';
-import { useDispatch } from '@wordpress/data';
-import { applyFilters } from '@wordpress/hooks';
+import { useRef } from '@gutenberg/element';
+import { useRefEffect } from '@gutenberg/compose';
+import { insert, isCollapsed } from '@gutenberg/rich-text';
+import { useDispatch } from '@gutenberg/data';
+import { applyFilters } from '@gutenberg/hooks';
 
 /**
  * Internal dependencies

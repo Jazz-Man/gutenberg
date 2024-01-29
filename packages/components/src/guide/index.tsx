@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useState, useEffect, Children, useRef } from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
-import { __ } from '@wordpress/i18n';
+import { useState, useEffect, Children, useRef } from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

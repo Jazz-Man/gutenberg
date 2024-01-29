@@ -3,12 +3,12 @@
  */
 // Disable Reason: Needs to be refactored.
 // eslint-disable-next-line no-restricted-imports
-import apiFetch from '@wordpress/api-fetch';
-import { useDispatch } from '@wordpress/data';
-import { useCallback, useMemo, useState } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
-import { store as noticesStore } from '@wordpress/notices';
-import { __unstableStripHTML as stripHTML } from '@wordpress/dom';
+import apiFetch from '@gutenberg/api-fetch';
+import { useDispatch } from '@gutenberg/data';
+import { useCallback, useMemo, useState } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { store as noticesStore } from '@gutenberg/notices';
+import { __unstableStripHTML as stripHTML } from '@gutenberg/dom';
 
 export default function useSaveImage( {
 	crop,

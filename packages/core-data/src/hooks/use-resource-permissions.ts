@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies
@@ -51,7 +51,7 @@ type ResourcePermissionsResolution< IdType > = [
  *
  * @example
  * ```js
- * import { useResourcePermissions } from '@wordpress/core-data';
+ * import { useResourcePermissions } from '@gutenberg/core-data';
  *
  * function PagesList() {
  *   const { canCreate, isResolving } = useResourcePermissions( 'pages' );
@@ -74,7 +74,7 @@ type ResourcePermissionsResolution< IdType > = [
  *
  * @example
  * ```js
- * import { useResourcePermissions } from '@wordpress/core-data';
+ * import { useResourcePermissions } from '@gutenberg/core-data';
  *
  * function Page({ pageId }) {
  *   const {

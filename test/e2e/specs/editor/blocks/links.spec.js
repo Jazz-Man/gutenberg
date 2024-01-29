@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-const { test, expect } = require( '@wordpress/e2e-test-utils-playwright' );
+const { test, expect } = require( '@gutenberg/e2e-test-utils-playwright' );
 
 test.describe( 'Links', () => {
 	test.beforeEach( async ( { admin } ) => {

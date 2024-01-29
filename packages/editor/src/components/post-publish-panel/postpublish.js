@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { PanelBody, Button, TextControl } from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { Component, createRef } from '@wordpress/element';
-import { withSelect } from '@wordpress/data';
-import { addQueryArgs, safeDecodeURIComponent } from '@wordpress/url';
-import { decodeEntities } from '@wordpress/html-entities';
-import { useCopyToClipboard } from '@wordpress/compose';
-import { store as coreStore } from '@wordpress/core-data';
+import { PanelBody, Button, TextControl } from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { Component, createRef } from '@gutenberg/element';
+import { withSelect } from '@gutenberg/data';
+import { addQueryArgs, safeDecodeURIComponent } from '@gutenberg/url';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { useCopyToClipboard } from '@gutenberg/compose';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

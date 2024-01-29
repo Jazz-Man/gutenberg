@@ -7,9 +7,9 @@ import { useRoute, useNavigation } from '@react-navigation/native';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { memo, useContext, useState, useCallback } from '@wordpress/element';
-import { BottomSheetContext, FocalPointPicker } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { memo, useContext, useState, useCallback } from '@gutenberg/element';
+import { BottomSheetContext, FocalPointPicker } from '@gutenberg/components';
 
 /**
  * Internal dependencies

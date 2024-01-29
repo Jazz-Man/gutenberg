@@ -5,13 +5,13 @@ import {
 	BlockControls,
 	useBlockProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { debounce, useRefEffect } from '@wordpress/compose';
-import { useSelect } from '@wordpress/data';
-import { ToolbarGroup } from '@wordpress/components';
-import { useEffect, useRef, useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { BACKSPACE, DELETE, F10, isKeyboardEvent } from '@wordpress/keycodes';
+} from '@gutenberg/block-editor';
+import { debounce, useRefEffect } from '@gutenberg/compose';
+import { useSelect } from '@gutenberg/data';
+import { ToolbarGroup } from '@gutenberg/components';
+import { useEffect, useRef, useState } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { BACKSPACE, DELETE, F10, isKeyboardEvent } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

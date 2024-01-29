@@ -22,9 +22,9 @@ Once done, you can navigate to your application folder and run it locally using 
 
 To build a block editor, you need to install the following dependencies:
 
- - `@wordpress/block-editor`
- - `@wordpress/block-library`
- - `@wordpress/components`
+ - `@gutenberg/block-editor`
+ - `@gutenberg/block-library`
+ - `@gutenberg/components`
 
 ## JSX
 
@@ -41,17 +41,17 @@ import { createRoot } from 'react-dom/client';
 import {
   BlockEditorProvider,
   BlockCanvas,
-} from "@wordpress/block-editor";
-import { registerCoreBlocks } from "@wordpress/block-library";
+} from "@gutenberg/block-editor";
+import { registerCoreBlocks } from "@gutenberg/block-library";
 
 // Default styles that are needed for the editor.
-import "@wordpress/components/build-style/style.css";
-import "@wordpress/block-editor/build-style/style.css";
+import "@gutenberg/components/build-style/style.css";
+import "@gutenberg/block-editor/build-style/style.css";
 
 // Default styles that are needed for the core blocks.
-import "@wordpress/block-library/build-style/common.css";
-import "@wordpress/block-library/build-style/style.css";
-import "@wordpress/block-library/build-style/editor.css";
+import "@gutenberg/block-library/build-style/common.css";
+import "@gutenberg/block-library/build-style/style.css";
+import "@gutenberg/block-library/build-style/editor.css";
 
 // Register the default core block types.
 registerCoreBlocks();

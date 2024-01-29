@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/style-engine",
+	"name": "@gutenberg/style-engine",
 	"version": "1.32.0",
 	"description": "A suite of parsers and compilers for WordPress styles.",
 	"author": "The WordPress Contributors",

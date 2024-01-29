@@ -10,11 +10,11 @@ import {
 	usePreferredColorSchemeStyle,
 	useNetworkConnectivity,
 	usePrevious,
-} from '@wordpress/compose';
-import { Icon } from '@wordpress/components';
-import { offline as offlineIcon } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
-import { useEffect } from '@wordpress/element';
+} from '@gutenberg/compose';
+import { Icon } from '@gutenberg/components';
+import { offline as offlineIcon } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
+import { useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -6,16 +6,16 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	Button,
 	ExternalLink,
 	__experimentalText as Text,
 	Tooltip,
-} from '@wordpress/components';
-import { filterURLForDisplay, safeDecodeURI } from '@wordpress/url';
-import { Icon, globe, info, linkOff, edit } from '@wordpress/icons';
-import { __unstableStripHTML as stripHTML } from '@wordpress/dom';
+} from '@gutenberg/components';
+import { filterURLForDisplay, safeDecodeURI } from '@gutenberg/url';
+import { Icon, globe, info, linkOff, edit } from '@gutenberg/icons';
+import { __unstableStripHTML as stripHTML } from '@gutenberg/dom';
 
 /**
  * Internal dependencies

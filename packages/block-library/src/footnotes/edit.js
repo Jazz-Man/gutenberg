@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { BlockIcon, RichText, useBlockProps } from '@wordpress/block-editor';
-import { useEntityProp } from '@wordpress/core-data';
-import { __ } from '@wordpress/i18n';
-import { Placeholder } from '@wordpress/components';
-import { formatListNumbered as icon } from '@wordpress/icons';
+import { BlockIcon, RichText, useBlockProps } from '@gutenberg/block-editor';
+import { useEntityProp } from '@gutenberg/core-data';
+import { __ } from '@gutenberg/i18n';
+import { Placeholder } from '@gutenberg/components';
+import { formatListNumbered as icon } from '@gutenberg/icons';
 
 export default function FootnotesEdit( { context: { postType, postId } } ) {
 	const [ meta, updateMeta ] = useEntityProp(

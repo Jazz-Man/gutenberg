@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import warn from '@wordpress/warning';
+import warn from '@gutenberg/warning';
 
 /**
  * Internal dependencies

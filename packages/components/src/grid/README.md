@@ -12,7 +12,7 @@ This feature is still experimental. “Experimental” means this is an early im
 import {
 	__experimentalGrid as Grid,
 	__experimentalText as Text,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 function Example() {
 	return (

@@ -4,11 +4,11 @@
 import {
 	BlockControls,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { createHigherOrderComponent } from '@wordpress/compose';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { addFilter } from '@wordpress/hooks';
-import { MoveToWidgetArea, getWidgetIdFromBlock } from '@wordpress/widgets';
+} from '@gutenberg/block-editor';
+import { createHigherOrderComponent } from '@gutenberg/compose';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { addFilter } from '@gutenberg/hooks';
+import { MoveToWidgetArea, getWidgetIdFromBlock } from '@gutenberg/widgets';
 
 /**
  * Internal dependencies

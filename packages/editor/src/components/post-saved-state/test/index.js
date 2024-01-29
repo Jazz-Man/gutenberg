@@ -7,8 +7,8 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { useViewportMatch } from '@wordpress/compose';
-import { useSelect } from '@wordpress/data';
+import { useViewportMatch } from '@gutenberg/compose';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies
@@ -17,26 +17,26 @@ import PostSavedState from '../';
 
 const mockSavePost = jest.fn();
 
-jest.mock( '@wordpress/data/src/components/use-dispatch', () => {
+jest.mock( '@gutenberg/data/src/components/use-dispatch', () => {
 	return {
 		useDispatch: () => ( { savePost: mockSavePost } ),
 		useDispatchWithMap: jest.fn(),
 	};
 } );
 
-jest.mock( '@wordpress/data/src/components/use-select', () => {
+jest.mock( '@gutenberg/data/src/components/use-select', () => {
 	// This allows us to tweak the returned value on each test.
 	const mock = jest.fn();
 	return mock;
 } );
 
-jest.mock( '@wordpress/compose/src/hooks/use-viewport-match', () => {
+jest.mock( '@gutenberg/compose/src/hooks/use-viewport-match', () => {
 	// This allows us to tweak the returned value on each test.
 	const mock = jest.fn();
 	return mock;
 } );
 
-jest.mock( '@wordpress/icons/src/icon', () => () => (
+jest.mock( '@gutenberg/icons/src/icon', () => () => (
 	<div data-testid="test-icon" />
 ) );
 

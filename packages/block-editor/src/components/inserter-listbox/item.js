@@ -4,8 +4,8 @@
 import {
 	Button,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
-import { forwardRef } from '@wordpress/element';
+} from '@gutenberg/components';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

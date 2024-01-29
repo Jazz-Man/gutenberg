@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { applyFormat, removeFormat } from '@wordpress/rich-text';
+import { __ } from '@gutenberg/i18n';
+import { applyFormat, removeFormat } from '@gutenberg/rich-text';
 
 const FORMAT_NAME = 'core/annotation';
 

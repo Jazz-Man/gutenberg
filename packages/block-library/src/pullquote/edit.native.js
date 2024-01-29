@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	AlignmentControl,
 	BlockControls,
@@ -9,8 +9,8 @@ import {
 	useBlockProps,
 	getColorObjectByAttributeValues,
 	__experimentalGetColorClassesAndStyles as getColorClassesAndStyles,
-} from '@wordpress/block-editor';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
+} from '@gutenberg/block-editor';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

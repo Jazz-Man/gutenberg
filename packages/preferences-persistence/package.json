@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/preferences-persistence",
+	"name": "@gutenberg/preferences-persistence",
 	"version": "1.41.0",
 	"description": "Persistence utilities for `wordpress/preferences`.",
 	"author": "The WordPress Contributors",
@@ -28,7 +28,7 @@
 	"sideEffects": false,
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/api-fetch": "workspace:*"
+		"@gutenberg/api-fetch": "workspace:*"
 	},
 	"publishConfig": {
 		"access": "public"

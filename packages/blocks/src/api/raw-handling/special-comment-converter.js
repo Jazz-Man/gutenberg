@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { remove, replace } from '@wordpress/dom';
+import { remove, replace } from '@gutenberg/dom';
 
 /**
  * Looks for `<!--nextpage-->` and `<!--more-->` comments and

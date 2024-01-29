@@ -6,9 +6,9 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { withPreferredColorScheme } from '@wordpress/compose';
-import { Button } from '@wordpress/components';
-import { Icon, plusCircleFilled } from '@wordpress/icons';
+import { withPreferredColorScheme } from '@gutenberg/compose';
+import { Button } from '@gutenberg/components';
+import { Icon, plusCircleFilled } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

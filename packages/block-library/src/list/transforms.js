@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { createBlock } from '@wordpress/blocks';
-import { create, split, toHTMLString } from '@wordpress/rich-text';
+import { createBlock } from '@gutenberg/blocks';
+import { create, split, toHTMLString } from '@gutenberg/rich-text';
 
 /**
  * Internal dependencies

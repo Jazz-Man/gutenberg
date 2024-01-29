@@ -39,9 +39,9 @@ for ( const packageName of packagesWithTypes ) {
 	);
 	if ( packageJson.dependencies ) {
 		for ( const dependency of Object.keys( packageJson.dependencies ) ) {
-			if ( dependency.startsWith( '@wordpress/' ) ) {
+			if ( dependency.startsWith( '@gutenberg/' ) ) {
 				const dependencyPackageName = dependency.slice(
-					'@wordpress/'.length
+					'@gutenberg/'.length
 				);
 				if (
 					packagesWithTypes.includes( dependencyPackageName ) &&

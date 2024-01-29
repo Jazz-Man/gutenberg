@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { DateTimePicker } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { forwardRef } from '@wordpress/element';
-import { getSettings } from '@wordpress/date';
+import { DateTimePicker } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { forwardRef } from '@gutenberg/element';
+import { getSettings } from '@gutenberg/date';
 
 /**
  * Internal dependencies

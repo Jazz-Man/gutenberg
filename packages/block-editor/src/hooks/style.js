@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
-import { addFilter } from '@wordpress/hooks';
+import { useMemo } from '@gutenberg/element';
+import { addFilter } from '@gutenberg/hooks';
 import {
 	getBlockSupport,
 	hasBlockSupport,
 	__EXPERIMENTAL_ELEMENTS as ELEMENTS,
-} from '@wordpress/blocks';
-import { useInstanceId } from '@wordpress/compose';
-import { getCSSRules, compileCSS } from '@wordpress/style-engine';
+} from '@gutenberg/blocks';
+import { useInstanceId } from '@gutenberg/compose';
+import { getCSSRules, compileCSS } from '@gutenberg/style-engine';
 
 /**
  * Internal dependencies

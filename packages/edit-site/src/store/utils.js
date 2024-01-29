@@ -6,7 +6,7 @@ import memoize from 'memize';
 /**
  * WordPress dependencies
  */
-import { isTemplatePart } from '@wordpress/blocks';
+import { isTemplatePart } from '@gutenberg/blocks';
 
 const EMPTY_ARRAY = [];
 

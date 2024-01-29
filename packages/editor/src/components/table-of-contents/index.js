@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Dropdown, Button } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { info } from '@wordpress/icons';
-import { forwardRef } from '@wordpress/element';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { Dropdown, Button } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { info } from '@gutenberg/icons';
+import { forwardRef } from '@gutenberg/element';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

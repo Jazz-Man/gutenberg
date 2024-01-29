@@ -7,10 +7,10 @@ Deprecation utility for WordPress. Logs a message to notify developers about a d
 Install the module
 
 ```bash
-npm install @wordpress/deprecated --save
+npm install @gutenberg/deprecated --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## Hook
 
@@ -19,7 +19,7 @@ The `deprecated` action is fired with three parameters: the name of the deprecat
 _Example:_
 
 ```js
-import { addAction } from '@wordpress/hooks';
+import { addAction } from '@gutenberg/hooks';
 
 function addDeprecationAlert( message, { version } ) {
 	alert( `Deprecation: ${ message }. Version: ${ version }` );
@@ -43,7 +43,7 @@ Logs a message to notify developers about a deprecated feature.
 _Usage_
 
 ```js
-import deprecated from '@wordpress/deprecated';
+import deprecated from '@gutenberg/deprecated';
 
 deprecated( 'Eating meat', {
 	since: '2019.01.01'

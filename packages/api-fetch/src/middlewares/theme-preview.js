@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { addQueryArgs, getQueryArg, removeQueryArgs } from '@wordpress/url';
+import { addQueryArgs, getQueryArg, removeQueryArgs } from '@gutenberg/url';
 
 /**
  * This appends a `wp_theme_preview` parameter to the REST API request URL if

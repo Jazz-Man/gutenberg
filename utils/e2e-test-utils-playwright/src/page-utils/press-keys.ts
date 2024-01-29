@@ -17,7 +17,7 @@ import {
 	SHIFT,
 	ALT,
 	CTRL,
-} from '@wordpress/keycodes';
+} from '@gutenberg/keycodes';
 
 let clipboardDataHolder: {
 	'text/plain': string;

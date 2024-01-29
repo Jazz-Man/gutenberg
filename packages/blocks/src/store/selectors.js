@@ -7,7 +7,7 @@ import removeAccents from 'remove-accents';
 /**
  * WordPress dependencies
  */
-import { pipe } from '@wordpress/compose';
+import { pipe } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -39,8 +39,8 @@ const getNormalizedBlockType = (state, nameOrType) =>
  *
  * @example
  * ```js
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const blockTypes = useSelect(
@@ -73,8 +73,8 @@ export const getBlockTypes = createSelector(
  *
  * @example
  * ```js
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const paragraphBlock = useSelect( ( select ) =>
@@ -114,8 +114,8 @@ export function getBlockType(state, name) {
  *
  * @example
  * ```js
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const buttonBlockStyles = useSelect( ( select ) =>
@@ -149,8 +149,8 @@ export function getBlockStyles(state, name) {
  *
  * @example
  * ```js
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const socialLinkVariations = useSelect( ( select ) =>
@@ -205,10 +205,10 @@ export const getBlockVariations = createSelector(
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { store as blockEditorStore } from '@wordpress/block-editor';
- * import { useSelect } from '@wordpress/data';
+ * import { __ } from '@gutenberg/i18n';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { store as blockEditorStore } from '@gutenberg/block-editor';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     // This example assumes that a core/embed block is the first block in the Block Editor.
@@ -270,9 +270,9 @@ export function getActiveBlockVariation(state, blockName, attributes, scope) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@gutenberg/i18n';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const defaultEmbedBlockVariation = useSelect( ( select ) =>
@@ -312,8 +312,8 @@ export function getDefaultBlockVariation(state, blockName, scope) {
  *
  * @example
  * ```js
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect, } from '@wordpress/data';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect, } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const blockCategories = useSelect( ( select ) =>
@@ -344,8 +344,8 @@ export function getCategories(state) {
  *
  * @example
  * ```js
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const blockCollections = useSelect( ( select ) =>
@@ -377,9 +377,9 @@ export function getCollections(state) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@gutenberg/i18n';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const defaultBlockName = useSelect( ( select ) =>
@@ -410,9 +410,9 @@ export function getDefaultBlockName(state) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@gutenberg/i18n';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const freeformFallbackBlockName = useSelect( ( select ) =>
@@ -446,9 +446,9 @@ export function getFreeformFallbackBlockName(state) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@gutenberg/i18n';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const unregisteredFallbackBlockName = useSelect( ( select ) =>
@@ -482,9 +482,9 @@ export function getUnregisteredFallbackBlockName(state) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@gutenberg/i18n';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const groupingBlockName = useSelect( ( select ) =>
@@ -519,8 +519,8 @@ export function getGroupingBlockName(state) {
  *
  * @example
  * ```js
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const childBlockNames = useSelect( ( select ) =>
@@ -563,9 +563,9 @@ export const getChildBlockNames = createSelector(
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@gutenberg/i18n';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const paragraphBlockSupportValue = useSelect( ( select ) =>
@@ -611,9 +611,9 @@ export const getBlockSupport = (
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@gutenberg/i18n';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const paragraphBlockSupportClassName = useSelect( ( select ) =>
@@ -648,9 +648,9 @@ export function hasBlockSupport(state, nameOrType, feature, defaultSupports) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@gutenberg/i18n';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const termFound = useSelect(
@@ -719,9 +719,9 @@ export function isMatchingSearchTerm(state, nameOrType, searchTerm) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@gutenberg/i18n';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const navigationBlockHasChildBlocks = useSelect( ( select ) =>
@@ -754,9 +754,9 @@ export const hasChildBlocks = (state, blockName) => {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@gutenberg/i18n';
+ * import { store as blocksStore } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *     const navigationBlockHasChildBlocksWithInserterSupport = useSelect( ( select ) =>

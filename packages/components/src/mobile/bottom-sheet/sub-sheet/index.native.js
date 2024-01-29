@@ -6,8 +6,8 @@ import { SafeAreaView } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Children, useEffect, useContext } from '@wordpress/element';
-import { createSlotFill, BottomSheetContext } from '@wordpress/components';
+import { Children, useEffect, useContext } from '@gutenberg/element';
+import { createSlotFill, BottomSheetContext } from '@gutenberg/components';
 
 const { Fill, Slot } = createSlotFill( 'BottomSheetSubSheet' );
 

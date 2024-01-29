@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { applyFilters } from '@wordpress/hooks';
+import { __, sprintf } from '@gutenberg/i18n';
+import { applyFilters } from '@gutenberg/hooks';
 import {
 	DropZone,
 	Button,
@@ -11,17 +11,17 @@ import {
 	withNotices,
 	withFilters,
 	__experimentalHStack as HStack,
-} from '@wordpress/components';
-import { isBlobURL } from '@wordpress/blob';
-import { useState, useRef } from '@wordpress/element';
-import { compose } from '@wordpress/compose';
-import { useSelect, withDispatch, withSelect } from '@wordpress/data';
+} from '@gutenberg/components';
+import { isBlobURL } from '@gutenberg/blob';
+import { useState, useRef } from '@gutenberg/element';
+import { compose } from '@gutenberg/compose';
+import { useSelect, withDispatch, withSelect } from '@gutenberg/data';
 import {
 	MediaUpload,
 	MediaUploadCheck,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/block-editor';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

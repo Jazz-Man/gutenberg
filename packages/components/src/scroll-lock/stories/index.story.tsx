@@ -7,7 +7,7 @@ import type { ReactNode } from 'react';
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
+import { useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

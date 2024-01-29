@@ -7,13 +7,13 @@ import {
 	getBlockTransforms,
 	getBlockType,
 	hasBlockSupport,
-} from '@wordpress/blocks';
-import { Button } from '@wordpress/components';
-import { withSelect, withDispatch } from '@wordpress/data';
-import { Warning, store as blockEditorStore } from '@wordpress/block-editor';
-import { addFilter } from '@wordpress/hooks';
-import { __ } from '@wordpress/i18n';
-import { compose, createHigherOrderComponent } from '@wordpress/compose';
+} from '@gutenberg/blocks';
+import { Button } from '@gutenberg/components';
+import { withSelect, withDispatch } from '@gutenberg/data';
+import { Warning, store as blockEditorStore } from '@gutenberg/block-editor';
+import { addFilter } from '@gutenberg/hooks';
+import { __ } from '@gutenberg/i18n';
+import { compose, createHigherOrderComponent } from '@gutenberg/compose';
 
 const enhance = compose(
 	/**

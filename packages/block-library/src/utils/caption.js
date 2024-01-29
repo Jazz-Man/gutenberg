@@ -6,17 +6,17 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useState, useEffect, useCallback } from '@wordpress/element';
-import { usePrevious } from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
+import { useState, useEffect, useCallback } from '@gutenberg/element';
+import { usePrevious } from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
 import {
 	RichText,
 	BlockControls,
 	__experimentalGetElementClassName,
-} from '@wordpress/block-editor';
-import { ToolbarButton } from '@wordpress/components';
-import { caption as captionIcon } from '@wordpress/icons';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
+} from '@gutenberg/block-editor';
+import { ToolbarButton } from '@gutenberg/components';
+import { caption as captionIcon } from '@gutenberg/icons';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
 
 export function Caption( {
 	key = 'caption',

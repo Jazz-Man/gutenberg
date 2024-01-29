@@ -6,17 +6,17 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { focus } from '@wordpress/dom';
+import { focus } from '@gutenberg/dom';
 import {
 	useContext,
 	useEffect,
 	useMemo,
 	useRef,
 	useId,
-} from '@wordpress/element';
-import { useMergeRefs } from '@wordpress/compose';
-import { isRTL as isRTLFn } from '@wordpress/i18n';
-import { escapeAttribute } from '@wordpress/escape-html';
+} from '@gutenberg/element';
+import { useMergeRefs } from '@gutenberg/compose';
+import { isRTL as isRTLFn } from '@gutenberg/i18n';
+import { escapeAttribute } from '@gutenberg/escape-html';
 
 /**
  * Internal dependencies
@@ -153,7 +153,7 @@ function UnconnectedNavigatorScreen(
  *   __experimentalNavigatorScreen as NavigatorScreen,
  *   __experimentalNavigatorButton as NavigatorButton,
  *   __experimentalNavigatorBackButton as NavigatorBackButton,
- * } from '@wordpress/components';
+ * } from '@gutenberg/components';
  *
  * const MyNavigation = () => (
  *   <NavigatorProvider initialPath="/">

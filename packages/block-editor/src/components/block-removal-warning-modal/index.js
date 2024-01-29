@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useEffect } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
+import { useEffect } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
 import {
 	Modal,
 	Button,
 	__experimentalHStack as HStack,
-} from '@wordpress/components';
-import { __, _n } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { __, _n } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

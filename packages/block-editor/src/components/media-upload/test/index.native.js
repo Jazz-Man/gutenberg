@@ -9,7 +9,7 @@ import { Text, TouchableWithoutFeedback } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { requestMediaPicker } from '@wordpress/react-native-bridge';
+import { requestMediaPicker } from '@gutenberg/react-native-bridge';
 
 /**
  * Internal dependencies

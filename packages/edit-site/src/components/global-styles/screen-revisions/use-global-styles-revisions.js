@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { useContext, useMemo } from '@wordpress/element';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useContext, useMemo } from '@gutenberg/element';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

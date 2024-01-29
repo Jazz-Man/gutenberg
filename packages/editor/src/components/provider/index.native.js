@@ -21,23 +21,23 @@ import RNReactNativeGutenbergBridge, {
 	subscribeUpdateCapabilities,
 	subscribeShowNotice,
 	subscribeShowEditorHelp,
-} from '@wordpress/react-native-bridge';
-import { Component } from '@wordpress/element';
-import { count as wordCount } from '@wordpress/wordcount';
+} from '@gutenberg/react-native-bridge';
+import { Component } from '@gutenberg/element';
+import { count as wordCount } from '@gutenberg/wordcount';
 import {
 	parse,
 	serialize,
 	getUnregisteredTypeHandlerName,
 	getBlockType,
 	createBlock,
-} from '@wordpress/blocks';
-import { withDispatch, withSelect } from '@wordpress/data';
-import { compose } from '@wordpress/compose';
-import { applyFilters } from '@wordpress/hooks';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { getGlobalStyles, getColorsAndGradients } from '@wordpress/components';
-import { NEW_BLOCK_TYPES } from '@wordpress/block-library';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/blocks';
+import { withDispatch, withSelect } from '@gutenberg/data';
+import { compose } from '@gutenberg/compose';
+import { applyFilters } from '@gutenberg/hooks';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { getGlobalStyles, getColorsAndGradients } from '@gutenberg/components';
+import { NEW_BLOCK_TYPES } from '@gutenberg/block-library';
+import { __ } from '@gutenberg/i18n';
 
 const postTypeEntities = [
 	{ name: 'post', baseURL: '/wp/v2/posts' },
@@ -56,11 +56,11 @@ const postTypeEntities = [
 	},
 	rawAttributes: [ 'title', 'excerpt', 'content' ],
 } ) );
-import { EditorHelpTopics, store as editorStore } from '@wordpress/editor';
-import { store as noticesStore } from '@wordpress/notices';
-import { store as coreStore } from '@wordpress/core-data';
+import { EditorHelpTopics, store as editorStore } from '@gutenberg/editor';
+import { store as noticesStore } from '@gutenberg/notices';
+import { store as coreStore } from '@gutenberg/core-data';
 // eslint-disable-next-line no-restricted-imports
-import { store as editPostStore } from '@wordpress/edit-post';
+import { store as editPostStore } from '@gutenberg/edit-post';
 
 /**
  * Internal dependencies

@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useRef } from '@wordpress/element';
-import { __, _n, sprintf } from '@wordpress/i18n';
+import { useEffect, useRef } from '@gutenberg/element';
+import { __, _n, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

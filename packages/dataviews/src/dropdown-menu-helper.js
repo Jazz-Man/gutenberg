@@ -4,9 +4,9 @@
 import {
 	Icon,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
-import { forwardRef } from '@wordpress/element';
-import { SVG, Circle } from '@wordpress/primitives';
+} from '@gutenberg/components';
+import { forwardRef } from '@gutenberg/element';
+import { SVG, Circle } from '@gutenberg/primitives';
 
 /**
  * Internal dependencies

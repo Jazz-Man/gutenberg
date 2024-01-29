@@ -6,17 +6,17 @@ import Clipboard from '@react-native-clipboard/clipboard';
 /**
  * WordPress dependencies
  */
-import { compose } from '@wordpress/compose';
-import { withSelect } from '@wordpress/data';
-import { isURL, prependHTTP } from '@wordpress/url';
+import { compose } from '@gutenberg/compose';
+import { withSelect } from '@gutenberg/data';
+import { isURL, prependHTTP } from '@gutenberg/url';
 import {
 	useEffect,
 	useState,
 	useRef,
 	useContext,
 	useCallback,
-} from '@wordpress/element';
-import { link, external } from '@wordpress/icons';
+} from '@gutenberg/element';
+import { link, external } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

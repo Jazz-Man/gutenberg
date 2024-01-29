@@ -7,7 +7,7 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { useEffect, useState } from '@wordpress/element';
+import { useEffect, useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

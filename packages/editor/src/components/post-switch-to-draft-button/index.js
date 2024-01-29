@@ -4,10 +4,10 @@
 import {
 	Button,
 	__experimentalConfirmDialog as ConfirmDialog,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useState } from '@wordpress/element';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

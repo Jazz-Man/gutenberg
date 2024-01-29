@@ -53,8 +53,8 @@ The `Panel` creates a container with a header that can take collapsible `PanelBo
 ### Usage
 
 ```jsx
-import { Panel, PanelBody, PanelRow } from '@wordpress/components';
-import { more } from '@wordpress/icons';
+import { Panel, PanelBody, PanelRow } from '@gutenberg/components';
+import { more } from '@gutenberg/icons';
 
 const MyPanel = () => (
 	<Panel header="My Panel">

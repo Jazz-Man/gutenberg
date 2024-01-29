@@ -1,18 +1,18 @@
 /**
  * WordPress dependencies
  */
-import { useState, memo } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
+import { useState, memo } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
 import {
 	BlockContextProvider,
 	useBlockProps,
 	useInnerBlocksProps,
 	store as blockEditorStore,
 	__experimentalUseBlockPreview as useBlockPreview,
-} from '@wordpress/block-editor';
-import { Spinner } from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/block-editor';
+import { Spinner } from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

@@ -9,18 +9,18 @@ import {
 	DropdownMenu,
 	MenuGroup,
 	MenuItem,
-} from '@wordpress/components';
-import { getBlockTypes, store as blocksStore } from '@wordpress/blocks';
-import { useSelect, useDispatch } from '@wordpress/data';
+} from '@gutenberg/components';
+import { getBlockTypes, store as blocksStore } from '@gutenberg/blocks';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	privateApis as blockEditorPrivateApis,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
-import { store as preferencesStore } from '@wordpress/preferences';
-import { moreVertical } from '@wordpress/icons';
-import { store as coreStore } from '@wordpress/core-data';
-import { useEffect } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { store as preferencesStore } from '@gutenberg/preferences';
+import { moreVertical } from '@gutenberg/icons';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -6,9 +6,9 @@ import { TouchableWithoutFeedback, View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { useState } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useState } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

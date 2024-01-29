@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useEntityRecord } from '@wordpress/core-data';
+import { useEntityRecord } from '@gutenberg/core-data';
 
 function Media( { id, size = [ 'large', 'medium', 'thumbnail' ], ...props } ) {
 	const { record: media } = useEntityRecord( 'root', 'media', id );

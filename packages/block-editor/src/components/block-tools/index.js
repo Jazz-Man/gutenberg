@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { Popover } from '@wordpress/components';
-import { __unstableUseShortcutEventMatch as useShortcutEventMatch } from '@wordpress/keyboard-shortcuts';
-import { useRef } from '@wordpress/element';
-import { isUnmodifiedDefaultBlock } from '@wordpress/blocks';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { Popover } from '@gutenberg/components';
+import { __unstableUseShortcutEventMatch as useShortcutEventMatch } from '@gutenberg/keyboard-shortcuts';
+import { useRef } from '@gutenberg/element';
+import { isUnmodifiedDefaultBlock } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

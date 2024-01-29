@@ -7,9 +7,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
-import { forwardRef, useMemo, useRef, useEffect } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+import deprecated from '@gutenberg/deprecated';
+import { forwardRef, useMemo, useRef, useEffect } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies
@@ -239,8 +239,8 @@ function UnforwardedUnitControl(
  *
  *
  * ```jsx
- * import { __experimentalUnitControl as UnitControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { __experimentalUnitControl as UnitControl } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const Example = () => {
  *   const [ value, setValue ] = useState( '10px' );

@@ -6,8 +6,8 @@ import fastDeepEqual from 'fast-deep-equal/es6';
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { createHigherOrderComponent } from '@wordpress/compose';
+import { Component } from '@gutenberg/element';
+import { createHigherOrderComponent } from '@gutenberg/compose';
 
 type Props = {
 	node?: HTMLElement;

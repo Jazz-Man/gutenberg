@@ -7,7 +7,7 @@ import { press, hover, click } from '@ariakit/test';
 /**
  * WordPress dependencies
  */
-import { wordpress, category, media } from '@wordpress/icons';
+import { wordpress, category, media } from '@gutenberg/icons';
 
 /**
  * Internal dependencies
@@ -49,7 +49,7 @@ describe.each( [
 		originalGetClientRects = window.HTMLElement.prototype.getClientRects;
 		// Mocking `getClientRects()` is necessary to pass a check performed by
 		// the `focus.tabbable.find()` and by the `focus.focusable.find()` functions
-		// from the `@wordpress/dom` package.
+		// from the `@gutenberg/dom` package.
 		// @ts-expect-error We're not trying to comply to the DOM spec, only mocking
 		window.HTMLElement.prototype.getClientRects = function () {
 			return [ 'trick-jsdom-into-having-size-for-element-rect' ];

@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useEntityRecords } from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
-import { store as editorStore } from '@wordpress/editor';
+import { useEntityRecords } from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

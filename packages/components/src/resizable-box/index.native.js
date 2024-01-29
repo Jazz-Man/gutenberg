@@ -5,7 +5,7 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { withPreferredColorScheme } from '@wordpress/compose';
+import { withPreferredColorScheme } from '@gutenberg/compose';
 /**
  * Internal dependencies
  */

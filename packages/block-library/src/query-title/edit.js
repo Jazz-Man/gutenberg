@@ -14,10 +14,10 @@ import {
 	Warning,
 	HeadingLevelDropdown,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { ToggleControl, PanelBody } from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/block-editor';
+import { ToggleControl, PanelBody } from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
 
 const SUPPORTED_TYPES = [ 'archive', 'search' ];
 

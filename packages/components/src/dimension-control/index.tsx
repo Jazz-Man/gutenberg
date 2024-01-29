@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies
@@ -23,8 +23,8 @@ import type { SelectControlSingleSelectionProps } from '../select-control/types'
  * This feature is still experimental. “Experimental” means this is an early implementation subject to drastic and breaking changes.
  *
  * ```jsx
- * import { __experimentalDimensionControl as DimensionControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { __experimentalDimensionControl as DimensionControl } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * export default function MyCustomDimensionControl() {
  * 	const [ paddingSize, setPaddingSize ] = useState( '' );

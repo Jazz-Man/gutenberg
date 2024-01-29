@@ -1,17 +1,17 @@
 /**
  * WordPress dependencies
  */
-import { Disabled } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { Disabled } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 import {
 	BlockList,
 	privateApis as blockEditorPrivateApis,
 	store as blockEditorStore,
 	__unstableEditorStyles as EditorStyles,
 	__unstableIframe as Iframe,
-} from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
-import { useContext, useMemo } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
+import { useContext, useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

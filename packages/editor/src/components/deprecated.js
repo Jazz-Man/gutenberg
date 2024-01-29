@@ -2,8 +2,8 @@
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
-import { forwardRef } from '@wordpress/element';
+import deprecated from '@gutenberg/deprecated';
+import { forwardRef } from '@gutenberg/element';
 import {
 	Autocomplete as RootAutocomplete,
 	AlignmentToolbar as RootAlignmentToolbar,
@@ -57,9 +57,9 @@ import {
 	withColorContext as rootWithColorContext,
 	withColors as rootWithColors,
 	withFontSizes as rootWithFontSizes,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
-export { default as ServerSideRender } from '@wordpress/server-side-render';
+export { default as ServerSideRender } from '@gutenberg/server-side-render';
 
 function deprecateComponent( name, Wrapped, staticsToHoist = [] ) {
 	const Component = forwardRef( ( props, ref ) => {

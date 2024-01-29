@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { ActionItem } from '@wordpress/interface';
-import { compose } from '@wordpress/compose';
-import { MenuItem } from '@wordpress/components';
-import { withPluginContext } from '@wordpress/plugins';
+import { ActionItem } from '@gutenberg/interface';
+import { compose } from '@gutenberg/compose';
+import { MenuItem } from '@gutenberg/components';
+import { withPluginContext } from '@gutenberg/plugins';
 
 /**
  * Renders a menu item in `Plugins` group in `More Menu` drop down, and can be used to as a button or link depending on the props provided.
@@ -42,9 +42,9 @@ import { withPluginContext } from '@wordpress/plugins';
  * @example
  * ```jsx
  * // Using ESNext syntax
- * import { __ } from '@wordpress/i18n';
- * import { PluginMoreMenuItem } from '@wordpress/edit-post';
- * import { more } from '@wordpress/icons';
+ * import { __ } from '@gutenberg/i18n';
+ * import { PluginMoreMenuItem } from '@gutenberg/edit-post';
+ * import { more } from '@gutenberg/icons';
  *
  * function onButtonClick() {
  * 	alert( 'Button clicked.' );

@@ -28,8 +28,8 @@ show "Mixed" placeholder text.
 
 ```jsx
 import { useState } from 'react';
-import { __experimentalBorderBoxControl as BorderBoxControl } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { __experimentalBorderBoxControl as BorderBoxControl } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 const colors = [
 	{ name: 'Blue 20', color: '#72aee6' },

@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { isRTL } from '@wordpress/i18n';
+import { useInstanceId } from '@gutenberg/compose';
+import { isRTL } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies
@@ -31,7 +31,7 @@ import {
  *
  * ```jsx
  * import { CircularOptionPicker } from '../circular-option-picker';
- * import { useState } from '@wordpress/element';
+ * import { useState } from '@gutenberg/element';
  *
  * const Example = () => {
  * 	const [ currentColor, setCurrentColor ] = useState();

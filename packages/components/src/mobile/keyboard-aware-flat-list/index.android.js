@@ -11,7 +11,7 @@ import {
 	forwardRef,
 	useCallback,
 	useImperativeHandle,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 
 /**
  * Internal dependencies

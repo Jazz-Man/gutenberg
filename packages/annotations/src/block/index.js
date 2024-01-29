@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { addFilter } from '@wordpress/hooks';
-import { withSelect } from '@wordpress/data';
+import { addFilter } from '@gutenberg/hooks';
+import { withSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

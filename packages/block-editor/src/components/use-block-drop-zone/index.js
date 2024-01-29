@@ -1,17 +1,17 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch, useSelect, useRegistry } from '@wordpress/data';
-import { useCallback, useState } from '@wordpress/element';
+import { useDispatch, useSelect, useRegistry } from '@gutenberg/data';
+import { useCallback, useState } from '@gutenberg/element';
 import {
 	useThrottle,
 	__experimentalUseDropZone as useDropZone,
-} from '@wordpress/compose';
-import { isRTL } from '@wordpress/i18n';
+} from '@gutenberg/compose';
+import { isRTL } from '@gutenberg/i18n';
 import {
 	isUnmodifiedDefaultBlock as getIsUnmodifiedDefaultBlock,
 	store as blocksStore,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

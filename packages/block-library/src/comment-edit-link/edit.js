@@ -11,9 +11,9 @@ import {
 	BlockControls,
 	InspectorControls,
 	useBlockProps,
-} from '@wordpress/block-editor';
-import { PanelBody, ToggleControl } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { PanelBody, ToggleControl } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 export default function Edit( {
 	attributes: { linkTarget, textAlign },

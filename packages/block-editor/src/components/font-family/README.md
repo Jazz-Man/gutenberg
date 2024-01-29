@@ -10,8 +10,8 @@ Optionally, you can provide a `fontFamilies` prop that overrides the predefined 
 
 ```jsx
 import { useState } from 'react';
-import { FontFamilyControl } from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
+import { FontFamilyControl } from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
 
 // ...
 

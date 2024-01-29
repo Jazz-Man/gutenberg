@@ -32,7 +32,7 @@ function UnconnectedElevation(
  *	__experimentalElevation as Elevation,
  *	__experimentalSurface as Surface,
  *	__experimentalText as Text,
- * } from '@wordpress/components';
+ * } from '@gutenberg/components';
  *
  * function Example() {
  *   return (

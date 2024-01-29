@@ -6,9 +6,9 @@ import { Controller } from '@react-spring/web';
 /**
  * WordPress dependencies
  */
-import { useLayoutEffect, useMemo, useRef } from '@wordpress/element';
-import { getScrollContainer } from '@wordpress/dom';
-import { useSelect } from '@wordpress/data';
+import { useLayoutEffect, useMemo, useRef } from '@gutenberg/element';
+import { getScrollContainer } from '@gutenberg/dom';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

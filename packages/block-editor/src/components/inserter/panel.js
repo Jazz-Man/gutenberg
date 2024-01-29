@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { Icon } from '@wordpress/components';
+import { Icon } from '@gutenberg/components';
 
 function InserterPanel( { title, icon, children } ) {
 	return (

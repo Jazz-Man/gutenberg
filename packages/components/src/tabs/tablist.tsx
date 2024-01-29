@@ -7,8 +7,8 @@ import * as Ariakit from '@ariakit/react';
 /**
  * WordPress dependencies
  */
-import warning from '@wordpress/warning';
-import { forwardRef } from '@wordpress/element';
+import warning from '@gutenberg/warning';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

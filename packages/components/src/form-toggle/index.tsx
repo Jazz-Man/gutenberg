@@ -15,8 +15,8 @@ export const noop = () => {};
  * FormToggle switches a single setting on or off.
  *
  * ```jsx
- * import { FormToggle } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { FormToggle } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyFormToggle = () => {
  *   const [ isChecked, setChecked ] = useState( true );

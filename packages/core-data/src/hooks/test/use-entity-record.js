@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import triggerFetch from '@wordpress/api-fetch';
-import { createRegistry, RegistryProvider } from '@wordpress/data';
+import triggerFetch from '@gutenberg/api-fetch';
+import { createRegistry, RegistryProvider } from '@gutenberg/data';
 
-jest.mock( '@wordpress/api-fetch' );
+jest.mock( '@gutenberg/api-fetch' );
 
 /**
  * External dependencies

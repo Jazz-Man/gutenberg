@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { ToolbarButton } from '@wordpress/components';
-import { fullscreen } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { ToolbarButton } from '@gutenberg/components';
+import { fullscreen } from '@gutenberg/icons';
 
 function BlockFullHeightAlignmentControl( {
 	isActive,

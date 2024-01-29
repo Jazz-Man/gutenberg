@@ -6,7 +6,7 @@ import { render, screen } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
+import { Component } from '@gutenberg/element';
 
 /**
  * Internal dependencies

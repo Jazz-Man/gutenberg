@@ -2,9 +2,9 @@
  * WordPress dependencies
  */
 
-import { parse } from '@wordpress/blocks';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { parse } from '@gutenberg/blocks';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
+import { useBlockProps, useInnerBlocksProps } from '@gutenberg/block-editor';
 
 export default function save( { attributes, className } ) {
 	const { fontSize, style } = attributes;

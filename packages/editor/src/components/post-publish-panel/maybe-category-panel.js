@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { PanelBody } from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
-import { useState, useEffect } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { PanelBody } from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useState, useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies

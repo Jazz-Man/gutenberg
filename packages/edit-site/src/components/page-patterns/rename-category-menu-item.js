@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { MenuItem } from '@wordpress/components';
-import { useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { privateApis as patternsPrivateApis } from '@wordpress/patterns';
+import { MenuItem } from '@gutenberg/components';
+import { useState } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { privateApis as patternsPrivateApis } from '@gutenberg/patterns';
 /**
  * Internal dependencies
  */

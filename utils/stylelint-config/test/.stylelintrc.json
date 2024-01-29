@@ -1,4 +1,4 @@
 {
-	"extends": "@wordpress/stylelint-config/scss",
+	"extends": "@gutenberg/stylelint-config/scss",
 	"ignoreFiles": [ "*-invalid.scss" ]
 }

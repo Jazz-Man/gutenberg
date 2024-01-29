@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 
 import {
 	BaseControl,
@@ -10,7 +10,7 @@ import {
 	RangeControl,
 	__experimentalUnitControl as UnitControl,
 	__experimentalParseQuantityAndUnitFromRawValue as parseQuantityAndUnitFromRawValue,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

@@ -6,7 +6,7 @@ import { render } from 'test/helpers';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies
@@ -15,7 +15,7 @@ import items from './fixtures';
 import BlockTypesTab from '../block-types-tab';
 
 jest.mock( '../hooks/use-clipboard-block' );
-jest.mock( '@wordpress/data/src/components/use-select' );
+jest.mock( '@gutenberg/data/src/components/use-select' );
 
 const selectMock = {
 	getCategories: jest.fn().mockReturnValue( [] ),

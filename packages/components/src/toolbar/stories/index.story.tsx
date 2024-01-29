@@ -22,8 +22,8 @@ import {
 	arrowLeft,
 	arrowRight,
 	chevronDown,
-} from '@wordpress/icons';
-import { SVG, Path } from '@wordpress/primitives';
+} from '@gutenberg/icons';
+import { SVG, Path } from '@gutenberg/primitives';
 
 /**
  * Internal dependencies

@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/annotations",
+	"name": "@gutenberg/annotations",
 	"version": "2.49.0",
 	"description": "Annotate content in the Gutenberg editor.",
 	"author": "The WordPress Contributors",
@@ -26,10 +26,10 @@
 	"react-native": "src/index",
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/data": "workspace:*",
-		"@wordpress/hooks": "workspace:*",
-		"@wordpress/i18n": "workspace:*",
-		"@wordpress/rich-text": "workspace:*",
+		"@gutenberg/data": "workspace:*",
+		"@gutenberg/hooks": "workspace:*",
+		"@gutenberg/i18n": "workspace:*",
+		"@gutenberg/rich-text": "workspace:*",
 		"rememo": "^4.0.2",
 		"uuid": "^9.0.1"
 	},

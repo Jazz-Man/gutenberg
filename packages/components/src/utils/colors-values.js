@@ -5,7 +5,7 @@ import { rgba } from './colors';
 
 const white = '#fff';
 
-// Matches the grays in @wordpress/base-styles
+// Matches the grays in @gutenberg/base-styles
 const GRAY = {
 	900: '#1e1e1e',
 	800: '#2f2f2f',
@@ -22,14 +22,14 @@ const GRAY = {
 	100: '#f0f0f0',
 };
 
-// Matches @wordpress/base-styles
+// Matches @gutenberg/base-styles
 const ALERT = {
 	yellow: '#f0b849',
 	red: '#d94f4f',
 	green: '#4ab866',
 };
 
-// Matches the Modern admin scheme in @wordpress/base-styles
+// Matches the Modern admin scheme in @gutenberg/base-styles
 const ADMIN = {
 	theme: 'var(--wp-components-color-accent, var(--wp-admin-theme-color, #3858e9))',
 	themeDark10:
@@ -46,7 +46,7 @@ const UI = {
 	textDisabled: GRAY[ 600 ],
 	textDark: white,
 
-	// Matches @wordpress/base-styles
+	// Matches @gutenberg/base-styles
 	darkGrayPlaceholder: rgba( GRAY[ 900 ], 0.62 ),
 	lightGrayPlaceholder: rgba( white, 0.65 ),
 };

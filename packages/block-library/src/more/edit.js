@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { PanelBody, ToggleControl } from '@wordpress/components';
-import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { ENTER } from '@wordpress/keycodes';
-import { getDefaultBlockName, createBlock } from '@wordpress/blocks';
+import { __ } from '@gutenberg/i18n';
+import { PanelBody, ToggleControl } from '@gutenberg/components';
+import { InspectorControls, useBlockProps } from '@gutenberg/block-editor';
+import { ENTER } from '@gutenberg/keycodes';
+import { getDefaultBlockName, createBlock } from '@gutenberg/blocks';
 
 const DEFAULT_TEXT = __( 'Read more' );
 

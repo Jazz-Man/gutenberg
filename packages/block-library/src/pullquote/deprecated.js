@@ -12,8 +12,8 @@ import {
 	RichText,
 	store as blockEditorStore,
 	useBlockProps,
-} from '@wordpress/block-editor';
-import { select } from '@wordpress/data';
+} from '@gutenberg/block-editor';
+import { select } from '@gutenberg/data';
 
 /**
  * Internal dependencies

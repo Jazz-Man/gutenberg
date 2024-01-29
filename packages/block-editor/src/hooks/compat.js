@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { hasBlockSupport } from '@wordpress/blocks';
-import { addFilter } from '@wordpress/hooks';
+import { hasBlockSupport } from '@gutenberg/blocks';
+import { addFilter } from '@gutenberg/hooks';
 
 function migrateLightBlockWrapper( settings ) {
 	const { apiVersion = 1 } = settings;

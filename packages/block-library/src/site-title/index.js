@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { mapMarker as icon } from '@wordpress/icons';
+import { mapMarker as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

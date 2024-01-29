@@ -33,7 +33,7 @@ function UnconnectedNavigatorButton(
  *   __experimentalNavigatorScreen as NavigatorScreen,
  *   __experimentalNavigatorButton as NavigatorButton,
  *   __experimentalNavigatorBackButton as NavigatorBackButton,
- * } from '@wordpress/components';
+ * } from '@gutenberg/components';
  *
  * const MyNavigation = () => (
  *   <NavigatorProvider initialPath="/">

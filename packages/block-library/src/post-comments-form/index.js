@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { postCommentsForm as icon } from '@wordpress/icons';
+import { postCommentsForm as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

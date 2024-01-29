@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { store, getContext, createElement } from '@wordpress/interactivity';
+import { store, getContext, createElement } from '@gutenberg/interactivity';
 
 const { state } = store( 'directive-context', {
 	state: {

@@ -6,7 +6,7 @@ import deepFreeze from 'deep-freeze';
 /**
  * WordPress dependencies
  */
-import { registerBlockType, unregisterBlockType } from '@wordpress/blocks';
+import { registerBlockType, unregisterBlockType } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

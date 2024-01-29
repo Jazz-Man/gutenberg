@@ -38,8 +38,8 @@ This prop is passed directly to the `URLInput` component.
 
 
 ```js
-import { registerBlockType } from '@wordpress/blocks';
-import { URLInputButton } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { URLInputButton } from '@gutenberg/block-editor';
 
 registerBlockType( /* ... */, {
 	// ...
@@ -138,8 +138,8 @@ Start opting into the new margin-free styles that will become the default in a f
 
 
 ```js
-import { registerBlockType } from '@wordpress/blocks';
-import { URLInput } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { URLInput } from '@gutenberg/block-editor';
 
 registerBlockType( /* ... */, {
 	// ...

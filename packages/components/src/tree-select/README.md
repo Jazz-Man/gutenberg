@@ -8,7 +8,7 @@ Render a user interface to select the parent page in a hierarchy of pages:
 
 ```jsx
 import { useState } from 'react';
-import { TreeSelect } from '@wordpress/components';
+import { TreeSelect } from '@gutenberg/components';
 
 const MyTreeSelect = () => {
 	const [ page, setPage ] = useState( 'p21' );

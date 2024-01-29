@@ -9,10 +9,10 @@ import classnames from 'classnames';
 import {
 	store as editorStore,
 	privateApis as editorPrivateApis,
-} from '@wordpress/editor';
-import { useMemo } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import { store as blocksStore } from '@wordpress/blocks';
+} from '@gutenberg/editor';
+import { useMemo } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import { store as blocksStore } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

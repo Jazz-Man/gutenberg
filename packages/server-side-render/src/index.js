@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
-import { withSelect } from '@wordpress/data';
+import { useMemo } from '@gutenberg/element';
+import { withSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies
@@ -15,9 +15,9 @@ import ServerSideRender from './server-side-render';
 const EMPTY_OBJECT = {};
 
 const ExportedServerSideRender = withSelect( ( select ) => {
-	// FIXME: @wordpress/server-side-render should not depend on @wordpress/editor.
+	// FIXME: @gutenberg/server-side-render should not depend on @gutenberg/editor.
 	// It is used by blocks that can be loaded into a *non-post* block editor.
-	// eslint-disable-next-line @wordpress/data-no-store-string-literals
+	// eslint-disable-next-line @gutenberg/data-no-store-string-literals
 	const coreEditorSelect = select( 'core/editor' );
 	if ( coreEditorSelect ) {
 		const currentPostId = coreEditorSelect.getCurrentPostId();

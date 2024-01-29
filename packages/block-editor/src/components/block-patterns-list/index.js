@@ -6,16 +6,16 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useEffect, useState, forwardRef } from '@wordpress/element';
+import { useEffect, useState, forwardRef } from '@gutenberg/element';
 import {
 	VisuallyHidden,
 	Tooltip,
 	privateApis as componentsPrivateApis,
 	__experimentalHStack as HStack,
-} from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
-import { Icon, symbol } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
+import { Icon, symbol } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

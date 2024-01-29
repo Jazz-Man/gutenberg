@@ -33,7 +33,7 @@ function checkPrettier() {
 		const prettierPackageName = prettierPackageJson.packageJson.name;
 
 		if (
-			! [ 'wp-prettier', '@wordpress/prettier' ].includes(
+			! [ 'wp-prettier', '@gutenberg/prettier' ].includes(
 				prettierPackageName
 			)
 		) {
@@ -75,7 +75,7 @@ let configArgs = [];
 if ( ! hasPrettierConfig() ) {
 	configArgs = [
 		'--config',
-		require.resolve( '@wordpress/prettier-config' ),
+		require.resolve( '@gutenberg/prettier-config' ),
 	];
 }
 

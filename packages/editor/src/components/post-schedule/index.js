@@ -6,11 +6,11 @@ import { parseISO, endOfMonth, startOfMonth } from 'date-fns';
 /**
  * WordPress dependencies
  */
-import { getSettings } from '@wordpress/date';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { __experimentalPublishDateTimePicker as PublishDateTimePicker } from '@wordpress/block-editor';
-import { useState, useMemo } from '@wordpress/element';
-import { store as coreStore } from '@wordpress/core-data';
+import { getSettings } from '@gutenberg/date';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { __experimentalPublishDateTimePicker as PublishDateTimePicker } from '@gutenberg/block-editor';
+import { useState, useMemo } from '@gutenberg/element';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

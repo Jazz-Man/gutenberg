@@ -6,10 +6,10 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useEffect, Platform } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
+import { __ } from '@gutenberg/i18n';
+import { useEffect, Platform } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
 import {
 	AlignmentControl,
 	BlockControls,
@@ -17,7 +17,7 @@ import {
 	useBlockProps,
 	store as blockEditorStore,
 	HeadingLevelDropdown,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

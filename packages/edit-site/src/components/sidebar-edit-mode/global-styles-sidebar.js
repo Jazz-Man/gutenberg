@@ -7,14 +7,14 @@ import {
 	Flex,
 	Button,
 	__experimentalUseNavigator as useNavigator,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { styles, seen, backup } from '@wordpress/icons';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useEffect } from '@wordpress/element';
-import { store as interfaceStore } from '@wordpress/interface';
-import { store as preferencesStore } from '@wordpress/preferences';
-import { store as editorStore } from '@wordpress/editor';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { styles, seen, backup } from '@gutenberg/icons';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useEffect } from '@gutenberg/element';
+import { store as interfaceStore } from '@gutenberg/interface';
+import { store as preferencesStore } from '@gutenberg/preferences';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies
@@ -24,7 +24,7 @@ import { GlobalStylesUI } from '../global-styles';
 import { store as editSiteStore } from '../../store';
 import { GlobalStylesMenuSlot } from '../global-styles/ui';
 import { unlock } from '../../lock-unlock';
-import { store as coreStore } from '@wordpress/core-data';
+import { store as coreStore } from '@gutenberg/core-data';
 
 export default function GlobalStylesSidebar() {
 	const {

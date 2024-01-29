@@ -10,7 +10,7 @@ Render a GradientPicker.
 
 ```jsx
 import { useState } from 'react';
-import { GradientPicker } from '@wordpress/components';
+import { GradientPicker } from '@gutenberg/components';
 
 const myGradientPicker = () => {
 	const [ gradient, setGradient ] = useState( null );

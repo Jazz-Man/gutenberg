@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { createBlock, parseWithAttributeSchema } from '@wordpress/blocks';
-import { RichText, useBlockProps } from '@wordpress/block-editor';
+import { createBlock, parseWithAttributeSchema } from '@gutenberg/blocks';
+import { RichText, useBlockProps } from '@gutenberg/block-editor';
 
 export const migrateToQuoteV2 = ( attributes ) => {
 	const { value, ...restAttributes } = attributes;

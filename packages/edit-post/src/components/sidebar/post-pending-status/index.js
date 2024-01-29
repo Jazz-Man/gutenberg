@@ -5,7 +5,7 @@ import {
 	PostPendingStatus as PostPendingStatusForm,
 	PostPendingStatusCheck,
 	privateApis as editorPrivateApis,
-} from '@wordpress/editor';
+} from '@gutenberg/editor';
 
 /**
  * Internal dependencies

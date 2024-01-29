@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { createHigherOrderComponent } from '@wordpress/compose';
-import { addFilter } from '@wordpress/hooks';
+import { createHigherOrderComponent } from '@gutenberg/compose';
+import { addFilter } from '@gutenberg/hooks';
 
 const { wp } = window;
 

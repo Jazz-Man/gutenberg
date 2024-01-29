@@ -17,31 +17,31 @@ import {
 	PostSyncStatusModal,
 	store as editorStore,
 	privateApis as editorPrivateApis,
-} from '@wordpress/editor';
-import { useSelect, useDispatch } from '@wordpress/data';
+} from '@gutenberg/editor';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	useBlockCommands,
 	BlockBreadcrumb,
 	BlockToolbar,
 	privateApis as blockEditorPrivateApis,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { Button, ScrollLock } from '@wordpress/components';
-import { useViewportMatch } from '@wordpress/compose';
-import { PluginArea } from '@wordpress/plugins';
-import { __, _x, sprintf } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { Button, ScrollLock } from '@gutenberg/components';
+import { useViewportMatch } from '@gutenberg/compose';
+import { PluginArea } from '@gutenberg/plugins';
+import { __, _x, sprintf } from '@gutenberg/i18n';
 import {
 	ComplementaryArea,
 	FullscreenMode,
 	InterfaceSkeleton,
 	store as interfaceStore,
-} from '@wordpress/interface';
-import { useState, useEffect, useCallback, useMemo } from '@wordpress/element';
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { store as noticesStore } from '@wordpress/notices';
-import { store as preferencesStore } from '@wordpress/preferences';
-import { privateApis as commandsPrivateApis } from '@wordpress/commands';
-import { privateApis as coreCommandsPrivateApis } from '@wordpress/core-commands';
+} from '@gutenberg/interface';
+import { useState, useEffect, useCallback, useMemo } from '@gutenberg/element';
+import { store as keyboardShortcutsStore } from '@gutenberg/keyboard-shortcuts';
+import { store as noticesStore } from '@gutenberg/notices';
+import { store as preferencesStore } from '@gutenberg/preferences';
+import { privateApis as commandsPrivateApis } from '@gutenberg/commands';
+import { privateApis as coreCommandsPrivateApis } from '@gutenberg/core-commands';
 
 /**
  * Internal dependencies

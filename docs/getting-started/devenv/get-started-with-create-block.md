@@ -1,6 +1,6 @@
 # Get started with create-block
 
-Custom blocks for the Block Editor in WordPress are typically registered using plugins and are defined through a specific set of files. The [`@wordpress/create-block`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) package is an officially supported tool to scaffold the structure of files needed to create and register a block. It generates all the necessary code to start a project and integrates a modern JavaScript build setup (using [`wp-scripts`](https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts/)) with no configuration required. 
+Custom blocks for the Block Editor in WordPress are typically registered using plugins and are defined through a specific set of files. The [`@gutenberg/create-block`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) package is an officially supported tool to scaffold the structure of files needed to create and register a block. It generates all the necessary code to start a project and integrates a modern JavaScript build setup (using [`wp-scripts`](https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts/)) with no configuration required.
 
 The package is designed to help developers quickly set up a block development environment following WordPress best practices.
 
@@ -17,17 +17,17 @@ If you have your own [local WordPress development environment](https://developer
 Run the following command to scaffold an example block plugin:
 
 ```bash
-npx @wordpress/create-block@latest todo-list
+npx @gutenberg/create-block@latest todo-list
 cd todo-list
 ```
 
-The `slug` provided (`todo-list`) defines the folder name for the scaffolded plugin and the internal block name. 
+The `slug` provided (`todo-list`) defines the folder name for the scaffolded plugin and the internal block name.
 
-Navigate to the Plugins page of our local WordPress installation and activate the "Todo List" plugin. The example block will then be available in the Editor. 
+Navigate to the Plugins page of our local WordPress installation and activate the "Todo List" plugin. The example block will then be available in the Editor.
 
 ### Basic usage
 
-The `create-block` assumes you will use modern JavaScript (ESNext and JSX) to build your block. This requires a build step to compile the code into a format that browsers can understand. Luckily, the `wp-scripts` package handles this process for you. Refer to the [Get started with wp-scripts](https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts) for an introduction to this package. 
+The `create-block` assumes you will use modern JavaScript (ESNext and JSX) to build your block. This requires a build step to compile the code into a format that browsers can understand. Luckily, the `wp-scripts` package handles this process for you. Refer to the [Get started with wp-scripts](https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts) for an introduction to this package.
 
  When `create-block` scaffolds the block, it installs `wp-scripts` and adds the most common scripts to the block's `package.json` file. By default, those include:
 
@@ -62,7 +62,7 @@ For developers who prefer a more guided experience, the `create-block` package p
 To use this mode, run the command:
 
 ```bash
-npx @wordpress/create-block@latest
+npx @gutenberg/create-block@latest
 ```
 
 Follow the prompts to configure your block settings interactively.
@@ -74,7 +74,7 @@ If you're already familiar with the `create-block` [options](https://developer.w
 For instance, to quickly create a block named "my-block" with a namespace of "my-plugin" that is a Dynamic block, use this command:
 
 ```bash
-npx @wordpress/create-block@latest --namespace="my-plugin" --slug="my-block" --variant="dynamic"
+npx @gutenberg/create-block@latest --namespace="my-plugin" --slug="my-block" --variant="dynamic"
 ```
 
 ### Using templates
@@ -83,7 +83,7 @@ The `create-block` package also supports the use of templates, enabling you to c
 
 To use a template, specify the `--template` option followed by the template name or path:
 ```bash
-npx @wordpress/create-block --template="my-custom-template"
+npx @gutenberg/create-block --template="my-custom-template"
 ```
 
 Templates must be set up in advance so the `create-block` package knows where to find them. Learn more in the `create-block` [documentation](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/#template), and review the [External Project Templates](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/packages-create-block-external-template/) guide.
@@ -91,5 +91,5 @@ Templates must be set up in advance so the `create-block` package knows where to
 ## Additional resources
 
 - [Using the create-block tool](https://learn.wordpress.org/tutorial/using-the-create-block-tool/) (Learn WordPress tutorial)
-- [@wordpress/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) (Official documentation)
-- [@wordpress/scripts](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/) (Official documentation)
+- [@gutenberg/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) (Official documentation)
+- [@gutenberg/scripts](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/) (Official documentation)

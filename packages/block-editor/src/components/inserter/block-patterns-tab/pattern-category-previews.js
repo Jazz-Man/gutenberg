@@ -7,8 +7,8 @@ import {
 	useCallback,
 	useRef,
 	useEffect,
-} from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
 
 import {
 	__experimentalHStack as HStack,
@@ -16,7 +16,7 @@ import {
 	__experimentalHeading as Heading,
 	__experimentalText as Text,
 	FlexBlock,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

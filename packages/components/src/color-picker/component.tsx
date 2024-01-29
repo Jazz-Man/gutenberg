@@ -9,9 +9,9 @@ import namesPlugin from 'colord/plugins/names';
 /**
  * WordPress dependencies
  */
-import { useCallback, useState, useMemo } from '@wordpress/element';
-import { useDebounce, useMergeRefs } from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
+import { useCallback, useState, useMemo } from '@gutenberg/element';
+import { useDebounce, useMergeRefs } from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

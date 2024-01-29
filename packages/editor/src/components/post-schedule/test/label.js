@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { getSettings, setSettings } from '@wordpress/date';
+import { getSettings, setSettings } from '@gutenberg/date';
 
 /**
  * Internal dependencies

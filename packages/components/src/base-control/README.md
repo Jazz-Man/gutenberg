@@ -5,7 +5,7 @@
 ## Usage
 
 ```jsx
-import { BaseControl, useBaseControlProps } from '@wordpress/components';
+import { BaseControl, useBaseControlProps } from '@gutenberg/components';
 
 // Render a `BaseControl` for a textarea input
 const MyCustomTextareaControl = ({ children, ...baseProps }) => (
@@ -89,7 +89,7 @@ It should only be used in cases where the children being rendered inside BaseCon
 ## Usage
 
 ```jsx
-import { BaseControl } from '@wordpress/components';
+import { BaseControl } from '@gutenberg/components';
 
 const MyBaseControl = () => (
 	<BaseControl help="This button is already accessibly labeled.">

@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/undo-manager",
+	"name": "@gutenberg/undo-manager",
 	"version": "0.9.0",
 	"description": "A small package to manage undo/redo.",
 	"author": "The WordPress Contributors",
@@ -29,7 +29,7 @@
 	"sideEffects": false,
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/is-shallow-equal": "workspace:*"
+		"@gutenberg/is-shallow-equal": "workspace:*"
 	},
 	"publishConfig": {
 		"access": "public"

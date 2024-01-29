@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useCallback } from '@wordpress/element';
-import { escapeAttribute } from '@wordpress/escape-html';
+import { useCallback } from '@gutenberg/element';
+import { escapeAttribute } from '@gutenberg/escape-html';
 
 /**
  * Internal dependencies

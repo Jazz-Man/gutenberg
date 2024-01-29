@@ -12,7 +12,7 @@ import {
 	__experimentalGetBorderClassesAndStyles as getBorderClassesAndStyles,
 	__experimentalGetColorClassesAndStyles as getColorClassesAndStyles,
 	__experimentalGetElementClassName,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 export default function save( { attributes } ) {
 	const { hasFixedLayout, head, body, foot, caption } = attributes;

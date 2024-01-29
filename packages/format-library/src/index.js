@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { registerFormatType } from '@wordpress/rich-text';
+import { registerFormatType } from '@gutenberg/rich-text';
 
 /**
  * Internal dependencies

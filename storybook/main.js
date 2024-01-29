@@ -6,7 +6,7 @@ const path = require( 'path' );
 /**
  * WordPress dependencies
  */
-const postcssPlugins = require( '@wordpress/postcss-plugins-preset' );
+const postcssPlugins = require( '@gutenberg/postcss-plugins-preset' );
 
 const scssLoaders = ( { isLazy } ) => [
 	{

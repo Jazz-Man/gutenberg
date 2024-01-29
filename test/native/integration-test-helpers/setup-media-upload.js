@@ -6,13 +6,13 @@ import { act } from '@testing-library/react-native';
 /**
  * WordPress dependencies
  */
-import { subscribeMediaUpload } from '@wordpress/react-native-bridge';
+import { subscribeMediaUpload } from '@gutenberg/react-native-bridge';
 import {
 	MEDIA_UPLOAD_STATE_UPLOADING,
 	MEDIA_UPLOAD_STATE_SUCCEEDED,
 	MEDIA_UPLOAD_STATE_FAILED,
 	MEDIA_UPLOAD_STATE_RESET,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 /**
  * Sets up the media upload mock functions for testing.

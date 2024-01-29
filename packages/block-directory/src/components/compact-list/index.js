@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
+import { __, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

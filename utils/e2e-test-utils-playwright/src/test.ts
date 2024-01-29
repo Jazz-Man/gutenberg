@@ -98,7 +98,7 @@ function observeConsoleLogging( message: ConsoleMessage ) {
 
 	// Disable reason: We intentionally bubble up the console message
 	// which, unless the test explicitly anticipates the logging via
-	// @wordpress/jest-console matchers, will cause the intended test
+	// @gutenberg/jest-console matchers, will cause the intended test
 	// failure.
 
 	// eslint-disable-next-line no-console

@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { Fragment } from '@wordpress/element';
-import { displayShortcutList, shortcutAriaLabel } from '@wordpress/keycodes';
+import { Fragment } from '@gutenberg/element';
+import { displayShortcutList, shortcutAriaLabel } from '@gutenberg/keycodes';
 
 function KeyCombination( { keyCombination, forceAriaLabel } ) {
 	const shortcut = keyCombination.modifier

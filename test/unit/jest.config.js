@@ -11,10 +11,10 @@ const transpiledPackageNames = glob( 'packages/*/src/index.{js,ts,tsx}' ).map(
 module.exports = {
 	rootDir: '../../',
 	moduleNameMapper: {
-		[ `@wordpress\\/(${ transpiledPackageNames.join( '|' ) })$` ]:
+		[ `@gutenberg\\/(${ transpiledPackageNames.join( '|' ) })$` ]:
 			'packages/$1/src',
 	},
-	preset: '@wordpress/jest-preset-default',
+	preset: '@gutenberg/jest-preset-default',
 	setupFiles: [
 		'<rootDir>/test/unit/config/global-mocks.js',
 		'<rootDir>/test/unit/config/gutenberg-env.js',

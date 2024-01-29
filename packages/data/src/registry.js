@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies
@@ -294,7 +294,7 @@ export function createRegistry( storeConfigs = {}, parent = null ) {
 	}
 
 	/**
-	 * Registers a standard `@wordpress/data` store.
+	 * Registers a standard `@gutenberg/data` store.
 	 *
 	 * @param {string} storeName Unique namespace identifier.
 	 * @param {Object} options   Store description (reducer, actions, selectors, resolvers).

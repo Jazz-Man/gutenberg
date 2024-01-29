@@ -29,7 +29,7 @@ The guide will refer to `src/index.js` as the JavaScript file where the changes 
 The first step is to register the new format, add `src/index.js` with the following:
 
 ```js
-import { registerFormatType } from '@wordpress/rich-text';
+import { registerFormatType } from '@gutenberg/rich-text';
 
 registerFormatType( 'my-custom-format/sample-output', {
 	title: 'Sample output',
@@ -55,8 +55,8 @@ With the format available, the next step is to add a button to the UI by registe
 Using the `RichTextToolbarButton` component, update `src/index.js`:
 
 ```js
-import { registerFormatType } from '@wordpress/rich-text';
-import { RichTextToolbarButton } from '@wordpress/block-editor';
+import { registerFormatType } from '@gutenberg/rich-text';
+import { RichTextToolbarButton } from '@gutenberg/block-editor';
 
 const MyCustomButton = ( props ) => {
 	return (
@@ -95,8 +95,8 @@ For our example, the `<samp>` tag format is binary - either a text selection has
 Update `src/index.js` changing the `onClick` action:
 
 ```js
-import { registerFormatType, toggleFormat } from '@wordpress/rich-text';
-import { RichTextToolbarButton } from '@wordpress/block-editor';
+import { registerFormatType, toggleFormat } from '@gutenberg/rich-text';
+import { RichTextToolbarButton } from '@gutenberg/block-editor';
 
 const MyCustomButton = ( { isActive, onChange, value } ) => {
 	return (
@@ -136,9 +136,9 @@ By default, the button is rendered on every rich text toolbar (image captions, b
 Here is an example that only shows the button for Paragraph blocks:
 
 ```js
-import { registerFormatType, toggleFormat } from '@wordpress/rich-text';
-import { RichTextToolbarButton } from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
+import { registerFormatType, toggleFormat } from '@gutenberg/rich-text';
+import { RichTextToolbarButton } from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
 
 function ConditionalButton( { isActive, onChange, value } ) {
 	const selectedBlock = useSelect( ( select ) => {
@@ -178,9 +178,9 @@ registerFormatType( 'my-custom-format/sample-output', {
 Using the `RichTextToolbarButton` component, the button is added to the default dropdown menu. You can add the button directly to the toolbar by using the `BlockControls` component.
 
 ```js
-import { registerFormatType, toggleFormat } from '@wordpress/rich-text';
-import { BlockControls } from '@wordpress/block-editor';
-import { ToolbarGroup, ToolbarButton } from '@wordpress/components';
+import { registerFormatType, toggleFormat } from '@gutenberg/rich-text';
+import { BlockControls } from '@gutenberg/block-editor';
+import { ToolbarGroup, ToolbarButton } from '@gutenberg/components';
 
 const MyCustomButton = ( { isActive, onChange, value } ) => {
 	return (

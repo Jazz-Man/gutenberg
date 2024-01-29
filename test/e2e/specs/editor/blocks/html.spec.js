@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-const { test, expect } = require( '@wordpress/e2e-test-utils-playwright' );
+const { test, expect } = require( '@gutenberg/e2e-test-utils-playwright' );
 
 test.describe( 'HTML block', () => {
 	test.beforeEach( async ( { admin } ) => {
@@ -27,7 +27,7 @@ test.describe( 'HTML block', () => {
 		const content = await editor.getEditedPostContent();
 		expect( content ).toBe(
 			`<!-- wp:html -->
-<p>Pythagorean theorem: 
+<p>Pythagorean theorem:
 <var>a</var><sup>2</sup> + <var>b</var><sup>2</sup> = <var>c</var><sup>2</sup> </p>
 <!-- /wp:html -->`
 		);

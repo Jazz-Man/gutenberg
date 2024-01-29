@@ -7,11 +7,11 @@ import {
 	Button,
 	TextControl,
 	Modal,
-} from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
-import { __, sprintf } from '@wordpress/i18n';
-import { useState } from '@wordpress/element';
-import { speak } from '@wordpress/a11y';
+} from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useState } from '@gutenberg/element';
+import { speak } from '@gutenberg/a11y';
 
 /**
  * Internal dependencies

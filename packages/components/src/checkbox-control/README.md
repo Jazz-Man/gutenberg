@@ -49,7 +49,7 @@ Render an is author checkbox:
 
 ```jsx
 import { useState } from 'react';
-import { CheckboxControl } from '@wordpress/components';
+import { CheckboxControl } from '@gutenberg/components';
 
 const MyCheckboxControl = () => {
 	const [ isChecked, setChecked ] = useState( true );

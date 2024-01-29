@@ -7,25 +7,25 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	useState,
 	useEffect,
 	useRef,
 	useCallback,
 	useMemo,
-} from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
 import {
 	Modal,
 	TextHighlight,
 	__experimentalHStack as HStack,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	store as keyboardShortcutsStore,
 	useShortcut,
-} from '@wordpress/keyboard-shortcuts';
-import { Icon, search as inputIcon } from '@wordpress/icons';
+} from '@gutenberg/keyboard-shortcuts';
+import { Icon, search as inputIcon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

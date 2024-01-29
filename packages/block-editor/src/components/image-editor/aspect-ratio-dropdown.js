@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { check, aspectRatio as aspectRatioIcon } from '@wordpress/icons';
-import { DropdownMenu, MenuGroup, MenuItem } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { check, aspectRatio as aspectRatioIcon } from '@gutenberg/icons';
+import { DropdownMenu, MenuGroup, MenuItem } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies
@@ -54,7 +54,7 @@ export default function AspectRatioDropdown( { toggleProps } ) {
 						} }
 						value={ aspect }
 						aspectRatios={ [
-							// All ratios should be mirrored in AspectRatioTool in @wordpress/block-editor.
+							// All ratios should be mirrored in AspectRatioTool in @gutenberg/block-editor.
 							{
 								title: __( 'Original' ),
 								aspect: defaultAspect,

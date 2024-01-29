@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useRef, useReducer } from '@wordpress/element';
-import { useRefEffect } from '@wordpress/compose';
-import { LEFT, RIGHT } from '@wordpress/keycodes';
+import { useRef, useReducer } from '@gutenberg/element';
+import { useRefEffect } from '@gutenberg/compose';
+import { LEFT, RIGHT } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

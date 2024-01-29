@@ -6,7 +6,7 @@ The block's markup returned on the front end can be dynamically generated on the
 The post <a href="https://developer.wordpress.org/news/2023/02/27/static-vs-dynamic-blocks-whats-the-difference/">Static vs. dynamic blocks: What’s the difference?</a> provides a great introduction to static and dynamic blocks.
 </div>
 
-## Static rendering 
+## Static rendering
 
 ![Blocks with static rendering diagram](https://developer.wordpress.org/files/2024/01/static-rendering.png)
 
@@ -25,7 +25,7 @@ To define static rendering for a block we define a `save` function for the block
 For example, the following <a href="https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/preformatted/save.js"><code>save</code> function</a> of the <a hreh="https://github.com/WordPress/gutenberg/tree/trunk/packages/block-library/src/preformatted"><code>preformatted</code></a> core block...
 
 ```js
-import { RichText, useBlockProps } from '@wordpress/block-editor';
+import { RichText, useBlockProps } from '@gutenberg/block-editor';
 
 export default function save( { attributes } ) {
 	const { content } = attributes;
@@ -63,7 +63,7 @@ The markup stored for a block can be modified before it gets rendered on the fro
 </div>
 
 Some examples of core blocks with static rendering are:
-- [`separator`](https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/separator) (see its [`save`](https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/separator/save.js) function) 
+- [`separator`](https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/separator) (see its [`save`](https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/separator/save.js) function)
 - [`spacer`](https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/spacer) (see its [`save`](https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/spacer/save.js) function).
 - [`button`](https://github.com/WordPress/gutenberg/tree/trunk/packages/block-library/src/button) (see its [`save`](https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/button/save.js) function).
 

@@ -1,20 +1,20 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	useBlockProps,
 	useInnerBlocksProps,
 	__experimentalRecursionProvider as RecursionProvider,
 	__experimentalUseHasRecursion as useHasRecursion,
 	Warning,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	useEntityProp,
 	useEntityBlockEditor,
 	store as coreStore,
-} from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
 /**
  * Internal dependencies
  */

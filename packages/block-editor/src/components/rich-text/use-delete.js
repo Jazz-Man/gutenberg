@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useRef } from '@wordpress/element';
-import { useRefEffect } from '@wordpress/compose';
-import { DELETE, BACKSPACE } from '@wordpress/keycodes';
-import { isCollapsed, isEmpty } from '@wordpress/rich-text';
+import { useRef } from '@gutenberg/element';
+import { useRefEffect } from '@gutenberg/compose';
+import { DELETE, BACKSPACE } from '@gutenberg/keycodes';
+import { isCollapsed, isEmpty } from '@gutenberg/rich-text';
 
 export function useDelete( props ) {
 	const propsRef = useRef( props );

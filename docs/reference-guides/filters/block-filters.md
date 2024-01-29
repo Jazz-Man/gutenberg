@@ -292,8 +292,8 @@ Adding blocks is easy enough, removing them is as easy. Plugin or theme authors 
 
 ```js
 // my-plugin.js
-import { unregisterBlockType } from '@wordpress/blocks';
-import domReady from '@wordpress/dom-ready';
+import { unregisterBlockType } from '@gutenberg/blocks';
+import domReady from '@gutenberg/dom-ready';
 
 domReady( function () {
 	unregisterBlockType( 'core/verse' );

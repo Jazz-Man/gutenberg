@@ -7,7 +7,7 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { arrowLeft, arrowRight, arrowUp, arrowDown } from '@wordpress/icons';
+import { arrowLeft, arrowRight, arrowUp, arrowDown } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

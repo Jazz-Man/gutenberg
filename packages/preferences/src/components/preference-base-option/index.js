@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { ToggleControl } from '@wordpress/components';
+import { ToggleControl } from '@gutenberg/components';
 
 function BaseOption( { help, label, isChecked, onChange, children } ) {
 	return (

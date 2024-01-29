@@ -5,7 +5,7 @@ BottomSheet NavBar components provide styled elements for composing a NavBar UI 
 ## Usage
 
 ```jsx
-import { BottomSheet } from '@wordpress/components';
+import { BottomSheet } from '@gutenberg/components';
 
 export default = () => (
 	<BottomSheet>
@@ -58,6 +58,6 @@ Note that the bottomSheet dismissal needs to be implemented in the callback that
 
 Callback invoked once the button is pressed.
 
-#### iosText 
+#### iosText
 
 Used to display iOS text if different from "Cancel".

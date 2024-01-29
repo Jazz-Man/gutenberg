@@ -6,8 +6,8 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
-import { __, _x } from '@wordpress/i18n';
+import { forwardRef } from '@gutenberg/element';
+import { __, _x } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies
@@ -60,8 +60,8 @@ function UnforwardedDateTimePicker(
  * individually using the `DatePicker` and `TimePicker` components respectively.
  *
  * ```jsx
- * import { DateTimePicker } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { DateTimePicker } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyDateTimePicker = () => {
  *   const [ date, setDate ] = useState( new Date() );

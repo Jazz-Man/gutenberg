@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalToolsPanel as ToolsPanel } from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useCallback } from '@wordpress/element';
+import { __experimentalToolsPanel as ToolsPanel } from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useCallback } from '@gutenberg/element';
 
 /**
  * Internal dependencies

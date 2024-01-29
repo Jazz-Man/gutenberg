@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { compose } from '@wordpress/compose';
-import { withSelect, useDispatch } from '@wordpress/data';
-import { create, getTextContent } from '@wordpress/rich-text';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { store as coreStore } from '@wordpress/core-data';
-import { Path, SVG, Line, Rect } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { compose } from '@gutenberg/compose';
+import { withSelect, useDispatch } from '@gutenberg/data';
+import { create, getTextContent } from '@gutenberg/rich-text';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { Path, SVG, Line, Rect } from '@gutenberg/components';
 
 /**
  * Internal dependencies

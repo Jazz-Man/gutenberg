@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
+import apiFetch from '@gutenberg/api-fetch';
 
-jest.mock( '@wordpress/api-fetch' );
+jest.mock( '@gutenberg/api-fetch' );
 
 /**
  * Internal dependencies

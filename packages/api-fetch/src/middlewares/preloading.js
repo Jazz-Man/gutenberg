@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { addQueryArgs, getQueryArgs, normalizePath } from '@wordpress/url';
+import { addQueryArgs, getQueryArgs, normalizePath } from '@gutenberg/url';
 
 /**
  * @param {Record<string, any>} preloadedData

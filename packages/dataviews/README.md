@@ -7,7 +7,7 @@ DataViews is a component that provides an API to render datasets using different
 Install the module
 
 ```bash
-npm install @wordpress/dataviews --save
+npm install @gutenberg/dataviews --save
 ```
 
 ## Usage

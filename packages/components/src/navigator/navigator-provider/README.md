@@ -14,7 +14,7 @@ import {
   __experimentalNavigatorScreen as NavigatorScreen,
   __experimentalNavigatorButton as NavigatorButton,
   __experimentalNavigatorToParentButton as NavigatorToParentButton,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 const MyNavigation = () => (
   <NavigatorProvider initialPath="/">

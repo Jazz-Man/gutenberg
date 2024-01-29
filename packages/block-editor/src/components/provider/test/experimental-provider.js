@@ -5,7 +5,7 @@ import { render } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { useRegistry } from '@wordpress/data';
+import { useRegistry } from '@gutenberg/data';
 
 /**
  * Internal dependencies

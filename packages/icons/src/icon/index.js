@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { cloneElement, forwardRef } from '@wordpress/element';
+import { cloneElement, forwardRef } from '@gutenberg/element';
 
-/** @typedef {{icon: JSX.Element, size?: number} & import('@wordpress/primitives').SVGProps} IconProps */
+/** @typedef {{icon: JSX.Element, size?: number} & import('@gutenberg/primitives').SVGProps} IconProps */
 
 /**
  * Return an SVG icon.

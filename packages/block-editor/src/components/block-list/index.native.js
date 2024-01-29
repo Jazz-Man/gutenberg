@@ -6,15 +6,15 @@ import { View, Platform, Pressable } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { useRef, useState, useCallback } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { createBlock } from '@wordpress/blocks';
+import { useRef, useState, useCallback } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { createBlock } from '@gutenberg/blocks';
 import {
 	KeyboardAwareFlatList,
 	WIDE_ALIGNMENTS,
 	alignmentHelpers,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

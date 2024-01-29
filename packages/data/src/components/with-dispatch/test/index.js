@@ -7,7 +7,7 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { memo } from '@wordpress/element';
+import { memo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

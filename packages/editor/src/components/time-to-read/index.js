@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { _x, _n, __, sprintf } from '@wordpress/i18n';
-import { count as wordCount } from '@wordpress/wordcount';
-import { createInterpolateElement } from '@wordpress/element';
+import { useSelect } from '@gutenberg/data';
+import { _x, _n, __, sprintf } from '@gutenberg/i18n';
+import { count as wordCount } from '@gutenberg/wordcount';
+import { createInterpolateElement } from '@gutenberg/element';
 
 /**
  * Internal dependencies

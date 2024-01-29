@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { usePrevious } from '@wordpress/compose';
-import { useEffect, useRef } from '@wordpress/element';
+import { usePrevious } from '@gutenberg/compose';
+import { useEffect, useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

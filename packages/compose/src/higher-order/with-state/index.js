@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
+import { Component } from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

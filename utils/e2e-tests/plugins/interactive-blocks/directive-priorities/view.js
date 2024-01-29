@@ -8,7 +8,7 @@ import {
 	deepSignal,
 	useEffect,
 	createElement as h,
-} from '@wordpress/interactivity';
+} from '@gutenberg/interactivity';
 
 /**
  * Namespace used in custom directives and store.

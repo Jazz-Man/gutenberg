@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import * as wpHooks from '@wordpress/hooks';
+import * as wpHooks from '@gutenberg/hooks';
 /**
  * Internal dependencies
  */

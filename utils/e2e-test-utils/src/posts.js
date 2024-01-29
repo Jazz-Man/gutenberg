@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { addQueryArgs } from '@wordpress/url';
+import { addQueryArgs } from '@gutenberg/url';
 
 /**
  * Internal dependencies

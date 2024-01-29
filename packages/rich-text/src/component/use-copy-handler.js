@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useRef } from '@wordpress/element';
-import { useRefEffect } from '@wordpress/compose';
+import { useRef } from '@gutenberg/element';
+import { useRefEffect } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

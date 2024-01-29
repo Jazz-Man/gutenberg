@@ -6,15 +6,15 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useState, useRef } from '@wordpress/element';
+import { useState, useRef } from '@gutenberg/element';
 import {
 	ResizableBox,
 	Tooltip,
 	__unstableMotion as motion,
-} from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

@@ -6,10 +6,10 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Caption, RichText } from '@wordpress/block-editor';
-import { compose } from '@wordpress/compose';
-import { withDispatch, withSelect } from '@wordpress/data';
-import { hasBlockSupport } from '@wordpress/blocks';
+import { Caption, RichText } from '@gutenberg/block-editor';
+import { compose } from '@gutenberg/compose';
+import { withDispatch, withSelect } from '@gutenberg/data';
+import { hasBlockSupport } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

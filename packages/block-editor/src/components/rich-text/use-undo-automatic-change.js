@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { useRefEffect } from '@wordpress/compose';
-import { BACKSPACE, DELETE, ESCAPE } from '@wordpress/keycodes';
+import { useSelect } from '@gutenberg/data';
+import { useRefEffect } from '@gutenberg/compose';
+import { BACKSPACE, DELETE, ESCAPE } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

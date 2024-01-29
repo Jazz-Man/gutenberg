@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useEntityBlockEditor } from '@wordpress/core-data';
-import { InnerBlocks, useInnerBlocksProps } from '@wordpress/block-editor';
-import { useRef } from '@wordpress/element';
+import { useEntityBlockEditor } from '@gutenberg/core-data';
+import { InnerBlocks, useInnerBlocksProps } from '@gutenberg/block-editor';
+import { useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

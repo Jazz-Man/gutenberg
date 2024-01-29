@@ -7,7 +7,7 @@ Users can choose an angle in a visual UI with the mouse by dragging an angle ind
 
 ```jsx
 import { useState } from 'react';
-import { AnglePickerControl } from '@wordpress/components';
+import { AnglePickerControl } from '@gutenberg/components';
 
 function Example() {
 	const [ angle, setAngle ] = useState( 0 );

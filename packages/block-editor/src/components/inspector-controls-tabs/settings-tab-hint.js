@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { Button } from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { focus } from '@wordpress/dom';
-import { useRef } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { close } from '@wordpress/icons';
-import { store as preferencesStore } from '@wordpress/preferences';
+import { Button } from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { focus } from '@gutenberg/dom';
+import { useRef } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { close } from '@gutenberg/icons';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 const PREFERENCE_NAME = 'isInspectorControlsTabsHintVisible';
 

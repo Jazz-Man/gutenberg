@@ -6,7 +6,7 @@ import { NativeModules, NativeEventEmitter, Platform } from 'react-native';
 /**
  * WordPress dependencies
  */
-import RCTAztecView from '@wordpress/react-native-aztec';
+import RCTAztecView from '@gutenberg/react-native-aztec';
 
 const { RNReactNativeGutenbergBridge } = NativeModules;
 const isIOS = Platform.OS === 'ios';

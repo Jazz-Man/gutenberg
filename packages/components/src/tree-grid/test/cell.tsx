@@ -6,7 +6,7 @@ import { render } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -19,13 +19,13 @@ import {
 	useRef,
 	useState,
 	useCallback,
-} from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
+} from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	Icon,
 	__unstableAutocompletionItemsFill as AutocompletionItemsFill,
-} from '@wordpress/components';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
+} from '@gutenberg/components';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

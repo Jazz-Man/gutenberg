@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { RichText, useBlockProps } from '@wordpress/block-editor';
-import { isRTL } from '@wordpress/i18n';
+import { RichText, useBlockProps } from '@gutenberg/block-editor';
+import { isRTL } from '@gutenberg/i18n';
 
 export default function save( { attributes } ) {
 	const { align, content, dropCap, direction } = attributes;

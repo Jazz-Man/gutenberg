@@ -6,7 +6,7 @@ import { render } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { image } from '@wordpress/icons';
+import { image } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

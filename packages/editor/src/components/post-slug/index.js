@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { withDispatch, withSelect } from '@wordpress/data';
-import { Component } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { compose } from '@wordpress/compose';
-import { safeDecodeURIComponent, cleanForSlug } from '@wordpress/url';
-import { TextControl } from '@wordpress/components';
+import { withDispatch, withSelect } from '@gutenberg/data';
+import { Component } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { compose } from '@gutenberg/compose';
+import { safeDecodeURIComponent, cleanForSlug } from '@gutenberg/url';
+import { TextControl } from '@gutenberg/components';
 
 /**
  * Internal dependencies

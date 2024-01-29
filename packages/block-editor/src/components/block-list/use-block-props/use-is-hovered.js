@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useRefEffect } from '@wordpress/compose';
+import { useRefEffect } from '@gutenberg/compose';
 
 function listener( event ) {
 	if ( event.defaultPrevented ) {

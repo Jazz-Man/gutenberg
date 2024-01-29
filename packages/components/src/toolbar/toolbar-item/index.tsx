@@ -8,8 +8,8 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { forwardRef, useContext } from '@wordpress/element';
-import warning from '@wordpress/warning';
+import { forwardRef, useContext } from '@gutenberg/element';
+import warning from '@gutenberg/warning';
 
 /**
  * Internal dependencies

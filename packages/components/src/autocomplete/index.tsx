@@ -13,17 +13,17 @@ import {
 	useMemo,
 	useRef,
 	useState,
-} from '@wordpress/element';
-import { useInstanceId, useMergeRefs, useRefEffect } from '@wordpress/compose';
+} from '@gutenberg/element';
+import { useInstanceId, useMergeRefs, useRefEffect } from '@gutenberg/compose';
 import {
 	create,
 	getTextContent,
 	insert,
 	isCollapsed,
 	slice,
-} from '@wordpress/rich-text';
-import { speak } from '@wordpress/a11y';
-import { isAppleOS } from '@wordpress/keycodes';
+} from '@gutenberg/rich-text';
+import { speak } from '@gutenberg/a11y';
+import { isAppleOS } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

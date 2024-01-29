@@ -3,9 +3,9 @@
 /**
  * WordPress dependencies
  */
-import { addFilter, removeAllFilters, removeFilter } from '@wordpress/hooks';
-import { logged } from '@wordpress/deprecated';
-import { select, dispatch } from '@wordpress/data';
+import { addFilter, removeAllFilters, removeFilter } from '@gutenberg/hooks';
+import { logged } from '@gutenberg/deprecated';
+import { select, dispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies

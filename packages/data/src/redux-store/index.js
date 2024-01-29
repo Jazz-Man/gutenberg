@@ -7,8 +7,8 @@ import EquivalentKeyMap from 'equivalent-key-map';
 /**
  * WordPress dependencies
  */
-import createReduxRoutineMiddleware from '@wordpress/redux-routine';
-import { compose } from '@wordpress/compose';
+import createReduxRoutineMiddleware from '@gutenberg/redux-routine';
+import { compose } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -125,7 +125,7 @@ function createBindingCache( bind ) {
  *
  * @example
  * ```js
- * import { createReduxStore } from '@wordpress/data';
+ * import { createReduxStore } from '@gutenberg/data';
  *
  * const store = createReduxStore( 'demo', {
  *     reducer: ( state = 'OK' ) => state,

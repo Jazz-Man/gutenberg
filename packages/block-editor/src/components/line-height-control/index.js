@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
-import { __ } from '@wordpress/i18n';
-import { __experimentalNumberControl as NumberControl } from '@wordpress/components';
+import deprecated from '@gutenberg/deprecated';
+import { __ } from '@gutenberg/i18n';
+import { __experimentalNumberControl as NumberControl } from '@gutenberg/components';
 
 /**
  * Internal dependencies

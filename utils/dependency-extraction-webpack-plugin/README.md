@@ -18,7 +18,7 @@ Consult the [webpack website](https://webpack.js.org) for additional information
 Install the module
 
 ```bash
-npm install @wordpress/dependency-extraction-webpack-plugin --save-dev
+npm install @gutenberg/dependency-extraction-webpack-plugin --save-dev
 ```
 
 **Note**: This package requires Node.js 18.0.0 or later. It also requires webpack 5.0.0 or newer. It is not compatible with older versions.
@@ -31,7 +31,7 @@ Use this plugin as you would other webpack plugins:
 
 ```js
 // webpack.config.js
-const DependencyExtractionWebpackPlugin = require( '@wordpress/dependency-extraction-webpack-plugin' );
+const DependencyExtractionWebpackPlugin = require( '@gutenberg/dependency-extraction-webpack-plugin' );
 
 module.exports = {
 	// …snip
@@ -39,10 +39,10 @@ module.exports = {
 };
 ```
 
-**Note:** Multiple instances of the plugin are not supported and may produced unexpected results. If you plan to extend the webpack configuration from `@wordpress/scripts` with your own `DependencyExtractionWebpackPlugin`, be sure to remove the default instance of the plugin:
+**Note:** Multiple instances of the plugin are not supported and may produced unexpected results. If you plan to extend the webpack configuration from `@gutenberg/scripts` with your own `DependencyExtractionWebpackPlugin`, be sure to remove the default instance of the plugin:
 
 ```js
-const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
+const defaultConfig = require( '@gutenberg/scripts/config/webpack.config' );
 const webpackConfig = {
 	...defaultConfig,
 	plugins: [
@@ -82,7 +82,7 @@ By default, the following module requests are handled:
 | Request                      | Global               | Script handle |
 | ---------------------------- | -------------------- | ------------- |
 | `@babel/runtime/regenerator` | `regeneratorRuntime` | `wp-polyfill` |
-| `@wordpress/*`               | `wp['*']`            | `wp-*`        |
+| `@gutenberg/*`               | `wp['*']`            | `wp-*`        |
 | `jquery`                     | `jQuery`             | `jquery`      |
 | `lodash-es`                  | `lodash`             | `lodash`      |
 | `lodash`                     | `lodash`             | `lodash`      |
@@ -92,7 +92,7 @@ By default, the following module requests are handled:
 
 **Note:** This plugin overlaps with the functionality provided by [webpack `externals`](https://webpack.js.org/configuration/externals). This plugin is intended to extract script handles from bundle compilation so that a list of script dependencies does not need to be manually maintained. If you don't need to extract a list of script dependencies, use the `externals` option directly.
 
-This plugin is compatible with `externals`, but they may conflict. For example, adding `{ externals: { '@wordpress/blob': 'wp.blob' } }` to webpack configuration will effectively hide the `@wordpress/blob` module from the plugin and it will not be included in dependency lists.
+This plugin is compatible with `externals`, but they may conflict. For example, adding `{ externals: { '@gutenberg/blob': 'wp.blob' } }` to webpack configuration will effectively hide the `@gutenberg/blob` module from the plugin and it will not be included in dependency lists.
 
 ### Behavior with modules
 
@@ -135,26 +135,26 @@ For example:
 
 ```
 // Source file entrypoint.js
-import { store, getContext } from '@wordpress/interactivity';
+import { store, getContext } from '@gutenberg/interactivity';
 
 // Webpack will produce the output output/entrypoint.js
 /* bundled JavaScript output */
 
 // Webpack will also produce output/entrypoint.asset.php declaring script dependencies
-<?php return array('dependencies' => array('@wordpress/interactivity'), 'version' => 'dd4c2dc50d046ed9d4c063a7ca95702f');
+<?php return array('dependencies' => array('@gutenberg/interactivity'), 'version' => 'dd4c2dc50d046ed9d4c063a7ca95702f');
 ```
 
 By default, the following module requests are handled:
 
 | Request                      |
 | ---------------------------- |
-| `@wordpress/interactivity  ` |
+| `@gutenberg/interactivity  ` |
 
-(`@wordpress/interactivity` is currently the only available WordPress module.)
+(`@gutenberg/interactivity` is currently the only available WordPress module.)
 
 **Note:** This plugin overlaps with the functionality provided by [webpack `externals`](https://webpack.js.org/configuration/externals). This plugin is intended to extract module handles from bundle compilation so that a list of module dependencies does not need to be manually maintained. If you don't need to extract a list of module dependencies, use the `externals` option directly.
 
-This plugin is compatible with `externals`, but they may conflict. For example, adding `{ externals: { '@wordpress/blob': 'wp.blob' } }` to webpack configuration will effectively hide the `@wordpress/blob` module from the plugin and it will not be included in dependency lists.
+This plugin is compatible with `externals`, but they may conflict. For example, adding `{ externals: { '@gutenberg/blob': 'wp.blob' } }` to webpack configuration will effectively hide the `@gutenberg/blob` module from the plugin and it will not be included in dependency lists.
 
 #### Options
 
@@ -208,7 +208,7 @@ Pass `useDefaults: false` to disable the default request handling.
 -   Type: boolean
 -   Default: `false`
 
-Force `wp-polyfill` to be included in each entry point's dependency list. This would be the same as adding `import '@wordpress/polyfill';` to each entry point.
+Force `wp-polyfill` to be included in each entry point's dependency list. This would be the same as adding `import '@gutenberg/polyfill';` to each entry point.
 
 **Note**: This option is not available with modules.
 

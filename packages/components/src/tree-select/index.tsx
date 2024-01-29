@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
-import { decodeEntities } from '@wordpress/html-entities';
+import { useMemo } from '@gutenberg/element';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Internal dependencies
@@ -29,8 +29,8 @@ function getSelectOptions(
  * TreeSelect component is used to generate select input fields.
  *
  * ```jsx
- * import { TreeSelect } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { TreeSelect } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyTreeSelect = () => {
  * 	const [ page, setPage ] = useState( 'p21' );

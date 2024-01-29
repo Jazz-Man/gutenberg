@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalText as Text } from '@wordpress/components';
+import { __experimentalText as Text } from '@gutenberg/components';
 
 export default function SidebarNavigationScreenDetailsPanelLabel( {
 	children,

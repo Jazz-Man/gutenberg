@@ -4,10 +4,10 @@
 import {
 	__experimentalUseSlotFills as useSlotFills,
 	__unstableMotionContext as MotionContext,
-} from '@wordpress/components';
-import { useContext, useMemo } from '@wordpress/element';
-import warning from '@wordpress/warning';
-import deprecated from '@wordpress/deprecated';
+} from '@gutenberg/components';
+import { useContext, useMemo } from '@gutenberg/element';
+import warning from '@gutenberg/warning';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

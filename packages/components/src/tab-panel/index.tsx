@@ -14,8 +14,8 @@ import {
 	useEffect,
 	useLayoutEffect,
 	useCallback,
-} from '@wordpress/element';
-import { useInstanceId, usePrevious } from '@wordpress/compose';
+} from '@gutenberg/element';
+import { useInstanceId, usePrevious } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -43,7 +43,7 @@ const extractTabName = ( id: string | undefined | null ) => {
  * It has two sections: a list of tabs, and the view to show when tabs are chosen.
  *
  * ```jsx
- * import { TabPanel } from '@wordpress/components';
+ * import { TabPanel } from '@gutenberg/components';
  *
  * const onSelect = ( tabName ) => {
  *   console.log( 'Selecting tab', tabName );

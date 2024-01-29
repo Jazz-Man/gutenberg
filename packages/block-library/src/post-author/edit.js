@@ -12,16 +12,16 @@ import {
 	InspectorControls,
 	RichText,
 	useBlockProps,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	ComboboxControl,
 	PanelBody,
 	SelectControl,
 	ToggleControl,
-} from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { store as coreStore } from '@gutenberg/core-data';
 
 const minimumUsersForCombobox = 25;
 

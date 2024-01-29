@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { Placeholder, Button, Spinner } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { navigation, Icon } from '@wordpress/icons';
-import { speak } from '@wordpress/a11y';
-import { useEffect } from '@wordpress/element';
+import { Placeholder, Button, Spinner } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { navigation, Icon } from '@gutenberg/icons';
+import { speak } from '@gutenberg/a11y';
+import { useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies

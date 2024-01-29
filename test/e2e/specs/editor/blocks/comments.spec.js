@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-const { test, expect } = require( '@wordpress/e2e-test-utils-playwright' );
+const { test, expect } = require( '@gutenberg/e2e-test-utils-playwright' );
 
 /**
  * @typedef {import('@playwright/test').Page} Page
- * @typedef {import('@wordpress/e2e-test-utils-playwright').RequestUtils} RequestUtils
+ * @typedef {import('@gutenberg/e2e-test-utils-playwright').RequestUtils} RequestUtils
  */
 
 test.use( {

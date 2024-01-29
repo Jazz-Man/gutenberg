@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { useMemo, useEffect } from '@wordpress/element';
-import { __, _n, sprintf } from '@wordpress/i18n';
-import { VisuallyHidden } from '@wordpress/components';
-import { useDebounce, useAsyncList } from '@wordpress/compose';
-import { speak } from '@wordpress/a11y';
-import { useSelect } from '@wordpress/data';
+import { useMemo, useEffect } from '@gutenberg/element';
+import { __, _n, sprintf } from '@gutenberg/i18n';
+import { VisuallyHidden } from '@gutenberg/components';
+import { useDebounce, useAsyncList } from '@gutenberg/compose';
+import { speak } from '@gutenberg/a11y';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

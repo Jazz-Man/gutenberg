@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { BlockControls, useBlockEditingMode } from '@wordpress/block-editor';
-import { store as coreStore } from '@wordpress/core-data';
-import { ToolbarButton } from '@wordpress/components';
-import { addFilter } from '@wordpress/hooks';
-import { createHigherOrderComponent } from '@wordpress/compose';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { BlockControls, useBlockEditingMode } from '@gutenberg/block-editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { ToolbarButton } from '@gutenberg/components';
+import { addFilter } from '@gutenberg/hooks';
+import { createHigherOrderComponent } from '@gutenberg/compose';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

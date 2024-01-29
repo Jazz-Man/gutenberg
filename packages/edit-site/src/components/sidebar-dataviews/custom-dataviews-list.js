@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
 import {
 	__experimentalItemGroup as ItemGroup,
 	__experimentalHeading as Heading,
@@ -14,11 +14,11 @@ import {
 	__experimentalVStack as VStack,
 	Button,
 	Modal,
-} from '@wordpress/components';
-import { useMemo, useState } from '@wordpress/element';
-import { moreVertical } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+} from '@gutenberg/components';
+import { useMemo, useState } from '@gutenberg/element';
+import { moreVertical } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

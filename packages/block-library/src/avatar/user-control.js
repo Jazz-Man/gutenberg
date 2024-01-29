@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { ComboboxControl } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { useState } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { ComboboxControl } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useState } from '@gutenberg/element';
 
 const AUTHORS_QUERY = {
 	who: 'authors',

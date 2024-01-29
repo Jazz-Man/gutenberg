@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
-import { getPhrasingContentSchema } from '@wordpress/dom';
+import deprecated from '@gutenberg/deprecated';
+import { getPhrasingContentSchema } from '@gutenberg/dom';
 
 /**
  * Internal dependencies

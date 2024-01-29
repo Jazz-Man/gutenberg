@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createContext, useMemo } from '@wordpress/element';
+import { createContext, useMemo } from '@gutenberg/element';
 
 export const BlockRefs = createContext( {
 	refs: new Map(),

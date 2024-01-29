@@ -55,7 +55,7 @@ Render a user interface to input the name of an additional css class.
 
 ```js
 import { useState } from 'react';
-import { TextControl } from '@wordpress/components';
+import { TextControl } from '@gutenberg/components';
 
 const MyTextControl = () => {
 	const [ className, setClassName ] = useState( '' );

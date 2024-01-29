@@ -2,7 +2,7 @@
 
 Thank you for taking the time to contribute.
 
-The following is a set of guidelines for contributing to the `@wordpress/components` package to be considered in addition to the general ones described in our [Contributing Policy](/CONTRIBUTING.md).
+The following is a set of guidelines for contributing to the `@gutenberg/components` package to be considered in addition to the general ones described in our [Contributing Policy](/CONTRIBUTING.md).
 
 This set of guidelines should apply especially to newly introduced components. In fact, while these guidelines should also be retroactively applied to existing components, it is sometimes impossible to do so for legacy/compatibility reasons.
 
@@ -86,7 +86,7 @@ To ensure quality, each component should be tested. The testing process should b
 
 ## Compatibility
 
-The `@wordpress/components` package includes components that are relied upon by many developers across different projects. It is, therefore, very important to avoid introducing breaking changes.
+The `@gutenberg/components` package includes components that are relied upon by many developers across different projects. It is, therefore, very important to avoid introducing breaking changes.
 
 In these situations, one possible approach is to "soft-deprecate" a given legacy API. This is achieved by:
 
@@ -310,7 +310,7 @@ Changing the styles of a non-experimental component must be done with care. To p
 
 ```jsx
 // component.tsx
-import deprecated from '@wordpress/deprecated';
+import deprecated from '@gutenberg/deprecated';
 import { Wrapper } from './styles.ts';
 
 function MyComponent({ __nextHasNoOuterMargins = false }) {
@@ -368,7 +368,7 @@ Not all style changes justify a formal deprecation process. The main thing to lo
 
 ## Context system
 
-The `@wordpress/components` context system is based on [React's `Context` API](https://reactjs.org/docs/context.html), and is a way for components to adapt to the "context" they're being rendered in.
+The `@gutenberg/components` context system is based on [React's `Context` API](https://reactjs.org/docs/context.html), and is a way for components to adapt to the "context" they're being rendered in.
 
 Components can use this system via a couple of functions:
 
@@ -490,7 +490,7 @@ Storybook can be started on a local machine by running `npm run storybook:dev`. 
 
 All components, in addition to being typed, should be using JSDoc when necessary — as explained in the [Coding Guidelines](/docs/contributors/code/coding-guidelines.md#javascript-documentation-using-jsdoc).
 
-Each component that is exported from the `@wordpress/components` package should include a `README.md` file, explaining how to use the component, showing examples, and documenting all the props.
+Each component that is exported from the `@gutenberg/components` package should include a `README.md` file, explaining how to use the component, showing examples, and documenting all the props.
 
 ## README example
 
@@ -514,7 +514,7 @@ Description of the component.
 Code example using correct markdown syntax and formatted using project's formatting rules. See [ItemGroup](/packages/components/src/item-group/item-group/README.md#usage) for a real-world example.
 
 ```jsx
-import { ExampleComponent } from '@wordpress/components';
+import { ExampleComponent } from '@gutenberg/components';
 
 function Example() {
 	return (

@@ -12,16 +12,16 @@ import styles from './gallery-styles.scss';
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	BlockCaption,
 	RichText,
 	useInnerBlocksProps,
-} from '@wordpress/block-editor';
-import { useState, useEffect } from '@wordpress/element';
-import { mediaUploadSync } from '@wordpress/react-native-bridge';
-import { WIDE_ALIGNMENTS } from '@wordpress/components';
-import { useResizeObserver } from '@wordpress/compose';
+} from '@gutenberg/block-editor';
+import { useState, useEffect } from '@gutenberg/element';
+import { mediaUploadSync } from '@gutenberg/react-native-bridge';
+import { WIDE_ALIGNMENTS } from '@gutenberg/components';
+import { useResizeObserver } from '@gutenberg/compose';
 
 const TILE_SPACING = 8;
 

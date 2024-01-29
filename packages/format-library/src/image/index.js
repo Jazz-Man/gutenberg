@@ -8,16 +8,16 @@ import {
 	Button,
 	__experimentalNumberControl as NumberControl,
 	__experimentalHStack as HStack,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useState } from '@wordpress/element';
-import { insertObject, useAnchor } from '@wordpress/rich-text';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useState } from '@gutenberg/element';
+import { insertObject, useAnchor } from '@gutenberg/rich-text';
 import {
 	MediaUpload,
 	RichTextToolbarButton,
 	MediaUploadCheck,
-} from '@wordpress/block-editor';
-import { keyboardReturn } from '@wordpress/icons';
+} from '@gutenberg/block-editor';
+import { keyboardReturn } from '@gutenberg/icons';
 
 const ALLOWED_MEDIA_TYPES = [ 'image' ];
 

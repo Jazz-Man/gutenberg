@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { createRegistry } from '@wordpress/data';
-import { store as preferencesStore } from '@wordpress/preferences';
+import { createRegistry } from '@gutenberg/data';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

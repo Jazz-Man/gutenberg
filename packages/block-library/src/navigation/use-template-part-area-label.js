@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { store as coreStore } from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies
@@ -35,16 +35,16 @@ export default function useTemplatePartAreaLabel( clientId ) {
 				return;
 			}
 
-			// FIXME: @wordpress/block-library should not depend on @wordpress/editor.
+			// FIXME: @gutenberg/block-library should not depend on @gutenberg/editor.
 			// Blocks can be loaded into a *non-post* block editor.
 			// This code is lifted from this file:
 			// packages/block-library/src/template-part/edit/advanced-controls.js
-			/* eslint-disable @wordpress/data-no-store-string-literals */
+			/* eslint-disable @gutenberg/data-no-store-string-literals */
 			const definedAreas =
 				select(
 					'core/editor'
 				).__experimentalGetDefaultTemplatePartAreas();
-			/* eslint-enable @wordpress/data-no-store-string-literals */
+			/* eslint-enable @gutenberg/data-no-store-string-literals */
 			const { getCurrentTheme, getEditedEntityRecord } =
 				select( coreStore );
 

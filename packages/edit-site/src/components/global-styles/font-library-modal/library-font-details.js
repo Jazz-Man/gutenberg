@@ -4,7 +4,7 @@
 import {
 	__experimentalVStack as VStack,
 	__experimentalSpacer as Spacer,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

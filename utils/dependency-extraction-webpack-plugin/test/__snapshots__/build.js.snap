@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`combine-assets\` should produce expected output: Asset file 'assets.php' should match snapshot 1`] = `
-"<?php return array('fileA.mjs' => array('dependencies' => array('@wordpress/blob', 'lodash'), 'version' => '4ab8cc4b6b7619053443', 'type' => 'module'), 'fileB.mjs' => array('dependencies' => array('@wordpress/token-list'), 'version' => '5c4197fd48811f25807f', 'type' => 'module'));
+"<?php return array('fileA.mjs' => array('dependencies' => array('@gutenberg/blob', 'lodash'), 'version' => '4ab8cc4b6b7619053443', 'type' => 'module'), 'fileB.mjs' => array('dependencies' => array('@gutenberg/token-list'), 'version' => '5c4197fd48811f25807f', 'type' => 'module'));
 "
 `;
 
@@ -9,13 +9,13 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`combine-assets\` sh
 [
   {
     "externalType": "import",
-    "request": "@wordpress/blob",
-    "userRequest": "@wordpress/blob",
+    "request": "@gutenberg/blob",
+    "userRequest": "@gutenberg/blob",
   },
   {
     "externalType": "import",
-    "request": "@wordpress/token-list",
-    "userRequest": "@wordpress/token-list",
+    "request": "@gutenberg/token-list",
+    "userRequest": "@gutenberg/token-list",
   },
   {
     "externalType": "import",
@@ -26,7 +26,7 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`combine-assets\` sh
 `;
 
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`cyclic-dependency-graph\` should produce expected output: Asset file 'main.asset.php' should match snapshot 1`] = `
-"<?php return array('dependencies' => array('@wordpress/interactivity'), 'version' => '58fadee5eca3ad30aff6', 'type' => 'module');
+"<?php return array('dependencies' => array('@gutenberg/interactivity'), 'version' => '58fadee5eca3ad30aff6', 'type' => 'module');
 "
 `;
 
@@ -34,14 +34,14 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`cyclic-dependency-g
 [
   {
     "externalType": "module",
-    "request": "@wordpress/interactivity",
-    "userRequest": "@wordpress/interactivity",
+    "request": "@gutenberg/interactivity",
+    "userRequest": "@gutenberg/interactivity",
   },
 ]
 `;
 
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`cyclic-dynamic-dependency-graph\` should produce expected output: Asset file 'main.asset.php' should match snapshot 1`] = `
-"<?php return array('dependencies' => array(array('id' => '@wordpress/interactivity', 'type' => 'dynamic')), 'version' => '293aebad4ca761cf396f', 'type' => 'module');
+"<?php return array('dependencies' => array(array('id' => '@gutenberg/interactivity', 'type' => 'dynamic')), 'version' => '293aebad4ca761cf396f', 'type' => 'module');
 "
 `;
 
@@ -49,14 +49,14 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`cyclic-dynamic-depe
 [
   {
     "externalType": "module",
-    "request": "@wordpress/interactivity",
-    "userRequest": "@wordpress/interactivity",
+    "request": "@gutenberg/interactivity",
+    "userRequest": "@gutenberg/interactivity",
   },
 ]
 `;
 
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`dynamic-import\` should produce expected output: Asset file 'main.asset.php' should match snapshot 1`] = `
-"<?php return array('dependencies' => array(array('id' => '@wordpress/blob', 'type' => 'dynamic')), 'version' => '4f59b7847b70a07b2710', 'type' => 'module');
+"<?php return array('dependencies' => array(array('id' => '@gutenberg/blob', 'type' => 'dynamic')), 'version' => '4f59b7847b70a07b2710', 'type' => 'module');
 "
 `;
 
@@ -64,8 +64,8 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`dynamic-import\` sh
 [
   {
     "externalType": "import",
-    "request": "@wordpress/blob",
-    "userRequest": "@wordpress/blob",
+    "request": "@gutenberg/blob",
+    "userRequest": "@gutenberg/blob",
   },
 ]
 `;
@@ -75,12 +75,12 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`error\` should prod
 Module not found: Error: Attempted to use WordPress script in a module: jquery, which is not supported yet.
 
 ERROR in ./index.js 6:23-55
-Module not found: Error: Attempted to use WordPress script in a module: @wordpress/api-fetch, which is not supported yet.
+Module not found: Error: Attempted to use WordPress script in a module: @gutenberg/api-fetch, which is not supported yet.
 "
 `;
 
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`function-output-filename\` should produce expected output: Asset file 'chunk--main--main.asset.php' should match snapshot 1`] = `
-"<?php return array('dependencies' => array('@wordpress/blob', 'lodash'), 'version' => 'e325da3aa7dbb0c0c151', 'type' => 'module');
+"<?php return array('dependencies' => array('@gutenberg/blob', 'lodash'), 'version' => 'e325da3aa7dbb0c0c151', 'type' => 'module');
 "
 `;
 
@@ -88,8 +88,8 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`function-output-fil
 [
   {
     "externalType": "import",
-    "request": "@wordpress/blob",
-    "userRequest": "@wordpress/blob",
+    "request": "@gutenberg/blob",
+    "userRequest": "@gutenberg/blob",
   },
   {
     "externalType": "import",
@@ -100,7 +100,7 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`function-output-fil
 `;
 
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`has-extension-suffix\` should produce expected output: Asset file 'index.min.asset.php' should match snapshot 1`] = `
-"<?php return array('dependencies' => array('@wordpress/blob', 'lodash'), 'version' => '8308f1ac78c21f09c721', 'type' => 'module');
+"<?php return array('dependencies' => array('@gutenberg/blob', 'lodash'), 'version' => '8308f1ac78c21f09c721', 'type' => 'module');
 "
 `;
 
@@ -108,8 +108,8 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`has-extension-suffi
 [
   {
     "externalType": "import",
-    "request": "@wordpress/blob",
-    "userRequest": "@wordpress/blob",
+    "request": "@gutenberg/blob",
+    "userRequest": "@gutenberg/blob",
   },
   {
     "externalType": "import",
@@ -154,7 +154,7 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`no-deps\` should pr
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`no-deps\` should produce expected output: External modules should match snapshot 1`] = `[]`;
 
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`option-function-output-filename\` should produce expected output: Asset file 'chunk--main--main.asset.php' should match snapshot 1`] = `
-"<?php return array('dependencies' => array('@wordpress/blob', 'lodash'), 'version' => 'e325da3aa7dbb0c0c151', 'type' => 'module');
+"<?php return array('dependencies' => array('@gutenberg/blob', 'lodash'), 'version' => 'e325da3aa7dbb0c0c151', 'type' => 'module');
 "
 `;
 
@@ -162,8 +162,8 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`option-function-out
 [
   {
     "externalType": "import",
-    "request": "@wordpress/blob",
-    "userRequest": "@wordpress/blob",
+    "request": "@gutenberg/blob",
+    "userRequest": "@gutenberg/blob",
   },
   {
     "externalType": "import",
@@ -174,7 +174,7 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`option-function-out
 `;
 
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`option-output-filename\` should produce expected output: Asset file 'main-foo.asset.php' should match snapshot 1`] = `
-"<?php return array('dependencies' => array('@wordpress/blob', 'lodash'), 'version' => 'e325da3aa7dbb0c0c151', 'type' => 'module');
+"<?php return array('dependencies' => array('@gutenberg/blob', 'lodash'), 'version' => 'e325da3aa7dbb0c0c151', 'type' => 'module');
 "
 `;
 
@@ -182,8 +182,8 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`option-output-filen
 [
   {
     "externalType": "import",
-    "request": "@wordpress/blob",
-    "userRequest": "@wordpress/blob",
+    "request": "@gutenberg/blob",
+    "userRequest": "@gutenberg/blob",
   },
   {
     "externalType": "import",
@@ -206,7 +206,7 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`output-format-json\
 `;
 
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`overrides\` should produce expected output: Asset file 'main.asset.php' should match snapshot 1`] = `
-"<?php return array('dependencies' => array('@wordpress/blob', '@wordpress/url', 'rxjs', 'rxjs/operators'), 'version' => '259fc706528651fc00c1', 'type' => 'module');
+"<?php return array('dependencies' => array('@gutenberg/blob', '@gutenberg/url', 'rxjs', 'rxjs/operators'), 'version' => '259fc706528651fc00c1', 'type' => 'module');
 "
 `;
 
@@ -214,13 +214,13 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`overrides\` should 
 [
   {
     "externalType": "import",
-    "request": "@wordpress/blob",
-    "userRequest": "@wordpress/blob",
+    "request": "@gutenberg/blob",
+    "userRequest": "@gutenberg/blob",
   },
   {
     "externalType": "import",
-    "request": "@wordpress/url",
-    "userRequest": "@wordpress/url",
+    "request": "@gutenberg/url",
+    "userRequest": "@gutenberg/url",
   },
   {
     "externalType": "import",
@@ -236,12 +236,12 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`overrides\` should 
 `;
 
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`runtime-chunk-single\` should produce expected output: Asset file 'a.asset.php' should match snapshot 1`] = `
-"<?php return array('dependencies' => array('@wordpress/blob'), 'version' => '77b6df15bf179d0ae624', 'type' => 'module');
+"<?php return array('dependencies' => array('@gutenberg/blob'), 'version' => '77b6df15bf179d0ae624', 'type' => 'module');
 "
 `;
 
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`runtime-chunk-single\` should produce expected output: Asset file 'b.asset.php' should match snapshot 1`] = `
-"<?php return array('dependencies' => array('@wordpress/blob', 'lodash'), 'version' => 'e14dfa7260edaee86a85', 'type' => 'module');
+"<?php return array('dependencies' => array('@gutenberg/blob', 'lodash'), 'version' => 'e14dfa7260edaee86a85', 'type' => 'module');
 "
 `;
 
@@ -254,8 +254,8 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`runtime-chunk-singl
 [
   {
     "externalType": "import",
-    "request": "@wordpress/blob",
-    "userRequest": "@wordpress/blob",
+    "request": "@gutenberg/blob",
+    "userRequest": "@gutenberg/blob",
   },
   {
     "externalType": "import",
@@ -266,7 +266,7 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`runtime-chunk-singl
 `;
 
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`style-imports\` should produce expected output: Asset file 'main.asset.php' should match snapshot 1`] = `
-"<?php return array('dependencies' => array('@wordpress/blob', 'lodash'), 'version' => '22d18a3461df47fbaa79', 'type' => 'module');
+"<?php return array('dependencies' => array('@gutenberg/blob', 'lodash'), 'version' => '22d18a3461df47fbaa79', 'type' => 'module');
 "
 `;
 
@@ -274,8 +274,8 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`style-imports\` sho
 [
   {
     "externalType": "import",
-    "request": "@wordpress/blob",
-    "userRequest": "@wordpress/blob",
+    "request": "@gutenberg/blob",
+    "userRequest": "@gutenberg/blob",
   },
   {
     "externalType": "import",
@@ -286,7 +286,7 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`style-imports\` sho
 `;
 
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`wordpress\` should produce expected output: Asset file 'main.asset.php' should match snapshot 1`] = `
-"<?php return array('dependencies' => array('@wordpress/blob', 'lodash'), 'version' => 'e325da3aa7dbb0c0c151', 'type' => 'module');
+"<?php return array('dependencies' => array('@gutenberg/blob', 'lodash'), 'version' => 'e325da3aa7dbb0c0c151', 'type' => 'module');
 "
 `;
 
@@ -294,8 +294,8 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`wordpress\` should 
 [
   {
     "externalType": "import",
-    "request": "@wordpress/blob",
-    "userRequest": "@wordpress/blob",
+    "request": "@gutenberg/blob",
+    "userRequest": "@gutenberg/blob",
   },
   {
     "externalType": "import",
@@ -306,7 +306,7 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`wordpress\` should 
 `;
 
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`wordpress-interactivity\` should produce expected output: Asset file 'main.asset.php' should match snapshot 1`] = `
-"<?php return array('dependencies' => array('lodash', array('id' => '@wordpress/interactivity', 'type' => 'dynamic')), 'version' => 'fcc07ce68574cdc2a6a5', 'type' => 'module');
+"<?php return array('dependencies' => array('lodash', array('id' => '@gutenberg/interactivity', 'type' => 'dynamic')), 'version' => 'fcc07ce68574cdc2a6a5', 'type' => 'module');
 "
 `;
 
@@ -319,14 +319,14 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`wordpress-interacti
   },
   {
     "externalType": "module",
-    "request": "@wordpress/interactivity",
-    "userRequest": "@wordpress/interactivity",
+    "request": "@gutenberg/interactivity",
+    "userRequest": "@gutenberg/interactivity",
   },
 ]
 `;
 
 exports[`DependencyExtractionWebpackPlugin modules Webpack \`wordpress-require\` should produce expected output: Asset file 'main.asset.php' should match snapshot 1`] = `
-"<?php return array('dependencies' => array('@wordpress/blob', 'lodash'), 'version' => 'f40de15d66b54da440d2', 'type' => 'module');
+"<?php return array('dependencies' => array('@gutenberg/blob', 'lodash'), 'version' => 'f40de15d66b54da440d2', 'type' => 'module');
 "
 `;
 
@@ -334,8 +334,8 @@ exports[`DependencyExtractionWebpackPlugin modules Webpack \`wordpress-require\`
 [
   {
     "externalType": "import",
-    "request": "@wordpress/blob",
-    "userRequest": "@wordpress/blob",
+    "request": "@gutenberg/blob",
+    "userRequest": "@gutenberg/blob",
   },
   {
     "externalType": "import",
@@ -363,7 +363,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`combine-assets\` sh
       "wp",
       "blob",
     ],
-    "userRequest": "@wordpress/blob",
+    "userRequest": "@gutenberg/blob",
   },
   {
     "externalType": "window",
@@ -371,7 +371,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`combine-assets\` sh
       "wp",
       "tokenList",
     ],
-    "userRequest": "@wordpress/token-list",
+    "userRequest": "@gutenberg/token-list",
   },
 ]
 `;
@@ -389,7 +389,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`cyclic-dependency-g
       "wp",
       "interactivity",
     ],
-    "userRequest": "@wordpress/interactivity",
+    "userRequest": "@gutenberg/interactivity",
   },
 ]
 `;
@@ -407,7 +407,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`cyclic-dynamic-depe
       "wp",
       "interactivity",
     ],
-    "userRequest": "@wordpress/interactivity",
+    "userRequest": "@gutenberg/interactivity",
   },
 ]
 `;
@@ -425,7 +425,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`dynamic-import\` sh
       "wp",
       "blob",
     ],
-    "userRequest": "@wordpress/blob",
+    "userRequest": "@gutenberg/blob",
   },
 ]
 `;
@@ -454,7 +454,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`function-output-fil
       "wp",
       "blob",
     ],
-    "userRequest": "@wordpress/blob",
+    "userRequest": "@gutenberg/blob",
   },
 ]
 `;
@@ -477,7 +477,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`has-extension-suffi
       "wp",
       "blob",
     ],
-    "userRequest": "@wordpress/blob",
+    "userRequest": "@gutenberg/blob",
   },
 ]
 `;
@@ -540,7 +540,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`option-function-out
       "wp",
       "blob",
     ],
-    "userRequest": "@wordpress/blob",
+    "userRequest": "@gutenberg/blob",
   },
 ]
 `;
@@ -563,7 +563,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`option-output-filen
       "wp",
       "blob",
     ],
-    "userRequest": "@wordpress/blob",
+    "userRequest": "@gutenberg/blob",
   },
 ]
 `;
@@ -606,7 +606,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`overrides\` should 
       "wp",
       "blob",
     ],
-    "userRequest": "@wordpress/blob",
+    "userRequest": "@gutenberg/blob",
   },
   {
     "externalType": "window",
@@ -614,7 +614,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`overrides\` should 
       "wp",
       "url",
     ],
-    "userRequest": "@wordpress/url",
+    "userRequest": "@gutenberg/url",
   },
 ]
 `;
@@ -647,7 +647,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`runtime-chunk-singl
       "wp",
       "blob",
     ],
-    "userRequest": "@wordpress/blob",
+    "userRequest": "@gutenberg/blob",
   },
 ]
 `;
@@ -670,7 +670,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`style-imports\` sho
       "wp",
       "blob",
     ],
-    "userRequest": "@wordpress/blob",
+    "userRequest": "@gutenberg/blob",
   },
 ]
 `;
@@ -693,7 +693,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`wordpress\` should 
       "wp",
       "blob",
     ],
-    "userRequest": "@wordpress/blob",
+    "userRequest": "@gutenberg/blob",
   },
 ]
 `;
@@ -716,7 +716,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`wordpress-interacti
       "wp",
       "interactivity",
     ],
-    "userRequest": "@wordpress/interactivity",
+    "userRequest": "@gutenberg/interactivity",
   },
 ]
 `;
@@ -739,7 +739,7 @@ exports[`DependencyExtractionWebpackPlugin scripts Webpack \`wordpress-require\`
       "wp",
       "blob",
     ],
-    "userRequest": "@wordpress/blob",
+    "userRequest": "@gutenberg/blob",
   },
 ]
 `;

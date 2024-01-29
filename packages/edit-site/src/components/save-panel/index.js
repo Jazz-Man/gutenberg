@@ -6,16 +6,16 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Button, Modal } from '@wordpress/components';
+import { Button, Modal } from '@gutenberg/components';
 import {
 	EntitiesSavedStates,
 	useEntitiesSavedStatesIsDirty,
 	privateApis,
-} from '@wordpress/editor';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { __, sprintf } from '@wordpress/i18n';
-import { NavigableRegion } from '@wordpress/interface';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/editor';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { NavigableRegion } from '@gutenberg/interface';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

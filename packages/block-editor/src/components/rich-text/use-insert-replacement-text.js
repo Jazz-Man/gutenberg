@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useRefEffect } from '@wordpress/compose';
-import { useDispatch } from '@wordpress/data';
+import { useRefEffect } from '@gutenberg/compose';
+import { useDispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies

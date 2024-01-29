@@ -118,7 +118,7 @@ const I18N_HOOK_REGEXP = /^i18n\.(n?gettext|has_translation)(_|$)/;
  *
  * Check if there is a translation for a given string in singular form.
  */
-/** @typedef {import('@wordpress/hooks').Hooks} Hooks */
+/** @typedef {import('@gutenberg/hooks').Hooks} Hooks */
 
 /**
  * An i18n instance

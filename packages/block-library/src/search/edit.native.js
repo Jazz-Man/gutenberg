@@ -12,17 +12,17 @@ import {
 	PlainText,
 	useBlockProps,
 	InspectorControls,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	PanelBody,
 	SelectControl,
 	ToggleControl,
 	Icon,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { search } from '@wordpress/icons';
-import { useRef, useEffect, useState } from '@wordpress/element';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { search } from '@gutenberg/icons';
+import { useRef, useEffect, useState } from '@gutenberg/element';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

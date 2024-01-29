@@ -7,10 +7,10 @@ import {
 	ToolbarButton,
 	BaseControl,
 	__experimentalNumberControl as NumberControl,
-} from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
-import { settings } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
+import { settings } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

@@ -1,31 +1,31 @@
 # The block in the Editor
 
-The Block Editor is a React Single Page Application (SPA) and every block in the editor is displayed through a React component defined in the `edit` property of the settings object used to [register the block on the client](https://developer.wordpress.org/block-editor/getting-started/fundamentals/registration-of-a-block/#registration-of-the-block-with-javascript-client-side). 
+The Block Editor is a React Single Page Application (SPA) and every block in the editor is displayed through a React component defined in the `edit` property of the settings object used to [register the block on the client](https://developer.wordpress.org/block-editor/getting-started/fundamentals/registration-of-a-block/#registration-of-the-block-with-javascript-client-side).
 
 The `props` object received by the block's `Edit` React component includes:
 - [`attributes`](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#attributes) - attributes object
 - [`setAttributes`](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#setattributes) - method to update the attributes object
 - [`isSelected`](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#isselected) - boolean that communicates whether the block is currently selected
 
-WordPress provides many built-in standard components that can be used to define the interface of the block in the editor. These built-in components are available via packages such as [`@wordpress/components`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-components/) and [`@wordpress/block-editor`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/).
+WordPress provides many built-in standard components that can be used to define the interface of the block in the editor. These built-in components are available via packages such as [`@gutenberg/components`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-components/) and [`@gutenberg/block-editor`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/).
 
 <div class="callout">
 The WordPress Gutenberg project uses <a href="https://wordpress.github.io/gutenberg/?path=/docs/docs-introduction--page">Storybook</a> to document the user interface components that are available in WordPress packages.
 </div>
 
 Custom settings controls for the block in the Block Toolbar or the Settings Sidebar can also be defined through this `Edit` React component via built-in components such as:
-- [`InspectorControls`](https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/inspector-controls/README.md) 
-- [`BlockControls`](https://github.com/WordPress/gutenberg/tree/trunk/packages/block-editor/src/components/block-controls) 
+- [`InspectorControls`](https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/inspector-controls/README.md)
+- [`BlockControls`](https://github.com/WordPress/gutenberg/tree/trunk/packages/block-editor/src/components/block-controls)
 
 ## Built-in components
 
-The package [`@wordpress/components`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-components/) includes a library of generic WordPress components to create common UI elements for the Block Editor and the WordPress dashboard. Some of the  most commonly used components from this package are:
-- [`TextControl`](https://wordpress.github.io/gutenberg/?path=/docs/components-textcontrol--docs) 
+The package [`@gutenberg/components`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-components/) includes a library of generic WordPress components to create common UI elements for the Block Editor and the WordPress dashboard. Some of the  most commonly used components from this package are:
+- [`TextControl`](https://wordpress.github.io/gutenberg/?path=/docs/components-textcontrol--docs)
 - [`Panel`](https://wordpress.github.io/gutenberg/?path=/docs/components-panel--docs)
 - [`ToggleControl`](https://wordpress.github.io/gutenberg/?path=/docs/components-togglecontrol--docs)
 - [`ExternalLink`](https://wordpress.github.io/gutenberg/?path=/docs/components-externallink--docs)
 
-The package [`@wordpress/block-editor`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/) includes a library of components and hooks for the Block Editor, including those to define custom settings controls for the block in the Editor. Some of the components most commonly used from this package are:
+The package [`@gutenberg/block-editor`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/) includes a library of components and hooks for the Block Editor, including those to define custom settings controls for the block in the Editor. Some of the components most commonly used from this package are:
 - [`RichText`](https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/rich-text/README.md)
 - [`BlockControls`](https://github.com/WordPress/gutenberg/tree/trunk/packages/block-editor/src/components/block-controls)
 - [`InspectorControls`](https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/inspector-controls/README.md)
@@ -33,7 +33,7 @@ The package [`@wordpress/block-editor`](https://developer.wordpress.org/block-ed
 - `PanelColorSettings` or `ColorPalette`
 
 <div class="callout callout-tip">
-The package <a href="https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/"><code>@wordpress/block-editor</code></a> also provide the tools to create and use standalone block editors.
+The package <a href="https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/"><code>@gutenberg/block-editor</code></a> also provide the tools to create and use standalone block editors.
 </div>
 
 A good workflow when using a component for the Block Editor is:
@@ -46,7 +46,7 @@ A good workflow when using a component for the Block Editor is:
 
 ## Block Controls: Block Toolbar and Settings Sidebar
 
-To simplify block customization and ensure a consistent experience for users, there are a number of built-in UI patterns to help generate the editor preview. 
+To simplify block customization and ensure a consistent experience for users, there are a number of built-in UI patterns to help generate the editor preview.
 
 ![Diagram showing the Block Toolbar and the Settings Sidebar when a Paragraph block is selected](https://developer.wordpress.org/files/2023/12/block-toolbar-settings-sidebar.png)
 
@@ -161,7 +161,7 @@ For common customization settings including color, border, spacing customization
 ## Additional resources
 
 - [Storybook for WordPress components](https://wordpress.github.io/gutenberg/?path=/docs/docs-introduction--page)
-- [@wordpress/block-editor](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/)
-- [@wordpress/components](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-components/)
+- [@gutenberg/block-editor](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/)
+- [@gutenberg/components](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-components/)
 - [`Inspector Controls`](https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/inspector-controls/README.md)
 - [`BlockControls`](https://github.com/WordPress/gutenberg/tree/trunk/packages/block-editor/src/components/block-controls)

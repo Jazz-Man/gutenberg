@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
-import { createReduxStore, register } from '@wordpress/data';
+import apiFetch from '@gutenberg/api-fetch';
+import { createReduxStore, register } from '@gutenberg/data';
 
 /**
  * Internal dependencies

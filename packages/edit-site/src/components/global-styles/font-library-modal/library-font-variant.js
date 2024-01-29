@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { useContext } from '@wordpress/element';
+import { useContext } from '@gutenberg/element';
 import {
 	CheckboxControl,
 	Flex,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

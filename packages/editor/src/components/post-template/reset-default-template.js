@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { MenuItem } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useDispatch } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
+import { MenuItem } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { withFilters } from '@wordpress/components';
-import { getBlockType } from '@wordpress/blocks';
-import { useContext, useMemo } from '@wordpress/element';
+import { withFilters } from '@gutenberg/components';
+import { getBlockType } from '@gutenberg/blocks';
+import { useContext, useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

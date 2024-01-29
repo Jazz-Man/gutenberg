@@ -6,10 +6,10 @@ import {
 	cloneElement,
 	renderToString,
 	RawHTML,
-} from '@wordpress/element';
-import { hasFilter, applyFilters } from '@wordpress/hooks';
-import isShallowEqual from '@wordpress/is-shallow-equal';
-import { removep } from '@wordpress/autop';
+} from '@gutenberg/element';
+import { hasFilter, applyFilters } from '@gutenberg/hooks';
+import isShallowEqual from '@gutenberg/is-shallow-equal';
+import { removep } from '@gutenberg/autop';
 
 /**
  * Internal dependencies

@@ -6,12 +6,12 @@ import { paramCase as kebabCase } from 'change-case';
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
+import apiFetch from '@gutenberg/api-fetch';
 
 /**
  * Internal dependencies
  */
-import { downloadBlob } from '@wordpress/blob';
+import { downloadBlob } from '@gutenberg/blob';
 
 /**
  * Export a reusable block as a JSON file.

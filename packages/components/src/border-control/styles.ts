@@ -131,7 +131,7 @@ export const colorIndicatorWrapper = (
 };
 
 // Must equal $color-palette-circle-size from:
-// @wordpress/components/src/circular-option-picker/style.scss
+// @gutenberg/components/src/circular-option-picker/style.scss
 const swatchSize = 28;
 const swatchGap = 12;
 

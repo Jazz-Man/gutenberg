@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useEffect } from '@wordpress/element';
-import { useDispatch } from '@wordpress/data';
+import { useEffect } from '@gutenberg/element';
+import { useDispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies
@@ -16,8 +16,8 @@ import { store as commandsStore } from '../store';
  *
  * @example
  * ```js
- * import { useCommandLoader } from '@wordpress/commands';
- * import { post, page, layout, symbolFilled } from '@wordpress/icons';
+ * import { useCommandLoader } from '@gutenberg/commands';
+ * import { post, page, layout, symbolFilled } from '@gutenberg/icons';
  *
  * const icons = {
  *     post,

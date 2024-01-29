@@ -34,7 +34,7 @@ module.exports = {
 	},
 	externalsType: 'module',
 	externals: {
-		'@wordpress/interactivity': '@wordpress/interactivity',
+		'@gutenberg/interactivity': '@gutenberg/interactivity',
 	},
 	resolve: {
 		extensions: [ '.js', '.ts', '.tsx' ],

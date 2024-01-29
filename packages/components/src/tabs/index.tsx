@@ -7,8 +7,8 @@ import * as Ariakit from '@ariakit/react';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { useLayoutEffect, useMemo, useRef } from '@wordpress/element';
+import { useInstanceId } from '@gutenberg/compose';
+import { useLayoutEffect, useMemo, useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

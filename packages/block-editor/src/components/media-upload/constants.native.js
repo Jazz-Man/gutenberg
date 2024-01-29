@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 
 export const MEDIA_TYPE_IMAGE = 'image';
 export const MEDIA_TYPE_VIDEO = 'video';

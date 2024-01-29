@@ -6,7 +6,7 @@ import { useMemoOne } from 'use-memo-one';
 /**
  * WordPress dependencies
  */
-import { useEffect } from '@wordpress/element';
+import { useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies

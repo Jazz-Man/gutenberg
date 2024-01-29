@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { Icon, navigation } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
+import { Icon, navigation } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
 
 const PlaceholderPreview = ( { isVisible = true } ) => {
 	return (

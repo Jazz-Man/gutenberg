@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { BlockList } from '@wordpress/block-editor';
+import { Component } from '@gutenberg/element';
+import { BlockList } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

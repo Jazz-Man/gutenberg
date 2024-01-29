@@ -6,13 +6,13 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { withFilters } from '@wordpress/components';
+import { withFilters } from '@gutenberg/components';
 import {
 	getBlockDefaultClassName,
 	hasBlockSupport,
 	getBlockType,
-} from '@wordpress/blocks';
-import { useContext, useMemo } from '@wordpress/element';
+} from '@gutenberg/blocks';
+import { useContext, useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

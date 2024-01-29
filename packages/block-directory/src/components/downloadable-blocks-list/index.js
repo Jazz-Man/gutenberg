@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { privateApis as componentsPrivateApis } from '@wordpress/components';
-import { getBlockType } from '@wordpress/blocks';
-import { useDispatch } from '@wordpress/data';
+import { __ } from '@gutenberg/i18n';
+import { privateApis as componentsPrivateApis } from '@gutenberg/components';
+import { getBlockType } from '@gutenberg/blocks';
+import { useDispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies

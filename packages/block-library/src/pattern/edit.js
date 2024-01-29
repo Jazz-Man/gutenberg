@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { cloneBlock } from '@wordpress/blocks';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useState, useEffect } from '@wordpress/element';
+import { cloneBlock } from '@gutenberg/blocks';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useState, useEffect } from '@gutenberg/element';
 import {
 	Warning,
 	store as blockEditorStore,
 	useBlockProps,
-} from '@wordpress/block-editor';
-import { store as coreStore } from '@wordpress/core-data';
-import { __, sprintf } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { __, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

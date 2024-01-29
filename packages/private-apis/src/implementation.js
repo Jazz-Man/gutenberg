@@ -10,27 +10,27 @@
  * The list of core modules allowed to opt-in to the private APIs.
  */
 const CORE_MODULES_USING_PRIVATE_APIS = [
-	'@wordpress/block-directory',
-	'@wordpress/block-editor',
-	'@wordpress/block-library',
-	'@wordpress/blocks',
-	'@wordpress/commands',
-	'@wordpress/components',
-	'@wordpress/core-commands',
-	'@wordpress/core-data',
-	'@wordpress/customize-widgets',
-	'@wordpress/data',
-	'@wordpress/edit-post',
-	'@wordpress/edit-site',
-	'@wordpress/edit-widgets',
-	'@wordpress/editor',
-	'@wordpress/format-library',
-	'@wordpress/interface',
-	'@wordpress/patterns',
-	'@wordpress/preferences',
-	'@wordpress/reusable-blocks',
-	'@wordpress/router',
-	'@wordpress/dataviews',
+	'@gutenberg/block-directory',
+	'@gutenberg/block-editor',
+	'@gutenberg/block-library',
+	'@gutenberg/blocks',
+	'@gutenberg/commands',
+	'@gutenberg/components',
+	'@gutenberg/core-commands',
+	'@gutenberg/core-data',
+	'@gutenberg/customize-widgets',
+	'@gutenberg/data',
+	'@gutenberg/edit-post',
+	'@gutenberg/edit-site',
+	'@gutenberg/edit-widgets',
+	'@gutenberg/editor',
+	'@gutenberg/format-library',
+	'@gutenberg/interface',
+	'@gutenberg/patterns',
+	'@gutenberg/preferences',
+	'@gutenberg/reusable-blocks',
+	'@gutenberg/router',
+	'@gutenberg/dataviews',
 ];
 
 /**
@@ -72,7 +72,7 @@ try {
 }
 
 /**
- * Called by a @wordpress package wishing to opt-in to accessing or exposing
+ * Called by a @gutenberg package wishing to opt-in to accessing or exposing
  * private private APIs.
  *
  * @param {string} consent    The consent string.

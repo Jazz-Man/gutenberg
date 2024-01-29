@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useRef, useEffect } from '@wordpress/element';
+import { useRef, useEffect } from '@gutenberg/element';
 
-import { focus } from '@wordpress/dom';
+import { focus } from '@gutenberg/dom';
 
 /**
  * Internal dependencies

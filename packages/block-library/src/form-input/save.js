@@ -12,8 +12,8 @@ import {
 	useBlockProps,
 	__experimentalGetBorderClassesAndStyles as getBorderClassesAndStyles,
 	__experimentalGetColorClassesAndStyles as getColorClassesAndStyles,
-} from '@wordpress/block-editor';
-import { __unstableStripHTML as stripHTML } from '@wordpress/dom';
+} from '@gutenberg/block-editor';
+import { __unstableStripHTML as stripHTML } from '@gutenberg/dom';
 
 /**
  * Get the name attribute from a content string.

@@ -131,7 +131,7 @@ function replaceInHtmlTags( haystack, replacePairs ) {
  *
  * @example
  *```js
- * import { autop } from '@wordpress/autop';
+ * import { autop } from '@gutenberg/autop';
  * autop( 'my text' ); // "<p>my text</p>"
  * ```
  *
@@ -334,7 +334,7 @@ export function autop( text, br = true ) {
  *
  * @example
  * ```js
- * import { removep } from '@wordpress/autop';
+ * import { removep } from '@gutenberg/autop';
  * removep( '<p>my text</p>' ); // "my text"
  * ```
  *

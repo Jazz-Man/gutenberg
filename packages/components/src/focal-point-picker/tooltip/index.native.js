@@ -12,7 +12,7 @@ import {
 	useRef,
 	useState,
 	useContext,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 
 /**
  * Internal dependencies

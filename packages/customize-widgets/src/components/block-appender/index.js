@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { useRef, useEffect } from '@wordpress/element';
+import { useRef, useEffect } from '@gutenberg/element';
 import {
 	ButtonBlockAppender,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
 
 export default function BlockAppender( props ) {
 	const ref = useRef();

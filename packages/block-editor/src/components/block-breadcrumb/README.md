@@ -22,7 +22,7 @@ Label text for the root element (the first `<li />`) of the breadcrumb trail.
 Renders a block breadcrumb with default style.
 
 ```jsx
-import { BlockBreadcrumb } from '@wordpress/block-editor';
+import { BlockBreadcrumb } from '@gutenberg/block-editor';
 
 const MyBreadcrumb = () => <BlockBreadcrumb />;
 ```

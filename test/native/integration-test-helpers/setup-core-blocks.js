@@ -5,8 +5,8 @@ import {
 	getBlockTypes,
 	setDefaultBlockName,
 	unregisterBlockType,
-} from '@wordpress/blocks';
-import { coreBlocks, registerCoreBlocks } from '@wordpress/block-library';
+} from '@gutenberg/blocks';
+import { coreBlocks, registerCoreBlocks } from '@gutenberg/block-library';
 
 /**
  * Registers all core blocks or a specific list of blocks before running tests.

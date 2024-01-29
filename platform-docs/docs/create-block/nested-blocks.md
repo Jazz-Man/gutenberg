@@ -11,8 +11,8 @@ You can create a single block that nests other blocks using the [InnerBlocks](ht
 Here is the basic InnerBlocks usage.
 
 ```jsx
-import { registerBlockType } from '@wordpress/blocks';
-import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { InnerBlocks, useBlockProps } from '@gutenberg/block-editor';
 
 registerBlockType( 'create-block/gutenpride-container', {
 	// ...
@@ -130,13 +130,13 @@ When defining a descendent block, use the `ancestor` block setting. This prevent
 
 You can use a react hook called `useInnerBlocksProps` instead of the `InnerBlocks` component. This hook allows you to take more control over the markup of inner blocks areas.
 
-The `useInnerBlocksProps` is exported from the `@wordpress/block-editor` package same as the `InnerBlocks` component itself and supports everything the component does. It also works like the `useBlockProps` hook.
+The `useInnerBlocksProps` is exported from the `@gutenberg/block-editor` package same as the `InnerBlocks` component itself and supports everything the component does. It also works like the `useBlockProps` hook.
 
 Here is the basic `useInnerBlocksProps` hook usage.
 
 ```jsx
-import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { useBlockProps, useInnerBlocksProps } from '@gutenberg/block-editor';
 
 registerBlockType( 'create-block/gutenpride-container', {
 	// ...
@@ -168,8 +168,8 @@ registerBlockType( 'create-block/gutenpride-container', {
 This hook can also pass objects returned from the `useBlockProps` hook to the `useInnerBlocksProps` hook. This reduces the number of elements we need to create.
 
 ```jsx
-import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { useBlockProps, useInnerBlocksProps } from '@gutenberg/block-editor';
 
 registerBlockType( 'gcreate-block/gutenpride-container', {
 	// ...
@@ -201,8 +201,8 @@ The above code will render to the following markup in the editor:
 Another benefit of the hook approach is using the returned value, which is just an object, and deconstructing to get the react children from the object. This property contains the actual child inner blocks thus we can place elements on the same level as our inner blocks.
 
 ```jsx
-import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { useBlockProps, useInnerBlocksProps } from '@gutenberg/block-editor';
 
 registerBlockType( 'gutenberg-examples/example-06', {
 	// ...

@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch, useSelect } from '@wordpress/data';
+import { useDispatch, useSelect } from '@gutenberg/data';
 import {
 	cloneBlock,
 	getBlockType,
 	getBlockFromExample,
 	store as blocksStore,
-} from '@wordpress/blocks';
-import { useMemo } from '@wordpress/element';
+} from '@gutenberg/blocks';
+import { useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

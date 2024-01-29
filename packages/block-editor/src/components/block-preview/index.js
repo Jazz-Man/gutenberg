@@ -6,10 +6,10 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useDisabled, useMergeRefs } from '@wordpress/compose';
-import { useSelect } from '@wordpress/data';
-import { memo, useMemo } from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
+import { useDisabled, useMergeRefs } from '@gutenberg/compose';
+import { useSelect } from '@gutenberg/data';
+import { memo, useMemo } from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

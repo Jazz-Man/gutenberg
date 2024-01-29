@@ -9,11 +9,11 @@ import a11yPlugin from 'colord/plugins/a11y';
 /**
  * WordPress dependencies
  */
-import { speak } from '@wordpress/a11y';
-import { __ } from '@wordpress/i18n';
-import { useEffect } from '@wordpress/element';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
-import { Icon, warning } from '@wordpress/icons';
+import { speak } from '@gutenberg/a11y';
+import { __ } from '@gutenberg/i18n';
+import { useEffect } from '@gutenberg/element';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
+import { Icon, warning } from '@gutenberg/icons';
 /**
  * Internal dependencies
  */

@@ -19,18 +19,18 @@ import Animated, {
 /**
  * WordPress dependencies
  */
-import { Draggable, DraggableTrigger } from '@wordpress/components';
-import { select, useSelect, useDispatch } from '@wordpress/data';
+import { Draggable, DraggableTrigger } from '@gutenberg/components';
+import { select, useSelect, useDispatch } from '@gutenberg/data';
 import {
 	useCallback,
 	useEffect,
 	useRef,
 	useState,
 	Platform,
-} from '@wordpress/element';
-import { getBlockType } from '@wordpress/blocks';
-import { generateHapticFeedback } from '@wordpress/react-native-bridge';
-import RCTAztecView from '@wordpress/react-native-aztec';
+} from '@gutenberg/element';
+import { getBlockType } from '@gutenberg/blocks';
+import { generateHapticFeedback } from '@gutenberg/react-native-bridge';
+import RCTAztecView from '@gutenberg/react-native-aztec';
 
 /**
  * Internal dependencies

@@ -12,13 +12,13 @@ import {
 	Spinner,
 	ToggleControl,
 	VisuallyHidden,
-} from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
-import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { decodeEntities } from '@wordpress/html-entities';
-import { __ } from '@wordpress/i18n';
-import { pin } from '@wordpress/icons';
-import { useEntityRecords } from '@wordpress/core-data';
+} from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
+import { InspectorControls, useBlockProps } from '@gutenberg/block-editor';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { __ } from '@gutenberg/i18n';
+import { pin } from '@gutenberg/icons';
+import { useEntityRecords } from '@gutenberg/core-data';
 
 export default function CategoriesEdit( {
 	attributes: {

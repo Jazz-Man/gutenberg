@@ -5,8 +5,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { useViewportMatch, useResizeObserver } from '@wordpress/compose';
+import { useSelect } from '@gutenberg/data';
+import { useViewportMatch, useResizeObserver } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

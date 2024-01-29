@@ -6,19 +6,19 @@ import { renderHook } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies
  */
 import useGlobalStylesRevisions from '../use-global-styles-revisions';
 
-jest.mock( '@wordpress/data/src/components/use-select', () => jest.fn() );
+jest.mock( '@gutenberg/data/src/components/use-select', () => jest.fn() );
 
-jest.mock( '@wordpress/element', () => {
+jest.mock( '@gutenberg/element', () => {
 	return {
 		__esModule: true,
-		...jest.requireActual( '@wordpress/element' ),
+		...jest.requireActual( '@gutenberg/element' ),
 		useContext: jest.fn().mockImplementation( () => ( {
 			user: {
 				styles: 'ice-cream',

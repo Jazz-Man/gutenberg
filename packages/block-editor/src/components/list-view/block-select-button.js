@@ -6,20 +6,20 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { hasBlockSupport } from '@wordpress/blocks';
+import { hasBlockSupport } from '@gutenberg/blocks';
 import {
 	Button,
 	__experimentalHStack as HStack,
 	__experimentalTruncate as Truncate,
 	Tooltip,
-} from '@wordpress/components';
-import { forwardRef } from '@wordpress/element';
-import { Icon, lockSmall as lock, pinSmall } from '@wordpress/icons';
-import { SPACE, ENTER, BACKSPACE, DELETE } from '@wordpress/keycodes';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __unstableUseShortcutEventMatch as useShortcutEventMatch } from '@wordpress/keyboard-shortcuts';
-import { __, sprintf } from '@wordpress/i18n';
-import isShallowEqual from '@wordpress/is-shallow-equal';
+} from '@gutenberg/components';
+import { forwardRef } from '@gutenberg/element';
+import { Icon, lockSmall as lock, pinSmall } from '@gutenberg/icons';
+import { SPACE, ENTER, BACKSPACE, DELETE } from '@gutenberg/keycodes';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __unstableUseShortcutEventMatch as useShortcutEventMatch } from '@gutenberg/keyboard-shortcuts';
+import { __, sprintf } from '@gutenberg/i18n';
+import isShallowEqual from '@gutenberg/is-shallow-equal';
 
 /**
  * Internal dependencies

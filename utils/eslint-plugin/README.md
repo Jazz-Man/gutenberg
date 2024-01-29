@@ -7,7 +7,7 @@
 Install the module
 
 ```bash
-npm install @wordpress/eslint-plugin --save-dev
+npm install @gutenberg/eslint-plugin --save-dev
 ```
 
 **Note**: This package requires `node` 14.0.0 or later, and `npm` 6.14.4 or later. It is not compatible with older versions.
@@ -18,7 +18,7 @@ To opt-in to the default configuration, extend your own project's `.eslintrc` fi
 
 ```json
 {
-	"extends": [ "plugin:@wordpress/eslint-plugin/recommended" ]
+	"extends": [ "plugin:@gutenberg/eslint-plugin/recommended" ]
 }
 ```
 
@@ -59,7 +59,7 @@ For example, if your project does not use React, you could consider extending in
 
 ```json
 {
-	"extends": [ "plugin:@wordpress/eslint-plugin/esnext" ]
+	"extends": [ "plugin:@gutenberg/eslint-plugin/esnext" ]
 }
 ```
 
@@ -76,7 +76,7 @@ The granular rulesets will not define any environment globals. As such, if they 
 | [is-gutenberg-plugin](docs/rules/is-gutenberg-plugin.md)                                                                                                             | Governs the use of the `process.env.IS_GUTENBERG_PLUGIN` constant                              | ✓           |
 | [no-base-control-with-label-without-id](https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/no-base-control-with-label-without-id.md) | Disallow the usage of BaseControl component with a label prop set but omitting the id property | ✓           |
 | [no-unguarded-get-range-at](https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/no-unguarded-get-range-at.md)                         | Disallow the usage of unguarded `getRangeAt` calls                                             | ✓           |
-| [no-unsafe-wp-apis](https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/no-unsafe-wp-apis.md)                                         | Disallow the usage of unsafe APIs from `@wordpress/*` packages                                 | ✓           |
+| [no-unsafe-wp-apis](https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/no-unsafe-wp-apis.md)                                         | Disallow the usage of unsafe APIs from `@gutenberg/*` packages                                 | ✓           |
 | [no-unused-vars-before-return](https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/no-unused-vars-before-return.md)                   | Disallow assigning variable values if unused before a return                                   | ✓           |
 | [react-no-unsafe-timeout](https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/react-no-unsafe-timeout.md)                             | Disallow unsafe `setTimeout` in component                                                      |             |
 | [valid-sprintf](https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/valid-sprintf.md)                                                 | Enforce valid sprintf usage                                                                    | ✓           |
@@ -95,7 +95,7 @@ If you are using WordPress' `.jshintrc` JSHint configuration and you would like 
 
 ```json
 {
-	"extends": [ "plugin:@wordpress/eslint-plugin/jshint" ]
+	"extends": [ "plugin:@gutenberg/eslint-plugin/jshint" ]
 }
 ```
 

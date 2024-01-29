@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Button } from '@wordpress/components';
-import { keyboardReturn } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { Button } from '@gutenberg/components';
+import { keyboardReturn } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

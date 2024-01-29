@@ -6,13 +6,13 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { store as coreStore } from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
-import { useMemo, useContext, useState } from '@wordpress/element';
-import { ENTER } from '@wordpress/keycodes';
-import { __experimentalGrid as Grid } from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
+import { useMemo, useContext, useState } from '@gutenberg/element';
+import { ENTER } from '@gutenberg/keycodes';
+import { __experimentalGrid as Grid } from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

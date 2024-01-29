@@ -6,7 +6,7 @@ import type { Meta, StoryFn } from '@storybook/react';
 /**
  * WordPress dependencies
  */
-import { link, more, wordpress } from '@wordpress/icons';
+import { link, more, wordpress } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

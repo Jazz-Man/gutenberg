@@ -11,12 +11,12 @@ format by selecting _Custom_.
 
 All date format strings should be in the format accepted by by the [`dateI18n`
 function in
-`@wordpress/date`](https://github.com/WordPress/gutenberg/tree/trunk/packages/date#datei18n).
+`@gutenberg/date`](https://github.com/WordPress/gutenberg/tree/trunk/packages/date#datei18n).
 
 ## Usage
 
 ```jsx
-import { DateFormatPicker } from '@wordpress/block-editor';
+import { DateFormatPicker } from '@gutenberg/block-editor';
 
 const Example = () => {
 	const [ format, setFormat ] = useState( null );

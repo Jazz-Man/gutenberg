@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
-import { useMemo, useState } from '@wordpress/element';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
+import { useMemo, useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

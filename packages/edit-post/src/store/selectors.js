@@ -6,12 +6,12 @@ import createSelector from 'rememo';
 /**
  * WordPress dependencies
  */
-import { createRegistrySelector } from '@wordpress/data';
-import { store as interfaceStore } from '@wordpress/interface';
-import { store as preferencesStore } from '@wordpress/preferences';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as editorStore } from '@wordpress/editor';
-import deprecated from '@wordpress/deprecated';
+import { createRegistrySelector } from '@gutenberg/data';
+import { store as interfaceStore } from '@gutenberg/interface';
+import { store as preferencesStore } from '@gutenberg/preferences';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as editorStore } from '@gutenberg/editor';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

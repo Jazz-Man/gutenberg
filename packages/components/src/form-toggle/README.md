@@ -49,7 +49,7 @@ When a user switches a toggle, its corresponding action takes effect immediately
 
 ```jsx
 import { useState } from 'react';
-import { FormToggle } from '@wordpress/components';
+import { FormToggle } from '@gutenberg/components';
 
 const MyFormToggle = () => {
 	const [ isChecked, setChecked ] = useState( true );

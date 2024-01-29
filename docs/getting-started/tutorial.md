@@ -30,7 +30,7 @@ If you don't have one or more of these items, the [Block Development Environment
 
 ## Scaffolding the block
 
-The first step in creating the Copyright Date Block is to scaffold the initial block structure using the [`@wordpress/create-block`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) package.
+The first step in creating the Copyright Date Block is to scaffold the initial block structure using the [`@gutenberg/create-block`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) package.
 
 <div class="callout callout-info">
 	Review the <a href="https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-env/">Get started with create-block</a> documentation for an introduction to using this package.
@@ -45,7 +45,7 @@ Therefore, choose a directory to place the block plugin or optionally create a n
 </div>
 
 ```bash
-npx @wordpress/create-block@latest copyright-date-block --variant=dynamic
+npx @gutenberg/create-block@latest copyright-date-block --variant=dynamic
 cd copyright-date-block
 ```
 
@@ -382,10 +382,10 @@ Earlier in this tutorial, you added block supports that automatically created Co
 
 ##### Inspector controls
 
-The `InspectorControls` belongs to the [`@wordpress/block-editor`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/) package, so you can import it into the `edit.js` file by adding the component name on line 14. The result should look like this.
+The `InspectorControls` belongs to the [`@gutenberg/block-editor`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/) package, so you can import it into the `edit.js` file by adding the component name on line 14. The result should look like this.
 
 ```js
-import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
+import { InspectorControls, useBlockProps } from '@gutenberg/block-editor';
 ```
 
 Next, update the Edit function to return the current block content and an `InspectorControls` component that includes the text "Testing." You can wrap everything in a [Fragment](https://react.dev/reference/react/Fragment) (`<></>`) to ensure proper JSX syntax. The result should look like this.
@@ -410,12 +410,12 @@ Save the file and refresh the Editor. When selecting the block, you should see t
 
 ##### Components and panels
 
-Now, let's use a few more Core components to add a custom panel and the user interface for the starting year functionality. You will want to import [`PanelBody`](https://developer.wordpress.org/block-editor/reference-guides/components/panel/#panelbody), [`TextControl`](https://developer.wordpress.org/block-editor/reference-guides/components/text-control/), and [`ToggleControl`](https://developer.wordpress.org/block-editor/reference-guides/components/toggle-control/) from the [`@wordpress/components`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-components/) package.
+Now, let's use a few more Core components to add a custom panel and the user interface for the starting year functionality. You will want to import [`PanelBody`](https://developer.wordpress.org/block-editor/reference-guides/components/panel/#panelbody), [`TextControl`](https://developer.wordpress.org/block-editor/reference-guides/components/text-control/), and [`ToggleControl`](https://developer.wordpress.org/block-editor/reference-guides/components/toggle-control/) from the [`@gutenberg/components`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-components/) package.
 
 Add the following line below the other imports in the `edit.js` file.
 
 ```js
-import { PanelBody, TextControl, ToggleControl } from '@wordpress/components';
+import { PanelBody, TextControl, ToggleControl } from '@gutenberg/components';
 ```
 
 Then wrap the "Testing" message in the `PanelBody` component and set the `title` parameter to "Settings". Refer to the [component documentation](https://developer.wordpress.org/block-editor/reference-guides/components/panel/#panelbody) for additional parameter options.
@@ -734,7 +734,7 @@ Adding static rendering is also a good exploration of how block content is store
 Start by adding a new file named `save.js` to the `src/` folder. In this file, add the following.
 
 ```js
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps } from '@gutenberg/block-editor';
 
 export default function save() {
 	return (

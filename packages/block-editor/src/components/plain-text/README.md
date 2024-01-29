@@ -21,8 +21,8 @@ _Optional._ The component forwards the `ref` property to the `TextareaAutosize` 
 ## Example
 
 ```js
-import { registerBlockType } from '@wordpress/blocks';
-import { PlainText } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { PlainText } from '@gutenberg/block-editor';
 
 registerBlockType( /* ... */, {
 	// ...

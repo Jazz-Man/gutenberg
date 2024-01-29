@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { getBlobTypeByURL, isBlobURL } from '@wordpress/blob';
+import { getBlobTypeByURL, isBlobURL } from '@gutenberg/blob';
 
 const POSITION_CLASSNAMES = {
 	'top left': 'is-position-top-left',

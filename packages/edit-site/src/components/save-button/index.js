@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { Button } from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { store as coreStore } from '@wordpress/core-data';
-import { displayShortcut } from '@wordpress/keycodes';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { Button } from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { store as coreStore } from '@gutenberg/core-data';
+import { displayShortcut } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

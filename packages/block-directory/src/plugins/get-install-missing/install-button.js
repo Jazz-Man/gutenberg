@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { Button } from '@wordpress/components';
-import { createBlock, getBlockType, parse } from '@wordpress/blocks';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { __, sprintf } from '@gutenberg/i18n';
+import { Button } from '@gutenberg/components';
+import { createBlock, getBlockType, parse } from '@gutenberg/blocks';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

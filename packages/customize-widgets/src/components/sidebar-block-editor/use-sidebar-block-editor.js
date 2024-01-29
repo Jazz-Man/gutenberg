@@ -6,9 +6,9 @@ import fastDeepEqual from 'fast-deep-equal/es6';
 /**
  * WordPress dependencies
  */
-import { useState, useEffect, useCallback } from '@wordpress/element';
-import isShallowEqual from '@wordpress/is-shallow-equal';
-import { getWidgetIdFromBlock, addWidgetIdToBlock } from '@wordpress/widgets';
+import { useState, useEffect, useCallback } from '@gutenberg/element';
+import isShallowEqual from '@gutenberg/is-shallow-equal';
+import { getWidgetIdFromBlock, addWidgetIdToBlock } from '@gutenberg/widgets';
 
 /**
  * Internal dependencies

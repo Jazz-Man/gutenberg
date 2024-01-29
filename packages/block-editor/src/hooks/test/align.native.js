@@ -13,8 +13,8 @@ import {
 /**
  * WordPress dependencies
  */
-import { getBlockTypes, unregisterBlockType } from '@wordpress/blocks';
-import { registerCoreBlocks } from '@wordpress/block-library';
+import { getBlockTypes, unregisterBlockType } from '@gutenberg/blocks';
+import { registerCoreBlocks } from '@gutenberg/block-library';
 
 const imageHTML = `<!-- wp:image {"id":1,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://test-site.files.wordpress.com/local-image-1.jpeg" alt="" class="wp-image-1"/></figure>

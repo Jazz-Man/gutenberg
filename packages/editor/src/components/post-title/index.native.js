@@ -6,17 +6,17 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { create, toHTMLString, insert } from '@wordpress/rich-text';
-import { decodeEntities } from '@wordpress/html-entities';
-import { withDispatch, withSelect } from '@wordpress/data';
-import { withFocusOutside } from '@wordpress/components';
-import { withInstanceId, compose } from '@wordpress/compose';
-import { __, sprintf } from '@wordpress/i18n';
-import { pasteHandler } from '@wordpress/blocks';
-import { store as blockEditorStore, RichText } from '@wordpress/block-editor';
-import { store as editorStore } from '@wordpress/editor';
-import { __unstableStripHTML as stripHTML } from '@wordpress/dom';
+import { Component } from '@gutenberg/element';
+import { create, toHTMLString, insert } from '@gutenberg/rich-text';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { withDispatch, withSelect } from '@gutenberg/data';
+import { withFocusOutside } from '@gutenberg/components';
+import { withInstanceId, compose } from '@gutenberg/compose';
+import { __, sprintf } from '@gutenberg/i18n';
+import { pasteHandler } from '@gutenberg/blocks';
+import { store as blockEditorStore, RichText } from '@gutenberg/block-editor';
+import { store as editorStore } from '@gutenberg/editor';
+import { __unstableStripHTML as stripHTML } from '@gutenberg/dom';
 
 /**
  * Internal dependencies

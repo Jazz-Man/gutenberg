@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-const { test, expect } = require( '@wordpress/e2e-test-utils-playwright' );
+const { test, expect } = require( '@gutenberg/e2e-test-utils-playwright' );
 
 test.describe( 'adding blocks', () => {
 	test( 'Should switch to the plain style of the quote block', async ( {

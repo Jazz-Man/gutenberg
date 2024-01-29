@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useEffect } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
+import { __ } from '@gutenberg/i18n';
+import { useEffect } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Warns the user if there are unsaved changes before leaving the editor.

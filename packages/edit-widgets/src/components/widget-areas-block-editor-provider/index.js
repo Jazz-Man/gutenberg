@@ -1,19 +1,19 @@
 /**
  * WordPress dependencies
  */
-import { SlotFillProvider } from '@wordpress/components';
-import { useViewportMatch } from '@wordpress/compose';
-import { uploadMedia } from '@wordpress/media-utils';
-import { useDispatch, useSelect } from '@wordpress/data';
+import { SlotFillProvider } from '@gutenberg/components';
+import { useViewportMatch } from '@gutenberg/compose';
+import { uploadMedia } from '@gutenberg/media-utils';
+import { useDispatch, useSelect } from '@gutenberg/data';
 import {
 	useEntityBlockEditor,
 	store as coreStore,
 	useResourcePermissions,
-} from '@wordpress/core-data';
-import { useMemo } from '@wordpress/element';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
-import { privateApis as editPatternsPrivateApis } from '@wordpress/patterns';
-import { store as preferencesStore } from '@wordpress/preferences';
+} from '@gutenberg/core-data';
+import { useMemo } from '@gutenberg/element';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
+import { privateApis as editPatternsPrivateApis } from '@gutenberg/patterns';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

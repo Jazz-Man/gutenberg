@@ -6,10 +6,10 @@ import fastDeepEqual from 'fast-deep-equal/es6';
 /**
  * WordPress dependencies
  */
-import { useContext, useCallback, useMemo } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import { store as blocksStore } from '@wordpress/blocks';
-import { _x } from '@wordpress/i18n';
+import { useContext, useCallback, useMemo } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import { store as blocksStore } from '@gutenberg/blocks';
+import { _x } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

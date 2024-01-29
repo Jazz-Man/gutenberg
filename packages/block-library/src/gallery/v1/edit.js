@@ -1,27 +1,27 @@
 /**
  * WordPress dependencies
  */
-import { compose } from '@wordpress/compose';
+import { compose } from '@gutenberg/compose';
 import {
 	PanelBody,
 	SelectControl,
 	ToggleControl,
 	withNotices,
 	RangeControl,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	MediaPlaceholder,
 	InspectorControls,
 	useBlockProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { Platform, useEffect, useState, useMemo } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { getBlobByURL, isBlobURL, revokeBlobURL } from '@wordpress/blob';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { withViewportMatch } from '@wordpress/viewport';
-import { View } from '@wordpress/primitives';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/block-editor';
+import { Platform, useEffect, useState, useMemo } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { getBlobByURL, isBlobURL, revokeBlobURL } from '@gutenberg/blob';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { withViewportMatch } from '@gutenberg/viewport';
+import { View } from '@gutenberg/primitives';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

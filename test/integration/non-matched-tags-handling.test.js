@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { pasteHandler, unregisterBlockType } from '@wordpress/blocks';
-import { registerCoreBlocks } from '@wordpress/block-library';
+import { pasteHandler, unregisterBlockType } from '@gutenberg/blocks';
+import { registerCoreBlocks } from '@gutenberg/block-library';
 
 describe( 'Handling of non matched tags in block transforms', () => {
 	beforeAll( () => {

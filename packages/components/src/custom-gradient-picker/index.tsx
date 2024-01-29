@@ -7,8 +7,8 @@ import type gradientParser from 'gradient-parser';
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
-import { __ } from '@wordpress/i18n';
+import deprecated from '@gutenberg/deprecated';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies
@@ -125,8 +125,8 @@ const GradientTypePicker = ( {
  * a slice of the gradient from the center to the outside.
  *
  * ```jsx
- * import { CustomGradientPicker } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { CustomGradientPicker } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyCustomGradientPicker = () => {
  *   const [ gradient, setGradient ] = useState();

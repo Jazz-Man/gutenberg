@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { store, navigate, getContext } from '@wordpress/interactivity';
+import { store, navigate, getContext } from '@gutenberg/interactivity';
 
 store( 'directive-context', {
 	state: {

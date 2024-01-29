@@ -7,7 +7,7 @@ import type { FullConfig } from '@playwright/test';
 /**
  * WordPress dependencies
  */
-import { RequestUtils } from '@wordpress/e2e-test-utils-playwright';
+import { RequestUtils } from '@gutenberg/e2e-test-utils-playwright';
 
 async function globalSetup( config: FullConfig ) {
 	const { storageState, baseURL } = config.projects[ 0 ].use;

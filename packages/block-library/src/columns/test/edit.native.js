@@ -19,8 +19,8 @@ import {
 /**
  * WordPress dependencies
  */
-import { getBlockTypes, unregisterBlockType } from '@wordpress/blocks';
-import { registerCoreBlocks } from '@wordpress/block-library';
+import { getBlockTypes, unregisterBlockType } from '@gutenberg/blocks';
+import { registerCoreBlocks } from '@gutenberg/block-library';
 
 const TWO_COLUMNS_BLOCK_HTML = `<!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->

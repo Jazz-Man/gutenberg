@@ -6,10 +6,10 @@ import {
 	Modal,
 	__experimentalHStack as HStack,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useMemo, useState } from '@wordpress/element';
-import { moreVertical } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useMemo, useState } from '@gutenberg/element';
+import { moreVertical } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

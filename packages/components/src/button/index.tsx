@@ -13,9 +13,9 @@ import type {
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
-import { forwardRef } from '@wordpress/element';
-import { useInstanceId } from '@wordpress/compose';
+import deprecated from '@gutenberg/deprecated';
+import { forwardRef } from '@gutenberg/element';
+import { useInstanceId } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -288,7 +288,7 @@ export function UnforwardedButton(props: ButtonProps, ref: ForwardedRef<any>) {
  * Lets users take actions and make choices with a single click or tap.
  *
  * ```jsx
- * import { Button } from '@wordpress/components';
+ * import { Button } from '@gutenberg/components';
  * const Mybutton = () => (
  *   <Button
  *     variant="primary"

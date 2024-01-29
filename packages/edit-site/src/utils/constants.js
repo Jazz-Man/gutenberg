@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { privateApis as patternPrivateApis } from '@wordpress/patterns';
+import { __ } from '@gutenberg/i18n';
+import { privateApis as patternPrivateApis } from '@gutenberg/patterns';
 
 /**
  * Internal dependencies

@@ -5,9 +5,9 @@ This document outlines a typical flow of migrating a Jest + Puppeteer test to Pl
 ## Migration steps for tests
 
 1. Choose a test suite to migrate in `packages/e2e-tests/specs`, rename `.test.js` into `.spec.js` and put it in the same folder structure inside `test/e2e/specs`.
-2. Require the test helpers from `@wordpress/e2e-test-utils-playwright`:
+2. Require the test helpers from `@gutenberg/e2e-test-utils-playwright`:
     ```js
-    const { test, expect } = require( '@wordpress/e2e-test-utils-playwright' );
+    const { test, expect } = require( '@gutenberg/e2e-test-utils-playwright' );
     ```
 3. Change all occurrences of `describe`, `beforeAll`, `beforeEach`, `afterEach` and `afterAll` with the `test.` prefix. For instance, `describe` turns into `test.describe`.
 4. Use the [fixtures API](https://playwright.dev/docs/test-fixtures) to require previously global variables like `page` and `browser`.

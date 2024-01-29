@@ -13,7 +13,7 @@
 /**
  * WordPress dependencies
  */
-import { useRegistry } from '@wordpress/data';
+import { useRegistry } from '@gutenberg/data';
 
 /**
  * Naming is hard.

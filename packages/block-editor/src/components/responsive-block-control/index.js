@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { Fragment } from '@wordpress/element';
-import { ToggleControl } from '@wordpress/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { Fragment } from '@gutenberg/element';
+import { ToggleControl } from '@gutenberg/components';
 
 /**
  * Internal dependencies

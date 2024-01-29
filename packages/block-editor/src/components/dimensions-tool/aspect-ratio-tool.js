@@ -4,11 +4,11 @@
 import {
 	SelectControl,
 	__experimentalToolsPanelItem as ToolsPanelItem,
-} from '@wordpress/components';
-import { __, _x } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { __, _x } from '@gutenberg/i18n';
 
 /**
- * @typedef {import('@wordpress/components/build-types/select-control/types').SelectControlProps} SelectControlProps
+ * @typedef {import('@gutenberg/components/build-types/select-control/types').SelectControlProps} SelectControlProps
  */
 
 /**

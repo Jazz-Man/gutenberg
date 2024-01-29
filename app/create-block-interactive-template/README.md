@@ -1,13 +1,13 @@
 # Create Block Interactive Template
 
-This is a template for [`@wordpress/create-block`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/create-block/README.md) to create interactive blocks
+This is a template for [`@gutenberg/create-block`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/create-block/README.md) to create interactive blocks
 
 ## Usage
 
 This block template can be used by running the following command:
 
 ```bash
-npx  @wordpress/create-block --template @wordpress/create-block-interactive-template
+npx  @gutenberg/create-block --template @gutenberg/create-block-interactive-template
 ```
 
 It requires Gutenberg 17.5 or higher.

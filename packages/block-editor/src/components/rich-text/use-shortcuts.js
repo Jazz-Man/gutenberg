@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useRefEffect } from '@wordpress/compose';
+import { useRefEffect } from '@gutenberg/compose';
 
 export function useShortcuts( keyboardShortcuts ) {
 	return useRefEffect( ( element ) => {

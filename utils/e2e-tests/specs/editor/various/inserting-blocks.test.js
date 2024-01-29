@@ -12,7 +12,7 @@ import {
 	setBrowserViewport,
 	pressKeyWithModifier,
 	canvas,
-} from '@wordpress/e2e-test-utils';
+} from '@gutenberg/e2e-test-utils';
 
 /** @typedef {import('puppeteer-core').ElementHandle} ElementHandle */
 

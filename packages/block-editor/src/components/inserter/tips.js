@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { createInterpolateElement, useState } from '@wordpress/element';
-import { Tip } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { createInterpolateElement, useState } from '@gutenberg/element';
+import { Tip } from '@gutenberg/components';
 
 const globalTips = [
 	createInterpolateElement(

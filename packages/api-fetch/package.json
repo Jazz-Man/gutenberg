@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/api-fetch",
+	"name": "@gutenberg/api-fetch",
 	"version": "6.46.0",
 	"description": "Utility to make WordPress REST API requests.",
 	"author": "The WordPress Contributors",
@@ -28,8 +28,8 @@
 	"types": "build-types",
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/i18n": "workspace:*",
-		"@wordpress/url": "workspace:*"
+		"@gutenberg/i18n": "workspace:*",
+		"@gutenberg/url": "workspace:*"
 	},
 	"publishConfig": {
 		"access": "public"

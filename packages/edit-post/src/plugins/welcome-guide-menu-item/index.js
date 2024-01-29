@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { PreferenceToggleMenuItem } from '@wordpress/preferences';
-import { __ } from '@wordpress/i18n';
-import { store as editorStore } from '@wordpress/editor';
+import { useSelect } from '@gutenberg/data';
+import { PreferenceToggleMenuItem } from '@gutenberg/preferences';
+import { __ } from '@gutenberg/i18n';
+import { store as editorStore } from '@gutenberg/editor';
 
 export default function WelcomeGuideMenuItem() {
 	const isTemplateMode = useSelect(

@@ -6,18 +6,18 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 import {
 	Button,
 	Icon,
 	__unstableMotion as motion,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { addQueryArgs } from '@wordpress/url';
-import { wordpress } from '@wordpress/icons';
-import { store as editorStore } from '@wordpress/editor';
-import { store as coreStore } from '@wordpress/core-data';
-import { useReducedMotion } from '@wordpress/compose';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { addQueryArgs } from '@gutenberg/url';
+import { wordpress } from '@gutenberg/icons';
+import { store as editorStore } from '@gutenberg/editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useReducedMotion } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

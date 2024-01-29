@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useContext, useMemo } from '@wordpress/element';
+import { useContext, useMemo } from '@gutenberg/element';
 import {
 	privateApis,
 	__experimentalToolbarContext as ToolbarContext,
 	ToolbarGroup,
 	__experimentalUseSlotFills as useSlotFills,
-} from '@wordpress/components';
-import warning from '@wordpress/warning';
+} from '@gutenberg/components';
+import warning from '@gutenberg/warning';
 
 /**
  * Internal dependencies

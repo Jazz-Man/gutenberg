@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { separator as icon } from '@wordpress/icons';
+import { separator as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

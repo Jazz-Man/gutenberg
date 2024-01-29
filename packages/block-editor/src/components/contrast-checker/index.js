@@ -8,9 +8,9 @@ import { colord, extend } from 'colord';
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { Notice } from '@wordpress/components';
-import { speak } from '@wordpress/a11y';
+import { __, sprintf } from '@gutenberg/i18n';
+import { Notice } from '@gutenberg/components';
+import { speak } from '@gutenberg/a11y';
 
 extend( [ namesPlugin, a11yPlugin ] );
 

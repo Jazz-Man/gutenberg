@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useRef } from '@wordpress/element';
-import { useDispatch } from '@wordpress/data';
+import { useEffect, useRef } from '@gutenberg/element';
+import { useDispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies
@@ -16,8 +16,8 @@ import { store as commandsStore } from '../store';
  *
  * @example
  * ```js
- * import { useCommand } from '@wordpress/commands';
- * import { plus } from '@wordpress/icons';
+ * import { useCommand } from '@gutenberg/commands';
+ * import { plus } from '@gutenberg/icons';
  *
  * useCommand( {
  *     name: 'myplugin/my-command-name',

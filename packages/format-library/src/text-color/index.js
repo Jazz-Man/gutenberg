@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useCallback, useMemo, useState } from '@wordpress/element';
-import { RichTextToolbarButton, useSettings } from '@wordpress/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { useCallback, useMemo, useState } from '@gutenberg/element';
+import { RichTextToolbarButton, useSettings } from '@gutenberg/block-editor';
 import {
 	Icon,
 	color as colorIcon,
 	textColor as textColorIcon,
-} from '@wordpress/icons';
-import { removeFormat } from '@wordpress/rich-text';
+} from '@gutenberg/icons';
+import { removeFormat } from '@gutenberg/rich-text';
 
 /**
  * Internal dependencies

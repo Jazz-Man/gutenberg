@@ -6,11 +6,11 @@ import {
 	useBlockProps,
 	__experimentalGetSpacingClassesAndStyles as useSpacingProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { PanelBody, ResizableBox, RangeControl } from '@wordpress/components';
-import { useEntityProp } from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
-import { __, isRTL } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { PanelBody, ResizableBox, RangeControl } from '@gutenberg/components';
+import { useEntityProp } from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
+import { __, isRTL } from '@gutenberg/i18n';
 
 export default function Edit( {
 	attributes,

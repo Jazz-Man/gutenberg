@@ -12,7 +12,7 @@ import {
 	ToolbarGroup,
 	ToolbarButton,
 	Picker,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	getBlockType,
 	getDefaultBlockName,
@@ -22,17 +22,17 @@ import {
 	createBlock,
 	isUnmodifiedDefaultBlock,
 	isReusableBlock,
-} from '@wordpress/blocks';
-import { __, sprintf } from '@wordpress/i18n';
-import { withDispatch, withSelect, useSelect } from '@wordpress/data';
-import { withInstanceId, compose } from '@wordpress/compose';
-import { moreHorizontalMobile } from '@wordpress/icons';
-import { useRef, useState } from '@wordpress/element';
-import { store as noticesStore } from '@wordpress/notices';
-import { store as reusableBlocksStore } from '@wordpress/reusable-blocks';
+} from '@gutenberg/blocks';
+import { __, sprintf } from '@gutenberg/i18n';
+import { withDispatch, withSelect, useSelect } from '@gutenberg/data';
+import { withInstanceId, compose } from '@gutenberg/compose';
+import { moreHorizontalMobile } from '@gutenberg/icons';
+import { useRef, useState } from '@gutenberg/element';
+import { store as noticesStore } from '@gutenberg/notices';
+import { store as reusableBlocksStore } from '@gutenberg/reusable-blocks';
 // Disable Reason: Needs to be refactored.
 // eslint-disable-next-line no-restricted-imports
-import { store as coreStore } from '@wordpress/core-data';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

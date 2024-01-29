@@ -7,11 +7,11 @@ import namesPlugin from 'colord/plugins/names';
 /**
  * WordPress dependencies
  */
-import { useState, useEffect } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { BottomSheet } from '@wordpress/components';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
-import { Icon, check, close } from '@wordpress/icons';
+import { useState, useEffect } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { BottomSheet } from '@gutenberg/components';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
+import { Icon, check, close } from '@gutenberg/icons';
 /**
  * Internal dependencies
  */

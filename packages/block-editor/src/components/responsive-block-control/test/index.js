@@ -7,8 +7,8 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { Fragment, useState } from '@wordpress/element';
-import { SelectControl } from '@wordpress/components';
+import { Fragment, useState } from '@gutenberg/element';
+import { SelectControl } from '@gutenberg/components';
 
 /**
  * Internal dependencies

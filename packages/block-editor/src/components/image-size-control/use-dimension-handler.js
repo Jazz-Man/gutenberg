@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useState } from '@wordpress/element';
+import { useEffect, useState } from '@gutenberg/element';
 
 export default function useDimensionHandler(
 	customHeight,

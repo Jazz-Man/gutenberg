@@ -22,17 +22,17 @@ import {
 	useLayoutEffect,
 	createContext,
 	useContext,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 import {
 	useInstanceId,
 	useFocusReturn,
 	useFocusOnMount,
 	useConstrainedTabbing,
 	useMergeRefs,
-} from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
-import { close } from '@wordpress/icons';
-import { getScrollContainer } from '@wordpress/dom';
+} from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
+import { close } from '@gutenberg/icons';
+import { getScrollContainer } from '@gutenberg/dom';
 
 /**
  * Internal dependencies
@@ -369,8 +369,8 @@ function UnforwardedModal(
  * involve multiple tasks.
  *
  * ```jsx
- * import { Button, Modal } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { Button, Modal } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyModal = () => {
  *   const [ isOpen, setOpen ] = useState( false );

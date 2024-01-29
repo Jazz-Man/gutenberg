@@ -16,8 +16,8 @@ import {
 	BlockControls,
 	__experimentalBlockAlignmentMatrixControl as BlockAlignmentMatrixControl,
 	useBlockProps,
-} from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
 
 export default function MyBlockEdit( { attributes, setAttributes } ) {
 	const blockProps = useBlockProps( {
@@ -67,7 +67,7 @@ Group of the block controls. Allows you to create and render multiple groups of 
 
 ### `controls`
 
-Allows overriding the default `controls` if the `default` group is used. 
+Allows overriding the default `controls` if the `default` group is used.
 
 See [this custom block tutorial page](/docs/how-to-guides/block-tutorial/block-controls-toolbar-and-sidebar.md) for more details and examples with block controls.
 

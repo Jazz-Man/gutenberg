@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { __, sprintf } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { useEntityProp } from '@wordpress/core-data';
-import { createInterpolateElement } from '@wordpress/element';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { useEntityProp } from '@gutenberg/core-data';
+import { createInterpolateElement } from '@gutenberg/element';
 
 /**
  * Internal dependencies

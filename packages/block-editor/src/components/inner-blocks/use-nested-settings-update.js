@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useLayoutEffect, useMemo, useState } from '@wordpress/element';
-import { useDispatch, useRegistry } from '@wordpress/data';
-import deprecated from '@wordpress/deprecated';
-import isShallowEqual from '@wordpress/is-shallow-equal';
+import { useLayoutEffect, useMemo, useState } from '@gutenberg/element';
+import { useDispatch, useRegistry } from '@gutenberg/data';
+import deprecated from '@gutenberg/deprecated';
+import isShallowEqual from '@gutenberg/is-shallow-equal';
 
 /**
  * Internal dependencies

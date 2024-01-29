@@ -1,7 +1,7 @@
 # `CircularOptionPicker`
 
 <div class="callout callout-alert">
-This component is not exported, and therefore can only be used internally to the `@wordpress/components` package.
+This component is not exported, and therefore can only be used internally to the `@gutenberg/components` package.
 </div>
 
 `CircularOptionPicker` is a component that displays a set of options as circular buttons.
@@ -150,6 +150,6 @@ Inherits all of the [`Dropdown` props](/packages/components/src/dropdown/README.
 
 Props for the underlying `Button` component.
 
-Inherits all of the [`Button` props](/packages/components/src/button/README.md#props), except for `href`, `target`, and `children`. 
+Inherits all of the [`Button` props](/packages/components/src/button/README.md#props), except for `href`, `target`, and `children`.
 
 - Required: No

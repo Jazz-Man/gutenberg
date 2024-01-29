@@ -6,7 +6,7 @@ import type { ReactElement } from 'react';
 /**
  * WordPress dependencies
  */
-import type { RichTextValue } from '@wordpress/rich-text';
+import type { RichTextValue } from '@gutenberg/rich-text';
 
 /**
  * Internal dependencies

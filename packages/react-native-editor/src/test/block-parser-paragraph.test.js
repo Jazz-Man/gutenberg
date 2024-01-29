@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { registerCoreBlocks } from '@wordpress/block-library';
-import { parse } from '@wordpress/blocks';
+import { registerCoreBlocks } from '@gutenberg/block-library';
+import { parse } from '@gutenberg/blocks';
 
 registerCoreBlocks();
 

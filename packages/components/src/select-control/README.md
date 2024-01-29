@@ -77,7 +77,7 @@ Render a user interface to select the size of an image.
 
 ```jsx
 import { useState } from 'react';
-import { SelectControl } from '@wordpress/components';
+import { SelectControl } from '@gutenberg/components';
 
 const MySelectControl = () => {
 	const [ size, setSize ] = useState( '50%' );

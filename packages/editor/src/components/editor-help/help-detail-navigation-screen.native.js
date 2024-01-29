@@ -12,8 +12,8 @@ import { useNavigation } from '@react-navigation/native';
 /**
  * WordPress dependencies
  */
-import { BottomSheet, BottomSheetContext } from '@wordpress/components';
-import { useContext } from '@wordpress/element';
+import { BottomSheet, BottomSheetContext } from '@gutenberg/components';
+import { useContext } from '@gutenberg/element';
 
 /**
  * Internal dependencies

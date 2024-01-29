@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useRefEffect } from '@wordpress/compose';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
+import { useRefEffect } from '@gutenberg/compose';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
 
 export default function useCopy( clientId ) {
 	const { getBlockRootClientId, getBlockName, getBlockAttributes } =

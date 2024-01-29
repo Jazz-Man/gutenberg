@@ -1,18 +1,18 @@
-const WORDPRESS_NAMESPACE = '@wordpress/';
+const WORDPRESS_NAMESPACE = '@gutenberg/';
 const BUNDLED_PACKAGES = [
-	'@wordpress/dataviews',
-	'@wordpress/icons',
-	'@wordpress/interface',
-	'@wordpress/sync',
-	'@wordpress/undo-manager',
+	'@gutenberg/dataviews',
+	'@gutenberg/icons',
+	'@gutenberg/interface',
+	'@gutenberg/sync',
+	'@gutenberg/undo-manager',
 ];
 
 /**
  * Default request to global transformation
  *
- * Transform @wordpress dependencies:
- * - request `@wordpress/api-fetch` becomes `[ 'wp', 'apiFetch' ]`
- * - request `@wordpress/i18n` becomes `[ 'wp', 'i18n' ]`
+ * Transform @gutenberg dependencies:
+ * - request `@gutenberg/api-fetch` becomes `[ 'wp', 'apiFetch' ]`
+ * - request `@gutenberg/i18n` becomes `[ 'wp', 'i18n' ]`
  *
  * @param {string} request Module request (the module name in `import from`) to be transformed
  * @return {string|string[]|undefined} The resulting external definition. Return `undefined`
@@ -59,7 +59,7 @@ function defaultRequestToExternal( request ) {
 /**
  * Default request to external module transformation
  *
- * Currently only @wordpress/interactivity
+ * Currently only @gutenberg/interactivity
  *
  * Do not use the boolean shorthand here, it's only handled for the `requestToExternalModule` option.
  *
@@ -70,11 +70,11 @@ function defaultRequestToExternal( request ) {
  *   - Return `Error` to emit an error.
  */
 function defaultRequestToExternalModule( request ) {
-	if ( request === '@wordpress/interactivity' ) {
+	if ( request === '@gutenberg/interactivity' ) {
 		// This is a special case. Interactivity does not support dynamic imports at this
 		// time. We add the external "module" type to indicate that webpack should
 		// externalize this as a module (instead of our default `import()` external type)
-		// which forces @wordpress/interactivity imports to be hoisted to static imports.
+		// which forces @gutenberg/interactivity imports to be hoisted to static imports.
 		return `module ${ request }`;
 	}
 
@@ -90,9 +90,9 @@ function defaultRequestToExternalModule( request ) {
 /**
  * Default request to WordPress script handle transformation
  *
- * Transform @wordpress dependencies:
- * - request `@wordpress/i18n` becomes `wp-i18n`
- * - request `@wordpress/escape-html` becomes `wp-escape-html`
+ * Transform @gutenberg dependencies:
+ * - request `@gutenberg/i18n` becomes `wp-i18n`
+ * - request `@gutenberg/escape-html` becomes `wp-escape-html`
  *
  * @param {string} request Module request (the module name in `import from`) to be transformed
  * @return {string|undefined} WordPress script handle to map the request to. Return `undefined`

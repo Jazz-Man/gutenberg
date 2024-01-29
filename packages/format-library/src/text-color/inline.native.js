@@ -1,22 +1,22 @@
 /**
  * WordPress dependencies
  */
-import { useCallback, useMemo } from '@wordpress/element';
+import { useCallback, useMemo } from '@gutenberg/element';
 import {
 	applyFormat,
 	removeFormat,
 	getActiveFormat,
-} from '@wordpress/rich-text';
+} from '@gutenberg/rich-text';
 import {
 	getColorClassName,
 	getColorObjectByColorValue,
 	useMultipleOriginColorsAndGradients,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	BottomSheet,
 	ColorSettings,
 	useMobileGlobalStylesColors,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

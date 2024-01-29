@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { store as blocksStore } from '@wordpress/blocks';
-import { Draggable } from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useEffect, useRef } from '@wordpress/element';
-import { throttle } from '@wordpress/compose';
+import { store as blocksStore } from '@gutenberg/blocks';
+import { Draggable } from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useEffect, useRef } from '@gutenberg/element';
+import { throttle } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useMergeRefs, useFocusableIframe } from '@wordpress/compose';
-import { useRef, useEffect, useMemo } from '@wordpress/element';
+import { useMergeRefs, useFocusableIframe } from '@gutenberg/compose';
+import { useRef, useEffect, useMemo } from '@gutenberg/element';
 
 /** @typedef {import('react').SyntheticEvent} SyntheticEvent */
 

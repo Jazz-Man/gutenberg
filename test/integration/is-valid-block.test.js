@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { createElement } from '@wordpress/element';
+import { createElement } from '@gutenberg/element';
 import {
 	getBlockTypes,
 	registerBlockType,
 	unregisterBlockType,
 	validateBlock,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 describe( 'validateBlock', () => {
 	beforeAll( () => {

@@ -11,7 +11,7 @@ Consult the [webpack website](https://webpack.js.org) for additional information
 Install the module
 
 ```bash
-npm install @wordpress/readable-js-assets-webpack-plugin --save-dev
+npm install @gutenberg/readable-js-assets-webpack-plugin --save-dev
 ```
 
 **Note**: This package requires Node.js 14.0.0 or later. It also requires webpack 4.8.3 and newer. It is not compatible with older versions.
@@ -24,7 +24,7 @@ Use this plugin as you would other webpack plugins:
 
 ```js
 // webpack.config.js
-const ReadableJsAssetsWebpackPlugin = require( '@wordpress/readable-js-assets-webpack-plugin' );
+const ReadableJsAssetsWebpackPlugin = require( '@gutenberg/readable-js-assets-webpack-plugin' );
 
 module.exports = {
 	// …snip

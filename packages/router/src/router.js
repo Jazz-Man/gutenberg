@@ -6,7 +6,7 @@ import {
 	useState,
 	useEffect,
 	useContext,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 
 /**
  * Internal dependencies

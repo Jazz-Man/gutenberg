@@ -5,10 +5,10 @@ import {
 	Button,
 	privateApis as componentsPrivateApis,
 	Icon,
-} from '@wordpress/components';
-import { chevronDown } from '@wordpress/icons';
-import { __, sprintf } from '@wordpress/i18n';
-import { Children, Fragment } from '@wordpress/element';
+} from '@gutenberg/components';
+import { chevronDown } from '@gutenberg/icons';
+import { __, sprintf } from '@gutenberg/i18n';
+import { Children, Fragment } from '@gutenberg/element';
 
 /**
  * Internal dependencies

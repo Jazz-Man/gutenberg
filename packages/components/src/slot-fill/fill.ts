@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useContext, useLayoutEffect, useRef } from '@wordpress/element';
+import { useContext, useLayoutEffect, useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

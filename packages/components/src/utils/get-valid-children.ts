@@ -6,7 +6,7 @@ import type { ReactNode, ReactChild, ReactFragment, ReactPortal } from 'react';
 /**
  * WordPress dependencies
  */
-import { Children, isValidElement } from '@wordpress/element';
+import { Children, isValidElement } from '@gutenberg/element';
 
 /**
  * Gets a collection of available children elements from a React component's children prop.

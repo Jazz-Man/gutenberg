@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useLayoutEffect, useRef } from '@wordpress/element';
-import { useDispatch } from '@wordpress/data';
+import { useLayoutEffect, useRef } from '@gutenberg/element';
+import { useDispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies

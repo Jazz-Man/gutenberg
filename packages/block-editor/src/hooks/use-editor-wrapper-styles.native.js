@@ -6,12 +6,12 @@ import { useWindowDimensions } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
+import { useMemo } from '@gutenberg/element';
 import {
 	ALIGNMENT_BREAKPOINTS,
 	WIDE_ALIGNMENTS,
 	alignmentHelpers,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

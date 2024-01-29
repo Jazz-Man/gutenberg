@@ -4,11 +4,11 @@
 import {
 	__EXPERIMENTAL_PATHS_WITH_MERGE as PATHS_WITH_MERGE,
 	hasBlockSupport,
-} from '@wordpress/blocks';
-import { useSelect } from '@wordpress/data';
-import deprecated from '@wordpress/deprecated';
-import { useMemo } from '@wordpress/element';
-import { applyFilters } from '@wordpress/hooks';
+} from '@gutenberg/blocks';
+import { useSelect } from '@gutenberg/data';
+import deprecated from '@gutenberg/deprecated';
+import { useMemo } from '@gutenberg/element';
+import { applyFilters } from '@gutenberg/hooks';
 
 /**
  * Internal dependencies

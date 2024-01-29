@@ -13,7 +13,7 @@ import type {
 /**
  * WordPress dependencies
  */
-import type { useFocusOnMount } from '@wordpress/compose';
+import type { useFocusOnMount } from '@gutenberg/compose';
 
 export type ModalProps = {
 	aria?: {

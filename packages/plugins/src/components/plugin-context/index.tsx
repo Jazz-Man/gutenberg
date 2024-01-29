@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { createContext, useContext } from '@wordpress/element';
-import { createHigherOrderComponent } from '@wordpress/compose';
+import { createContext, useContext } from '@gutenberg/element';
+import { createHigherOrderComponent } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

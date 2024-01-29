@@ -6,8 +6,8 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { forwardRef, useMemo } from '@wordpress/element';
+import { useInstanceId } from '@gutenberg/compose';
+import { forwardRef, useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

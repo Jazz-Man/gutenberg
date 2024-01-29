@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Flex } from '@wordpress/components';
+import { Flex } from '@gutenberg/components';
 
 function ColorIndicatorWrapper( { className, ...props } ) {
 	return (

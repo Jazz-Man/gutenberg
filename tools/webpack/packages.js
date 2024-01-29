@@ -10,8 +10,8 @@ const { join } = require( 'path' );
  */
 const {
 	camelCaseDash,
-} = require( '@wordpress/dependency-extraction-webpack-plugin/lib/util' );
-const DependencyExtractionWebpackPlugin = require( '@wordpress/dependency-extraction-webpack-plugin' );
+} = require( '@gutenberg/dependency-extraction-webpack-plugin/lib/util' );
+const DependencyExtractionWebpackPlugin = require( '@gutenberg/dependency-extraction-webpack-plugin' );
 
 /**
  * Internal dependencies
@@ -19,17 +19,17 @@ const DependencyExtractionWebpackPlugin = require( '@wordpress/dependency-extrac
 const { dependencies } = require( '../../package' );
 const { baseConfig, plugins, stylesTransform } = require( './shared' );
 
-const WORDPRESS_NAMESPACE = '@wordpress/';
+const WORDPRESS_NAMESPACE = '@gutenberg/';
 
 // Experimental or other packages that should be private are bundled when used.
 // That way, we can iterate on these package without making them part of the public API.
 // See: https://github.com/WordPress/gutenberg/pull/19809
 const BUNDLED_PACKAGES = [
-	'@wordpress/icons',
-	'@wordpress/interface',
-	'@wordpress/undo-manager',
-	'@wordpress/sync',
-	'@wordpress/dataviews',
+	'@gutenberg/icons',
+	'@gutenberg/interface',
+	'@gutenberg/undo-manager',
+	'@gutenberg/sync',
+	'@gutenberg/dataviews',
 ];
 
 // PHP files in packages that have to be copied during build.
@@ -149,9 +149,9 @@ module.exports = {
 		filename: './build/[name]/index.min.js',
 		path: join( __dirname, '..', '..' ),
 		devtoolModuleFilenameTemplate: ( info ) => {
-			if ( info.resourcePath.includes( '/@wordpress/' ) ) {
+			if ( info.resourcePath.includes( '/@gutenberg/' ) ) {
 				const resourcePath =
-					info.resourcePath.split( '/@wordpress/' )[ 1 ];
+					info.resourcePath.split( '/@gutenberg/' )[ 1 ];
 				return `../../packages/${ resourcePath }`;
 			}
 			return `webpack://${ info.namespace }/${ info.resourcePath }`;

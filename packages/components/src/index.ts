@@ -9,7 +9,7 @@ export {
 	Line,
 	HorizontalRule,
 	BlockQuotation,
-} from '@wordpress/primitives';
+} from '@gutenberg/primitives';
 
 // Components.
 export { default as __experimentalAlignmentMatrixControl } from './alignment-matrix-control';

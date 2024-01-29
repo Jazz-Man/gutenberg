@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { chevronDown, Icon } from '@wordpress/icons';
+import { chevronDown, Icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

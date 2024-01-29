@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
+import { useMemo } from '@gutenberg/element';
 import {
 	BaseControl,
 	RangeControl,
@@ -11,8 +11,8 @@ import {
 	__experimentalUseCustomUnits as useCustomUnits,
 	__experimentalUnitControl as UnitControl,
 	__experimentalParseQuantityAndUnitFromRawValue as parseQuantityAndUnitFromRawValue,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

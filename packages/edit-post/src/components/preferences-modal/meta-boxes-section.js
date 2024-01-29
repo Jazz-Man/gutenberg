@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { withSelect } from '@wordpress/data';
-import { store as editorStore } from '@wordpress/editor';
-import { privateApis as preferencesPrivateApis } from '@wordpress/preferences';
+import { __ } from '@gutenberg/i18n';
+import { withSelect } from '@gutenberg/data';
+import { store as editorStore } from '@gutenberg/editor';
+import { privateApis as preferencesPrivateApis } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

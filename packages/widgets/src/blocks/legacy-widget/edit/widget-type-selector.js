@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { Spinner, SelectControl } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { Spinner, SelectControl } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 export default function WidgetTypeSelector( { selectedId, onSelect } ) {
 	const widgetTypes = useSelect( ( select ) => {

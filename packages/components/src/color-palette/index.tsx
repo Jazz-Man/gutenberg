@@ -10,9 +10,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { __, sprintf } from '@wordpress/i18n';
-import { useCallback, useMemo, useState, forwardRef } from '@wordpress/element';
+import { useInstanceId } from '@gutenberg/compose';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useCallback, useMemo, useState, forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -363,8 +363,8 @@ function UnforwardedColorPalette(
  * Allows the user to pick a color from a list of pre-defined color entries.
  *
  * ```jsx
- * import { ColorPalette } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { ColorPalette } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyColorPalette = () => {
  *   const [ color, setColor ] = useState ( '#f00' )

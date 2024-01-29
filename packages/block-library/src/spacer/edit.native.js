@@ -9,15 +9,15 @@ import { View, useWindowDimensions } from 'react-native';
 import {
 	useConvertUnitToMobile,
 	getPxFromCssUnit,
-} from '@wordpress/components';
-import { withPreferredColorScheme } from '@wordpress/compose';
+} from '@gutenberg/components';
+import { withPreferredColorScheme } from '@gutenberg/compose';
 import {
 	InspectorControls,
 	isValueSpacingPreset,
 	useSettings,
 	getCustomValueFromPreset,
-} from '@wordpress/block-editor';
-import { useEffect } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies

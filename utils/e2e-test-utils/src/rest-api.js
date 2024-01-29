@@ -7,7 +7,7 @@ import FormData from 'form-data';
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
+import apiFetch from '@gutenberg/api-fetch';
 
 /**
  * Internal dependencies

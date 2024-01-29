@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/dom",
+	"name": "@gutenberg/dom",
 	"version": "3.49.0",
 	"description": "DOM utilities module for WordPress.",
 	"author": "The WordPress Contributors",
@@ -29,7 +29,7 @@
 	"sideEffects": false,
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/deprecated": "workspace:*"
+		"@gutenberg/deprecated": "workspace:*"
 	},
 	"publishConfig": {
 		"access": "public"

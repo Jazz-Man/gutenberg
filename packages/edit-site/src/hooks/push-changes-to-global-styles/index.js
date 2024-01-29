@@ -1,25 +1,25 @@
 /**
  * WordPress dependencies
  */
-import { addFilter } from '@wordpress/hooks';
-import { createHigherOrderComponent } from '@wordpress/compose';
+import { addFilter } from '@gutenberg/hooks';
+import { createHigherOrderComponent } from '@gutenberg/compose';
 import {
 	InspectorAdvancedControls,
 	store as blockEditorStore,
 	privateApis as blockEditorPrivateApis,
 	useBlockEditingMode,
-} from '@wordpress/block-editor';
-import { BaseControl, Button } from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { BaseControl, Button } from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	__EXPERIMENTAL_STYLE_PROPERTY,
 	getBlockType,
 	hasBlockSupport,
-} from '@wordpress/blocks';
-import { useContext, useMemo, useCallback } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/blocks';
+import { useContext, useMemo, useCallback } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies
@@ -39,9 +39,9 @@ const STYLE_PROPERTY = {
 	blockGap: { value: [ 'spacing', 'blockGap' ] },
 };
 
-// TODO: Temporary duplication of constant in @wordpress/block-editor. Can be
+// TODO: Temporary duplication of constant in @gutenberg/block-editor. Can be
 // removed by moving PushChangesToGlobalStylesControl to
-// @wordpress/block-editor.
+// @gutenberg/block-editor.
 const STYLE_PATH_TO_CSS_VAR_INFIX = {
 	'border.color': 'color',
 	'color.background': 'color',
@@ -90,9 +90,9 @@ const STYLE_PATH_TO_CSS_VAR_INFIX = {
 	'typography.fontFamily': 'font-family',
 };
 
-// TODO: Temporary duplication of constant in @wordpress/block-editor. Can be
+// TODO: Temporary duplication of constant in @gutenberg/block-editor. Can be
 // removed by moving PushChangesToGlobalStylesControl to
-// @wordpress/block-editor.
+// @gutenberg/block-editor.
 const STYLE_PATH_TO_PRESET_BLOCK_ATTRIBUTE = {
 	'border.color': 'borderColor',
 	'color.background': 'backgroundColor',
@@ -247,7 +247,7 @@ function useChangesToPush( name, attributes, userConfig ) {
  *
  * @see https://lodash.com/docs/4.17.15#set
  *
- * @todo Needs to be deduplicated with its copy in `@wordpress/core-data`.
+ * @todo Needs to be deduplicated with its copy in `@gutenberg/core-data`.
  *
  * @param {Object} object Object to modify
  * @param {Array}  path   Path of the property to set.
@@ -323,8 +323,8 @@ function PushChangesToGlobalStylesControl( {
 				style: cleanEmptyObject( newBlockStyles ),
 			};
 
-			// @wordpress/core-data doesn't support editing multiple entity types in
-			// a single undo level. So for now, we disable @wordpress/core-data undo
+			// @gutenberg/core-data doesn't support editing multiple entity types in
+			// a single undo level. So for now, we disable @gutenberg/core-data undo
 			// tracking and implement our own Undo button in the snackbar
 			// notification.
 			__unstableMarkNextChangeAsNotPersistent();

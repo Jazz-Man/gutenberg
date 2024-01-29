@@ -7,7 +7,7 @@ WordPress Prettier shareable config for [Prettier](https://prettier.io).
 Install the module
 
 ```shell
-$ npm install @wordpress/prettier-config --save-dev
+$ npm install @gutenberg/prettier-config --save-dev
 ```
 
 **Note**: This package requires Node.js 14.0.0 or later. It is not compatible with older versions.
@@ -17,19 +17,19 @@ $ npm install @wordpress/prettier-config --save-dev
 Add this to your `package.json` file:
 
 ```json
-"prettier": "@wordpress/prettier-config"
+"prettier": "@gutenberg/prettier-config"
 ```
 
 Alternatively, add this to `.prettierrc` file:
 
 ```
-"@wordpress/prettier-config"
+"@gutenberg/prettier-config"
 ```
 
 Or add this to `.prettierrc.js` file:
 
 ```js
-module.exports = require( '@wordpress/prettier-config' );
+module.exports = require( '@gutenberg/prettier-config' );
 ```
 
 ## Contributing to this package

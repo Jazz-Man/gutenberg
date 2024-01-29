@@ -13,7 +13,7 @@ _Note:_ It is worth noting that the line height setting option is an opt-in feat
 Renders the markup for the line height setting option in the block inspector.
 
 ```jsx
-import { LineHeightControl } from '@wordpress/block-editor';
+import { LineHeightControl } from '@gutenberg/block-editor';
 const MyLineHeightControl = () => (
 	<LineHeightControl
 		value={ lineHeight }

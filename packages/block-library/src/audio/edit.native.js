@@ -6,7 +6,7 @@ import { TouchableWithoutFeedback } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { View } from '@wordpress/primitives';
+import { View } from '@gutenberg/primitives';
 import {
 	PanelBody,
 	SelectControl,
@@ -14,7 +14,7 @@ import {
 	ToolbarButton,
 	ToolbarGroup,
 	AudioPlayer,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	BlockCaption,
 	BlockControls,
@@ -25,13 +25,13 @@ import {
 	MediaUploadProgress,
 	RichText,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { __, _x, sprintf } from '@wordpress/i18n';
-import { audio as icon, replace } from '@wordpress/icons';
-import { useState } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
-import { isURL, getProtocol } from '@wordpress/url';
+} from '@gutenberg/block-editor';
+import { __, _x, sprintf } from '@gutenberg/i18n';
+import { audio as icon, replace } from '@gutenberg/icons';
+import { useState } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { isURL, getProtocol } from '@gutenberg/url';
 
 /**
  * Internal dependencies

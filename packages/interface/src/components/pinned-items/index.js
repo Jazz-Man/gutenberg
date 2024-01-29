@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Slot, Fill } from '@wordpress/components';
+import { Slot, Fill } from '@gutenberg/components';
 
 function PinnedItems( { scope, ...props } ) {
 	return <Fill name={ `PinnedItems/${ scope }` } { ...props } />;

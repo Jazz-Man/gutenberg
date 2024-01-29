@@ -9,18 +9,18 @@ The data module is built upon and shares many of the same core principles of [Re
 Install the module
 
 ```bash
-npm install @wordpress/data --save
+npm install @gutenberg/data --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## Registering a Store
 
 Use the `register` function to add your own store to the centralized data registry. This function accepts one argument – a store descriptor that can be created with `createReduxStore` factory function. `createReduxStore` accepts two arguments: a name to identify the module, and a configuration object with values describing how your state is represented, modified, and accessed. At a minimum, you must provide a reducer function describing the shape of your state and how it changes in response to actions dispatched to the store.
 
 ```js
-import apiFetch from '@wordpress/api-fetch';
-import { createReduxStore, register } from '@wordpress/data';
+import apiFetch from '@gutenberg/api-fetch';
+import { createReduxStore, register } from '@gutenberg/data';
 
 const DEFAULT_STATE = {
 	prices: {},
@@ -139,7 +139,7 @@ A **control** defines the execution flow behavior associated with a specific act
 
 The `controls` option should be passed as an object where each key is the name of the action type to act upon, the value a function which receives the original action object. It should returns either a promise which is to resolve when evaluation of the action should continue, or a value. The value or resolved promise value is assigned on the return value of the yield assignment. If the control handler returns undefined, the execution is not continued.
 
-Refer to the [documentation of `@wordpress/redux-routine`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/redux-routine/README.md) for more information.
+Refer to the [documentation of `@gutenberg/redux-routine`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/redux-routine/README.md) for more information.
 
 #### `initialState`
 
@@ -147,7 +147,7 @@ An optional preloaded initial state for the store. You may use this to restore s
 
 ## Generic Stores
 
-The `@wordpress/data` module offers a more advanced and generic interface for the purposes of integrating other data systems and situations where more direct control over a data system is needed. In this case, a data store will need to be implemented outside of `@wordpress/data` and then plugged in via three functions:
+The `@gutenberg/data` module offers a more advanced and generic interface for the purposes of integrating other data systems and situations where more direct control over a data system is needed. In this case, a data store will need to be implemented outside of `@gutenberg/data` and then plugged in via three functions:
 
 -   `getSelectors()`: Returns an object of selector functions, pre-mapped to the store.
 -   `getActions()`: Returns an object of action functions, pre-mapped to the store.
@@ -164,7 +164,7 @@ Integrating an existing redux store with its own reducers, store enhancers and m
 _Example:_
 
 ```js
-import { register } from '@wordpress/data';
+import { register } from '@gutenberg/data';
 import existingSelectors from './existing-app/selectors';
 import existingActions from './existing-app/actions';
 import createStore from './existing-app/store';
@@ -211,7 +211,7 @@ It is also possible to implement a completely custom store from scratch:
 _Example:_
 
 ```js
-import { register } from '@wordpress/data';
+import { register } from '@gutenberg/data';
 
 function customStore() {
 	return {
@@ -267,11 +267,11 @@ The data module also has built-in solutions for handling asynchronous side-effec
 Specific implementation differences from Redux and React Redux:
 
 -   In Redux, a `subscribe` listener is called on every dispatch, regardless of whether the value of state has changed.
-    -   In `@wordpress/data`, a subscriber is only called when state has changed.
+    -   In `@gutenberg/data`, a subscriber is only called when state has changed.
 -   In React Redux, a `mapStateToProps` function must return an object.
-    -   In `@wordpress/data`, a `withSelect` mapping function can return `undefined` if it has no props to inject.
+    -   In `@gutenberg/data`, a `withSelect` mapping function can return `undefined` if it has no props to inject.
 -   In React Redux, the `mapDispatchToProps` argument can be defined as an object or a function.
-    -   In `@wordpress/data`, the `withDispatch` higher-order component creator must be passed a function.
+    -   In `@gutenberg/data`, the `withDispatch` higher-order component creator must be passed a function.
 
 ## API
 
@@ -284,8 +284,8 @@ Context Provider Component used to switch the data module component rerendering 
 _Usage_
 
 ```js
-import { useSelect, AsyncModeProvider } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { useSelect, AsyncModeProvider } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 function BlockCount() {
 	const count = useSelect( ( select ) => {
@@ -324,7 +324,7 @@ The combineReducers helper function turns an object whose values are different r
 _Usage_
 
 ```js
-import { combineReducers, createReduxStore, register } from '@wordpress/data';
+import { combineReducers, createReduxStore, register } from '@gutenberg/data';
 
 const prices = ( state = {}, action ) => {
 	return action.type === 'SET_PRICE'
@@ -371,7 +371,7 @@ Creates a data store descriptor for the provided Redux store configuration conta
 _Usage_
 
 ```js
-import { createReduxStore } from '@wordpress/data';
+import { createReduxStore } from '@gutenberg/data';
 
 const store = createReduxStore( 'demo', {
 	reducer: ( state = 'OK' ) => state,
@@ -450,8 +450,8 @@ that supports also selecting from other registered stores.
 _Usage_
 
 ```js
-import { store as coreStore } from '@wordpress/core-data';
-import { store as editorStore } from '@wordpress/editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as editorStore } from '@gutenberg/editor';
 
 const getCurrentPostId = createRegistrySelector( ( select ) => ( state ) => {
 	return select( editorStore ).getCurrentPostId();
@@ -491,7 +491,7 @@ Note: Action creators returned by the dispatch will return a promise when they a
 _Usage_
 
 ```js
-import { dispatch } from '@wordpress/data';
+import { dispatch } from '@gutenberg/data';
 import { store as myCustomStore } from 'my-custom-store';
 
 dispatch( myCustomStore ).setPrice( 'hammer', 9.75 );
@@ -519,12 +519,12 @@ _Type_
 
 ### register
 
-Registers a standard `@wordpress/data` store descriptor.
+Registers a standard `@gutenberg/data` store descriptor.
 
 _Usage_
 
 ```js
-import { createReduxStore, register } from '@wordpress/data';
+import { createReduxStore, register } from '@gutenberg/data';
 
 const store = createReduxStore( 'demo', {
 	reducer: ( state = 'OK' ) => state,
@@ -554,7 +554,7 @@ _Parameters_
 
 > **Deprecated** Use `register` instead.
 
-Registers a standard `@wordpress/data` store.
+Registers a standard `@gutenberg/data` store.
 
 _Parameters_
 
@@ -578,7 +578,7 @@ import {
   RegistryProvider,
   RegistryConsumer,
   createRegistry
-} from '@wordpress/data';
+} from '@gutenberg/data';
 
 const registry = createRegistry( {} );
 
@@ -609,7 +609,7 @@ Given a store descriptor, returns an object containing the store's selectors pre
 _Usage_
 
 ```js
-import { resolveSelect } from '@wordpress/data';
+import { resolveSelect } from '@gutenberg/data';
 import { store as myCustomStore } from 'my-custom-store';
 
 resolveSelect( myCustomStore ).getPrice( 'hammer' ).then( console.log );
@@ -630,7 +630,7 @@ Given a store descriptor, returns an object of the store's selectors. The select
 _Usage_
 
 ```js
-import { select } from '@wordpress/data';
+import { select } from '@gutenberg/data';
 import { store as myCustomStore } from 'my-custom-store';
 
 select( myCustomStore ).getPrice( 'hammer' );
@@ -653,7 +653,7 @@ This function returns an `unsubscribe` function used to stop the subscription.
 _Usage_
 
 ```js
-import { subscribe } from '@wordpress/data';
+import { subscribe } from '@gutenberg/data';
 
 const unsubscribe = subscribe( () => {
 	// You could use this opportunity to test whether the derived result of a
@@ -703,7 +703,7 @@ action.
 
 ```jsx
 import { useCallback } from 'react';
-import { useDispatch, useSelect } from '@wordpress/data';
+import { useDispatch, useSelect } from '@gutenberg/data';
 import { store as myCustomStore } from 'my-custom-store';
 
 function Button( { onClick, children } ) {
@@ -748,12 +748,12 @@ This exposes the `registry` value provided via the <a href="#RegistryProvider">R
 
 It acts similarly to the `useContext` react hook.
 
-Note: Generally speaking, `useRegistry` is a low level hook that in most cases won't be needed for implementation. Most interactions with the `@wordpress/data` API can be performed via the `useSelect` hook, or the `withSelect` and `withDispatch` higher order components.
+Note: Generally speaking, `useRegistry` is a low level hook that in most cases won't be needed for implementation. Most interactions with the `@gutenberg/data` API can be performed via the `useSelect` hook, or the `withSelect` and `withDispatch` higher order components.
 
 _Usage_
 
 ```js
-import { RegistryProvider, createRegistry, useRegistry } from '@wordpress/data';
+import { RegistryProvider, createRegistry, useRegistry } from '@gutenberg/data';
 
 const registry = createRegistry( {} );
 
@@ -784,7 +784,7 @@ In general, this custom React hook follows the [rules of hooks](https://reactjs.
 _Usage_
 
 ```js
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 import { store as myCustomStore } from 'my-custom-store';
 
 function HammerPriceDisplay( { currency } ) {
@@ -818,7 +818,7 @@ on render, so it may be useful to get the selectors function instead.
 function because your component won't re-render on a data change.**
 
 ```js
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 import { store as myCustomStore } from 'my-custom-store';
 
 function Paste( { children } ) {
@@ -868,7 +868,7 @@ function Button( { onClick, children } ) {
 	);
 }
 
-import { withDispatch } from '@wordpress/data';
+import { withDispatch } from '@gutenberg/data';
 import { store as myCustomStore } from 'my-custom-store';
 
 const SaleButton = withDispatch( ( dispatch, ownProps ) => {
@@ -909,7 +909,7 @@ function Button( { onClick, children } ) {
 	);
 }
 
-import { withDispatch } from '@wordpress/data';
+import { withDispatch } from '@gutenberg/data';
 import { store as myCustomStore } from 'my-custom-store';
 
 const SaleButton = withDispatch( ( dispatch, ownProps, { select } ) => {
@@ -960,7 +960,7 @@ Higher-order component used to inject state-derived props using registered selec
 _Usage_
 
 ```js
-import { withSelect } from '@wordpress/data';
+import { withSelect } from '@gutenberg/data';
 import { store as myCustomStore } from 'my-custom-store';
 
 function PriceDisplay( { price, currency } ) {
@@ -1011,7 +1011,7 @@ As the application grows, this can become costful, so it's important to ensure t
 _Usage_
 
 ```js
-import { useRegistry } from '@wordpress/data';
+import { useRegistry } from '@gutenberg/data';
 
 function Component() {
 	const registry = useRegistry();
@@ -1035,8 +1035,8 @@ The following selectors are available on the object returned by `wp.data.select(
 _Example_
 
 ```js
-import { store as coreDataStore } from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
+import { store as coreDataStore } from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
 
 function Component() {
 	const result = useSelect( ( select ) => {

@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { store as coreDataStore } from '@wordpress/core-data';
-import { select } from '@wordpress/data';
+import { store as coreDataStore } from '@gutenberg/core-data';
+import { select } from '@gutenberg/data';
 import {
 	header as headerIcon,
 	footer as footerIcon,
 	sidebar as sidebarIcon,
 	symbolFilled as symbolFilledIcon,
-} from '@wordpress/icons';
+} from '@gutenberg/icons';
 
 function getTemplatePartIcon( iconName ) {
 	if ( 'header' === iconName ) {

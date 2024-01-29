@@ -11,7 +11,7 @@ import {
 	useLayoutEffect,
 	useRef,
 	useState,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 
 /**
  * Internal dependencies

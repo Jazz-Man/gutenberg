@@ -8,8 +8,8 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
-import { isRTL } from '@wordpress/i18n';
+import { forwardRef } from '@gutenberg/element';
+import { isRTL } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

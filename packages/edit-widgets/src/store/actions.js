@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { store as noticesStore } from '@wordpress/notices';
-import { store as interfaceStore } from '@wordpress/interface';
-import { getWidgetIdFromBlock } from '@wordpress/widgets';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { __, sprintf } from '@gutenberg/i18n';
+import { store as noticesStore } from '@gutenberg/notices';
+import { store as interfaceStore } from '@gutenberg/interface';
+import { getWidgetIdFromBlock } from '@gutenberg/widgets';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

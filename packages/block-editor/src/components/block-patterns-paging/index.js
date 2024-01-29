@@ -6,8 +6,8 @@ import {
 	__experimentalHStack as HStack,
 	__experimentalText as Text,
 	Button,
-} from '@wordpress/components';
-import { __, _x, _n, sprintf } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { __, _x, _n, sprintf } from '@gutenberg/i18n';
 
 export default function Pagination( {
 	currentPage,

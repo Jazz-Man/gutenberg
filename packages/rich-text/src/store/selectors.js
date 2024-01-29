@@ -10,9 +10,9 @@ import createSelector from 'rememo';
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as richTextStore } from '@wordpress/rich-text';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@gutenberg/i18n';
+ * import { store as richTextStore } from '@gutenberg/rich-text';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *    const { getFormatTypes } = useSelect(
@@ -49,9 +49,9 @@ export const getFormatTypes = createSelector(
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as richTextStore } from '@wordpress/rich-text';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@gutenberg/i18n';
+ * import { store as richTextStore } from '@gutenberg/rich-text';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *    const { getFormatType } = useSelect(
@@ -91,9 +91,9 @@ export function getFormatType( state, name ) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as richTextStore } from '@wordpress/rich-text';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@gutenberg/i18n';
+ * import { store as richTextStore } from '@gutenberg/rich-text';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *    const { getFormatTypeForBareElement } = useSelect(
@@ -130,9 +130,9 @@ export function getFormatTypeForBareElement( state, bareElementTagName ) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as richTextStore } from '@wordpress/rich-text';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@gutenberg/i18n';
+ * import { store as richTextStore } from '@gutenberg/rich-text';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *    const { getFormatTypeForClassName } = useSelect(

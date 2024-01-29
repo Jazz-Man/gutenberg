@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { __experimentalUseNavigator as useNavigator } from '@wordpress/components';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { __experimentalUseNavigator as useNavigator } from '@gutenberg/components';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

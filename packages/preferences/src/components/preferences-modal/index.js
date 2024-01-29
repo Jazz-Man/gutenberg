@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { Modal } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { Modal } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 export default function PreferencesModal( { closeModal, children } ) {
 	return (

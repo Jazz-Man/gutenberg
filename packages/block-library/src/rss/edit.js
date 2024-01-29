@@ -5,7 +5,7 @@ import {
 	BlockControls,
 	InspectorControls,
 	useBlockProps,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	Button,
 	Disabled,
@@ -16,12 +16,12 @@ import {
 	ToolbarGroup,
 	__experimentalHStack as HStack,
 	__experimentalInputControl as InputControl,
-} from '@wordpress/components';
-import { useState } from '@wordpress/element';
-import { grid, list, edit, rss } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
-import { prependHTTP } from '@wordpress/url';
-import ServerSideRender from '@wordpress/server-side-render';
+} from '@gutenberg/components';
+import { useState } from '@gutenberg/element';
+import { grid, list, edit, rss } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
+import { prependHTTP } from '@gutenberg/url';
+import ServerSideRender from '@gutenberg/server-side-render';
 
 const DEFAULT_MIN_ITEMS = 1;
 const DEFAULT_MAX_ITEMS = 20;

@@ -6,7 +6,7 @@ import type { Meta, StoryFn } from '@storybook/react';
 /**
  * WordPress dependencies
  */
-import { Fragment } from '@wordpress/element';
+import { Fragment } from '@gutenberg/element';
 
 /**
  * Internal dependencies

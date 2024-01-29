@@ -7,15 +7,15 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
+import { useSelect, useDispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies
  */
 import PageAttributesOrder from '../order';
 
-jest.mock( '@wordpress/data/src/components/use-select', () => jest.fn() );
-jest.mock( '@wordpress/data/src/components/use-dispatch', () => ( {
+jest.mock( '@gutenberg/data/src/components/use-select', () => jest.fn() );
+jest.mock( '@gutenberg/data/src/components/use-dispatch', () => ( {
 	useDispatch: jest.fn(),
 } ) );
 

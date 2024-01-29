@@ -5,14 +5,14 @@ import {
 	__experimentalItemGroup as ItemGroup,
 	__experimentalItem as Item,
 	__experimentalHeading as Heading,
-} from '@wordpress/components';
-import { useViewportMatch } from '@wordpress/compose';
-import { getTemplatePartIcon } from '@wordpress/editor';
-import { __ } from '@wordpress/i18n';
-import { getQueryArgs } from '@wordpress/url';
-import { store as coreStore } from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
-import { file } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { useViewportMatch } from '@gutenberg/compose';
+import { getTemplatePartIcon } from '@gutenberg/editor';
+import { __ } from '@gutenberg/i18n';
+import { getQueryArgs } from '@gutenberg/url';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
+import { file } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

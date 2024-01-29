@@ -12,7 +12,7 @@ Renders the markup for height control component, to be used in the block inspect
 
 ```jsx
 import { useState } from 'react';
-import { HeightControl } from '@wordpress/block-editor';
+import { HeightControl } from '@gutenberg/block-editor';
 
 const MyLineHeightControl = () => (
 	const [ value, setValue ] = useState();

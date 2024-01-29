@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useReducedMotion, useMergeRefs } from '@wordpress/compose';
-import { forwardRef, useRef } from '@wordpress/element';
-import { chevronUp, chevronDown } from '@wordpress/icons';
+import { useReducedMotion, useMergeRefs } from '@gutenberg/compose';
+import { forwardRef, useRef } from '@gutenberg/element';
+import { chevronUp, chevronDown } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

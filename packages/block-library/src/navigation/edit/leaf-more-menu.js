@@ -1,17 +1,17 @@
 /**
  * WordPress dependencies
  */
-import { createBlock } from '@wordpress/blocks';
+import { createBlock } from '@gutenberg/blocks';
 import {
 	addSubmenu,
 	chevronUp,
 	chevronDown,
 	moreVertical,
-} from '@wordpress/icons';
-import { DropdownMenu, MenuItem, MenuGroup } from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { __, sprintf } from '@wordpress/i18n';
-import { BlockTitle, store as blockEditorStore } from '@wordpress/block-editor';
+} from '@gutenberg/icons';
+import { DropdownMenu, MenuItem, MenuGroup } from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { BlockTitle, store as blockEditorStore } from '@gutenberg/block-editor';
 
 const POPOVER_PROPS = {
 	className: 'block-editor-block-settings-menu__popover',

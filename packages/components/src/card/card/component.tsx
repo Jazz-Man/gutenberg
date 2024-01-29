@@ -7,7 +7,7 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
+import { useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -87,7 +87,7 @@ function UnconnectedCard(
  *   CardFooter,
  *   __experimentalText as Text,
  *   __experimentalHeading as Heading,
- * } from `@wordpress/components`;
+ * } from `@gutenberg/components`;
  *
  * function Example() {
  *   return (

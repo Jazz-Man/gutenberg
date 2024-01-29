@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useEffect } from '@wordpress/element';
+import { useEffect } from '@gutenberg/element';
 
 /*
  * Setting `overflow: hidden` on html and body elements resets body scroll in iOS.
@@ -40,8 +40,8 @@ let lockCounter = 0;
  * is present, the lock is applied.
  *
  * ```jsx
- * import { ScrollLock, Button } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { ScrollLock, Button } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyScrollLock = () => {
  *   const [ isScrollLocked, setIsScrollLocked ] = useState( false );

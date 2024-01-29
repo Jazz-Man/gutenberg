@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { resizeCornerNE as icon } from '@wordpress/icons';
+import { resizeCornerNE as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

@@ -17,9 +17,9 @@ import {
 	store as blockEditorStore,
 	__experimentalGetElementClassName,
 	useSettings,
-} from '@wordpress/block-editor';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useEffect, useRef } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useEffect, useRef } from '@gutenberg/element';
 import {
 	ToolbarDropdownMenu,
 	ToolbarGroup,
@@ -31,11 +31,11 @@ import {
 	BaseControl,
 	__experimentalUseCustomUnits as useCustomUnits,
 	__experimentalUnitControl as UnitControl,
-} from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
-import { Icon, search } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
-import { __unstableStripHTML as stripHTML } from '@wordpress/dom';
+} from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
+import { Icon, search } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
+import { __unstableStripHTML as stripHTML } from '@gutenberg/dom';
 
 /**
  * Internal dependencies

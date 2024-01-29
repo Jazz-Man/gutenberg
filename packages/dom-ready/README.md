@@ -7,10 +7,10 @@ Execute callback after the DOM is loaded.
 Install the module
 
 ```bash
-npm install @wordpress/dom-ready --save
+npm install @gutenberg/dom-ready --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## API
 
@@ -23,7 +23,7 @@ Specify a function to execute when the DOM is fully loaded.
 _Usage_
 
 ```js
-import domReady from '@wordpress/dom-ready';
+import domReady from '@gutenberg/dom-ready';
 
 domReady( function () {
 	//do something after DOM loads.

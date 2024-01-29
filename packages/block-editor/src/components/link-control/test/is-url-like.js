@@ -30,7 +30,7 @@ describe( 'isURLLike', () => {
 		expect( isURLLike( 'www.wordpress.org' ) ).toBe( true );
 	} );
 
-	it.each( [ 'mailto:test@wordpress.org', 'tel:123456' ] )(
+	it.each( [ 'mailto:test@gutenberg.org', 'tel:123456' ] )(
 		'returns true for common protocols',
 		( testString ) => {
 			expect( isURLLike( testString ) ).toBe( true );

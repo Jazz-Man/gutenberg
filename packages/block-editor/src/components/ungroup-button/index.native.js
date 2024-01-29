@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { store as blocksStore } from '@wordpress/blocks';
-import { ToolbarGroup, ToolbarButton } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { withSelect, withDispatch } from '@wordpress/data';
-import { compose } from '@wordpress/compose';
-import { ungroup } from '@wordpress/icons';
+import { store as blocksStore } from '@gutenberg/blocks';
+import { ToolbarGroup, ToolbarButton } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { withSelect, withDispatch } from '@gutenberg/data';
+import { compose } from '@gutenberg/compose';
+import { ungroup } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

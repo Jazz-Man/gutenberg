@@ -4,9 +4,9 @@
 const {
 	test: base,
 	expect,
-} = require( '@wordpress/e2e-test-utils-playwright' );
+} = require( '@gutenberg/e2e-test-utils-playwright' );
 
-/** @typedef {import('@wordpress/e2e-test-utils-playwright').Editor} Editor */
+/** @typedef {import('@gutenberg/e2e-test-utils-playwright').Editor} Editor */
 /** @typedef {import('@playwright/test').Locator} Locator */
 
 /** @type {ReturnType<typeof base.extend<{widgetsScreen: WidgetsScreen}>>} */

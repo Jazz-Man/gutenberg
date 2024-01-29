@@ -7,7 +7,7 @@ import { press, hover, click, sleep } from '@ariakit/test';
 /**
  * WordPress dependencies
  */
-import { shortcutAriaLabel } from '@wordpress/keycodes';
+import { shortcutAriaLabel } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

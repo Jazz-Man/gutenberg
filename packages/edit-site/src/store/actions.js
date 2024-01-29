@@ -1,18 +1,18 @@
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
-import { parse, __unstableSerializeAndClean } from '@wordpress/blocks';
-import deprecated from '@wordpress/deprecated';
-import { addQueryArgs } from '@wordpress/url';
-import { __ } from '@wordpress/i18n';
-import { store as noticesStore } from '@wordpress/notices';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as interfaceStore } from '@wordpress/interface';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { store as editorStore } from '@wordpress/editor';
-import { speak } from '@wordpress/a11y';
-import { store as preferencesStore } from '@wordpress/preferences';
+import apiFetch from '@gutenberg/api-fetch';
+import { parse, __unstableSerializeAndClean } from '@gutenberg/blocks';
+import deprecated from '@gutenberg/deprecated';
+import { addQueryArgs } from '@gutenberg/url';
+import { __ } from '@gutenberg/i18n';
+import { store as noticesStore } from '@gutenberg/notices';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as interfaceStore } from '@gutenberg/interface';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { store as editorStore } from '@gutenberg/editor';
+import { speak } from '@gutenberg/a11y';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

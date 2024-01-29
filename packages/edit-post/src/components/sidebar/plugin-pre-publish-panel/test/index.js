@@ -6,7 +6,7 @@ import { render, screen } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { SlotFillProvider } from '@wordpress/components';
+import { SlotFillProvider } from '@gutenberg/components';
 
 /**
  * Internal dependencies

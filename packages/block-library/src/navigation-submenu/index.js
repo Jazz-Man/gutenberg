@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { page, addSubmenu } from '@wordpress/icons';
+import { page, addSubmenu } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

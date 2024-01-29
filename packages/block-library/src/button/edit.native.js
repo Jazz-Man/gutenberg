@@ -6,9 +6,9 @@ import { View, AccessibilityInfo, Platform, Text } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { useCallback, useEffect, useState, useRef } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __, _x } from '@wordpress/i18n';
+import { useCallback, useEffect, useState, useRef } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __, _x } from '@gutenberg/i18n';
 import {
 	RichText,
 	InspectorControls,
@@ -17,7 +17,7 @@ import {
 	getColorObjectByAttributeValues,
 	getGradientValueBySlug,
 	__experimentalGetColorClassesAndStyles as getColorClassesAndStyles,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	PanelBody,
 	ToolbarGroup,
@@ -29,10 +29,10 @@ import {
 	CSS_UNITS,
 	filterUnitsWithSettings,
 	useMobileGlobalStylesColors,
-} from '@wordpress/components';
-import { link } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { link } from '@gutenberg/icons';
 // eslint-disable-next-line no-restricted-imports
-import { store as editPostStore } from '@wordpress/edit-post';
+import { store as editPostStore } from '@gutenberg/edit-post';
 
 /**
  * Internal dependencies

@@ -22,9 +22,9 @@ import SafeArea from 'react-native-safe-area';
 import {
 	subscribeAndroidModalClosed,
 	showAndroidSoftKeyboard,
-} from '@wordpress/react-native-bridge';
-import { Component } from '@wordpress/element';
-import { withPreferredColorScheme } from '@wordpress/compose';
+} from '@gutenberg/react-native-bridge';
+import { Component } from '@gutenberg/element';
+import { withPreferredColorScheme } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

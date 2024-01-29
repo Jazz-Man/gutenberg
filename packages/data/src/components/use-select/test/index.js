@@ -6,7 +6,7 @@ import { act, render, fireEvent, screen } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { useLayoutEffect, useState, useReducer } from '@wordpress/element';
+import { useLayoutEffect, useState, useReducer } from '@gutenberg/element';
 
 /**
  * Internal dependencies

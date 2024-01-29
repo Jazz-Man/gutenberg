@@ -6,9 +6,9 @@ import { camelCase } from 'change-case';
 /**
  * WordPress dependencies
  */
-import { addQueryArgs } from '@wordpress/url';
-import { decodeEntities } from '@wordpress/html-entities';
-import apiFetch from '@wordpress/api-fetch';
+import { addQueryArgs } from '@gutenberg/url';
+import { decodeEntities } from '@gutenberg/html-entities';
+import apiFetch from '@gutenberg/api-fetch';
 
 /**
  * Internal dependencies
@@ -139,7 +139,7 @@ export const getEntityRecord =
 				// modifications are relevant to how the data is tracked in state, and not
 				// for how the request is made to the REST API.
 
-				// eslint-disable-next-line @wordpress/no-unused-vars-before-return
+				// eslint-disable-next-line @gutenberg/no-unused-vars-before-return
 				const path = addQueryArgs(
 					entityConfig.baseURL + ( key ? '/' + key : '' ),
 					{

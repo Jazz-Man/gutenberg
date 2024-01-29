@@ -11,7 +11,7 @@ import {
 	useBlockProps,
 	__experimentalGetElementClassName,
 	__experimentalGetBorderClassesAndStyles as getBorderClassesAndStyles,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 export default function save( { attributes } ) {
 	const {

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { regexp, next } from '@wordpress/shortcode';
+import { regexp, next } from '@gutenberg/shortcode';
 
 /**
  * Internal dependencies

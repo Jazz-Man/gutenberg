@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { _x } from '@wordpress/i18n';
-import { customLink as linkIcon } from '@wordpress/icons';
-import { InnerBlocks } from '@wordpress/block-editor';
-import { addFilter } from '@wordpress/hooks';
+import { _x } from '@gutenberg/i18n';
+import { customLink as linkIcon } from '@gutenberg/icons';
+import { InnerBlocks } from '@gutenberg/block-editor';
+import { addFilter } from '@gutenberg/hooks';
 
 /**
  * Internal dependencies

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { commentEditLink as icon } from '@wordpress/icons';
+import { commentEditLink as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

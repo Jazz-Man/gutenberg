@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { BaseControl, Button } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
+import { BaseControl, Button } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

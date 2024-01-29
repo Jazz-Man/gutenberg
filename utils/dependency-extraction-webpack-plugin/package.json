@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/dependency-extraction-webpack-plugin",
+	"name": "@gutenberg/dependency-extraction-webpack-plugin",
 	"version": "5.0.0",
 	"description": "Extract WordPress script dependencies from webpack bundles.",
 	"author": "The WordPress Contributors",

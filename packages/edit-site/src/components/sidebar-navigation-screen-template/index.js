@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { pencil } from '@wordpress/icons';
+import { __, _x } from '@gutenberg/i18n';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { pencil } from '@gutenberg/icons';
 import {
 	__experimentalUseNavigator as useNavigator,
 	Icon,
-} from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
 /**
  * Internal dependencies
  */

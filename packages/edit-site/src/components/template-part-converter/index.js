@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 import {
 	BlockSettingsMenuControls,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

@@ -11,7 +11,7 @@ import {
 /**
  * WordPress dependencies
  */
-import { withPreferredColorScheme } from '@wordpress/compose';
+import { withPreferredColorScheme } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

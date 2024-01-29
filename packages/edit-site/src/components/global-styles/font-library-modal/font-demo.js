@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalText as Text } from '@wordpress/components';
-import { useContext, useEffect, useState, useRef } from '@wordpress/element';
+import { __experimentalText as Text } from '@gutenberg/components';
+import { useContext, useEffect, useState, useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

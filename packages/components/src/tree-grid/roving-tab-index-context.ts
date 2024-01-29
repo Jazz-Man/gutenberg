@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createContext, useContext } from '@wordpress/element';
+import { createContext, useContext } from '@gutenberg/element';
 
 const RovingTabIndexContext = createContext<
 	| {

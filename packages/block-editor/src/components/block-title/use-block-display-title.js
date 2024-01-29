@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 import {
 	getBlockType,
 	__experimentalGetBlockLabel as getBlockLabel,
 	isReusableBlock,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

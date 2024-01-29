@@ -8,12 +8,12 @@ import {
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
 	ToggleControl,
-} from '@wordpress/components';
-import { __, _x } from '@wordpress/i18n';
-import { useState, useMemo } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/components';
+import { __, _x } from '@gutenberg/i18n';
+import { useState, useMemo } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

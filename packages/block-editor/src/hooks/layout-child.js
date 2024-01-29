@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { useSelect } from '@wordpress/data';
+import { useInstanceId } from '@gutenberg/compose';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

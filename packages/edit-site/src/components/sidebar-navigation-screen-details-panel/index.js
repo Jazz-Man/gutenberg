@@ -4,7 +4,7 @@
 import {
 	__experimentalVStack as VStack,
 	__experimentalHeading as Heading,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

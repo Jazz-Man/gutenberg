@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { SelectControl } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { InspectorControls } from '@wordpress/block-editor';
+import { SelectControl } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { InspectorControls } from '@gutenberg/block-editor';
 
 export default function CommentsInspectorControls( {
 	attributes: { tagName },

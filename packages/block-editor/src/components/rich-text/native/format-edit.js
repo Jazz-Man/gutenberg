@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { getActiveFormat, getActiveObject } from '@wordpress/rich-text';
+import { getActiveFormat, getActiveObject } from '@gutenberg/rich-text';
 
 export default function FormatEdit( {
 	formatTypes,

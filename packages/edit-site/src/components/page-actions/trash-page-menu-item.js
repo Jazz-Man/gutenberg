@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch, useSelect } from '@wordpress/data';
-import { decodeEntities } from '@wordpress/html-entities';
-import { store as coreStore } from '@wordpress/core-data';
-import { __, sprintf } from '@wordpress/i18n';
-import { MenuItem } from '@wordpress/components';
-import { store as noticesStore } from '@wordpress/notices';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { store as coreStore } from '@gutenberg/core-data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { MenuItem } from '@gutenberg/components';
+import { store as noticesStore } from '@gutenberg/notices';
 
 export default function TrashPageMenuItem( { postId, onRemove } ) {
 	const { createSuccessNotice, createErrorNotice } =

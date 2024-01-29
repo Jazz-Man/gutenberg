@@ -14,16 +14,16 @@ import Tiles from './tiles';
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	BlockCaption,
 	RichText,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useState, useEffect } from '@wordpress/element';
-import { mediaUploadSync } from '@wordpress/react-native-bridge';
-import { useSelect } from '@wordpress/data';
-import { alignmentHelpers } from '@wordpress/components';
+} from '@gutenberg/block-editor';
+import { useState, useEffect } from '@gutenberg/element';
+import { mediaUploadSync } from '@gutenberg/react-native-bridge';
+import { useSelect } from '@gutenberg/data';
+import { alignmentHelpers } from '@gutenberg/components';
 
 const TILE_SPACING = 15;
 

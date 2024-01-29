@@ -9,10 +9,10 @@ Edit Post Module for WordPress.
 Install the module
 
 ```bash
-npm install @wordpress/edit-post
+npm install @gutenberg/edit-post
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## Extending the post editor UI
 
@@ -66,8 +66,8 @@ function MyPluginBlockSettingsMenuItem() {
 
 ```jsx
 // Using ESNext syntax
-import { __ } from '@wordpress/i18n';
-import { PluginBlockSettingsMenuItem } from '@wordpress/edit-post';
+import { __ } from '@gutenberg/i18n';
+import { PluginBlockSettingsMenuItem } from '@gutenberg/edit-post';
 
 const doOnClick = () => {
 	// To be called when the user clicks the menu item.
@@ -129,8 +129,8 @@ registerPlugin( 'my-document-setting-plugin', {
 
 ```jsx
 // Using ESNext syntax
-import { registerPlugin } from '@wordpress/plugins';
-import { PluginDocumentSettingPanel } from '@wordpress/edit-post';
+import { registerPlugin } from '@gutenberg/plugins';
+import { PluginDocumentSettingPanel } from '@gutenberg/edit-post';
 
 const MyDocumentSettingTest = () => (
 	<PluginDocumentSettingPanel
@@ -188,9 +188,9 @@ function MyButtonMoreMenuItem() {
 
 ```jsx
 // Using ESNext syntax
-import { __ } from '@wordpress/i18n';
-import { PluginMoreMenuItem } from '@wordpress/edit-post';
-import { more } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { PluginMoreMenuItem } from '@gutenberg/edit-post';
+import { more } from '@gutenberg/icons';
 
 function onButtonClick() {
 	alert( 'Button clicked.' );
@@ -241,8 +241,8 @@ function MyPluginPostPublishPanel() {
 
 ```jsx
 // Using ESNext syntax
-import { __ } from '@wordpress/i18n';
-import { PluginPostPublishPanel } from '@wordpress/edit-post';
+import { __ } from '@gutenberg/i18n';
+import { PluginPostPublishPanel } from '@gutenberg/edit-post';
 
 const MyPluginPostPublishPanel = () => (
 	<PluginPostPublishPanel
@@ -292,8 +292,8 @@ function MyPluginPostStatusInfo() {
 
 ```jsx
 // Using ESNext syntax
-import { __ } from '@wordpress/i18n';
-import { PluginPostStatusInfo } from '@wordpress/edit-post';
+import { __ } from '@gutenberg/i18n';
+import { PluginPostStatusInfo } from '@gutenberg/edit-post';
 
 const MyPluginPostStatusInfo = () => (
 	<PluginPostStatusInfo className="my-plugin-post-status-info">
@@ -338,8 +338,8 @@ function MyPluginPrePublishPanel() {
 
 ```jsx
 // Using ESNext syntax
-import { __ } from '@wordpress/i18n';
-import { PluginPrePublishPanel } from '@wordpress/edit-post';
+import { __ } from '@gutenberg/i18n';
+import { PluginPrePublishPanel } from '@gutenberg/edit-post';
 
 const MyPluginPrePublishPanel = () => (
 	<PluginPrePublishPanel
@@ -404,10 +404,10 @@ function MyPluginSidebar() {
 
 ```jsx
 // Using ESNext syntax
-import { __ } from '@wordpress/i18n';
-import { PanelBody } from '@wordpress/components';
-import { PluginSidebar } from '@wordpress/edit-post';
-import { more } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { PanelBody } from '@gutenberg/components';
+import { PluginSidebar } from '@gutenberg/edit-post';
+import { more } from '@gutenberg/icons';
 
 const MyPluginSidebar = () => (
 	<PluginSidebar name="my-sidebar" title="My sidebar title" icon={ more }>
@@ -451,9 +451,9 @@ function MySidebarMoreMenuItem() {
 
 ```jsx
 // Using ESNext syntax
-import { __ } from '@wordpress/i18n';
-import { PluginSidebarMoreMenuItem } from '@wordpress/edit-post';
-import { more } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { PluginSidebarMoreMenuItem } from '@gutenberg/edit-post';
+import { more } from '@gutenberg/icons';
 
 const MySidebarMoreMenuItem = () => (
 	<PluginSidebarMoreMenuItem target="my-sidebar" icon={ more }>

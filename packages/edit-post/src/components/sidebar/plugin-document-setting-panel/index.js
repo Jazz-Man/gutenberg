@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { createSlotFill, PanelBody } from '@wordpress/components';
-import { usePluginContext } from '@wordpress/plugins';
-import { useDispatch, useSelect } from '@wordpress/data';
-import warning from '@wordpress/warning';
+import { createSlotFill, PanelBody } from '@gutenberg/components';
+import { usePluginContext } from '@gutenberg/plugins';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import warning from '@gutenberg/warning';
 import {
 	store as editorStore,
 	privateApis as editorPrivateApis,
-} from '@wordpress/editor';
+} from '@gutenberg/editor';
 
 /**
  * Internal dependencies
@@ -56,8 +56,8 @@ const { EnablePluginDocumentSettingPanelOption } = unlock( editorPrivateApis );
  * @example
  * ```jsx
  * // Using ESNext syntax
- * import { registerPlugin } from '@wordpress/plugins';
- * import { PluginDocumentSettingPanel } from '@wordpress/edit-post';
+ * import { registerPlugin } from '@gutenberg/plugins';
+ * import { PluginDocumentSettingPanel } from '@gutenberg/edit-post';
  *
  * const MyDocumentSettingTest = () => (
  * 		<PluginDocumentSettingPanel className="my-document-setting-plugin" title="My Panel" name="my-panel">

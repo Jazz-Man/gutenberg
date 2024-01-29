@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { group as icon } from '@wordpress/icons';
+import { group as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

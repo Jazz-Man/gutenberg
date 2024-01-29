@@ -42,7 +42,7 @@ The `DropdownMenu` should typically appear directly below, or below and to the l
 
 ## Development guidelines
 
-This component is still highly experimental, and it's not normally accessible to consumers of the `@wordpress/components` package.
+This component is still highly experimental, and it's not normally accessible to consumers of the `@gutenberg/components` package.
 
 The component exposes a set of components that are meant to be used in combination with each other in order to implement a `DropdownMenu` correctly.
 

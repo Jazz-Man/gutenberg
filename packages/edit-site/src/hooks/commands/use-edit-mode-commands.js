@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __, sprintf, isRTL } from '@wordpress/i18n';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __, sprintf, isRTL } from '@gutenberg/i18n';
 import {
 	edit,
 	trash,
@@ -17,14 +17,14 @@ import {
 	keyboard,
 	listView,
 	symbol,
-} from '@wordpress/icons';
-import { useCommandLoader } from '@wordpress/commands';
-import { decodeEntities } from '@wordpress/html-entities';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
-import { store as preferencesStore } from '@wordpress/preferences';
-import { store as interfaceStore } from '@wordpress/interface';
-import { store as noticesStore } from '@wordpress/notices';
-import { store as editorStore } from '@wordpress/editor';
+} from '@gutenberg/icons';
+import { useCommandLoader } from '@gutenberg/commands';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
+import { store as preferencesStore } from '@gutenberg/preferences';
+import { store as interfaceStore } from '@gutenberg/interface';
+import { store as noticesStore } from '@gutenberg/notices';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

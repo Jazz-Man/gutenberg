@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { unregisterBlockType } from '@wordpress/blocks';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useEffect } from '@wordpress/element';
-import { store as editorStore } from '@wordpress/editor';
+import { unregisterBlockType } from '@gutenberg/blocks';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useEffect } from '@gutenberg/element';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

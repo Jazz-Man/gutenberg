@@ -7,10 +7,10 @@ Block library for the WordPress editor.
 Install the module
 
 ```bash
-npm install @wordpress/block-library --save
+npm install @gutenberg/block-library --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## API
 
@@ -23,7 +23,7 @@ Function to register core blocks provided by the block editor.
 _Usage_
 
 ```js
-import { registerCoreBlocks } from '@wordpress/block-library';
+import { registerCoreBlocks } from '@gutenberg/block-library';
 
 registerCoreBlocks();
 ```
@@ -39,19 +39,19 @@ _Parameters_
 1.  When you only care about registering the block when file gets imported:
 
     ```js
-    import '@wordpress/block-library/build-module/verse/init';
+    import '@gutenberg/block-library/build-module/verse/init';
     ```
 
 2.  When you want to use the reference to the block after it gets automatically registered:
 
     ```js
-    import verseBlock from '@wordpress/block-library/build-module/verse/init';
+    import verseBlock from '@gutenberg/block-library/build-module/verse/init';
     ```
 
 3.  When you need a full control over when the block gets registered:
 
     ```js
-    import { init } from '@wordpress/block-library/build-module/verse';
+    import { init } from '@gutenberg/block-library/build-module/verse';
 
     const verseBlock = init();
     ```
@@ -96,7 +96,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
     export default init();
     ```
 
-    This file is used when using the option to register individual block from the `@wordpress/block-library` package.
+    This file is used when using the option to register individual block from the `@gutenberg/block-library` package.
 
 4.  If a `view.js` file (or a file prefixed with `view`, e.g. `view-example.js`) is present in the block's directory, this file will be built along other assets, making it available to load from the browser. You only need to reference a `view.min.js` (notice the different file extension) file in the `block.json` file as follows:
 

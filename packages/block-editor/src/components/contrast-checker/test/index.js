@@ -6,14 +6,14 @@ import { render, screen } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { speak } from '@wordpress/a11y';
+import { speak } from '@gutenberg/a11y';
 
 /**
  * Internal dependencies
  */
 import ContrastChecker from '../';
 
-jest.mock( '@wordpress/a11y', () => ( { speak: jest.fn() } ) );
+jest.mock( '@gutenberg/a11y', () => ( { speak: jest.fn() } ) );
 
 describe( 'ContrastChecker', () => {
 	const backgroundColor = '#ffffff';

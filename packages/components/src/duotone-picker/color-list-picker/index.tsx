@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
-import { swatch } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
+import { useState } from '@gutenberg/element';
+import { swatch } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies
@@ -14,7 +14,7 @@ import ColorIndicator from '../../color-indicator';
 import Icon from '../../icon';
 import { HStack } from '../../h-stack';
 import type { ColorListPickerProps, ColorOptionProps } from './types';
-import { useInstanceId } from '@wordpress/compose';
+import { useInstanceId } from '@gutenberg/compose';
 
 function ColorOption( {
 	label,

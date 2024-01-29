@@ -11,7 +11,7 @@ import {
 	useBlockProps,
 	__experimentalGetElementClassName,
 	__experimentalGetBorderClassesAndStyles as getBorderClassesAndStyles,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 /**
  * Deprecation for adding the `wp-image-${id}` class to the image block for

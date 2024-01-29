@@ -11,7 +11,7 @@ import {
 	getBlockTypes,
 	registerBlockType,
 	unregisterBlockType,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 const { isContainerRelated } = alignmentHelpers;
 
@@ -80,7 +80,7 @@ describe( 'isContainerRelated', () => {
 
 	beforeAll( () => {
 		const registerCoreBlocks =
-			require( '@wordpress/block-library' ).registerCoreBlocks;
+			require( '@gutenberg/block-library' ).registerCoreBlocks;
 		registerCoreBlocks();
 	} );
 

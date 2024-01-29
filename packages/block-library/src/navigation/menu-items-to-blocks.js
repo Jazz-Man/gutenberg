@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { createBlock, parse } from '@wordpress/blocks';
-import { applyFilters } from '@wordpress/hooks';
+import { createBlock, parse } from '@gutenberg/blocks';
+import { applyFilters } from '@gutenberg/hooks';
 
 /**
  * Convert a flat menu item structure to a nested blocks structure.

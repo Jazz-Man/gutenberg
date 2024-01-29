@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { commentAuthorName as icon } from '@wordpress/icons';
+import { commentAuthorName as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

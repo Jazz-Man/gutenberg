@@ -11,8 +11,8 @@ import {
 /**
  * WordPress dependencies
  */
-import { getBlockTypes, unregisterBlockType } from '@wordpress/blocks';
-import fetchRequest from '@wordpress/api-fetch';
+import { getBlockTypes, unregisterBlockType } from '@gutenberg/blocks';
+import fetchRequest from '@gutenberg/api-fetch';
 
 /**
  * Internal dependencies

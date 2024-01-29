@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { decodeEntities } from '@wordpress/html-entities';
-import { DropdownMenu, MenuGroup, MenuItem } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useEntityRecord } from '@wordpress/core-data';
-import { check } from '@wordpress/icons';
-import { store as noticesStore } from '@wordpress/notices';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { DropdownMenu, MenuGroup, MenuItem } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useEntityRecord } from '@gutenberg/core-data';
+import { check } from '@gutenberg/icons';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

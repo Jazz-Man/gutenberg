@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalUseNavigator as useNavigator } from '@wordpress/components';
-import { useDispatch } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { pencil } from '@wordpress/icons';
-import { getQueryArgs } from '@wordpress/url';
+import { __experimentalUseNavigator as useNavigator } from '@gutenberg/components';
+import { useDispatch } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { pencil } from '@gutenberg/icons';
+import { getQueryArgs } from '@gutenberg/url';
 
 /**
  * Internal dependencies

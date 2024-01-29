@@ -11,7 +11,7 @@ import sizes from '../sizes';
 /**
  * WordPress dependencies
  */
-import { desktop, tablet, mobile } from '@wordpress/icons';
+import { desktop, tablet, mobile } from '@gutenberg/icons';
 
 export default {
 	component: DimensionControl,

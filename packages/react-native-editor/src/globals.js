@@ -16,8 +16,8 @@ import 'core-js/proposals/relative-indexing-method';
 /**
  * WordPress dependencies
  */
-import { nativeLoggingHook } from '@wordpress/react-native-bridge';
-import { createElement } from '@wordpress/element';
+import { nativeLoggingHook } from '@gutenberg/react-native-bridge';
+import { createElement } from '@gutenberg/element';
 
 /**
  * Internal dependencies

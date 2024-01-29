@@ -11,7 +11,7 @@ import {
 	Component,
 	cloneElement,
 	isEmptyElement,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 
 /**
  * Internal dependencies

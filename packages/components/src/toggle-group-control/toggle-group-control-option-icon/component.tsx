@@ -6,7 +6,7 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -47,8 +47,8 @@ function UnforwardedToggleGroupControlOptionIcon(
  * import {
  *	__experimentalToggleGroupControl as ToggleGroupControl,
  *	__experimentalToggleGroupControlOptionIcon as ToggleGroupControlOptionIcon,
- * from '@wordpress/components';
- * import { formatLowercase, formatUppercase } from '@wordpress/icons';
+ * from '@gutenberg/components';
+ * import { formatLowercase, formatUppercase } from '@gutenberg/icons';
  *
  * function Example() {
  *	return (

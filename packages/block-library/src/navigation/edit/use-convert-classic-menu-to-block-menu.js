@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useRegistry, useDispatch } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { useState, useCallback } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
+import { useRegistry, useDispatch } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useState, useCallback } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

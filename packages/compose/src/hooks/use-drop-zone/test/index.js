@@ -6,7 +6,7 @@ import { render, screen } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
+import { useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

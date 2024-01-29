@@ -26,7 +26,7 @@ import { ExperimentalBlockCanvas } from './components/block-canvas';
 import { getDuotoneFilter } from './components/duotone/utils';
 
 /**
- * Private @wordpress/block-editor APIs.
+ * Private @gutenberg/block-editor APIs.
  */
 export const privateApis = {};
 lock( privateApis, {

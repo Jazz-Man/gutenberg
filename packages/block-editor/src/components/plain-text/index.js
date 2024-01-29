@@ -7,7 +7,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

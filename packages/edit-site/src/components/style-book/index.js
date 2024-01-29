@@ -9,25 +9,25 @@ import classnames from 'classnames';
 import {
 	Disabled,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	getCategories,
 	getBlockTypes,
 	getBlockFromExample,
 	createBlock,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 import {
 	BlockList,
 	privateApis as blockEditorPrivateApis,
 	store as blockEditorStore,
 	__unstableEditorStyles as EditorStyles,
 	__unstableIframe as Iframe,
-} from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
-import { useResizeObserver } from '@wordpress/compose';
-import { useMemo, useState, memo, useContext } from '@wordpress/element';
-import { ENTER, SPACE } from '@wordpress/keycodes';
+} from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
+import { useResizeObserver } from '@gutenberg/compose';
+import { useMemo, useState, memo, useContext } from '@gutenberg/element';
+import { ENTER, SPACE } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

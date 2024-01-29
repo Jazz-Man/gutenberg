@@ -11,14 +11,14 @@ When the user selects a block, a number of control buttons may be shown in a too
 You can also customize the toolbar to include controls specific to your block type. If the return value of your block type's `edit` function includes a `BlockControls` element, those controls will be shown in the selected block's toolbar.
 
 ```jsx
-import { registerBlockType } from '@wordpress/blocks';
+import { registerBlockType } from '@gutenberg/blocks';
 
 import {
 	useBlockProps,
 	RichText,
 	AlignmentToolbar,
 	BlockControls,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 registerBlockType( 'gutenberg-examples/example-04-controls-esnext', {
 	apiVersion: 3,
@@ -105,15 +105,15 @@ Similar to rendering a toolbar, if you include an `InspectorControls` element in
 The following example adds 2 color palettes to the sidebar, one for the text color and one for the background color.
 
 ```jsx
-import { registerBlockType } from '@wordpress/blocks';
-import { __ } from '@wordpress/i18n';
-import { TextControl } from '@wordpress/components';
+import { registerBlockType } from '@gutenberg/blocks';
+import { __ } from '@gutenberg/i18n';
+import { TextControl } from '@gutenberg/components';
 
 import {
 	useBlockProps,
 	ColorPalette,
 	InspectorControls,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 registerBlockType( 'create-block/gutenpride', {
 	apiVersion: 3,

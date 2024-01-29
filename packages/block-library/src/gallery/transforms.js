@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { createBlock } from '@wordpress/blocks';
-import { createBlobURL } from '@wordpress/blob';
-import { addFilter } from '@wordpress/hooks';
+import { createBlock } from '@gutenberg/blocks';
+import { createBlobURL } from '@gutenberg/blob';
+import { addFilter } from '@gutenberg/hooks';
 
 /**
  * Internal dependencies

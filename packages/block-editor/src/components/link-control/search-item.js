@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { MenuItem, TextHighlight } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { MenuItem, TextHighlight } from '@gutenberg/components';
 import {
 	Icon,
 	globe,
@@ -13,10 +13,10 @@ import {
 	file,
 	home,
 	verse,
-} from '@wordpress/icons';
-import { __unstableStripHTML as stripHTML } from '@wordpress/dom';
-import { safeDecodeURI, filterURLForDisplay, getPath } from '@wordpress/url';
-import { pipe } from '@wordpress/compose';
+} from '@gutenberg/icons';
+import { __unstableStripHTML as stripHTML } from '@gutenberg/dom';
+import { safeDecodeURI, filterURLForDisplay, getPath } from '@gutenberg/url';
+import { pipe } from '@gutenberg/compose';
 
 const ICONS_MAP = {
 	post: postList,

@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { trash } from '@wordpress/icons';
+import { trash } from '@gutenberg/icons';
 import {
 	Button,
 	__experimentalText as Text,
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

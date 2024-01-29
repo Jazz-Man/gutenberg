@@ -10,14 +10,14 @@ import {
 	__unstableGetAnimateClassName as getAnimateClassName,
 	Button,
 	Tooltip,
-} from '@wordpress/components';
-import { usePrevious, useViewportMatch } from '@wordpress/compose';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useEffect, useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { Icon, check, cloud, cloudUpload } from '@wordpress/icons';
-import { displayShortcut } from '@wordpress/keycodes';
-import { store as preferencesStore } from '@wordpress/preferences';
+} from '@gutenberg/components';
+import { usePrevious, useViewportMatch } from '@gutenberg/compose';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useEffect, useState } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { Icon, check, cloud, cloudUpload } from '@gutenberg/icons';
+import { displayShortcut } from '@gutenberg/keycodes';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

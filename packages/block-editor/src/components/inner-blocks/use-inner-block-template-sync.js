@@ -6,9 +6,9 @@ import fastDeepEqual from 'fast-deep-equal/es6';
 /**
  * WordPress dependencies
  */
-import { useRef, useLayoutEffect } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { synchronizeBlocksWithTemplate } from '@wordpress/blocks';
+import { useRef, useLayoutEffect } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { synchronizeBlocksWithTemplate } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

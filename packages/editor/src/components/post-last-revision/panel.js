@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { PanelBody } from '@wordpress/components';
+import { PanelBody } from '@gutenberg/components';
 
 /**
  * Internal dependencies

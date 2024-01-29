@@ -37,7 +37,7 @@ function UnconnectedDropdownContentWrapper(
  * import {
  *   Dropdown,
  *   __experimentalDropdownContentWrapper as DropdownContentWrapper,
- * } from '@wordpress/components';
+ * } from '@gutenberg/components';
  *
  * <Dropdown
  *   renderContent={ () => (

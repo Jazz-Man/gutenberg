@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createRegistry } from '@wordpress/data';
+import { createRegistry } from '@gutenberg/data';
 
 const getFooSelector = ( state ) => state;
 

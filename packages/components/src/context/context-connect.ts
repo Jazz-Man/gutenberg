@@ -6,8 +6,8 @@ import type { ForwardedRef, ReactChild, ReactNode } from 'react';
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
-import warn from '@wordpress/warning';
+import { forwardRef } from '@gutenberg/element';
+import warn from '@gutenberg/warning';
 
 /**
  * Internal dependencies

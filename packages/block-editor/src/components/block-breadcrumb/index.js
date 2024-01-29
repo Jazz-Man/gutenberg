@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { Button } from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { chevronRightSmall, Icon } from '@wordpress/icons';
+import { Button } from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { chevronRightSmall, Icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

@@ -10,9 +10,9 @@ import {
 	RichText,
 	useBlockProps,
 	useInnerBlocksProps,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
-import { createBlock } from '@wordpress/blocks';
+import { createBlock } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

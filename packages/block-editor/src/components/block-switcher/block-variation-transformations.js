@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { MenuItem } from '@wordpress/components';
+import { MenuItem } from '@gutenberg/components';
 import {
 	getBlockMenuDefaultClassName,
 	cloneBlock,
 	store as blocksStore,
-} from '@wordpress/blocks';
-import { useSelect } from '@wordpress/data';
-import { useState, useMemo } from '@wordpress/element';
+} from '@gutenberg/blocks';
+import { useSelect } from '@gutenberg/data';
+import { useState, useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

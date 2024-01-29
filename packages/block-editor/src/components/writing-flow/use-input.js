@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useRefEffect } from '@wordpress/compose';
-import { ENTER, BACKSPACE, DELETE } from '@wordpress/keycodes';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useRefEffect } from '@gutenberg/compose';
+import { ENTER, BACKSPACE, DELETE } from '@gutenberg/keycodes';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

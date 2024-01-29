@@ -7,7 +7,7 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { alignLeft, alignCenter } from '@wordpress/icons';
+import { alignLeft, alignCenter } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

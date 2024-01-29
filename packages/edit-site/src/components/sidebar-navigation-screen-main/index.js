@@ -5,12 +5,12 @@ import {
 	__experimentalItemGroup as ItemGroup,
 	__experimentalNavigatorButton as NavigatorButton,
 	__experimentalUseNavigator as useNavigator,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { layout, symbol, navigation, styles, page } from '@wordpress/icons';
-import { useDispatch } from '@wordpress/data';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { layout, symbol, navigation, styles, page } from '@gutenberg/icons';
+import { useDispatch } from '@gutenberg/data';
 
-import { useEffect } from '@wordpress/element';
+import { useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -6,16 +6,16 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Platform, useRef, useCallback, forwardRef } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
+import { Platform, useRef, useCallback, forwardRef } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
 import {
 	pasteHandler,
 	children as childrenSource,
 	getBlockTransforms,
 	findTransform,
 	isUnmodifiedDefaultBlock,
-} from '@wordpress/blocks';
-import { useInstanceId, useMergeRefs } from '@wordpress/compose';
+} from '@gutenberg/blocks';
+import { useInstanceId, useMergeRefs } from '@gutenberg/compose';
 import {
 	__unstableCreateElement,
 	isEmpty,
@@ -25,8 +25,8 @@ import {
 	split,
 	toHTMLString,
 	slice,
-} from '@wordpress/rich-text';
-import { isURL } from '@wordpress/url';
+} from '@gutenberg/rich-text';
+import { isURL } from '@gutenberg/url';
 
 /**
  * Internal dependencies

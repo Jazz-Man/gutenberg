@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 
 export function getNoticeFromInstallResponse( response ) {
 	const { errors = [], successes = [] } = response;

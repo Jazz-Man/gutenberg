@@ -6,8 +6,8 @@ import type { ForwardedRef, ComponentPropsWithoutRef } from 'react';
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
-import { forwardRef } from '@wordpress/element';
+import deprecated from '@gutenberg/deprecated';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

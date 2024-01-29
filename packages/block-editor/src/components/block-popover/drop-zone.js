@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { useReducedMotion } from '@wordpress/compose';
-import { __unstableMotion as motion } from '@wordpress/components';
+import { useSelect } from '@gutenberg/data';
+import { useReducedMotion } from '@gutenberg/compose';
+import { __unstableMotion as motion } from '@gutenberg/components';
 
 /**
  * Internal dependencies

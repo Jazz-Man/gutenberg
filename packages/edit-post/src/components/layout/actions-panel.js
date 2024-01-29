@@ -5,11 +5,11 @@ import {
 	EntitiesSavedStates,
 	PostPublishPanel,
 	store as editorStore,
-} from '@wordpress/editor';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { Button, createSlotFill } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useCallback } from '@wordpress/element';
+} from '@gutenberg/editor';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { Button, createSlotFill } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useCallback } from '@gutenberg/element';
 /**
  * Internal dependencies
  */

@@ -5,7 +5,7 @@ import {
 	registerBlockType,
 	serialize,
 	unregisterBlockType,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

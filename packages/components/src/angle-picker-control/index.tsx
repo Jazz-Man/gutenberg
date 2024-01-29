@@ -7,9 +7,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
-import { forwardRef } from '@wordpress/element';
-import { isRTL, __ } from '@wordpress/i18n';
+import deprecated from '@gutenberg/deprecated';
+import { forwardRef } from '@gutenberg/element';
+import { isRTL, __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies
@@ -106,8 +106,8 @@ function UnforwardedAnglePickerControl(
  * desired angle in a text field.
  *
  * ```jsx
- * import { useState } from '@wordpress/element';
- * import { AnglePickerControl } from '@wordpress/components';
+ * import { useState } from '@gutenberg/element';
+ * import { AnglePickerControl } from '@gutenberg/components';
  *
  * function Example() {
  *   const [ angle, setAngle ] = useState( 0 );

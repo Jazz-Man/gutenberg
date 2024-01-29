@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { createBlock } from '@wordpress/blocks';
+import { createBlock } from '@gutenberg/blocks';
 import {
 	RichText,
 	getColorClassName,
@@ -14,9 +14,9 @@ import {
 	__experimentalGetGradientClass,
 	useBlockProps,
 	useInnerBlocksProps,
-} from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
-import { compose } from '@wordpress/compose';
+} from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { compose } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

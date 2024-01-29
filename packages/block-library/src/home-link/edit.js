@@ -10,11 +10,11 @@ import {
 	RichText,
 	useBlockProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { useEffect } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useEffect } from '@gutenberg/element';
 
 const preventDefault = ( event ) => event.preventDefault();
 

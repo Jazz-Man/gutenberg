@@ -27,7 +27,7 @@ function UnconnectedCardMedia(
  *
  * @example
  * ```jsx
- * import { Card, CardBody, CardMedia } from '@wordpress/components';
+ * import { Card, CardBody, CardMedia } from '@gutenberg/components';
  *
  * const Example = () => (
  *  <Card>

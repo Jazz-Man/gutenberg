@@ -9,7 +9,7 @@ import {
 	useWatch,
 	cloneElement,
 	getElement,
-} from '@wordpress/interactivity';
+} from '@gutenberg/interactivity';
 
 // Custom directive to show hide the content elements in which it is placed.
 directive(

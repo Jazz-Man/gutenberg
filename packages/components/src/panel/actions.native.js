@@ -6,9 +6,9 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { TextControl } from '@wordpress/components';
-import { withPreferredColorScheme } from '@wordpress/compose';
-import { useMemo } from '@wordpress/element';
+import { TextControl } from '@gutenberg/components';
+import { withPreferredColorScheme } from '@gutenberg/compose';
+import { useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

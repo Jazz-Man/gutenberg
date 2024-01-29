@@ -6,7 +6,7 @@ import type { Meta, StoryFn } from '@storybook/react';
 /**
  * WordPress dependencies
  */
-import { useRef } from '@wordpress/element';
+import { useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

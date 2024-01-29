@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Component } from '@wordpress/element';
-import { withPreferredColorScheme } from '@wordpress/compose';
-import { HorizontalRule } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { Component } from '@gutenberg/element';
+import { withPreferredColorScheme } from '@gutenberg/compose';
+import { HorizontalRule } from '@gutenberg/components';
 
 /**
  * Internal dependencies

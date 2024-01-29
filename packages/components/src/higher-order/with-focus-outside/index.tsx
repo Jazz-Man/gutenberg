@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useCallback, useState } from '@wordpress/element';
+import { useCallback, useState } from '@gutenberg/element';
 import {
 	createHigherOrderComponent,
 	__experimentalUseFocusOutside as useFocusOutside,
-} from '@wordpress/compose';
+} from '@gutenberg/compose';
 
 export default createHigherOrderComponent(
 	( WrappedComponent ) => ( props ) => {

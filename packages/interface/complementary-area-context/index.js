@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { withPluginContext } from '@wordpress/plugins';
+import { withPluginContext } from '@gutenberg/plugins';
 
 export default withPluginContext( ( context, ownProps ) => {
 	return {

@@ -45,7 +45,7 @@ This removes the need to implement separate controls.
 
 ### Thunks have access to the store helpers
 
-Let's take a look at an example from Gutenberg core. Prior to thunks, the `toggleFeature` action from the `@wordpress/interface` package was implemented like this:
+Let's take a look at an example from Gutenberg core. Prior to thunks, the `toggleFeature` action from the `@gutenberg/interface` package was implemented like this:
 
 ```js
 export function* toggleFeature( scope, featureName ) {

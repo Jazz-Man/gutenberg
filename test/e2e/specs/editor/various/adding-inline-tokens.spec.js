@@ -9,7 +9,7 @@ import { v4 as uuid } from 'uuid';
 /**
  * WordPress dependencies
  */
-const { test, expect } = require( '@wordpress/e2e-test-utils-playwright' );
+const { test, expect } = require( '@gutenberg/e2e-test-utils-playwright' );
 
 test.describe( 'adding inline tokens', () => {
 	test.beforeEach( async ( { admin } ) => {

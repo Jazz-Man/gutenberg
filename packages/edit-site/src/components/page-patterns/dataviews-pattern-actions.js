@@ -6,24 +6,24 @@ import { paramCase as kebabCase } from 'change-case';
 /**
  * WordPress dependencies
  */
-import { getQueryArgs } from '@wordpress/url';
-import { downloadBlob } from '@wordpress/blob';
-import { __, _x, sprintf } from '@wordpress/i18n';
+import { getQueryArgs } from '@gutenberg/url';
+import { downloadBlob } from '@gutenberg/blob';
+import { __, _x, sprintf } from '@gutenberg/i18n';
 import {
 	Button,
 	TextControl,
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
 	__experimentalText as Text,
-} from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
-import { useDispatch } from '@wordpress/data';
-import { useState } from '@wordpress/element';
-import { store as noticesStore } from '@wordpress/notices';
-import { decodeEntities } from '@wordpress/html-entities';
-import { store as reusableBlocksStore } from '@wordpress/reusable-blocks';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
-import { privateApis as patternsPrivateApis } from '@wordpress/patterns';
+} from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useDispatch } from '@gutenberg/data';
+import { useState } from '@gutenberg/element';
+import { store as noticesStore } from '@gutenberg/notices';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { store as reusableBlocksStore } from '@gutenberg/reusable-blocks';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
+import { privateApis as patternsPrivateApis } from '@gutenberg/patterns';
 
 /**
  * Internal dependencies

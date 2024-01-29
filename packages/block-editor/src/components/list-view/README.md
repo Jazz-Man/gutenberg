@@ -18,7 +18,7 @@ In addition to presenting the structure of the blocks in the editor, the ListVie
 Renders a list view with default syles.
 
 ```jsx
-import { ListView } from '@wordpress/block-editor';
+import { ListView } from '@gutenberg/block-editor';
 
 const MyNavigation = () => <ListView />;
 ```

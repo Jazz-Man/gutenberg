@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useInnerBlocksProps, useBlockProps } from '@wordpress/block-editor';
+import { useInnerBlocksProps, useBlockProps } from '@gutenberg/block-editor';
 
 /**
  * External dependencies

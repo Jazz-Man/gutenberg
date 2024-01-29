@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { __, isRTL } from '@wordpress/i18n';
+import { __, isRTL } from '@gutenberg/i18n';
 import {
 	blockTable,
 	category,
 	formatListBullets,
 	formatListBulletsRTL,
-} from '@wordpress/icons';
+} from '@gutenberg/icons';
 
 /**
  * Internal dependencies

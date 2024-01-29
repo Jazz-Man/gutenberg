@@ -14,11 +14,11 @@ import {
 /**
  * WordPress dependencies
  */
-import { Icon } from '@wordpress/components';
-import { check } from '@wordpress/icons';
-import { Component } from '@wordpress/element';
-import { __, _x, sprintf } from '@wordpress/i18n';
-import { withPreferredColorScheme } from '@wordpress/compose';
+import { Icon } from '@gutenberg/components';
+import { check } from '@gutenberg/icons';
+import { Component } from '@gutenberg/element';
+import { __, _x, sprintf } from '@gutenberg/i18n';
+import { withPreferredColorScheme } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -191,7 +191,7 @@ class BottomSheetCell extends Component {
 		};
 
 		const separatorStyle = () => {
-			// eslint-disable-next-line @wordpress/no-unused-vars-before-return
+			// eslint-disable-next-line @gutenberg/no-unused-vars-before-return
 			const defaultSeparatorStyle = this.props.getStylesFromColorScheme(
 				styles.separator,
 				styles.separatorDark

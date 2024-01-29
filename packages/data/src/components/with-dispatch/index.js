@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createHigherOrderComponent } from '@wordpress/compose';
+import { createHigherOrderComponent } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -27,7 +27,7 @@ import { useDispatchWithMap } from '../use-dispatch';
  *     return <button type="button" onClick={ onClick }>{ children }</button>;
  * }
  *
- * import { withDispatch } from '@wordpress/data';
+ * import { withDispatch } from '@gutenberg/data';
  * import { store as myCustomStore } from 'my-custom-store';
  *
  * const SaleButton = withDispatch( ( dispatch, ownProps ) => {
@@ -65,7 +65,7 @@ import { useDispatchWithMap } from '../use-dispatch';
  *     return <button type="button" onClick={ onClick }>{ children }</button>;
  * }
  *
- * import { withDispatch } from '@wordpress/data';
+ * import { withDispatch } from '@gutenberg/data';
  * import { store as myCustomStore } from 'my-custom-store';
  *
  * const SaleButton = withDispatch( ( dispatch, ownProps, { select } ) => {

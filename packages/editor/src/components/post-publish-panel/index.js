@@ -1,19 +1,19 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Component } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { Component } from '@gutenberg/element';
 import {
 	Button,
 	Spinner,
 	CheckboxControl,
 	withFocusReturn,
 	withConstrainedTabbing,
-} from '@wordpress/components';
-import { withSelect, withDispatch } from '@wordpress/data';
-import { compose } from '@wordpress/compose';
-import { closeSmall } from '@wordpress/icons';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/components';
+import { withSelect, withDispatch } from '@gutenberg/data';
+import { compose } from '@gutenberg/compose';
+import { closeSmall } from '@gutenberg/icons';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

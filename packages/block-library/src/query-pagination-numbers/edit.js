@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { PanelBody, RangeControl } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { InspectorControls, useBlockProps } from '@gutenberg/block-editor';
+import { PanelBody, RangeControl } from '@gutenberg/components';
 
 const createPaginationItem = ( content, Tag = 'a', extraClass = '' ) => (
 	<Tag key={ content } className={ `page-numbers ${ extraClass }` }>

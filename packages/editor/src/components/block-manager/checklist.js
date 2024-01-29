@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { BlockIcon } from '@wordpress/block-editor';
-import { CheckboxControl } from '@wordpress/components';
+import { BlockIcon } from '@gutenberg/block-editor';
+import { CheckboxControl } from '@gutenberg/components';
 
 function BlockTypesChecklist( { blockTypes, value, onItemChange } ) {
 	return (

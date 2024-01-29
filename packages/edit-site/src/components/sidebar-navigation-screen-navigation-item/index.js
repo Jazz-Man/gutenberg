@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useDispatch } from '@wordpress/data';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch } from '@gutenberg/data';
 import {
 	__experimentalUseNavigator as useNavigator,
 	ExternalLink,
-} from '@wordpress/components';
-import { useEntityRecord } from '@wordpress/core-data';
-import { decodeEntities } from '@wordpress/html-entities';
-import { pencil } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { useEntityRecord } from '@gutenberg/core-data';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { pencil } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

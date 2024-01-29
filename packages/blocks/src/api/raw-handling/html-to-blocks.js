@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { Platform } from '@wordpress/element';
+import { Platform } from '@gutenberg/element';
 
 /**
  * Internal dependencies

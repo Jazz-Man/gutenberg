@@ -6,18 +6,18 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { withSelect } from '@wordpress/data';
+import { withSelect } from '@gutenberg/data';
 import {
 	compose,
 	withPreferredColorScheme,
 	useResizeObserver,
-} from '@wordpress/compose';
+} from '@gutenberg/compose';
 import {
 	InnerBlocks,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useCallback } from '@wordpress/element';
-import { alignmentHelpers } from '@wordpress/components';
+} from '@gutenberg/block-editor';
+import { useCallback } from '@gutenberg/element';
+import { alignmentHelpers } from '@gutenberg/components';
 
 /**
  * Internal dependencies

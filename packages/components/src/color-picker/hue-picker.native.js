@@ -7,7 +7,7 @@ import LinearGradient from 'react-native-linear-gradient';
 /**
  * WordPress dependencies
  */
-import React, { Component } from '@wordpress/element';
+import React, { Component } from '@gutenberg/element';
 
 /**
  * Internal dependencies

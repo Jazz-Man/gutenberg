@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { combineReducers } from '@wordpress/data';
-import { compose } from '@wordpress/compose';
+import { combineReducers } from '@gutenberg/data';
+import { compose } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

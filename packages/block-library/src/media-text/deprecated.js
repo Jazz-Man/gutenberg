@@ -11,8 +11,8 @@ import {
 	getColorClassName,
 	useInnerBlocksProps,
 	useBlockProps,
-} from '@wordpress/block-editor';
-import { compose } from '@wordpress/compose';
+} from '@gutenberg/block-editor';
+import { compose } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

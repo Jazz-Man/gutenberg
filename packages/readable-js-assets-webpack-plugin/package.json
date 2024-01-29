@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/readable-js-assets-webpack-plugin",
+	"name": "@gutenberg/readable-js-assets-webpack-plugin",
 	"version": "2.32.0",
 	"description": "Generate a readable JS file for each JS asset.",
 	"author": "The WordPress Contributors",

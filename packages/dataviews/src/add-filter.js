@@ -4,10 +4,10 @@
 import {
 	privateApis as componentsPrivateApis,
 	Button,
-} from '@wordpress/components';
-import { funnel } from '@wordpress/icons';
-import { __, sprintf } from '@wordpress/i18n';
-import { Children, Fragment } from '@wordpress/element';
+} from '@gutenberg/components';
+import { funnel } from '@gutenberg/icons';
+import { __, sprintf } from '@gutenberg/i18n';
+import { Children, Fragment } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -7,13 +7,13 @@ import memoize from 'memize';
 /**
  * WordPress dependencies
  */
-import { privateApis as componentsPrivateApis } from '@wordpress/components';
-import { renderToString } from '@wordpress/element';
+import { privateApis as componentsPrivateApis } from '@gutenberg/components';
+import { renderToString } from '@gutenberg/element';
 import {
 	createBlock,
 	getBlockType,
 	getBlockVariations,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies
@@ -24,7 +24,7 @@ import { unlock } from '../lock-unlock';
 
 const { name: DEFAULT_EMBED_BLOCK } = metadata;
 
-/** @typedef {import('@wordpress/blocks').WPBlockVariation} WPBlockVariation */
+/** @typedef {import('@gutenberg/blocks').WPBlockVariation} WPBlockVariation */
 
 /**
  * Returns the embed block's information by matching the provided service provider

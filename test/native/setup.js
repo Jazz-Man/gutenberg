@@ -63,22 +63,22 @@ const mockComponent =
 		return React.createElement( element, props, props.children );
 	};
 
-jest.mock( '@wordpress/element', () => {
+jest.mock( '@gutenberg/element', () => {
 	return {
 		__esModule: true,
-		...jest.requireActual( '@wordpress/element' ),
+		...jest.requireActual( '@gutenberg/element' ),
 		render: jest.fn(),
 	};
 } );
 
-jest.mock( '@wordpress/api-fetch', () => {
+jest.mock( '@gutenberg/api-fetch', () => {
 	const apiFetchMock = jest.fn();
 	apiFetchMock.setFetchHandler = jest.fn();
 
 	return apiFetchMock;
 } );
 
-jest.mock( '@wordpress/react-native-bridge', () => {
+jest.mock( '@gutenberg/react-native-bridge', () => {
 	return {
 		addEventListener: jest.fn(),
 		mediaUploadSync: jest.fn(),
@@ -269,9 +269,9 @@ jest.mock( 'react-native/Libraries/Components/Switch/Switch', () => {
 	};
 } );
 
-jest.mock( '@wordpress/compose', () => {
+jest.mock( '@gutenberg/compose', () => {
 	return {
-		...jest.requireActual( '@wordpress/compose' ),
+		...jest.requireActual( '@gutenberg/compose' ),
 		useViewportMatch: jest.fn(),
 		useResizeObserver: jest.fn( () => [
 			mockComponent( 'ResizeObserverMock' )( {} ),

@@ -32,10 +32,10 @@ npm init
 
 This will create a `package.json` file.
 
-You will then need to add `@wordpress/scripts` as a development dependency to `package.json`. You can do this with:
+You will then need to add `@gutenberg/scripts` as a development dependency to `package.json`. You can do this with:
 
 ```bash
-npm install @wordpress/scripts --save-dev
+npm install @gutenberg/scripts --save-dev
 ```
 
 Next, add the following two lines to the `scripts` property in `package.json`:
@@ -107,7 +107,7 @@ Add the following in `src/index.js`
 /**
  * WordPress dependencies
  */
-import { registerBlockType } from '@wordpress/blocks';
+import { registerBlockType } from '@gutenberg/blocks';
 
 // Register the block
 registerBlockType( 'gutenberg-examples/example-01-basic-esnext', {

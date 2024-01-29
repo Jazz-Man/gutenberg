@@ -7,9 +7,9 @@ import { v4 as uuid } from 'uuid';
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
-import { addQueryArgs } from '@wordpress/url';
-import deprecated from '@wordpress/deprecated';
+import apiFetch from '@gutenberg/api-fetch';
+import { addQueryArgs } from '@gutenberg/url';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

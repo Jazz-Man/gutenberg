@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { RichText } from '@wordpress/block-editor';
+import { RichText } from '@gutenberg/block-editor';
 
 export default [
 	{

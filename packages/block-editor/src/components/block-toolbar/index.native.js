@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useCallback } from '@wordpress/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useCallback } from '@gutenberg/element';
 
 /**
  * Internal dependencies

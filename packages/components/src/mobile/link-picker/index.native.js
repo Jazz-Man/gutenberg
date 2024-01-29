@@ -7,12 +7,12 @@ import Clipboard from '@react-native-clipboard/clipboard';
 /**
  * WordPress dependencies
  */
-import { useEffect, useState } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
-import { BottomSheet, Icon } from '@wordpress/components';
-import { getProtocol, isURL, prependHTTP } from '@wordpress/url';
-import { link, cancelCircleFilled } from '@wordpress/icons';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
+import { useEffect, useState } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { BottomSheet, Icon } from '@gutenberg/components';
+import { getProtocol, isURL, prependHTTP } from '@gutenberg/url';
+import { link, cancelCircleFilled } from '@gutenberg/icons';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

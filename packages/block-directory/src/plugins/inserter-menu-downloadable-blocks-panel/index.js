@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __unstableInserterMenuExtension } from '@wordpress/block-editor';
-import { debounce } from '@wordpress/compose';
-import { useState } from '@wordpress/element';
+import { __unstableInserterMenuExtension } from '@gutenberg/block-editor';
+import { debounce } from '@gutenberg/compose';
+import { useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

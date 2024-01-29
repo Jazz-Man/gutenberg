@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useCallback, useReducer } from '@wordpress/element';
-import { addQueryArgs, getQueryArgs, removeQueryArgs } from '@wordpress/url';
+import { useCallback, useReducer } from '@gutenberg/element';
+import { addQueryArgs, getQueryArgs, removeQueryArgs } from '@gutenberg/url';
 
 /**
  * A hook that records the 'entity' history in the post editor as a user

@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { serialize } from '@wordpress/blocks';
+import { useSelect } from '@gutenberg/data';
+import { serialize } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

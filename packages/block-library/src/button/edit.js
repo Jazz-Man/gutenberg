@@ -13,8 +13,8 @@ import removeAnchorTag from '../utils/remove-anchor-tag';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useEffect, useState, useRef, useMemo } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { useEffect, useState, useRef, useMemo } from '@gutenberg/element';
 import {
 	Button,
 	ButtonGroup,
@@ -22,7 +22,7 @@ import {
 	TextControl,
 	ToolbarButton,
 	Popover,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	AlignmentControl,
 	BlockControls,
@@ -36,16 +36,16 @@ import {
 	__experimentalGetElementClassName,
 	store as blockEditorStore,
 	useBlockEditingMode,
-} from '@wordpress/block-editor';
-import { displayShortcut, isKeyboardEvent, ENTER } from '@wordpress/keycodes';
-import { link, linkOff } from '@wordpress/icons';
+} from '@gutenberg/block-editor';
+import { displayShortcut, isKeyboardEvent, ENTER } from '@gutenberg/keycodes';
+import { link, linkOff } from '@gutenberg/icons';
 import {
 	createBlock,
 	cloneBlock,
 	getDefaultBlockName,
-} from '@wordpress/blocks';
-import { useMergeRefs, useRefEffect } from '@wordpress/compose';
-import { useSelect, useDispatch } from '@wordpress/data';
+} from '@gutenberg/blocks';
+import { useMergeRefs, useRefEffect } from '@gutenberg/compose';
+import { useSelect, useDispatch } from '@gutenberg/data';
 
 const LINK_SETTINGS = [
 	...LinkControl.DEFAULT_LINK_SETTINGS,

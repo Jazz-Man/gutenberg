@@ -1,24 +1,24 @@
 /**
  * WordPress dependencies
  */
-import { createRegistry } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { createRegistry } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 import {
 	store as blocksStore,
 	createBlock,
 	registerBlockType,
 	unregisterBlockType,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
-import { store as coreStore } from '@wordpress/core-data';
-import apiFetch from '@wordpress/api-fetch';
+import { store as coreStore } from '@gutenberg/core-data';
+import apiFetch from '@gutenberg/api-fetch';
 
 /**
  * Internal dependencies
  */
 import { store as reusableBlocksStore } from '../index';
 
-jest.mock( '@wordpress/api-fetch', () => ( {
+jest.mock( '@gutenberg/api-fetch', () => ( {
 	__esModule: true,
 	default: jest.fn(),
 } ) );

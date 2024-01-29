@@ -8,7 +8,7 @@
 /**
  * WordPress dependencies
  */
-import { withNetworkConnectivity } from '@wordpress/compose';
+import { withNetworkConnectivity } from '@gutenberg/compose';
 
 export class MyComponent extends Component {
 	if ( this.props.isConnected !== true ) {

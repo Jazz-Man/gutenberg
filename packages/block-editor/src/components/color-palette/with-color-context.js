@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createHigherOrderComponent } from '@wordpress/compose';
+import { createHigherOrderComponent } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

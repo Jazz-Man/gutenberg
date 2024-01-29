@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { postCategories as icon } from '@wordpress/icons';
-import { addFilter } from '@wordpress/hooks';
+import { postCategories as icon } from '@gutenberg/icons';
+import { addFilter } from '@gutenberg/hooks';
 
 /**
  * Internal dependencies

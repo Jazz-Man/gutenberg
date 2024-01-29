@@ -7,7 +7,7 @@ import * as Ariakit from '@ariakit/react';
 /**
  * WordPress dependencies
  */
-import { useMemo, forwardRef } from '@wordpress/element';
+import { useMemo, forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

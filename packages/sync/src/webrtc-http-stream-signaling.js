@@ -22,7 +22,7 @@ import * as buffer from 'lib0/buffer';
 /**
  * WordPress dependencies
  */
-import { addQueryArgs } from '@wordpress/url';
+import { addQueryArgs } from '@gutenberg/url';
 
 /**
  * Method copied as is from the SignalingConn constructor.

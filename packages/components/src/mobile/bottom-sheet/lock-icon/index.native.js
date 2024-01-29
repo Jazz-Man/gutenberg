@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { Icon, lock } from '@wordpress/icons';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
+import { Icon, lock } from '@gutenberg/icons';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

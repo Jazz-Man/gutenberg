@@ -6,10 +6,10 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { Spinner } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { subscribeMediaUpload } from '@wordpress/react-native-bridge';
+import { Component } from '@gutenberg/element';
+import { Spinner } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { subscribeMediaUpload } from '@gutenberg/react-native-bridge';
 
 /**
  * Internal dependencies
@@ -163,7 +163,7 @@ export class MediaUploadProgress extends Component {
 			return __( 'Waiting for connection' );
 		}
 
-		// eslint-disable-next-line @wordpress/i18n-no-collapsible-whitespace
+		// eslint-disable-next-line @gutenberg/i18n-no-collapsible-whitespace
 		return __( 'Failed to insert media.\nTap for more info.' );
 	}
 

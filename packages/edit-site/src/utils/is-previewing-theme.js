@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { getQueryArg } from '@wordpress/url';
+import { getQueryArg } from '@gutenberg/url';
 
 export function isPreviewingTheme() {
 	return (

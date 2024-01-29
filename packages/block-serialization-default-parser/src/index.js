@@ -168,7 +168,7 @@ function Frame( block, tokenStart, tokenLength, prevOffset, leadingHtmlStart ) {
  *
  * Parsing code:
  * ```js
- * import { parse } from '@wordpress/block-serialization-default-parser';
+ * import { parse } from '@gutenberg/block-serialization-default-parser';
  *
  * parse( post ) === [
  *     {

@@ -6,9 +6,9 @@
 - a way to open dialogs for keyboard shortcuts and editor preferences.
 - links to help.
 
-This component implements a `DropdownMenu` component from the `@wordpress/components` package.
+This component implements a `DropdownMenu` component from the `@gutenberg/components` package.
 
-See also the `MoreMenuFeatureToggle` component in the `@wordpress/interface` package, which provides an easy way to implement a feature toggle as a child of this component. Use with the `MenuGroup`, `MenuItem`, `MenuItemsChoice` components from the `@wordpress/components` package to implement more advanced behaviors.
+See also the `MoreMenuFeatureToggle` component in the `@gutenberg/interface` package, which provides an easy way to implement a feature toggle as a child of this component. Use with the `MenuGroup`, `MenuItem`, `MenuItemsChoice` components from the `@gutenberg/components` package to implement more advanced behaviors.
 
 Note that just like the `DropdownMenu` component, this component accepts a render callback, which child elements should be returned from.
 
@@ -63,7 +63,7 @@ Change the label of the button that opens the dropdown.
 
 Override or extend the dropdown's popover props.
 
-See the documentation for the `DropdownMenu` and `Popover` components in the `@wordpress/components` package for more information.
+See the documentation for the `DropdownMenu` and `Popover` components in the `@gutenberg/components` package for more information.
 
 -   Type: `Object`
 -   Required: No
@@ -72,7 +72,7 @@ See the documentation for the `DropdownMenu` and `Popover` components in the `@w
 
 Override or extend the dropdown's toggle props.
 
-See the documentation for the `DropdownMenu` and `Button` components in the `@wordpress/components` package for more information.
+See the documentation for the `DropdownMenu` and `Button` components in the `@gutenberg/components` package for more information.
 
 -   Type: `Object`
 -   Required: No

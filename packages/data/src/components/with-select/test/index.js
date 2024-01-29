@@ -7,8 +7,8 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { compose } from '@wordpress/compose';
-import { Component } from '@wordpress/element';
+import { compose } from '@gutenberg/compose';
+import { Component } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -31,7 +31,7 @@ describe( 'withSelect', () => {
 		// In normal circumstances, the fact that we have to add an arbitrary
 		// prefix to the variable name would be concerning, and perhaps an
 		// argument that we ought to expect developer to use select from the
-		// `@wordpress/data` export. But in-fact, this serves as a good deterrent for
+		// `@gutenberg/data` export. But in-fact, this serves as a good deterrent for
 		// including both `withSelect` and `select` in the same scope, which
 		// shouldn't occur for a typical component, and if it did might wrongly
 		// encourage the developer to use `select` within the component itself.

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { share as icon } from '@wordpress/icons';
+import { share as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

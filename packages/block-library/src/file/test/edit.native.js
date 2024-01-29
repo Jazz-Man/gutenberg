@@ -9,7 +9,7 @@ import { render, fireEvent } from 'test/helpers';
 import {
 	subscribeMediaUpload,
 	sendMediaUpload,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 
 /**
  * Internal dependencies
@@ -18,7 +18,7 @@ import { FileEdit } from '../edit.native.js';
 
 // react-native-aztec shouldn't be mocked because these tests are based on
 // snapshot testing where we want to keep the original component.
-jest.unmock( '@wordpress/react-native-aztec' );
+jest.unmock( '@gutenberg/react-native-aztec' );
 
 const MEDIA_UPLOAD_STATE_FAILED = 3;
 

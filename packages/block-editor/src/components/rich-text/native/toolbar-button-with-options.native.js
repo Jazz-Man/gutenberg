@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { Picker, ToolbarGroup, ToolbarButton } from '@wordpress/components';
-import { useRef } from '@wordpress/element';
-import { Icon } from '@wordpress/icons';
+import { Picker, ToolbarGroup, ToolbarButton } from '@gutenberg/components';
+import { useRef } from '@gutenberg/element';
+import { Icon } from '@gutenberg/icons';
 
 /**
  * Toolbar button component that, upon a long press, opens a Picker

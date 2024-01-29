@@ -8,7 +8,7 @@
 /**
  * WordPress dependencies
  */
-import { withSafeTimeout } from '@wordpress/compose';
+import { withSafeTimeout } from '@gutenberg/compose';
 
 function MyEffectfulComponent( { setTimeout } ) {
 	return (

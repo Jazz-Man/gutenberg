@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { MenuItem } from '@wordpress/components';
-import { createInterpolateElement } from '@wordpress/element';
-import { plus } from '@wordpress/icons';
+import { __, sprintf } from '@gutenberg/i18n';
+import { MenuItem } from '@gutenberg/components';
+import { createInterpolateElement } from '@gutenberg/element';
+import { plus } from '@gutenberg/icons';
 
 export const LinkControlSearchCreate = ( {
 	searchTerm,

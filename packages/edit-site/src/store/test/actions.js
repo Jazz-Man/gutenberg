@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { store as coreStore } from '@wordpress/core-data';
-import { createRegistry } from '@wordpress/data';
-import { store as interfaceStore } from '@wordpress/interface';
-import { store as noticesStore } from '@wordpress/notices';
-import { store as preferencesStore } from '@wordpress/preferences';
-import { store as editorStore } from '@wordpress/editor';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { createRegistry } from '@gutenberg/data';
+import { store as interfaceStore } from '@gutenberg/interface';
+import { store as noticesStore } from '@gutenberg/notices';
+import { store as preferencesStore } from '@gutenberg/preferences';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

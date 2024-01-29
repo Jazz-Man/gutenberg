@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { privateApis as componentsPrivateApis } from '@wordpress/components';
+import { privateApis as componentsPrivateApis } from '@gutenberg/components';
 
 /**
  * Internal dependencies

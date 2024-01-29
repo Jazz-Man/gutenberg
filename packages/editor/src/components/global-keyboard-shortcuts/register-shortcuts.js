@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { useEffect } from '@wordpress/element';
-import { useDispatch } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { BlockEditorKeyboardShortcuts } from '@wordpress/block-editor';
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { isAppleOS } from '@wordpress/keycodes';
+import { useEffect } from '@gutenberg/element';
+import { useDispatch } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { BlockEditorKeyboardShortcuts } from '@gutenberg/block-editor';
+import { store as keyboardShortcutsStore } from '@gutenberg/keyboard-shortcuts';
+import { isAppleOS } from '@gutenberg/keycodes';
 
 function EditorKeyboardShortcutsRegister() {
 	// Registering the shortcuts.

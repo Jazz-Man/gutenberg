@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch } from '@wordpress/data';
-import { cloneBlock } from '@wordpress/blocks';
+import { useDispatch } from '@gutenberg/data';
+import { cloneBlock } from '@gutenberg/blocks';
 import {
 	VisuallyHidden,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
-import { useState } from '@wordpress/element';
-import { useInstanceId } from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
+import { useState } from '@gutenberg/element';
+import { useInstanceId } from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

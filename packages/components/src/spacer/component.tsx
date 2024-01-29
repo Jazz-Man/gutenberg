@@ -29,7 +29,7 @@ function UnconnectedSpacer(
  * or a literal CSS value string.
  *
  * ```jsx
- * import { Spacer } from `@wordpress/components`
+ * import { Spacer } from `@gutenberg/components`
  *
  * function Example() {
  *   return (

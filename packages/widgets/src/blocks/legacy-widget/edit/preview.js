@@ -6,11 +6,11 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useRefEffect } from '@wordpress/compose';
-import { useEffect, useState } from '@wordpress/element';
-import { Disabled, Placeholder, Spinner } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import apiFetch from '@wordpress/api-fetch';
+import { useRefEffect } from '@gutenberg/compose';
+import { useEffect, useState } from '@gutenberg/element';
+import { Disabled, Placeholder, Spinner } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import apiFetch from '@gutenberg/api-fetch';
 
 export default function Preview( { idBase, instance, isVisible } ) {
 	const [ isLoaded, setIsLoaded ] = useState( false );

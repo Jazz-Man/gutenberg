@@ -6,10 +6,10 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Component, Fragment } from '@wordpress/element';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
-import { PanelBody, TextControl } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { Component, Fragment } from '@gutenberg/element';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
+import { PanelBody, TextControl } from '@gutenberg/components';
 
 /**
  * Internal dependencies

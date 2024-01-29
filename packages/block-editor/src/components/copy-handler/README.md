@@ -15,7 +15,7 @@ Concretely, it handles the display of success messages and takes care of copying
 Adds block-level copy-and-paste support to the editor.
 
 ```jsx
-import { BlockList, CopyHandler } from '@wordpress/block-editor';
+import { BlockList, CopyHandler } from '@gutenberg/block-editor';
 
 const MyCopyHandler = () => (
 	<CopyHandler>

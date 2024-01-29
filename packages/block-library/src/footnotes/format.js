@@ -6,16 +6,16 @@ import { v4 as createId } from 'uuid';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { formatListNumbered as icon } from '@wordpress/icons';
-import { insertObject } from '@wordpress/rich-text';
+import { __ } from '@gutenberg/i18n';
+import { formatListNumbered as icon } from '@gutenberg/icons';
+import { insertObject } from '@gutenberg/rich-text';
 import {
 	RichTextToolbarButton,
 	store as blockEditorStore,
 	privateApis,
-} from '@wordpress/block-editor';
-import { useSelect, useDispatch, useRegistry } from '@wordpress/data';
-import { createBlock, store as blocksStore } from '@wordpress/blocks';
+} from '@gutenberg/block-editor';
+import { useSelect, useDispatch, useRegistry } from '@gutenberg/data';
+import { createBlock, store as blocksStore } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

@@ -7,7 +7,7 @@ import { css } from '@emotion/react';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
+import { useInstanceId } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -25,8 +25,8 @@ import { space } from '../utils/space';
  * ToggleControl is used to generate a toggle user interface.
  *
  * ```jsx
- * import { ToggleControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { ToggleControl } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyToggleControl = () => {
  *   const [ value, setValue ] = useState( false );

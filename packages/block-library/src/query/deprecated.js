@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { createBlock } from '@wordpress/blocks';
+import { createBlock } from '@gutenberg/blocks';
 import {
 	InnerBlocks,
 	useInnerBlocksProps,
 	useBlockProps,
 	privateApis as blockEditorPrivateApis,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

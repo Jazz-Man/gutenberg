@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { SVG, Path } from '@wordpress/components';
+import { SVG, Path } from '@gutenberg/components';
 
 export default (
 	<SVG

@@ -6,9 +6,9 @@ import createSelector from 'rememo';
 /**
  * WordPress dependencies
  */
-import { createRegistrySelector } from '@wordpress/data';
-import { addQueryArgs } from '@wordpress/url';
-import deprecated from '@wordpress/deprecated';
+import { createRegistrySelector } from '@gutenberg/data';
+import { addQueryArgs } from '@gutenberg/url';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies
@@ -23,7 +23,7 @@ import {
 	isNumericID,
 } from './utils';
 import type * as ET from './entity-types';
-import type { UndoManager } from '@wordpress/undo-manager';
+import type { UndoManager } from '@gutenberg/undo-manager';
 
 // This is an incomplete, high-level approximation of the State type.
 // It makes the selectors slightly more safe, but is intended to evolve

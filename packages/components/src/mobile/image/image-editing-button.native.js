@@ -6,8 +6,8 @@ import { TouchableWithoutFeedback, View, Platform } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Icon } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { Icon } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

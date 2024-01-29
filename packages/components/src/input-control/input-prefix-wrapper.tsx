@@ -30,7 +30,7 @@ function UnconnectedInputControlPrefixWrapper(
  * import {
  *   __experimentalInputControl as InputControl,
  *   __experimentalInputControlPrefixWrapper as InputControlPrefixWrapper,
- * } from '@wordpress/components';
+ * } from '@gutenberg/components';
  *
  * <InputControl
  *   prefix={<InputControlPrefixWrapper>@</InputControlPrefixWrapper>}

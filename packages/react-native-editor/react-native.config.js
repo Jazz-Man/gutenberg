@@ -5,10 +5,10 @@ const path = require( 'path' );
 
 module.exports = {
 	dependencies: {
-		'@wordpress/react-native-bridge': {
+		'@gutenberg/react-native-bridge': {
 			root: path.resolve( __dirname, '../react-native-bridge' ),
 		},
-		'@wordpress/react-native-aztec': {
+		'@gutenberg/react-native-aztec': {
 			root: path.resolve( __dirname, '../react-native-aztec' ),
 		},
 	},

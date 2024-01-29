@@ -8,8 +8,8 @@ import {
 	__experimentalSpacer as Spacer,
 	__experimentalHStack as HStack,
 	Button,
-} from '@wordpress/components';
-import { chevronLeft } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { chevronLeft } from '@gutenberg/icons';
 
 function TabPanelLayout( {
 	title,

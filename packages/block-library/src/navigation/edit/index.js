@@ -12,7 +12,7 @@ import {
 	useEffect,
 	useRef,
 	Platform,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 import {
 	InspectorControls,
 	useBlockProps,
@@ -26,10 +26,10 @@ import {
 	__experimentalColorGradientSettingsDropdown as ColorGradientSettingsDropdown,
 	__experimentalUseMultipleOriginColorsAndGradients as useMultipleOriginColorsAndGradients,
 	useBlockEditingMode,
-} from '@wordpress/block-editor';
-import { EntityProvider, store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/block-editor';
+import { EntityProvider, store as coreStore } from '@gutenberg/core-data';
 
-import { useDispatch, useSelect } from '@wordpress/data';
+import { useDispatch, useSelect } from '@gutenberg/data';
 import {
 	PanelBody,
 	ToggleControl,
@@ -38,11 +38,11 @@ import {
 	Button,
 	Spinner,
 	Notice,
-} from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { speak } from '@wordpress/a11y';
-import { close, Icon } from '@wordpress/icons';
-import { useInstanceId, useMediaQuery } from '@wordpress/compose';
+} from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { speak } from '@gutenberg/a11y';
+import { close, Icon } from '@gutenberg/icons';
+import { useInstanceId, useMediaQuery } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

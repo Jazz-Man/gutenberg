@@ -7,7 +7,7 @@ import { press, click } from '@ariakit/test';
 /**
  * WordPress dependencies
  */
-import { useEffect, useState } from '@wordpress/element';
+import { useEffect, useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -146,7 +146,7 @@ describe( 'Tabs', () => {
 		originalGetClientRects = window.HTMLElement.prototype.getClientRects;
 		// Mocking `getClientRects()` is necessary to pass a check performed by
 		// the `focus.tabbable.find()` and by the `focus.focusable.find()` functions
-		// from the `@wordpress/dom` package.
+		// from the `@gutenberg/dom` package.
 		// @ts-expect-error We're not trying to comply to the DOM spec, only mocking
 		window.HTMLElement.prototype.getClientRects = function () {
 			return [ 'trick-jsdom-into-having-size-for-element-rect' ];

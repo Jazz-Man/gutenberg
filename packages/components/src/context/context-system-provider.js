@@ -14,8 +14,8 @@ import {
 	useRef,
 	useMemo,
 	memo,
-} from '@wordpress/element';
-import warn from '@wordpress/warning';
+} from '@gutenberg/element';
+import warn from '@gutenberg/warning';
 
 /**
  * Internal dependencies

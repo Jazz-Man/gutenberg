@@ -6,9 +6,9 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { speak } from '@wordpress/a11y';
-import { check, moreVertical, plus } from '@wordpress/icons';
-import { __, _x, sprintf } from '@wordpress/i18n';
+import { speak } from '@gutenberg/a11y';
+import { check, moreVertical, plus } from '@gutenberg/icons';
+import { __, _x, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

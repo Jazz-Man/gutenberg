@@ -7,7 +7,7 @@ Default [Jest](https://jestjs.io/) preset for WordPress development.
 Install the module
 
 ```bash
-npm install @wordpress/jest-preset-default --save-dev
+npm install @gutenberg/jest-preset-default --save-dev
 ```
 
 **Note**: This package requires Node.js 14.0.0 or later. It is not compatible with older versions.
@@ -18,7 +18,7 @@ npm install @wordpress/jest-preset-default --save-dev
 
 ```json
 {
-	"preset": "@wordpress/jest-preset-default"
+	"preset": "@gutenberg/jest-preset-default"
 }
 ```
 

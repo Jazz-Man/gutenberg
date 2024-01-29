@@ -7,14 +7,14 @@ import {
 	createBlock,
 	findTransform,
 	getBlockTransforms,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 import {
 	documentHasSelection,
 	documentHasUncollapsedSelection,
 	__unstableStripHTML as stripHTML,
-} from '@wordpress/dom';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useRefEffect } from '@wordpress/compose';
+} from '@gutenberg/dom';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useRefEffect } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

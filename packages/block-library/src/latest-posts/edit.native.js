@@ -6,24 +6,24 @@ import { TouchableWithoutFeedback, View, Text } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { compose, withPreferredColorScheme } from '@wordpress/compose';
-import { withDispatch, withSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { postList as icon } from '@wordpress/icons';
+import { Component } from '@gutenberg/element';
+import { compose, withPreferredColorScheme } from '@gutenberg/compose';
+import { withDispatch, withSelect } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { postList as icon } from '@gutenberg/icons';
 import {
 	InspectorControls,
 	BlockAlignmentControl,
-} from '@wordpress/block-editor';
-import apiFetch from '@wordpress/api-fetch';
+} from '@gutenberg/block-editor';
+import apiFetch from '@gutenberg/api-fetch';
 import {
 	Icon,
 	PanelBody,
 	ToggleControl,
 	RangeControl,
 	QueryControls,
-} from '@wordpress/components';
-import { store as blocksStore } from '@wordpress/blocks';
+} from '@gutenberg/components';
+import { store as blocksStore } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

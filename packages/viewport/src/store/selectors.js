@@ -8,9 +8,9 @@
  * @example
  *
  * ```js
- * import { store as viewportStore } from '@wordpress/viewport';
- * import { useSelect } from '@wordpress/data';
- * import { __ } from '@wordpress/i18n';
+ * import { store as viewportStore } from '@gutenberg/viewport';
+ * import { useSelect } from '@gutenberg/data';
+ * import { __ } from '@gutenberg/i18n';
  * const ExampleComponent = () => {
  *     const isMobile = useSelect(
  *         ( select ) => select( viewportStore ).isViewportMatch( '< small' ),

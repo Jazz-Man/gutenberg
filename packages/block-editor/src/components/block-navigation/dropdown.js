@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * WordPress dependencies
  */
-import { Button, Dropdown } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { forwardRef } from '@wordpress/element';
-import { listView } from '@wordpress/icons';
+import { Button, Dropdown } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { forwardRef } from '@gutenberg/element';
+import { listView } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

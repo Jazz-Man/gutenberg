@@ -1,18 +1,18 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch, useSelect } from '@wordpress/data';
+import { useDispatch, useSelect } from '@gutenberg/data';
 import {
 	InnerBlocks,
 	useBlockProps,
 	InspectorControls,
 	useInnerBlocksProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { SelectControl } from '@wordpress/components';
-import { useRef } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { View } from '@wordpress/primitives';
+} from '@gutenberg/block-editor';
+import { SelectControl } from '@gutenberg/components';
+import { useRef } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { View } from '@gutenberg/primitives';
 
 /**
  * Internal dependencies

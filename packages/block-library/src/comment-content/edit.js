@@ -6,15 +6,15 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { _x } from '@wordpress/i18n';
-import { RawHTML } from '@wordpress/element';
-import { Disabled } from '@wordpress/components';
-import { useEntityProp } from '@wordpress/core-data';
+import { _x } from '@gutenberg/i18n';
+import { RawHTML } from '@gutenberg/element';
+import { Disabled } from '@gutenberg/components';
+import { useEntityProp } from '@gutenberg/core-data';
 import {
 	AlignmentControl,
 	BlockControls,
 	useBlockProps,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 /**
  * Renders the `core/comment-content` block on the editor.

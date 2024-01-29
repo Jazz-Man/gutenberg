@@ -7,9 +7,9 @@ import memoize from 'memize';
 /**
  * WordPress dependencies
  */
-import { pipe } from '@wordpress/compose';
-import { applyFilters } from '@wordpress/hooks';
-import { RichTextData } from '@wordpress/rich-text';
+import { pipe } from '@gutenberg/compose';
+import { applyFilters } from '@gutenberg/hooks';
+import { RichTextData } from '@gutenberg/rich-text';
 
 /**
  * Internal dependencies

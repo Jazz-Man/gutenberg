@@ -7,8 +7,8 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { createRef } from '@wordpress/element';
-import { plusCircle } from '@wordpress/icons';
+import { createRef } from '@gutenberg/element';
+import { plusCircle } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

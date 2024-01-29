@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { createInterpolateElement } from '@wordpress/element';
-import { addQueryArgs } from '@wordpress/url';
+import { __ } from '@gutenberg/i18n';
+import { createInterpolateElement } from '@gutenberg/element';
+import { addQueryArgs } from '@gutenberg/url';
 
 const CreateNewPostLink = ( {
 	attributes: { query: { postType } = {} } = {},

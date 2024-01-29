@@ -6,8 +6,8 @@ import { TextInput, Platform, Dimensions } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { getPxFromCssUnit } from '@wordpress/components';
+import { Component } from '@gutenberg/element';
+import { getPxFromCssUnit } from '@gutenberg/components';
 
 /**
  * Internal dependencies

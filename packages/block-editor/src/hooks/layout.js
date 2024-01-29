@@ -6,18 +6,18 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { createHigherOrderComponent, useInstanceId } from '@wordpress/compose';
-import { addFilter } from '@wordpress/hooks';
-import { getBlockSupport, hasBlockSupport } from '@wordpress/blocks';
-import { useSelect } from '@wordpress/data';
+import { createHigherOrderComponent, useInstanceId } from '@gutenberg/compose';
+import { addFilter } from '@gutenberg/hooks';
+import { getBlockSupport, hasBlockSupport } from '@gutenberg/blocks';
+import { useSelect } from '@gutenberg/data';
 import {
 	Button,
 	ButtonGroup,
 	ToggleControl,
 	PanelBody,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

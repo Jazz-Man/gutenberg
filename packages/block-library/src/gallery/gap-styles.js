@@ -4,7 +4,7 @@
 import {
 	__experimentalGetGapCSSValue as getGapCSSValue,
 	privateApis as blockEditorPrivateApis,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

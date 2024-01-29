@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 import {
 	BlockSettingsMenuControls,
 	useBlockProps,
@@ -10,11 +10,11 @@ import {
 	__experimentalRecursionProvider as RecursionProvider,
 	__experimentalUseHasRecursion as useHasRecursion,
 	InspectorControls,
-} from '@wordpress/block-editor';
-import { Spinner, Modal, MenuItem } from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { store as coreStore } from '@wordpress/core-data';
-import { useState } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { Spinner, Modal, MenuItem } from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

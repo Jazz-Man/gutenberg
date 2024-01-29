@@ -7,9 +7,9 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { forwardRef, useContext } from '@wordpress/element';
-import { Icon, check } from '@wordpress/icons';
+import { useInstanceId } from '@gutenberg/compose';
+import { forwardRef, useContext } from '@gutenberg/element';
+import { Icon, check } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

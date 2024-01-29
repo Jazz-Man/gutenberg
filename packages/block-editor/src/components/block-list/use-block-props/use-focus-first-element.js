@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useRef } from '@wordpress/element';
+import { useEffect, useRef } from '@gutenberg/element';
 import {
 	focus,
 	isFormElement,
 	isTextField,
 	placeCaretAtHorizontalEdge,
-} from '@wordpress/dom';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/dom';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies
@@ -16,7 +16,7 @@ import { useSelect } from '@wordpress/data';
 import { isInsideRootBlock } from '../../../utils/dom';
 import { store as blockEditorStore } from '../../../store';
 
-/** @typedef {import('@wordpress/element').RefObject} RefObject */
+/** @typedef {import('@gutenberg/element').RefObject} RefObject */
 
 /**
  * Transitions focus to the block or inner tabbable when the block becomes

@@ -2,8 +2,8 @@
 /**
  * WordPress dependencies
  */
-import { serialize, parse, createBlock } from '@wordpress/blocks';
-import { addWidgetIdToBlock } from '@wordpress/widgets';
+import { serialize, parse, createBlock } from '@gutenberg/blocks';
+import { addWidgetIdToBlock } from '@gutenberg/widgets';
 
 /**
  * Convert settingId to widgetId.

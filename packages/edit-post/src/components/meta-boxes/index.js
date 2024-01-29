@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useRegistry } from '@wordpress/data';
-import { useEffect } from '@wordpress/element';
-import { store as editorStore } from '@wordpress/editor';
+import { useSelect, useRegistry } from '@gutenberg/data';
+import { useEffect } from '@gutenberg/element';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch, useSelect } from '@wordpress/data';
-import { switchToBlockType, store as blocksStore } from '@wordpress/blocks';
-import { ToolbarButton, ToolbarGroup } from '@wordpress/components';
-import { group, row, stack } from '@wordpress/icons';
-import { _x } from '@wordpress/i18n';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { switchToBlockType, store as blocksStore } from '@gutenberg/blocks';
+import { ToolbarButton, ToolbarGroup } from '@gutenberg/components';
+import { group, row, stack } from '@gutenberg/icons';
+import { _x } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

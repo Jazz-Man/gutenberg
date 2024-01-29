@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { compose } from '@wordpress/compose';
-import { withSelect, withDispatch } from '@wordpress/data';
-import { ifViewportMatches } from '@wordpress/viewport';
-import { store as editorStore } from '@wordpress/editor';
-import { privateApis as preferencesPrivateApis } from '@wordpress/preferences';
+import { compose } from '@gutenberg/compose';
+import { withSelect, withDispatch } from '@gutenberg/data';
+import { ifViewportMatches } from '@gutenberg/viewport';
+import { store as editorStore } from '@gutenberg/editor';
+import { privateApis as preferencesPrivateApis } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

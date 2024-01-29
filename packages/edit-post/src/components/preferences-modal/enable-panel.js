@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { compose, ifCondition } from '@wordpress/compose';
-import { withSelect, withDispatch } from '@wordpress/data';
-import { store as editorStore } from '@wordpress/editor';
-import { privateApis as preferencesPrivateApis } from '@wordpress/preferences';
+import { compose, ifCondition } from '@gutenberg/compose';
+import { withSelect, withDispatch } from '@gutenberg/data';
+import { store as editorStore } from '@gutenberg/editor';
+import { privateApis as preferencesPrivateApis } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

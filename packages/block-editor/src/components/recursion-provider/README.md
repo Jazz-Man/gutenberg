@@ -1,8 +1,8 @@
 # RecursionProvider
 
-According to Gutenberg's block rendering architecture, any block type capable of recursion should be responsible for handling its own infinite loops. 
+According to Gutenberg's block rendering architecture, any block type capable of recursion should be responsible for handling its own infinite loops.
 
-To help with detecting infinite loops on the client, the `RecursionProvider` component and the `useHasRecursion()` hook are used to identify if a block has already been rendered. 
+To help with detecting infinite loops on the client, the `RecursionProvider` component and the `useHasRecursion()` hook are used to identify if a block has already been rendered.
 
 ## Usage
 
@@ -15,8 +15,8 @@ import {
 	__experimentalUseHasRecursion as useHasRecursion,
 	useBlockProps,
 	Warning,
-} from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
 
 export default function MyRecursiveBlockEdit( { attributes: { ref } } ) {
 	const hasAlreadyRendered = useHasRecursion( ref );

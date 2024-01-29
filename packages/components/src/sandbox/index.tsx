@@ -6,8 +6,8 @@ import {
 	useRef,
 	useState,
 	useEffect,
-} from '@wordpress/element';
-import { useFocusableIframe, useMergeRefs } from '@wordpress/compose';
+} from '@gutenberg/element';
+import { useFocusableIframe, useMergeRefs } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -118,7 +118,7 @@ const style = `
  * This component provides an isolated environment for arbitrary HTML via iframes.
  *
  * ```jsx
- * import { SandBox } from '@wordpress/components';
+ * import { SandBox } from '@gutenberg/components';
  *
  * const MySandBox = () => (
  * 	<SandBox html="<p>Content</p>" title="SandBox" type="embed" />

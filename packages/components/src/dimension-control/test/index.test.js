@@ -7,7 +7,7 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { plus } from '@wordpress/icons';
+import { plus } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

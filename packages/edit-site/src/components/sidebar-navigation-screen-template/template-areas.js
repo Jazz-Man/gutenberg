@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
 import {
 	__experimentalTruncate as Truncate,
 	__experimentalItemGroup as ItemGroup,
-} from '@wordpress/components';
-import { store as editorStore } from '@wordpress/editor';
-import { useMemo } from '@wordpress/element';
-import { decodeEntities } from '@wordpress/html-entities';
+} from '@gutenberg/components';
+import { store as editorStore } from '@gutenberg/editor';
+import { useMemo } from '@gutenberg/element';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Internal dependencies

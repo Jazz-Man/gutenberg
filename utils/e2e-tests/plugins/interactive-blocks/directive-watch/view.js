@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { store, directive } from '@wordpress/interactivity';
+import { store, directive } from '@gutenberg/interactivity';
 
 // Fake `data-wp-show-mock` directive to test when things are removed from the
 // DOM.  Replace with `data-wp-show` when it's ready.

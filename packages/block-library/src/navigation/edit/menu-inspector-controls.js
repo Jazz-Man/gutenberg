@@ -5,15 +5,15 @@ import {
 	privateApis as blockEditorPrivateApis,
 	InspectorControls,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	PanelBody,
 	__experimentalHStack as HStack,
 	__experimentalHeading as Heading,
 	Spinner,
-} from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __, sprintf } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

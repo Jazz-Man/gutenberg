@@ -6,7 +6,7 @@ import classNames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	AlignmentControl,
 	BlockControls,
@@ -14,12 +14,12 @@ import {
 	useBlockProps,
 	useInnerBlocksProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { BlockQuotation } from '@wordpress/components';
-import { useDispatch, useSelect, useRegistry } from '@wordpress/data';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
-import { Platform, useEffect } from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
+} from '@gutenberg/block-editor';
+import { BlockQuotation } from '@gutenberg/components';
+import { useDispatch, useSelect, useRegistry } from '@gutenberg/data';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
+import { Platform, useEffect } from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

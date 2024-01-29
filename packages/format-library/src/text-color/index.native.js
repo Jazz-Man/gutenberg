@@ -6,21 +6,21 @@ import { StyleSheet, View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useCallback, useMemo, useState } from '@wordpress/element';
-import { BlockControls, useSettings } from '@wordpress/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { useCallback, useMemo, useState } from '@gutenberg/element';
+import { BlockControls, useSettings } from '@gutenberg/block-editor';
 import {
 	ToolbarGroup,
 	ToolbarButton,
 	useMobileGlobalStylesColors,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	Icon,
 	color as colorIcon,
 	textColor as textColorIcon,
-} from '@wordpress/icons';
-import { removeFormat } from '@wordpress/rich-text';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
+} from '@gutenberg/icons';
+import { removeFormat } from '@gutenberg/rich-text';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

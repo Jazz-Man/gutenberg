@@ -10,7 +10,7 @@ import {
 	saveDraft,
 	toggleOfflineMode,
 	canvas,
-} from '@wordpress/e2e-test-utils';
+} from '@gutenberg/e2e-test-utils';
 
 // Constant to override editor preference
 const AUTOSAVE_INTERVAL_SECONDS = 5;

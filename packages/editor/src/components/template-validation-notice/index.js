@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { Notice } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { withSelect, withDispatch } from '@wordpress/data';
-import { compose } from '@wordpress/compose';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { Notice } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { withSelect, withDispatch } from '@gutenberg/data';
+import { compose } from '@gutenberg/compose';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 function TemplateValidationNotice( { isValid, ...props } ) {
 	if ( isValid ) {

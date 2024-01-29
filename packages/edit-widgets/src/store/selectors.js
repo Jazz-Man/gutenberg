@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { createRegistrySelector } from '@wordpress/data';
-import { getWidgetIdFromBlock } from '@wordpress/widgets';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { createRegistrySelector } from '@gutenberg/data';
+import { getWidgetIdFromBlock } from '@gutenberg/widgets';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

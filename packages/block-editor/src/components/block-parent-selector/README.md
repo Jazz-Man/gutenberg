@@ -15,7 +15,7 @@ In practice the BlockParentSelector component renders a <ToolbarButton /> compon
 Renders block parent selector icon in a <ToolbarButton /> component.
 
 ```jsx
-import { BlockParentSelector } from '@wordpress/block-editor';
+import { BlockParentSelector } from '@gutenberg/block-editor';
 
 const MyBlockParentSelector = () => (
 	<BlockParentSelector clientIds={ blockClientIds } />

@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Button } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { Button } from '@gutenberg/components';
 import {
 	chevronRight,
 	chevronLeft,
 	grid,
 	stretchFullWidth,
-} from '@wordpress/icons';
+} from '@gutenberg/icons';
 
 /**
  * Internal dependencies

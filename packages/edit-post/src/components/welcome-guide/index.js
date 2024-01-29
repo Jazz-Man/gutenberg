@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { store as editorStore } from '@wordpress/editor';
+import { useSelect } from '@gutenberg/data';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

@@ -11,12 +11,12 @@ import {
 	Card,
 	CardDivider,
 	CardMedia,
-} from '@wordpress/components';
-import { isRTL, __ } from '@wordpress/i18n';
-import { chevronLeft, chevronRight } from '@wordpress/icons';
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
+} from '@gutenberg/components';
+import { isRTL, __ } from '@gutenberg/i18n';
+import { chevronLeft, chevronRight } from '@gutenberg/icons';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

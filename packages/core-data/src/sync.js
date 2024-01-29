@@ -5,7 +5,7 @@ import {
 	createSyncProvider,
 	connectIndexDb,
 	createWebRTCConnection,
-} from '@wordpress/sync';
+} from '@gutenberg/sync';
 
 let syncProvider;
 

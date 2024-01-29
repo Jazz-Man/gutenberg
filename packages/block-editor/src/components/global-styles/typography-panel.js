@@ -6,9 +6,9 @@ import {
 	__experimentalNumberControl as NumberControl,
 	__experimentalToolsPanel as ToolsPanel,
 	__experimentalToolsPanelItem as ToolsPanelItem,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useCallback } from '@wordpress/element';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useCallback } from '@gutenberg/element';
 
 /**
  * Internal dependencies

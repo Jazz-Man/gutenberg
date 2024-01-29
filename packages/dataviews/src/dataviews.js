@@ -4,8 +4,8 @@
 import {
 	__experimentalVStack as VStack,
 	__experimentalHStack as HStack,
-} from '@wordpress/components';
-import { useMemo, useState, useCallback, useEffect } from '@wordpress/element';
+} from '@gutenberg/components';
+import { useMemo, useState, useCallback, useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies

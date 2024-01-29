@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
-import { getQueryArgs } from '@wordpress/url';
+import { __ } from '@gutenberg/i18n';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
+import { getQueryArgs } from '@gutenberg/url';
 
 /**
  * Internal dependencies

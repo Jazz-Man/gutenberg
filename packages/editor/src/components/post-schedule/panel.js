@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { Button, Dropdown } from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { useState, useMemo } from '@wordpress/element';
+import { Button, Dropdown } from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useState, useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

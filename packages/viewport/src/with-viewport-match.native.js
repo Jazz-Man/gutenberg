@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { createHigherOrderComponent } from '@wordpress/compose';
-import { withSelect } from '@wordpress/data';
+import { createHigherOrderComponent } from '@gutenberg/compose';
+import { withSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

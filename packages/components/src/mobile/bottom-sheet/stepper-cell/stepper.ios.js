@@ -6,8 +6,8 @@ import { Text, TouchableOpacity, View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { withPreferredColorScheme } from '@wordpress/compose';
-import { Icon, plus, reset } from '@wordpress/icons';
+import { withPreferredColorScheme } from '@gutenberg/compose';
+import { Icon, plus, reset } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

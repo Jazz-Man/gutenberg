@@ -560,7 +560,7 @@ _Example of `data-wp-run` directive_
   <summary><em>See store used with the directive above</em></summary>
 
 ```js
-import { store, useState, useEffect } from '@wordpress/interactivity';
+import { store, useState, useEffect } from '@gutenberg/interactivity';
 
 // Unlike `data-wp-init` and `data-wp-watch`, you can use any hooks inside
 // `data-wp-run` callbacks.
@@ -808,11 +808,11 @@ This approach enables some functionalities that make directives flexible and pow
 
 *In the `view.js` file of each block* we can define both the state and the elements of the store referencing functions like actions, side effects or derived state.
 
-The `store` method used to set the store in javascript can be imported from `@wordpress/interactivity`.
+The `store` method used to set the store in javascript can be imported from `@gutenberg/interactivity`.
 
 ```js
 // store
-import { store, getContext } from '@wordpress/interactivity';
+import { store, getContext } from '@gutenberg/interactivity';
 
 store( "myPlugin", {
   actions: {

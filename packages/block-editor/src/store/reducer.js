@@ -6,9 +6,9 @@ import fastDeepEqual from 'fast-deep-equal/es6';
 /**
  * WordPress dependencies
  */
-import { pipe } from '@wordpress/compose';
-import { combineReducers, select } from '@wordpress/data';
-import { store as blocksStore } from '@wordpress/blocks';
+import { pipe } from '@gutenberg/compose';
+import { combineReducers, select } from '@gutenberg/data';
+import { store as blocksStore } from '@gutenberg/blocks';
 /**
  * Internal dependencies
  */

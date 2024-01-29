@@ -16,9 +16,9 @@ import {
 	Spinner,
 	ToggleControl,
 	ToolbarGroup,
-} from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { dateI18n, format, getSettings } from '@wordpress/date';
+} from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { dateI18n, format, getSettings } from '@gutenberg/date';
 import {
 	InspectorControls,
 	BlockAlignmentToolbar,
@@ -26,13 +26,13 @@ import {
 	__experimentalImageSizeControl as ImageSizeControl,
 	useBlockProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { pin, list, grid } from '@wordpress/icons';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as noticeStore } from '@wordpress/notices';
-import { useInstanceId } from '@wordpress/compose';
-import { createInterpolateElement } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { pin, list, grid } from '@gutenberg/icons';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as noticeStore } from '@gutenberg/notices';
+import { useInstanceId } from '@gutenberg/compose';
+import { createInterpolateElement } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { RichText, useBlockProps } from '@wordpress/block-editor';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
+import { __ } from '@gutenberg/i18n';
+import { RichText, useBlockProps } from '@gutenberg/block-editor';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
 
 export default function CodeEdit( {
 	attributes,

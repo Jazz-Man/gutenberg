@@ -12,15 +12,15 @@ import {
 	Notice,
 	TextControl,
 	__experimentalHStack as HStack,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useRef, useState, useEffect } from '@wordpress/element';
-import { focus } from '@wordpress/dom';
-import { ENTER } from '@wordpress/keycodes';
-import { isShallowEqualObjects } from '@wordpress/is-shallow-equal';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as preferencesStore } from '@wordpress/preferences';
-import { keyboardReturn } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useRef, useState, useEffect } from '@gutenberg/element';
+import { focus } from '@gutenberg/dom';
+import { ENTER } from '@gutenberg/keycodes';
+import { isShallowEqualObjects } from '@gutenberg/is-shallow-equal';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as preferencesStore } from '@gutenberg/preferences';
+import { keyboardReturn } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

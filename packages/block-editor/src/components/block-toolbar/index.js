@@ -6,17 +6,17 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { useRef } from '@wordpress/element';
-import { useViewportMatch } from '@wordpress/compose';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { useRef } from '@gutenberg/element';
+import { useViewportMatch } from '@gutenberg/compose';
 import {
 	getBlockType,
 	hasBlockSupport,
 	isReusableBlock,
 	isTemplatePart,
-} from '@wordpress/blocks';
-import { ToolbarGroup } from '@wordpress/components';
+} from '@gutenberg/blocks';
+import { ToolbarGroup } from '@gutenberg/components';
 
 /**
  * Internal dependencies

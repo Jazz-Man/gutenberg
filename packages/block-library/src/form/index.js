@@ -10,7 +10,7 @@ import variations from './variations';
 /**
  * WordPress dependencies
  */
-import { addFilter } from '@wordpress/hooks';
+import { addFilter } from '@gutenberg/hooks';
 
 const { name } = metadata;
 

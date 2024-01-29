@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useEffect } from '@wordpress/element';
+import { useEffect } from '@gutenberg/element';
 
 const FullscreenMode = ( { isActive } ) => {
 	useEffect( () => {

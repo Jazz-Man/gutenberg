@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useEffect } from '@wordpress/element';
-import { useDispatch } from '@wordpress/data';
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { __ } from '@wordpress/i18n';
+import { useEffect } from '@gutenberg/element';
+import { useDispatch } from '@gutenberg/data';
+import { store as keyboardShortcutsStore } from '@gutenberg/keyboard-shortcuts';
+import { __ } from '@gutenberg/i18n';
 
 function KeyboardShortcuts() {
 	return null;

@@ -6,8 +6,8 @@ import type { Meta, StoryFn } from '@storybook/react';
 /**
  * WordPress dependencies
  */
-import { SVG, Path } from '@wordpress/primitives';
-import { wordpress } from '@wordpress/icons';
+import { SVG, Path } from '@gutenberg/primitives';
+import { wordpress } from '@gutenberg/icons';
 
 /**
  * Internal dependencies
@@ -80,7 +80,7 @@ WithAnSVG.args = {
 };
 
 /**
- * Although it's preferred to use icons from the `@wordpress/icons` package, Dashicons are still supported,
+ * Although it's preferred to use icons from the `@gutenberg/icons` package, Dashicons are still supported,
  * as long as you are in a context where the Dashicons stylesheet is loaded. To simulate that here,
  * use the Global CSS Injector in the Storybook toolbar at the top and select the "WordPress" preset.
  */

@@ -7,8 +7,8 @@ import { proxyMap } from 'valtio/utils';
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
-import isShallowEqual from '@wordpress/is-shallow-equal';
+import { useMemo } from '@gutenberg/element';
+import isShallowEqual from '@gutenberg/is-shallow-equal';
 
 /**
  * Internal dependencies

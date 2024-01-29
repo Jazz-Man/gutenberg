@@ -6,22 +6,22 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { Notice } from '@wordpress/components';
-import { useInstanceId, useViewportMatch } from '@wordpress/compose';
-import { store as preferencesStore } from '@wordpress/preferences';
+import { useSelect } from '@gutenberg/data';
+import { Notice } from '@gutenberg/components';
+import { useInstanceId, useViewportMatch } from '@gutenberg/compose';
+import { store as preferencesStore } from '@gutenberg/preferences';
 import {
 	BlockBreadcrumb,
 	BlockToolbar,
 	store as blockEditorStore,
 	privateApis as blockEditorPrivateApis,
 	BlockInspector,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	InterfaceSkeleton,
 	ComplementaryArea,
 	store as interfaceStore,
-} from '@wordpress/interface';
+} from '@gutenberg/interface';
 import {
 	EditorKeyboardShortcutsRegister,
 	EditorKeyboardShortcuts,
@@ -29,9 +29,9 @@ import {
 	EditorSnackbars,
 	privateApis as editorPrivateApis,
 	store as editorStore,
-} from '@wordpress/editor';
-import { __, sprintf } from '@wordpress/i18n';
-import { store as coreDataStore } from '@wordpress/core-data';
+} from '@gutenberg/editor';
+import { __, sprintf } from '@gutenberg/i18n';
+import { store as coreDataStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

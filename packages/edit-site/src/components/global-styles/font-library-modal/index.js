@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	Modal,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
-import { useContext } from '@wordpress/element';
+} from '@gutenberg/components';
+import { useContext } from '@gutenberg/element';
 
 /**
  * Internal dependencies

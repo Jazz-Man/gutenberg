@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { store as blocksStore } from '@wordpress/blocks';
-import { withSelect, withDispatch } from '@wordpress/data';
-import { SearchControl, Button } from '@wordpress/components';
-import { __, _n, sprintf } from '@wordpress/i18n';
-import { useEffect, useState } from '@wordpress/element';
-import { useDebounce, compose } from '@wordpress/compose';
-import { speak } from '@wordpress/a11y';
-import { store as preferencesStore } from '@wordpress/preferences';
+import { store as blocksStore } from '@gutenberg/blocks';
+import { withSelect, withDispatch } from '@gutenberg/data';
+import { SearchControl, Button } from '@gutenberg/components';
+import { __, _n, sprintf } from '@gutenberg/i18n';
+import { useEffect, useState } from '@gutenberg/element';
+import { useDebounce, compose } from '@gutenberg/compose';
+import { speak } from '@gutenberg/a11y';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

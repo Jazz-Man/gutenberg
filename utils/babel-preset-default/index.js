@@ -40,7 +40,7 @@ module.exports = ( api ) => {
 			opts.targets = {
 				browsers:
 					localBrowserslistConfig.defaults ||
-					require( '@wordpress/browserslist-config' ),
+					require( '@gutenberg/browserslist-config' ),
 			};
 		}
 
@@ -74,9 +74,9 @@ module.exports = ( api ) => {
 			require.resolve( '@babel/preset-typescript' ),
 		],
 		plugins: [
-			require.resolve( '@wordpress/warning/babel-plugin' ),
+			require.resolve( '@gutenberg/warning/babel-plugin' ),
 			[
-				require.resolve( '@wordpress/babel-plugin-import-jsx-pragma' ),
+				require.resolve( '@gutenberg/babel-plugin-import-jsx-pragma' ),
 				{
 					scopeVariable: 'createElement',
 					scopeVariableFrag: 'Fragment',

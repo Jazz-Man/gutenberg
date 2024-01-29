@@ -7,10 +7,10 @@ import classnames from 'classnames';
  * WordPress dependencies
  */
 
-import { dragHandle } from '@wordpress/icons';
-import { ToolbarGroup, ToolbarItem, Button } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
+import { dragHandle } from '@gutenberg/icons';
+import { ToolbarGroup, ToolbarItem, Button } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

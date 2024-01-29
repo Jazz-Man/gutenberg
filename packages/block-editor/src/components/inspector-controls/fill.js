@@ -4,10 +4,10 @@
 import {
 	__experimentalStyleProvider as StyleProvider,
 	__experimentalToolsPanelContext as ToolsPanelContext,
-} from '@wordpress/components';
-import warning from '@wordpress/warning';
-import deprecated from '@wordpress/deprecated';
-import { useEffect, useContext } from '@wordpress/element';
+} from '@gutenberg/components';
+import warning from '@gutenberg/warning';
+import deprecated from '@gutenberg/deprecated';
+import { useEffect, useContext } from '@gutenberg/element';
 
 /**
  * Internal dependencies

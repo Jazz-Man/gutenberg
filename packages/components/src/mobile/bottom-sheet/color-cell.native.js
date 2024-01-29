@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Icon, chevronRight } from '@wordpress/icons';
-import { ColorIndicator } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { Icon, chevronRight } from '@gutenberg/icons';
+import { ColorIndicator } from '@gutenberg/components';
 /**
  * Internal dependencies
  */

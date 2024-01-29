@@ -6,10 +6,10 @@ import { View, Text, TouchableOpacity } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
-import { cloneElement, useCallback, useRef } from '@wordpress/element';
-import { Icon, plusCircleFilled } from '@wordpress/icons';
+import { __, sprintf } from '@gutenberg/i18n';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
+import { cloneElement, useCallback, useRef } from '@gutenberg/element';
+import { Icon, plusCircleFilled } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

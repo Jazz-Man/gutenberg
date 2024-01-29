@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { InnerBlocks } from '@wordpress/block-editor';
+import { InnerBlocks } from '@gutenberg/block-editor';
 
 const deprecated = [
 	{

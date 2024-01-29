@@ -21,9 +21,9 @@ import { CSS_UNITS, hasUnits, getAccessibleLabelForUnit } from './utils';
 /**
  * WordPress dependencies
  */
-import { useRef, useCallback, useMemo, memo } from '@wordpress/element';
-import { withPreferredColorScheme } from '@wordpress/compose';
-import { __, sprintf } from '@wordpress/i18n';
+import { useRef, useCallback, useMemo, memo } from '@gutenberg/element';
+import { withPreferredColorScheme } from '@gutenberg/compose';
+import { __, sprintf } from '@gutenberg/i18n';
 
 function UnitControl( {
 	currentInput,

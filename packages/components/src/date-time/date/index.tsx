@@ -21,10 +21,10 @@ import type { KeyboardEventHandler } from 'react';
 /**
  * WordPress dependencies
  */
-import { __, _n, sprintf, isRTL } from '@wordpress/i18n';
-import { arrowLeft, arrowRight } from '@wordpress/icons';
-import { dateI18n, getSettings } from '@wordpress/date';
-import { useState, useRef, useEffect } from '@wordpress/element';
+import { __, _n, sprintf, isRTL } from '@gutenberg/i18n';
+import { arrowLeft, arrowRight } from '@gutenberg/icons';
+import { dateI18n, getSettings } from '@gutenberg/date';
+import { useState, useRef, useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -46,8 +46,8 @@ import { TIMEZONELESS_FORMAT } from '../constants';
  * DatePicker is a React component that renders a calendar for date selection.
  *
  * ```jsx
- * import { DatePicker } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { DatePicker } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyDatePicker = () => {
  *   const [ date, setDate ] = useState( new Date() );

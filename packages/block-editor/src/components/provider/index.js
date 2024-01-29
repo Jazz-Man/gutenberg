@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch } from '@wordpress/data';
-import { useEffect } from '@wordpress/element';
-import { SlotFillProvider } from '@wordpress/components';
+import { useDispatch } from '@gutenberg/data';
+import { useEffect } from '@gutenberg/element';
+import { SlotFillProvider } from '@gutenberg/components';
 
 /**
  * Internal dependencies
@@ -15,7 +15,7 @@ import { BlockRefsProvider } from './block-refs-provider';
 import { unlock } from '../../lock-unlock';
 import KeyboardShortcuts from '../keyboard-shortcuts';
 
-/** @typedef {import('@wordpress/data').WPDataRegistry} WPDataRegistry */
+/** @typedef {import('@gutenberg/data').WPDataRegistry} WPDataRegistry */
 
 export const ExperimentalBlockEditorProvider = withRegistryProvider(
 	( props ) => {

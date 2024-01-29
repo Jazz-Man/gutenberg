@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { filterURLForDisplay, safeDecodeURIComponent } from '@wordpress/url';
+import { useSelect } from '@gutenberg/data';
+import { filterURLForDisplay, safeDecodeURIComponent } from '@gutenberg/url';
 
 /**
  * Internal dependencies

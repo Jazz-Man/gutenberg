@@ -9,8 +9,8 @@ import {
 	headingLevel5,
 	headingLevel6,
 	paragraph,
-} from '@wordpress/icons';
-import { Icon } from '@wordpress/components';
+} from '@gutenberg/icons';
+import { Icon } from '@gutenberg/components';
 
 /** @typedef {import('react').ComponentType} ComponentType */
 

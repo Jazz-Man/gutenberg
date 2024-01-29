@@ -6,10 +6,10 @@ import { ScrollView } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { store as blocksStore } from '@wordpress/blocks';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useMemo } from '@wordpress/element';
-import { _x } from '@wordpress/i18n';
+import { store as blocksStore } from '@gutenberg/blocks';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useMemo } from '@gutenberg/element';
+import { _x } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

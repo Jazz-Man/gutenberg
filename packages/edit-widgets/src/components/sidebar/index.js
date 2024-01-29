@@ -6,20 +6,20 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useEffect, Platform } from '@wordpress/element';
-import { isRTL, __, sprintf } from '@wordpress/i18n';
+import { useEffect, Platform } from '@gutenberg/element';
+import { isRTL, __, sprintf } from '@gutenberg/i18n';
 import {
 	ComplementaryArea,
 	store as interfaceStore,
-} from '@wordpress/interface';
+} from '@gutenberg/interface';
 import {
 	BlockInspector,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
-import { drawerLeft, drawerRight } from '@wordpress/icons';
-import { Button } from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
+import { drawerLeft, drawerRight } from '@gutenberg/icons';
+import { Button } from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
 
 const SIDEBAR_ACTIVE_BY_DEFAULT = Platform.select( {
 	web: true,

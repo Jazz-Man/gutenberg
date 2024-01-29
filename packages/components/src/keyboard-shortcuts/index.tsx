@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useRef, Children } from '@wordpress/element';
-import { useKeyboardShortcut } from '@wordpress/compose';
+import { useRef, Children } from '@gutenberg/element';
+import { useKeyboardShortcut } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -33,8 +33,8 @@ function KeyboardShortcut( {
  * It uses the [Mousetrap](https://craig.is/killing/mice) library to implement keyboard sequence bindings.
  *
  * ```jsx
- * import { KeyboardShortcuts } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { KeyboardShortcuts } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyKeyboardShortcuts = () => {
  * 	const [ isAllSelected, setIsAllSelected ] = useState( false );

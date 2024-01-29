@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useRefEffect } from '@wordpress/compose';
+import { useRefEffect } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -14,7 +14,7 @@ import { isRangeEqual } from '../is-range-equal';
  * detect no `selectionchange` or `input` event between the up and down events,
  * we fire a `selectionchange` event.
  *
- * @return {import('@wordpress/compose').RefEffect} A ref effect attaching the
+ * @return {import('@gutenberg/compose').RefEffect} A ref effect attaching the
  *                                                  listeners.
  */
 export function useSelectionChangeCompat() {

@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { store as coreStore } from '@wordpress/core-data';
-import { __ } from '@wordpress/i18n';
-import { store as noticesStore } from '@wordpress/notices';
-import { store as preferencesStore } from '@wordpress/preferences';
+import { store as coreStore } from '@gutenberg/core-data';
+import { __ } from '@gutenberg/i18n';
+import { store as noticesStore } from '@gutenberg/notices';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Returns an action object used to set which template is currently being used/edited.

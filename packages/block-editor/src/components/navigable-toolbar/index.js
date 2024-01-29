@@ -1,19 +1,19 @@
 /**
  * WordPress dependencies
  */
-import { NavigableMenu, Toolbar } from '@wordpress/components';
+import { NavigableMenu, Toolbar } from '@gutenberg/components';
 import {
 	useState,
 	useRef,
 	useLayoutEffect,
 	useEffect,
 	useCallback,
-} from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import deprecated from '@wordpress/deprecated';
-import { focus } from '@wordpress/dom';
-import { useShortcut } from '@wordpress/keyboard-shortcuts';
-import { ESCAPE } from '@wordpress/keycodes';
+} from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import deprecated from '@gutenberg/deprecated';
+import { focus } from '@gutenberg/dom';
+import { useShortcut } from '@gutenberg/keyboard-shortcuts';
+import { ESCAPE } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

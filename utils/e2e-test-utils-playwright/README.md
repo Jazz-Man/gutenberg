@@ -13,7 +13,7 @@ This package is still under active development. Documentation might not be up-to
 Install the module
 
 ```bash
-npm install @wordpress/e2e-test-utils-playwright --save-dev
+npm install @gutenberg/e2e-test-utils-playwright --save-dev
 ```
 
 **Note**: This package requires Node.js 12.0.0 or later. It is not compatible with older versions.

@@ -13,11 +13,11 @@ import {
 	useMemo,
 	useImperativeHandle,
 	useRef,
-} from '@wordpress/element';
-import { VisuallyHidden, SearchControl, Popover } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { useDebouncedInput } from '@wordpress/compose';
+} from '@gutenberg/element';
+import { VisuallyHidden, SearchControl, Popover } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { useDebouncedInput } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

@@ -10,9 +10,9 @@ import {
 	useBlockProps,
 	useInnerBlocksProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
-import { store as blocksStore } from '@wordpress/blocks';
+} from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
+import { store as blocksStore } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

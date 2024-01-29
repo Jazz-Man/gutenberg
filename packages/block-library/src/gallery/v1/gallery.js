@@ -9,10 +9,10 @@ import classnames from 'classnames';
 import {
 	RichText,
 	__experimentalGetElementClassName,
-} from '@wordpress/block-editor';
-import { VisuallyHidden } from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
+} from '@gutenberg/block-editor';
+import { VisuallyHidden } from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

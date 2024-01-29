@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { useMemo, useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useMemo, useState } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
 
 const TRANSLATED_SITE_PROPERTIES = {
 	title: __( 'Title' ),

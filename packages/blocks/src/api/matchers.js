@@ -6,7 +6,7 @@ export { attr, prop, text, query } from 'hpq';
 /**
  * WordPress dependencies
  */
-import { RichTextData } from '@wordpress/rich-text';
+import { RichTextData } from '@gutenberg/rich-text';
 
 /**
  * Internal dependencies

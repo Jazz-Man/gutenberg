@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useRef, useCallback, useLayoutEffect } from '@wordpress/element';
+import { useRef, useCallback, useLayoutEffect } from '@gutenberg/element';
 
 /* eslint-disable jsdoc/valid-types */
 /**

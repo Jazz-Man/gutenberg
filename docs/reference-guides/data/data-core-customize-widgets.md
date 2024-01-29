@@ -13,9 +13,9 @@ Returns true if the inserter is opened.
 _Usage_
 
 ```js
-import { store as customizeWidgetsStore } from '@wordpress/customize-widgets';
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
+import { store as customizeWidgetsStore } from '@gutenberg/customize-widgets';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
 
 const ExampleComponent = () => {
 	const { isInserterOpened } = useSelect(
@@ -51,10 +51,10 @@ _Usage_
 
 ```js
 import { useState } from 'react';
-import { store as customizeWidgetsStore } from '@wordpress/customize-widgets';
-import { __ } from '@wordpress/i18n';
-import { useDispatch } from '@wordpress/data';
-import { Button } from '@wordpress/components';
+import { store as customizeWidgetsStore } from '@gutenberg/customize-widgets';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch } from '@gutenberg/data';
+import { Button } from '@gutenberg/components';
 
 const ExampleComponent = () => {
 	const { setIsInserterOpened } = useDispatch( customizeWidgetsStore );

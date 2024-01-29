@@ -13,7 +13,7 @@ This component is mostly used for blocks that display text, such as Heading, Par
 Renders an alignment toolbar with alignments options.
 
 ```jsx
-import { AlignmentControl } from '@wordpress/block-editor';
+import { AlignmentControl } from '@gutenberg/block-editor';
 
 const MyAlignmentToolbar = () => (
 	<BlockControls group="block">

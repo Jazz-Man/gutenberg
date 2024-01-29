@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { store as coreStore, useEntityRecords } from '@wordpress/core-data';
-import { __, sprintf } from '@wordpress/i18n';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore, useEntityRecords } from '@gutenberg/core-data';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	VisuallyHidden,
 	__experimentalHeading as Heading,
-} from '@wordpress/components';
-import { decodeEntities } from '@wordpress/html-entities';
+} from '@gutenberg/components';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Internal dependencies

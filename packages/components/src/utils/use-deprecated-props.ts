@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
+import deprecated from '@gutenberg/deprecated';
 
 export function useDeprecated36pxDefaultSizeProp<
 	P extends Record< string, any > & {

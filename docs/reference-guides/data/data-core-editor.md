@@ -68,7 +68,7 @@ _Related_
 
 ### getAutosaveAttribute
 
-> **Deprecated** since 5.6. Callers should use the `getAutosave( postType, postId, userId )` selector from the '@wordpress/core-data' package and access properties on the returned autosave object using getPostRawValue.
+> **Deprecated** since 5.6. Callers should use the `getAutosave( postType, postId, userId )` selector from the '@gutenberg/core-data' package and access properties on the returned autosave object using getPostRawValue.
 
 Returns an attribute value of the current autosave revision for a post, or null if there is no autosave for the post.
 

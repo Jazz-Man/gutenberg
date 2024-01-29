@@ -7,10 +7,10 @@ import type { ChangeEvent } from 'react';
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
-import { useInstanceId, useRefEffect } from '@wordpress/compose';
-import deprecated from '@wordpress/deprecated';
-import { Icon, check, reset } from '@wordpress/icons';
+import { useState } from '@gutenberg/element';
+import { useInstanceId, useRefEffect } from '@gutenberg/compose';
+import deprecated from '@gutenberg/deprecated';
+import { Icon, check, reset } from '@gutenberg/icons';
 
 /**
  * Internal dependencies
@@ -23,8 +23,8 @@ import type { WordPressComponentProps } from '../context';
  * Checkboxes allow the user to select one or more items from a set.
  *
  * ```jsx
- * import { CheckboxControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { CheckboxControl } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyCheckboxControl = () => {
  *   const [ isChecked, setChecked ] = useState( true );

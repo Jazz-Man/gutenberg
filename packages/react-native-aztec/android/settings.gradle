@@ -21,4 +21,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = '@wordpress_react-native-aztec'
+rootProject.name = '@gutenberg_react-native-aztec'

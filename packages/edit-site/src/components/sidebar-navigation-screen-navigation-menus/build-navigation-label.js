@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { decodeEntities } from '@wordpress/html-entities';
+import { __, sprintf } from '@gutenberg/i18n';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 // Copied from packages/block-library/src/navigation/edit/navigation-menu-selector.js.
 export default function buildNavigationLabel( title, id, status ) {

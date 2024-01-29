@@ -6,17 +6,17 @@ import classNames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	InspectorControls,
 	RichText,
 	useBlockProps,
 	__experimentalUseBorderProps as useBorderProps,
 	__experimentalUseColorProps as useColorProps,
-} from '@wordpress/block-editor';
-import { PanelBody, TextControl, CheckboxControl } from '@wordpress/components';
+} from '@gutenberg/block-editor';
+import { PanelBody, TextControl, CheckboxControl } from '@gutenberg/components';
 
-import { useRef } from '@wordpress/element';
+import { useRef } from '@gutenberg/element';
 
 function InputFieldBlock( { attributes, setAttributes, className } ) {
 	const { type, name, label, inlineLabel, required, placeholder, value } =

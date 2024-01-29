@@ -6,8 +6,8 @@ import type { RefCallback, SyntheticEvent } from 'react';
 /**
  * WordPress dependencies
  */
-import { useRef, useEffect, useCallback } from '@wordpress/element';
-import { ESCAPE } from '@wordpress/keycodes';
+import { useRef, useEffect, useCallback } from '@gutenberg/element';
+import { ESCAPE } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

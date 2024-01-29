@@ -5,12 +5,12 @@ import {
 	createBlock,
 	getDefaultBlockName,
 	cloneBlock,
-} from '@wordpress/blocks';
-import { useRef } from '@wordpress/element';
-import { useRefEffect } from '@wordpress/compose';
-import { ENTER } from '@wordpress/keycodes';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+} from '@gutenberg/blocks';
+import { useRef } from '@gutenberg/element';
+import { useRefEffect } from '@gutenberg/compose';
+import { ENTER } from '@gutenberg/keycodes';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

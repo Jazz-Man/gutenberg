@@ -7,7 +7,7 @@ import { colord } from 'colord';
 /**
  * WordPress dependencies
  */
-import { useMemo, useEffect, useRef } from '@wordpress/element';
+import { useMemo, useEffect, useRef } from '@gutenberg/element';
 /**
  * Internal dependencies
  */

@@ -6,15 +6,15 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __, _x, sprintf } from '@wordpress/i18n';
-import { getBlockSupport, hasBlockSupport } from '@wordpress/blocks';
+import { __, _x, sprintf } from '@gutenberg/i18n';
+import { getBlockSupport, hasBlockSupport } from '@gutenberg/blocks';
 import {
 	BaseControl,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
-import { useSelect } from '@wordpress/data';
-import { useMemo, Platform } from '@wordpress/element';
+} from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
+import { useSelect } from '@gutenberg/data';
+import { useMemo, Platform } from '@gutenberg/element';
 
 /**
  * Internal dependencies

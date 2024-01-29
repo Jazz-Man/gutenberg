@@ -13,7 +13,7 @@ import {
 	__experimentalGetColorClassesAndStyles as getColorClassesAndStyles,
 	__experimentalGetSpacingClassesAndStyles as getSpacingClassesAndStyles,
 	__experimentalGetElementClassName,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 export default function save( { attributes, className } ) {
 	const {

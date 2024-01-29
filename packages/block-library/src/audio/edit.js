@@ -6,14 +6,14 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { getBlobByURL, isBlobURL } from '@wordpress/blob';
+import { getBlobByURL, isBlobURL } from '@gutenberg/blob';
 import {
 	Disabled,
 	PanelBody,
 	SelectControl,
 	Spinner,
 	ToggleControl,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	BlockControls,
 	BlockIcon,
@@ -22,12 +22,12 @@ import {
 	MediaReplaceFlow,
 	useBlockProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useEffect } from '@wordpress/element';
-import { __, _x } from '@wordpress/i18n';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { audio as icon } from '@wordpress/icons';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/block-editor';
+import { useEffect } from '@gutenberg/element';
+import { __, _x } from '@gutenberg/i18n';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { audio as icon } from '@gutenberg/icons';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

@@ -104,7 +104,7 @@ Placement best practices:
 Renders a button with default style.
 
 ```jsx
-import { Button } from '@wordpress/components';
+import { Button } from '@gutenberg/components';
 
 const MyButton = () => <Button variant="secondary">Click me!</Button>;
 ```

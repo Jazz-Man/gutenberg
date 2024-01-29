@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
-import { debounce } from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
+import apiFetch from '@gutenberg/api-fetch';
+import { debounce } from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * An API for creating and loading a widget control (a <div class="widget">

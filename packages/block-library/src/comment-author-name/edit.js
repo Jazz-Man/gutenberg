@@ -6,16 +6,16 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
+import { __, _x } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
 import {
 	AlignmentControl,
 	BlockControls,
 	InspectorControls,
 	useBlockProps,
-} from '@wordpress/block-editor';
-import { store as coreStore } from '@wordpress/core-data';
-import { PanelBody, ToggleControl } from '@wordpress/components';
+} from '@gutenberg/block-editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { PanelBody, ToggleControl } from '@gutenberg/components';
 
 /**
  * Renders the `core/comment-author-name` block on the editor.

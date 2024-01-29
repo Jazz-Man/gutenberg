@@ -6,7 +6,7 @@ import {
 	__experimentalVStack as VStack,
 	__experimentalHStack as HStack,
 	CheckboxControl,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

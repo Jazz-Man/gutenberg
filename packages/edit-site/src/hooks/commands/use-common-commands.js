@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { __, isRTL } from '@wordpress/i18n';
+import { useMemo } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { __, isRTL } from '@gutenberg/i18n';
 import {
 	rotateLeft,
 	rotateRight,
@@ -12,13 +12,13 @@ import {
 	styles,
 	external,
 	brush,
-} from '@wordpress/icons';
-import { useCommandLoader, useCommand } from '@wordpress/commands';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
-import { store as preferencesStore } from '@wordpress/preferences';
-import { store as coreStore } from '@wordpress/core-data';
-import { useViewportMatch } from '@wordpress/compose';
+} from '@gutenberg/icons';
+import { useCommandLoader, useCommand } from '@gutenberg/commands';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
+import { store as preferencesStore } from '@gutenberg/preferences';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useViewportMatch } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

@@ -13,7 +13,7 @@ import type { WordPressComponentProps } from '../context';
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
+import { forwardRef } from '@gutenberg/element';
 
 export function UnforwardedSpinner(
 	{ className, ...props }: WordPressComponentProps< {}, 'svg', false >,
@@ -51,7 +51,7 @@ export function UnforwardedSpinner(
  * `Spinner` is a component used to notify users that their action is being processed.
  *
  * ```js
- *   import { Spinner } from '@wordpress/components';
+ *   import { Spinner } from '@gutenberg/components';
  *
  *   function Example() {
  *     return <Spinner />;

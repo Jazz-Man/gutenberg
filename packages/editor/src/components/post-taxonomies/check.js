@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { compose } from '@wordpress/compose';
-import { withSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
+import { compose } from '@gutenberg/compose';
+import { withSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

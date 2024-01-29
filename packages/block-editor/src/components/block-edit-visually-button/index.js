@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { ToolbarButton, ToolbarGroup } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useSelect, useDispatch } from '@wordpress/data';
+import { ToolbarButton, ToolbarGroup } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useSelect, useDispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies

@@ -9,17 +9,17 @@ import { View, Animated, Easing, TouchableWithoutFeedback } from 'react-native';
 import {
 	BlockControls,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useEffect, useState, useRef, useCallback } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { useEffect, useState, useRef, useCallback } from '@gutenberg/element';
 import {
 	ToolbarGroup,
 	ToolbarButton,
 	LinkSettingsNavigation,
-} from '@wordpress/components';
-import { compose } from '@wordpress/compose';
-import { __, sprintf } from '@wordpress/i18n';
-import { link, Icon } from '@wordpress/icons';
-import { withSelect } from '@wordpress/data';
+} from '@gutenberg/components';
+import { compose } from '@gutenberg/compose';
+import { __, sprintf } from '@gutenberg/i18n';
+import { link, Icon } from '@gutenberg/icons';
+import { withSelect } from '@gutenberg/data';
 /**
  * Internal dependencies
  */

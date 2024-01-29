@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useState } from '@wordpress/element';
-import { __experimentalBlockPatternsList as BlockPatternsList } from '@wordpress/block-editor';
-import { MenuItem, Modal } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { store as coreStore } from '@wordpress/core-data';
-import { useAsyncList } from '@wordpress/compose';
-import { serialize } from '@wordpress/blocks';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useState } from '@gutenberg/element';
+import { __experimentalBlockPatternsList as BlockPatternsList } from '@gutenberg/block-editor';
+import { MenuItem, Modal } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useAsyncList } from '@gutenberg/compose';
+import { serialize } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

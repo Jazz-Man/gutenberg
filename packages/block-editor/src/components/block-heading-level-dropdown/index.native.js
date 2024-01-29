@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { DropdownMenu } from '@wordpress/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { DropdownMenu } from '@gutenberg/components';
 
 /**
  * Internal dependencies

@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __unstableGetInnerBlocksProps as getInnerBlocksProps } from '@wordpress/blocks';
-import { useRef } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
+import { __unstableGetInnerBlocksProps as getInnerBlocksProps } from '@gutenberg/blocks';
+import { useRef } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

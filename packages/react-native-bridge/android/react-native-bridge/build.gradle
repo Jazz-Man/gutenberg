@@ -112,7 +112,7 @@ dependencies {
     if (willPublishReactNativeBridgeBinary) {
         implementation "org.wordpress.gutenberg-mobile:react-native-aztec:$reactNativeAztecVersion"
    } else {
-        api project(':@wordpress_react-native-aztec')
+        api project(':@gutenberg_react-native-aztec')
    }
 }
 

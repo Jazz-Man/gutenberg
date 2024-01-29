@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/blob",
+	"name": "@gutenberg/blob",
 	"version": "3.49.0",
 	"description": "Blob utilities for WordPress.",
 	"author": "The WordPress Contributors",

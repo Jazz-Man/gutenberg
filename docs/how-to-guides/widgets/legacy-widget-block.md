@@ -183,7 +183,7 @@ add_action( 'admin_footer', function() {
 ```
 
 Then, register the Legacy Widget block using `registerLegacyWidgetBlock` which
-is defined in the `@wordpress/widgets` package.
+is defined in the `@gutenberg/widgets` package.
 
 ```php
 add_action( 'enqueue_block_editor_assets', function() {

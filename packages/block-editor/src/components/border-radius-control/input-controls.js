@@ -5,8 +5,8 @@ import {
 	__experimentalParseQuantityAndUnitFromRawValue as parseQuantityAndUnitFromRawValue,
 	__experimentalUnitControl as UnitControl,
 	Tooltip,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 const CORNERS = {
 	topLeft: __( 'Top left' ),

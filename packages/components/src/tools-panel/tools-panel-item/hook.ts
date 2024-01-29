@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { usePrevious } from '@wordpress/compose';
+import { usePrevious } from '@gutenberg/compose';
 import {
 	useCallback,
 	useEffect,
 	useLayoutEffect,
 	useMemo,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 
 /**
  * Internal dependencies

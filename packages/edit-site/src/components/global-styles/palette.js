@@ -9,11 +9,11 @@ import {
 	__experimentalVStack as VStack,
 	ColorIndicator,
 	Button,
-} from '@wordpress/components';
-import { __, _n, sprintf } from '@wordpress/i18n';
-import { shuffle } from '@wordpress/icons';
-import { useMemo } from '@wordpress/element';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
+} from '@gutenberg/components';
+import { __, _n, sprintf } from '@gutenberg/i18n';
+import { shuffle } from '@gutenberg/icons';
+import { useMemo } from '@gutenberg/element';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

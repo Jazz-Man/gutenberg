@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { store, getContext } from '@wordpress/interactivity';
+import { store, getContext } from '@gutenberg/interactivity';
 
 const { state } = store( 'directive-style', {
 	state: {

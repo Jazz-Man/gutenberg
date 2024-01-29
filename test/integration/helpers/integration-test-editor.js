@@ -7,19 +7,19 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { useState, useEffect } from '@wordpress/element';
+import { useState, useEffect } from '@gutenberg/element';
 import {
 	BlockEditorProvider,
 	BlockInspector,
 	privateApis as blockEditorPrivateApis,
-} from '@wordpress/block-editor';
-import { registerCoreBlocks } from '@wordpress/block-library';
-import '@wordpress/format-library';
+} from '@gutenberg/block-editor';
+import { registerCoreBlocks } from '@gutenberg/block-library';
+import '@gutenberg/format-library';
 import {
 	createBlock,
 	unregisterBlockType,
 	getBlockTypes,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

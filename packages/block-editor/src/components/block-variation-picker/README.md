@@ -17,11 +17,11 @@ This component is currently used by "Columns" and "Query Loop" blocks.
 Renders the variations of a block.
 
 ```jsx
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 import {
 	__experimentalBlockVariationPicker as BlockVariationPicker,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 const MyBlockVariationPicker = ( { blockName } ) => {
 	const variations = useSelect(

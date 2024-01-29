@@ -7,16 +7,16 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { registerBlockType, unregisterBlockType } from '@wordpress/blocks';
-import { copy } from '@wordpress/icons';
+import { useSelect } from '@gutenberg/data';
+import { registerBlockType, unregisterBlockType } from '@gutenberg/blocks';
+import { copy } from '@gutenberg/icons';
 
 /**
  * Internal dependencies
  */
 import { BlockSwitcher } from '../';
 
-jest.mock( '@wordpress/data/src/components/use-select', () => jest.fn() );
+jest.mock( '@gutenberg/data/src/components/use-select', () => jest.fn() );
 jest.mock( '../../block-title/use-block-display-title', () =>
 	jest.fn().mockReturnValue( 'Block Name' )
 );

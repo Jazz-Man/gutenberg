@@ -51,7 +51,7 @@ Place tabs above content. Tabs control the UI region displayed below them.
 ### Usage
 
 ```jsx
-import { TabPanel } from '@wordpress/components';
+import { TabPanel } from '@gutenberg/components';
 
 const onSelect = ( tabName ) => {
 	console.log( 'Selecting tab', tabName );

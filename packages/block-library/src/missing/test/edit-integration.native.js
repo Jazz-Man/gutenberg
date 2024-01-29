@@ -15,9 +15,9 @@ import { Platform } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { unregisterBlockType } from '@wordpress/blocks';
-import { setLocaleData } from '@wordpress/i18n';
-import { requestUnsupportedBlockFallback } from '@wordpress/react-native-bridge';
+import { unregisterBlockType } from '@gutenberg/blocks';
+import { setLocaleData } from '@gutenberg/i18n';
+import { requestUnsupportedBlockFallback } from '@gutenberg/react-native-bridge';
 
 // Override modal mock to prevent unmounting it when is not visible.
 // This is required to be able to trigger onClose and onDismiss events when

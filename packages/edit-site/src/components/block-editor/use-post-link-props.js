@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

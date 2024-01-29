@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { createElement, forwardRef } from '@wordpress/element';
+import { createElement, forwardRef } from '@gutenberg/element';
 
 /** @typedef {{isPressed?: boolean} & import('react').ComponentPropsWithoutRef<'svg'>} SVGProps */
 

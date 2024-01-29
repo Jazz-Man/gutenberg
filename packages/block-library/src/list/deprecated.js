@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { RichText, InnerBlocks, useBlockProps } from '@wordpress/block-editor';
+import { RichText, InnerBlocks, useBlockProps } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

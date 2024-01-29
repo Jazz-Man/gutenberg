@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	Button,
 	__experimentalHeading as Heading,
-} from '@wordpress/components';
-import { store as editorStore } from '@wordpress/editor';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { store as editorStore } from '@gutenberg/editor';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

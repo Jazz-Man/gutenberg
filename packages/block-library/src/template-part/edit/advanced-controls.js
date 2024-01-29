@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useEntityProp } from '@wordpress/core-data';
-import { SelectControl, TextControl } from '@wordpress/components';
-import { sprintf, __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
+import { useEntityProp } from '@gutenberg/core-data';
+import { SelectControl, TextControl } from '@gutenberg/components';
+import { sprintf, __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies
@@ -55,9 +55,9 @@ export function TemplatePartAdvancedControls( {
 	);
 
 	const definedAreas = useSelect( ( select ) => {
-		// FIXME: @wordpress/block-library should not depend on @wordpress/editor.
+		// FIXME: @gutenberg/block-library should not depend on @gutenberg/editor.
 		// Blocks can be loaded into a *non-post* block editor.
-		/* eslint-disable-next-line @wordpress/data-no-store-string-literals */
+		/* eslint-disable-next-line @gutenberg/data-no-store-string-literals */
 		return select(
 			'core/editor'
 		).__experimentalGetDefaultTemplatePartAreas();

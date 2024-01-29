@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
+import deprecated from '@gutenberg/deprecated';
 
 export default function PreviewOptions() {
 	deprecated( 'wp.blockEditor.PreviewOptions', {

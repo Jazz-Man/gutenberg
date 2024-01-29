@@ -20,15 +20,15 @@ import {
 	useMemo,
 	useEffect,
 	useCallback,
-} from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { Button, Gridicons } from '@wordpress/components';
+} from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { Button, Gridicons } from '@gutenberg/components';
 import {
 	Icon,
 	cancelCircleFilled as cancelCircleFilledIcon,
 	arrowLeft as arrowLeftIcon,
 	close as closeIcon,
-} from '@wordpress/icons';
+} from '@gutenberg/icons';
 
 /**
  * Internal dependencies

@@ -6,9 +6,9 @@ import { capitalCase, pascalCase } from 'change-case';
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
-import { __ } from '@wordpress/i18n';
-import { RichTextData } from '@wordpress/rich-text';
+import apiFetch from '@gutenberg/api-fetch';
+import { __ } from '@gutenberg/i18n';
+import { RichTextData } from '@gutenberg/rich-text';
 
 /**
  * Internal dependencies

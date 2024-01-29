@@ -7,10 +7,10 @@ import { View, useWindowDimensions } from 'react-native';
  * WordPress dependencies
  */
 import { useNavigation } from '@react-navigation/native';
-import { useState } from '@wordpress/element';
-import { Icon, chevronRight, check } from '@wordpress/icons';
-import { __, sprintf } from '@wordpress/i18n';
-import { BottomSheet } from '@wordpress/components';
+import { useState } from '@gutenberg/element';
+import { Icon, chevronRight, check } from '@gutenberg/icons';
+import { __, sprintf } from '@gutenberg/i18n';
+import { BottomSheet } from '@gutenberg/components';
 
 /**
  * Internal dependencies

@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { useEffect } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
+import { useEffect } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	useShortcut,
 	store as keyboardShortcutsStore,
-} from '@wordpress/keyboard-shortcuts';
-import { __ } from '@wordpress/i18n';
-import { store as editorStore } from '@wordpress/editor';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { createBlock } from '@wordpress/blocks';
+} from '@gutenberg/keyboard-shortcuts';
+import { __ } from '@gutenberg/i18n';
+import { store as editorStore } from '@gutenberg/editor';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { createBlock } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

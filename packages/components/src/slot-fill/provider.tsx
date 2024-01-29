@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import type { Component } from '@wordpress/element';
-import { useMemo } from '@wordpress/element';
+import type { Component } from '@gutenberg/element';
+import { useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

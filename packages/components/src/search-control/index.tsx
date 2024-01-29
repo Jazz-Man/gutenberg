@@ -6,10 +6,10 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useInstanceId, useMergeRefs } from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
-import { Icon, search, closeSmall } from '@wordpress/icons';
-import { forwardRef, useRef } from '@wordpress/element';
+import { useInstanceId, useMergeRefs } from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
+import { Icon, search, closeSmall } from '@gutenberg/icons';
+import { forwardRef, useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -110,8 +110,8 @@ function UnforwardedSearchControl(
  * SearchControl components let users display a search control.
  *
  * ```jsx
- * import { SearchControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { SearchControl } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * function MySearchControl( { className, setState } ) {
  *   const [ searchInput, setSearchInput ] = useState( '' );

@@ -16,7 +16,7 @@ const ruleTester = new RuleTester( {
 } );
 
 const options = [
-	{ '@wordpress/package': [ '__experimentalSafe', '__unstableSafe' ] },
+	{ '@gutenberg/package': [ '__experimentalSafe', '__unstableSafe' ] },
 ];
 
 ruleTester.run( 'no-unsafe-wp-apis', rule, {
@@ -35,78 +35,78 @@ ruleTester.run( 'no-unsafe-wp-apis', rule, {
 		{ code: "import _, { __unstableFoo } from './x';", options },
 		{ code: "import * as _ from './x';", options },
 
-		{ code: "import s from '@wordpress/package';", options },
-		{ code: "import { feature } from '@wordpress/package';", options },
+		{ code: "import s from '@gutenberg/package';", options },
+		{ code: "import { feature } from '@gutenberg/package';", options },
 		{
-			code: "import { __experimentalSafe } from '@wordpress/package';",
+			code: "import { __experimentalSafe } from '@gutenberg/package';",
 			options,
 		},
 		{
-			code: "import { __unstableSafe } from '@wordpress/package';",
+			code: "import { __unstableSafe } from '@gutenberg/package';",
 			options,
 		},
 		{
-			code: "import { feature, __experimentalSafe } from '@wordpress/package';",
+			code: "import { feature, __experimentalSafe } from '@gutenberg/package';",
 			options,
 		},
 		{
-			code: "import s, { __experimentalSafe } from '@wordpress/package';",
+			code: "import s, { __experimentalSafe } from '@gutenberg/package';",
 			options,
 		},
-		{ code: "import * as s from '@wordpress/package';", options },
+		{ code: "import * as s from '@gutenberg/package';", options },
 	],
 
 	invalid: [
 		{
-			code: "import { __experimentalUnsafe } from '@wordpress/package';",
+			code: "import { __experimentalUnsafe } from '@gutenberg/package';",
 			options,
 			errors: [
 				{
-					message: `Usage of \`__experimentalUnsafe\` from \`@wordpress/package\` is not allowed.
+					message: `Usage of \`__experimentalUnsafe\` from \`@gutenberg/package\` is not allowed.
 See https://developer.wordpress.org/block-editor/contributors/develop/coding-guidelines/#experimental-and-unstable-apis for details.`,
 					type: 'ImportSpecifier',
 				},
 			],
 		},
 		{
-			code: "import { __experimentalSafe } from '@wordpress/unsafe';",
+			code: "import { __experimentalSafe } from '@gutenberg/unsafe';",
 			options,
 			errors: [
 				{
-					message: `Usage of \`__experimentalSafe\` from \`@wordpress/unsafe\` is not allowed.
+					message: `Usage of \`__experimentalSafe\` from \`@gutenberg/unsafe\` is not allowed.
 See https://developer.wordpress.org/block-editor/contributors/develop/coding-guidelines/#experimental-and-unstable-apis for details.`,
 					type: 'ImportSpecifier',
 				},
 			],
 		},
 		{
-			code: "import { feature, __experimentalSafe } from '@wordpress/unsafe';",
+			code: "import { feature, __experimentalSafe } from '@gutenberg/unsafe';",
 			options,
 			errors: [
 				{
-					message: `Usage of \`__experimentalSafe\` from \`@wordpress/unsafe\` is not allowed.
+					message: `Usage of \`__experimentalSafe\` from \`@gutenberg/unsafe\` is not allowed.
 See https://developer.wordpress.org/block-editor/contributors/develop/coding-guidelines/#experimental-and-unstable-apis for details.`,
 					type: 'ImportSpecifier',
 				},
 			],
 		},
 		{
-			code: "import s, { __experimentalUnsafe } from '@wordpress/package';",
+			code: "import s, { __experimentalUnsafe } from '@gutenberg/package';",
 			options,
 			errors: [
 				{
-					message: `Usage of \`__experimentalUnsafe\` from \`@wordpress/package\` is not allowed.
+					message: `Usage of \`__experimentalUnsafe\` from \`@gutenberg/package\` is not allowed.
 See https://developer.wordpress.org/block-editor/contributors/develop/coding-guidelines/#experimental-and-unstable-apis for details.`,
 					type: 'ImportSpecifier',
 				},
 			],
 		},
 		{
-			code: "import { __unstableFeature } from '@wordpress/package';",
+			code: "import { __unstableFeature } from '@gutenberg/package';",
 			options,
 			errors: [
 				{
-					message: `Usage of \`__unstableFeature\` from \`@wordpress/package\` is not allowed.
+					message: `Usage of \`__unstableFeature\` from \`@gutenberg/package\` is not allowed.
 See https://developer.wordpress.org/block-editor/contributors/develop/coding-guidelines/#experimental-and-unstable-apis for details.`,
 					type: 'ImportSpecifier',
 				},

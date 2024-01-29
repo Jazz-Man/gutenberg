@@ -6,12 +6,12 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { HorizontalRule } from '@wordpress/components';
+import { HorizontalRule } from '@gutenberg/components';
 import {
 	useBlockProps,
 	getColorClassName,
 	__experimentalUseColorProps as useColorProps,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

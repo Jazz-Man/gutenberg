@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { compose } from '@wordpress/compose';
-import { withSelect, withDispatch } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
+import { Component } from '@gutenberg/element';
+import { compose } from '@gutenberg/compose';
+import { withSelect, withDispatch } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

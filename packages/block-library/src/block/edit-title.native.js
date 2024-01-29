@@ -6,10 +6,10 @@ import { Text, View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Icon, useGlobalStyles } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { withPreferredColorScheme } from '@wordpress/compose';
-import { help, lock } from '@wordpress/icons';
+import { Icon, useGlobalStyles } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { withPreferredColorScheme } from '@gutenberg/compose';
+import { help, lock } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { memo, useMemo, useState } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
+import { memo, useMemo, useState } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
 import {
 	BlockControls,
 	BlockContextProvider,
@@ -16,10 +16,10 @@ import {
 	useBlockProps,
 	useInnerBlocksProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { Spinner, ToolbarGroup } from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
-import { list, grid } from '@wordpress/icons';
+} from '@gutenberg/block-editor';
+import { Spinner, ToolbarGroup } from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
+import { list, grid } from '@gutenberg/icons';
 
 const TEMPLATE = [
 	[ 'core/post-title' ],

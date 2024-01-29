@@ -1,6 +1,6 @@
 # Prevent unsafe API usage (no-unsafe-wp-apis)
 
-Prevent unsafe APIs from `@wordpress/*` packages from being imported.
+Prevent unsafe APIs from `@gutenberg/*` packages from being imported.
 
 This includes experimental and unstable APIs which are expected to change and likely to cause issues in application code.
 See the [documentation](https://github.com/WordPress/gutenberg/blob/HEAD/docs/contributors/code/coding-guidelines.md#experimental-and-unstable-apis).
@@ -16,14 +16,14 @@ See the [documentation](https://github.com/WordPress/gutenberg/blob/HEAD/docs/co
 Examples of **incorrect** code for this rule:
 
 ```js
-import { __experimentalFeature } from '@wordpress/foo';
-import { __unstableFeature } from '@wordpress/bar';
+import { __experimentalFeature } from '@gutenberg/foo';
+import { __unstableFeature } from '@gutenberg/bar';
 ```
 
 Examples of **correct** code for this rule:
 
 ```js
-import { registerBlockType } from '@wordpress/blocks';
+import { registerBlockType } from '@gutenberg/blocks';
 ```
 
 ## Options
@@ -35,9 +35,9 @@ This should be an object where the keys are import package names and the values 
 
 ```json
 {
-	"@wordpress/no-unsafe-wp-apis": [
+	"@gutenberg/no-unsafe-wp-apis": [
 		"error",
-		{ "@wordpress/block-editor": [ "__experimentalBlock" ] }
+		{ "@gutenberg/block-editor": [ "__experimentalBlock" ] }
 	]
 }
 ```

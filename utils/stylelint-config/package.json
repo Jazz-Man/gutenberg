@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/stylelint-config",
+	"name": "@gutenberg/stylelint-config",
 	"version": "21.32.0",
 	"description": "stylelint config for WordPress development.",
 	"author": "The WordPress Contributors",
@@ -38,7 +38,7 @@
 		"stylelint": "^14.2"
 	},
 	"npmpackagejsonlint": {
-		"extends": "@wordpress/npm-package-json-lint-config",
+		"extends": "@gutenberg/npm-package-json-lint-config",
 		"rules": {
 			"valid-values-license": [
 				"error",

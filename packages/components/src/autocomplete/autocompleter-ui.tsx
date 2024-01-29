@@ -11,11 +11,11 @@ import {
 	useRef,
 	useEffect,
 	useState,
-} from '@wordpress/element';
-import { useAnchor } from '@wordpress/rich-text';
-import { useDebounce, useMergeRefs, useRefEffect } from '@wordpress/compose';
-import { speak } from '@wordpress/a11y';
-import { __, _n, sprintf } from '@wordpress/i18n';
+} from '@gutenberg/element';
+import { useAnchor } from '@gutenberg/rich-text';
+import { useDebounce, useMergeRefs, useRefEffect } from '@gutenberg/compose';
+import { speak } from '@gutenberg/a11y';
+import { __, _n, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

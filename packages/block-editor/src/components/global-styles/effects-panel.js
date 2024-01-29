@@ -18,10 +18,10 @@ import {
 	Dropdown,
 	__experimentalDropdownContentWrapper as DropdownContentWrapper,
 	Button,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useCallback } from '@wordpress/element';
-import { shadow as shadowIcon, Icon, check } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useCallback } from '@gutenberg/element';
+import { shadow as shadowIcon, Icon, check } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

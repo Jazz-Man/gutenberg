@@ -6,8 +6,8 @@ import { css } from '@emotion/react';
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
+import { useMemo } from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

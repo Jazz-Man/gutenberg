@@ -4,7 +4,7 @@
 import {
 	createBlock,
 	createBlocksFromInnerBlocksTemplate,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 const MAXIMUM_SELECTED_BLOCKS = 6;
 

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { combineReducers } from '@wordpress/data';
+import { combineReducers } from '@gutenberg/data';
 
 export function isEditingPattern( state = {}, action ) {
 	if ( action?.type === 'SET_EDITING_PATTERN' ) {

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalItemGroup as ItemGroup } from '@wordpress/components';
+import { __experimentalItemGroup as ItemGroup } from '@gutenberg/components';
 /**
  * Internal dependencies
  */

@@ -5,7 +5,7 @@ import { Text, Linking } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
 /**
  * Internal dependencies
  */

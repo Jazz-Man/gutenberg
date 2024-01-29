@@ -19,7 +19,7 @@ builder( {
 		// @see https://github.com/WordPress/gutenberg/pull/49234
 		'web.immediate',
 	],
-	targets: require( '@wordpress/browserslist-config' ),
+	targets: require( '@gutenberg/browserslist-config' ),
 	filename: './build/polyfill.js',
 } )
 	.then( async ( code ) => {

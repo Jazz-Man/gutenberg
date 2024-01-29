@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { dispatch, select } from '@wordpress/data';
+import { dispatch, select } from '@gutenberg/data';
 
 /**
  * Internal dependencies

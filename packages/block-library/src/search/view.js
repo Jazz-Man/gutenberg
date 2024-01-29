@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { store, getContext, getElement } from '@wordpress/interactivity';
+import { store, getContext, getElement } from '@gutenberg/interactivity';
 
 const { actions } = store( 'core/search', {
 	state: {

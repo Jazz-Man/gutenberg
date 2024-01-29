@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { getBlobByURL, isBlobURL, revokeBlobURL } from '@wordpress/blob';
-import { Placeholder } from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
+import { getBlobByURL, isBlobURL, revokeBlobURL } from '@gutenberg/blob';
+import { Placeholder } from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
 import {
 	BlockIcon,
 	MediaPlaceholder,
@@ -16,11 +16,11 @@ import {
 	store as blockEditorStore,
 	__experimentalUseBorderProps as useBorderProps,
 	useBlockEditingMode,
-} from '@wordpress/block-editor';
-import { useEffect, useRef, useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { image as icon } from '@wordpress/icons';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/block-editor';
+import { useEffect, useRef, useState } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { image as icon } from '@gutenberg/icons';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

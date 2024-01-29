@@ -9,7 +9,7 @@ const path = require( 'path' );
 const { hasBabelConfig } = require( '../utils' );
 
 const jestUnitConfig = {
-	preset: '@wordpress/jest-preset-default',
+	preset: '@gutenberg/jest-preset-default',
 	reporters: [
 		'default',
 		path.join( __dirname, 'jest-github-actions-reporter', 'index.js' ),

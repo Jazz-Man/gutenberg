@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
+import { useMemo } from '@gutenberg/element';
 
 /**
  * Calculates the image sizes that are avaible for the current gallery images in order to

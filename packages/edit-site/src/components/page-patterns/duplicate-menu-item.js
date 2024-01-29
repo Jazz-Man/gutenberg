@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { MenuItem } from '@wordpress/components';
-import { useDispatch } from '@wordpress/data';
-import { useState } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
-import { store as noticesStore } from '@wordpress/notices';
-import { privateApis as patternsPrivateApis } from '@wordpress/patterns';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { MenuItem } from '@gutenberg/components';
+import { useDispatch } from '@gutenberg/data';
+import { useState } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { store as noticesStore } from '@gutenberg/notices';
+import { privateApis as patternsPrivateApis } from '@gutenberg/patterns';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

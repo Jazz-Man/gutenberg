@@ -1,1 +1,1 @@
-require( '@wordpress/jest-console' );
+require( '@gutenberg/jest-console' );

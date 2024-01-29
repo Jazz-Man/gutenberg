@@ -17,7 +17,7 @@ import {
 	createReusableBlock,
 	publishPost,
 	canvas,
-} from '@wordpress/e2e-test-utils';
+} from '@gutenberg/e2e-test-utils';
 
 const patternBlockNameInputSelector =
 	'.patterns-menu-items__convert-modal .components-text-control__input';

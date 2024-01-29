@@ -6,8 +6,8 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { forwardRef } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

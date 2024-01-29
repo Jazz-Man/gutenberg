@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { MenuItem } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { isReusableBlock } from '@wordpress/blocks';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { addQueryArgs } from '@wordpress/url';
-import { store as coreStore } from '@wordpress/core-data';
+import { MenuItem } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { isReusableBlock } from '@gutenberg/blocks';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { addQueryArgs } from '@gutenberg/url';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useMemo, useRef } from '@wordpress/element';
-import { useIsomorphicLayoutEffect } from '@wordpress/compose';
+import { useMemo, useRef } from '@gutenberg/element';
+import { useIsomorphicLayoutEffect } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

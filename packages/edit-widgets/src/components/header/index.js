@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { BlockToolbar } from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
-import { useRef } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { Popover, VisuallyHidden } from '@wordpress/components';
-import { PinnedItems } from '@wordpress/interface';
-import { useViewportMatch } from '@wordpress/compose';
-import { store as preferencesStore } from '@wordpress/preferences';
+import { BlockToolbar } from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
+import { useRef } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { Popover, VisuallyHidden } from '@gutenberg/components';
+import { PinnedItems } from '@gutenberg/interface';
+import { useViewportMatch } from '@gutenberg/compose';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

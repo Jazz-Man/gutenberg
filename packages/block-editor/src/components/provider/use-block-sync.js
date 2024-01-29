@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useRef } from '@wordpress/element';
-import { useRegistry, useSelect } from '@wordpress/data';
-import { cloneBlock } from '@wordpress/blocks';
+import { useEffect, useRef } from '@gutenberg/element';
+import { useRegistry, useSelect } from '@gutenberg/data';
+import { cloneBlock } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

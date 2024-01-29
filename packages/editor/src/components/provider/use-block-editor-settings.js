@@ -1,17 +1,17 @@
 /**
  * WordPress dependencies
  */
-import { Platform, useMemo, useCallback } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
+import { Platform, useMemo, useCallback } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
 import {
 	store as coreStore,
 	__experimentalFetchLinkSuggestions as fetchLinkSuggestions,
 	__experimentalFetchUrlData as fetchUrlData,
-} from '@wordpress/core-data';
-import { __ } from '@wordpress/i18n';
-import { store as preferencesStore } from '@wordpress/preferences';
-import { useViewportMatch } from '@wordpress/compose';
-import { store as blocksStore } from '@wordpress/blocks';
+} from '@gutenberg/core-data';
+import { __ } from '@gutenberg/i18n';
+import { store as preferencesStore } from '@gutenberg/preferences';
+import { useViewportMatch } from '@gutenberg/compose';
+import { store as blocksStore } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

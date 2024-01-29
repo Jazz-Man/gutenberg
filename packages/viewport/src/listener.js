@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { debounce } from '@wordpress/compose';
-import { dispatch } from '@wordpress/data';
+import { debounce } from '@gutenberg/compose';
+import { dispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies

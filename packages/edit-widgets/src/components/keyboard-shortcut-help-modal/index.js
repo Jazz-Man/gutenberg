@@ -6,13 +6,13 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Modal } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { Modal } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 import {
 	useShortcut,
 	store as keyboardShortcutsStore,
-} from '@wordpress/keyboard-shortcuts';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/keyboard-shortcuts';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

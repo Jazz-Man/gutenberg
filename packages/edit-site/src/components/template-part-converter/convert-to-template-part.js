@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { MenuItem } from '@wordpress/components';
-import { createBlock } from '@wordpress/blocks';
-import { __ } from '@wordpress/i18n';
-import { useState } from '@wordpress/element';
-import { store as noticesStore } from '@wordpress/notices';
-import { symbolFilled } from '@wordpress/icons';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { MenuItem } from '@gutenberg/components';
+import { createBlock } from '@gutenberg/blocks';
+import { __ } from '@gutenberg/i18n';
+import { useState } from '@gutenberg/element';
+import { store as noticesStore } from '@gutenberg/notices';
+import { symbolFilled } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

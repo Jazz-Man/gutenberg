@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
-import { store as preferencesStore } from '@wordpress/preferences';
+import deprecated from '@gutenberg/deprecated';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Set a default complementary area.

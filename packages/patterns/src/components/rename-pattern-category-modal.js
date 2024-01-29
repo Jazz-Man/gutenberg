@@ -7,14 +7,14 @@ import {
 	TextControl,
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
-import { useDispatch } from '@wordpress/data';
-import { useId, useRef, useState } from '@wordpress/element';
-import { decodeEntities } from '@wordpress/html-entities';
-import { __ } from '@wordpress/i18n';
-import { store as noticesStore } from '@wordpress/notices';
-import { speak } from '@wordpress/a11y';
+} from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useDispatch } from '@gutenberg/data';
+import { useId, useRef, useState } from '@gutenberg/element';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { __ } from '@gutenberg/i18n';
+import { store as noticesStore } from '@gutenberg/notices';
+import { speak } from '@gutenberg/a11y';
 
 /**
  * Internal dependencies

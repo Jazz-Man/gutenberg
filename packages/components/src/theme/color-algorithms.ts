@@ -8,7 +8,7 @@ import namesPlugin from 'colord/plugins/names';
 /**
  * WordPress dependencies
  */
-import warning from '@wordpress/warning';
+import warning from '@gutenberg/warning';
 
 /**
  * Internal dependencies

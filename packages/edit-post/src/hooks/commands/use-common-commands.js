@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __, isRTL } from '@wordpress/i18n';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __, isRTL } from '@gutenberg/i18n';
 import {
 	code,
 	drawerLeft,
@@ -13,12 +13,12 @@ import {
 	listView,
 	external,
 	formatListBullets,
-} from '@wordpress/icons';
-import { useCommand } from '@wordpress/commands';
-import { store as preferencesStore } from '@wordpress/preferences';
-import { store as interfaceStore } from '@wordpress/interface';
-import { store as editorStore } from '@wordpress/editor';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/icons';
+import { useCommand } from '@gutenberg/commands';
+import { store as preferencesStore } from '@gutenberg/preferences';
+import { store as interfaceStore } from '@gutenberg/interface';
+import { store as editorStore } from '@gutenberg/editor';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

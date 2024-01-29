@@ -6,8 +6,8 @@ import type { DragEvent } from 'react';
 /**
  * WordPress dependencies
  */
-import { throttle } from '@wordpress/compose';
-import { useEffect, useRef } from '@wordpress/element';
+import { throttle } from '@gutenberg/compose';
+import { useEffect, useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -33,8 +33,8 @@ const bodyClass = 'is-dragging-components-draggable';
  * not concerned with creating an actual DOM element that is draggable.
  *
  * ```jsx
- * import { Draggable, Panel, PanelBody } from '@wordpress/components';
- * import { Icon, more } from '@wordpress/icons';
+ * import { Draggable, Panel, PanelBody } from '@gutenberg/components';
+ * import { Icon, more } from '@gutenberg/icons';
  *
  * const MyDraggable = () => (
  *   <div id="draggable-panel">

@@ -7,8 +7,8 @@ import { css } from '@emotion/react';
 /**
  * WordPress dependencies
  */
-import { customLink, formatCapitalize } from '@wordpress/icons';
-import { useState, useMemo, useContext } from '@wordpress/element';
+import { customLink, formatCapitalize } from '@gutenberg/icons';
+import { useState, useMemo, useContext } from '@gutenberg/element';
 
 /**
  * Internal dependencies

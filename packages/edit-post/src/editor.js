@@ -1,18 +1,18 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	ErrorBoundary,
 	PostLockedModal,
 	store as editorStore,
 	privateApis as editorPrivateApis,
-} from '@wordpress/editor';
-import { useMemo } from '@wordpress/element';
-import { SlotFillProvider } from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as preferencesStore } from '@wordpress/preferences';
-import { CommandMenu } from '@wordpress/commands';
+} from '@gutenberg/editor';
+import { useMemo } from '@gutenberg/element';
+import { SlotFillProvider } from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as preferencesStore } from '@gutenberg/preferences';
+import { CommandMenu } from '@gutenberg/commands';
 
 /**
  * Internal dependencies

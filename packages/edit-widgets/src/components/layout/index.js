@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { useDispatch } from '@wordpress/data';
-import { PluginArea } from '@wordpress/plugins';
-import { store as noticesStore } from '@wordpress/notices';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useDispatch } from '@gutenberg/data';
+import { PluginArea } from '@gutenberg/plugins';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

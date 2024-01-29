@@ -5,10 +5,10 @@ This package includes a library of generic WordPress components to be used for c
 ## Installation
 
 ```bash
-npm install @wordpress/components --save
+npm install @gutenberg/components --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## Usage
 
@@ -18,7 +18,7 @@ Within Gutenberg, these components can be accessed by importing from the `compon
 /**
  * WordPress dependencies
  */
-import { Button } from '@wordpress/components';
+import { Button } from '@gutenberg/components';
 
 export default function MyButton() {
 	return <Button>Click Me!</Button>;
@@ -27,7 +27,7 @@ export default function MyButton() {
 
 Many components include CSS to add styles, which you will need to load in order for them to appear correctly. Within WordPress, add the `wp-components` stylesheet as a dependency of your plugin's stylesheet. See [wp_enqueue_style documentation](https://developer.wordpress.org/reference/functions/wp_enqueue_style/#parameters) for how to specify dependencies.
 
-In non-WordPress projects, link to the `build-style/style.css` file directly, it is located at `node_modules/@wordpress/components/build-style/style.css`.
+In non-WordPress projects, link to the `build-style/style.css` file directly, it is located at `node_modules/@gutenberg/components/build-style/style.css`.
 
 ### Popovers
 
@@ -42,7 +42,7 @@ The following example illustrates how you can wrap a component using a
 /**
  * External dependencies
  */
-import { Popover, SlotFillProvider } from '@wordpress/components';
+import { Popover, SlotFillProvider } from '@gutenberg/components';
 
 /**
  * Internal dependencies

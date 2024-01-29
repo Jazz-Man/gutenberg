@@ -7,7 +7,7 @@ This component takes care of updating the state of the dropdown menu (opened/clo
 ## Usage
 
 ```jsx
-import { Button, Dropdown } from '@wordpress/components';
+import { Button, Dropdown } from '@gutenberg/components';
 
 const MyDropdown = () => (
 	<Dropdown

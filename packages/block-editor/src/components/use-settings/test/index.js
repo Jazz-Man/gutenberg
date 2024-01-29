@@ -6,9 +6,9 @@ import { render } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { addFilter, removeFilter } from '@wordpress/hooks';
-import { useSelect } from '@wordpress/data';
-import { useEffect } from '@wordpress/element';
+import { addFilter, removeFilter } from '@gutenberg/hooks';
+import { useSelect } from '@gutenberg/data';
+import { useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -17,7 +17,7 @@ import { useSettings, useSetting } from '..';
 import * as BlockEditContext from '../../block-edit/context';
 
 // Mock useSelect() functions used by useSettings()
-jest.mock( '@wordpress/data/src/components/use-select' );
+jest.mock( '@gutenberg/data/src/components/use-select' );
 
 let selectMock = {};
 const setupSelectMock = () => {

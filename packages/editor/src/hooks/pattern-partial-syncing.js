@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { addFilter } from '@wordpress/hooks';
-import { privateApis as patternsPrivateApis } from '@wordpress/patterns';
-import { createHigherOrderComponent } from '@wordpress/compose';
-import { useBlockEditingMode } from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
+import { addFilter } from '@gutenberg/hooks';
+import { privateApis as patternsPrivateApis } from '@gutenberg/patterns';
+import { createHigherOrderComponent } from '@gutenberg/compose';
+import { useBlockEditingMode } from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { store } from '@wordpress/interactivity';
+import { store } from '@gutenberg/interactivity';
 /**
  * Internal dependencies
  */

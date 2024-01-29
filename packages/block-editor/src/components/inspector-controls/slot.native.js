@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import warning from '@wordpress/warning';
-import deprecated from '@wordpress/deprecated';
+import warning from '@gutenberg/warning';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

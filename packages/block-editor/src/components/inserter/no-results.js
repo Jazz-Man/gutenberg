@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Icon, blockDefault } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { Icon, blockDefault } from '@gutenberg/icons';
 
 function InserterNoResults() {
 	return (

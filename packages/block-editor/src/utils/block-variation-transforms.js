@@ -1,4 +1,4 @@
-/** @typedef {import('@wordpress/blocks').WPBlockVariation} WPBlockVariation */
+/** @typedef {import('@gutenberg/blocks').WPBlockVariation} WPBlockVariation */
 
 function matchesAttributes( blockAttributes, variation ) {
 	return Object.entries( variation ).every( ( [ key, value ] ) => {

@@ -6,7 +6,7 @@ import { View, Dimensions } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	PanelBody,
 	RangeControl,
@@ -16,7 +16,7 @@ import {
 	GlobalStylesContext,
 	alignmentHelpers,
 	__experimentalUseCustomUnits as useCustomUnits,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	InspectorControls,
 	InnerBlocks,
@@ -25,8 +25,8 @@ import {
 	BlockVariationPicker,
 	useSettings,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { withDispatch, useSelect } from '@wordpress/data';
+} from '@gutenberg/block-editor';
+import { withDispatch, useSelect } from '@gutenberg/data';
 import {
 	useEffect,
 	useState,
@@ -34,10 +34,10 @@ import {
 	useMemo,
 	useCallback,
 	memo,
-} from '@wordpress/element';
-import { useResizeObserver } from '@wordpress/compose';
-import { createBlock } from '@wordpress/blocks';
-import { columns } from '@wordpress/icons';
+} from '@gutenberg/element';
+import { useResizeObserver } from '@gutenberg/compose';
+import { createBlock } from '@gutenberg/blocks';
+import { columns } from '@gutenberg/icons';
 /**
  * Internal dependencies
  */

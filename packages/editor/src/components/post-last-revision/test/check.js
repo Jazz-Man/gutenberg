@@ -6,14 +6,14 @@ import { render, screen } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies
  */
 import PostLastRevisionCheck from '../check';
 
-jest.mock( '@wordpress/data/src/components/use-select', () => jest.fn() );
+jest.mock( '@gutenberg/data/src/components/use-select', () => jest.fn() );
 
 function setupDataMock( id, count ) {
 	useSelect.mockImplementation( ( mapSelect ) =>

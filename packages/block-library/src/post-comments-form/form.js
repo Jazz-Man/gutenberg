@@ -6,16 +6,16 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __, _x, sprintf } from '@wordpress/i18n';
+import { __, _x, sprintf } from '@gutenberg/i18n';
 import {
 	Warning,
 	store as blockEditorStore,
 	__experimentalGetElementClassName,
-} from '@wordpress/block-editor';
-import { Button } from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
-import { useEntityProp, store as coreStore } from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/block-editor';
+import { Button } from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
+import { useEntityProp, store as coreStore } from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
 
 const CommentsFormPlaceholder = () => {
 	const instanceId = useInstanceId( CommentsFormPlaceholder );

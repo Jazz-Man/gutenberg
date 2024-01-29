@@ -6,8 +6,8 @@ import { getEditorHtml, initializeEditor, fireEvent } from 'test/helpers';
 /**
  * WordPress dependencies
  */
-import { getBlockTypes, unregisterBlockType } from '@wordpress/blocks';
-import { registerCoreBlocks } from '@wordpress/block-library';
+import { getBlockTypes, unregisterBlockType } from '@gutenberg/blocks';
+import { registerCoreBlocks } from '@gutenberg/block-library';
 
 beforeAll( () => {
 	// Register all core blocks

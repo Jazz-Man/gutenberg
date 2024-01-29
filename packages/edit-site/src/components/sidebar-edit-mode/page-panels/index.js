@@ -5,13 +5,13 @@ import {
 	PanelBody,
 	__experimentalText as Text,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
-import { page as pageIcon } from '@wordpress/icons';
-import { __, sprintf } from '@wordpress/i18n';
-import { humanTimeDiff } from '@wordpress/date';
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { decodeEntities } from '@wordpress/html-entities';
+} from '@gutenberg/components';
+import { page as pageIcon } from '@gutenberg/icons';
+import { __, sprintf } from '@gutenberg/i18n';
+import { humanTimeDiff } from '@gutenberg/date';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { decodeEntities } from '@gutenberg/html-entities';
 import {
 	PageAttributesPanel,
 	PostDiscussionPanel,
@@ -20,7 +20,7 @@ import {
 	PostLastRevisionPanel,
 	PostTaxonomiesPanel,
 	store as editorStore,
-} from '@wordpress/editor';
+} from '@gutenberg/editor';
 
 /**
  * Internal dependencies

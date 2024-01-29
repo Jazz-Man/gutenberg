@@ -7,10 +7,10 @@ This module allows you to run a queue of callback while on the browser's idle ti
 Install the module
 
 ```bash
-npm install @wordpress/priority-queue --save
+npm install @gutenberg/priority-queue --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## API
 
@@ -23,7 +23,7 @@ Creates a context-aware queue that only executes the last task of a given contex
 _Usage_
 
 ```js
-import { createQueue } from '@wordpress/priority-queue';
+import { createQueue } from '@gutenberg/priority-queue';
 
 const queue = createQueue();
 

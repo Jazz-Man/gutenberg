@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalHeading as Heading } from '@wordpress/components';
+import { __experimentalHeading as Heading } from '@gutenberg/components';
 
 function Subtitle( { children, level } ) {
 	return (

@@ -2,7 +2,7 @@
 
 The `LetterSpacingControl` component renders a [`UnitControl`](https://github.com/WordPress/gutenberg/blob/trunk/packages/block-editor/src/components/unit-control/README.md) that lets the user enter a numeric value and select a unit, for example px or rem.
 
-This component is used for blocks that display text, commonly inside a 
+This component is used for blocks that display text, commonly inside a
 [`ToolsPanelItem`](https://github.com/WordPress/gutenberg/blob/trunk/packages/components/src/tools-panel/tools-panel-item/README.md).
 
 ## Development guidelines
@@ -12,7 +12,7 @@ This component is used for blocks that display text, commonly inside a
 Renders a letter spacing control.
 
 ```jsx
-import { LetterSpacingControl } from '@wordpress/block-editor';
+import { LetterSpacingControl } from '@gutenberg/block-editor';
 
 const MyLetterSpacingControl = () => (
 	<LetterSpacingControl

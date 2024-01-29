@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { Icon } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { Component } from '@gutenberg/element';
+import { Icon } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * External dependencies

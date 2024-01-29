@@ -70,12 +70,12 @@ Package documentation is generated automatically by the documentation tool by pu
 
 This can be accomplished by creating a `docs` directory in the package and adding `toc.json` file that contains references other markdown files also contained in the `docs` directory. The `toc.json` file should contain an array of pages to be added as sub-pages of the main README file. The formatting follows the [`manifest.json`](https://github.com/WordPress/gutenberg/blob/HEAD/docs/manifest.json) file that is generated automatically.
 
-In order for these pages to be nested under the main package name, be sure to set the `parent` property correctly. See the example below that adds child pages to the [`@wordpress/create-block` section](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/).
+In order for these pages to be nested under the main package name, be sure to set the `parent` property correctly. See the example below that adds child pages to the [`@gutenberg/create-block` section](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/).
 
 ```json
 [
 	{
-		"title": "@wordpress/create-block External Template",
+		"title": "@gutenberg/create-block External Template",
 		"slug": "packages-create-block-external-template",
 		"markdown_source": "../packages/create-block/docs/external-template.md",
 		"parent": "packages-create-block"
@@ -104,7 +104,7 @@ Use the full directory and filename from the Gutenberg repository, not the publi
 An example, the link to this page is: `/docs/contributors/documentation/README.md`
 
 <div class="callout callout-warning">
-<b>Note:</b> The usual link transformation is not applied to links in callouts. See below. 
+<b>Note:</b> The usual link transformation is not applied to links in callouts. See below.
 </div>
 
 ### Code examples
@@ -161,12 +161,12 @@ This is a **warning** callout.
 </div>
 
 <div class="callout callout-warning">
-Note: In callout notices, links also need to be HTML `&lt;a href>&lt;/a>` notations. 
+Note: In callout notices, links also need to be HTML `&lt;a href>&lt;/a>` notations.
 The usual link transformation is not applied to links in callouts.
 For instance, to reach the Getting started > Create Block page the URL in GitHub is
 https://developer.wordpress.org/docs/getting-started/devenv/get-started-with-create-block.md
-and will have to be hardcoded for the endpoint in the Block Editor Handbook as 
-<a href="https://developer.wordpress.org/block-editor/getting-started/create-block/">https://developer.wordpress.org/block-editor/getting-started/create-block/</a> to link correctly in the handbook. 
+and will have to be hardcoded for the endpoint in the Block Editor Handbook as
+<a href="https://developer.wordpress.org/block-editor/getting-started/create-block/">https://developer.wordpress.org/block-editor/getting-started/create-block/</a> to link correctly in the handbook.
 </div>
 ### Editor config
 

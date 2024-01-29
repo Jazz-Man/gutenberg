@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	InspectorControls,
 	useBlockProps,
 	useInnerBlocksProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
-import { PanelBody } from '@wordpress/components';
-import { useEffect } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
+import { PanelBody } from '@gutenberg/components';
+import { useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies

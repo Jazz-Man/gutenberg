@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch, useRegistry } from '@wordpress/data';
-import { MenuGroup } from '@wordpress/components';
-import { __, _x } from '@wordpress/i18n';
-import { useViewportMatch } from '@wordpress/compose';
-import { displayShortcut } from '@wordpress/keycodes';
+import { useDispatch, useRegistry } from '@gutenberg/data';
+import { MenuGroup } from '@gutenberg/components';
+import { __, _x } from '@gutenberg/i18n';
+import { useViewportMatch } from '@gutenberg/compose';
+import { displayShortcut } from '@gutenberg/keycodes';
 import {
 	PreferenceToggleMenuItem,
 	store as preferencesStore,
-} from '@wordpress/preferences';
-import { store as editorStore } from '@wordpress/editor';
+} from '@gutenberg/preferences';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { PlainText, useBlockProps } from '@wordpress/block-editor';
-import { useInstanceId } from '@wordpress/compose';
-import { Icon, shortcode } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { PlainText, useBlockProps } from '@gutenberg/block-editor';
+import { useInstanceId } from '@gutenberg/compose';
+import { Icon, shortcode } from '@gutenberg/icons';
 
 export default function ShortcodeEdit( { attributes, setAttributes } ) {
 	const instanceId = useInstanceId( ShortcodeEdit );

@@ -6,8 +6,8 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { dragHandle } from '@wordpress/icons';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
+import { dragHandle } from '@gutenberg/icons';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

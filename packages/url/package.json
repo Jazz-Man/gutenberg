@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/url",
+	"name": "@gutenberg/url",
 	"version": "3.50.0",
 	"description": "WordPress URL utilities.",
 	"author": "The WordPress Contributors",

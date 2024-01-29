@@ -6,14 +6,14 @@ import Textarea from 'react-autosize-textarea';
 /**
  * WordPress dependencies
  */
-import { __unstableSerializeAndClean } from '@wordpress/blocks';
-import { store as coreStore } from '@wordpress/core-data';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { __ } from '@wordpress/i18n';
-import { Button, VisuallyHidden } from '@wordpress/components';
-import { useMemo } from '@wordpress/element';
-import { useInstanceId } from '@wordpress/compose';
+import { __unstableSerializeAndClean } from '@gutenberg/blocks';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as keyboardShortcutsStore } from '@gutenberg/keyboard-shortcuts';
+import { __ } from '@gutenberg/i18n';
+import { Button, VisuallyHidden } from '@gutenberg/components';
+import { useMemo } from '@gutenberg/element';
+import { useInstanceId } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

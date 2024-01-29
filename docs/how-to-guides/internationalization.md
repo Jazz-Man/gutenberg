@@ -38,9 +38,9 @@ add_action( 'init', 'myguten_block_init' );
 In your code, you can include the i18n functions. The most common function is **\_\_** (a double underscore) which provides translation of a simple string. Here is a basic block example:
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps } from '@wordpress/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { registerBlockType } from '@gutenberg/blocks';
+import { useBlockProps } from '@gutenberg/block-editor';
 
 registerBlockType( 'myguten/simple', {
 	apiVersion: 3,

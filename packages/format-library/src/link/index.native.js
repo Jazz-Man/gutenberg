@@ -6,10 +6,10 @@ import Clipboard from '@react-native-clipboard/clipboard';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Component } from '@wordpress/element';
-import { withSpokenMessages } from '@wordpress/components';
-import { RichTextToolbarButton } from '@wordpress/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { Component } from '@gutenberg/element';
+import { withSpokenMessages } from '@gutenberg/components';
+import { RichTextToolbarButton } from '@gutenberg/block-editor';
 import {
 	applyFormat,
 	getActiveFormat,
@@ -17,9 +17,9 @@ import {
 	isCollapsed,
 	removeFormat,
 	slice,
-} from '@wordpress/rich-text';
-import { isURL } from '@wordpress/url';
-import { link as linkIcon } from '@wordpress/icons';
+} from '@gutenberg/rich-text';
+import { isURL } from '@gutenberg/url';
+import { link as linkIcon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

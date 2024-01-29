@@ -6,12 +6,12 @@ import { paramCase as kebabCase } from 'change-case';
 /**
  * WordPress dependencies
  */
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { useMemo } from '@wordpress/element';
-import { serialize } from '@wordpress/blocks';
-import { __ } from '@wordpress/i18n';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { useMemo } from '@gutenberg/element';
+import { serialize } from '@gutenberg/blocks';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies
@@ -136,14 +136,14 @@ export function useCreateTemplatePartFromBlocks( area, setAttributes ) {
 export function useTemplatePartArea( area ) {
 	return useSelect(
 		( select ) => {
-			// FIXME: @wordpress/block-library should not depend on @wordpress/editor.
+			// FIXME: @gutenberg/block-library should not depend on @gutenberg/editor.
 			// Blocks can be loaded into a *non-post* block editor.
-			/* eslint-disable @wordpress/data-no-store-string-literals */
+			/* eslint-disable @gutenberg/data-no-store-string-literals */
 			const definedAreas =
 				select(
 					'core/editor'
 				).__experimentalGetDefaultTemplatePartAreas();
-			/* eslint-enable @wordpress/data-no-store-string-literals */
+			/* eslint-enable @gutenberg/data-no-store-string-literals */
 
 			const selectedArea = definedAreas.find(
 				( definedArea ) => definedArea.area === area

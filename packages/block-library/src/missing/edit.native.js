@@ -11,20 +11,20 @@ import {
 /**
  * WordPress dependencies
  */
-import { Icon } from '@wordpress/components';
-import { compose, withPreferredColorScheme } from '@wordpress/compose';
-import { coreBlocks } from '@wordpress/block-library';
-import { normalizeIconObject, rawHandler, serialize } from '@wordpress/blocks';
-import { Component } from '@wordpress/element';
-import { __, _x, sprintf } from '@wordpress/i18n';
-import { help, plugins } from '@wordpress/icons';
-import { withSelect, withDispatch } from '@wordpress/data';
-import { applyFilters } from '@wordpress/hooks';
+import { Icon } from '@gutenberg/components';
+import { compose, withPreferredColorScheme } from '@gutenberg/compose';
+import { coreBlocks } from '@gutenberg/block-library';
+import { normalizeIconObject, rawHandler, serialize } from '@gutenberg/blocks';
+import { Component } from '@gutenberg/element';
+import { __, _x, sprintf } from '@gutenberg/i18n';
+import { help, plugins } from '@gutenberg/icons';
+import { withSelect, withDispatch } from '@gutenberg/data';
+import { applyFilters } from '@gutenberg/hooks';
 import {
 	UnsupportedBlockDetails,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/block-editor';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies
@@ -72,7 +72,7 @@ export class UnsupportedBlockEdit extends Component {
 		const textdomain = blockType?.metadata.textdomain;
 
 		return title && textdomain
-			? // eslint-disable-next-line @wordpress/i18n-no-variables, @wordpress/i18n-text-domain
+			? // eslint-disable-next-line @gutenberg/i18n-no-variables, @gutenberg/i18n-text-domain
 			  _x( title, I18N_BLOCK_SCHEMA_TITLE, textdomain )
 			: originalName;
 	}

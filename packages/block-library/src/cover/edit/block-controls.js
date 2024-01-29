@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
+import { useState } from '@gutenberg/element';
 
 import {
 	BlockControls,
 	MediaReplaceFlow,
 	__experimentalBlockAlignmentMatrixControl as BlockAlignmentMatrixControl,
 	__experimentalBlockFullHeightAligmentControl as FullHeightAlignmentControl,
-} from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

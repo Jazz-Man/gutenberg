@@ -6,10 +6,10 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Children } from '@wordpress/element';
-import { BottomSheetConsumer } from '@wordpress/components';
-import warning from '@wordpress/warning';
-import deprecated from '@wordpress/deprecated';
+import { Children } from '@gutenberg/element';
+import { BottomSheetConsumer } from '@gutenberg/components';
+import warning from '@gutenberg/warning';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

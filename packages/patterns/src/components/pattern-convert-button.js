@@ -6,15 +6,15 @@ import {
 	isReusableBlock,
 	createBlock,
 	serialize,
-} from '@wordpress/blocks';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { useState, useCallback } from '@wordpress/element';
-import { MenuItem } from '@wordpress/components';
-import { symbol } from '@wordpress/icons';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { __, sprintf } from '@wordpress/i18n';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/blocks';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { useState, useCallback } from '@gutenberg/element';
+import { MenuItem } from '@gutenberg/components';
+import { symbol } from '@gutenberg/icons';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { store as noticesStore } from '@gutenberg/notices';
 /**
  * Internal dependencies
  */
@@ -40,7 +40,7 @@ export default function PatternConvertButton( {
 	const { createSuccessNotice } = useDispatch( noticesStore );
 	const { replaceBlocks } = useDispatch( blockEditorStore );
 	// Ignore reason: false positive of the lint rule.
-	// eslint-disable-next-line @wordpress/no-unused-vars-before-return
+	// eslint-disable-next-line @gutenberg/no-unused-vars-before-return
 	const { setEditingPattern } = unlock( useDispatch( patternsStore ) );
 	const [ isModalOpen, setIsModalOpen ] = useState( false );
 	const canConvert = useSelect(

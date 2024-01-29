@@ -7,10 +7,10 @@ This module contains helper functions to convert HTML or a DOM tree into a rich 
 Install the module
 
 ```bash
-npm install @wordpress/rich-text
+npm install @gutenberg/rich-text
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## Usage
 
@@ -33,7 +33,7 @@ The value object is comprised of the following:
 -   `start` - an index in the `text` representing the _start_ of the currently active selection.
 -   `end` - an index in the `text` representing the _end_ of the currently active selection.
 
-You should not attempt to create your own `value` objects. Rather you should rely on the built in methods of the `@wordpress/rich-text` package to build these for you.
+You should not attempt to create your own `value` objects. Rather you should rely on the built in methods of the `@gutenberg/rich-text` package to build these for you.
 
 It is important to understand how a value represents richly formatted text. Here is an example to illustrate.
 
@@ -370,7 +370,7 @@ formats: [ ... ] } )`.
 
 ### RichTextValue
 
-An object which represents a formatted string. See main `@wordpress/rich-text` documentation for more information.
+An object which represents a formatted string. See main `@gutenberg/rich-text` documentation for more information.
 
 ### slice
 

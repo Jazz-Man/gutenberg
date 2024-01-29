@@ -6,13 +6,13 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { forwardRef, useEffect } from '@wordpress/element';
+import { forwardRef, useEffect } from '@gutenberg/element';
 import {
 	__unstableUseNavigateRegions as useNavigateRegions,
 	__unstableMotion as motion,
-} from '@wordpress/components';
-import { __, _x } from '@wordpress/i18n';
-import { useMergeRefs } from '@wordpress/compose';
+} from '@gutenberg/components';
+import { __, _x } from '@gutenberg/i18n';
+import { useMergeRefs } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

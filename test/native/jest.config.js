@@ -62,7 +62,7 @@ module.exports = {
 		'\\.(scss)$': '<rootDir>/test/native/__mocks__/styleMock.js',
 		'\\.(eot|otf|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
 			'<rootDir>/test/native/__mocks__/fileMock.js',
-		[ `@wordpress\\/(${ transpiledPackageNames.join( '|' ) })$` ]:
+		[ `@gutenberg\\/(${ transpiledPackageNames.join( '|' ) })$` ]:
 			'<rootDir>/packages/$1/src',
 		'test/helpers$': '<rootDir>/test/native/helpers.js',
 	},

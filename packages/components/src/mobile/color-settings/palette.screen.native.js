@@ -6,15 +6,15 @@ import { View, Text, TouchableWithoutFeedback } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useState, useContext } from '@wordpress/element';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
+import { __ } from '@gutenberg/i18n';
+import { useState, useContext } from '@gutenberg/element';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
 import {
 	ColorControl,
 	PanelBody,
 	BottomSheetContext,
 	useMobileGlobalStylesColors,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import { useRoute, useNavigation } from '@react-navigation/native';
 
 /**

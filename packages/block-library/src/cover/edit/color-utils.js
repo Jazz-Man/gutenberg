@@ -9,7 +9,7 @@ import memoize from 'memize';
 /**
  * WordPress dependencies
  */
-import { applyFilters } from '@wordpress/hooks';
+import { applyFilters } from '@gutenberg/hooks';
 
 /**
  * @typedef {import('colord').RgbaColor} RgbaColor

@@ -6,10 +6,10 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { addFilter } from '@wordpress/hooks';
-import { getBlockSupport } from '@wordpress/blocks';
-import { useMemo, Platform, useCallback } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
+import { addFilter } from '@gutenberg/hooks';
+import { getBlockSupport } from '@gutenberg/blocks';
+import { useMemo, Platform, useCallback } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

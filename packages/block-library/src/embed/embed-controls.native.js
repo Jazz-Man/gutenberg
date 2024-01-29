@@ -5,12 +5,12 @@ import EmbedLinkSettings from './embed-link-settings';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { PanelBody, ToggleControl } from '@wordpress/components';
-import { InspectorControls } from '@wordpress/block-editor';
-import { useDispatch } from '@wordpress/data';
+import { __ } from '@gutenberg/i18n';
+import { PanelBody, ToggleControl } from '@gutenberg/components';
+import { InspectorControls } from '@gutenberg/block-editor';
+import { useDispatch } from '@gutenberg/data';
 // eslint-disable-next-line no-restricted-imports
-import { store as editPostStore } from '@wordpress/edit-post';
+import { store as editPostStore } from '@gutenberg/edit-post';
 
 function getResponsiveHelp( checked ) {
 	return checked

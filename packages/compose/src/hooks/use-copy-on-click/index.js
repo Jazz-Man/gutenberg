@@ -6,8 +6,8 @@ import Clipboard from 'clipboard';
 /**
  * WordPress dependencies
  */
-import { useRef, useEffect, useState } from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
+import { useRef, useEffect, useState } from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
 
 /* eslint-disable jsdoc/no-undefined-types */
 /**

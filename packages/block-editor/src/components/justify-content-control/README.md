@@ -13,7 +13,7 @@ See the Navigation block for an example usage.
 Renders an justification control with options.
 
 ```jsx
-import { JustifyContentControl } from '@wordpress/block-editor';
+import { JustifyContentControl } from '@gutenberg/block-editor';
 
 const MyJustifyToolbar = ( { attributes, setAttributes } ) => (
 	<BlockControls group="block">

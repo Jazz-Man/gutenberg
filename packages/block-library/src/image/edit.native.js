@@ -12,7 +12,7 @@ import { useRoute } from '@react-navigation/native';
 /**
  * WordPress dependencies
  */
-import { Component, useEffect } from '@wordpress/element';
+import { Component, useEffect } from '@gutenberg/element';
 import {
 	requestMediaImport,
 	mediaUploadSync,
@@ -20,7 +20,7 @@ import {
 	requestImageUploadCancelDialog,
 	requestImageFullscreenPreview,
 	setFeaturedImage,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 import {
 	Icon,
 	PanelBody,
@@ -35,7 +35,7 @@ import {
 	FooterMessageControl,
 	FooterMessageLink,
 	Badge,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	BlockCaption,
 	MediaPlaceholder,
@@ -48,22 +48,22 @@ import {
 	store as blockEditorStore,
 	blockSettingsScreens,
 	RichText,
-} from '@wordpress/block-editor';
-import { __, _x, sprintf } from '@wordpress/i18n';
-import { getProtocol, hasQueryArg, isURL } from '@wordpress/url';
-import { doAction, hasAction } from '@wordpress/hooks';
-import { compose, withPreferredColorScheme } from '@wordpress/compose';
-import { withSelect, withDispatch } from '@wordpress/data';
+} from '@gutenberg/block-editor';
+import { __, _x, sprintf } from '@gutenberg/i18n';
+import { getProtocol, hasQueryArg, isURL } from '@gutenberg/url';
+import { doAction, hasAction } from '@gutenberg/hooks';
+import { compose, withPreferredColorScheme } from '@gutenberg/compose';
+import { withSelect, withDispatch } from '@gutenberg/data';
 import {
 	image as placeholderIcon,
 	replace,
 	fullscreen,
 	textColor,
-} from '@wordpress/icons';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/icons';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as noticesStore } from '@gutenberg/notices';
 // eslint-disable-next-line no-restricted-imports
-import { store as editPostStore } from '@wordpress/edit-post';
+import { store as editPostStore } from '@gutenberg/edit-post';
 
 /**
  * Internal dependencies

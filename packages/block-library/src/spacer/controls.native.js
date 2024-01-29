@@ -6,10 +6,10 @@ import {
 	UnitControl,
 	getValueAndUnit,
 	__experimentalUseCustomUnits as useCustomUnits,
-} from '@wordpress/components';
-import { useCallback } from '@wordpress/element';
-import { useSettings } from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { useCallback } from '@gutenberg/element';
+import { useSettings } from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

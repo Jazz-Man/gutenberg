@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -31,8 +31,8 @@ function UnforwardedPanel(
  * `Panel` expands and collapses multiple sections of content.
  *
  * ```jsx
- * import { Panel, PanelBody, PanelRow } from '@wordpress/components';
- * import { more } from '@wordpress/icons';
+ * import { Panel, PanelBody, PanelRow } from '@gutenberg/components';
+ * import { more } from '@gutenberg/icons';
  *
  * const MyPanel = () => (
  * 	<Panel header="My Panel">

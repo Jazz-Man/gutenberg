@@ -7,9 +7,9 @@ import type { ChangeEvent, FocusEvent, ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { __, isRTL } from '@wordpress/i18n';
-import { useRef, useState, forwardRef } from '@wordpress/element';
-import { useInstanceId, useMergeRefs } from '@wordpress/compose';
+import { __, isRTL } from '@gutenberg/i18n';
+import { useRef, useState, forwardRef } from '@gutenberg/element';
+import { useInstanceId, useMergeRefs } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -344,8 +344,8 @@ function UnforwardedRangeControl(
  * RangeControls are used to make selections from a range of incremental values.
  *
  * ```jsx
- * import { RangeControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { RangeControl } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyRangeControl = () => {
  *   const [ isChecked, setChecked ] = useState( true );

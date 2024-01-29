@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createContext } from '@wordpress/element';
+import { createContext } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -25,7 +25,7 @@ const { Consumer, Provider } = Context;
  *   RegistryProvider,
  *   RegistryConsumer,
  *   createRegistry
- * } from '@wordpress/data';
+ * } from '@gutenberg/data';
  *
  * const registry = createRegistry( {} );
  *

@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import RCTAztecView from '@wordpress/react-native-aztec';
-import { useCallback } from '@wordpress/element';
+import RCTAztecView from '@gutenberg/react-native-aztec';
+import { useCallback } from '@gutenberg/element';
 
-/** @typedef {import('@wordpress/element').RefObject} RefObject */
+/** @typedef {import('@gutenberg/element').RefObject} RefObject */
 /**
  * Hook that calculates the currently focused TextInput's current
  * caret Y coordinate position.

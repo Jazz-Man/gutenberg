@@ -1,18 +1,18 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useState } from '@wordpress/element';
-import { serialize, createBlock } from '@wordpress/blocks';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useState } from '@gutenberg/element';
+import { serialize, createBlock } from '@gutenberg/blocks';
 import {
 	Modal,
 	TextControl,
 	Button,
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { cleanForSlug } from '@wordpress/url';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { cleanForSlug } from '@gutenberg/url';
 
 /**
  * Internal dependencies

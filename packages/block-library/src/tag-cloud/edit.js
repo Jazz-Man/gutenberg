@@ -12,16 +12,16 @@ import {
 	__experimentalUseCustomUnits as useCustomUnits,
 	__experimentalParseQuantityAndUnitFromRawValue as parseQuantityAndUnitFromRawValue,
 	Disabled,
-} from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
 import {
 	InspectorControls,
 	useBlockProps,
 	useSettings,
-} from '@wordpress/block-editor';
-import ServerSideRender from '@wordpress/server-side-render';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/block-editor';
+import ServerSideRender from '@gutenberg/server-side-render';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Minimum number of tags a user can show using this block.
@@ -77,7 +77,7 @@ function TagCloudEdit( { attributes, setAttributes } ) {
 	};
 
 	const onFontSizeChange = ( fontSizeLabel, newValue ) => {
-		// eslint-disable-next-line @wordpress/no-unused-vars-before-return
+		// eslint-disable-next-line @gutenberg/no-unused-vars-before-return
 		const [ quantity, newUnit ] =
 			parseQuantityAndUnitFromRawValue( newValue );
 		if ( ! Number.isFinite( quantity ) ) {

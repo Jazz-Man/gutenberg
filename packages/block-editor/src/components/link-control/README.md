@@ -43,14 +43,14 @@ In some circumstances if may be desirable to persist the toggle state of this po
 
 For example, once the user has toggled the UI to "open", then it may remain open across all links on the site until such time as the user toggles the UI back again.
 
-Consumers who which to take advantage of this functionality should ensure that their block editor environment utilizes the [`@wordpress/preferences`](packages/preferences/README.md) package. By default the `<LinkControl>` component will attempt to persist the state of UI to a setting named `linkControlSettingsDrawer` with a scope of `core/block-editor`. If the preferences package is not available then local state is used and the setting will not be persisted.
+Consumers who which to take advantage of this functionality should ensure that their block editor environment utilizes the [`@gutenberg/preferences`](packages/preferences/README.md) package. By default the `<LinkControl>` component will attempt to persist the state of UI to a setting named `linkControlSettingsDrawer` with a scope of `core/block-editor`. If the preferences package is not available then local state is used and the setting will not be persisted.
 
 ## Search Suggestions
 
 When creating links the `LinkControl` component will handle two kinds of input from users:
 
 1. Entity searches - the user may input free-text based search queries for entities retrieved from remote data sources (in the context of WordPress these are post-type entities). For example, a user might search for a `Page` they have just created by name (eg: About) and the UI will return a matching result if found.
-2. Direct entry - the user may also enter any arbitrary URL-like text. This includes full URLs (https://), URL fragements (eg: `#myinternallink`), `tel` protocol links (eg: `tel: 0800 1234`) and `mailto` protocol links (eg: `mailto: hello@wordpress.org`).
+2. Direct entry - the user may also enter any arbitrary URL-like text. This includes full URLs (https://), URL fragements (eg: `#myinternallink`), `tel` protocol links (eg: `tel: 0800 1234`) and `mailto` protocol links (eg: `mailto: hello@gutenberg.org`).
 
 In addition, `<LinkControl>` also allows for on the fly creation of links based on the **current content of the `<input>` element**. When enabled, a default "Create new" search suggestion is appended to all non-URL-like search results.
 

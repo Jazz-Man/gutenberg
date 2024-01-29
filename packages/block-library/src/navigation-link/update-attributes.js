@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { escapeHTML } from '@wordpress/escape-html';
-import { safeDecodeURI } from '@wordpress/url';
+import { escapeHTML } from '@gutenberg/escape-html';
+import { safeDecodeURI } from '@gutenberg/url';
 
 /**
  * @typedef {'post-type'|'custom'|'taxonomy'|'post-type-archive'} WPNavigationLinkKind

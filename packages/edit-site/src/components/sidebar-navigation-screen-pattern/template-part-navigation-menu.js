@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { __experimentalHeading as Heading } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { __experimentalHeading as Heading } from '@gutenberg/components';
 
 /**
  * Internal dependencies

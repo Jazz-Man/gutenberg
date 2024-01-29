@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { _x, __ } from '@wordpress/i18n';
-import { dateI18n } from '@wordpress/date';
-import { useState, createInterpolateElement } from '@wordpress/element';
+import { _x, __ } from '@gutenberg/i18n';
+import { dateI18n } from '@gutenberg/date';
+import { useState, createInterpolateElement } from '@gutenberg/element';
 import {
 	TextControl,
 	ExternalLink,
@@ -11,7 +11,7 @@ import {
 	CustomSelectControl,
 	ToggleControl,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 // So that we can illustrate the different formats in the dropdown properly,
 // show a date that has a day greater than 12 and a month with more than three

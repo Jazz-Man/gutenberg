@@ -6,27 +6,27 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { Button, Spinner, ButtonGroup } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { BACKSPACE, DELETE } from '@wordpress/keycodes';
-import { withSelect, withDispatch } from '@wordpress/data';
+import { Component } from '@gutenberg/element';
+import { Button, Spinner, ButtonGroup } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { BACKSPACE, DELETE } from '@gutenberg/keycodes';
+import { withSelect, withDispatch } from '@gutenberg/data';
 import {
 	RichText,
 	MediaPlaceholder,
 	store as blockEditorStore,
 	__experimentalGetElementClassName,
-} from '@wordpress/block-editor';
-import { isBlobURL } from '@wordpress/blob';
-import { compose } from '@wordpress/compose';
+} from '@gutenberg/block-editor';
+import { isBlobURL } from '@gutenberg/blob';
+import { compose } from '@gutenberg/compose';
 import {
 	closeSmall,
 	chevronLeft,
 	chevronRight,
 	edit,
 	image as imageIcon,
-} from '@wordpress/icons';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/icons';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

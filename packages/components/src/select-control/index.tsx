@@ -6,8 +6,8 @@ import classNames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { useState, forwardRef } from '@wordpress/element';
+import { useInstanceId } from '@gutenberg/compose';
+import { useState, forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -157,8 +157,8 @@ function UnforwardedSelectControl(
  * It functions as a wrapper around the browser's native `<select>` element.
  *
  * ```jsx
- * import { SelectControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { SelectControl } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MySelectControl = () => {
  *   const [ size, setSize ] = useState( '50%' );

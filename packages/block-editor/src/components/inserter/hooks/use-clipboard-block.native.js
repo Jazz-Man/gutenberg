@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { rawHandler, store as blocksStore } from '@wordpress/blocks';
-import { getClipboard } from '@wordpress/components';
+import { useSelect } from '@gutenberg/data';
+import { rawHandler, store as blocksStore } from '@gutenberg/blocks';
+import { getClipboard } from '@gutenberg/components';
 
 /**
  * Internal dependencies

@@ -1,6 +1,6 @@
-jest.mock( '@wordpress/compose', () => {
+jest.mock( '@gutenberg/compose', () => {
 	return {
-		...jest.requireActual( '@wordpress/compose' ),
+		...jest.requireActual( '@gutenberg/compose' ),
 		useViewportMatch: jest.fn(),
 	};
 } );

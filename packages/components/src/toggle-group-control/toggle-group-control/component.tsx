@@ -8,9 +8,9 @@ import { LayoutGroup } from 'framer-motion';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
-import { useMemo } from '@wordpress/element';
+import { useInstanceId } from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
+import { useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -113,7 +113,7 @@ function UnconnectedToggleGroupControl(
  * import {
  *   __experimentalToggleGroupControl as ToggleGroupControl,
  *   __experimentalToggleGroupControlOption as ToggleGroupControlOption,
- * } from '@wordpress/components';
+ * } from '@gutenberg/components';
  *
  * function Example() {
  *   return (

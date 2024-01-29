@@ -14,11 +14,11 @@ import {
 	__experimentalVStack as VStack,
 	Flex,
 	Icon,
-} from '@wordpress/components';
-import { decodeEntities } from '@wordpress/html-entities';
-import { useState } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/components';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { useState } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
 import {
 	archive,
 	blockMeta,
@@ -37,10 +37,10 @@ import {
 	verse,
 	search,
 	tag,
-} from '@wordpress/icons';
-import { __, sprintf } from '@wordpress/i18n';
-import { store as noticesStore } from '@wordpress/notices';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+} from '@gutenberg/icons';
+import { __, sprintf } from '@gutenberg/i18n';
+import { store as noticesStore } from '@gutenberg/notices';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

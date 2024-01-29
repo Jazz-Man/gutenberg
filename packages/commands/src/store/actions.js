@@ -1,4 +1,4 @@
-/** @typedef {import('@wordpress/keycodes').WPKeycodeModifier} WPKeycodeModifier */
+/** @typedef {import('@gutenberg/keycodes').WPKeycodeModifier} WPKeycodeModifier */
 
 /**
  * Configuration of a registered keyboard shortcut.

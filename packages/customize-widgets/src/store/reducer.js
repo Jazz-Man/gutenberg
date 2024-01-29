@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { combineReducers } from '@wordpress/data';
+import { combineReducers } from '@gutenberg/data';
 
 /**
  * Reducer tracking whether the inserter is open.

@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { useMemo } from '@wordpress/element';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { decodeEntities } from '@wordpress/html-entities';
-import { cloneBlock, store as blocksStore } from '@wordpress/blocks';
+import { useSelect } from '@gutenberg/data';
+import { useMemo } from '@gutenberg/element';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { cloneBlock, store as blocksStore } from '@gutenberg/blocks';
 
-/** @typedef {import('@wordpress/blocks').WPBlockVariation} WPBlockVariation */
+/** @typedef {import('@gutenberg/blocks').WPBlockVariation} WPBlockVariation */
 
 /**
  * @typedef IHasNameAndId

@@ -6,7 +6,7 @@ import { NEW_TAB_REL, NEW_TAB_TARGET, NOFOLLOW_REL } from './constants';
 /**
  * WordPress dependencies
  */
-import { prependHTTP } from '@wordpress/url';
+import { prependHTTP } from '@gutenberg/url';
 
 /**
  * Updates the link attributes.

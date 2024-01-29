@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { useEffect, useState, useMemo, useCallback } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { useGlobalStyles } from '@wordpress/components';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { useSelect } from '@gutenberg/data';
+import { useEffect, useState, useMemo, useCallback } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { useGlobalStyles } from '@gutenberg/components';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

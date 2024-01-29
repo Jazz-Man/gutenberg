@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { isTextField } from '@wordpress/dom';
-import { ENTER, BACKSPACE, DELETE } from '@wordpress/keycodes';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useRefEffect } from '@wordpress/compose';
+import { isTextField } from '@gutenberg/dom';
+import { ENTER, BACKSPACE, DELETE } from '@gutenberg/keycodes';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useRefEffect } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

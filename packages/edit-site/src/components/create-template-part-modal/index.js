@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	Icon,
 	BaseControl,
@@ -15,15 +15,15 @@ import {
 	__experimentalRadio as Radio,
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useState } from '@wordpress/element';
-import { useInstanceId } from '@wordpress/compose';
-import { store as editorStore } from '@wordpress/editor';
-import { store as noticesStore } from '@wordpress/notices';
-import { store as coreStore } from '@wordpress/core-data';
-import { check } from '@wordpress/icons';
-import { serialize } from '@wordpress/blocks';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useState } from '@gutenberg/element';
+import { useInstanceId } from '@gutenberg/compose';
+import { store as editorStore } from '@gutenberg/editor';
+import { store as noticesStore } from '@gutenberg/notices';
+import { store as coreStore } from '@gutenberg/core-data';
+import { check } from '@gutenberg/icons';
+import { serialize } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

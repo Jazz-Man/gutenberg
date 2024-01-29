@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useMemo, useCallback } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useInstanceId } from '@wordpress/compose';
-import { CheckboxControl } from '@wordpress/components';
-import { store as preferencesStore } from '@wordpress/preferences';
+import { useMemo, useCallback } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useInstanceId } from '@gutenberg/compose';
+import { CheckboxControl } from '@gutenberg/components';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

@@ -5,22 +5,22 @@ import {
 	getBlockType,
 	serialize,
 	store as blocksStore,
-} from '@wordpress/blocks';
-import { DropdownMenu, MenuGroup, MenuItem } from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { moreVertical } from '@wordpress/icons';
+} from '@gutenberg/blocks';
+import { DropdownMenu, MenuGroup, MenuItem } from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { moreVertical } from '@gutenberg/icons';
 import {
 	Children,
 	cloneElement,
 	useCallback,
 	useRef,
-} from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
+} from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	store as keyboardShortcutsStore,
 	__unstableUseShortcutEventMatch,
-} from '@wordpress/keyboard-shortcuts';
-import { pipe, useCopyToClipboard, useViewportMatch } from '@wordpress/compose';
+} from '@gutenberg/keyboard-shortcuts';
+import { pipe, useCopyToClipboard, useViewportMatch } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

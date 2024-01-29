@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { dispatch, select } from '@wordpress/data';
+import { dispatch, select } from '@gutenberg/data';
 
 /**
  * Internal dependencies
@@ -12,7 +12,7 @@ import { store as blocksStore } from '../store';
 
 /**
  * Returns all the block categories.
- * Ignored from documentation as the recommended usage is via useSelect from @wordpress/data.
+ * Ignored from documentation as the recommended usage is via useSelect from @gutenberg/data.
  *
  * @ignore
  *
@@ -29,10 +29,10 @@ export function getCategories() {
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { store as blocksStore, setCategories } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@gutenberg/i18n';
+ * import { store as blocksStore, setCategories } from '@gutenberg/blocks';
+ * import { useSelect } from '@gutenberg/data';
+ * import { Button } from '@gutenberg/components';
  *
  * const ExampleComponent = () => {
  *     // Retrieve the list of current categories.
@@ -70,9 +70,9 @@ export function setCategories( categories ) {
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { updateCategory } from '@wordpress/blocks';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@gutenberg/i18n';
+ * import { updateCategory } from '@gutenberg/blocks';
+ * import { Button } from '@gutenberg/components';
  *
  * const ExampleComponent = () => {
  *     return (

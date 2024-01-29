@@ -6,12 +6,12 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { addFilter } from '@wordpress/hooks';
+import { addFilter } from '@gutenberg/hooks';
 import {
 	getBlockSupport,
 	getBlockType,
 	hasBlockSupport,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

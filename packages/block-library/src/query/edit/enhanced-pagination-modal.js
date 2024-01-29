@@ -5,9 +5,9 @@ import {
 	Button,
 	Modal,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useState, useEffect } from '@wordpress/element';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useState, useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies

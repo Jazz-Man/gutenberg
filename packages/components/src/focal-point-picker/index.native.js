@@ -10,11 +10,11 @@ import Video from 'react-native-video';
 import {
 	requestFocalPointPickerTooltipShown,
 	setFocalPointPickerTooltipShown,
-} from '@wordpress/react-native-bridge';
-import { __ } from '@wordpress/i18n';
-import { Image, UnitControl } from '@wordpress/components';
-import { useRef, useState, useMemo, useEffect } from '@wordpress/element';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
+} from '@gutenberg/react-native-bridge';
+import { __ } from '@gutenberg/i18n';
+import { Image, UnitControl } from '@gutenberg/components';
+import { useRef, useState, useMemo, useEffect } from '@gutenberg/element';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

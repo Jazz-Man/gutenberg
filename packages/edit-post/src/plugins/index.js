@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { MenuItem, VisuallyHidden } from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as editorStore } from '@wordpress/editor';
-import { useSelect } from '@wordpress/data';
-import { external } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
-import { registerPlugin } from '@wordpress/plugins';
-import { addQueryArgs } from '@wordpress/url';
+import { MenuItem, VisuallyHidden } from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as editorStore } from '@gutenberg/editor';
+import { useSelect } from '@gutenberg/data';
+import { external } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
+import { registerPlugin } from '@gutenberg/plugins';
+import { addQueryArgs } from '@gutenberg/url';
 
 /**
  * Internal dependencies

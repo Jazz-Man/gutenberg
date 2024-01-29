@@ -6,7 +6,7 @@ Babel plugin used to scan JavaScript files for use of localization functions. It
 {
 	"plugins": [
 		[
-			"@wordpress/babel-plugin-makepot",
+			"@gutenberg/babel-plugin-makepot",
 			{ "output": "languages/myplugin.pot" }
 		]
 	]
@@ -18,7 +18,7 @@ Babel plugin used to scan JavaScript files for use of localization functions. It
 Install the module:
 
 ```bash
-npm install @wordpress/babel-plugin-makepot --save-dev
+npm install @gutenberg/babel-plugin-makepot --save-dev
 ```
 
 **Note**: This package requires Node.js 14.0.0 or later. It is not compatible with older versions.

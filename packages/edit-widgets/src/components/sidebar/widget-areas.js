@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { useMemo } from '@wordpress/element';
-import { blockDefault } from '@wordpress/icons';
-import { BlockIcon } from '@wordpress/block-editor';
-import { Button } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { addQueryArgs } from '@wordpress/url';
-import { safeHTML } from '@wordpress/dom';
+import { useSelect } from '@gutenberg/data';
+import { useMemo } from '@gutenberg/element';
+import { blockDefault } from '@gutenberg/icons';
+import { BlockIcon } from '@gutenberg/block-editor';
+import { Button } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { addQueryArgs } from '@gutenberg/url';
+import { safeHTML } from '@gutenberg/dom';
 
 /**
  * Internal dependencies

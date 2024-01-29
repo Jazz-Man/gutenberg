@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	__experimentalItemGroup as ItemGroup,
 	__experimentalVStack as VStack,
 	__experimentalHStack as HStack,
 	Button,
 	Tooltip,
-} from '@wordpress/components';
-import { typography } from '@wordpress/icons';
-import { useContext } from '@wordpress/element';
+} from '@gutenberg/components';
+import { typography } from '@gutenberg/icons';
+import { useContext } from '@gutenberg/element';
 
 /**
  * Internal dependencies

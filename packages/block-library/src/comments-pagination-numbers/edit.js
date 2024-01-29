@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps } from '@gutenberg/block-editor';
 
 const PaginationItem = ( { content, tag: Tag = 'a', extraClass = '' } ) =>
 	Tag === 'a' ? (

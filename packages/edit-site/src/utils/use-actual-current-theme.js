@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
-import { useState, useEffect } from '@wordpress/element';
-import { addQueryArgs } from '@wordpress/url';
+import apiFetch from '@gutenberg/api-fetch';
+import { useState, useEffect } from '@gutenberg/element';
+import { addQueryArgs } from '@gutenberg/url';
 
 const ACTIVE_THEMES_URL = '/wp/v2/themes?status=active';
 

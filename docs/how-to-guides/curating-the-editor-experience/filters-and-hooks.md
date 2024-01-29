@@ -6,7 +6,7 @@ The Editor provides numerous filters and hooks that allow you to modify the edit
 
 The theme.json file is a great way to control interface options, but it only allows for global or block-level modifications, which can be limiting in some scenarios.
 
-For instance, in the previous section, color and typography controls were disabled globally using theme.json. But let's say you want to enable color settings for users who are Administrators. 
+For instance, in the previous section, color and typography controls were disabled globally using theme.json. But let's say you want to enable color settings for users who are Administrators.
 
 To provide more flexibility, WordPress 6.1 introduced server-side filters allowing you to customize theme.json data at four different data layers.
 
@@ -44,7 +44,7 @@ function example_filter_theme_json_data_theme( $theme_json ){
 add_filter( 'wp_theme_json_data_theme', 'example_filter_theme_json_data_theme' );
 ```
 
-The filter receives an instance of the `WP_Theme_JSON_Data class` with the data for the respective layer. Then, you pass new data in a valid theme.json-like structure to the `update_with( $new_data )` method. A theme.json version number is required in `$new_data`. 
+The filter receives an instance of the `WP_Theme_JSON_Data class` with the data for the respective layer. Then, you pass new data in a valid theme.json-like structure to the `update_with( $new_data )` method. A theme.json version number is required in `$new_data`.
 
 
 ## Client-side (Editor) filters
@@ -54,7 +54,7 @@ WordPress 6.2 introduced a new client-side filter allowing you to modify block-l
 The filter is called `blockEditor.useSetting.before` and can be used in the JavaScript code as follows:
 
 ```js
-import { addFilter } from '@wordpress/hooks';
+import { addFilter } from '@gutenberg/hooks';
 
 /**
  * Limit the Column block's spacing options to pixels.
@@ -78,8 +78,8 @@ However, the `blockEditor.useSetting.before` filter is unique because it allows 
 In the following example, text color controls are disabled for the Heading block whenever the block is placed inside of a Media & Text block.
 
 ```js
-import { select } from  '@wordpress/data';
-import { addFilter } from '@wordpress/hooks';
+import { select } from  '@gutenberg/data';
+import { addFilter } from '@gutenberg/hooks';
 
 /**
  * Disable text color controls on Heading blocks when placed inside of Media & Text blocks.

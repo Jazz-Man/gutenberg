@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { Button } from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
+import { Button } from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

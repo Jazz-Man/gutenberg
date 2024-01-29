@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/icons",
+	"name": "@gutenberg/icons",
 	"version": "9.40.0",
 	"description": "WordPress Icons package, based on dashicon.",
 	"author": "The WordPress Contributors",
@@ -29,8 +29,8 @@
 	"types": "build-types",
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/element": "workspace:*",
-		"@wordpress/primitives": "workspace:*"
+		"@gutenberg/element": "workspace:*",
+		"@gutenberg/primitives": "workspace:*"
 	},
 	"publishConfig": {
 		"access": "public"

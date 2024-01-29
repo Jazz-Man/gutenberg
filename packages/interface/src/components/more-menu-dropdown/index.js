@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { DropdownMenu } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { moreVertical } from '@wordpress/icons';
+import { DropdownMenu } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { moreVertical } from '@gutenberg/icons';
 
 export default function MoreMenuDropdown( {
 	as: DropdownComponent = DropdownMenu,

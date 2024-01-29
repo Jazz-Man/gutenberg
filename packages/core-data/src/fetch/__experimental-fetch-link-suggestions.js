@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
-import { addQueryArgs } from '@wordpress/url';
-import { decodeEntities } from '@wordpress/html-entities';
-import { __ } from '@wordpress/i18n';
+import apiFetch from '@gutenberg/api-fetch';
+import { addQueryArgs } from '@gutenberg/url';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Filters the search by type
@@ -65,7 +65,7 @@ import { __ } from '@wordpress/i18n';
  *
  * @example
  * ```js
- * import { __experimentalFetchLinkSuggestions as fetchLinkSuggestions } from '@wordpress/core-data';
+ * import { __experimentalFetchLinkSuggestions as fetchLinkSuggestions } from '@gutenberg/core-data';
  *
  * //...
  *

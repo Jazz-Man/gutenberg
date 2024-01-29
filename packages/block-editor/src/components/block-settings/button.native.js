@@ -5,10 +5,10 @@ import {
 	createSlotFill,
 	ToolbarButton,
 	ToolbarGroup,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { withDispatch } from '@wordpress/data';
-import { cog } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { withDispatch } from '@gutenberg/data';
+import { cog } from '@gutenberg/icons';
 
 const { Fill, Slot } = createSlotFill( 'SettingsToolbarButton' );
 

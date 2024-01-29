@@ -25,7 +25,7 @@ function UnconnectedHStack(
  * import {
  * 	__experimentalHStack as HStack,
  * 	__experimentalText as Text,
- * } from `@wordpress/components`;
+ * } from `@gutenberg/components`;
  *
  * function Example() {
  * 	return (

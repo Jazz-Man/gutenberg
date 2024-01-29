@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useEntityProp, store as coreStore } from '@wordpress/core-data';
-import { useMemo } from '@wordpress/element';
+import { useEntityProp, store as coreStore } from '@gutenberg/core-data';
+import { useMemo } from '@gutenberg/element';
 import {
 	AlignmentToolbar,
 	BlockControls,
@@ -15,10 +15,10 @@ import {
 	RichText,
 	Warning,
 	useBlockProps,
-} from '@wordpress/block-editor';
-import { PanelBody, ToggleControl, RangeControl } from '@wordpress/components';
-import { __, _x } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/block-editor';
+import { PanelBody, ToggleControl, RangeControl } from '@gutenberg/components';
+import { __, _x } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

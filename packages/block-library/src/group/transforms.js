@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createBlock } from '@wordpress/blocks';
+import { createBlock } from '@gutenberg/blocks';
 
 const transforms = {
 	from: [

@@ -7,7 +7,7 @@ import styled from '@emotion/styled';
 /**
  * WordPress dependencies
  */
-import { cloneElement } from '@wordpress/element';
+import { cloneElement } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -7,9 +7,9 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { forwardRef } from '@wordpress/element';
-import { external } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { forwardRef } from '@gutenberg/element';
+import { external } from '@gutenberg/icons';
 
 /**
  * Internal dependencies
@@ -86,7 +86,7 @@ function UnforwardedExternalLink(
  * Link to an external resource.
  *
  * ```jsx
- * import { ExternalLink } from '@wordpress/components';
+ * import { ExternalLink } from '@gutenberg/components';
  *
  * const MyExternalLink = () => (
  *   <ExternalLink href="https://wordpress.org">WordPress.org</ExternalLink>

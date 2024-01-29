@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { getBlockSupport, hasBlockSupport } from '@wordpress/blocks';
-import { useMemo, useCallback } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
+import { getBlockSupport, hasBlockSupport } from '@gutenberg/blocks';
+import { useMemo, useCallback } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

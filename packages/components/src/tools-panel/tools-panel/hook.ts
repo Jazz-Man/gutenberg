@@ -7,7 +7,7 @@ import {
 	useMemo,
 	useRef,
 	useState,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 
 /**
  * Internal dependencies

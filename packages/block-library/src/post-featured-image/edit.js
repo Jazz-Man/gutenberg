@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useEntityProp, store as coreStore } from '@wordpress/core-data';
-import { useSelect, useDispatch } from '@wordpress/data';
+import { useEntityProp, store as coreStore } from '@gutenberg/core-data';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	MenuItem,
 	ToggleControl,
@@ -15,7 +15,7 @@ import {
 	Placeholder,
 	Button,
 	TextControl,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	InspectorControls,
 	BlockControls,
@@ -24,11 +24,11 @@ import {
 	useBlockProps,
 	store as blockEditorStore,
 	__experimentalUseBorderProps as useBorderProps,
-} from '@wordpress/block-editor';
-import { useMemo } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
-import { upload } from '@wordpress/icons';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/block-editor';
+import { useMemo } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { upload } from '@gutenberg/icons';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

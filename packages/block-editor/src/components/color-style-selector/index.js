@@ -7,10 +7,10 @@ import {
 	ToolbarGroup,
 	SVG,
 	Path,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { DOWN } from '@wordpress/keycodes';
-import deprecated from '@wordpress/deprecated';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { DOWN } from '@gutenberg/keycodes';
+import deprecated from '@gutenberg/deprecated';
 
 const ColorSelectorSVGIcon = () => (
 	<SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">

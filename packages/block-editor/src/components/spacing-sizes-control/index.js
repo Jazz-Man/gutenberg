@@ -4,9 +4,9 @@
 import {
 	BaseControl,
 	__experimentalHStack as HStack,
-} from '@wordpress/components';
-import { useState } from '@wordpress/element';
-import { __, _x, sprintf } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { useState } from '@gutenberg/element';
+import { __, _x, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

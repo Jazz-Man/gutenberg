@@ -5,7 +5,7 @@ FormFileUpload is a component that allows users to select files from their local
 ## Usage
 
 ```jsx
-import { FormFileUpload } from '@wordpress/components';
+import { FormFileUpload } from '@gutenberg/components';
 
 const MyFormFileUpload = () => (
 	<FormFileUpload

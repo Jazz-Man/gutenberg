@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { column as icon } from '@wordpress/icons';
+import { column as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

@@ -6,7 +6,7 @@ import classNames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
+import { InnerBlocks, useBlockProps } from '@gutenberg/block-editor';
 
 /**
  * The specific handling by `className` below is needed because `itemsJustification`

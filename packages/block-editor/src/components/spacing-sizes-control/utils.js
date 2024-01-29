@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	sidesAll,
 	sidesBottom,
@@ -10,7 +10,7 @@ import {
 	sidesRight,
 	sidesTop,
 	sidesVertical,
-} from '@wordpress/icons';
+} from '@gutenberg/icons';
 
 export const ALL_SIDES = [ 'top', 'right', 'bottom', 'left' ];
 

@@ -7,10 +7,10 @@ A key/value store for application preferences.
 Install the module
 
 ```bash
-npm install @wordpress/preferences --save
+npm install @gutenberg/preferences --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## Key concepts
 
@@ -37,8 +37,8 @@ Defaults are the value returned when a preference is `undefined`. These are not 
 Set the default preferences for any features on initialization by dispatching an action:
 
 ```js
-import { dispatch } from '@wordpress/data';
-import { store as preferencesStore } from '@wordpress/preferences';
+import { dispatch } from '@gutenberg/data';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 function initialize() {
 	// ...
@@ -138,7 +138,7 @@ wp.data.dispatch( 'core/preferences' ).setPersistenceLayer( {
 
 The `PreferenceToggleMenuItem` components can be used with a `DropdownMenu` to implement a menu for changing preferences.
 
-Also see the `MoreMenuDropdown` component from the `@wordpress/interface` package for implementing a more menu.
+Also see the `MoreMenuDropdown` component from the `@gutenberg/interface` package for implementing a more menu.
 
 ```jsx
 function MyEditorMenu() {

@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/server-side-render",
+	"name": "@gutenberg/server-side-render",
 	"version": "4.26.0",
 	"description": "The component used with WordPress to server-side render a preview of dynamic blocks to display in the editor.",
 	"author": "The WordPress Contributors",
@@ -27,15 +27,15 @@
 	"react-native": "src/index",
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/api-fetch": "workspace:*",
-		"@wordpress/blocks": "workspace:*",
-		"@wordpress/components": "workspace:*",
-		"@wordpress/compose": "workspace:*",
-		"@wordpress/data": "workspace:*",
-		"@wordpress/deprecated": "workspace:*",
-		"@wordpress/element": "workspace:*",
-		"@wordpress/i18n": "workspace:*",
-		"@wordpress/url": "workspace:*",
+		"@gutenberg/api-fetch": "workspace:*",
+		"@gutenberg/blocks": "workspace:*",
+		"@gutenberg/components": "workspace:*",
+		"@gutenberg/compose": "workspace:*",
+		"@gutenberg/data": "workspace:*",
+		"@gutenberg/deprecated": "workspace:*",
+		"@gutenberg/element": "workspace:*",
+		"@gutenberg/i18n": "workspace:*",
+		"@gutenberg/url": "workspace:*",
 		"fast-deep-equal": "^3.1.3"
 	},
 	"peerDependencies": {

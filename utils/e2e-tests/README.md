@@ -9,7 +9,7 @@ End-To-End (E2E) tests for WordPress.
 Install the module
 
 ```bash
-npm install @wordpress/e2e-tests --save-dev
+npm install @gutenberg/e2e-tests --save-dev
 ```
 
 ## Running tests
@@ -63,7 +63,7 @@ Debugging in a Chrome browser can be replaced with `vscode`'s debugger by adding
 	"type": "node",
 	"request": "launch",
 	"name": "Debug current e2e test",
-	"program": "${workspaceFolder}/node_modules/@wordpress/scripts/bin/wp-scripts.js",
+	"program": "${workspaceFolder}/node_modules/@gutenberg/scripts/bin/wp-scripts.js",
 	"args": [
 		"test-e2e",
 		"--config=${workspaceFolder}/packages/e2e-tests/jest.config.js",

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	Button,
 	__experimentalVStack as VStack,
@@ -9,11 +9,11 @@ import {
 	Flex,
 	FlexBlock,
 	FlexItem,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	__experimentalGetBlockLabel,
 	store as blocksStore,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

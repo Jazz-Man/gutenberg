@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Fragment, useMemo } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { Fragment, useMemo } from '@gutenberg/element';
 import {
 	__experimentalHStack as HStack,
 	PanelBody,
 	ToggleControl,
-} from '@wordpress/components';
-import { createBlock, store as blocksStore } from '@wordpress/blocks';
-import { useDispatch, useSelect } from '@wordpress/data';
+} from '@gutenberg/components';
+import { createBlock, store as blocksStore } from '@gutenberg/blocks';
+import { useDispatch, useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { MenuGroup } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { MenuGroup } from '@gutenberg/components';
 import {
 	ActionItem,
 	MoreMenuDropdown,
 	PinnedItems,
-} from '@wordpress/interface';
-import { useViewportMatch } from '@wordpress/compose';
+} from '@gutenberg/interface';
+import { useViewportMatch } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

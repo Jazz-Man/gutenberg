@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { PanelBody } from '@wordpress/components';
+import { useSelect } from '@gutenberg/data';
+import { PanelBody } from '@gutenberg/components';
 import {
 	PageAttributesPanel,
 	PostDiscussionPanel,
@@ -11,10 +11,10 @@ import {
 	PostLastRevisionPanel,
 	PostTaxonomiesPanel,
 	store as editorStore,
-} from '@wordpress/editor';
-import { store as coreStore } from '@wordpress/core-data';
-import { decodeEntities } from '@wordpress/html-entities';
-import { navigation, symbol } from '@wordpress/icons';
+} from '@gutenberg/editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { navigation, symbol } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

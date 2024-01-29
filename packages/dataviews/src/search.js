@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useEffect, useRef, memo } from '@wordpress/element';
-import { SearchControl } from '@wordpress/components';
-import { useDebouncedInput } from '@wordpress/compose';
+import { __ } from '@gutenberg/i18n';
+import { useEffect, useRef, memo } from '@gutenberg/element';
+import { SearchControl } from '@gutenberg/components';
+import { useDebouncedInput } from '@gutenberg/compose';
 
 const Search = memo( function Search( { label, view, onChangeView } ) {
 	const [ search, setSearch, debouncedSearch ] = useDebouncedInput(

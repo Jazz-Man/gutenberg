@@ -6,10 +6,10 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useRef, createContext, useContext } from '@wordpress/element';
-import { __unstableMotion as motion } from '@wordpress/components';
-import { useReducedMotion } from '@wordpress/compose';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useRef, createContext, useContext } from '@gutenberg/element';
+import { __unstableMotion as motion } from '@gutenberg/components';
+import { useReducedMotion } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

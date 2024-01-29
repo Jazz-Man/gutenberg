@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useState, useEffect, useMemo } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { addQueryArgs } from '@wordpress/url';
-import apiFetch from '@wordpress/api-fetch';
+import { useState, useEffect, useMemo } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { addQueryArgs } from '@gutenberg/url';
+import apiFetch from '@gutenberg/api-fetch';
 
 // This is limited by WP REST API
 const MAX_COMMENTS_PER_PAGE = 100;

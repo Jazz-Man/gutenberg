@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { lineDashed, lineDotted, lineSolid } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
+import { lineDashed, lineDotted, lineSolid } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

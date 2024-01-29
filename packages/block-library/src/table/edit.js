@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useEffect, useRef, useState } from '@wordpress/element';
+import { useEffect, useRef, useState } from '@gutenberg/element';
 import {
 	InspectorControls,
 	BlockControls,
@@ -17,8 +17,8 @@ import {
 	__experimentalUseColorProps as useColorProps,
 	__experimentalUseBorderProps as useBorderProps,
 	__experimentalGetElementClassName,
-} from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
 import {
 	Button,
 	PanelBody,
@@ -27,7 +27,7 @@ import {
 	ToggleControl,
 	ToolbarDropdownMenu,
 	__experimentalHasSplitBorders as hasSplitBorders,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	alignLeft,
 	alignRight,
@@ -40,8 +40,8 @@ import {
 	tableRowBefore,
 	tableRowDelete,
 	table,
-} from '@wordpress/icons';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
+} from '@gutenberg/icons';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

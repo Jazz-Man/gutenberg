@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { CheckboxControl, PanelRow } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { decodeEntities } from '@wordpress/html-entities';
+import { CheckboxControl, PanelRow } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Internal dependencies

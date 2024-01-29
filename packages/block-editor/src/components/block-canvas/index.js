@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useMergeRefs } from '@wordpress/compose';
-import { useRef } from '@wordpress/element';
+import { useMergeRefs } from '@gutenberg/compose';
+import { useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -10,8 +10,8 @@ import {
 	registerBlockType,
 	serialize,
 	unregisterBlockType,
-} from '@wordpress/blocks';
-import { renderToString } from '@wordpress/element';
+} from '@gutenberg/blocks';
+import { renderToString } from '@gutenberg/element';
 
 /**
  * Internal dependencies

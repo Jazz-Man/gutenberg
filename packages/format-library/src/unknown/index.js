@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { removeFormat, slice } from '@wordpress/rich-text';
-import { RichTextToolbarButton } from '@wordpress/block-editor';
-import { help } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { removeFormat, slice } from '@gutenberg/rich-text';
+import { RichTextToolbarButton } from '@gutenberg/block-editor';
+import { help } from '@gutenberg/icons';
 
 const name = 'core/unknown';
 const title = __( 'Clear Unknown Formatting' );

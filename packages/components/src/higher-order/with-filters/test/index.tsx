@@ -6,7 +6,7 @@ import { render, waitFor } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { addFilter, removeAllFilters, removeFilter } from '@wordpress/hooks';
+import { addFilter, removeAllFilters, removeFilter } from '@gutenberg/hooks';
 
 /**
  * Internal dependencies

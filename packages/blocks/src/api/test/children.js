@@ -3,7 +3,7 @@
 /**
  * WordPress dependencies
  */
-import { renderToString } from '@wordpress/element';
+import { renderToString } from '@gutenberg/element';
 
 /**
  * Internal dependencies

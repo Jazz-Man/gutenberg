@@ -15,13 +15,13 @@ import {
 	parse,
 	switchToBlockType,
 	store as blocksStore,
-} from '@wordpress/blocks';
-import { Platform } from '@wordpress/element';
-import { applyFilters } from '@wordpress/hooks';
-import { symbol } from '@wordpress/icons';
-import { create, remove, toHTMLString } from '@wordpress/rich-text';
-import deprecated from '@wordpress/deprecated';
-import { createRegistrySelector } from '@wordpress/data';
+} from '@gutenberg/blocks';
+import { Platform } from '@gutenberg/element';
+import { applyFilters } from '@gutenberg/hooks';
+import { symbol } from '@gutenberg/icons';
+import { create, remove, toHTMLString } from '@gutenberg/rich-text';
+import deprecated from '@gutenberg/deprecated';
+import { createRegistrySelector } from '@gutenberg/data';
 
 /**
  * Internal dependencies

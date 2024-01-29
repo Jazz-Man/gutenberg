@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
-import { privateApis as componentsPrivateApis } from '@wordpress/components';
+import { forwardRef } from '@gutenberg/element';
+import { privateApis as componentsPrivateApis } from '@gutenberg/components';
 
 /**
  * Internal dependencies

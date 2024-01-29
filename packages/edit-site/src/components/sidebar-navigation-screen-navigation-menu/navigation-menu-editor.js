@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import { BlockEditorProvider } from '@wordpress/block-editor';
-import { createBlock } from '@wordpress/blocks';
+import { useMemo } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import { BlockEditorProvider } from '@gutenberg/block-editor';
+import { createBlock } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

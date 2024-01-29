@@ -41,16 +41,16 @@ describe( 'isURL', () => {
 
 describe( 'isEmail', () => {
 	it.each( [
-		'simple@wordpress.org',
-		'very.common@wordpress.org',
-		'disposable.style.email.with+symbol@wordpress.org',
-		'other.email-with-hyphen@wordpress.org',
-		'fully-qualified-domain@wordpress.org',
-		'user.name+tag+sorting@wordpress.org',
-		'x@wordpress.org',
+		'simple@gutenberg.org',
+		'very.common@gutenberg.org',
+		'disposable.style.email.with+symbol@gutenberg.org',
+		'other.email-with-hyphen@gutenberg.org',
+		'fully-qualified-domain@gutenberg.org',
+		'user.name+tag+sorting@gutenberg.org',
+		'x@gutenberg.org',
 		'wordpress-indeed@strange-wordpress.org',
 		'wordpress@s.wordpress',
-		'1234567890123456789012345678901234567890123456789012345678901234+x@wordpress.org',
+		'1234567890123456789012345678901234567890123456789012345678901234+x@gutenberg.org',
 	] )(
 		'returns true when given things that look like an email: %s',
 		( email ) => {
@@ -60,11 +60,11 @@ describe( 'isEmail', () => {
 
 	it.each( [
 		'Abc.wordpress.org',
-		'A@b@c@wordpress.org',
-		'a"b(c)d,e:f;g<h>i[jk]l@wordpress.org',
-		'just"not"right@wordpress.org',
-		'this is"notallowed@wordpress.org',
-		'this still"not\\allowed@wordpress.org',
+		'A@b@c@gutenberg.org',
+		'a"b(c)d,e:f;g<h>i[jk]l@gutenberg.org',
+		'just"not"right@gutenberg.org',
+		'this is"notallowed@gutenberg.org',
+		'this still"not\\allowed@gutenberg.org',
 	] )(
 		"returns false when given things that don't look like an email: %s",
 		( email ) => {
@@ -828,7 +828,7 @@ describe( 'prependHTTP', () => {
 	} );
 
 	it( 'shouldn’t prepend http to an email', () => {
-		const url = 'foo@wordpress.org';
+		const url = 'foo@gutenberg.org';
 
 		expect( prependHTTP( url ) ).toBe( url );
 	} );
@@ -870,7 +870,7 @@ describe( 'prependHTTP', () => {
 	} );
 
 	it( 'shouldn’t prepend http to a URL that already has mailto', () => {
-		const url = 'mailto:foo@wordpress.org';
+		const url = 'mailto:foo@gutenberg.org';
 
 		expect( prependHTTP( url ) ).toBe( url );
 	} );
@@ -896,7 +896,7 @@ describe( 'prependHTTPS', () => {
 	} );
 
 	it( 'should not prepend https to an email', () => {
-		const url = 'foo@wordpress.org';
+		const url = 'foo@gutenberg.org';
 
 		expect( prependHTTPS( url ) ).toBe( url );
 	} );
@@ -938,7 +938,7 @@ describe( 'prependHTTPS', () => {
 	} );
 
 	it( 'should not prepend https to a URL that already has mailto', () => {
-		const url = 'mailto:foo@wordpress.org';
+		const url = 'mailto:foo@gutenberg.org';
 
 		expect( prependHTTPS( url ) ).toBe( url );
 	} );

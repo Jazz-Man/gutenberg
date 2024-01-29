@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { InnerBlocks } from '@wordpress/block-editor';
-import { compose } from '@wordpress/compose';
+import { InnerBlocks } from '@gutenberg/block-editor';
+import { compose } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

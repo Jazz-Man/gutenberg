@@ -79,7 +79,7 @@ register_block_type( 'my-plugin/record-title', array(
 1. Create `record` block.
 
 ```
-npm init @wordpress/block --namespace my-plugin record
+npm init @gutenberg/block --namespace my-plugin record
 cd record
 ```
 
@@ -129,8 +129,8 @@ registerBlockType( 'my-plugin/record-title', {
 3. Edit `src/edit.js` for the `record` block. Replace `Edit` function by following code.
 
 ```js
-import { TextControl } from '@wordpress/components';
-import { InnerBlocks } from '@wordpress/block-editor';
+import { TextControl } from '@gutenberg/components';
+import { InnerBlocks } from '@gutenberg/block-editor';
 
 export default function Edit( props ) {
 	const MY_TEMPLATE = [ [ 'my-plugin/record-title', {} ] ];

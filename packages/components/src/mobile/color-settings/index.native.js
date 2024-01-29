@@ -6,8 +6,8 @@ import { useRoute } from '@react-navigation/native';
 /**
  * WordPress dependencies
  */
-import { memo, useEffect, useContext } from '@wordpress/element';
-import { BottomSheetContext, BottomSheet } from '@wordpress/components';
+import { memo, useEffect, useContext } from '@gutenberg/element';
+import { BottomSheetContext, BottomSheet } from '@gutenberg/components';
 
 /**
  * Internal dependencies

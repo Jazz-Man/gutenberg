@@ -7,9 +7,9 @@ import {
 	__experimentalIsDefinedBorder as isDefinedBorder,
 	__experimentalToolsPanel as ToolsPanel,
 	__experimentalToolsPanelItem as ToolsPanelItem,
-} from '@wordpress/components';
-import { useCallback, useMemo } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { useCallback, useMemo } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

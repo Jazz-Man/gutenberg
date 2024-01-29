@@ -20,7 +20,7 @@ import {
 	chevronDown,
 	more,
 	trash,
-} from '@wordpress/icons';
+} from '@gutenberg/icons';
 
 const meta: Meta< typeof DropdownMenu > = {
 	title: 'Components/DropdownMenu',

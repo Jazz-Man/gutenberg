@@ -12,32 +12,32 @@ import {
 /**
  * WordPress dependencies
  */
-import { useState, useCallback } from '@wordpress/element';
+import { useState, useCallback } from '@gutenberg/element';
 import {
 	useEntityBlockEditor,
 	useEntityProp,
 	store as coreStore,
-} from '@wordpress/core-data';
+} from '@gutenberg/core-data';
 import {
 	BottomSheet,
 	Icon,
 	Disabled,
 	TextControl,
-} from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __, sprintf } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	__experimentalRecursionProvider as RecursionProvider,
 	__experimentalUseHasRecursion as useHasRecursion,
 	InnerBlocks,
 	Warning,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
-import { help } from '@wordpress/icons';
-import { store as reusableBlocksStore } from '@wordpress/reusable-blocks';
-import { store as editorStore } from '@wordpress/editor';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/block-editor';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
+import { help } from '@gutenberg/icons';
+import { store as reusableBlocksStore } from '@gutenberg/reusable-blocks';
+import { store as editorStore } from '@gutenberg/editor';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

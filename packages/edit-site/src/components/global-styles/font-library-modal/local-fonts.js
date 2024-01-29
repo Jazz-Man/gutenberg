@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	Button,
 	DropZone,
@@ -12,8 +12,8 @@ import {
 	Notice,
 	FlexItem,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
-import { useContext, useState, useEffect } from '@wordpress/element';
+} from '@gutenberg/components';
+import { useContext, useState, useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies

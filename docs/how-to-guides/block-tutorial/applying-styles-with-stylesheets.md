@@ -19,8 +19,8 @@ The first method shows adding the style inline. This transforms the defined styl
 The `useBlockProps` React hook is used to set and apply properties on the block's wrapper element. The following example shows how:
 
 ```jsx
-import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { useBlockProps } from '@gutenberg/block-editor';
 
 registerBlockType( 'gutenberg-examples/example-02-stylesheets', {
 	edit() {
@@ -61,8 +61,8 @@ The `useBlockProps` hooks includes the classname for the block automatically, it
 For example the block name: `gutenberg-examples/example-02-stylesheets` would get the classname: `wp-block-gutenberg-examples-example-02-stylesheets`. It might be a bit long but best to avoid conflicts with other blocks.
 
 ```jsx
-import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { useBlockProps } from '@gutenberg/block-editor';
 
 registerBlockType( 'gutenberg-examples/example-02-stylesheets', {
 	edit() {

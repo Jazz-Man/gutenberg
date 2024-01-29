@@ -6,14 +6,14 @@ import { render, screen } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies
  */
 import PostAuthorCheck from '../check';
 
-jest.mock( '@wordpress/data/src/components/use-select', () => {
+jest.mock( '@gutenberg/data/src/components/use-select', () => {
 	// This allows us to tweak the returned value on each test.
 	const mock = jest.fn();
 	return mock;

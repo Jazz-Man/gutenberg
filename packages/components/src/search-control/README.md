@@ -12,8 +12,8 @@ Render a user interface to input the name of an additional css class.
 
 ```jsx
 import { useState } from 'react';
-import { __ } from '@wordpress/i18n';
-import { SearchControl } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { SearchControl } from '@gutenberg/components';
 
 function MySearchControl( { className, setState } ) {
     const [ searchInput, setSearchInput ] = useState( '' );

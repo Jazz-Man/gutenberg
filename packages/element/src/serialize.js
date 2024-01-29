@@ -38,7 +38,7 @@ import {
 	escapeAttribute,
 	escapeHTML,
 	isValidAttributeName,
-} from '@wordpress/escape-html';
+} from '@gutenberg/escape-html';
 
 /**
  * Internal dependencies

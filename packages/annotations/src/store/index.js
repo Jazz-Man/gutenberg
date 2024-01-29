@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { register, createReduxStore } from '@wordpress/data';
+import { register, createReduxStore } from '@gutenberg/data';
 
 /**
  * Internal dependencies

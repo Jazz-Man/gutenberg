@@ -10,7 +10,7 @@
 /**
  * WordPress dependencies
  */
-import { _x } from '@wordpress/i18n';
+import { _x } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

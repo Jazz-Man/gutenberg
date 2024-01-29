@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useViewportMatch, compose } from '@wordpress/compose';
-import { withDispatch, withSelect } from '@wordpress/data';
-import { PostPublishButton, store as editorStore } from '@wordpress/editor';
+import { useViewportMatch, compose } from '@gutenberg/compose';
+import { withDispatch, withSelect } from '@gutenberg/data';
+import { PostPublishButton, store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

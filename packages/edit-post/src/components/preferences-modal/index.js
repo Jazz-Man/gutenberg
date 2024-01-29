@@ -2,12 +2,12 @@
  * WordPress dependencies
  */
 
-import { __ } from '@wordpress/i18n';
-import { useViewportMatch } from '@wordpress/compose';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as interfaceStore } from '@wordpress/interface';
-import { privateApis as preferencesPrivateApis } from '@wordpress/preferences';
-import { privateApis as editorPrivateApis } from '@wordpress/editor';
+import { __ } from '@gutenberg/i18n';
+import { useViewportMatch } from '@gutenberg/compose';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as interfaceStore } from '@gutenberg/interface';
+import { privateApis as preferencesPrivateApis } from '@gutenberg/preferences';
+import { privateApis as editorPrivateApis } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useRef } from '@wordpress/element';
+import { useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -14,7 +14,7 @@ import type { FormFileUploadProps } from './types';
  * FormFileUpload is a component that allows users to select files from their local device.
  *
  * ```jsx
- * import { FormFileUpload } from '@wordpress/components';
+ * import { FormFileUpload } from '@gutenberg/components';
  *
  * const MyFormFileUpload = () => (
  *   <FormFileUpload

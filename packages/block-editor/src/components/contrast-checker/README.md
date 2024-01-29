@@ -1,6 +1,6 @@
 # ContrastChecker
 
-ContrastChecker component determines if contrast for text styles is sufficient (WCAG 2.0 AA) when used with a given background color. 
+ContrastChecker component determines if contrast for text styles is sufficient (WCAG 2.0 AA) when used with a given background color.
 
 ContrastChecker also accounts for font sizes.
 
@@ -13,7 +13,7 @@ A notice will be rendered if the color combination of text and background colors
 Checks the contrast of a `13px` dark gray font against a light gray background.
 
 ```jsx
-import { ContrastChecker } from '@wordpress/block-editor';
+import { ContrastChecker } from '@gutenberg/block-editor';
 
 const Example = () => {
 	return (

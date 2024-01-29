@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/html-entities",
+	"name": "@gutenberg/html-entities",
 	"version": "3.49.0",
 	"description": "HTML entity utilities for WordPress.",
 	"author": "The WordPress Contributors",

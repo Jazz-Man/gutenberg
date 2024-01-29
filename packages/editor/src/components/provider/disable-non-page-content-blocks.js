@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	useBlockEditingMode,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useEffect } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies

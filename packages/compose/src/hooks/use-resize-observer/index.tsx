@@ -12,7 +12,7 @@ import {
 	useCallback,
 	useEffect,
 	useState,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 
 type SubscriberCleanup = () => void;
 type SubscriberResponse = SubscriberCleanup | void;

@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { SnackbarList } from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
+import { SnackbarList } from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
 
 export default function EditorSnackbars() {
 	const notices = useSelect(

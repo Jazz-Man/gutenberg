@@ -9,8 +9,8 @@ In the [previous part](/docs/how-to-guides/data-basics/3-building-an-edit-form.m
 Let’s start by building a button to display the _create page_ form. It’s similar to an _Edit_ button we have built in the [part 3](/docs/how-to-guides/data-basics/3-building-an-edit-form.md):
 
 ```js
-import { useDispatch } from '@wordpress/data';
-import { Button, Modal, TextControl } from '@wordpress/components';
+import { useDispatch } from '@gutenberg/data';
+import { Button, Modal, TextControl } from '@gutenberg/components';
 
 function CreatePageButton() {
 	const [isOpen, setOpen] = useState( false );

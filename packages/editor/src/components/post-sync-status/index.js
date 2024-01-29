@@ -1,17 +1,17 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __, _x } from '@wordpress/i18n';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __, _x } from '@gutenberg/i18n';
 import {
 	Modal,
 	Button,
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
 	ToggleControl,
-} from '@wordpress/components';
-import { useEffect, useState } from '@wordpress/element';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
+} from '@gutenberg/components';
+import { useEffect, useState } from '@gutenberg/element';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

@@ -7,10 +7,10 @@ import gradientParser from 'gradient-parser';
 /**
  * WordPress dependencies
  */
-import { colorsUtils } from '@wordpress/components';
-import { RadialGradient, Stop, SVG, Defs, Rect } from '@wordpress/primitives';
-import { useResizeObserver } from '@wordpress/compose';
-import { useMemo } from '@wordpress/element';
+import { colorsUtils } from '@gutenberg/components';
+import { RadialGradient, Stop, SVG, Defs, Rect } from '@gutenberg/primitives';
+import { useResizeObserver } from '@gutenberg/compose';
+import { useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

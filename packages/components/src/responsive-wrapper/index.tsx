@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { cloneElement, Children } from '@wordpress/element';
+import { cloneElement, Children } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -17,7 +17,7 @@ import type { ResponsiveWrapperProps } from './types';
  * A wrapper component that maintains its aspect ratio when resized.
  *
  * ```jsx
- * import { ResponsiveWrapper } from '@wordpress/components';
+ * import { ResponsiveWrapper } from '@gutenberg/components';
  *
  * const MyResponsiveWrapper = () => (
  * 	<ResponsiveWrapper naturalWidth={ 2000 } naturalHeight={ 680 }>

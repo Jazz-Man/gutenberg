@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as interfaceStore } from '@wordpress/interface';
-import { privateApis as patternsPrivateApis } from '@wordpress/patterns';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
-import { getQueryArgs } from '@wordpress/url';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as interfaceStore } from '@gutenberg/interface';
+import { privateApis as patternsPrivateApis } from '@gutenberg/patterns';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
+import { getQueryArgs } from '@gutenberg/url';
 
 /**
  * Internal dependencies

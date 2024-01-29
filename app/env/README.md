@@ -8,7 +8,7 @@ Ensure that Docker is running, then:
 
 ```sh
 $ cd /path/to/a/wordpress/plugin
-$ npm -g i @wordpress/env
+$ npm -g i @gutenberg/env
 $ wp-env start
 ```
 
@@ -31,7 +31,7 @@ The database credentials are: user `root`, password `password`. For a comprehens
 After confirming that the prerequisites are installed, you can install `wp-env` globally like so:
 
 ```sh
-$ npm -g i @wordpress/env
+$ npm -g i @gutenberg/env
 ```
 
 You're now ready to use `wp-env`!
@@ -41,7 +41,7 @@ You're now ready to use `wp-env`!
 If your project already has a package.json, it's also possible to use `wp-env` as a local package. First install `wp-env` locally as a dev dependency:
 
 ```sh
-$ npm i @wordpress/env --save-dev
+$ npm i @gutenberg/env --save-dev
 ```
 
 If you have also installed `wp-env` globally, running it will automatically execute the local, project-level package. Alternatively, you can execute `wp-env` via [`npx`](https://www.npmjs.com/package/npx), a utility automatically installed with `npm`.`npx` finds binaries like `wp-env` installed through node modules. As an example: `npx wp-env start --update`.

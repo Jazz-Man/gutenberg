@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { ToolbarButton, ToolbarGroup } from '@wordpress/components';
-import { useReducer, useRef, useEffect } from '@wordpress/element';
-import { lock, unlock } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { ToolbarButton, ToolbarGroup } from '@gutenberg/components';
+import { useReducer, useRef, useEffect } from '@gutenberg/element';
+import { lock, unlock } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

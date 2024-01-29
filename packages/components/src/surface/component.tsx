@@ -30,7 +30,7 @@ function UnconnectedSurface(
  * import {
  *	__experimentalSurface as Surface,
  *	__experimentalText as Text,
- * } from '@wordpress/components';
+ * } from '@gutenberg/components';
  *
  * function Example() {
  * 	return (

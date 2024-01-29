@@ -1,10 +1,10 @@
 # Registration of a block
 
-A block is usually registered through a plugin on both the server and client-side using its `block.json` metadata. 
+A block is usually registered through a plugin on both the server and client-side using its `block.json` metadata.
 
 Although technically, blocks could be registered only in the client, **registering blocks on both the server and in the client is a strong recommendation**. Some server-side features like Dynamic Rendering, Block Supports, Block Hooks, or Block style variations require the block to "exist" on the server, and they won't work properly without server registration of the block.
 
-For example, to allow a block [to be styled via `theme.json`](https://developer.wordpress.org/themes/global-settings-and-styles/settings/blocks/), it needs to be registered on the server, otherwise, any styles assigned to it in `theme.json` will be ignored. 
+For example, to allow a block [to be styled via `theme.json`](https://developer.wordpress.org/themes/global-settings-and-styles/settings/blocks/), it needs to be registered on the server, otherwise, any styles assigned to it in `theme.json` will be ignored.
 
 [![Open Block Registration diagram image](https://developer.wordpress.org/files/2023/11/block-registration-e1700493399839.png)](https://developer.wordpress.org/files/2023/11/block-registration-e1700493399839.png "Open Block Registration diagram image")
 
@@ -57,7 +57,7 @@ registerBlockType( 'my-plugin/notice', {
 } );
 ```
 
-Although registering the block also on the server with PHP is still recommended for the reasons mentioned at ["Benefits using the metadata file"](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#benefits-using-the-metadata-file), if you want to register it only client-side you can use [`registerBlockType`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-blocks/#registerblocktype) method from `@wordpress/blocks` package to register a block type using the metadata loaded from `block.json` file.
+Although registering the block also on the server with PHP is still recommended for the reasons mentioned at ["Benefits using the metadata file"](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#benefits-using-the-metadata-file), if you want to register it only client-side you can use [`registerBlockType`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-blocks/#registerblocktype) method from `@gutenberg/blocks` package to register a block type using the metadata loaded from `block.json` file.
 
 The function takes two params:
 
@@ -70,15 +70,15 @@ The content of <code>block.json</code> (or any other <code>.json</code> file) ca
 
 The client-side block settings object passed as a second parameter includes two especially relevant properties:
 - `edit`: The React component that gets used in the editor for our block.
-- `save`: The function that returns the static HTML markup that gets saved to the Database. 
+- `save`: The function that returns the static HTML markup that gets saved to the Database.
 
 `registerBlockType` returns the registered block type (`WPBlock`) on success or `undefined` on failure.
 
 **Example:**
 
 ```js
-import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { useBlockProps } from '@gutenberg/block-editor';
 import metadata from './block.json';
 
 const Edit = () => <p { ...useBlockProps() }>Hello World - Block Editor</p>;

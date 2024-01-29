@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useEffect, useState, useRef } from '@wordpress/element';
-import { store as noticesStore } from '@wordpress/notices';
-import { __ } from '@wordpress/i18n';
-import { __experimentalConfirmDialog as ConfirmDialog } from '@wordpress/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useEffect, useState, useRef } from '@gutenberg/element';
+import { store as noticesStore } from '@gutenberg/notices';
+import { __ } from '@gutenberg/i18n';
+import { __experimentalConfirmDialog as ConfirmDialog } from '@gutenberg/components';
 
 /**
  * Internal dependencies

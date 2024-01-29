@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { CheckboxControl } from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
+import { __ } from '@gutenberg/i18n';
+import { CheckboxControl } from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

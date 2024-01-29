@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { store as blocksStore } from '@wordpress/blocks';
-import { useMemo, useCallback } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { SelectControl } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
+import { store as blocksStore } from '@gutenberg/blocks';
+import { useMemo, useCallback } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { SelectControl } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

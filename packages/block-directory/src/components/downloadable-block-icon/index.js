@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { BlockIcon } from '@wordpress/block-editor';
+import { BlockIcon } from '@gutenberg/block-editor';
 
 function DownloadableBlockIcon( { icon } ) {
 	const className = 'block-directory-downloadable-block-icon';

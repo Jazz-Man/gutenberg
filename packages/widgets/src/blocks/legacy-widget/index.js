@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { widget as icon } from '@wordpress/icons';
+import { widget as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

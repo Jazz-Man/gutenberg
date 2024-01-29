@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useEffect } from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
+import { useEffect } from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

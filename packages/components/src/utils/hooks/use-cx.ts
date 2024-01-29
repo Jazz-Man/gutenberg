@@ -12,7 +12,7 @@ import { cx as innerCx } from '@emotion/css';
 /**
  * WordPress dependencies
  */
-import { useCallback } from '@wordpress/element';
+import { useCallback } from '@gutenberg/element';
 
 const isSerializedStyles = ( o: any ): o is SerializedStyles =>
 	typeof o !== 'undefined' &&

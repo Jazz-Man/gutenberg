@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Icon } from '@wordpress/components';
+import { Icon } from '@gutenberg/components';
 
 export default function SidebarCard( {
 	className,

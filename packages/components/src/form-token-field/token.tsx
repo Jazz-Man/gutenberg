@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { __, sprintf } from '@wordpress/i18n';
-import { closeSmall } from '@wordpress/icons';
+import { useInstanceId } from '@gutenberg/compose';
+import { __, sprintf } from '@gutenberg/i18n';
+import { closeSmall } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

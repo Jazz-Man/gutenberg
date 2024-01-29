@@ -40,7 +40,7 @@ const restrictedImports = [
 	{
 		name: 'framer-motion',
 		message:
-			'Please use the Framer Motion API through `@wordpress/components` instead.',
+			'Please use the Framer Motion API through `@gutenberg/components` instead.',
 	},
 	{
 		name: 'lodash',
@@ -49,35 +49,35 @@ const restrictedImports = [
 	{
 		name: 'reakit',
 		message:
-			'Please use Reakit API through `@wordpress/components` instead.',
+			'Please use Reakit API through `@gutenberg/components` instead.',
 	},
 	{
 		name: '@ariakit/react',
 		message:
-			'Please use Ariakit API through `@wordpress/components` instead.',
+			'Please use Ariakit API through `@gutenberg/components` instead.',
 	},
 	{
 		name: 'redux',
 		importNames: [ 'combineReducers' ],
-		message: 'Please use `combineReducers` from `@wordpress/data` instead.',
+		message: 'Please use `combineReducers` from `@gutenberg/data` instead.',
 	},
 	{
 		name: '@emotion/css',
 		message:
-			'Please use `@emotion/react` and `@emotion/styled` in order to maintain iframe support. As a replacement for the `cx` function, please use the `useCx` hook defined in `@wordpress/components` instead.',
+			'Please use `@emotion/react` and `@emotion/styled` in order to maintain iframe support. As a replacement for the `cx` function, please use the `useCx` hook defined in `@gutenberg/components` instead.',
 	},
 	{
-		name: '@wordpress/edit-post',
+		name: '@gutenberg/edit-post',
 		message:
 			"edit-post is a WordPress top level package that shouldn't be imported into other packages",
 	},
 	{
-		name: '@wordpress/edit-site',
+		name: '@gutenberg/edit-site',
 		message:
 			"edit-site is a WordPress top level package that shouldn't be imported into other packages",
 	},
 	{
-		name: '@wordpress/edit-widgets',
+		name: '@gutenberg/edit-widgets',
 		message:
 			"edit-widgets is a WordPress top level package that shouldn't be imported into other packages",
 	},
@@ -86,7 +86,7 @@ const restrictedImports = [
 module.exports = {
 	root: true,
 	extends: [
-		'plugin:@wordpress/eslint-plugin/recommended',
+		'plugin:@gutenberg/eslint-plugin/recommended',
 		'plugin:eslint-comments/recommended',
 		'plugin:storybook/recommended',
 	],
@@ -102,17 +102,17 @@ module.exports = {
 	},
 	rules: {
 		'jest/expect-expect': 'off',
-		'@wordpress/dependency-group': 'error',
-		'@wordpress/is-gutenberg-plugin': 'error',
-		'@wordpress/react-no-unsafe-timeout': 'error',
-		'@wordpress/i18n-text-domain': [
+		'@gutenberg/dependency-group': 'error',
+		'@gutenberg/is-gutenberg-plugin': 'error',
+		'@gutenberg/react-no-unsafe-timeout': 'error',
+		'@gutenberg/i18n-text-domain': [
 			'error',
 			{
 				allowedTextDomain: 'default',
 			},
 		],
-		'@wordpress/no-unsafe-wp-apis': 'off',
-		'@wordpress/data-no-store-string-literals': 'error',
+		'@gutenberg/no-unsafe-wp-apis': 'off',
+		'@gutenberg/data-no-store-string-literals': 'error',
 		'import/default': 'error',
 		'import/named': 'error',
 		'no-restricted-imports': [
@@ -128,7 +128,7 @@ module.exports = {
 					{
 						name: 'react',
 						message:
-							'Please use React API through `@wordpress/element` instead.',
+							'Please use React API through `@gutenberg/element` instead.',
 						allowTypeImports: true,
 					},
 				],
@@ -148,7 +148,7 @@ module.exports = {
 			// here. That's why we use \\u002F in the regexes below.
 			{
 				selector:
-					'ImportDeclaration[source.value=/^@wordpress\\u002F.+\\u002F/]',
+					'ImportDeclaration[source.value=/^@gutenberg\\u002F.+\\u002F/]',
 				message:
 					'Path access on WordPress dependencies is not allowed.',
 			},
@@ -211,7 +211,7 @@ module.exports = {
 				'import/no-extraneous-dependencies': 'off',
 				'import/no-unresolved': 'off',
 				'import/named': 'off',
-				'@wordpress/data-no-store-string-literals': 'off',
+				'@gutenberg/data-no-store-string-literals': 'off',
 			},
 		},
 		{
@@ -262,7 +262,7 @@ module.exports = {
 		{
 			files: [ 'packages/jest*/**/*.js', '**/test/**/*.js' ],
 			excludedFiles: [ 'test/e2e/**/*.js', 'test/performance/**/*.js' ],
-			extends: [ 'plugin:@wordpress/eslint-plugin/test-unit' ],
+			extends: [ 'plugin:@gutenberg/eslint-plugin/test-unit' ],
 		},
 		{
 			files: [ '**/test/**/*.[tj]s?(x)' ],
@@ -283,7 +283,7 @@ module.exports = {
 		{
 			files: [ 'packages/e2e-test*/**/*.js' ],
 			excludedFiles: [ 'packages/e2e-test-utils-playwright/**/*.js' ],
-			extends: [ 'plugin:@wordpress/eslint-plugin/test-e2e' ],
+			extends: [ 'plugin:@gutenberg/eslint-plugin/test-e2e' ],
 			rules: {
 				'jest/expect-expect': 'off',
 			},
@@ -295,7 +295,7 @@ module.exports = {
 				'packages/e2e-test-utils-playwright/**/*.[tj]s',
 			],
 			extends: [
-				'plugin:@wordpress/eslint-plugin/test-playwright',
+				'plugin:@gutenberg/eslint-plugin/test-playwright',
 				'plugin:@typescript-eslint/base',
 			],
 			parserOptions: {
@@ -307,8 +307,8 @@ module.exports = {
 				],
 			},
 			rules: {
-				'@wordpress/no-global-active-element': 'off',
-				'@wordpress/no-global-get-selection': 'off',
+				'@gutenberg/no-global-active-element': 'off',
+				'@gutenberg/no-global-get-selection': 'off',
 				'no-restricted-syntax': [
 					'error',
 					{
@@ -372,12 +372,12 @@ module.exports = {
 						paths: [
 							...restrictedImports,
 							{
-								name: '@wordpress/api-fetch',
+								name: '@gutenberg/api-fetch',
 								message:
 									"block-editor is a generic package that doesn't depend on a server or WordPress backend. To provide WordPress integration, consider passing settings to the BlockEditorProvider components.",
 							},
 							{
-								name: '@wordpress/core-data',
+								name: '@gutenberg/core-data',
 								message:
 									"block-editor is a generic package that doesn't depend on a server or WordPress backend. To provide WordPress integration, consider passing settings to the BlockEditorProvider components.",
 							},

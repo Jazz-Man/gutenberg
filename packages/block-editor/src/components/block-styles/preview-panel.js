@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { getBlockType } from '@wordpress/blocks';
-import { useMemo } from '@wordpress/element';
+import { getBlockType } from '@gutenberg/blocks';
+import { useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

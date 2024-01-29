@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { closeSmall } from '@wordpress/icons';
+import { closeSmall } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

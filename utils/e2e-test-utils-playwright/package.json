@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/e2e-test-utils-playwright",
+	"name": "@gutenberg/e2e-test-utils-playwright",
 	"version": "0.17.0",
 	"description": "End-To-End (E2E) test utils for WordPress.",
 	"author": "The WordPress Contributors",
@@ -30,9 +30,9 @@
 	"main": "./build/index.js",
 	"types": "./build-types",
 	"dependencies": {
-		"@wordpress/api-fetch": "workspace:*",
-		"@wordpress/keycodes": "workspace:*",
-		"@wordpress/url": "workspace:*",
+		"@gutenberg/api-fetch": "workspace:*",
+		"@gutenberg/keycodes": "workspace:*",
+		"@gutenberg/url": "workspace:*",
 		"change-case": "^4.1.2",
 		"form-data": "^4.0.0",
 		"get-port": "^5.1.1",

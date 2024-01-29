@@ -6,10 +6,10 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
-import { __ } from '@wordpress/i18n';
-import { settings } from '@wordpress/icons';
-import { useState, useMemo, forwardRef } from '@wordpress/element';
+import deprecated from '@gutenberg/deprecated';
+import { __ } from '@gutenberg/i18n';
+import { settings } from '@gutenberg/icons';
+import { useState, useMemo, forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -7,16 +7,16 @@ import classnames from 'classnames/dedupe';
 /**
  * WordPress dependencies
  */
-import { View } from '@wordpress/primitives';
+import { View } from '@gutenberg/primitives';
 import {
 	BlockCaption,
 	RichText,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { __, sprintf } from '@wordpress/i18n';
-import { memo, useState } from '@wordpress/element';
-import { SandBox } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/block-editor';
+import { __, sprintf } from '@gutenberg/i18n';
+import { memo, useState } from '@gutenberg/element';
+import { SandBox } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

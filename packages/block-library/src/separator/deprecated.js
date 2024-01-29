@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { getColorClassName, useBlockProps } from '@wordpress/block-editor';
+import { getColorClassName, useBlockProps } from '@gutenberg/block-editor';
 
 const v1 = {
 	attributes: {

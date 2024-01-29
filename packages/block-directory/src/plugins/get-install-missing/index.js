@@ -1,17 +1,17 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { Button } from '@wordpress/components';
-import { createBlock } from '@wordpress/blocks';
-import { RawHTML } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { Button } from '@gutenberg/components';
+import { createBlock } from '@gutenberg/blocks';
+import { RawHTML } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
 import {
 	Warning,
 	useBlockProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { memo, useMemo } from '@wordpress/element';
-import { SandBox } from '@wordpress/components';
+import { memo, useMemo } from '@gutenberg/element';
+import { SandBox } from '@gutenberg/components';
 
 /**
  * Checks for WordPress embed events signaling the height change when iframe
@@ -32,14 +32,14 @@ const observeAndResizeJS = `
 
             document
                 .querySelectorAll( 'iframe[data-secret="' + secret + '"' )
-                .forEach( ( iframe ) => {  
+                .forEach( ( iframe ) => {
                     if ( +iframe.height !== value ) {
                         iframe.height = value;
                     }
                 } );
 
-            // The function postMessage is exposed by the react-native-webview library 
-            // to communicate between React Native and the WebView, in this case, 
+            // The function postMessage is exposed by the react-native-webview library
+            // to communicate between React Native and the WebView, in this case,
             // we use it for notifying resize changes.
             window.ReactNativeWebView.postMessage(JSON.stringify( {
                 action: 'resize',

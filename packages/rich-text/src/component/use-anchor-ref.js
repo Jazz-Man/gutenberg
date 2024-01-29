@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
+import { useMemo } from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies
@@ -11,7 +11,7 @@ import { getActiveFormat } from '../get-active-format';
 
 /**
  * @template T
- * @typedef {import('@wordpress/element').RefObject<T>} RefObject<T>
+ * @typedef {import('@gutenberg/element').RefObject<T>} RefObject<T>
  */
 /** @typedef {import('../register-format-type').WPFormat} WPFormat */
 /** @typedef {import('../types').RichTextValue} RichTextValue */

@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { MenuItem } from '@wordpress/components';
-import { getBlockType, hasBlockSupport } from '@wordpress/blocks';
-import { withSelect, withDispatch } from '@wordpress/data';
-import { compose } from '@wordpress/compose';
+import { __ } from '@gutenberg/i18n';
+import { MenuItem } from '@gutenberg/components';
+import { getBlockType, hasBlockSupport } from '@gutenberg/blocks';
+import { withSelect, withDispatch } from '@gutenberg/data';
+import { compose } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

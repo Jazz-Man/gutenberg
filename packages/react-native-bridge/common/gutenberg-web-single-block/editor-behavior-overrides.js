@@ -86,7 +86,7 @@ function _toggleBlockSelectedClass( isBlockSelected ) {
 	}
 }
 
-/** @typedef {import('@wordpress/data').WPDataRegistry} WPDataRegistry */
+/** @typedef {import('@gutenberg/data').WPDataRegistry} WPDataRegistry */
 
 /**
  * Toggle the `is-block-selected` class on the editor container when a block is

@@ -11,15 +11,15 @@ import {
 	BottomSheet,
 	BottomSheetConsumer,
 	PanelBody,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { helpFilled, plusCircleFilled, trash, cog } from '@wordpress/icons';
-import { useSelect } from '@wordpress/data';
-import { store as editorStore } from '@wordpress/editor';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { helpFilled, plusCircleFilled, trash, cog } from '@gutenberg/icons';
+import { useSelect } from '@gutenberg/data';
+import { store as editorStore } from '@gutenberg/editor';
 import {
 	requestContactCustomerSupport,
 	requestGotoCustomerSupportOptions,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 
 /**
  * Internal dependencies

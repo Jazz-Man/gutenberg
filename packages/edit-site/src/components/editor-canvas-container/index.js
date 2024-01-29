@@ -1,19 +1,19 @@
 /**
  * WordPress dependencies
  */
-import { Children, cloneElement, useState, useMemo } from '@wordpress/element';
+import { Children, cloneElement, useState, useMemo } from '@gutenberg/element';
 import {
 	Button,
 	privateApis as componentsPrivateApis,
 	__experimentalUseSlotFills as useSlotFills,
-} from '@wordpress/components';
-import { ESCAPE } from '@wordpress/keycodes';
-import { __ } from '@wordpress/i18n';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { closeSmall } from '@wordpress/icons';
-import { useFocusOnMount, useFocusReturn } from '@wordpress/compose';
-import { store as preferencesStore } from '@wordpress/preferences';
-import { store as editorStore } from '@wordpress/editor';
+} from '@gutenberg/components';
+import { ESCAPE } from '@gutenberg/keycodes';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { closeSmall } from '@gutenberg/icons';
+import { useFocusOnMount, useFocusReturn } from '@gutenberg/compose';
+import { store as preferencesStore } from '@gutenberg/preferences';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

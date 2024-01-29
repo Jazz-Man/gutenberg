@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { ToolbarGroup } from '@wordpress/components';
-import warning from '@wordpress/warning';
+import { ToolbarGroup } from '@gutenberg/components';
+import warning from '@gutenberg/warning';
 
 /**
  * Internal dependencies

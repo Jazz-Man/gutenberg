@@ -12,8 +12,8 @@ Here's a glimpse of what we're going to build:
 Let's start by creating the `DeletePageButton` component and updating the user interface of our `PagesList` component:
 
 ```js
-import { Button } from '@wordpress/components';
-import { decodeEntities } from '@wordpress/html-entities';
+import { Button } from '@gutenberg/components';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 const DeletePageButton = () => (
 	<Button variant="primary">
@@ -162,7 +162,7 @@ const DeletePageButton = ({ pageId }) => {
 }
 ```
 
-The `error` object comes from the `@wordpress/api-fetch` and contains information about the error. It has the following properties:
+The `error` object comes from the `@gutenberg/api-fetch` and contains information about the error. It has the following properties:
 
 * `message` – a human-readable error message such as `Invalid post ID`.
 * `code` – a string-based error code such as `rest_post_invalid_id`. To learn about all possible error codes you'd need to refer to the [`/v2/pages` endpoint's source code](https://github.com/WordPress/wordpress-develop/blob/2648a5f984b8abf06872151898e3a61d3458a628/src/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php#L226-L230).
@@ -192,8 +192,8 @@ We won't use `Snackbar` directly, though. We'll use the `SnackbarList` component
 Let's create our own `Notifications` components:
 
 ```js
-import { SnackbarList } from '@wordpress/components';
-import { store as noticesStore } from '@wordpress/notices';
+import { SnackbarList } from '@gutenberg/components';
+import { store as noticesStore } from '@gutenberg/notices';
 
 function Notifications() {
 	const notices = []; // We'll come back here in a second!
@@ -207,13 +207,13 @@ function Notifications() {
 }
 ```
 
-The basic structure is in place, but the list of notifications it renders is empty. How do we populate it? We'll lean on the same package as WordPress: [`@wordpress/notices`](https://github.com/WordPress/gutenberg/blob/895ca1f6a7d7e492974ea55f693aecbeb1d5bbe3/docs/reference-guides/data/data-core-notices.md).
+The basic structure is in place, but the list of notifications it renders is empty. How do we populate it? We'll lean on the same package as WordPress: [`@gutenberg/notices`](https://github.com/WordPress/gutenberg/blob/895ca1f6a7d7e492974ea55f693aecbeb1d5bbe3/docs/reference-guides/data/data-core-notices.md).
 
 Here's how:
 
 ```js
-import { SnackbarList } from '@wordpress/components';
-import { store as noticesStore } from '@wordpress/notices';
+import { SnackbarList } from '@gutenberg/components';
+import { store as noticesStore } from '@gutenberg/notices';
 
 function Notifications() {
 	const notices = useSelect(
@@ -243,7 +243,7 @@ function MyFirstApp() {
 }
 ```
 
-This tutorial is focused on managing the pages and won't discuss the above snippet in detail. If you're interested in the details of `@wordpress/notices`, the [handbook page](https://developer.wordpress.org/block-editor/reference-guides/data/data-core-notices/) is a good place to start.
+This tutorial is focused on managing the pages and won't discuss the above snippet in detail. If you're interested in the details of `@gutenberg/notices`, the [handbook page](https://developer.wordpress.org/block-editor/reference-guides/data/data-core-notices/) is a good place to start.
 
 Now we're ready to tell the user about any errors that may have occurred.
 
@@ -253,7 +253,7 @@ With the SnackbarNotices component in place, we're ready to dispatch some notifi
 
 ```js
 import { useEffect } from 'react';
-import { store as noticesStore } from '@wordpress/notices';
+import { store as noticesStore } from '@gutenberg/notices';
 function DeletePageButton( { pageId } ) {
 	const { createSuccessNotice, createErrorNotice } = useDispatch( noticesStore );
 	// useSelect returns a list of selectors if you pass the store handle
@@ -308,8 +308,8 @@ All the pieces are in place, great! Here’s all the changes we've made in this 
 
 ```js
 import { useState, useEffect } from 'react';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { Button, Modal, TextControl } from '@wordpress/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { Button, Modal, TextControl } from '@gutenberg/components';
 
 function MyFirstApp() {
 	const [searchTerm, setSearchTerm] = useState( '' );

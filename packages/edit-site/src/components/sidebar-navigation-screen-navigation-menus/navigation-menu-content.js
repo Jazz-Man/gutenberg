@@ -5,11 +5,11 @@ import {
 	privateApis as blockEditorPrivateApis,
 	store as blockEditorStore,
 	BlockList,
-} from '@wordpress/block-editor';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { createBlock } from '@wordpress/blocks';
-import { useCallback } from '@wordpress/element';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/block-editor';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { createBlock } from '@gutenberg/blocks';
+import { useCallback } from '@gutenberg/element';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

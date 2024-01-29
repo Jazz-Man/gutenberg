@@ -7,7 +7,7 @@ Inspector Controls appear in the post settings sidebar when a block is being edi
 ## Usage
 
 ```js
-import { registerBlockType } from '@wordpress/blocks';
+import { registerBlockType } from '@gutenberg/blocks';
 import {
 	CheckboxControl,
 	RadioControl,
@@ -15,12 +15,12 @@ import {
 	ToggleControl,
 	SelectControl,
 	PanelBody,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	RichText,
 	InspectorControls,
 	useBlockProps,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 registerBlockType( 'my-plugin/inspector-controls-example', {
 	apiVersion: 3,
@@ -188,11 +188,11 @@ Inspector Advanced Controls appear under the _Advanced_ panel of a block's [Insp
 ### Usage
 
 ```js
-import { TextControl } from '@wordpress/components';
+import { TextControl } from '@gutenberg/components';
 import {
 	InspectorControls,
 	InspectorAdvancedControls,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 function MyBlockEdit( { attributes, setAttributes } ) {
 	return (

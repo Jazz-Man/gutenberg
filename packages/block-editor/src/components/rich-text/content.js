@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { RawHTML } from '@wordpress/element';
-import { children as childrenSource } from '@wordpress/blocks';
-import deprecated from '@wordpress/deprecated';
+import { RawHTML } from '@gutenberg/element';
+import { children as childrenSource } from '@gutenberg/blocks';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

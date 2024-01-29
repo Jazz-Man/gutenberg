@@ -1,27 +1,27 @@
 /**
  * WordPress dependencies
  */
-import { store as blocksStore } from '@wordpress/blocks';
-import { __, sprintf, _n } from '@wordpress/i18n';
+import { store as blocksStore } from '@gutenberg/blocks';
+import { __, sprintf, _n } from '@gutenberg/i18n';
 import {
 	FlexItem,
 	SearchControl,
 	__experimentalHStack as HStack,
-} from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
 import {
 	useState,
 	useEffect,
 	useRef,
 	useDeferredValue,
 	memo,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 import {
 	BlockIcon,
 	privateApis as blockEditorPrivateApis,
-} from '@wordpress/block-editor';
-import { useDebounce } from '@wordpress/compose';
-import { speak } from '@wordpress/a11y';
+} from '@gutenberg/block-editor';
+import { useDebounce } from '@gutenberg/compose';
+import { speak } from '@gutenberg/a11y';
 
 /**
  * Internal dependencies

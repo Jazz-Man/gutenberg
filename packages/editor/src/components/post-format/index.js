@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { Button, SelectControl } from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useInstanceId } from '@wordpress/compose';
-import { store as coreStore } from '@wordpress/core-data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { Button, SelectControl } from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useInstanceId } from '@gutenberg/compose';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

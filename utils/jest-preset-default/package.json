@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/jest-preset-default",
+	"name": "@gutenberg/jest-preset-default",
 	"version": "11.20.0",
 	"description": "Default Jest preset for WordPress development.",
 	"author": "The WordPress Contributors",
@@ -30,7 +30,7 @@
 	],
 	"main": "index.js",
 	"dependencies": {
-		"@wordpress/jest-console": "workspace:*",
+		"@gutenberg/jest-console": "workspace:*",
 		"babel-jest": "^29.6.2"
 	},
 	"peerDependencies": {

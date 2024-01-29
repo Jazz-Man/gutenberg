@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useCallback, useMemo } from '@wordpress/element';
-import { cloneBlock, createBlock } from '@wordpress/blocks';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { __, sprintf } from '@wordpress/i18n';
-import { store as noticesStore } from '@wordpress/notices';
+import { useCallback, useMemo } from '@gutenberg/element';
+import { cloneBlock, createBlock } from '@gutenberg/blocks';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

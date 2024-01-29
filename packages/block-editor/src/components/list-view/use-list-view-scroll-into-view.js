@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { getScrollContainer } from '@wordpress/dom';
-import { useLayoutEffect } from '@wordpress/element';
+import { getScrollContainer } from '@gutenberg/dom';
+import { useLayoutEffect } from '@gutenberg/element';
 
 export default function useListViewScrollIntoView( {
 	isSelected,

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { setLocaleData } from '@wordpress/i18n';
+import { setLocaleData } from '@gutenberg/i18n';
 
 /**
  * Setup locale data for default domain and plugins.

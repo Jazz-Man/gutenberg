@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { privateApis as componentsPrivateApis } from '@wordpress/components';
-import { __, _x } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { store as editorStore } from '@wordpress/editor';
+import { privateApis as componentsPrivateApis } from '@gutenberg/components';
+import { __, _x } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

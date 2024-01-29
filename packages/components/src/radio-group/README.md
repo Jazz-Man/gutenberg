@@ -51,7 +51,7 @@ import { useState } from 'react';
 import {
 	__experimentalRadio as Radio,
 	__experimentalRadioGroup as RadioGroup,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 const MyControlledRadioRadioGroup = () => {
 	const [ checked, setChecked ] = useState( '25' );
@@ -75,7 +75,7 @@ import { useState } from 'react';
 import {
 	__experimentalRadio as Radio,
 	__experimentalRadioGroup as RadioGroup,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 const MyUncontrolledRadioRadioGroup = () => {
 	return (

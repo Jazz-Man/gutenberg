@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { RichTextData, create, toHTMLString } from '@wordpress/rich-text';
+import { RichTextData, create, toHTMLString } from '@gutenberg/rich-text';
 
 /**
  * Internal dependencies

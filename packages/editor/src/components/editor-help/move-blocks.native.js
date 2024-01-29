@@ -6,7 +6,7 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

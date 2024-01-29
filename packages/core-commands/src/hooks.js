@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { store as coreStore } from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
 
 export function useIsTemplatesAccessible() {
 	return useSelect(

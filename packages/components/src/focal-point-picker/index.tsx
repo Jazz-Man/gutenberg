@@ -6,13 +6,13 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useEffect, useRef, useState } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { useEffect, useRef, useState } from '@gutenberg/element';
 import {
 	__experimentalUseDragging as useDragging,
 	useInstanceId,
 	useIsomorphicLayoutEffect,
-} from '@wordpress/compose';
+} from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -50,8 +50,8 @@ const GRID_OVERLAY_TIMEOUT = 600;
  * - Corresponding CSS: `background-position: 50% 10%;`
  *
  * ```jsx
- * import { FocalPointPicker } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { FocalPointPicker } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const Example = () => {
  * 	const [ focalPoint, setFocalPoint ] = useState( {

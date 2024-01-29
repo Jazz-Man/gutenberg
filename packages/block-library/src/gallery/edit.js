@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { compose } from '@wordpress/compose';
+import { compose } from '@gutenberg/compose';
 import {
 	BaseControl,
 	PanelBody,
@@ -14,7 +14,7 @@ import {
 	ToggleControl,
 	RangeControl,
 	Spinner,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	store as blockEditorStore,
 	MediaPlaceholder,
@@ -23,15 +23,15 @@ import {
 	useInnerBlocksProps,
 	BlockControls,
 	MediaReplaceFlow,
-} from '@wordpress/block-editor';
-import { Platform, useEffect, useMemo } from '@wordpress/element';
-import { __, _x, sprintf } from '@wordpress/i18n';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { withViewportMatch } from '@wordpress/viewport';
-import { View } from '@wordpress/primitives';
-import { createBlock } from '@wordpress/blocks';
-import { createBlobURL } from '@wordpress/blob';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/block-editor';
+import { Platform, useEffect, useMemo } from '@gutenberg/element';
+import { __, _x, sprintf } from '@gutenberg/i18n';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { withViewportMatch } from '@gutenberg/viewport';
+import { View } from '@gutenberg/primitives';
+import { createBlock } from '@gutenberg/blocks';
+import { createBlobURL } from '@gutenberg/blob';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

@@ -81,7 +81,7 @@ By default, the Demo editor renders most of the supported core blocks. This is h
 /**
  * WordPress dependencies
  */
-import { addFilter } from '@wordpress/hooks';
+import { addFilter } from '@gutenberg/hooks';
 
 export default () => {
 	addFilter(

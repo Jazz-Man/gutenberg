@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useCallback } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { createBlock, cloneBlock } from '@wordpress/blocks';
+import { useCallback } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { createBlock, cloneBlock } from '@gutenberg/blocks';
 
 export default function useIndentListItem( clientId ) {
 	const { replaceBlocks, selectionChange, multiSelect } =

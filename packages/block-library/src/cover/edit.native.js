@@ -20,8 +20,8 @@ import {
 	requestImageUploadCancelDialog,
 	requestImageFullscreenPreview,
 	mediaUploadSync,
-} from '@wordpress/react-native-bridge';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/react-native-bridge';
+import { __ } from '@gutenberg/i18n';
 import {
 	Icon,
 	Image,
@@ -34,7 +34,7 @@ import {
 	BottomSheetConsumer,
 	useConvertUnitToMobile,
 	useMobileGlobalStylesColors,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	BlockControls,
 	InnerBlocks,
@@ -47,20 +47,20 @@ import {
 	getColorObjectByAttributeValues,
 	getGradientValueBySlug,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { compose, withPreferredColorScheme } from '@wordpress/compose';
-import { useDispatch, withSelect, withDispatch } from '@wordpress/data';
+} from '@gutenberg/block-editor';
+import { compose, withPreferredColorScheme } from '@gutenberg/compose';
+import { useDispatch, withSelect, withDispatch } from '@gutenberg/data';
 import {
 	useEffect,
 	useState,
 	useRef,
 	useCallback,
 	useMemo,
-} from '@wordpress/element';
-import { cover as icon, replace, image, warning } from '@wordpress/icons';
-import { getProtocol } from '@wordpress/url';
+} from '@gutenberg/element';
+import { cover as icon, replace, image, warning } from '@gutenberg/icons';
+import { getProtocol } from '@gutenberg/url';
 // eslint-disable-next-line no-restricted-imports
-import { store as editPostStore } from '@wordpress/edit-post';
+import { store as editPostStore } from '@gutenberg/edit-post';
 
 /**
  * Internal dependencies

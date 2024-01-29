@@ -6,9 +6,9 @@ import { render, screen, within } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { useResizeObserver } from '@wordpress/compose';
-import { SVG, Path } from '@wordpress/primitives';
-import { speak } from '@wordpress/a11y';
+import { useResizeObserver } from '@gutenberg/compose';
+import { SVG, Path } from '@gutenberg/primitives';
+import { speak } from '@gutenberg/a11y';
 
 /**
  * Internal dependencies
@@ -17,9 +17,9 @@ import BasePlaceholder from '../';
 import type { WordPressComponentProps } from '../../context';
 import type { PlaceholderProps } from '../types';
 
-jest.mock( '@wordpress/compose', () => {
+jest.mock( '@gutenberg/compose', () => {
 	return {
-		...jest.requireActual( '@wordpress/compose' ),
+		...jest.requireActual( '@gutenberg/compose' ),
 		useResizeObserver: jest.fn( () => [] ),
 	};
 } );
@@ -42,7 +42,7 @@ const Placeholder = (
 
 const getPlaceholder = () => screen.getByTestId( 'placeholder' );
 
-jest.mock( '@wordpress/a11y', () => ( { speak: jest.fn() } ) );
+jest.mock( '@gutenberg/a11y', () => ( { speak: jest.fn() } ) );
 const mockedSpeak = jest.mocked( speak );
 
 describe( 'Placeholder', () => {

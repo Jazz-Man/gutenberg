@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	NavigableMenu,
 	MenuItem,
@@ -16,16 +16,16 @@ import {
 	__experimentalGrid as Grid,
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	MediaUpload,
 	MediaUploadCheck,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { upload, media } from '@wordpress/icons';
-import { useSelect } from '@wordpress/data';
-import { useState } from '@wordpress/element';
-import { getFilename } from '@wordpress/url';
+} from '@gutenberg/block-editor';
+import { upload, media } from '@gutenberg/icons';
+import { useSelect } from '@gutenberg/data';
+import { useState } from '@gutenberg/element';
+import { getFilename } from '@gutenberg/url';
 
 const ALLOWED_TYPES = [ 'text/vtt' ];
 

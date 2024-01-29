@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { Draggable } from '@wordpress/components';
+import { Draggable } from '@gutenberg/components';
 import {
 	createBlock,
 	serialize,
 	store as blocksStore,
-} from '@wordpress/blocks';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/blocks';
+import { useSelect } from '@gutenberg/data';
 /**
  * Internal dependencies
  */

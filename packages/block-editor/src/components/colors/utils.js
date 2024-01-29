@@ -8,7 +8,7 @@ import a11yPlugin from 'colord/plugins/a11y';
 /**
  * WordPress dependencies
  */
-import { privateApis as componentsPrivateApis } from '@wordpress/components';
+import { privateApis as componentsPrivateApis } from '@gutenberg/components';
 
 /**
  * Internal dependencies

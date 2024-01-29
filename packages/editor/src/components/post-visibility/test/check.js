@@ -6,9 +6,9 @@ import { render, screen } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 
-jest.mock( '@wordpress/data/src/components/use-select', () => jest.fn() );
+jest.mock( '@gutenberg/data/src/components/use-select', () => jest.fn() );
 
 /**
  * Internal dependencies

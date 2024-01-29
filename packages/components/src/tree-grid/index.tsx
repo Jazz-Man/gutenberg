@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { focus } from '@wordpress/dom';
-import { forwardRef, useCallback } from '@wordpress/element';
-import { UP, DOWN, LEFT, RIGHT, HOME, END } from '@wordpress/keycodes';
+import { focus } from '@gutenberg/dom';
+import { forwardRef, useCallback } from '@gutenberg/element';
+import { UP, DOWN, LEFT, RIGHT, HOME, END } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

@@ -7,8 +7,8 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { useState, forwardRef } from '@wordpress/element';
+import { useInstanceId } from '@gutenberg/compose';
+import { useState, forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -129,8 +129,8 @@ export function UnforwardedInputControl(
  * intended to (in time) merge with or replace `TextControl`.
  *
  * ```jsx
- * import { __experimentalInputControl as InputControl } from '@wordpress/components';
- * import { useState } from '@wordpress/compose';
+ * import { __experimentalInputControl as InputControl } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/compose';
  *
  * const Example = () => {
  *   const [ value, setValue ] = useState( '' );

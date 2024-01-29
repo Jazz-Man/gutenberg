@@ -1,7 +1,7 @@
 {
-	"name": "@wordpress/data-controls",
+	"name": "@gutenberg/data-controls",
 	"version": "3.18.0",
-	"description": "A set of common controls for the @wordpress/data api.",
+	"description": "A set of common controls for the @gutenberg/data api.",
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
@@ -28,9 +28,9 @@
 	"types": "build-types",
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/api-fetch": "workspace:*",
-		"@wordpress/data": "workspace:*",
-		"@wordpress/deprecated": "workspace:*"
+		"@gutenberg/api-fetch": "workspace:*",
+		"@gutenberg/data": "workspace:*",
+		"@gutenberg/deprecated": "workspace:*"
 	},
 	"peerDependencies": {
 		"react": "^18.0.0"

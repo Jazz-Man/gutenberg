@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useRef } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { __, sprintf } from '@wordpress/i18n';
-import { speak } from '@wordpress/a11y';
-import { decodeEntities } from '@wordpress/html-entities';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { useEffect, useRef } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { speak } from '@gutenberg/a11y';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

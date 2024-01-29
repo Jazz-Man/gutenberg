@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	getBlockType,
 	getUnregisteredTypeHandlerName,
 	hasBlockSupport,
 	store as blocksStore,
-} from '@wordpress/blocks';
-import { PanelBody, __unstableMotion as motion } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/blocks';
+import { PanelBody, __unstableMotion as motion } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

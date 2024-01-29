@@ -5,7 +5,7 @@
 ## Usage
 
 ```jsx
-import { Card, CardHeader } from '@wordpress/components';
+import { Card, CardHeader } from '@gutenberg/components';
 
 const Example = () => (
 	<Card>

@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { speak } from '@wordpress/a11y';
-import { useSelect } from '@wordpress/data';
-import { forwardRef, useEffect } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
+import { useInstanceId } from '@gutenberg/compose';
+import { speak } from '@gutenberg/a11y';
+import { useSelect } from '@gutenberg/data';
+import { forwardRef, useEffect } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

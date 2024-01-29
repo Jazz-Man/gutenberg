@@ -429,9 +429,9 @@ function register_block_core_navigation() {
 
 	if ( defined( 'IS_GUTENBERG_PLUGIN' ) && IS_GUTENBERG_PLUGIN ) {
 		gutenberg_register_module(
-			'@wordpress/block-library/navigation-block',
+			'@gutenberg/block-library/navigation-block',
 			gutenberg_url( '/build/interactivity/navigation.min.js' ),
-			array( '@wordpress/interactivity' ),
+			array( '@gutenberg/interactivity' ),
 			defined( 'GUTENBERG_VERSION' ) ? GUTENBERG_VERSION : get_bloginfo( 'version' )
 		);
 	}

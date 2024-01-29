@@ -6,11 +6,11 @@ import { Animated, Easing, View, Platform } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { ToolbarButton, ToolbarGroup } from '@wordpress/components';
-import { useEffect, useState, useRef } from '@wordpress/element';
-import { withSelect, withDispatch } from '@wordpress/data';
-import { compose } from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
+import { ToolbarButton, ToolbarGroup } from '@gutenberg/components';
+import { useEffect, useState, useRef } from '@gutenberg/element';
+import { withSelect, withDispatch } from '@gutenberg/data';
+import { compose } from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

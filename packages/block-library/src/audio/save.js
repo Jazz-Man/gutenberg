@@ -5,7 +5,7 @@ import {
 	RichText,
 	useBlockProps,
 	__experimentalGetElementClassName,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 export default function save( { attributes } ) {
 	const { autoplay, caption, loop, preload, src } = attributes;

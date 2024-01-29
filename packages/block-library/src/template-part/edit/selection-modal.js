@@ -1,17 +1,17 @@
 /**
  * WordPress dependencies
  */
-import { useMemo, useState } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
-import { store as noticesStore } from '@wordpress/notices';
-import { useDispatch } from '@wordpress/data';
-import { parse } from '@wordpress/blocks';
-import { useAsyncList } from '@wordpress/compose';
-import { __experimentalBlockPatternsList as BlockPatternsList } from '@wordpress/block-editor';
+import { useMemo, useState } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { store as noticesStore } from '@gutenberg/notices';
+import { useDispatch } from '@gutenberg/data';
+import { parse } from '@gutenberg/blocks';
+import { useAsyncList } from '@gutenberg/compose';
+import { __experimentalBlockPatternsList as BlockPatternsList } from '@gutenberg/block-editor';
 import {
 	SearchControl,
 	__experimentalHStack as HStack,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

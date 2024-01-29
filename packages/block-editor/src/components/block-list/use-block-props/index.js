@@ -6,11 +6,11 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useContext } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
-import { __unstableGetBlockProps as getBlockProps } from '@wordpress/blocks';
-import { useMergeRefs, useDisabled } from '@wordpress/compose';
-import warning from '@wordpress/warning';
+import { useContext } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { __unstableGetBlockProps as getBlockProps } from '@gutenberg/blocks';
+import { useMergeRefs, useDisabled } from '@gutenberg/compose';
+import warning from '@gutenberg/warning';
 
 /**
  * Internal dependencies
@@ -39,7 +39,7 @@ import { useIntersectionObserver } from './use-intersection-observer';
  *
  * @example
  * ```js
- * import { useBlockProps } from '@wordpress/block-editor';
+ * import { useBlockProps } from '@gutenberg/block-editor';
  *
  * export default function Edit() {
  *

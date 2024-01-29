@@ -1,19 +1,19 @@
 # Private APIs
 
-`@wordpress/private-apis` enables sharing private `__experimental` APIs across `@wordpress` packages without
+`@gutenberg/private-apis` enables sharing private `__experimental` APIs across `@gutenberg` packages without
 [publicly exposing them to WordPress extenders](https://make.wordpress.org/core/2022/08/10/proposal-stop-merging-experimental-apis-from-gutenberg-to-wordpress-core/#respond).
 
 ## Getting started
 
-Every `@wordpress` package wanting to privately access or expose experimental APIs must opt-in to `@wordpress/private-apis`:
+Every `@gutenberg` package wanting to privately access or expose experimental APIs must opt-in to `@gutenberg/private-apis`:
 
 ```js
 // In packages/block-editor/private-apis.js:
-import { __dangerousOptInToUnstableAPIsOnlyForCoreModules } from '@wordpress/private-apis';
+import { __dangerousOptInToUnstableAPIsOnlyForCoreModules } from '@gutenberg/private-apis';
 export const { lock, unlock } =
 	__dangerousOptInToUnstableAPIsOnlyForCoreModules(
 		'I know using unstable features means my theme or plugin will inevitably break in the next version of WordPress.',
-		'@wordpress/block-editor' // Name of the package calling __dangerousOptInToUnstableAPIsOnlyForCoreModules,
+		'@gutenberg/block-editor' // Name of the package calling __dangerousOptInToUnstableAPIsOnlyForCoreModules,
 		// (not the name of the package whose APIs you want to access)
 	);
 ```
@@ -23,7 +23,7 @@ Each package may only opt in once. The function name communicates that plugins a
 The function will throw an error if the following conditions are not met:
 
 1. The first argument must exactly match the required consent string: `'I know using unstable features means my theme or plugin will inevitably break in the next version of WordPress.'`.
-2. The second argument must be a known `@wordpress` package that hasn't yet opted into `@wordpress/private-apis`
+2. The second argument must be a known `@gutenberg` package that hasn't yet opted into `@gutenberg/private-apis`
 
 Once the opt-in is complete, the obtained `lock()` and `unlock()` utilities enable hiding `__experimental` APIs from the naked eye:
 
@@ -52,7 +52,7 @@ console.log( unlock( anotherObject ) );
 // function __experimentalFn() {}
 ```
 
-Use `lock()` and `unlock()` to privately distribute the `__experimental` APIs across `@wordpress` packages:
+Use `lock()` and `unlock()` to privately distribute the `__experimental` APIs across `@gutenberg` packages:
 
 ```js
 // In packages/package1/index.js:
@@ -65,7 +65,7 @@ lock( privateApis, {
 } );
 
 // In packages/package2/index.js:
-import { privateApis } from '@wordpress/package1';
+import { privateApis } from '@gutenberg/package1';
 import { unlock } from './lock-unlock';
 
 const { __experimentalFunction } = unlock( privateApis );
@@ -83,7 +83,7 @@ A determined developer who would want to use the private experimental APIs at al
 -   Realize a private importing system exists
 -   Read the code where the risks would be spelled out in capital letters
 -   Explicitly type out he or she is aware of the consequences
--   Pretend to register a `@wordpress` package (and trigger an error as soon as the real package is loaded)
+-   Pretend to register a `@gutenberg` package (and trigger an error as soon as the real package is loaded)
 
 Dangerously opting in to using these APIs by theme and plugin developers is not recommended. Furthermore, the WordPress Core philosophy to strive to maintain backward compatibility for third-party developers **does not apply** to experimental APIs registered via this package.
 

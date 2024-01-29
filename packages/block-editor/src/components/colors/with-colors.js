@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useMemo, Component } from '@wordpress/element';
-import { compose, createHigherOrderComponent } from '@wordpress/compose';
-import { privateApis as componentsPrivateApis } from '@wordpress/components';
+import { useMemo, Component } from '@gutenberg/element';
+import { compose, createHigherOrderComponent } from '@gutenberg/compose';
+import { privateApis as componentsPrivateApis } from '@gutenberg/components';
 
 /**
  * Internal dependencies

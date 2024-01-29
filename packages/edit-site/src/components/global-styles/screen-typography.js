@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { __experimentalVStack as VStack } from '@wordpress/components';
-import { store as editorStore } from '@wordpress/editor';
-import { useSelect } from '@wordpress/data';
+import { __ } from '@gutenberg/i18n';
+import { __experimentalVStack as VStack } from '@gutenberg/components';
+import { store as editorStore } from '@gutenberg/editor';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

@@ -6,10 +6,10 @@ import { ActivityIndicator, FlatList, View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { BottomSheet, BottomSheetConsumer } from '@wordpress/components';
-import { debounce } from '@wordpress/compose';
-import { useState, useEffect, useRef } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
+import { BottomSheet, BottomSheetConsumer } from '@gutenberg/components';
+import { debounce } from '@gutenberg/compose';
+import { useState, useEffect, useRef } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

@@ -2,13 +2,13 @@
  * WordPress dependencies
  */
 
-import { forwardRef } from '@wordpress/element';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
  */
 import type { TabProps } from './types';
-import warning from '@wordpress/warning';
+import warning from '@gutenberg/warning';
 import { useTabsContext } from './context';
 import { Tab as StyledTab } from './styles';
 import type { WordPressComponentProps } from '../context';

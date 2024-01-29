@@ -5,13 +5,13 @@ import {
 	useInstanceId,
 	useMergeRefs,
 	__experimentalUseFixedWindowList as useFixedWindowList,
-} from '@wordpress/compose';
+} from '@gutenberg/compose';
 import {
 	__experimentalTreeGrid as TreeGrid,
 	VisuallyHidden,
-} from '@wordpress/components';
-import { AsyncModeProvider, useSelect } from '@wordpress/data';
-import deprecated from '@wordpress/deprecated';
+} from '@gutenberg/components';
+import { AsyncModeProvider, useSelect } from '@gutenberg/data';
+import deprecated from '@gutenberg/deprecated';
 import {
 	useCallback,
 	useEffect,
@@ -20,8 +20,8 @@ import {
 	useReducer,
 	forwardRef,
 	useState,
-} from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

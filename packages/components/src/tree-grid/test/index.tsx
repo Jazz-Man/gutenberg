@@ -6,8 +6,8 @@ import { fireEvent, render, screen } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { LEFT, RIGHT, UP, DOWN, HOME, END } from '@wordpress/keycodes';
-import { forwardRef } from '@wordpress/element';
+import { LEFT, RIGHT, UP, DOWN, HOME, END } from '@gutenberg/keycodes';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -26,7 +26,7 @@ const TestButton = forwardRef(
 describe( 'TreeGrid', () => {
 	const originalGetClientRects = window.Element.prototype.getClientRects;
 
-	// `getClientRects` needs to be mocked so that `isVisible` from the `@wordpress/dom`
+	// `getClientRects` needs to be mocked so that `isVisible` from the `@gutenberg/dom`
 	// `focusable` module can pass, in a JSDOM env where the DOM elements have no width/height.
 	const mockedGetClientRects = jest.fn( () => [
 		{

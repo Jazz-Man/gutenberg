@@ -6,8 +6,8 @@ import type { ComponentType, ComponentClass } from 'react';
 /**
  * WordPress dependencies
  */
-import isShallowEqual from '@wordpress/is-shallow-equal';
-import { Component } from '@wordpress/element';
+import isShallowEqual from '@gutenberg/is-shallow-equal';
+import { Component } from '@gutenberg/element';
 
 /**
  * Internal dependencies

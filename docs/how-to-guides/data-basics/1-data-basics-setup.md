@@ -180,7 +180,7 @@ add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_scripts' );
   },
   "main": "build/index.js",
   "devDependencies": {
-    "@wordpress/scripts": "^24.0.0"
+    "@gutenberg/scripts": "^24.0.0"
   },
   "scripts": {
     "build": "wp-scripts build",

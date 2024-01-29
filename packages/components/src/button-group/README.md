@@ -41,7 +41,7 @@ Button groups that cannot be selected can either be given a disabled state, or b
 ### Usage
 
 ```jsx
-import { Button, ButtonGroup } from '@wordpress/components';
+import { Button, ButtonGroup } from '@gutenberg/components';
 
 const MyButtonGroup = () => (
 	<ButtonGroup>

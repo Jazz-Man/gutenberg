@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { isPhrasingContent, getPhrasingContentSchema } from '@wordpress/dom';
+import { isPhrasingContent, getPhrasingContentSchema } from '@gutenberg/dom';
 
 /**
  * Internal dependencies

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { Path, SVG } from '@wordpress/components';
+import { Path, SVG } from '@gutenberg/components';
 
 export const ItemSubmenuIcon = () => (
 	<SVG

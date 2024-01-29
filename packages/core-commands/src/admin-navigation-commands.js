@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useCommand } from '@wordpress/commands';
-import { __ } from '@wordpress/i18n';
-import { plus, symbol } from '@wordpress/icons';
-import { addQueryArgs, getPath } from '@wordpress/url';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { useCommand } from '@gutenberg/commands';
+import { __ } from '@gutenberg/i18n';
+import { plus, symbol } from '@gutenberg/icons';
+import { addQueryArgs, getPath } from '@gutenberg/url';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

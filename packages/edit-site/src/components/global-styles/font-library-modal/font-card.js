@@ -1,21 +1,21 @@
 /**
  * WordPress dependencies
  */
-import { _n } from '@wordpress/i18n';
+import { _n } from '@gutenberg/i18n';
 import {
 	__experimentalText as Text,
 	Button,
 	Flex,
 	FlexItem,
 	Icon,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies
  */
 import FontDemo from './font-demo';
 import { getFamilyPreviewStyle } from './utils/preview-styles';
-import { chevronRight } from '@wordpress/icons';
+import { chevronRight } from '@gutenberg/icons';
 
 function FontCard( { font, onClick, variantsText } ) {
 	const fakeFontFace = {

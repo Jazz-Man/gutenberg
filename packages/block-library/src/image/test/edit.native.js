@@ -15,17 +15,17 @@ import Clipboard from '@react-native-clipboard/clipboard';
 /**
  * WordPress dependencies
  */
-import { getBlockTypes, unregisterBlockType } from '@wordpress/blocks';
+import { getBlockTypes, unregisterBlockType } from '@gutenberg/blocks';
 import {
 	requestMediaPicker,
 	setFeaturedImage,
 	sendMediaUpload,
 	subscribeMediaUpload,
-} from '@wordpress/react-native-bridge';
-import { select, dispatch } from '@wordpress/data';
-import { store as editorStore } from '@wordpress/editor';
-import { store as coreStore } from '@wordpress/core-data';
-import apiFetch from '@wordpress/api-fetch';
+} from '@gutenberg/react-native-bridge';
+import { select, dispatch } from '@gutenberg/data';
+import { store as editorStore } from '@gutenberg/editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import apiFetch from '@gutenberg/api-fetch';
 
 /**
  * Internal dependencies

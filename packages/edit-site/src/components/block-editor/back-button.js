@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { Button } from '@wordpress/components';
-import { arrowLeft } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { Button } from '@gutenberg/components';
+import { arrowLeft } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

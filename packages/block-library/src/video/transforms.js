@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { createBlobURL } from '@wordpress/blob';
-import { createBlock } from '@wordpress/blocks';
+import { createBlobURL } from '@gutenberg/blob';
+import { createBlock } from '@gutenberg/blocks';
 
 const transforms = {
 	from: [

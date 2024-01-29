@@ -7,10 +7,10 @@ Plugins module for WordPress.
 Install the module
 
 ```bash
-npm install @wordpress/plugins --save
+npm install @gutenberg/plugins --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ### Plugins API
 
@@ -58,7 +58,7 @@ function Layout() {
 
 ```js
 // Using ESNext syntax
-import { PluginArea } from '@wordpress/plugins';
+import { PluginArea } from '@gutenberg/plugins';
 
 const Layout = () => (
 	<div>
@@ -123,9 +123,9 @@ registerPlugin( 'plugin-name', {
 
 ```js
 // Using ESNext syntax
-import { PluginSidebar, PluginSidebarMoreMenuItem } from '@wordpress/edit-post';
-import { registerPlugin } from '@wordpress/plugins';
-import { more } from '@wordpress/icons';
+import { PluginSidebar, PluginSidebarMoreMenuItem } from '@gutenberg/edit-post';
+import { registerPlugin } from '@gutenberg/plugins';
+import { more } from '@gutenberg/icons';
 
 const Component = () => (
 	<>
@@ -169,7 +169,7 @@ unregisterPlugin( 'plugin-name' );
 
 ```js
 // Using ESNext syntax
-import { unregisterPlugin } from '@wordpress/plugins';
+import { unregisterPlugin } from '@gutenberg/plugins';
 
 unregisterPlugin( 'plugin-name' );
 ```

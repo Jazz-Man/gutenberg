@@ -6,8 +6,8 @@ import { startOfMinute, format, set, setHours, setMonth } from 'date-fns';
 /**
  * WordPress dependencies
  */
-import { useState, useMemo, useEffect } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+import { useState, useMemo, useEffect } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies
@@ -75,8 +75,8 @@ function buildPadInputStateReducer( pad: number ) {
  * TimePicker is a React component that renders a clock for time selection.
  *
  * ```jsx
- * import { TimePicker } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { TimePicker } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyTimePicker = () => {
  *   const [ time, setTime ] = useState( new Date() );

@@ -7,9 +7,9 @@ import {
 	Button,
 	TextControl,
 	Modal,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useState } from '@wordpress/element';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useState } from '@gutenberg/element';
 
 const notEmptyString = ( testString ) => testString?.trim()?.length > 0;
 

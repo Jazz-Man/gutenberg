@@ -6,7 +6,7 @@ import type { ElementType } from 'react';
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
+import { useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

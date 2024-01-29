@@ -14,8 +14,8 @@ import { BlurView } from '@react-native-community/blur';
 /**
  * WordPress dependencies
  */
-import { useEffect, useRef, useCallback, Platform } from '@wordpress/element';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
+import { useEffect, useRef, useCallback, Platform } from '@gutenberg/element';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

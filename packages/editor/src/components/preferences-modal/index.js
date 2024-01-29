@@ -2,14 +2,14 @@
  * WordPress dependencies
  */
 
-import { __ } from '@wordpress/i18n';
-import { useViewportMatch } from '@wordpress/compose';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useMemo } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { useViewportMatch } from '@gutenberg/compose';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useMemo } from '@gutenberg/element';
 import {
 	store as preferencesStore,
 	privateApis as preferencesPrivateApis,
-} from '@wordpress/preferences';
+} from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

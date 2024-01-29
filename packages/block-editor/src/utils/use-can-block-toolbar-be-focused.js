@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { isUnmodifiedDefaultBlock } from '@wordpress/blocks';
+import { useSelect } from '@gutenberg/data';
+import { isUnmodifiedDefaultBlock } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

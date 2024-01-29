@@ -8,8 +8,8 @@ import type { MouseEventHandler, ReactNode } from 'react';
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
-import { useRefEffect } from '@wordpress/compose';
+import { useState } from '@gutenberg/element';
+import { useRefEffect } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

@@ -2,13 +2,13 @@
  * WordPress dependencies
  */
 
-import { chevronUp, chevronDown, moreVertical } from '@wordpress/icons';
-import { DropdownMenu, MenuItem, MenuGroup } from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useCallback } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
-import { BlockTitle, store as blockEditorStore } from '@wordpress/block-editor';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { chevronUp, chevronDown, moreVertical } from '@gutenberg/icons';
+import { DropdownMenu, MenuItem, MenuGroup } from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useCallback } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { BlockTitle, store as blockEditorStore } from '@gutenberg/block-editor';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 const POPOVER_PROPS = {
 	className: 'block-editor-block-settings-menu__popover',

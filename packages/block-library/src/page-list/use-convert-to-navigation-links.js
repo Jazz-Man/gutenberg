@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { createBlock } from '@wordpress/blocks';
-import { useDispatch } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { createBlock } from '@gutenberg/blocks';
+import { useDispatch } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 /**
  * Converts an array of pages into a nested array of navigation link blocks.

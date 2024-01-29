@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { Warning } from '@wordpress/block-editor';
-import { Button } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { createInterpolateElement } from '@wordpress/element';
+import { Warning } from '@gutenberg/block-editor';
+import { Button } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { createInterpolateElement } from '@gutenberg/element';
 
 function DeletedNavigationWarning( { onCreateNew } ) {
 	return (

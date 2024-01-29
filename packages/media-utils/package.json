@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/media-utils",
+	"name": "@gutenberg/media-utils",
 	"version": "4.40.0",
 	"description": "WordPress Media Upload Utils.",
 	"author": "The WordPress Contributors",
@@ -26,10 +26,10 @@
 	"module": "build-module/index.js",
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/api-fetch": "workspace:*",
-		"@wordpress/blob": "workspace:*",
-		"@wordpress/element": "workspace:*",
-		"@wordpress/i18n": "workspace:*"
+		"@gutenberg/api-fetch": "workspace:*",
+		"@gutenberg/blob": "workspace:*",
+		"@gutenberg/element": "workspace:*",
+		"@gutenberg/i18n": "workspace:*"
 	},
 	"publishConfig": {
 		"access": "public"

@@ -10,7 +10,7 @@ import {
 	getColorClassName,
 	RichText,
 	useBlockProps,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 const blockSupports = {
 	className: false,

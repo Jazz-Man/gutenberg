@@ -13,11 +13,11 @@ import { LongPressGestureHandler, State } from 'react-native-gesture-handler';
 /**
  * WordPress dependencies
  */
-import { Children, cloneElement, useCallback } from '@wordpress/element';
+import { Children, cloneElement, useCallback } from '@gutenberg/element';
 import {
 	usePreferredColorScheme,
 	usePreferredColorSchemeStyle,
-} from '@wordpress/compose';
+} from '@gutenberg/compose';
 
 /**
  * Internal dependencies

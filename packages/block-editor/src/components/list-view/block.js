@@ -6,23 +6,23 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { hasBlockSupport } from '@wordpress/blocks';
+import { hasBlockSupport } from '@gutenberg/blocks';
 import {
 	__experimentalTreeGridCell as TreeGridCell,
 	__experimentalTreeGridItem as TreeGridItem,
-} from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
-import { moreVertical } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
+import { moreVertical } from '@gutenberg/icons';
 import {
 	useCallback,
 	useMemo,
 	useState,
 	useRef,
 	memo,
-} from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { sprintf, __ } from '@wordpress/i18n';
-import { ESCAPE } from '@wordpress/keycodes';
+} from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { sprintf, __ } from '@gutenberg/i18n';
+import { ESCAPE } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

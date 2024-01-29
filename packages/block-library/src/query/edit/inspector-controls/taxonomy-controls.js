@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { FormTokenField } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { useState, useEffect } from '@wordpress/element';
-import { useDebounce } from '@wordpress/compose';
-import { decodeEntities } from '@wordpress/html-entities';
+import { FormTokenField } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useState, useEffect } from '@gutenberg/element';
+import { useDebounce } from '@gutenberg/compose';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Internal dependencies

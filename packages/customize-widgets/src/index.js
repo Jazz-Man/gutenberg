@@ -1,23 +1,23 @@
 /**
  * WordPress dependencies
  */
-import { createRoot } from '@wordpress/element';
+import { createRoot } from '@gutenberg/element';
 import {
 	registerCoreBlocks,
 	__experimentalGetCoreBlocks,
 	__experimentalRegisterExperimentalCoreBlocks,
-} from '@wordpress/block-library';
+} from '@gutenberg/block-library';
 import {
 	registerLegacyWidgetBlock,
 	registerLegacyWidgetVariations,
 	registerWidgetGroupBlock,
-} from '@wordpress/widgets';
+} from '@gutenberg/widgets';
 import {
 	setFreeformContentHandlerName,
 	store as blocksStore,
-} from '@wordpress/blocks';
-import { dispatch } from '@wordpress/data';
-import { store as preferencesStore } from '@wordpress/preferences';
+} from '@gutenberg/blocks';
+import { dispatch } from '@gutenberg/data';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

@@ -7,10 +7,10 @@ Utility for warning messages to the console based on a passed condition.
 Install the module
 
 ```bash
-npm install @wordpress/warning --save
+npm install @gutenberg/warning --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## Reducing bundle size
 
@@ -18,7 +18,7 @@ Literal strings aren't minified. Keeping them in your production bundle may incr
 
 To prevent that, you should:
 
-1.  Put `@wordpress/warning/babel-plugin` into your [babel config](https://babeljs.io/docs/en/plugins#plugin-options) or use [`@wordpress/babel-preset-default`](https://www.npmjs.com/package/@wordpress/babel-preset-default), which already includes the babel plugin.
+1.  Put `@gutenberg/warning/babel-plugin` into your [babel config](https://babeljs.io/docs/en/plugins#plugin-options) or use [`@gutenberg/babel-preset-default`](https://www.npmjs.com/package/@gutenberg/babel-preset-default), which already includes the babel plugin.
 
     This will make sure your `warning` calls are wrapped within a condition that checks if `SCRIPT_DEBUG === true`.
 
@@ -37,7 +37,7 @@ Shows a warning with `message` if environment is not `production`.
 _Usage_
 
 ```js
-import warning from '@wordpress/warning';
+import warning from '@gutenberg/warning';
 
 function MyComponent( props ) {
   if ( ! props.title ) {

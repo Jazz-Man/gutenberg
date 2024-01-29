@@ -6,9 +6,9 @@ import { AccessibilityInfo, View, Platform } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { Component } from '@wordpress/element';
-import { withPreferredColorScheme } from '@wordpress/compose';
+import { __, sprintf } from '@gutenberg/i18n';
+import { Component } from '@gutenberg/element';
+import { withPreferredColorScheme } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

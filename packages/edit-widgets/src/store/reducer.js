@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { combineReducers } from '@wordpress/data';
+import { combineReducers } from '@gutenberg/data';
 
 /**
  * Controls the open state of the widget areas.

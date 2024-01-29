@@ -6,10 +6,10 @@ import { View, TouchableHighlight, Text } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { Icon } from '@wordpress/components';
-import { withPreferredColorScheme } from '@wordpress/compose';
-import { __, sprintf } from '@wordpress/i18n';
+import { Component } from '@gutenberg/element';
+import { Icon } from '@gutenberg/components';
+import { withPreferredColorScheme } from '@gutenberg/compose';
+import { __, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

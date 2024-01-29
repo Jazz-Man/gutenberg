@@ -7,7 +7,7 @@ import { render, fireEvent } from 'test/helpers';
 /**
  * WordPress dependencies
  */
-import { Slot, SlotFillProvider } from '@wordpress/components';
+import { Slot, SlotFillProvider } from '@gutenberg/components';
 
 /**
  * Internal dependencies

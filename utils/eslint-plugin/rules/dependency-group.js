@@ -55,7 +55,7 @@ module.exports = {
 		function getPackageLocality( source ) {
 			if ( source.startsWith( '.' ) ) {
 				return 'Internal';
-			} else if ( source.startsWith( '@wordpress/' ) ) {
+			} else if ( source.startsWith( '@gutenberg/' ) ) {
 				return 'WordPress';
 			}
 

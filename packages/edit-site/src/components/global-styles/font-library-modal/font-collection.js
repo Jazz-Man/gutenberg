@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useContext, useEffect, useState, useMemo } from '@wordpress/element';
+import { useContext, useEffect, useState, useMemo } from '@gutenberg/element';
 import {
 	__experimentalSpacer as Spacer,
 	__experimentalInputControl as InputControl,
@@ -13,10 +13,10 @@ import {
 	Flex,
 	Button,
 	Notice,
-} from '@wordpress/components';
-import { debounce } from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
-import { search, closeSmall } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { debounce } from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
+import { search, closeSmall } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

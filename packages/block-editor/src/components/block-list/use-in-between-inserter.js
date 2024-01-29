@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useRefEffect } from '@wordpress/compose';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useContext } from '@wordpress/element';
-import { isRTL } from '@wordpress/i18n';
+import { useRefEffect } from '@gutenberg/compose';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useContext } from '@gutenberg/element';
+import { isRTL } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

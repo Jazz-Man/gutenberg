@@ -13,14 +13,14 @@ import {
 	InspectorControls,
 	store as blockEditorStore,
 	HeadingLevelDropdown,
-} from '@wordpress/block-editor';
-import { __, _n, sprintf } from '@wordpress/i18n';
-import { useEntityProp } from '@wordpress/core-data';
-import { PanelBody, ToggleControl } from '@wordpress/components';
-import { useState, useEffect } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import apiFetch from '@wordpress/api-fetch';
-import { addQueryArgs } from '@wordpress/url';
+} from '@gutenberg/block-editor';
+import { __, _n, sprintf } from '@gutenberg/i18n';
+import { useEntityProp } from '@gutenberg/core-data';
+import { PanelBody, ToggleControl } from '@gutenberg/components';
+import { useState, useEffect } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import apiFetch from '@gutenberg/api-fetch';
+import { addQueryArgs } from '@gutenberg/url';
 
 export default function Edit( {
 	attributes: { textAlign, showPostTitle, showCommentsCount, level },

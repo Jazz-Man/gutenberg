@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { forwardRef } from '@wordpress/element';
+import { useInstanceId } from '@gutenberg/compose';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -61,8 +61,8 @@ function UnforwardedTextareaControl(
  * vertically when the cursor reaches the bottom of the field.
  *
  * ```jsx
- * import { TextareaControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { TextareaControl } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyTextareaControl = () => {
  *   const [ text, setText ] = useState( '' );

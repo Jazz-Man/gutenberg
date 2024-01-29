@@ -4,7 +4,7 @@
 import {
 	__experimentalUseCustomUnits as useCustomUnits,
 	__experimentalUnitControl as BaseUnitControl,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

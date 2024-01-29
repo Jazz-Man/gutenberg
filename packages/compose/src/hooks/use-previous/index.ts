@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useRef } from '@wordpress/element';
+import { useEffect, useRef } from '@gutenberg/element';
 
 /**
  * Use something's value from the previous render.

@@ -7,7 +7,7 @@ import type { ForwardedRef, MouseEvent as ReactMouseEvent } from 'react';
 /**
  * WordPress dependencies
  */
-import { useContext, forwardRef } from '@wordpress/element';
+import { useContext, forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -100,8 +100,8 @@ function UnforwardedToolbarButton(
  * or ToolbarGroup when used to create general interfaces.
  *
  * ```jsx
- * import { Toolbar, ToolbarButton } from '@wordpress/components';
- * import { edit } from '@wordpress/icons';
+ * import { Toolbar, ToolbarButton } from '@gutenberg/components';
+ * import { edit } from '@gutenberg/icons';
  *
  * function MyToolbar() {
  *   return (

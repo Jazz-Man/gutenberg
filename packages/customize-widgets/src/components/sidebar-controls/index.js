@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createContext, useMemo, useContext } from '@wordpress/element';
+import { createContext, useMemo, useContext } from '@gutenberg/element';
 
 export const SidebarControlsContext = createContext();
 

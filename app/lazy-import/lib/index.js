@@ -34,7 +34,7 @@ function md5( text ) {
  * @return {string} Module to use as local package alias.
  */
 function getLocalModuleName( arg ) {
-	return '@wordpress/lazy-import.' + md5( arg );
+	return '@gutenberg/lazy-import.' + md5( arg );
 }
 
 /**

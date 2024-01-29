@@ -6,7 +6,7 @@ import { createBrowserHistory } from 'history';
 /**
  * WordPress dependencies
  */
-import { addQueryArgs, getQueryArgs, removeQueryArgs } from '@wordpress/url';
+import { addQueryArgs, getQueryArgs, removeQueryArgs } from '@gutenberg/url';
 
 const history = createBrowserHistory();
 

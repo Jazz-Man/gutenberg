@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/viewport",
+	"name": "@gutenberg/viewport",
 	"version": "5.26.0",
 	"description": "Viewport module for WordPress.",
 	"author": "The WordPress Contributors",
@@ -26,9 +26,9 @@
 	"react-native": "src/index",
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/compose": "workspace:*",
-		"@wordpress/data": "workspace:*",
-		"@wordpress/element": "workspace:*"
+		"@gutenberg/compose": "workspace:*",
+		"@gutenberg/data": "workspace:*",
+		"@gutenberg/element": "workspace:*"
 	},
 	"peerDependencies": {
 		"react": "^18.0.0"

@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { addFilter } from '@wordpress/hooks';
-import { hasBlockSupport } from '@wordpress/blocks';
+import { addFilter } from '@gutenberg/hooks';
+import { hasBlockSupport } from '@gutenberg/blocks';
 
 const hasSettingsSupport = ( blockType ) =>
 	hasBlockSupport( blockType, '__experimentalSettings', false );

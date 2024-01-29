@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { Button, ToggleControl } from '@wordpress/components';
-import { useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { keyboardReturn } from '@wordpress/icons';
+import { Button, ToggleControl } from '@gutenberg/components';
+import { useState } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { keyboardReturn } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { doAction } from '@wordpress/hooks';
+import { Component } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { doAction } from '@gutenberg/hooks';
 
 /**
  * Internal dependencies

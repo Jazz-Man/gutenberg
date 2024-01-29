@@ -10,14 +10,14 @@ import {
 	useEntityBlockEditor,
 	useEntityProp,
 	useEntityRecord,
-} from '@wordpress/core-data';
+} from '@gutenberg/core-data';
 import {
 	Placeholder,
 	Spinner,
 	TextControl,
 	PanelBody,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 import {
 	useInnerBlocksProps,
 	__experimentalRecursionProvider as RecursionProvider,
@@ -27,8 +27,8 @@ import {
 	useBlockProps,
 	Warning,
 	privateApis as blockEditorPrivateApis,
-} from '@wordpress/block-editor';
-import { useRef, useMemo } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { useRef, useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

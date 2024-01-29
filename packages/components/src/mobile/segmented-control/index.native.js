@@ -12,8 +12,8 @@ import {
 /**
  * WordPress dependencies
  */
-import { useState, useEffect } from '@wordpress/element';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
+import { useState, useEffect } from '@gutenberg/element';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

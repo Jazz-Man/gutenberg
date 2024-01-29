@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useEntityBlockEditor } from '@wordpress/core-data';
+import { useEntityBlockEditor } from '@gutenberg/core-data';
 import {
 	InnerBlocks,
 	useInnerBlocksProps,
 	useSettings,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
 
 export default function TemplatePartInnerBlocks( {
 	postId: id,

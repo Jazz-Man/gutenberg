@@ -1,17 +1,17 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { RawHTML } from '@wordpress/element';
-import { Button } from '@wordpress/components';
-import { createBlock } from '@wordpress/blocks';
-import { withDispatch, useSelect } from '@wordpress/data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { RawHTML } from '@gutenberg/element';
+import { Button } from '@gutenberg/components';
+import { createBlock } from '@gutenberg/blocks';
+import { withDispatch, useSelect } from '@gutenberg/data';
 import {
 	Warning,
 	useBlockProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { safeHTML } from '@wordpress/dom';
+} from '@gutenberg/block-editor';
+import { safeHTML } from '@gutenberg/dom';
 
 function MissingBlockWarning( { attributes, convertToHTML, clientId } ) {
 	const { originalName, originalUndelimitedContent } = attributes;

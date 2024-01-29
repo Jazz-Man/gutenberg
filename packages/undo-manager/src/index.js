@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import isShallowEqual from '@wordpress/is-shallow-equal';
+import isShallowEqual from '@gutenberg/is-shallow-equal';
 
 /** @typedef {import('./types').HistoryRecord}  HistoryRecord */
 /** @typedef {import('./types').HistoryChange}  HistoryChange */

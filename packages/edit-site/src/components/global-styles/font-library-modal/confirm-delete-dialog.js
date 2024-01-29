@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { __experimentalConfirmDialog as ConfirmDialog } from '@wordpress/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { __experimentalConfirmDialog as ConfirmDialog } from '@gutenberg/components';
 
 function ConfirmDeleteDialog( {
 	font,

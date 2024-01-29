@@ -3,7 +3,7 @@
 ## Usage
 
 ```jsx
-import { Dashicon } from '@wordpress/components';
+import { Dashicon } from '@gutenberg/components';
 
 const MyDashicon = () => (
 	<div>

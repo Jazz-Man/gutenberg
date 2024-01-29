@@ -5,7 +5,7 @@ A wrapper component that maintains its aspect ratio when resized.
 ## Usage
 
 ```jsx
-import { ResponsiveWrapper } from '@wordpress/components';
+import { ResponsiveWrapper } from '@gutenberg/components';
 
 const MyResponsiveWrapper = () => (
 	<ResponsiveWrapper naturalWidth={ 2000 } naturalHeight={ 680 }>

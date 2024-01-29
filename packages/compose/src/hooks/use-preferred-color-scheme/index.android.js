@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useState, useEffect } from '@wordpress/element';
+import { useState, useEffect } from '@gutenberg/element';
 import {
 	subscribePreferredColorScheme,
 	isInitialColorSchemeDark,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 
 /**
  * Returns the color scheme value when it changes. Possible values: [ 'light', 'dark' ]

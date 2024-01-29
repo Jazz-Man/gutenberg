@@ -1,16 +1,16 @@
 # Block Serialization Default Parser
 
-This library contains the default block serialization parser implementations for WordPress documents. It provides native PHP and JavaScript parsers that implement the specification from [`@wordpress/block-serialization-spec-parser`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/block-serialization-spec-parser/README.md) and which normally operates on the document stored in `post_content`.
+This library contains the default block serialization parser implementations for WordPress documents. It provides native PHP and JavaScript parsers that implement the specification from [`@gutenberg/block-serialization-spec-parser`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/block-serialization-spec-parser/README.md) and which normally operates on the document stored in `post_content`.
 
 ## Installation
 
 Install the module
 
 ```bash
-npm install @wordpress/block-serialization-default-parser --save
+npm install @gutenberg/block-serialization-default-parser --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## API
 
@@ -53,7 +53,7 @@ Input post:
 Parsing code:
 
 ```js
-import { parse } from '@wordpress/block-serialization-default-parser';
+import { parse } from '@gutenberg/block-serialization-default-parser';
 
 parse( post ) ===
 	[

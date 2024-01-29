@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { expect } from '@wordpress/e2e-test-utils-playwright';
+import { expect } from '@gutenberg/e2e-test-utils-playwright';
 
 /**
  * External dependencies

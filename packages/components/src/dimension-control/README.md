@@ -10,7 +10,7 @@ This feature is still experimental. “Experimental” means this is an early im
 
 ```jsx
 import { useState } from 'react';
-import { __experimentalDimensionControl as DimensionControl } from '@wordpress/components';
+import { __experimentalDimensionControl as DimensionControl } from '@gutenberg/components';
 
 export default function MyCustomDimensionControl() {
 	const [ paddingSize, setPaddingSize ] = useState( '' );

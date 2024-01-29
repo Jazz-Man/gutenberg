@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { Platform } from '@wordpress/element';
+import { Platform } from '@gutenberg/element';
 
 export function defaultColumnsNumber( imageCount ) {
 	return imageCount ? Math.min( 3, imageCount ) : 3;

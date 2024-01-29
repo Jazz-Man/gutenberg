@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useMemo, useState } from '@wordpress/element';
-import { useMergeRefs } from '@wordpress/compose';
+import { __ } from '@gutenberg/i18n';
+import { useMemo, useState } from '@gutenberg/element';
+import { useMergeRefs } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -162,8 +162,8 @@ const UnconnectedBorderBoxControl = (
  * view's width input would show "Mixed" placeholder text.
  *
  * ```jsx
- * import { __experimentalBorderBoxControl as BorderBoxControl } from '@wordpress/components';
- * import { __ } from '@wordpress/i18n';
+ * import { __experimentalBorderBoxControl as BorderBoxControl } from '@gutenberg/components';
+ * import { __ } from '@gutenberg/i18n';
  *
  * const colors = [
  * 	{ name: 'Blue 20', color: '#72aee6' },

@@ -6,14 +6,14 @@ import {
 	MenuItem,
 	ToolbarDropdownMenu,
 	VisuallyHidden,
-} from '@wordpress/components';
-import { useState } from '@wordpress/element';
-import { __, _x } from '@wordpress/i18n';
-import { external } from '@wordpress/icons';
-import { displayShortcut } from '@wordpress/keycodes';
-import { useShortcut } from '@wordpress/keyboard-shortcuts';
-import { MoreMenuDropdown } from '@wordpress/interface';
-import { PreferenceToggleMenuItem } from '@wordpress/preferences';
+} from '@gutenberg/components';
+import { useState } from '@gutenberg/element';
+import { __, _x } from '@gutenberg/i18n';
+import { external } from '@gutenberg/icons';
+import { displayShortcut } from '@gutenberg/keycodes';
+import { useShortcut } from '@gutenberg/keyboard-shortcuts';
+import { MoreMenuDropdown } from '@gutenberg/interface';
+import { PreferenceToggleMenuItem } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

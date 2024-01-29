@@ -6,18 +6,18 @@ import { View, Text } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { BottomSheet, Icon, TextControl } from '@wordpress/components';
+import { BottomSheet, Icon, TextControl } from '@gutenberg/components';
 import {
 	requestUnsupportedBlockFallback,
 	sendActionButtonPressedAction,
 	actionButtons,
-} from '@wordpress/react-native-bridge';
-import { help } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
-import { getBlockType } from '@wordpress/blocks';
-import { useCallback, useState } from '@wordpress/element';
-import { applyFilters } from '@wordpress/hooks';
+} from '@gutenberg/react-native-bridge';
+import { help } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
+import { getBlockType } from '@gutenberg/blocks';
+import { useCallback, useState } from '@gutenberg/element';
+import { applyFilters } from '@gutenberg/hooks';
 
 /**
  * Internal dependencies

@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
-import { cloneBlock } from '@wordpress/blocks';
+import { useMemo } from '@gutenberg/element';
+import { cloneBlock } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

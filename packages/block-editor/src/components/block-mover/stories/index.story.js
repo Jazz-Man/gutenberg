@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useEffect } from '@wordpress/element';
-import { createBlock } from '@wordpress/blocks';
-import { registerCoreBlocks } from '@wordpress/block-library';
-import { useDispatch } from '@wordpress/data';
-import { Toolbar } from '@wordpress/components';
+import { useEffect } from '@gutenberg/element';
+import { createBlock } from '@gutenberg/blocks';
+import { registerCoreBlocks } from '@gutenberg/block-library';
+import { useDispatch } from '@gutenberg/data';
+import { Toolbar } from '@gutenberg/components';
 
 /**
  * Internal dependencies

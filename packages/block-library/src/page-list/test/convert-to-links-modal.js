@@ -6,8 +6,8 @@ import { convertToNavigationLinks } from '../use-convert-to-navigation-links';
 
 // Mock createBlock to avoid creating the blocks in test environment
 // as convertToNavigationLinks calls this method internally.
-jest.mock( '@wordpress/blocks', () => {
-	const blocks = jest.requireActual( '@wordpress/blocks' );
+jest.mock( '@gutenberg/blocks', () => {
+	const blocks = jest.requireActual( '@gutenberg/blocks' );
 
 	return {
 		...blocks,

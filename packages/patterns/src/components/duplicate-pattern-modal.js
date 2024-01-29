@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { store as coreStore } from '@wordpress/core-data';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { __, sprintf } from '@wordpress/i18n';
-import { store as noticesStore } from '@wordpress/notices';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

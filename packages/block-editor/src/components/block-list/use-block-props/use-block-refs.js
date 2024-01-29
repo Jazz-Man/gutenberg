@@ -7,16 +7,16 @@ import {
 	useMemo,
 	useRef,
 	useState,
-} from '@wordpress/element';
-import { useRefEffect } from '@wordpress/compose';
+} from '@gutenberg/element';
+import { useRefEffect } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
  */
 import { BlockRefs } from '../../provider/block-refs-provider';
 
-/** @typedef {import('@wordpress/element').RefCallback} RefCallback */
-/** @typedef {import('@wordpress/element').RefObject} RefObject */
+/** @typedef {import('@gutenberg/element').RefCallback} RefCallback */
+/** @typedef {import('@gutenberg/element').RefObject} RefObject */
 
 /**
  * Provides a ref to the BlockRefs context.

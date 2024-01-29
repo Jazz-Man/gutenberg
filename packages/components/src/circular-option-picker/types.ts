@@ -6,7 +6,7 @@ import type { ReactNode } from 'react';
 /**
  * WordPress dependencies
  */
-import type { Icon } from '@wordpress/icons';
+import type { Icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

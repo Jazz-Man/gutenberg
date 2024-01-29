@@ -6,7 +6,7 @@ import {
 	escapeEditableHTML,
 	escapeAttribute,
 	isValidAttributeName,
-} from '@wordpress/escape-html';
+} from '@gutenberg/escape-html';
 
 /**
  * Internal dependencies

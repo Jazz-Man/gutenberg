@@ -6,7 +6,7 @@ import { View, Dimensions } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { useRef } from '@wordpress/element';
+import { useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

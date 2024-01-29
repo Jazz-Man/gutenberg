@@ -15,7 +15,7 @@ import type { ViewProps } from './types';
  * It is the principle component in the entire library.
  *
  * ```jsx
- * import { View } from `@wordpress/components`;
+ * import { View } from `@gutenberg/components`;
  *
  * function Example() {
  * 	return (

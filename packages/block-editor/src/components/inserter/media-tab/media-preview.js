@@ -18,14 +18,14 @@ import {
 	Button,
 	privateApis as componentsPrivateApis,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { useMemo, useCallback, useState } from '@wordpress/element';
-import { cloneBlock } from '@wordpress/blocks';
-import { moreVertical, external } from '@wordpress/icons';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
-import { isBlobURL } from '@wordpress/blob';
+} from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useMemo, useCallback, useState } from '@gutenberg/element';
+import { cloneBlock } from '@gutenberg/blocks';
+import { moreVertical, external } from '@gutenberg/icons';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { isBlobURL } from '@gutenberg/blob';
 
 /**
  * Internal dependencies

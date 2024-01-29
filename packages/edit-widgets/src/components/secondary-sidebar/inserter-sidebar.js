@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { Button, VisuallyHidden } from '@wordpress/components';
-import { close } from '@wordpress/icons';
-import { __experimentalLibrary as Library } from '@wordpress/block-editor';
+import { Button, VisuallyHidden } from '@gutenberg/components';
+import { close } from '@gutenberg/icons';
+import { __experimentalLibrary as Library } from '@gutenberg/block-editor';
 import {
 	useViewportMatch,
 	__experimentalUseDialog as useDialog,
-} from '@wordpress/compose';
-import { useCallback, useEffect, useRef } from '@wordpress/element';
-import { useDispatch } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/compose';
+import { useCallback, useEffect, useRef } from '@gutenberg/element';
+import { useDispatch } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

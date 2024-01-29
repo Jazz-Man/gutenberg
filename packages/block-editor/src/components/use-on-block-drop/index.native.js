@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { cloneBlock } from '@wordpress/blocks';
-import { useDispatch, useSelect } from '@wordpress/data';
+import { cloneBlock } from '@gutenberg/blocks';
+import { useDispatch, useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

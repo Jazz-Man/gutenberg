@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+import { Component } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
 
 const DEFAULT_EMPTY_GALLERY = [];
 

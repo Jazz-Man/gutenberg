@@ -13,17 +13,17 @@ import { default as VideoPlayer } from 'react-native-video';
 /**
  * WordPress dependencies
  */
-import { View } from '@wordpress/primitives';
-import { Icon, useEditorColorScheme } from '@wordpress/components';
-import { withPreferredColorScheme } from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
-import { audio, warning } from '@wordpress/icons';
+import { View } from '@gutenberg/primitives';
+import { Icon, useEditorColorScheme } from '@gutenberg/components';
+import { withPreferredColorScheme } from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
+import { audio, warning } from '@gutenberg/icons';
 import {
 	requestImageFailedRetryDialog,
 	requestImageUploadCancelDialog,
-} from '@wordpress/react-native-bridge';
-import { getProtocol } from '@wordpress/url';
-import { useState } from '@wordpress/element';
+} from '@gutenberg/react-native-bridge';
+import { getProtocol } from '@gutenberg/url';
+import { useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

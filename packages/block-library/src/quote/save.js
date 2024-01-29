@@ -6,7 +6,7 @@ import classNames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { InnerBlocks, RichText, useBlockProps } from '@wordpress/block-editor';
+import { InnerBlocks, RichText, useBlockProps } from '@gutenberg/block-editor';
 
 export default function save( { attributes } ) {
 	const { align, citation } = attributes;

@@ -7,10 +7,10 @@ Accessibility utilities for WordPress.
 Install the module
 
 ```bash
-npm install @wordpress/a11y --save
+npm install @gutenberg/a11y --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## API
 
@@ -27,7 +27,7 @@ Allows you to easily announce dynamic interface updates to screen readers using 
 _Usage_
 
 ```js
-import { speak } from '@wordpress/a11y';
+import { speak } from '@gutenberg/a11y';
 
 // For polite messages that shouldn't interrupt what screen readers are currently announcing.
 speak( 'The message you want to send to the ARIA live region' );

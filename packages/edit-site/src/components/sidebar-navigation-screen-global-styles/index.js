@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { edit, seen } from '@wordpress/icons';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { __experimentalNavigatorButton as NavigatorButton } from '@wordpress/components';
-import { useViewportMatch } from '@wordpress/compose';
-import { BlockEditorProvider } from '@wordpress/block-editor';
-import { useCallback } from '@wordpress/element';
-import { store as editorStore } from '@wordpress/editor';
+import { __ } from '@gutenberg/i18n';
+import { edit, seen } from '@gutenberg/icons';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { __experimentalNavigatorButton as NavigatorButton } from '@gutenberg/components';
+import { useViewportMatch } from '@gutenberg/compose';
+import { BlockEditorProvider } from '@gutenberg/block-editor';
+import { useCallback } from '@gutenberg/element';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

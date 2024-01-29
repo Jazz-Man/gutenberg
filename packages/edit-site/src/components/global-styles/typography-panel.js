@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

@@ -6,11 +6,11 @@ import { View, Text, TouchableOpacity } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
-import { Icon, Picker } from '@wordpress/components';
-import { BlockIcon } from '@wordpress/block-editor';
-import { useRef } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
+import { Icon, Picker } from '@gutenberg/components';
+import { BlockIcon } from '@gutenberg/block-editor';
+import { useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

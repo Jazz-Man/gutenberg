@@ -13,7 +13,7 @@ This only happens in the mobile WordPress apps.
 Display the `UngroupButton` icon.
 
 ```jsx
-import { UngroupButton } from '@wordpress/block-editor';
+import { UngroupButton } from '@gutenberg/block-editor';
 
 const MyUngroupButton = () => <UngroupButton />;
 ```

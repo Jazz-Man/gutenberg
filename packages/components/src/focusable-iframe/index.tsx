@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useMergeRefs, useFocusableIframe } from '@wordpress/compose';
-import deprecated from '@wordpress/deprecated';
+import { useMergeRefs, useFocusableIframe } from '@gutenberg/compose';
+import deprecated from '@gutenberg/deprecated';
 /**
  * Internal dependencies
  */

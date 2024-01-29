@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useRef, useEffect } from '@wordpress/element';
+import { useRef, useEffect } from '@gutenberg/element';
 
 /**
  * A component specifically designed to be used as an element referenced

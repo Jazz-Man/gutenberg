@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __, _n, _x, sprintf } from '@wordpress/i18n';
-import { useMemo, useState } from '@wordpress/element';
-import { store as noticesStore } from '@wordpress/notices';
+import { __, _n, _x, sprintf } from '@gutenberg/i18n';
+import { useMemo, useState } from '@gutenberg/element';
+import { store as noticesStore } from '@gutenberg/notices';
 import {
 	Button,
 	CheckboxControl,
@@ -12,12 +12,12 @@ import {
 	withFilters,
 	Flex,
 	FlexItem,
-} from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useDebounce } from '@wordpress/compose';
-import { store as coreStore } from '@wordpress/core-data';
-import { speak } from '@wordpress/a11y';
-import { decodeEntities } from '@wordpress/html-entities';
+} from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useDebounce } from '@gutenberg/compose';
+import { store as coreStore } from '@gutenberg/core-data';
+import { speak } from '@gutenberg/a11y';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Internal dependencies

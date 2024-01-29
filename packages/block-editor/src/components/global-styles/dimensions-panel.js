@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	__experimentalToolsPanel as ToolsPanel,
 	__experimentalToolsPanelItem as ToolsPanelItem,
@@ -16,9 +16,9 @@ import {
 	__experimentalUnitControl as UnitControl,
 	__experimentalUseCustomUnits as useCustomUnits,
 	__experimentalView as View,
-} from '@wordpress/components';
-import { Icon, positionCenter, stretchWide } from '@wordpress/icons';
-import { useCallback, Platform } from '@wordpress/element';
+} from '@gutenberg/components';
+import { Icon, positionCenter, stretchWide } from '@gutenberg/icons';
+import { useCallback, Platform } from '@gutenberg/element';
 
 /**
  * Internal dependencies

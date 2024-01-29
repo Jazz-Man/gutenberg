@@ -7,10 +7,10 @@ import { colord } from 'colord';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { useEffect, useRef, useState, useMemo } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
-import { plus } from '@wordpress/icons';
+import { useInstanceId } from '@gutenberg/compose';
+import { useEffect, useRef, useState, useMemo } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { plus } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

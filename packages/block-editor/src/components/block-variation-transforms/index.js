@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { store as blocksStore } from '@wordpress/blocks';
-import { __, sprintf } from '@wordpress/i18n';
+import { store as blocksStore } from '@gutenberg/blocks';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	Button,
 	DropdownMenu,
@@ -11,10 +11,10 @@ import {
 	__experimentalToggleGroupControl as ToggleGroupControl,
 	__experimentalToggleGroupControlOptionIcon as ToggleGroupControlOptionIcon,
 	VisuallyHidden,
-} from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useMemo } from '@wordpress/element';
-import { chevronDown } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useMemo } from '@gutenberg/element';
+import { chevronDown } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

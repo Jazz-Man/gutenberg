@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useState, useEffect, useRef, createPortal } from '@wordpress/element';
-import { SlotFillProvider, Popover } from '@wordpress/components';
+import { useState, useEffect, useRef, createPortal } from '@gutenberg/element';
+import { SlotFillProvider, Popover } from '@gutenberg/components';
 
 /**
  * Internal dependencies

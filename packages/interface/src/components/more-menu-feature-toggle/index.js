@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { MenuItem } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { check } from '@wordpress/icons';
-import { speak } from '@wordpress/a11y';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { MenuItem } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { check } from '@gutenberg/icons';
+import { speak } from '@gutenberg/a11y';
 
 /**
  * Internal dependencies

@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { useEntityProp } from '@wordpress/core-data';
-import { dateI18n, getSettings as getDateSettings } from '@wordpress/date';
+import { useEntityProp } from '@gutenberg/core-data';
+import { dateI18n, getSettings as getDateSettings } from '@gutenberg/date';
 import {
 	InspectorControls,
 	useBlockProps,
 	__experimentalDateFormatPicker as DateFormatPicker,
-} from '@wordpress/block-editor';
-import { PanelBody, ToggleControl } from '@wordpress/components';
-import { __, _x } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { PanelBody, ToggleControl } from '@gutenberg/components';
+import { __, _x } from '@gutenberg/i18n';
 
 /**
  * Renders the `core/comment-date` block on the editor.

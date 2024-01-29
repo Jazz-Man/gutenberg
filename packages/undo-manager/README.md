@@ -7,7 +7,7 @@ A simple undo manager.
 Install the module
 
 ```bash
-npm install @wordpress/undo-manager --save
+npm install @gutenberg/undo-manager --save
 ```
 
 ## API

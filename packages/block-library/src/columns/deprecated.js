@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { createBlock } from '@wordpress/blocks';
-import { InnerBlocks, getColorClassName } from '@wordpress/block-editor';
+import { createBlock } from '@gutenberg/blocks';
+import { InnerBlocks, getColorClassName } from '@gutenberg/block-editor';
 
 /**
  * Given an HTML string for a deprecated columns inner block, returns the

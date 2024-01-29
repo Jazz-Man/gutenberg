@@ -9,7 +9,7 @@ import { render } from 'test/helpers';
 import {
 	subscribeMediaUpload,
 	sendMediaUpload,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 
 /**
  * Internal dependencies

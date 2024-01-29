@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 import {
 	createBlock,
 	createBlocksFromInnerBlocksTemplate,
 	parse,
-} from '@wordpress/blocks';
-import { useMemo } from '@wordpress/element';
+} from '@gutenberg/blocks';
+import { useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -22,7 +22,7 @@ import { orderInserterBlockItems } from '../utils/order-inserter-block-items';
 const noop = () => {};
 const SHOWN_BLOCK_TYPES = 9;
 
-/** @typedef {import('@wordpress/components').WPCompleter} WPCompleter */
+/** @typedef {import('@gutenberg/components').WPCompleter} WPCompleter */
 
 /**
  * Creates a blocks repeater for replacing the current block with a selected block type.

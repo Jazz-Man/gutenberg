@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { focus } from '@wordpress/dom';
+import { __, sprintf } from '@gutenberg/i18n';
+import { focus } from '@gutenberg/dom';
 
 export const getBlockPositionDescription = ( position, siblingCount, level ) =>
 	sprintf(
@@ -61,7 +61,7 @@ export function getCommonDepthClientIds(
 /**
  * Shift focus to the list view item associated with a particular clientId.
  *
- * @typedef {import('@wordpress/element').RefObject} RefObject
+ * @typedef {import('@gutenberg/element').RefObject} RefObject
  *
  * @param {string}                 focusClientId      The client ID of the block to focus.
  * @param {RefObject<HTMLElement>} treeGridElementRef The container element to search within.

@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { RichText, useBlockProps } from '@wordpress/block-editor';
+import { RichText, useBlockProps } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

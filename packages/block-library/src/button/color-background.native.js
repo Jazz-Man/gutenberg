@@ -5,7 +5,7 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Gradient, colorsUtils } from '@wordpress/components';
+import { Gradient, colorsUtils } from '@gutenberg/components';
 /**
  * Internal dependencies
  */

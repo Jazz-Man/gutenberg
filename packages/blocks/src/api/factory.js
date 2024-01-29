@@ -6,7 +6,7 @@ import { v4 as uuid } from 'uuid';
 /**
  * WordPress dependencies
  */
-import { createHooks, applyFilters } from '@wordpress/hooks';
+import { createHooks, applyFilters } from '@gutenberg/hooks';
 
 /**
  * Internal dependencies

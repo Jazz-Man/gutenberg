@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { pipe } from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
-import { Dropdown, Button } from '@wordpress/components';
+import { pipe } from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
+import { Dropdown, Button } from '@gutenberg/components';
 
 /**
  * Internal dependencies

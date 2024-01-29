@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { createBlock } from '@wordpress/blocks';
-import { __unstableCreateElement as createElement } from '@wordpress/rich-text';
+import { createBlock } from '@gutenberg/blocks';
+import { __unstableCreateElement as createElement } from '@gutenberg/rich-text';
 
 const transforms = {
 	from: [

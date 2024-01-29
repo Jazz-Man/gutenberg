@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/format-library",
+	"name": "@gutenberg/format-library",
 	"version": "4.26.0",
 	"description": "Format library for the WordPress editor.",
 	"author": "The WordPress Contributors",
@@ -26,18 +26,18 @@
 	"react-native": "src/index",
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/a11y": "workspace:*",
-		"@wordpress/block-editor": "workspace:*",
-		"@wordpress/components": "workspace:*",
-		"@wordpress/compose": "workspace:*",
-		"@wordpress/data": "workspace:*",
-		"@wordpress/element": "workspace:*",
-		"@wordpress/html-entities": "workspace:*",
-		"@wordpress/i18n": "workspace:*",
-		"@wordpress/icons": "workspace:*",
-		"@wordpress/private-apis": "workspace:*",
-		"@wordpress/rich-text": "workspace:*",
-		"@wordpress/url": "workspace:*"
+		"@gutenberg/a11y": "workspace:*",
+		"@gutenberg/block-editor": "workspace:*",
+		"@gutenberg/components": "workspace:*",
+		"@gutenberg/compose": "workspace:*",
+		"@gutenberg/data": "workspace:*",
+		"@gutenberg/element": "workspace:*",
+		"@gutenberg/html-entities": "workspace:*",
+		"@gutenberg/i18n": "workspace:*",
+		"@gutenberg/icons": "workspace:*",
+		"@gutenberg/private-apis": "workspace:*",
+		"@gutenberg/rich-text": "workspace:*",
+		"@gutenberg/url": "workspace:*"
 	},
 	"peerDependencies": {
 		"react": "^18.0.0",

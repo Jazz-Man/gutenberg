@@ -10,9 +10,9 @@ const EMPTY_INSERTION_POINT = {
  *
  * @example
  * ```js
- * import { store as customizeWidgetsStore } from '@wordpress/customize-widgets';
- * import { __ } from '@wordpress/i18n';
- * import { useSelect } from '@wordpress/data';
+ * import { store as customizeWidgetsStore } from '@gutenberg/customize-widgets';
+ * import { __ } from '@gutenberg/i18n';
+ * import { useSelect } from '@gutenberg/data';
  *
  * const ExampleComponent = () => {
  *    const { isInserterOpened } = useSelect(

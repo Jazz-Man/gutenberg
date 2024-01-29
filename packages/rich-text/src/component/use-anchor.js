@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useState, useLayoutEffect } from '@wordpress/element';
+import { useState, useLayoutEffect } from '@gutenberg/element';
 
 /** @typedef {import('../register-format-type').WPFormat} WPFormat */
 /** @typedef {import('../types').RichTextValue} RichTextValue */

@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { MenuItem } from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { useCopyToClipboard } from '@wordpress/compose';
-import { store as noticesStore } from '@wordpress/notices';
-import { store as coreStore } from '@wordpress/core-data';
-import { __unstableSerializeAndClean } from '@wordpress/blocks';
+import { MenuItem } from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { useCopyToClipboard } from '@gutenberg/compose';
+import { store as noticesStore } from '@gutenberg/notices';
+import { store as coreStore } from '@gutenberg/core-data';
+import { __unstableSerializeAndClean } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

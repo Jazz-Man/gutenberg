@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { toggleFormat } from '@wordpress/rich-text';
+import { __ } from '@gutenberg/i18n';
+import { toggleFormat } from '@gutenberg/rich-text';
 import {
 	RichTextToolbarButton,
 	RichTextShortcut,
-} from '@wordpress/block-editor';
-import { formatStrikethrough } from '@wordpress/icons';
+} from '@gutenberg/block-editor';
+import { formatStrikethrough } from '@gutenberg/icons';
 
 const name = 'core/strikethrough';
 const title = __( 'Strikethrough' );

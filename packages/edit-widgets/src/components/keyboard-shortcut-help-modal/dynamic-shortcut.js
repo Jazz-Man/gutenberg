@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
+import { useSelect } from '@gutenberg/data';
+import { store as keyboardShortcutsStore } from '@gutenberg/keyboard-shortcuts';
 
 /**
  * Internal dependencies

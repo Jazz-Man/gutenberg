@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { parse } from '@wordpress/blocks';
+import { parse } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

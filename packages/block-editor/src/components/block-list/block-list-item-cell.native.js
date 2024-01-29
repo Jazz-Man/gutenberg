@@ -6,8 +6,8 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { useEffect, useCallback } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
+import { useEffect, useCallback } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

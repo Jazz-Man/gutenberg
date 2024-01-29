@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { sprintf, _n } from '@wordpress/i18n';
-import { withSelect } from '@wordpress/data';
-import { serialize } from '@wordpress/blocks';
-import { count as wordCount } from '@wordpress/wordcount';
-import { copy } from '@wordpress/icons';
+import { sprintf, _n } from '@gutenberg/i18n';
+import { withSelect } from '@gutenberg/data';
+import { serialize } from '@gutenberg/blocks';
+import { count as wordCount } from '@gutenberg/wordcount';
+import { copy } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

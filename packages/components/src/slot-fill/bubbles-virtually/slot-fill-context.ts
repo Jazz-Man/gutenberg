@@ -5,8 +5,8 @@ import { proxyMap } from 'valtio/utils';
 /**
  * WordPress dependencies
  */
-import { createContext } from '@wordpress/element';
-import warning from '@wordpress/warning';
+import { createContext } from '@gutenberg/element';
+import warning from '@gutenberg/warning';
 /**
  * Internal dependencies
  */

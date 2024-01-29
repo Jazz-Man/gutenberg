@@ -6,7 +6,7 @@ const { join } = require( 'path' );
 /**
  * WordPress dependencies
  */
-const DependencyExtractionWebpackPlugin = require( '@wordpress/dependency-extraction-webpack-plugin' );
+const DependencyExtractionWebpackPlugin = require( '@gutenberg/dependency-extraction-webpack-plugin' );
 
 const sharedConfig = {
 	mode: 'development',

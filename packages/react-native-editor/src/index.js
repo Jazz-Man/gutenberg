@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { applyFilters, doAction } from '@wordpress/hooks';
-import { Component, cloneElement, registerComponent } from '@wordpress/element';
+import { applyFilters, doAction } from '@gutenberg/hooks';
+import { Component, cloneElement, registerComponent } from '@gutenberg/element';
 
 /**
  * Internal dependencies

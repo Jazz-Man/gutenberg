@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { Placeholder, Button, Spinner } from '@wordpress/components';
-import { useState } from '@wordpress/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { Placeholder, Button, Spinner } from '@gutenberg/components';
+import { useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

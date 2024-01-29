@@ -5,9 +5,9 @@ import {
 	registerBlockType,
 	unregisterBlockType,
 	setFreeformContentHandlerName,
-} from '@wordpress/blocks';
-import { RawHTML } from '@wordpress/element';
-import { symbol } from '@wordpress/icons';
+} from '@gutenberg/blocks';
+import { RawHTML } from '@gutenberg/element';
+import { symbol } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

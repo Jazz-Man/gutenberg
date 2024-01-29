@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { useInstanceId } from '@wordpress/compose';
-import { useCallback, useMemo } from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useInstanceId } from '@gutenberg/compose';
+import { useCallback, useMemo } from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies
@@ -173,8 +173,8 @@ function Component( props: PickerProps< any > ) {
  * available.
  *
  * ```jsx
- *import { GradientPicker } from '@wordpress/components';
- *import { useState } from '@wordpress/element';
+ *import { GradientPicker } from '@gutenberg/components';
+ *import { useState } from '@gutenberg/element';
  *
  *const myGradientPicker = () => {
  *	const [ gradient, setGradient ] = useState( null );

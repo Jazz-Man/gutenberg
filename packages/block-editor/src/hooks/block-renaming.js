@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { addFilter } from '@wordpress/hooks';
-import { hasBlockSupport } from '@wordpress/blocks';
-import { __ } from '@wordpress/i18n';
-import { TextControl } from '@wordpress/components';
+import { addFilter } from '@gutenberg/hooks';
+import { hasBlockSupport } from '@gutenberg/blocks';
+import { __ } from '@gutenberg/i18n';
+import { TextControl } from '@gutenberg/components';
 
 /**
  * Internal dependencies

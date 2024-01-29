@@ -4,7 +4,7 @@
 const {
 	test: base,
 	expect,
-} = require( '@wordpress/e2e-test-utils-playwright' );
+} = require( '@gutenberg/e2e-test-utils-playwright' );
 
 /** @type {ReturnType<typeof base.extend<{patterns: Patterns}>>} */
 const test = base.extend( {

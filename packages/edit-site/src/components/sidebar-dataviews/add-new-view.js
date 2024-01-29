@@ -7,13 +7,13 @@ import {
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
 	Button,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useDispatch, resolveSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { useState } from '@wordpress/element';
-import { plus } from '@wordpress/icons';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch, resolveSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useState } from '@gutenberg/element';
+import { plus } from '@gutenberg/icons';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

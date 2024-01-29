@@ -16,7 +16,7 @@ It does the lookup of the settings in the following order:
 This will fetch the default color palette based on the block instance.
 
 ```jsx
-import { useSettings } from '@wordpress/block-editor';
+import { useSettings } from '@gutenberg/block-editor';
 
 const [ defaultColorPalette ] = useSettings( 'color.palette.default' );
 ```

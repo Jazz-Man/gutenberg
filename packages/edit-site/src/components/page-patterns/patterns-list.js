@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useState, useDeferredValue, useId, useMemo } from '@wordpress/element';
+import { useState, useDeferredValue, useId, useMemo } from '@gutenberg/element';
 import {
 	SearchControl,
 	__experimentalVStack as VStack,
@@ -11,15 +11,15 @@ import {
 	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
 	__experimentalHeading as Heading,
 	__experimentalText as Text,
-} from '@wordpress/components';
-import { __, _x, isRTL } from '@wordpress/i18n';
-import { chevronLeft, chevronRight } from '@wordpress/icons';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+} from '@gutenberg/components';
+import { __, _x, isRTL } from '@gutenberg/i18n';
+import { chevronLeft, chevronRight } from '@gutenberg/icons';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 import {
 	useAsyncList,
 	useViewportMatch,
 	useDebouncedInput,
-} from '@wordpress/compose';
+} from '@gutenberg/compose';
 
 /**
  * Internal dependencies

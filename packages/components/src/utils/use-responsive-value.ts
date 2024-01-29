@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useState } from '@wordpress/element';
+import { useEffect, useState } from '@gutenberg/element';
 
 const breakpoints = [ '40em', '52em', '64em' ];
 

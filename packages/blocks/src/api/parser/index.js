@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { parse as grammarParse } from '@wordpress/block-serialization-default-parser';
-import { autop } from '@wordpress/autop';
+import { parse as grammarParse } from '@gutenberg/block-serialization-default-parser';
+import { autop } from '@gutenberg/autop';
 
 /**
  * Internal dependencies

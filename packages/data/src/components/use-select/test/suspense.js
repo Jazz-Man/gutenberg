@@ -11,8 +11,8 @@ import {
 	createReduxStore,
 	useSuspenseSelect,
 	RegistryProvider,
-} from '@wordpress/data';
-import { Component, Suspense } from '@wordpress/element';
+} from '@gutenberg/data';
+import { Component, Suspense } from '@gutenberg/element';
 
 function createRegistryWithStore() {
 	const initialState = {

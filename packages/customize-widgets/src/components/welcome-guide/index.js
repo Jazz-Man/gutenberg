@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Button, ExternalLink } from '@wordpress/components';
-import { useDispatch } from '@wordpress/data';
-import { store as preferencesStore } from '@wordpress/preferences';
+import { __ } from '@gutenberg/i18n';
+import { Button, ExternalLink } from '@gutenberg/components';
+import { useDispatch } from '@gutenberg/data';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 export default function WelcomeGuide( { sidebar } ) {
 	const { toggle } = useDispatch( preferencesStore );

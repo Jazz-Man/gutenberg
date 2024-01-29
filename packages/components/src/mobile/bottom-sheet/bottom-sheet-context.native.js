@@ -5,7 +5,7 @@ import { Platform, UIManager } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { createContext } from '@wordpress/element';
+import { createContext } from '@gutenberg/element';
 
 // It's needed to set the following flags via UIManager
 // to have `LayoutAnimation` working on Android

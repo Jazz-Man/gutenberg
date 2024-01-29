@@ -27,7 +27,7 @@ describe( '__dangerousOptInToUnstableAPIsOnlyForCoreModules', () => {
 			);
 		} ).toThrow( /without confirming you know the consequences/ );
 	} );
-	it( 'Should require a valid @wordpress package name', () => {
+	it( 'Should require a valid @gutenberg package name', () => {
 		expect( () => {
 			__dangerousOptInToUnstableAPIsOnlyForCoreModules(
 				requiredConsent,
@@ -119,7 +119,7 @@ describe( 'lock(), unlock()', () => {
 		const privateData = { secret: 'sh' };
 		lock( object, privateData );
 
-		// This would live in @wordpress/core-data:
+		// This would live in @gutenberg/core-data:
 		// Register the private APIs
 		const coreDataPrivateApis =
 			__dangerousOptInToUnstableAPIsOnlyForCoreModules(

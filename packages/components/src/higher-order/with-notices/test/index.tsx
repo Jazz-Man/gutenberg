@@ -18,7 +18,7 @@ import {
 	useEffect,
 	useImperativeHandle,
 	useRef,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 
 /**
  * Internal dependencies

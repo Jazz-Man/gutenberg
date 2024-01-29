@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useEntityRecords } from '@wordpress/core-data';
+import { useEntityRecords } from '@gutenberg/core-data';
 
 /**
  * @typedef {Object} NavigationEntitiesData

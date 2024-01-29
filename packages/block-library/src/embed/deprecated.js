@@ -11,7 +11,7 @@ import metadata from './block.json';
 /**
  * WordPress dependencies
  */
-import { RichText, useBlockProps } from '@wordpress/block-editor';
+import { RichText, useBlockProps } from '@gutenberg/block-editor';
 
 const { attributes: blockAttributes } = metadata;
 

@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { Popover } from '@wordpress/components';
-import { getScrollContainer } from '@wordpress/dom';
-import { useCallback, useMemo } from '@wordpress/element';
-import { isRTL } from '@wordpress/i18n';
+import { Popover } from '@gutenberg/components';
+import { getScrollContainer } from '@gutenberg/dom';
+import { useCallback, useMemo } from '@gutenberg/element';
+import { isRTL } from '@gutenberg/i18n';
 
 export default function ListViewDropIndicator( {
 	listViewRef,

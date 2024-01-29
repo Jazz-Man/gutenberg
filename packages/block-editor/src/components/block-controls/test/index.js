@@ -10,9 +10,9 @@ import {
 	registerBlockType,
 	unregisterBlockType,
 	getBlockTypes,
-} from '@wordpress/blocks';
-import { SlotFillProvider, ToolbarGroup } from '@wordpress/components';
-import { alignCenter, alignLeft, alignRight } from '@wordpress/icons';
+} from '@gutenberg/blocks';
+import { SlotFillProvider, ToolbarGroup } from '@gutenberg/components';
+import { alignCenter, alignLeft, alignRight } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

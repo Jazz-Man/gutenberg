@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
+import { __, _x } from '@gutenberg/i18n';
 import {
 	SelectControl,
 	__experimentalUnitControl as UnitControl,
@@ -9,8 +9,8 @@ import {
 	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
 	__experimentalUseCustomUnits as useCustomUnits,
 	__experimentalToolsPanelItem as ToolsPanelItem,
-} from '@wordpress/components';
-import { InspectorControls, useSettings } from '@wordpress/block-editor';
+} from '@gutenberg/components';
+import { InspectorControls, useSettings } from '@gutenberg/block-editor';
 
 const SCALE_OPTIONS = (
 	<>
@@ -91,7 +91,7 @@ const DimensionControls = ( {
 					label={ __( 'Aspect ratio' ) }
 					value={ aspectRatio }
 					options={ [
-						// These should use the same values as AspectRatioDropdown in @wordpress/block-editor
+						// These should use the same values as AspectRatioDropdown in @gutenberg/block-editor
 						{
 							label: __( 'Original' ),
 							value: 'auto',

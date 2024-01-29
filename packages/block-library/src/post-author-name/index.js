@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { postAuthor as icon } from '@wordpress/icons';
+import { postAuthor as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

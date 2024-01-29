@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { ToolbarDropdownMenu, ToolbarGroup } from '@wordpress/components';
+import { ToolbarDropdownMenu, ToolbarGroup } from '@gutenberg/components';
 import {
 	justifyLeft,
 	justifyCenter,
 	justifyRight,
 	justifySpaceBetween,
 	justifyStretch,
-} from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
 
 const icons = {
 	left: justifyLeft,

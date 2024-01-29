@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { ComplementaryArea } from '@wordpress/interface';
+import { ComplementaryArea } from '@gutenberg/interface';
 
 /**
  * Renders a sidebar when activated. The contents within the `PluginSidebar` will appear as content within the sidebar.
@@ -50,10 +50,10 @@ import { ComplementaryArea } from '@wordpress/interface';
  * @example
  * ```jsx
  * // Using ESNext syntax
- * import { __ } from '@wordpress/i18n';
- * import { PanelBody } from '@wordpress/components';
- * import { PluginSidebar } from '@wordpress/edit-site';
- * import { more } from '@wordpress/icons';
+ * import { __ } from '@gutenberg/i18n';
+ * import { PanelBody } from '@gutenberg/components';
+ * import { PluginSidebar } from '@gutenberg/edit-site';
+ * import { more } from '@gutenberg/icons';
  *
  * const MyPluginSidebar = () => (
  * 	<PluginSidebar

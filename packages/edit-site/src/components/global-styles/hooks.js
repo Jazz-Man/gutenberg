@@ -7,14 +7,14 @@ import a11yPlugin from 'colord/plugins/a11y';
 /**
  * WordPress dependencies
  */
-import { store as blocksStore } from '@wordpress/blocks';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
+import { store as blocksStore } from '@gutenberg/blocks';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies
  */
 import { unlock } from '../../lock-unlock';
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 
 const { useGlobalSetting, useGlobalStyle } = unlock( blockEditorPrivateApis );
 

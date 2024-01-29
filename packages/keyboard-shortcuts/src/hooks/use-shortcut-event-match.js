@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { isKeyboardEvent } from '@wordpress/keycodes';
+import { useSelect } from '@gutenberg/data';
+import { isKeyboardEvent } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

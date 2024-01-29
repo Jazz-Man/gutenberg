@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { usePluginContext } from '@wordpress/plugins';
-import { createSlotFill, PanelBody } from '@wordpress/components';
+import { usePluginContext } from '@gutenberg/plugins';
+import { createSlotFill, PanelBody } from '@gutenberg/components';
 
 const { Fill, Slot } = createSlotFill( 'PluginPostPublishPanel' );
 
@@ -39,8 +39,8 @@ const { Fill, Slot } = createSlotFill( 'PluginPostPublishPanel' );
  * @example
  * ```jsx
  * // Using ESNext syntax
- * import { __ } from '@wordpress/i18n';
- * import { PluginPostPublishPanel } from '@wordpress/edit-post';
+ * import { __ } from '@gutenberg/i18n';
+ * import { PluginPostPublishPanel } from '@gutenberg/edit-post';
  *
  * const MyPluginPostPublishPanel = () => (
  * 	<PluginPostPublishPanel

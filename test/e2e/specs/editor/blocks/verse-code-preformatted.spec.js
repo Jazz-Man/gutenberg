@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-const { test, expect } = require( '@wordpress/e2e-test-utils-playwright' );
+const { test, expect } = require( '@gutenberg/e2e-test-utils-playwright' );
 
 // This spec tests common behavior of Verse, Code, and Preformatted blocks.
 [ 'core/verse', 'core/code', 'core/preformatted' ].forEach( ( blockName ) => {

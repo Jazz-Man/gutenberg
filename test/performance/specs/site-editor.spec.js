@@ -3,7 +3,7 @@
 /**
  * WordPress dependencies
  */
-import { test, Metrics } from '@wordpress/e2e-test-utils-playwright';
+import { test, Metrics } from '@gutenberg/e2e-test-utils-playwright';
 
 /**
  * Internal dependencies

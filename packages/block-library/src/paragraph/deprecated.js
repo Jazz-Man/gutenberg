@@ -6,15 +6,15 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { RawHTML } from '@wordpress/element';
+import { RawHTML } from '@gutenberg/element';
 import {
 	getColorClassName,
 	getFontSizeClass,
 	RichText,
 	useBlockProps,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
-import { isRTL } from '@wordpress/i18n';
+import { isRTL } from '@gutenberg/i18n';
 
 const supports = {
 	className: false,

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __, isRTL } from '@wordpress/i18n';
+import { __, isRTL } from '@gutenberg/i18n';
 import {
 	__experimentalItemGroup as ItemGroup,
 	__experimentalItem as Item,
@@ -15,8 +15,8 @@ import {
 	__experimentalNavigatorButton as NavigatorButton,
 	__experimentalNavigatorBackButton as NavigatorBackButton,
 	FlexBlock,
-} from '@wordpress/components';
-import { Icon, chevronRight, chevronLeft } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { Icon, chevronRight, chevronLeft } from '@gutenberg/icons';
 
 function ScreenHeader( { title } ) {
 	return (

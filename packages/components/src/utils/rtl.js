@@ -6,7 +6,7 @@ import { css } from '@emotion/react';
 /**
  * WordPress dependencies
  */
-import { isRTL } from '@wordpress/i18n';
+import { isRTL } from '@gutenberg/i18n';
 
 const LOWER_LEFT_REGEXP = new RegExp( /-left/g );
 const LOWER_RIGHT_REGEXP = new RegExp( /-right/g );

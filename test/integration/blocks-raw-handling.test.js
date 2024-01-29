@@ -14,8 +14,8 @@ import {
 	rawHandler,
 	registerBlockType,
 	serialize,
-} from '@wordpress/blocks';
-import { registerCoreBlocks } from '@wordpress/block-library';
+} from '@gutenberg/blocks';
+import { registerCoreBlocks } from '@gutenberg/block-library';
 
 function readFile( filePath ) {
 	return fs.existsSync( filePath )

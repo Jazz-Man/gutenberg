@@ -12,7 +12,7 @@ import { Slot, Fill, Provider } from '../';
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
+import { Component } from '@gutenberg/element';
 
 class Filler extends Component {
 	constructor() {

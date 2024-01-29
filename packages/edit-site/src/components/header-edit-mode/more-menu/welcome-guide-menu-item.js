@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useDispatch } from '@wordpress/data';
-import { MenuItem } from '@wordpress/components';
-import { store as preferencesStore } from '@wordpress/preferences';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch } from '@gutenberg/data';
+import { MenuItem } from '@gutenberg/components';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 export default function WelcomeGuideMenuItem() {
 	const { toggle } = useDispatch( preferencesStore );

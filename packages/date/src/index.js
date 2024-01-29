@@ -8,7 +8,7 @@ import 'moment-timezone/moment-timezone-utils';
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
+import deprecated from '@gutenberg/deprecated';
 
 /** @typedef {import('moment').Moment} Moment */
 /** @typedef {import('moment').LocaleSpecification} MomentLocaleSpecification */

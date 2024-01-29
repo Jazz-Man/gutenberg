@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useRef } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { useEffect, useRef } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

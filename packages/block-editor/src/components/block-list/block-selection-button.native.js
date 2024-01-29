@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { Icon } from '@wordpress/components';
-import { withSelect } from '@wordpress/data';
-import { compose } from '@wordpress/compose';
-import { getBlockType } from '@wordpress/blocks';
-import { BlockIcon } from '@wordpress/block-editor';
+import { Icon } from '@gutenberg/components';
+import { withSelect } from '@gutenberg/data';
+import { compose } from '@gutenberg/compose';
+import { getBlockType } from '@gutenberg/blocks';
+import { BlockIcon } from '@gutenberg/block-editor';
 
 /**
  * External dependencies

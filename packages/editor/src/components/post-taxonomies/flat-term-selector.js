@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { __, _x, sprintf } from '@wordpress/i18n';
-import { useEffect, useMemo, useState } from '@wordpress/element';
-import { FormTokenField, withFilters } from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { useDebounce } from '@wordpress/compose';
-import { speak } from '@wordpress/a11y';
-import { store as noticesStore } from '@wordpress/notices';
+import { __, _x, sprintf } from '@gutenberg/i18n';
+import { useEffect, useMemo, useState } from '@gutenberg/element';
+import { FormTokenField, withFilters } from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useDebounce } from '@gutenberg/compose';
+import { speak } from '@gutenberg/a11y';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

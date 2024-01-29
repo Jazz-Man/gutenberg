@@ -6,15 +6,15 @@ import TextareaAutosize from 'react-autosize-textarea';
 /**
  * WordPress dependencies
  */
-import { useEffect, useState } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
+import { useEffect, useState } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	getBlockAttributes,
 	getBlockContent,
 	getBlockType,
 	getSaveContent,
 	validateBlock,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

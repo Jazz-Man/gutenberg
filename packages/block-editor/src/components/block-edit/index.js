@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
+import { useMemo } from '@gutenberg/element';
 
-import { hasBlockSupport } from '@wordpress/blocks';
+import { hasBlockSupport } from '@gutenberg/blocks';
 /**
  * Internal dependencies
  */

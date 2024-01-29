@@ -6,17 +6,17 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __, _n, sprintf } from '@wordpress/i18n';
+import { __, _n, sprintf } from '@gutenberg/i18n';
 import {
 	Component,
 	useState,
 	useMemo,
 	useRef,
 	useEffect,
-} from '@wordpress/element';
-import { useInstanceId } from '@wordpress/compose';
-import { speak } from '@wordpress/a11y';
-import { closeSmall } from '@wordpress/icons';
+} from '@gutenberg/element';
+import { useInstanceId } from '@gutenberg/compose';
+import { speak } from '@gutenberg/a11y';
+import { closeSmall } from '@gutenberg/icons';
 
 /**
  * Internal dependencies
@@ -66,8 +66,8 @@ const getIndexOfMatchingSuggestion = (
  * being able to search for options using a search input.
  *
  * ```jsx
- * import { ComboboxControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { ComboboxControl } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const options = [
  * 	{

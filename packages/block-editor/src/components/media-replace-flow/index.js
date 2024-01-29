@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useRef } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { speak } from '@wordpress/a11y';
+import { useRef } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { speak } from '@gutenberg/a11y';
 import {
 	FormFileUpload,
 	NavigableMenu,
@@ -16,17 +16,17 @@ import {
 	ToolbarButton,
 	Dropdown,
 	withFilters,
-} from '@wordpress/components';
-import { useSelect, withDispatch } from '@wordpress/data';
-import { DOWN } from '@wordpress/keycodes';
+} from '@gutenberg/components';
+import { useSelect, withDispatch } from '@gutenberg/data';
+import { DOWN } from '@gutenberg/keycodes';
 import {
 	postFeaturedImage,
 	upload,
 	media as mediaIcon,
-} from '@wordpress/icons';
-import { compose } from '@wordpress/compose';
-import { __unstableStripHTML as stripHTML } from '@wordpress/dom';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/icons';
+import { compose } from '@gutenberg/compose';
+import { __unstableStripHTML as stripHTML } from '@gutenberg/dom';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

@@ -7,7 +7,7 @@ PostCSS sharable plugins preset for WordPress development.
 Install the module
 
 ```bash
-npm install @wordpress/postcss-plugins-preset --save
+npm install @gutenberg/postcss-plugins-preset --save
 ```
 
 **Note**: This package requires Node.js 14.0.0 or later. It is not compatible with older versions.

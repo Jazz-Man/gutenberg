@@ -11,7 +11,7 @@ import { ToolbarGroup } from '..';
 /**
  * WordPress dependencies
  */
-import { wordpress } from '@wordpress/icons';
+import { wordpress } from '@gutenberg/icons';
 
 describe( 'ToolbarGroup', () => {
 	describe( 'basic rendering', () => {

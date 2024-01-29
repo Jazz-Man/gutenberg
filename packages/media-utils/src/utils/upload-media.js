@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
-import { createBlobURL, revokeBlobURL } from '@wordpress/blob';
-import { __, sprintf } from '@wordpress/i18n';
+import apiFetch from '@gutenberg/api-fetch';
+import { createBlobURL, revokeBlobURL } from '@gutenberg/blob';
+import { __, sprintf } from '@gutenberg/i18n';
 
 const noop = () => {};
 

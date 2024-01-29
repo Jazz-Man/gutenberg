@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { code as icon } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { code as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies
@@ -21,12 +21,12 @@ export const settings = {
 	icon,
 	example: {
 		attributes: {
-			/* eslint-disable @wordpress/i18n-no-collapsible-whitespace */
+			/* eslint-disable @gutenberg/i18n-no-collapsible-whitespace */
 			// translators: Preserve \n markers for line breaks
 			content: __(
 				'// A “block” is the abstract term used\n// to describe units of markup that\n// when composed together, form the\n// content or layout of a page.\nregisterBlockType( name, settings );'
 			),
-			/* eslint-enable @wordpress/i18n-no-collapsible-whitespace */
+			/* eslint-enable @gutenberg/i18n-no-collapsible-whitespace */
 		},
 	},
 	merge( attributes, attributesToMerge ) {

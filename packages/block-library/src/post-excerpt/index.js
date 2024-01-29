@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { postExcerpt as icon } from '@wordpress/icons';
+import { postExcerpt as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

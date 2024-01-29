@@ -4,7 +4,7 @@
 import {
 	ALIGNMENT_BREAKPOINTS,
 	convertUnitToMobile,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

@@ -5,7 +5,7 @@ Link to an external resource.
 ## Usage
 
 ```jsx
-import { ExternalLink } from '@wordpress/components';
+import { ExternalLink } from '@gutenberg/components';
 
 const MyExternalLink = () => (
 	<ExternalLink href="https://wordpress.org">WordPress.org</ExternalLink>

@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	__experimentalHStack as HStack,
 	PanelBody,
-} from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
+} from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
 import {
 	PostAuthorPanel,
 	PostSchedulePanel,
@@ -15,7 +15,7 @@ import {
 	PostURLPanel,
 	PostTemplatePanel,
 	store as editorStore,
-} from '@wordpress/editor';
+} from '@gutenberg/editor';
 
 /**
  * Internal dependencies

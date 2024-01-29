@@ -6,12 +6,12 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { ENTER, SPACE } from '@wordpress/keycodes';
-import { useState, useEffect, useMemo } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { privateApis as editorPrivateApis } from '@wordpress/editor';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { ENTER, SPACE } from '@gutenberg/keycodes';
+import { useState, useEffect, useMemo } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { privateApis as editorPrivateApis } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

@@ -1,22 +1,22 @@
 /**
  * WordPress dependencies
  */
-import { __unstableStripHTML as stripHTML } from '@wordpress/dom';
-import { Popover, Button } from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
+import { __unstableStripHTML as stripHTML } from '@gutenberg/dom';
+import { Popover, Button } from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	__experimentalLinkControl as LinkControl,
 	BlockIcon,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { createInterpolateElement, useMemo } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { createInterpolateElement, useMemo } from '@gutenberg/element';
 import {
 	store as coreStore,
 	useResourcePermissions,
-} from '@wordpress/core-data';
-import { decodeEntities } from '@wordpress/html-entities';
-import { switchToBlockType } from '@wordpress/blocks';
-import { useSelect, useDispatch } from '@wordpress/data';
+} from '@gutenberg/core-data';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { switchToBlockType } from '@gutenberg/blocks';
+import { useSelect, useDispatch } from '@gutenberg/data';
 
 /**
  * Given the Link block's type attribute, return the query params to give to

@@ -6,23 +6,23 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	Button,
 	__unstableMotion as motion,
 	__unstableAnimatePresence as AnimatePresence,
 	__experimentalHStack as HStack,
-} from '@wordpress/components';
-import { useReducedMotion } from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as editorStore } from '@wordpress/editor';
-import { decodeEntities } from '@wordpress/html-entities';
-import { memo } from '@wordpress/element';
-import { search, external } from '@wordpress/icons';
-import { store as commandsStore } from '@wordpress/commands';
-import { displayShortcut } from '@wordpress/keycodes';
+} from '@gutenberg/components';
+import { useReducedMotion } from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as editorStore } from '@gutenberg/editor';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { memo } from '@gutenberg/element';
+import { search, external } from '@gutenberg/icons';
+import { store as commandsStore } from '@gutenberg/commands';
+import { displayShortcut } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

@@ -11,4 +11,4 @@ export * from './private-apis';
 /*
  * Backward compatibility
  */
-export { transformStyles } from '@wordpress/block-editor';
+export { transformStyles } from '@gutenberg/block-editor';

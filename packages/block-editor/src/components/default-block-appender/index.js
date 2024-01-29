@@ -6,11 +6,11 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { compose } from '@wordpress/compose';
-import { decodeEntities } from '@wordpress/html-entities';
-import { withSelect, withDispatch } from '@wordpress/data';
-import { ENTER, SPACE } from '@wordpress/keycodes';
+import { __ } from '@gutenberg/i18n';
+import { compose } from '@gutenberg/compose';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { withSelect, withDispatch } from '@gutenberg/data';
+import { ENTER, SPACE } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

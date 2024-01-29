@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { memo } from '@wordpress/element';
-import { PanelBody } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { useSelect } from '@gutenberg/data';
+import { memo } from '@gutenberg/element';
+import { PanelBody } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

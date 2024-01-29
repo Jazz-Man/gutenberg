@@ -19,7 +19,7 @@ global.process.env = {
 	IS_GUTENBERG_PLUGIN is consistent. For this reason, the line below turns the
 	string representation of IS_GUTENBERG_PLUGIN into a boolean value.
 	*/
-	// eslint-disable-next-line @wordpress/is-gutenberg-plugin
+	// eslint-disable-next-line @gutenberg/is-gutenberg-plugin
 	IS_GUTENBERG_PLUGIN:
 		String( process.env.npm_package_config_IS_GUTENBERG_PLUGIN ) === 'true',
 	/**

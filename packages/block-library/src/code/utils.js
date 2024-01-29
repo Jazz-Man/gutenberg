@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { pipe } from '@wordpress/compose';
+import { pipe } from '@gutenberg/compose';
 
 /**
  * Escapes ampersands, shortcodes, and links.

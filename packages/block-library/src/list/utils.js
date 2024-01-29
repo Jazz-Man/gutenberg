@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createBlock, rawHandler } from '@wordpress/blocks';
+import { createBlock, rawHandler } from '@gutenberg/blocks';
 
 const LIST_STYLES = {
 	A: 'upper-alpha',

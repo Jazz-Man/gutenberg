@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { ToolbarButton, MenuItem } from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { useCallback } from '@wordpress/element';
+import { ToolbarButton, MenuItem } from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { useCallback } from '@gutenberg/element';
 
 /**
  * Internal dependencies

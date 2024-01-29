@@ -6,15 +6,15 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { memo } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { withDispatch, withSelect } from '@wordpress/data';
-import { compose, withPreferredColorScheme } from '@wordpress/compose';
-import { PostTitle } from '@wordpress/editor';
+import { memo } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { withDispatch, withSelect } from '@gutenberg/data';
+import { compose, withPreferredColorScheme } from '@gutenberg/compose';
+import { PostTitle } from '@gutenberg/editor';
 import {
 	store as blockEditorStore,
 	useEditorWrapperStyles,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 const Header = memo(
 	function EditorHeader( { editTitle, setTitleRef, title } ) {

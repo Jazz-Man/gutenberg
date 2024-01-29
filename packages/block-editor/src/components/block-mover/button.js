@@ -6,12 +6,12 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { getBlockType } from '@wordpress/blocks';
-import { Button, VisuallyHidden } from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { forwardRef } from '@wordpress/element';
-import { __, isRTL } from '@wordpress/i18n';
+import { getBlockType } from '@gutenberg/blocks';
+import { Button, VisuallyHidden } from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { forwardRef } from '@gutenberg/element';
+import { __, isRTL } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies
@@ -21,7 +21,7 @@ import {
 	chevronRight,
 	chevronUp,
 	chevronDown,
-} from '@wordpress/icons';
+} from '@gutenberg/icons';
 import { getBlockMoverDescription } from './mover-description';
 import { store as blockEditorStore } from '../../store';
 

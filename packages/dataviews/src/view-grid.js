@@ -6,8 +6,8 @@ import {
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
 	Tooltip,
-} from '@wordpress/components';
-import { useAsyncList } from '@wordpress/compose';
+} from '@gutenberg/components';
+import { useAsyncList } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

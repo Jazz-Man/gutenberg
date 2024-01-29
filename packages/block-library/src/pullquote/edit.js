@@ -6,15 +6,15 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	AlignmentControl,
 	BlockControls,
 	RichText,
 	useBlockProps,
-} from '@wordpress/block-editor';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
-import { Platform } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
+import { Platform } from '@gutenberg/element';
 
 /**
  * Internal dependencies

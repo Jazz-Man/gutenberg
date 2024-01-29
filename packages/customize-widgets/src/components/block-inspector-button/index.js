@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { MenuItem } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { useMemo } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { MenuItem } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 function BlockInspectorButton( { inspector, closeMenu, ...props } ) {
 	const selectedBlockClientId = useSelect(

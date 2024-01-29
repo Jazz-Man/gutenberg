@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { store as preferencesStore } from '@wordpress/preferences';
-import { store as editorStore } from '@wordpress/editor';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as noticesStore } from '@wordpress/notices';
-import { __, sprintf } from '@wordpress/i18n';
-import { decodeEntities } from '@wordpress/html-entities';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { store as preferencesStore } from '@gutenberg/preferences';
+import { store as editorStore } from '@gutenberg/editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { __, sprintf } from '@gutenberg/i18n';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Action that switches the canvas mode.

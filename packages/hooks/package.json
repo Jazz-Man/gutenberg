@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/hooks",
+	"name": "@gutenberg/hooks",
 	"version": "3.49.0",
 	"description": "WordPress hooks library.",
 	"author": "The WordPress Contributors",

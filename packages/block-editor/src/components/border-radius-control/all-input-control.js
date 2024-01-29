@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalUnitControl as UnitControl } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { __experimentalUnitControl as UnitControl } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

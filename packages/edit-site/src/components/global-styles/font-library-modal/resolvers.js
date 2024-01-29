@@ -5,7 +5,7 @@
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
+import apiFetch from '@gutenberg/api-fetch';
 
 export async function fetchInstallFont( data ) {
 	const config = {

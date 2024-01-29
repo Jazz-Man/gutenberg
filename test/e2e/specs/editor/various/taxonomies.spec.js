@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-const { test, expect } = require( '@wordpress/e2e-test-utils-playwright' );
+const { test, expect } = require( '@gutenberg/e2e-test-utils-playwright' );
 
 function generateRandomNumber() {
 	return Math.round( 1 + Math.random() * ( Number.MAX_SAFE_INTEGER - 1 ) );

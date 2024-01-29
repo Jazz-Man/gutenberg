@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { isBlobURL } from '@wordpress/blob';
-import { isURL } from '@wordpress/url';
+import { isBlobURL } from '@gutenberg/blob';
+import { isURL } from '@gutenberg/url';
 
 /**
  * External dependencies

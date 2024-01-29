@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+import { useInstanceId } from '@gutenberg/compose';
+import { useState } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies
@@ -51,8 +51,8 @@ function useUniqueId( idProp?: string ) {
  * This can be used as an input control for values like `padding` or `margin`.
  *
  * ```jsx
- * import { __experimentalBoxControl as BoxControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { __experimentalBoxControl as BoxControl } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const Example = () => {
  * 	const [ values, setValues ] = useState( {

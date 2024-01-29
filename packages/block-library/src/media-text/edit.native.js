@@ -6,7 +6,7 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	BlockControls,
 	BlockVerticalAlignmentToolbar,
@@ -16,17 +16,17 @@ import {
 	MEDIA_TYPE_IMAGE,
 	MEDIA_TYPE_VIDEO,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { Component } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { Component } from '@gutenberg/element';
 import {
 	Button,
 	ToolbarGroup,
 	PanelBody,
 	ToggleControl,
-} from '@wordpress/components';
-import { withSelect } from '@wordpress/data';
-import { compose } from '@wordpress/compose';
-import { pullLeft, pullRight, replace } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { withSelect } from '@gutenberg/data';
+import { compose } from '@gutenberg/compose';
+import { pullLeft, pullRight, replace } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

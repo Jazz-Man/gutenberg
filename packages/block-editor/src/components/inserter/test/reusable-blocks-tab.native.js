@@ -6,7 +6,7 @@ import { render } from 'test/helpers';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies
@@ -14,7 +14,7 @@ import { useSelect } from '@wordpress/data';
 import items from './fixtures';
 import ReusableBlocksTab from '../reusable-blocks-tab';
 
-jest.mock( '@wordpress/data/src/components/use-select' );
+jest.mock( '@gutenberg/data/src/components/use-select' );
 
 const fetchReusableBlocks = jest.fn();
 const selectMock = {

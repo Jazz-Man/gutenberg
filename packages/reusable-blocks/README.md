@@ -7,10 +7,10 @@ Reusable blocks components and logic.
 Install the module
 
 ```bash
-npm install @wordpress/reusable-blocks --save
+npm install @gutenberg/reusable-blocks --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## How it works
 
@@ -37,10 +37,10 @@ return (
 );
 ```
 
-With the above configuration management features (such as creating new reusable blocks) are still missing from the editor. Enter `@wordpress/reusable-blocks`:
+With the above configuration management features (such as creating new reusable blocks) are still missing from the editor. Enter `@gutenberg/reusable-blocks`:
 
 ```js
-import { ReusableBlocksMenuItems } from '@wordpress/reusable-blocks';
+import { ReusableBlocksMenuItems } from '@gutenberg/reusable-blocks';
 
 const { __experimentalReusableBlocks } = useSelect( ( select ) =>
 	select( 'core' ).getEntityRecords( 'postType', 'wp_block' )
@@ -66,7 +66,7 @@ return (
 This package also provides convenient utilities for managing reusable blocks through redux actions:
 
 ```js
-import { store as reusableBlocksStore } from '@wordpress/reusable-blocks';
+import { store as reusableBlocksStore } from '@gutenberg/reusable-blocks';
 
 function MyConvertToStaticButton( { clientId } ) {
 	const { __experimentalConvertBlockToStatic } = useDispatch(

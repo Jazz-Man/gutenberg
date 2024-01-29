@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { __experimentalLibrary as Library } from '@wordpress/block-editor';
-import { Button } from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
-import { useSelect } from '@wordpress/data';
-import { closeSmall } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { __experimentalLibrary as Library } from '@gutenberg/block-editor';
+import { Button } from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
+import { useSelect } from '@gutenberg/data';
+import { closeSmall } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

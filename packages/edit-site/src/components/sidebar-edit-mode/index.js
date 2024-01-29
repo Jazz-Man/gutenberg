@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { createSlotFill } from '@wordpress/components';
-import { isRTL, __ } from '@wordpress/i18n';
-import { drawerLeft, drawerRight } from '@wordpress/icons';
-import { useEffect } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as interfaceStore } from '@wordpress/interface';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { store as editorStore } from '@wordpress/editor';
+import { createSlotFill } from '@gutenberg/components';
+import { isRTL, __ } from '@gutenberg/i18n';
+import { drawerLeft, drawerRight } from '@gutenberg/icons';
+import { useEffect } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as interfaceStore } from '@gutenberg/interface';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

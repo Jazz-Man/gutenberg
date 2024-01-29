@@ -14,7 +14,7 @@ import InputControl from '../../input-control';
 /**
  * WordPress dependencies
  */
-import { wordpress } from '@wordpress/icons';
+import { wordpress } from '@gutenberg/icons';
 
 const meta: Meta< typeof Panel > = {
 	title: 'Components/Panel',

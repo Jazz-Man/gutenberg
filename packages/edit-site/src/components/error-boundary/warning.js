@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Button } from '@wordpress/components';
-import { Warning } from '@wordpress/block-editor';
-import { useCopyToClipboard } from '@wordpress/compose';
+import { __ } from '@gutenberg/i18n';
+import { Button } from '@gutenberg/components';
+import { Warning } from '@gutenberg/block-editor';
+import { useCopyToClipboard } from '@gutenberg/compose';
 
 function CopyButton( { text, children } ) {
 	const ref = useCopyToClipboard( text );

@@ -6,14 +6,14 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useMergeRefs } from '@wordpress/compose';
-import { forwardRef, useMemo } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
+import { useMergeRefs } from '@gutenberg/compose';
+import { forwardRef, useMemo } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
 import {
 	getBlockSupport,
 	store as blocksStore,
 	__unstableGetInnerBlocksProps as getInnerBlocksProps,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

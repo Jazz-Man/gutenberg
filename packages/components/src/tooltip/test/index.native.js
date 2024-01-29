@@ -7,7 +7,7 @@ import { Keyboard, Text } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { SlotFillProvider } from '@wordpress/components';
+import { SlotFillProvider } from '@gutenberg/components';
 
 /**
  * Internal dependencies

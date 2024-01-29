@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { store as coreStore } from '@wordpress/core-data';
-import { __experimentalUseNavigator as useNavigator } from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
+import { store as coreStore } from '@gutenberg/core-data';
+import { __experimentalUseNavigator as useNavigator } from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

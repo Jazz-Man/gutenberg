@@ -15,8 +15,8 @@ const { realpathSync } = require( 'fs' );
 /**
  * WordPress dependencies
  */
-const DependencyExtractionWebpackPlugin = require( '@wordpress/dependency-extraction-webpack-plugin' );
-const postcssPlugins = require( '@wordpress/postcss-plugins-preset' );
+const DependencyExtractionWebpackPlugin = require( '@gutenberg/dependency-extraction-webpack-plugin' );
+const postcssPlugins = require( '@gutenberg/postcss-plugins-preset' );
 
 /**
  * Internal dependencies
@@ -190,7 +190,7 @@ const baseConfig = {
 								configFile: false,
 								presets: [
 									require.resolve(
-										'@wordpress/babel-preset-default'
+										'@gutenberg/babel-preset-default'
 									),
 								],
 								plugins: [

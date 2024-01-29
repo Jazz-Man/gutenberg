@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch, useSelect } from '@wordpress/data';
+import { useDispatch, useSelect } from '@gutenberg/data';
 import {
 	hasBlockSupport,
 	switchToBlockType,
 	store as blocksStore,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

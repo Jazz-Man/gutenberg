@@ -6,8 +6,8 @@ import { store as blockEditorStore } from '../../store';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { useEffect, useReducer } from '@wordpress/element';
+import { useSelect } from '@gutenberg/data';
+import { useEffect, useReducer } from '@gutenberg/element';
 
 function reducer( state, action ) {
 	switch ( action.type ) {

@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
+import { useState } from '@gutenberg/element';
 import {
 	Panel,
 	__experimentalToolsPanel as ToolsPanel,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

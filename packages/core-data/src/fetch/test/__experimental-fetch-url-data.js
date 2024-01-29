@@ -5,9 +5,9 @@ import fetchUrlData from '../__experimental-fetch-url-data';
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
+import apiFetch from '@gutenberg/api-fetch';
 
-jest.mock( '@wordpress/api-fetch' );
+jest.mock( '@gutenberg/api-fetch' );
 
 describe( 'fetchUrlData', () => {
 	afterEach( () => {
@@ -129,7 +129,7 @@ describe( 'fetchUrlData', () => {
 		it.each( [
 			'tel:123456',
 			'ftp://something',
-			'mailto:example@wordpress.org',
+			'mailto:example@gutenberg.org',
 			'file:somefilehere',
 		] )(
 			'errors when a non-http protocol (%s) is passed as part of URL',

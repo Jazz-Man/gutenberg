@@ -7,14 +7,14 @@ import * as Ariakit from '@ariakit/react';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
+import { useInstanceId } from '@gutenberg/compose';
 import {
 	Children,
 	useContext,
 	createContext,
 	forwardRef,
-} from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
+} from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

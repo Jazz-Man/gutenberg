@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
+import apiFetch from '@gutenberg/api-fetch';
 
 /**
  * Internal dependencies
  */
 import defaultProcessor from '../default-processor';
 
-jest.mock( '@wordpress/api-fetch' );
+jest.mock( '@gutenberg/api-fetch' );
 
 describe( 'defaultProcessor', () => {
 	const preflightResponse = {

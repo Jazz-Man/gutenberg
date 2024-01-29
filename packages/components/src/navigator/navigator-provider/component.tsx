@@ -13,8 +13,8 @@ import {
 	useReducer,
 	useRef,
 	useEffect,
-} from '@wordpress/element';
-import isShallowEqual from '@wordpress/is-shallow-equal';
+} from '@gutenberg/element';
+import isShallowEqual from '@gutenberg/is-shallow-equal';
 
 /**
  * Internal dependencies
@@ -273,7 +273,7 @@ function UnconnectedNavigatorProvider(
  *   __experimentalNavigatorScreen as NavigatorScreen,
  *   __experimentalNavigatorButton as NavigatorButton,
  *   __experimentalNavigatorBackButton as NavigatorBackButton,
- * } from '@wordpress/components';
+ * } from '@gutenberg/components';
  *
  * const MyNavigation = () => (
  *   <NavigatorProvider initialPath="/">

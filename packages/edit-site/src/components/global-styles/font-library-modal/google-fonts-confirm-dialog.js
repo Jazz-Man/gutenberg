@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	Button,
 	Card,
 	CardBody,
 	__experimentalText as Text,
 	__experimentalSpacer as Spacer,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 function GoogleFontsConfirmDialog() {
 	const handleConfirm = () => {

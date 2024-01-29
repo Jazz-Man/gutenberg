@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { __, isRTL } from '@wordpress/i18n';
-import { Button } from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { undo as undoIcon, redo as redoIcon } from '@wordpress/icons';
-import { displayShortcut } from '@wordpress/keycodes';
-import { store as coreStore } from '@wordpress/core-data';
-import { forwardRef } from '@wordpress/element';
+import { __, isRTL } from '@gutenberg/i18n';
+import { Button } from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { undo as undoIcon, redo as redoIcon } from '@gutenberg/icons';
+import { displayShortcut } from '@gutenberg/keycodes';
+import { store as coreStore } from '@gutenberg/core-data';
+import { forwardRef } from '@gutenberg/element';
 
 function UndoButton( props, ref ) {
 	const hasUndo = useSelect(

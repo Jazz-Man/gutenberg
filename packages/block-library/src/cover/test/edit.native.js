@@ -18,13 +18,13 @@ import {
 /**
  * WordPress dependencies
  */
-import { BottomSheetSettings, BlockEdit } from '@wordpress/block-editor';
-import { SlotFillProvider } from '@wordpress/components';
-import { setDefaultBlockName, unregisterBlockType } from '@wordpress/blocks';
+import { BottomSheetSettings, BlockEdit } from '@gutenberg/block-editor';
+import { SlotFillProvider } from '@gutenberg/components';
+import { setDefaultBlockName, unregisterBlockType } from '@gutenberg/blocks';
 import {
 	requestMediaPicker,
 	requestMediaEditor,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 
 /**
  * Internal dependencies
@@ -34,8 +34,8 @@ import * as paragraph from '../../paragraph';
 import * as cover from '..';
 
 // Avoid errors due to mocked stylesheet files missing required selectors.
-jest.mock( '@wordpress/compose', () => ( {
-	...jest.requireActual( '@wordpress/compose' ),
+jest.mock( '@gutenberg/compose', () => ( {
+	...jest.requireActual( '@gutenberg/compose' ),
 	withPreferredColorScheme: jest.fn( ( Component ) => ( props ) => (
 		<Component
 			{ ...props }

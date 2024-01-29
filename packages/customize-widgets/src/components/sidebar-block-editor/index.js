@@ -1,19 +1,19 @@
 /**
  * WordPress dependencies
  */
-import { useViewportMatch } from '@wordpress/compose';
-import { store as coreStore } from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
-import { useMemo, createPortal } from '@wordpress/element';
+import { useViewportMatch } from '@gutenberg/compose';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
+import { useMemo, createPortal } from '@gutenberg/element';
 import {
 	BlockList,
 	BlockToolbar,
 	BlockInspector,
 	privateApis as blockEditorPrivateApis,
 	__unstableBlockSettingsMenuFirstItem,
-} from '@wordpress/block-editor';
-import { uploadMedia } from '@wordpress/media-utils';
-import { store as preferencesStore } from '@wordpress/preferences';
+} from '@gutenberg/block-editor';
+import { uploadMedia } from '@gutenberg/media-utils';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

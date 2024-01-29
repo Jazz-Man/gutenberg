@@ -7,11 +7,11 @@ import type { KeyboardEvent, MouseEvent, TouchEvent, FocusEvent } from 'react';
 /**
  * WordPress dependencies
  */
-import { useEffect, useRef, useState } from '@wordpress/element';
-import { __, _n, sprintf } from '@wordpress/i18n';
-import { useDebounce, useInstanceId, usePrevious } from '@wordpress/compose';
-import { speak } from '@wordpress/a11y';
-import isShallowEqual from '@wordpress/is-shallow-equal';
+import { useEffect, useRef, useState } from '@gutenberg/element';
+import { __, _n, sprintf } from '@gutenberg/i18n';
+import { useDebounce, useInstanceId, usePrevious } from '@gutenberg/compose';
+import { speak } from '@gutenberg/a11y';
+import isShallowEqual from '@gutenberg/is-shallow-equal';
 
 /**
  * Internal dependencies

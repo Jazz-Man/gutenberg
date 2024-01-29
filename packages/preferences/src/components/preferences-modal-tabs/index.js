@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useViewportMatch } from '@wordpress/compose';
+import { useViewportMatch } from '@gutenberg/compose';
 import {
 	__experimentalNavigatorProvider as NavigatorProvider,
 	__experimentalNavigatorScreen as NavigatorScreen,
@@ -17,10 +17,10 @@ import {
 	CardHeader,
 	CardBody,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
-import { useMemo, useState } from '@wordpress/element';
-import { chevronLeft, chevronRight, Icon } from '@wordpress/icons';
-import { isRTL, __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { useMemo, useState } from '@gutenberg/element';
+import { chevronLeft, chevronRight, Icon } from '@gutenberg/icons';
+import { isRTL, __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

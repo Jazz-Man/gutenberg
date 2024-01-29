@@ -11,8 +11,8 @@ import {
 	useLayoutEffect,
 	useContext,
 	forwardRef,
-} from '@wordpress/element';
-import { useMergeRefs } from '@wordpress/compose';
+} from '@gutenberg/element';
+import { useMergeRefs } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

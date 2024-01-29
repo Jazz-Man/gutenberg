@@ -24,7 +24,7 @@ import TextInputState from 'react-native/Libraries/Components/TextInput/TextInpu
 /**
  * WordPress dependencies
  */
-import { BACKSPACE, ENTER } from '@wordpress/keycodes';
+import { BACKSPACE, ENTER } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies
@@ -32,7 +32,7 @@ import { BACKSPACE, ENTER } from '@wordpress/keycodes';
 import Paragraph from '../edit';
 
 // Mock debounce to prevent potentially belated state updates.
-jest.mock( '@wordpress/compose/src/utils/debounce', () => ( {
+jest.mock( '@gutenberg/compose/src/utils/debounce', () => ( {
 	debounce: ( fn ) => {
 		fn.cancel = jest.fn();
 		return fn;
@@ -40,7 +40,7 @@ jest.mock( '@wordpress/compose/src/utils/debounce', () => ( {
 } ) );
 // Mock link suggestions that are fetched by the link picker
 // when typing a search query.
-jest.mock( '@wordpress/core-data/src/fetch', () => ( {
+jest.mock( '@gutenberg/core-data/src/fetch', () => ( {
 	__experimentalFetchLinkSuggestions: jest.fn().mockResolvedValue( [ {} ] ),
 } ) );
 

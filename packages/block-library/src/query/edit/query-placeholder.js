@@ -1,20 +1,20 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	createBlocksFromInnerBlocksTemplate,
 	store as blocksStore,
-} from '@wordpress/blocks';
-import { useState } from '@wordpress/element';
+} from '@gutenberg/blocks';
+import { useState } from '@gutenberg/element';
 import {
 	useBlockProps,
 	store as blockEditorStore,
 	__experimentalBlockVariationPicker,
 	__experimentalGetMatchingVariation as getMatchingVariation,
-} from '@wordpress/block-editor';
-import { Button, Placeholder } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { Button, Placeholder } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

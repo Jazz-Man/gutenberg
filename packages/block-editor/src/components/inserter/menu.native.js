@@ -6,14 +6,14 @@ import { AccessibilityInfo, TouchableHighlight, Platform } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { useEffect, useState, useCallback } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { createBlock } from '@wordpress/blocks';
+import { useEffect, useState, useCallback } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { createBlock } from '@gutenberg/blocks';
 import {
 	BottomSheet,
 	BottomSheetConsumer,
 	SearchControl,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies
@@ -142,7 +142,7 @@ function InserterMenu( {
 				AccessibilityInfo.isScreenReaderEnabled().then( ( enabled ) => {
 					// In testing, the bug focus loop needed a longer timeout when VoiceOver was enabled.
 					const timeout = enabled ? 200 : 100;
-					// eslint-disable-next-line @wordpress/react-no-unsafe-timeout
+					// eslint-disable-next-line @gutenberg/react-no-unsafe-timeout
 					setTimeout( () => {
 						onInsert( item );
 					}, timeout );

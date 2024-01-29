@@ -1,18 +1,18 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	__experimentalUseNavigator as useNavigator,
 	__experimentalConfirmDialog as ConfirmDialog,
 	Spinner,
-} from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { useContext, useState, useEffect } from '@wordpress/element';
+} from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { useContext, useState, useEffect } from '@gutenberg/element';
 import {
 	privateApis as blockEditorPrivateApis,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

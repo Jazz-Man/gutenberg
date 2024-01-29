@@ -10,7 +10,7 @@ import { paramCase as kebabCase } from 'change-case';
 import {
 	BlockPreview,
 	privateApis as blockEditorPrivateApis,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	Button,
 	__experimentalConfirmDialog as ConfirmDialog,
@@ -21,10 +21,10 @@ import {
 	__experimentalHStack as HStack,
 	Tooltip,
 	Flex,
-} from '@wordpress/components';
-import { useDispatch } from '@wordpress/data';
-import { useState, useId, memo } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { useDispatch } from '@gutenberg/data';
+import { useState, useId, memo } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	Icon,
 	header,
@@ -33,10 +33,10 @@ import {
 	symbol,
 	moreVertical,
 	lockSmall,
-} from '@wordpress/icons';
-import { store as noticesStore } from '@wordpress/notices';
-import { store as reusableBlocksStore } from '@wordpress/reusable-blocks';
-import { downloadBlob } from '@wordpress/blob';
+} from '@gutenberg/icons';
+import { store as noticesStore } from '@gutenberg/notices';
+import { store as reusableBlocksStore } from '@gutenberg/reusable-blocks';
+import { downloadBlob } from '@gutenberg/blob';
 
 /**
  * Internal dependencies

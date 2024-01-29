@@ -1,18 +1,18 @@
 /**
  * WordPress dependencies
  */
-import { useViewportMatch } from '@wordpress/compose';
-import { BlockBreadcrumb } from '@wordpress/block-editor';
-import { useEffect } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
+import { useViewportMatch } from '@gutenberg/compose';
+import { BlockBreadcrumb } from '@gutenberg/block-editor';
+import { useEffect } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
 import {
 	InterfaceSkeleton,
 	ComplementaryArea,
 	store as interfaceStore,
-} from '@wordpress/interface';
-import { __ } from '@wordpress/i18n';
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { store as preferencesStore } from '@wordpress/preferences';
+} from '@gutenberg/interface';
+import { __ } from '@gutenberg/i18n';
+import { store as keyboardShortcutsStore } from '@gutenberg/keyboard-shortcuts';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

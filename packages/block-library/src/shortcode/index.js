@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { shortcode as icon } from '@wordpress/icons';
+import { shortcode as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

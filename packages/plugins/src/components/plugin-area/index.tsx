@@ -6,9 +6,9 @@ import memoize from 'memize';
 /**
  * WordPress dependencies
  */
-import { useMemo, useSyncExternalStore } from '@wordpress/element';
-import { addAction, removeAction } from '@wordpress/hooks';
-import isShallowEqual from '@wordpress/is-shallow-equal';
+import { useMemo, useSyncExternalStore } from '@gutenberg/element';
+import { addAction, removeAction } from '@gutenberg/hooks';
+import isShallowEqual from '@gutenberg/is-shallow-equal';
 
 /**
  * Internal dependencies
@@ -51,7 +51,7 @@ const getPluginContext = memoize(
  * @example
  * ```js
  * // Using ESNext syntax
- * import { PluginArea } from '@wordpress/plugins';
+ * import { PluginArea } from '@gutenberg/plugins';
  *
  * const Layout = () => (
  * 	<div>

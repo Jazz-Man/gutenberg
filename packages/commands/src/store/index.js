@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createReduxStore, register } from '@wordpress/data';
+import { createReduxStore, register } from '@gutenberg/data';
 
 /**
  * Internal dependencies
@@ -23,8 +23,8 @@ const STORE_NAME = 'core/commands';
  *
  * @example
  * ```js
- * import { store as commandsStore } from '@wordpress/commands';
- * import { useDispatch } from '@wordpress/data';
+ * import { store as commandsStore } from '@gutenberg/commands';
+ * import { useDispatch } from '@gutenberg/data';
  * ...
  * const { open: openCommandCenter } = useDispatch( commandsStore );
  * ```

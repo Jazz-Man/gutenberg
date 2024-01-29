@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useMemo, useRef, createInterpolateElement } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
-import { speak } from '@wordpress/a11y';
-import { Popover } from '@wordpress/components';
-import { prependHTTP } from '@wordpress/url';
+import { useMemo, useRef, createInterpolateElement } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { speak } from '@gutenberg/a11y';
+import { Popover } from '@gutenberg/components';
+import { prependHTTP } from '@gutenberg/url';
 import {
 	create,
 	insert,
@@ -17,12 +17,12 @@ import {
 	replace,
 	split,
 	concat,
-} from '@wordpress/rich-text';
+} from '@gutenberg/rich-text';
 import {
 	__experimentalLinkControl as LinkControl,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

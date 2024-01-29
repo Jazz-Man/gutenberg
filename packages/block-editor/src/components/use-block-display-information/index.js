@@ -1,20 +1,20 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 import {
 	store as blocksStore,
 	isReusableBlock,
 	isTemplatePart,
-} from '@wordpress/blocks';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/blocks';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies
  */
 import { store as blockEditorStore } from '../../store';
 
-/** @typedef {import('@wordpress/blocks').WPIcon} WPIcon */
+/** @typedef {import('@gutenberg/blocks').WPIcon} WPIcon */
 
 /**
  * Contains basic block's information for display reasons.

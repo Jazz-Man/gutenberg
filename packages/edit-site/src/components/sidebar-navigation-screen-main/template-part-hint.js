@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { Notice } from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { store as preferencesStore } from '@wordpress/preferences';
+import { Notice } from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 const PREFERENCE_NAME = 'isTemplatePartMoveHintVisible';
 

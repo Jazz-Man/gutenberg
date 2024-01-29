@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalItemGroup as ItemGroup } from '@wordpress/components';
+import { __experimentalItemGroup as ItemGroup } from '@gutenberg/components';
 
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 /**
  * Internal dependencies
  */

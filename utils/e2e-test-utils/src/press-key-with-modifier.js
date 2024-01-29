@@ -6,7 +6,7 @@ import { capitalCase } from 'change-case';
 /**
  * WordPress dependencies
  */
-import { modifiers, SHIFT, ALT, CTRL } from '@wordpress/keycodes';
+import { modifiers, SHIFT, ALT, CTRL } from '@gutenberg/keycodes';
 
 /**
  * Emulates a Ctrl+A SelectAll key combination by dispatching custom keyboard

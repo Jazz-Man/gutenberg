@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { Modal } from '@wordpress/components';
-import { useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+import { Modal } from '@gutenberg/components';
+import { useState } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

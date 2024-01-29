@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useState, useLayoutEffect } from '@wordpress/element';
-import { getScrollContainer } from '@wordpress/dom';
-import { PAGEUP, PAGEDOWN, HOME, END } from '@wordpress/keycodes';
+import { useState, useLayoutEffect } from '@gutenberg/element';
+import { getScrollContainer } from '@gutenberg/dom';
+import { PAGEUP, PAGEDOWN, HOME, END } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

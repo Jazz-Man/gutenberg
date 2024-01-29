@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import '@wordpress/jest-console';
+import '@gutenberg/jest-console';
 
 /**
  * Internal dependencies

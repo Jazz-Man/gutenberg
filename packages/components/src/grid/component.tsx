@@ -28,7 +28,7 @@ function UnconnectedGrid(
  * import {
  * 	__experimentalGrid as Grid,
  * 	__experimentalText as Text
- * } from `@wordpress/components`;
+ * } from `@gutenberg/components`;
  *
  * function Example() {
  * 	return (

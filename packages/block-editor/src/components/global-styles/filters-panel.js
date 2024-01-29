@@ -21,9 +21,9 @@ import {
 	Dropdown,
 	Flex,
 	FlexItem,
-} from '@wordpress/components';
-import { __, _x } from '@wordpress/i18n';
-import { useCallback, useMemo } from '@wordpress/element';
+} from '@gutenberg/components';
+import { __, _x } from '@gutenberg/i18n';
+import { useCallback, useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

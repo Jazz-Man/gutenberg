@@ -7,11 +7,11 @@ import {
 	getBlockSupport,
 	getBlockTypes,
 	store as blocksStore,
-} from '@wordpress/blocks';
-import { useSelect } from '@wordpress/data';
-import { useContext, useMemo } from '@wordpress/element';
-import { getCSSRules } from '@wordpress/style-engine';
-import { privateApis as componentsPrivateApis } from '@wordpress/components';
+} from '@gutenberg/blocks';
+import { useSelect } from '@gutenberg/data';
+import { useContext, useMemo } from '@gutenberg/element';
+import { getCSSRules } from '@gutenberg/style-engine';
+import { privateApis as componentsPrivateApis } from '@gutenberg/components';
 
 /**
  * Internal dependencies

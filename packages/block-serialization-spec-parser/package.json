@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/block-serialization-spec-parser",
+	"name": "@gutenberg/block-serialization-spec-parser",
 	"version": "4.49.0",
 	"description": "Block serialization specification parser for WordPress posts.",
 	"author": "The WordPress Contributors",

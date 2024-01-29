@@ -1368,145 +1368,145 @@
 		"parent": "reference-guides"
 	},
 	{
-		"title": "@wordpress/a11y",
+		"title": "@gutenberg/a11y",
 		"slug": "packages-a11y",
 		"markdown_source": "../packages/a11y/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/annotations",
+		"title": "@gutenberg/annotations",
 		"slug": "packages-annotations",
 		"markdown_source": "../packages/annotations/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/api-fetch",
+		"title": "@gutenberg/api-fetch",
 		"slug": "packages-api-fetch",
 		"markdown_source": "../packages/api-fetch/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/autop",
+		"title": "@gutenberg/autop",
 		"slug": "packages-autop",
 		"markdown_source": "../packages/autop/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/babel-plugin-import-jsx-pragma",
+		"title": "@gutenberg/babel-plugin-import-jsx-pragma",
 		"slug": "packages-babel-plugin-import-jsx-pragma",
 		"markdown_source": "../packages/babel-plugin-import-jsx-pragma/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/babel-plugin-makepot",
+		"title": "@gutenberg/babel-plugin-makepot",
 		"slug": "packages-babel-plugin-makepot",
 		"markdown_source": "../packages/babel-plugin-makepot/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/babel-preset-default",
+		"title": "@gutenberg/babel-preset-default",
 		"slug": "packages-babel-preset-default",
 		"markdown_source": "../packages/babel-preset-default/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/base-styles",
+		"title": "@gutenberg/base-styles",
 		"slug": "packages-base-styles",
 		"markdown_source": "../packages/base-styles/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/blob",
+		"title": "@gutenberg/blob",
 		"slug": "packages-blob",
 		"markdown_source": "../packages/blob/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/block-directory",
+		"title": "@gutenberg/block-directory",
 		"slug": "packages-block-directory",
 		"markdown_source": "../packages/block-directory/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/block-editor",
+		"title": "@gutenberg/block-editor",
 		"slug": "packages-block-editor",
 		"markdown_source": "../packages/block-editor/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/block-library",
+		"title": "@gutenberg/block-library",
 		"slug": "packages-block-library",
 		"markdown_source": "../packages/block-library/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/block-serialization-default-parser",
+		"title": "@gutenberg/block-serialization-default-parser",
 		"slug": "packages-block-serialization-default-parser",
 		"markdown_source": "../packages/block-serialization-default-parser/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/block-serialization-spec-parser",
+		"title": "@gutenberg/block-serialization-spec-parser",
 		"slug": "packages-block-serialization-spec-parser",
 		"markdown_source": "../packages/block-serialization-spec-parser/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/blocks",
+		"title": "@gutenberg/blocks",
 		"slug": "packages-blocks",
 		"markdown_source": "../packages/blocks/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/browserslist-config",
+		"title": "@gutenberg/browserslist-config",
 		"slug": "packages-browserslist-config",
 		"markdown_source": "../packages/browserslist-config/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/commands",
+		"title": "@gutenberg/commands",
 		"slug": "packages-commands",
 		"markdown_source": "../packages/commands/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/components",
+		"title": "@gutenberg/components",
 		"slug": "packages-components",
 		"markdown_source": "../packages/components/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/compose",
+		"title": "@gutenberg/compose",
 		"slug": "packages-compose",
 		"markdown_source": "../packages/compose/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/core-commands",
+		"title": "@gutenberg/core-commands",
 		"slug": "packages-core-commands",
 		"markdown_source": "../packages/core-commands/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/core-data",
+		"title": "@gutenberg/core-data",
 		"slug": "packages-core-data",
 		"markdown_source": "../packages/core-data/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/create-block-interactive-template",
+		"title": "@gutenberg/create-block-interactive-template",
 		"slug": "packages-create-block-interactive-template",
 		"markdown_source": "../packages/create-block-interactive-template/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/create-block-tutorial-template",
+		"title": "@gutenberg/create-block-tutorial-template",
 		"slug": "packages-create-block-tutorial-template",
 		"markdown_source": "../packages/create-block-tutorial-template/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/create-block",
+		"title": "@gutenberg/create-block",
 		"slug": "packages-create-block",
 		"markdown_source": "../packages/create-block/README.md",
 		"parent": "packages"
@@ -1518,427 +1518,427 @@
 		"parent": "packages-create-block"
 	},
 	{
-		"title": "@wordpress/customize-widgets",
+		"title": "@gutenberg/customize-widgets",
 		"slug": "packages-customize-widgets",
 		"markdown_source": "../packages/customize-widgets/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/data-controls",
+		"title": "@gutenberg/data-controls",
 		"slug": "packages-data-controls",
 		"markdown_source": "../packages/data-controls/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/data",
+		"title": "@gutenberg/data",
 		"slug": "packages-data",
 		"markdown_source": "../packages/data/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/dataviews",
+		"title": "@gutenberg/dataviews",
 		"slug": "packages-dataviews",
 		"markdown_source": "../packages/dataviews/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/date",
+		"title": "@gutenberg/date",
 		"slug": "packages-date",
 		"markdown_source": "../packages/date/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/dependency-extraction-webpack-plugin",
+		"title": "@gutenberg/dependency-extraction-webpack-plugin",
 		"slug": "packages-dependency-extraction-webpack-plugin",
 		"markdown_source": "../packages/dependency-extraction-webpack-plugin/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/deprecated",
+		"title": "@gutenberg/deprecated",
 		"slug": "packages-deprecated",
 		"markdown_source": "../packages/deprecated/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/docgen",
+		"title": "@gutenberg/docgen",
 		"slug": "packages-docgen",
 		"markdown_source": "../packages/docgen/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/dom-ready",
+		"title": "@gutenberg/dom-ready",
 		"slug": "packages-dom-ready",
 		"markdown_source": "../packages/dom-ready/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/dom",
+		"title": "@gutenberg/dom",
 		"slug": "packages-dom",
 		"markdown_source": "../packages/dom/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/e2e-test-utils-playwright",
+		"title": "@gutenberg/e2e-test-utils-playwright",
 		"slug": "packages-e2e-test-utils-playwright",
 		"markdown_source": "../packages/e2e-test-utils-playwright/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/e2e-test-utils",
+		"title": "@gutenberg/e2e-test-utils",
 		"slug": "packages-e2e-test-utils",
 		"markdown_source": "../packages/e2e-test-utils/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/e2e-tests",
+		"title": "@gutenberg/e2e-tests",
 		"slug": "packages-e2e-tests",
 		"markdown_source": "../packages/e2e-tests/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/edit-post",
+		"title": "@gutenberg/edit-post",
 		"slug": "packages-edit-post",
 		"markdown_source": "../packages/edit-post/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/edit-site",
+		"title": "@gutenberg/edit-site",
 		"slug": "packages-edit-site",
 		"markdown_source": "../packages/edit-site/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/edit-widgets",
+		"title": "@gutenberg/edit-widgets",
 		"slug": "packages-edit-widgets",
 		"markdown_source": "../packages/edit-widgets/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/editor",
+		"title": "@gutenberg/editor",
 		"slug": "packages-editor",
 		"markdown_source": "../packages/editor/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/element",
+		"title": "@gutenberg/element",
 		"slug": "packages-element",
 		"markdown_source": "../packages/element/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/env",
+		"title": "@gutenberg/env",
 		"slug": "packages-env",
 		"markdown_source": "../packages/env/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/escape-html",
+		"title": "@gutenberg/escape-html",
 		"slug": "packages-escape-html",
 		"markdown_source": "../packages/escape-html/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/eslint-plugin",
+		"title": "@gutenberg/eslint-plugin",
 		"slug": "packages-eslint-plugin",
 		"markdown_source": "../packages/eslint-plugin/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/format-library",
+		"title": "@gutenberg/format-library",
 		"slug": "packages-format-library",
 		"markdown_source": "../packages/format-library/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/hooks",
+		"title": "@gutenberg/hooks",
 		"slug": "packages-hooks",
 		"markdown_source": "../packages/hooks/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/html-entities",
+		"title": "@gutenberg/html-entities",
 		"slug": "packages-html-entities",
 		"markdown_source": "../packages/html-entities/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/i18n",
+		"title": "@gutenberg/i18n",
 		"slug": "packages-i18n",
 		"markdown_source": "../packages/i18n/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/icons",
+		"title": "@gutenberg/icons",
 		"slug": "packages-icons",
 		"markdown_source": "../packages/icons/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/interactivity",
+		"title": "@gutenberg/interactivity",
 		"slug": "packages-interactivity",
 		"markdown_source": "../packages/interactivity/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/interface",
+		"title": "@gutenberg/interface",
 		"slug": "packages-interface",
 		"markdown_source": "../packages/interface/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/is-shallow-equal",
+		"title": "@gutenberg/is-shallow-equal",
 		"slug": "packages-is-shallow-equal",
 		"markdown_source": "../packages/is-shallow-equal/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/jest-console",
+		"title": "@gutenberg/jest-console",
 		"slug": "packages-jest-console",
 		"markdown_source": "../packages/jest-console/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/jest-preset-default",
+		"title": "@gutenberg/jest-preset-default",
 		"slug": "packages-jest-preset-default",
 		"markdown_source": "../packages/jest-preset-default/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/jest-puppeteer-axe",
+		"title": "@gutenberg/jest-puppeteer-axe",
 		"slug": "packages-jest-puppeteer-axe",
 		"markdown_source": "../packages/jest-puppeteer-axe/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/keyboard-shortcuts",
+		"title": "@gutenberg/keyboard-shortcuts",
 		"slug": "packages-keyboard-shortcuts",
 		"markdown_source": "../packages/keyboard-shortcuts/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/keycodes",
+		"title": "@gutenberg/keycodes",
 		"slug": "packages-keycodes",
 		"markdown_source": "../packages/keycodes/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/lazy-import",
+		"title": "@gutenberg/lazy-import",
 		"slug": "packages-lazy-import",
 		"markdown_source": "../packages/lazy-import/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/list-reusable-blocks",
+		"title": "@gutenberg/list-reusable-blocks",
 		"slug": "packages-list-reusable-blocks",
 		"markdown_source": "../packages/list-reusable-blocks/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/media-utils",
+		"title": "@gutenberg/media-utils",
 		"slug": "packages-media-utils",
 		"markdown_source": "../packages/media-utils/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/notices",
+		"title": "@gutenberg/notices",
 		"slug": "packages-notices",
 		"markdown_source": "../packages/notices/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/npm-package-json-lint-config",
+		"title": "@gutenberg/npm-package-json-lint-config",
 		"slug": "packages-npm-package-json-lint-config",
 		"markdown_source": "../packages/npm-package-json-lint-config/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/nux",
+		"title": "@gutenberg/nux",
 		"slug": "packages-nux",
 		"markdown_source": "../packages/nux/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/patterns",
+		"title": "@gutenberg/patterns",
 		"slug": "packages-patterns",
 		"markdown_source": "../packages/patterns/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/plugins",
+		"title": "@gutenberg/plugins",
 		"slug": "packages-plugins",
 		"markdown_source": "../packages/plugins/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/postcss-plugins-preset",
+		"title": "@gutenberg/postcss-plugins-preset",
 		"slug": "packages-postcss-plugins-preset",
 		"markdown_source": "../packages/postcss-plugins-preset/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/postcss-themes",
+		"title": "@gutenberg/postcss-themes",
 		"slug": "packages-postcss-themes",
 		"markdown_source": "../packages/postcss-themes/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/preferences-persistence",
+		"title": "@gutenberg/preferences-persistence",
 		"slug": "packages-preferences-persistence",
 		"markdown_source": "../packages/preferences-persistence/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/preferences",
+		"title": "@gutenberg/preferences",
 		"slug": "packages-preferences",
 		"markdown_source": "../packages/preferences/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/prettier-config",
+		"title": "@gutenberg/prettier-config",
 		"slug": "packages-prettier-config",
 		"markdown_source": "../packages/prettier-config/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/primitives",
+		"title": "@gutenberg/primitives",
 		"slug": "packages-primitives",
 		"markdown_source": "../packages/primitives/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/priority-queue",
+		"title": "@gutenberg/priority-queue",
 		"slug": "packages-priority-queue",
 		"markdown_source": "../packages/priority-queue/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/private-apis",
+		"title": "@gutenberg/private-apis",
 		"slug": "packages-private-apis",
 		"markdown_source": "../packages/private-apis/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/project-management-automation",
+		"title": "@gutenberg/project-management-automation",
 		"slug": "packages-project-management-automation",
 		"markdown_source": "../packages/project-management-automation/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/react-i18n",
+		"title": "@gutenberg/react-i18n",
 		"slug": "packages-react-i18n",
 		"markdown_source": "../packages/react-i18n/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/readable-js-assets-webpack-plugin",
+		"title": "@gutenberg/readable-js-assets-webpack-plugin",
 		"slug": "packages-readable-js-assets-webpack-plugin",
 		"markdown_source": "../packages/readable-js-assets-webpack-plugin/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/redux-routine",
+		"title": "@gutenberg/redux-routine",
 		"slug": "packages-redux-routine",
 		"markdown_source": "../packages/redux-routine/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/reusable-blocks",
+		"title": "@gutenberg/reusable-blocks",
 		"slug": "packages-reusable-blocks",
 		"markdown_source": "../packages/reusable-blocks/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/rich-text",
+		"title": "@gutenberg/rich-text",
 		"slug": "packages-rich-text",
 		"markdown_source": "../packages/rich-text/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/router",
+		"title": "@gutenberg/router",
 		"slug": "packages-router",
 		"markdown_source": "../packages/router/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/scripts",
+		"title": "@gutenberg/scripts",
 		"slug": "packages-scripts",
 		"markdown_source": "../packages/scripts/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/server-side-render",
+		"title": "@gutenberg/server-side-render",
 		"slug": "packages-server-side-render",
 		"markdown_source": "../packages/server-side-render/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/shortcode",
+		"title": "@gutenberg/shortcode",
 		"slug": "packages-shortcode",
 		"markdown_source": "../packages/shortcode/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/style-engine",
+		"title": "@gutenberg/style-engine",
 		"slug": "packages-style-engine",
 		"markdown_source": "../packages/style-engine/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/style-engine Using the Style Engine to generate block supports styles",
+		"title": "@gutenberg/style-engine Using the Style Engine to generate block supports styles",
 		"slug": "using-the-style-engine-with-block-supports",
 		"markdown_source": "../packages/style-engine/docs/using-the-style-engine-with-block-supports.md",
 		"parent": "packages-style-engine"
 	},
 	{
-		"title": "@wordpress/stylelint-config",
+		"title": "@gutenberg/stylelint-config",
 		"slug": "packages-stylelint-config",
 		"markdown_source": "../packages/stylelint-config/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/sync",
+		"title": "@gutenberg/sync",
 		"slug": "packages-sync",
 		"markdown_source": "../packages/sync/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/token-list",
+		"title": "@gutenberg/token-list",
 		"slug": "packages-token-list",
 		"markdown_source": "../packages/token-list/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/undo-manager",
+		"title": "@gutenberg/undo-manager",
 		"slug": "packages-undo-manager",
 		"markdown_source": "../packages/undo-manager/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/url",
+		"title": "@gutenberg/url",
 		"slug": "packages-url",
 		"markdown_source": "../packages/url/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/viewport",
+		"title": "@gutenberg/viewport",
 		"slug": "packages-viewport",
 		"markdown_source": "../packages/viewport/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/warning",
+		"title": "@gutenberg/warning",
 		"slug": "packages-warning",
 		"markdown_source": "../packages/warning/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/widgets",
+		"title": "@gutenberg/widgets",
 		"slug": "packages-widgets",
 		"markdown_source": "../packages/widgets/README.md",
 		"parent": "packages"
 	},
 	{
-		"title": "@wordpress/wordcount",
+		"title": "@gutenberg/wordcount",
 		"slug": "packages-wordcount",
 		"markdown_source": "../packages/wordcount/README.md",
 		"parent": "packages"

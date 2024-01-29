@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { BaseControl, Button } from '@wordpress/components';
-import { __, isRTL } from '@wordpress/i18n';
-import { textHorizontal, textVertical } from '@wordpress/icons';
+import { BaseControl, Button } from '@gutenberg/components';
+import { __, isRTL } from '@gutenberg/i18n';
+import { textHorizontal, textVertical } from '@gutenberg/icons';
 
 const WRITING_MODES = [
 	{

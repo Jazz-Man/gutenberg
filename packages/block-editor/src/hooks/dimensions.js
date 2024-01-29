@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useState, useEffect, useCallback } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { getBlockSupport } from '@wordpress/blocks';
-import deprecated from '@wordpress/deprecated';
+import { useState, useEffect, useCallback } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { getBlockSupport } from '@gutenberg/blocks';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

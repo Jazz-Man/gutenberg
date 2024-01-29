@@ -6,7 +6,7 @@ import { Keyboard, Dimensions } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { useEffect, useState } from '@wordpress/element';
+import { useEffect, useState } from '@gutenberg/element';
 
 export default function useIsFloatingKeyboard() {
 	const windowWidth = Dimensions.get( 'window' ).width;

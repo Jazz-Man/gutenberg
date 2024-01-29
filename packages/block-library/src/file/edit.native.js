@@ -11,7 +11,7 @@ import {
 	requestImageFailedRetryDialog,
 	requestImageUploadCancelDialog,
 	mediaUploadSync,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 import {
 	BlockIcon,
 	MediaPlaceholder,
@@ -23,7 +23,7 @@ import {
 	InspectorControls,
 	MEDIA_TYPE_ANY,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	ToolbarButton,
 	ToolbarGroup,
@@ -32,7 +32,7 @@ import {
 	TextControl,
 	SelectControl,
 	Icon,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	file as icon,
 	replace,
@@ -40,13 +40,13 @@ import {
 	external,
 	link,
 	warning,
-} from '@wordpress/icons';
-import { Component } from '@wordpress/element';
-import { __, _x } from '@wordpress/i18n';
-import { compose, withPreferredColorScheme } from '@wordpress/compose';
-import { withDispatch, withSelect } from '@wordpress/data';
-import { getProtocol } from '@wordpress/url';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/icons';
+import { Component } from '@gutenberg/element';
+import { __, _x } from '@gutenberg/i18n';
+import { compose, withPreferredColorScheme } from '@gutenberg/compose';
+import { withDispatch, withSelect } from '@gutenberg/data';
+import { getProtocol } from '@gutenberg/url';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

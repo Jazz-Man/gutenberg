@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
+import { __, _x } from '@gutenberg/i18n';
 import {
 	__experimentalToggleGroupControl as ToggleGroupControl,
 	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 export function QueryPaginationArrowControls( { value, onChange } ) {
 	return (

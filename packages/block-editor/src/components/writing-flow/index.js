@@ -6,10 +6,10 @@ import classNames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { useMergeRefs, useRefEffect } from '@wordpress/compose';
-import { forwardRef } from '@wordpress/element';
+import { useSelect } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { useMergeRefs, useRefEffect } from '@gutenberg/compose';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { addFilter } from '@wordpress/hooks';
-import { hasBlockSupport } from '@wordpress/blocks';
+import { addFilter } from '@gutenberg/hooks';
+import { hasBlockSupport } from '@gutenberg/blocks';
 
 /**
  * Filters registered block settings, extending attributes to include `className`.

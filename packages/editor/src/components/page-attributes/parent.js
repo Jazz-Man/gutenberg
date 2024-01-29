@@ -6,13 +6,13 @@ import removeAccents from 'remove-accents';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { ComboboxControl } from '@wordpress/components';
-import { debounce } from '@wordpress/compose';
-import { useState, useMemo } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { decodeEntities } from '@wordpress/html-entities';
-import { store as coreStore } from '@wordpress/core-data';
+import { __ } from '@gutenberg/i18n';
+import { ComboboxControl } from '@gutenberg/components';
+import { debounce } from '@gutenberg/compose';
+import { useState, useMemo } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

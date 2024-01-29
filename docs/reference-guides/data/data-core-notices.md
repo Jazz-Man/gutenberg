@@ -13,8 +13,8 @@ Returns all notices as an array, optionally for a given context. Defaults to the
 _Usage_
 
 ```js
-import { useSelect } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
+import { useSelect } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
 
 const ExampleComponent = () => {
 	const notices = useSelect( ( select ) =>
@@ -56,10 +56,10 @@ _Related_
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { useDispatch } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
-import { Button } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { Button } from '@gutenberg/components';
 
 const ExampleComponent = () => {
 	const { createErrorNotice } = useDispatch( noticesStore );
@@ -100,10 +100,10 @@ _Related_
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { useDispatch } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
-import { Button } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { Button } from '@gutenberg/components';
 
 const ExampleComponent = () => {
 	const { createInfoNotice } = useDispatch( noticesStore );
@@ -137,10 +137,10 @@ Returns an action object used in signalling that a notice is to be created.
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { useDispatch } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
-import { Button } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { Button } from '@gutenberg/components';
 
 const ExampleComponent = () => {
 	const { createNotice } = useDispatch( noticesStore );
@@ -184,10 +184,10 @@ _Related_
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { useDispatch } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
-import { Button } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { Button } from '@gutenberg/components';
 
 const ExampleComponent = () => {
 	const { createSuccessNotice } = useDispatch( noticesStore );
@@ -226,10 +226,10 @@ _Related_
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { useDispatch } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
-import { Button } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { Button } from '@gutenberg/components';
 
 const ExampleComponent = () => {
 	const { createWarningNotice, createInfoNotice } =
@@ -268,10 +268,10 @@ Removes all notices from a given context. Defaults to the default context.
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
-import { Button } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { Button } from '@gutenberg/components';
 
 export const ExampleComponent = () => {
 	const notices = useSelect( ( select ) =>
@@ -315,10 +315,10 @@ Returns an action object used in signalling that a notice is to be removed.
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { useDispatch } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
-import { Button } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { Button } from '@gutenberg/components';
 
 const ExampleComponent = () => {
 	const notices = useSelect( ( select ) =>
@@ -363,10 +363,10 @@ Returns an action object used in signalling that several notices are to be remov
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
-import { Button } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { Button } from '@gutenberg/components';
 
 const ExampleComponent = () => {
 	const notices = useSelect( ( select ) =>

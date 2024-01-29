@@ -15,7 +15,7 @@ import type {
 /**
  * WordPress dependencies
  */
-import { forwardRef, useRef } from '@wordpress/element';
+import { forwardRef, useRef } from '@gutenberg/element';
 /**
  * Internal dependencies
  */

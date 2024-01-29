@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { isBlobURL } from '@wordpress/blob';
-import { getBlockSupport } from '@wordpress/blocks';
-import { focus } from '@wordpress/dom';
+import { isBlobURL } from '@gutenberg/blob';
+import { getBlockSupport } from '@gutenberg/blocks';
+import { focus } from '@gutenberg/dom';
 import {
 	ToggleControl,
 	__experimentalToggleGroupControl as ToggleGroupControl,
@@ -23,12 +23,12 @@ import {
 	__experimentalItemGroup as ItemGroup,
 	__experimentalHStack as HStack,
 	__experimentalTruncate as Truncate,
-} from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { Platform, useCallback, useRef } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
-import { store as noticesStore } from '@wordpress/notices';
-import { getFilename } from '@wordpress/url';
+} from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { Platform, useCallback, useRef } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { store as noticesStore } from '@gutenberg/notices';
+import { getFilename } from '@gutenberg/url';
 
 /**
  * Internal dependencies

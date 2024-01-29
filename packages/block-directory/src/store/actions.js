@@ -4,11 +4,11 @@
 import {
 	store as blocksStore,
 	unstable__bootstrapServerSideBlockDefinitions, // eslint-disable-line camelcase
-} from '@wordpress/blocks';
-import { __, sprintf } from '@wordpress/i18n';
-import apiFetch from '@wordpress/api-fetch';
-import { store as noticesStore } from '@wordpress/notices';
-import { addQueryArgs } from '@wordpress/url';
+} from '@gutenberg/blocks';
+import { __, sprintf } from '@gutenberg/i18n';
+import apiFetch from '@gutenberg/api-fetch';
+import { store as noticesStore } from '@gutenberg/notices';
+import { addQueryArgs } from '@gutenberg/url';
 
 /**
  * Internal dependencies

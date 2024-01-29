@@ -12,13 +12,13 @@ import {
 	Placeholder,
 	DropZone,
 	withFilters,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useState, useEffect } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import { keyboardReturn } from '@wordpress/icons';
-import { pasteHandler } from '@wordpress/blocks';
-import deprecated from '@wordpress/deprecated';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useState, useEffect } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import { keyboardReturn } from '@gutenberg/icons';
+import { pasteHandler } from '@gutenberg/blocks';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

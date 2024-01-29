@@ -39,7 +39,7 @@ function getPackageManifest( packageFolderNames ) {
 
 		// First add any README files to the TOC
 		manifest.push( {
-			title: `@wordpress/${ folderName }`,
+			title: `@gutenberg/${ folderName }`,
 			slug: `packages-${ folderName }`,
 			markdown_source: path,
 			parent: 'packages',

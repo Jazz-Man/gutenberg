@@ -1,9 +1,9 @@
-/* eslint-disable @wordpress/i18n-text-domain, @wordpress/i18n-translator-comments */
+/* eslint-disable @gutenberg/i18n-text-domain, @gutenberg/i18n-translator-comments */
 
 /**
  * WordPress dependencies
  */
-import { createHooks } from '@wordpress/hooks';
+import { createHooks } from '@gutenberg/hooks';
 
 /**
  * Internal dependencies
@@ -546,4 +546,4 @@ describe( 'i18n filters', () => {
 	} );
 } );
 
-/* eslint-enable @wordpress/i18n-text-domain, @wordpress/i18n-translator-comments */
+/* eslint-enable @gutenberg/i18n-text-domain, @gutenberg/i18n-translator-comments */

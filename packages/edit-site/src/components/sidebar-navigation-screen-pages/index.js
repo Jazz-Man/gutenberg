@@ -6,14 +6,14 @@ import {
 	__experimentalItem as Item,
 	__experimentalTruncate as Truncate,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
-import { useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { useEntityRecords, store as coreStore } from '@wordpress/core-data';
-import { decodeEntities } from '@wordpress/html-entities';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
-import { layout, page, home, verse, plus } from '@wordpress/icons';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/components';
+import { useState } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { useEntityRecords, store as coreStore } from '@gutenberg/core-data';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
+import { layout, page, home, verse, plus } from '@gutenberg/icons';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

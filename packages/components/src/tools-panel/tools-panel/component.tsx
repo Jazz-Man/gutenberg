@@ -51,12 +51,12 @@ const UnconnectedToolsPanel = (
  * generated from the panel's inner `ToolsPanelItems`.
  *
  * ```jsx
- * import { __ } from '@wordpress/i18n';
+ * import { __ } from '@gutenberg/i18n';
  * import {
  *   __experimentalToolsPanel as ToolsPanel,
  *   __experimentalToolsPanelItem as ToolsPanelItem,
  *   __experimentalUnitControl as UnitControl
- * } from '@wordpress/components';
+ * } from '@gutenberg/components';
  *
  * function Example() {
  *   const [ height, setHeight ] = useState();

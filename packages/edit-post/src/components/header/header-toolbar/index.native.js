@@ -6,32 +6,32 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { useCallback, useRef, useEffect, Platform } from '@wordpress/element';
-import { compose, usePreferredColorSchemeStyle } from '@wordpress/compose';
-import { withSelect, withDispatch } from '@wordpress/data';
-import { withViewportMatch } from '@wordpress/viewport';
-import { __ } from '@wordpress/i18n';
+import { useCallback, useRef, useEffect, Platform } from '@gutenberg/element';
+import { compose, usePreferredColorSchemeStyle } from '@gutenberg/compose';
+import { withSelect, withDispatch } from '@gutenberg/data';
+import { withViewportMatch } from '@gutenberg/viewport';
+import { __ } from '@gutenberg/i18n';
 import {
 	Inserter,
 	BlockToolbar,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { ToolbarGroup, ToolbarButton } from '@wordpress/components';
+} from '@gutenberg/block-editor';
+import { ToolbarGroup, ToolbarButton } from '@gutenberg/components';
 import {
 	keyboardClose,
 	audio as audioIcon,
 	media as imageIcon,
 	video as videoIcon,
 	gallery as galleryIcon,
-} from '@wordpress/icons';
-import { store as editorStore } from '@wordpress/editor';
-import { createBlock } from '@wordpress/blocks';
+} from '@gutenberg/icons';
+import { store as editorStore } from '@gutenberg/editor';
+import { createBlock } from '@gutenberg/blocks';
 import {
 	toggleUndoButton,
 	toggleRedoButton,
 	subscribeOnUndoPressed,
 	subscribeOnRedoPressed,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 
 /**
  * Internal dependencies

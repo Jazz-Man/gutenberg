@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { createBlock } from '@wordpress/blocks';
+import { __ } from '@gutenberg/i18n';
+import { createBlock } from '@gutenberg/blocks';
 import {
 	AlignmentControl,
 	BlockControls,
 	RichText,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useCallback } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/block-editor';
+import { useCallback } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
 
 const name = 'core/paragraph';
 

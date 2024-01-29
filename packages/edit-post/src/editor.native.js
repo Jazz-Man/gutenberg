@@ -8,17 +8,17 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { EditorProvider } from '@wordpress/editor';
-import { parse, serialize } from '@wordpress/blocks';
-import { withDispatch, withSelect } from '@wordpress/data';
-import { compose } from '@wordpress/compose';
+import { Component } from '@gutenberg/element';
+import { EditorProvider } from '@gutenberg/editor';
+import { parse, serialize } from '@gutenberg/blocks';
+import { withDispatch, withSelect } from '@gutenberg/data';
+import { compose } from '@gutenberg/compose';
 import {
 	subscribeSetFocusOnTitle,
 	subscribeFeaturedImageIdNativeUpdated,
-} from '@wordpress/react-native-bridge';
-import { SlotFillProvider } from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/react-native-bridge';
+import { SlotFillProvider } from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

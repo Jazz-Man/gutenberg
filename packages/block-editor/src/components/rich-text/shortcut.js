@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { isKeyboardEvent } from '@wordpress/keycodes';
-import { useEffect, useContext, useRef } from '@wordpress/element';
+import { isKeyboardEvent } from '@gutenberg/keycodes';
+import { useEffect, useContext, useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

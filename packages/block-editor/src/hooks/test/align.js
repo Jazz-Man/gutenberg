@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { applyFilters } from '@wordpress/hooks';
+import { applyFilters } from '@gutenberg/hooks';
 import {
 	getBlockTypes,
 	registerBlockType,
 	unregisterBlockType,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

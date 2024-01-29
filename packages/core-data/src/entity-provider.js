@@ -6,9 +6,9 @@ import {
 	useContext,
 	useCallback,
 	useMemo,
-} from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { parse, __unstableSerializeAndClean } from '@wordpress/blocks';
+} from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { parse, __unstableSerializeAndClean } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies
@@ -16,7 +16,7 @@ import { parse, __unstableSerializeAndClean } from '@wordpress/blocks';
 import { STORE_NAME } from './name';
 import { updateFootnotesFromMeta } from './footnotes';
 
-/** @typedef {import('@wordpress/blocks').WPBlock} WPBlock */
+/** @typedef {import('@gutenberg/blocks').WPBlock} WPBlock */
 
 const EMPTY_ARRAY = [];
 

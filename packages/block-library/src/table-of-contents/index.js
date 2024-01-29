@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { tableOfContents as icon } from '@wordpress/icons';
+import { tableOfContents as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

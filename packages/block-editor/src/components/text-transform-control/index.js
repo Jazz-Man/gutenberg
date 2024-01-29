@@ -6,14 +6,14 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { BaseControl, Button } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { BaseControl, Button } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 import {
 	reset,
 	formatCapitalize,
 	formatLowercase,
 	formatUppercase,
-} from '@wordpress/icons';
+} from '@gutenberg/icons';
 
 const TEXT_TRANSFORMS = [
 	{

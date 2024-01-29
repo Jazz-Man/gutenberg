@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { store, directive, getContext } from '@wordpress/interactivity';
+import { store, directive, getContext } from '@gutenberg/interactivity';
 
 // Mock `data-wp-show` directive to test when things are removed from the
 // DOM.  Replace with `data-wp-show` when it's ready.

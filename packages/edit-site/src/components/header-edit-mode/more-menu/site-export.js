@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
-import { MenuItem } from '@wordpress/components';
-import apiFetch from '@wordpress/api-fetch';
-import { download } from '@wordpress/icons';
-import { useDispatch } from '@wordpress/data';
-import { downloadBlob } from '@wordpress/blob';
-import { store as noticesStore } from '@wordpress/notices';
+import { __, _x } from '@gutenberg/i18n';
+import { MenuItem } from '@gutenberg/components';
+import apiFetch from '@gutenberg/api-fetch';
+import { download } from '@gutenberg/icons';
+import { useDispatch } from '@gutenberg/data';
+import { downloadBlob } from '@gutenberg/blob';
+import { store as noticesStore } from '@gutenberg/notices';
 
 export default function SiteExport() {
 	const { createErrorNotice } = useDispatch( noticesStore );

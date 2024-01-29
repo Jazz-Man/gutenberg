@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { decodeEntities } from '@wordpress/html-entities';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Returns terms in a tree form.

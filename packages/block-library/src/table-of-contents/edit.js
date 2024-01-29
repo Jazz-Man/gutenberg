@@ -7,21 +7,21 @@ import {
 	InspectorControls,
 	store as blockEditorStore,
 	useBlockProps,
-} from '@wordpress/block-editor';
-import { createBlock } from '@wordpress/blocks';
+} from '@gutenberg/block-editor';
+import { createBlock } from '@gutenberg/blocks';
 import {
 	PanelBody,
 	Placeholder,
 	ToggleControl,
 	ToolbarButton,
 	ToolbarGroup,
-} from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { renderToString } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { useInstanceId } from '@wordpress/compose';
-import { store as noticeStore } from '@wordpress/notices';
-import { tableOfContents as icon } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { renderToString } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { useInstanceId } from '@gutenberg/compose';
+import { store as noticeStore } from '@gutenberg/notices';
+import { tableOfContents as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

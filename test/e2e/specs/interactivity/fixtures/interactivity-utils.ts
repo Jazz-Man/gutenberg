@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import type { RequestUtils } from '@wordpress/e2e-test-utils-playwright';
+import type { RequestUtils } from '@gutenberg/e2e-test-utils-playwright';
 
 type AddPostWithBlockOptions = {
 	alias?: string;

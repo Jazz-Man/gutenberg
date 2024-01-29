@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { memo, useCallback, RawHTML, useContext } from '@wordpress/element';
+import { memo, useCallback, RawHTML, useContext } from '@gutenberg/element';
 import {
 	getBlockType,
 	getSaveContent,
@@ -18,11 +18,11 @@ import {
 	isReusableBlock,
 	getBlockDefaultClassName,
 	store as blocksStore,
-} from '@wordpress/blocks';
-import { withFilters } from '@wordpress/components';
-import { withDispatch, useDispatch, useSelect } from '@wordpress/data';
-import { compose } from '@wordpress/compose';
-import { safeHTML } from '@wordpress/dom';
+} from '@gutenberg/blocks';
+import { withFilters } from '@gutenberg/components';
+import { withDispatch, useDispatch, useSelect } from '@gutenberg/data';
+import { compose } from '@gutenberg/compose';
+import { safeHTML } from '@gutenberg/dom';
 
 /**
  * Internal dependencies

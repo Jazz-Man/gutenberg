@@ -1,18 +1,18 @@
 /**
  * WordPress dependencies
  */
-import { DropdownMenu } from '@wordpress/components';
-import { useState, useRef } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
-import { plus, symbol, symbolFilled, upload } from '@wordpress/icons';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { DropdownMenu } from '@gutenberg/components';
+import { useState, useRef } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { plus, symbol, symbolFilled, upload } from '@gutenberg/icons';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 import {
 	privateApis as editPatternsPrivateApis,
 	store as patternsStore,
-} from '@wordpress/patterns';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/patterns';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

@@ -1,18 +1,18 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useLayoutEffect, useMemo } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { EntityProvider, useEntityBlockEditor } from '@wordpress/core-data';
+import { useEffect, useLayoutEffect, useMemo } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { EntityProvider, useEntityBlockEditor } from '@gutenberg/core-data';
 import {
 	BlockEditorProvider,
 	BlockContextProvider,
 	privateApis as blockEditorPrivateApis,
-} from '@wordpress/block-editor';
-import { store as noticesStore } from '@wordpress/notices';
-import { privateApis as editPatternsPrivateApis } from '@wordpress/patterns';
-import { createBlock } from '@wordpress/blocks';
+} from '@gutenberg/block-editor';
+import { store as noticesStore } from '@gutenberg/notices';
+import { privateApis as editPatternsPrivateApis } from '@gutenberg/patterns';
+import { createBlock } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

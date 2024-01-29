@@ -6,7 +6,7 @@ import classNames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useEffect, useRef } from '@wordpress/element';
+import { useEffect, useRef } from '@gutenberg/element';
 import {
 	BlockControls,
 	useInnerBlocksProps,
@@ -16,16 +16,16 @@ import {
 	withColors,
 	__experimentalColorGradientSettingsDropdown as ColorGradientSettingsDropdown,
 	__experimentalUseMultipleOriginColorsAndGradients as useMultipleOriginColorsAndGradients,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	MenuGroup,
 	MenuItem,
 	PanelBody,
 	ToggleControl,
 	ToolbarDropdownMenu,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { check } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { check } from '@gutenberg/icons';
 
 const ALLOWED_BLOCKS = [ 'core/social-link' ];
 

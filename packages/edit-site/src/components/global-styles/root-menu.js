@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalItemGroup as ItemGroup } from '@wordpress/components';
-import { typography, color, layout } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
+import { __experimentalItemGroup as ItemGroup } from '@gutenberg/components';
+import { typography, color, layout } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

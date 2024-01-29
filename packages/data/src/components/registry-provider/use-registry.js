@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useContext } from '@wordpress/element';
+import { useContext } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -18,7 +18,7 @@ import { Context } from './context';
  * It acts similarly to the `useContext` react hook.
  *
  * Note: Generally speaking, `useRegistry` is a low level hook that in most cases
- * won't be needed for implementation. Most interactions with the `@wordpress/data`
+ * won't be needed for implementation. Most interactions with the `@gutenberg/data`
  * API can be performed via the `useSelect` hook,  or the `withSelect` and
  * `withDispatch` higher order components.
  *
@@ -28,7 +28,7 @@ import { Context } from './context';
  *   RegistryProvider,
  *   createRegistry,
  *   useRegistry,
- * } from '@wordpress/data';
+ * } from '@gutenberg/data';
  *
  * const registry = createRegistry( {} );
  *

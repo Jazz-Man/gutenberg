@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { chevronRightSmall, chevronLeftSmall, Icon } from '@wordpress/icons';
-import { isRTL } from '@wordpress/i18n';
+import { chevronRightSmall, chevronLeftSmall, Icon } from '@gutenberg/icons';
+import { isRTL } from '@gutenberg/i18n';
 
 export default function ListViewExpander( { onClick } ) {
 	return (

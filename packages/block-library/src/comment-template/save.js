@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { InnerBlocks } from '@wordpress/block-editor';
+import { InnerBlocks } from '@gutenberg/block-editor';
 
 export default function CommentTemplateSave() {
 	return <InnerBlocks.Content />;

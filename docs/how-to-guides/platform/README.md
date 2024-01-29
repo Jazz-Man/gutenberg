@@ -11,31 +11,31 @@ Here is a quick example, how to use components in your project.
 Install the dependency:
 
 ```bash
-npm install --save @wordpress/components
+npm install --save @gutenberg/components
 ```
 
 Usage in React:
 
 ```jsx
-import { Button } from '@wordpress/components';
+import { Button } from '@gutenberg/components';
 
 function MyApp() {
 	return <Button>Hello Button</Button>;
 }
 ```
 
-Many components include CSS to add style, you will need to include for the components to appear correctly. The component stylesheet can be found in `node_modules/@wordpress/components/build-style/style.css`, you can link directly or copy and include it in your project.
+Many components include CSS to add style, you will need to include for the components to appear correctly. The component stylesheet can be found in `node_modules/@gutenberg/components/build-style/style.css`, you can link directly or copy and include it in your project.
 
 ## Development scripts
 
-The [`@wordpress/scripts` package](/packages/scripts/README.md) is a collection of reusable scripts for JavaScript development — includes scripts for building, linting, and testing — all with no additional configuration files.
+The [`@gutenberg/scripts` package](/packages/scripts/README.md) is a collection of reusable scripts for JavaScript development — includes scripts for building, linting, and testing — all with no additional configuration files.
 
 Here is a quick example, on how to use `wp-scripts` tool in your project.
 
 Install the dependency:
 
 ```bash
-npm install --save-dev @wordpress/scripts
+npm install --save-dev @gutenberg/scripts
 ```
 
 You can then add a scripts section to your package.json file, for example:
@@ -49,13 +49,13 @@ You can then add a scripts section to your package.json file, for example:
 	}
 ```
 
-You can then use `npm run build` to build your project with all the default webpack settings already configured, likewise for formatting and linting. The `start` command is used for development mode. See the [`@wordpress/scripts` package](/packages/scripts/README.md) for full documentation.
+You can then use `npm run build` to build your project with all the default webpack settings already configured, likewise for formatting and linting. The `start` command is used for development mode. See the [`@gutenberg/scripts` package](/packages/scripts/README.md) for full documentation.
 
 For more info, see the [Getting Started with JavaScript tutorial](/docs/how-to-guides/javascript/js-build-setup.md) in the Block Editor Handbook.
 
 ## Block Editor
 
-The [`@wordpress/block-editor` package](https://developer.wordpress.org/block-editor/packages/packages-block-editor/) allows you to create and use standalone block editors.
+The [`@gutenberg/block-editor` package](https://developer.wordpress.org/block-editor/packages/packages-block-editor/) allows you to create and use standalone block editors.
 
 You can learn more by reading the [tutorial "Building a custom block editor"](/docs/how-to-guides/platform/custom-block-editor.md).
 

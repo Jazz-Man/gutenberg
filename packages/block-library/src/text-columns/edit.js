@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { PanelBody, RangeControl } from '@wordpress/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { PanelBody, RangeControl } from '@gutenberg/components';
 import {
 	BlockControls,
 	BlockAlignmentToolbar,
 	InspectorControls,
 	RichText,
 	useBlockProps,
-} from '@wordpress/block-editor';
-import deprecated from '@wordpress/deprecated';
+} from '@gutenberg/block-editor';
+import deprecated from '@gutenberg/deprecated';
 
 export default function TextColumnsEdit( { attributes, setAttributes } ) {
 	const { width, content, columns } = attributes;

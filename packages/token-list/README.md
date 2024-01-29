@@ -7,17 +7,17 @@ Constructable, plain JavaScript [DOMTokenList](https://developer.mozilla.org/en-
 Install the module
 
 ```bash
-npm install @wordpress/token-list
+npm install @gutenberg/token-list
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## Usage
 
 Construct a new token list, optionally with an initial value. A value with an interface matching DOMTokenList is returned.
 
 ```js
-import TokenList from '@wordpress/token-list';
+import TokenList from '@gutenberg/token-list';
 
 const tokens = new TokenList( 'abc def' );
 tokens.add( 'ghi' );
@@ -39,7 +39,7 @@ Note the following implementation divergences from the [specification](https://d
 
 While it could be used in one's implementation, this is not intended to serve as a polyfill for `Element#classList` or other instances of `DOMTokenList`.
 
-The implementation of the `DOMTokenList` interface provided through `@wordpress/token-list` is broadly compatible in environments supporting ES5 (IE8 and newer). That being said, due to its internal implementation leveraging arrays for `TokenList#entries`, `TokenList#forEach`, `TokenList#keys`, and `TokenList#values`, you may need to assure that these functions are supported or polyfilled if you intend to use them.
+The implementation of the `DOMTokenList` interface provided through `@gutenberg/token-list` is broadly compatible in environments supporting ES5 (IE8 and newer). That being said, due to its internal implementation leveraging arrays for `TokenList#entries`, `TokenList#forEach`, `TokenList#keys`, and `TokenList#values`, you may need to assure that these functions are supported or polyfilled if you intend to use them.
 
 -   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries#Browser_compatibility
 -   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values#Browser_compatibility

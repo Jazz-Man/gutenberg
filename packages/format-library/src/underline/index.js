@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { toggleFormat } from '@wordpress/rich-text';
+import { __ } from '@gutenberg/i18n';
+import { toggleFormat } from '@gutenberg/rich-text';
 import {
 	RichTextShortcut,
 	__unstableRichTextInputEvent,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 const name = 'core/underline';
 const title = __( 'Underline' );

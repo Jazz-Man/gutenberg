@@ -6,9 +6,9 @@ import fastDeepEqual from 'fast-deep-equal/es6';
 /**
  * WordPress dependencies
  */
-import { compose } from '@wordpress/compose';
-import { combineReducers } from '@wordpress/data';
-import { createUndoManager } from '@wordpress/undo-manager';
+import { compose } from '@gutenberg/compose';
+import { combineReducers } from '@gutenberg/data';
+import { createUndoManager } from '@gutenberg/undo-manager';
 
 /**
  * Internal dependencies

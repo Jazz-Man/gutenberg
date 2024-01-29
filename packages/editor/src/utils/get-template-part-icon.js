@@ -6,7 +6,7 @@ import {
 	footer as footerIcon,
 	sidebar as sidebarIcon,
 	symbolFilled as symbolFilledIcon,
-} from '@wordpress/icons';
+} from '@gutenberg/icons';
 /**
  * Helper function to retrieve the corresponding icon by name.
  *

@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/autop",
+	"name": "@gutenberg/autop",
 	"version": "3.49.0",
 	"description": "WordPress's automatic paragraph functions `autop` and `removep`.",
 	"author": "The WordPress Contributors",

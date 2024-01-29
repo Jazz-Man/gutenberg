@@ -5,9 +5,9 @@ This slot will add a new item to the More Tools & Options section.
 ## Example
 
 ```js
-import { registerPlugin } from '@wordpress/plugins';
-import { PluginMoreMenuItem } from '@wordpress/edit-post';
-import { image } from '@wordpress/icons';
+import { registerPlugin } from '@gutenberg/plugins';
+import { PluginMoreMenuItem } from '@gutenberg/edit-post';
+import { image } from '@gutenberg/icons';
 
 const MyButtonMoreMenuItemTest = () => (
 	<PluginMoreMenuItem

@@ -13,7 +13,7 @@ The rendered an [Icon](https://github.com/WordPress/gutenberg/tree/HEAD/packages
 Renders a block icon with default style.
 
 ```jsx
-import { BlockIcon } from '@wordpress/block-editor';
+import { BlockIcon } from '@gutenberg/block-editor';
 
 const MyBlockIcon = () => <BlockIcon icon={ icon } />;
 ```

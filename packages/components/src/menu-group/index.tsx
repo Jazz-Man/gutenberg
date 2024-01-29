@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Children } from '@wordpress/element';
-import { useInstanceId } from '@wordpress/compose';
+import { Children } from '@gutenberg/element';
+import { useInstanceId } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -19,7 +19,7 @@ import type { MenuGroupProps } from './types';
  * section.
  *
  * ```jsx
- * import { MenuGroup, MenuItem } from '@wordpress/components';
+ * import { MenuGroup, MenuItem } from '@gutenberg/components';
  *
  * const MyMenuGroup = () => (
  *   <MenuGroup label="Settings">

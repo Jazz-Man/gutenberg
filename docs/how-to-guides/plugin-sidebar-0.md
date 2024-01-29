@@ -16,7 +16,7 @@ The tutorial assumes you have an existing plugin setup and are ready to add PHP 
 
 ### Step 1: Get a sidebar up and running
 
-The first step is to tell the editor that there is a new plugin that will have its own sidebar. Use the [registerPlugin](/packages/plugins/README.md), [PluginSidebar](/packages/edit-post/README.md#pluginsidebar), and [createElement](/packages/element/README.md) utilities provided by the `@wordpress/plugins`, `@wordpress/edit-post`, and `react` packages, respectively.
+The first step is to tell the editor that there is a new plugin that will have its own sidebar. Use the [registerPlugin](/packages/plugins/README.md), [PluginSidebar](/packages/edit-post/README.md#pluginsidebar), and [createElement](/packages/element/README.md) utilities provided by the `@gutenberg/plugins`, `@gutenberg/edit-post`, and `react` packages, respectively.
 
 Add the following code to a JavaScript file called `plugin-sidebar.js` and save it within your plugin's directory:
 
@@ -76,7 +76,7 @@ After installing and activating this plugin, there is a new icon resembling a ta
 
 After the sidebar is up and running, the next step is to fill it up with the necessary components and basic styling.
 
-To visualize and edit the meta field value you'll use an input component. The `@wordpress/components` package contains many components available for you to reuse, and, specifically, the [TextControl](/packages/components/src/text-control/README.md) is aimed at creating an input field:
+To visualize and edit the meta field value you'll use an input component. The `@gutenberg/components` package contains many components available for you to reuse, and, specifically, the [TextControl](/packages/components/src/text-control/README.md) is aimed at creating an input field:
 
 ```js
 ( function ( wp ) {
@@ -111,7 +111,7 @@ To visualize and edit the meta field value you'll use an input component. The `@
 } )( window.wp );
 ```
 
-Update the `plugin-sidebar.js` with this new code. Notice that it uses a new utility called `wp.components` from the `@wordpress/components` package. Be sure to add `wp-components` to the dependencies in the `wp_register_script` function in the PHP file.
+Update the `plugin-sidebar.js` with this new code. Notice that it uses a new utility called `wp.components` from the `@gutenberg/components` package. Be sure to add `wp-components` to the dependencies in the `wp_register_script` function in the PHP file.
 
 The code introduces:
 
@@ -283,7 +283,7 @@ The `useSelect` function is used to fetch data when the component loads and will
 } )( window.wp );
 ```
 
-The `wp.data.useSelect` function is from the `@wordpress/data` package, so `wp-data` needs to be added as a dependency in the `wp_register_script` function in PHP.
+The `wp.data.useSelect` function is from the `@gutenberg/data` package, so `wp-data` needs to be added as a dependency in the `wp_register_script` function in PHP.
 
 Note: The `getEditedPostAttribute` call is used to retrieve the most recent values of the post, including user editions that haven't been yet saved.
 
@@ -367,7 +367,7 @@ When saving a post, you can confirm it is stored properly in the database by rel
 
 ## Additional resources
 
-Documentation for working with the [@wordpress/data package](/packages/data/README.md).
+Documentation for working with the [@gutenberg/data package](/packages/data/README.md).
 
 Functions used in this guide:
 

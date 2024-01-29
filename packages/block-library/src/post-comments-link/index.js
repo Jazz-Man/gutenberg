@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { postCommentsCount as icon } from '@wordpress/icons';
+import { postCommentsCount as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

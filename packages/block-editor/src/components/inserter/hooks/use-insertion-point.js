@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch, useSelect } from '@wordpress/data';
-import { isUnmodifiedDefaultBlock } from '@wordpress/blocks';
-import { _n, sprintf } from '@wordpress/i18n';
-import { speak } from '@wordpress/a11y';
-import { useCallback } from '@wordpress/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { isUnmodifiedDefaultBlock } from '@gutenberg/blocks';
+import { _n, sprintf } from '@gutenberg/i18n';
+import { speak } from '@gutenberg/a11y';
+import { useCallback } from '@gutenberg/element';
 
 /**
  * Internal dependencies

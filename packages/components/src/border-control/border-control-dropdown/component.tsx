@@ -6,8 +6,8 @@ import type { CSSProperties } from 'react';
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { closeSmall } from '@wordpress/icons';
+import { __, sprintf } from '@gutenberg/i18n';
+import { closeSmall } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

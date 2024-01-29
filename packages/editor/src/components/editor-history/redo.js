@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { __, isRTL } from '@wordpress/i18n';
-import { Button } from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { displayShortcut, isAppleOS } from '@wordpress/keycodes';
-import { redo as redoIcon, undo as undoIcon } from '@wordpress/icons';
-import { forwardRef } from '@wordpress/element';
+import { __, isRTL } from '@gutenberg/i18n';
+import { Button } from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { displayShortcut, isAppleOS } from '@gutenberg/keycodes';
+import { redo as redoIcon, undo as undoIcon } from '@gutenberg/icons';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

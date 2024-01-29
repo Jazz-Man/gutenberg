@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { FontSizePicker as BaseFontSizePicker } from '@wordpress/components';
+import { FontSizePicker as BaseFontSizePicker } from '@gutenberg/components';
 
 /**
  * Internal dependencies

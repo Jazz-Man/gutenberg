@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { useContext } from '@wordpress/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useContext } from '@gutenberg/element';
 
 /**
  * Internal dependencies

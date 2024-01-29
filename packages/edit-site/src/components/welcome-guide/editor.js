@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch, useSelect } from '@wordpress/data';
-import { Guide } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { createInterpolateElement } from '@wordpress/element';
-import { store as preferencesStore } from '@wordpress/preferences';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { Guide } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { createInterpolateElement } from '@gutenberg/element';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

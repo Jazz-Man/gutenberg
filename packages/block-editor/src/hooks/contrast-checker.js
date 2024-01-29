@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useState, useEffect } from '@wordpress/element';
+import { useState, useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies

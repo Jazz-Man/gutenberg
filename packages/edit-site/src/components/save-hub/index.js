@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { Button, __experimentalHStack as HStack } from '@wordpress/components';
-import { __, sprintf, _n } from '@wordpress/i18n';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { check } from '@wordpress/icons';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
-import { store as noticesStore } from '@wordpress/notices';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { Button, __experimentalHStack as HStack } from '@gutenberg/components';
+import { __, sprintf, _n } from '@gutenberg/i18n';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { check } from '@gutenberg/icons';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

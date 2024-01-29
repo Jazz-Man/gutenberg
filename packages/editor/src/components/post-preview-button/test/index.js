@@ -7,7 +7,7 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
+import { useSelect, useDispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies
@@ -16,8 +16,8 @@ import PostPreviewButton from '..';
 
 jest.useRealTimers();
 
-jest.mock( '@wordpress/data/src/components/use-select', () => jest.fn() );
-jest.mock( '@wordpress/data/src/components/use-dispatch/use-dispatch', () =>
+jest.mock( '@gutenberg/data/src/components/use-select', () => jest.fn() );
+jest.mock( '@gutenberg/data/src/components/use-dispatch/use-dispatch', () =>
 	jest.fn()
 );
 

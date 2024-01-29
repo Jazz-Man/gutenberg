@@ -1,5 +1,5 @@
 {
-	"extends": "@wordpress/npm-package-json-lint-config",
+	"extends": "@gutenberg/npm-package-json-lint-config",
 	"rules": {
 		"description-format": [
 			"error",

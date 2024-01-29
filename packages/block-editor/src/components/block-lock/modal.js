@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { useEffect, useState } from '@wordpress/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useEffect, useState } from '@gutenberg/element';
 import {
 	Button,
 	CheckboxControl,
@@ -11,11 +11,11 @@ import {
 	Icon,
 	Modal,
 	ToggleControl,
-} from '@wordpress/components';
-import { lock as lockIcon, unlock as unlockIcon } from '@wordpress/icons';
-import { useInstanceId } from '@wordpress/compose';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { getBlockType } from '@wordpress/blocks';
+} from '@gutenberg/components';
+import { lock as lockIcon, unlock as unlockIcon } from '@gutenberg/icons';
+import { useInstanceId } from '@gutenberg/compose';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { getBlockType } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

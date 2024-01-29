@@ -15,8 +15,8 @@ import { useNavigation } from '@react-navigation/native';
 /**
  * WordPress dependencies
  */
-import { Icon, chevronRight } from '@wordpress/icons';
-import { BottomSheet } from '@wordpress/components';
+import { Icon, chevronRight } from '@gutenberg/icons';
+import { BottomSheet } from '@gutenberg/components';
 
 const ExampleControl = () => {
 	const [ showSubSheet, setShowSubSheet ] = useState( false );

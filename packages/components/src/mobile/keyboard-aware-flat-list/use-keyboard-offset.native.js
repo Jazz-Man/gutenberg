@@ -7,7 +7,7 @@ import { Keyboard } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { useEffect, useCallback, useState, useRef } from '@wordpress/element';
+import { useEffect, useCallback, useState, useRef } from '@gutenberg/element';
 
 /**
  * Hook that adds Keyboard listeners to get the offset space

@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
+import apiFetch from '@gutenberg/api-fetch';
 import {
 	addQueryArgs,
 	prependHTTP,
 	isURL,
 	getProtocol,
 	isValidProtocol,
-} from '@wordpress/url';
+} from '@gutenberg/url';
 
 /**
  * A simple in-memory cache for requests.
@@ -32,7 +32,7 @@ const CACHE = new Map();
  * @param {Object?} options any options to pass to the underlying fetch.
  * @example
  * ```js
- * import { __experimentalFetchUrlData as fetchUrlData } from '@wordpress/core-data';
+ * import { __experimentalFetchUrlData as fetchUrlData } from '@gutenberg/core-data';
  *
  * //...
  *

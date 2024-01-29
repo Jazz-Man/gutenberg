@@ -8,9 +8,9 @@ import a11yPlugin from 'colord/plugins/a11y';
 /**
  * WordPress dependencies
  */
-import { SVG } from '@wordpress/components';
-import { useCallback, useMemo } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
+import { SVG } from '@gutenberg/components';
+import { useCallback, useMemo } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

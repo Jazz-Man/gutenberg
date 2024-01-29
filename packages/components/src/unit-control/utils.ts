@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
-import { Platform } from '@wordpress/element';
+import { __, _x } from '@gutenberg/i18n';
+import { Platform } from '@gutenberg/element';
 
 /**
  * Internal dependencies

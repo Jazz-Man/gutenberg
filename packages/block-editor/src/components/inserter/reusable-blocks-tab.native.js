@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { useMemo } from '@wordpress/element';
+import { useSelect } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

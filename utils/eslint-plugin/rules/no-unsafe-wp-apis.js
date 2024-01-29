@@ -7,7 +7,7 @@ module.exports = {
 				type: 'object',
 				additionalProperties: false,
 				patternProperties: {
-					'^@wordpress\\/[a-zA-Z0-9_-]+$': {
+					'^@gutenberg\\/[a-zA-Z0-9_-]+$': {
 						type: 'array',
 						uniqueItems: true,
 						minItems: 1,
@@ -52,7 +52,7 @@ function makeListener( { allowedImports, context } ) {
 		const sourceModule = node.source.value.trim();
 
 		// Ignore non-WordPress packages.
-		if ( ! sourceModule.startsWith( '@wordpress/' ) ) {
+		if ( ! sourceModule.startsWith( '@gutenberg/' ) ) {
 			return;
 		}
 

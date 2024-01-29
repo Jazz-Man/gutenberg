@@ -13,8 +13,8 @@ import userEvent from '@testing-library/user-event';
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
+import { useState } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies
@@ -37,7 +37,7 @@ const mockFetchSearchSuggestions = jest.fn();
  */
 let mockFetchRichUrlData;
 
-jest.mock( '@wordpress/data/src/components/use-select', () => {
+jest.mock( '@gutenberg/data/src/components/use-select', () => {
 	// This allows us to tweak the returned value on each test.
 	const mock = jest.fn();
 	return mock;
@@ -47,12 +47,12 @@ useSelect.mockImplementation( () => ( {
 	fetchRichUrlData: mockFetchRichUrlData,
 } ) );
 
-jest.mock( '@wordpress/data/src/components/use-dispatch', () => ( {
+jest.mock( '@gutenberg/data/src/components/use-dispatch', () => ( {
 	useDispatch: () => ( { saveEntityRecords: jest.fn() } ),
 } ) );
 
-jest.mock( '@wordpress/compose', () => ( {
-	...jest.requireActual( '@wordpress/compose' ),
+jest.mock( '@gutenberg/compose', () => ( {
+	...jest.requireActual( '@gutenberg/compose' ),
 	useReducedMotion: jest.fn( () => true ),
 } ) );
 
@@ -514,7 +514,7 @@ describe( 'Searching for a link', () => {
 		[ 'www.wordpress.org', 'link' ],
 		[ 'wordpress.org', 'link' ],
 		[ 'ftp://wordpress.org', 'link' ],
-		[ 'mailto:hello@wordpress.org', 'mailto' ],
+		[ 'mailto:hello@gutenberg.org', 'mailto' ],
 		[ 'tel:123456789', 'tel' ],
 		[ '#internal', 'internal' ],
 	] )(
@@ -902,8 +902,8 @@ describe( 'Manual link entry', () => {
 
 	describe( 'Alternative link protocols and formats', () => {
 		it.each( [
-			[ 'mailto:example123456@wordpress.org', 'mailto' ],
-			[ 'tel:example123456@wordpress.org', 'tel' ],
+			[ 'mailto:example123456@gutenberg.org', 'mailto' ],
+			[ 'tel:example123456@gutenberg.org', 'tel' ],
 			[ '#internal-anchor', 'internal' ],
 		] )(
 			'should recognise "%s" as a %s link and handle as manual entry by displaying a single suggestion',
@@ -1400,8 +1400,8 @@ describe( 'Creating Entities (eg: Posts, Pages)', () => {
 		it.each( [
 			'https://wordpress.org',
 			'www.wordpress.org',
-			'mailto:example123456@wordpress.org',
-			'tel:example123456@wordpress.org',
+			'mailto:example123456@gutenberg.org',
+			'tel:example123456@gutenberg.org',
 			'#internal-anchor',
 		] )(
 			'should not show option to "Create Page" when text is a form of direct entry (eg: %s)',

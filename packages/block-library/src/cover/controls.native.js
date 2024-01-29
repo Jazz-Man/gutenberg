@@ -18,12 +18,12 @@ import {
 	BottomSheet,
 	ToggleControl,
 	__experimentalUseCustomUnits as useCustomUnits,
-} from '@wordpress/components';
-import { plus } from '@wordpress/icons';
-import { useState, useCallback, useRef } from '@wordpress/element';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
-import { useSettings, MediaUpload } from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { plus } from '@gutenberg/icons';
+import { useState, useCallback, useRef } from '@gutenberg/element';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
+import { useSettings, MediaUpload } from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

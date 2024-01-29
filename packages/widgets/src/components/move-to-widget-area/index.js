@@ -7,9 +7,9 @@ import {
 	MenuItemsChoice,
 	ToolbarGroup,
 	ToolbarItem,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { moveTo } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { moveTo } from '@gutenberg/icons';
 
 export default function MoveToWidgetArea( {
 	currentWidgetAreaId,

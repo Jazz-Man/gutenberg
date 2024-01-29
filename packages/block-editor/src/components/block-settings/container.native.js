@@ -6,8 +6,8 @@ import {
 	ColorSettings,
 	FocalPointSettingsPanel,
 	LinkPickerScreen,
-} from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
+} from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

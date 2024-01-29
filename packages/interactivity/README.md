@@ -1,17 +1,17 @@
 # Interactivity API
 
 > **Warning**
-> **This package is only available in Gutenberg** at the moment and not in WordPress Core as it is still very experimental, and very likely to change. 
+> **This package is only available in Gutenberg** at the moment and not in WordPress Core as it is still very experimental, and very likely to change.
 
 
 > **Note**
 > This package enables the API shared at [Proposal: The Interactivity API – A better developer experience in building interactive blocks](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/). As part of an [Open Source project](https://developer.wordpress.org/block-editor/getting-started/faq/#the-gutenberg-project) we encourage participation in helping shape this API and the [discussions in GitHub](https://github.com/WordPress/gutenberg/discussions/categories/interactivity-api) is the best place to engage.
 
 This package can be tested, but it's still very experimental.
-The Interactivity API is [being used in some core blocks](https://github.com/search?q=repo%3AWordPress%2Fgutenberg%20%40wordpress%2Finteractivity&type=code) but its use is still very limited. 
+The Interactivity API is [being used in some core blocks](https://github.com/search?q=repo%3AWordPress%2Fgutenberg%20%40wordpress%2Finteractivity&type=code) but its use is still very limited.
 
 
-## Frequently Asked Questions 
+## Frequently Asked Questions
 
 At this point, some of the questions you have about the Interactivity API may be:
 
@@ -40,10 +40,10 @@ The [“Interactivity API” category](https://github.com/WordPress/gutenberg/di
 Install the module:
 
 ```bash
-npm install @wordpress/interactivity --save
+npm install @gutenberg/interactivity --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## Docs & Examples
 

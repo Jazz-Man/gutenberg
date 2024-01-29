@@ -6,14 +6,14 @@ import { render } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { speak } from '@wordpress/a11y';
+import { speak } from '@gutenberg/a11y';
 
 /**
  * Internal dependencies
  */
 import Notice from '../index';
 
-jest.mock( '@wordpress/a11y', () => ( { speak: jest.fn() } ) );
+jest.mock( '@gutenberg/a11y', () => ( { speak: jest.fn() } ) );
 const mockedSpeak = jest.mocked( speak );
 
 function getNoticeWrapper( container: HTMLElement ) {
@@ -91,7 +91,7 @@ describe( 'Notice', () => {
 		} );
 
 		it( 'should coerce a message to a string', () => {
-			// This test assumes that `@wordpress/a11y` is capable of handling
+			// This test assumes that `@gutenberg/a11y` is capable of handling
 			// markup strings appropriately.
 			render(
 				<Notice>

@@ -6,12 +6,12 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	useBlockProps,
 	BlockControls,
 	AlignmentControl,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 export default function TermDescriptionEdit( {
 	attributes,

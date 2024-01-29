@@ -49,10 +49,10 @@ See the [Commands Data](https://developer.wordpress.org/block-editor/reference-g
 Install the module
 
 ```bash
-npm install @wordpress/commands --save
+npm install @gutenberg/commands --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## API
 
@@ -69,8 +69,8 @@ _Related_
 _Usage_
 
 ```js
-import { store as commandsStore } from '@wordpress/commands';
-import { useDispatch } from '@wordpress/data';
+import { store as commandsStore } from '@gutenberg/commands';
+import { useDispatch } from '@gutenberg/data';
 ...
 const { open: openCommandCenter } = useDispatch( commandsStore );
 ```
@@ -86,8 +86,8 @@ Attach a command to the command palette. Used for static commands.
 _Usage_
 
 ```js
-import { useCommand } from '@wordpress/commands';
-import { plus } from '@wordpress/icons';
+import { useCommand } from '@gutenberg/commands';
+import { plus } from '@gutenberg/icons';
 
 useCommand( {
 	name: 'myplugin/my-command-name',
@@ -111,8 +111,8 @@ Attach a command loader to the command palette. Used for dynamic commands.
 _Usage_
 
 ```js
-import { useCommandLoader } from '@wordpress/commands';
-import { post, page, layout, symbolFilled } from '@wordpress/icons';
+import { useCommandLoader } from '@gutenberg/commands';
+import { post, page, layout, symbolFilled } from '@gutenberg/icons';
 
 const icons = {
     post,

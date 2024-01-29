@@ -6,13 +6,13 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Button, Panel, Slot, Fill } from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { check, starEmpty, starFilled } from '@wordpress/icons';
-import { useEffect, useRef } from '@wordpress/element';
-import { store as viewportStore } from '@wordpress/viewport';
-import { store as preferencesStore } from '@wordpress/preferences';
+import { Button, Panel, Slot, Fill } from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { check, starEmpty, starFilled } from '@gutenberg/icons';
+import { useEffect, useRef } from '@gutenberg/element';
+import { store as viewportStore } from '@gutenberg/viewport';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

@@ -6,21 +6,21 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { forwardRef, useState } from '@wordpress/element';
-import { decodeEntities } from '@wordpress/html-entities';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { ENTER } from '@wordpress/keycodes';
-import { pasteHandler } from '@wordpress/blocks';
+import { __ } from '@gutenberg/i18n';
+import { forwardRef, useState } from '@gutenberg/element';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { ENTER } from '@gutenberg/keycodes';
+import { pasteHandler } from '@gutenberg/blocks';
 import {
 	__unstableUseRichText as useRichText,
 	create,
 	toHTMLString,
 	insert,
-} from '@wordpress/rich-text';
-import { useMergeRefs } from '@wordpress/compose';
-import { __unstableStripHTML as stripHTML } from '@wordpress/dom';
+} from '@gutenberg/rich-text';
+import { useMergeRefs } from '@gutenberg/compose';
+import { __unstableStripHTML as stripHTML } from '@gutenberg/dom';
 
 /**
  * Internal dependencies

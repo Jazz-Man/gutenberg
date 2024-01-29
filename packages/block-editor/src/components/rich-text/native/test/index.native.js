@@ -13,18 +13,18 @@ import {
 /**
  * WordPress dependencies
  */
-import { select } from '@wordpress/data';
+import { select } from '@gutenberg/data';
 import {
 	store as richTextStore,
 	RichTextData,
 	__unstableCreateElement,
-} from '@wordpress/rich-text';
-import { coreBlocks } from '@wordpress/block-library';
+} from '@gutenberg/rich-text';
+import { coreBlocks } from '@gutenberg/block-library';
 import {
 	getBlockTypes,
 	setDefaultBlockName,
 	unregisterBlockType,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { getActiveFormat, getActiveObject } from '@wordpress/rich-text';
-import { useContext, useMemo } from '@wordpress/element';
+import { getActiveFormat, getActiveObject } from '@gutenberg/rich-text';
+import { useContext, useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

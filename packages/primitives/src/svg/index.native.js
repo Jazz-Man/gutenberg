@@ -7,8 +7,8 @@ import { Animated } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
-import { usePreferredColorScheme } from '@wordpress/compose';
+import { forwardRef } from '@gutenberg/element';
+import { usePreferredColorScheme } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

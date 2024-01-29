@@ -12,7 +12,7 @@ import {
 /**
  * WordPress dependencies
  */
-import { Component, createRef } from '@wordpress/element';
+import { Component, createRef } from '@gutenberg/element';
 import {
 	BACKSPACE,
 	DELETE,
@@ -23,7 +23,7 @@ import {
 	RIGHT,
 	SPACE,
 	UP,
-} from '@wordpress/keycodes';
+} from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

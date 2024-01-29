@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { forwardRef, useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+import { useInstanceId } from '@gutenberg/compose';
+import { forwardRef, useState } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

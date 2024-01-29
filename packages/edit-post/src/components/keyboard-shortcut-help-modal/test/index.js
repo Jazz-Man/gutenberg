@@ -6,7 +6,7 @@ import { render, screen } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { EditorKeyboardShortcutsRegister } from '@wordpress/editor';
+import { EditorKeyboardShortcutsRegister } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

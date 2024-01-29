@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { MenuItemsChoice, MenuGroup } from '@wordpress/components';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { store as editorStore } from '@wordpress/editor';
+import { __ } from '@gutenberg/i18n';
+import { MenuItemsChoice, MenuGroup } from '@gutenberg/components';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as keyboardShortcutsStore } from '@gutenberg/keyboard-shortcuts';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

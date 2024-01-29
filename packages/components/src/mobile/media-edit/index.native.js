@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { Picker } from '@wordpress/components';
+import { Component } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { Picker } from '@gutenberg/components';
 import {
 	requestMediaEditor,
 	mediaSources,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 
 export const MEDIA_TYPE_IMAGE = 'image';
 

@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
-import { Placeholder, TextControl, Button } from '@wordpress/components';
-import { useState } from '@wordpress/element';
-import { blockDefault } from '@wordpress/icons';
-import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
+import { __, _x } from '@gutenberg/i18n';
+import { Placeholder, TextControl, Button } from '@gutenberg/components';
+import { useState } from '@gutenberg/element';
+import { blockDefault } from '@gutenberg/icons';
+import { useBlockProps, useInnerBlocksProps } from '@gutenberg/block-editor';
 
 const ALLOWED_BLOCKS = [
 	'core/avatar',

@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/list-reusable-blocks",
+	"name": "@gutenberg/list-reusable-blocks",
 	"version": "4.26.0",
 	"description": "Adding Export/Import support to the reusable blocks listing.",
 	"author": "The WordPress Contributors",
@@ -26,12 +26,12 @@
 	"module": "build-module/index.js",
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/api-fetch": "workspace:*",
-		"@wordpress/blob": "workspace:*",
-		"@wordpress/components": "workspace:*",
-		"@wordpress/compose": "workspace:*",
-		"@wordpress/element": "workspace:*",
-		"@wordpress/i18n": "workspace:*",
+		"@gutenberg/api-fetch": "workspace:*",
+		"@gutenberg/blob": "workspace:*",
+		"@gutenberg/components": "workspace:*",
+		"@gutenberg/compose": "workspace:*",
+		"@gutenberg/element": "workspace:*",
+		"@gutenberg/i18n": "workspace:*",
 		"change-case": "^4.1.2"
 	},
 	"peerDependencies": {

@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Icon } from '@wordpress/components';
-import { blockDefault } from '@wordpress/icons';
-import { memo } from '@wordpress/element';
+import { Icon } from '@gutenberg/components';
+import { blockDefault } from '@gutenberg/icons';
+import { memo } from '@gutenberg/element';
 
 function BlockIcon( { icon, showColors = false, className, context } ) {
 	if ( icon?.src === 'block-default' ) {

@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { MenuItem, __experimentalText as Text } from '@wordpress/components';
-import { check } from '@wordpress/icons';
+import { MenuItem, __experimentalText as Text } from '@gutenberg/components';
+import { check } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

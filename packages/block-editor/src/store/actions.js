@@ -14,11 +14,11 @@ import {
 	synchronizeBlocksWithTemplate,
 	getBlockSupport,
 	isUnmodifiedDefaultBlock,
-} from '@wordpress/blocks';
-import { speak } from '@wordpress/a11y';
-import { __, _n, sprintf } from '@wordpress/i18n';
-import { create, insert, remove, toHTMLString } from '@wordpress/rich-text';
-import deprecated from '@wordpress/deprecated';
+} from '@gutenberg/blocks';
+import { speak } from '@gutenberg/a11y';
+import { __, _n, sprintf } from '@gutenberg/i18n';
+import { create, insert, remove, toHTMLString } from '@gutenberg/rich-text';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

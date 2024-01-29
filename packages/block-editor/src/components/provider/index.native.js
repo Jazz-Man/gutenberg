@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch } from '@wordpress/data';
-import { useEffect } from '@wordpress/element';
+import { useDispatch } from '@gutenberg/data';
+import { useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -12,7 +12,7 @@ import useBlockSync from './use-block-sync';
 import { store as blockEditorStore } from '../../store';
 import { BlockRefsProvider } from './block-refs-provider';
 
-/** @typedef {import('@wordpress/data').WPDataRegistry} WPDataRegistry */
+/** @typedef {import('@gutenberg/data').WPDataRegistry} WPDataRegistry */
 
 const BlockEditorProvider = withRegistryProvider( function ( props ) {
 	const { children, settings } = props;

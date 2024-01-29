@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/primitives",
+	"name": "@gutenberg/primitives",
 	"version": "3.47.0",
 	"description": "WordPress cross-platform primitives.",
 	"author": "The WordPress Contributors",
@@ -31,7 +31,7 @@
 	"types": "build-types",
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/element": "workspace:*",
+		"@gutenberg/element": "workspace:*",
 		"classnames": "^2.3.1"
 	},
 	"publishConfig": {

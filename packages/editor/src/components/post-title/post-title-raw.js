@@ -6,12 +6,12 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { TextareaControl } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { decodeEntities } from '@wordpress/html-entities';
-import { useSelect } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { useState, forwardRef } from '@wordpress/element';
+import { TextareaControl } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { useSelect } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { useState, forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

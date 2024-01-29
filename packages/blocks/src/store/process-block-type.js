@@ -7,8 +7,8 @@ import { isValidElementType } from 'react-is';
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
-import { applyFilters } from '@wordpress/hooks';
+import deprecated from '@gutenberg/deprecated';
+import { applyFilters } from '@gutenberg/hooks';
 
 /**
  * Internal dependencies

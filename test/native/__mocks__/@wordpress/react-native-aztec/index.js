@@ -6,12 +6,12 @@ import { TextInput } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { forwardRef, useImperativeHandle, useRef } from '@wordpress/element';
+import { forwardRef, useImperativeHandle, useRef } from '@gutenberg/element';
 
 // Preserve the mock of AztecInputState and AztecKeyCodes to be exported with the AztecView mock.
-const AztecInputState = jest.requireActual( '@wordpress/react-native-aztec' )
+const AztecInputState = jest.requireActual( '@gutenberg/react-native-aztec' )
 	.default.InputState;
-const AztecKeyCodes = jest.requireActual( '@wordpress/react-native-aztec' )
+const AztecKeyCodes = jest.requireActual( '@gutenberg/react-native-aztec' )
 	.default.KeyCodes;
 
 const RCTAztecView = ( { accessibilityLabel, text, ...rest }, ref ) => {

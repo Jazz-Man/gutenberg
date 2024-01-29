@@ -6,7 +6,7 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
+import { useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -10,8 +10,8 @@ import { motion, useReducedMotion } from 'framer-motion';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { useMemo } from '@wordpress/element';
+import { useInstanceId } from '@gutenberg/compose';
+import { useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -184,7 +184,7 @@ function ToggleGroupControlOptionBase(
  * import {
  *   __experimentalToggleGroupControl as ToggleGroupControl,
  *   __experimentalToggleGroupControlOptionBase as ToggleGroupControlOptionBase,
- * } from '@wordpress/components';
+ * } from '@gutenberg/components';
  *
  * function Example() {
  *   return (

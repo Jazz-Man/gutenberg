@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { Button, PanelBody } from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { __, sprintf } from '@wordpress/i18n';
-import { store as coreStore } from '@wordpress/core-data';
+import { Button, PanelBody } from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

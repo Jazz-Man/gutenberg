@@ -6,10 +6,10 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useResizeObserver } from '@wordpress/compose';
-import { SVG, Path } from '@wordpress/primitives';
-import { useEffect } from '@wordpress/element';
-import { speak } from '@wordpress/a11y';
+import { useResizeObserver } from '@gutenberg/compose';
+import { SVG, Path } from '@gutenberg/primitives';
+import { useEffect } from '@gutenberg/element';
+import { speak } from '@gutenberg/a11y';
 
 /**
  * Internal dependencies
@@ -34,8 +34,8 @@ const PlaceholderIllustration = (
  * Renders a placeholder. Normally used by blocks to render their empty state.
  *
  * ```jsx
- * import { Placeholder } from '@wordpress/components';
- * import { more } from '@wordpress/icons';
+ * import { Placeholder } from '@gutenberg/components';
+ * import { more } from '@gutenberg/icons';
  *
  * const MyPlaceholder = () => <Placeholder icon={ more } label="Placeholder" />;
  * ```

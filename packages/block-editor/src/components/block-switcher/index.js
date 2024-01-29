@@ -1,21 +1,21 @@
 /**
  * WordPress dependencies
  */
-import { __, _n, sprintf } from '@wordpress/i18n';
+import { __, _n, sprintf } from '@gutenberg/i18n';
 import {
 	DropdownMenu,
 	ToolbarButton,
 	ToolbarGroup,
 	ToolbarItem,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	switchToBlockType,
 	store as blocksStore,
 	isReusableBlock,
 	isTemplatePart,
-} from '@wordpress/blocks';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { copy } from '@wordpress/icons';
+} from '@gutenberg/blocks';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { copy } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

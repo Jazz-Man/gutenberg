@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { isEmpty, isPhrasingContent } from '@wordpress/dom';
+import { isEmpty, isPhrasingContent } from '@gutenberg/dom';
 
 export default function normaliseBlocks( HTML ) {
 	const decuDoc = document.implementation.createHTMLDocument( '' );

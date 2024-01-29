@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { createBlock, parse, serialize } from '@wordpress/blocks';
-import { addWidgetIdToBlock } from '@wordpress/widgets';
+import { createBlock, parse, serialize } from '@gutenberg/blocks';
+import { addWidgetIdToBlock } from '@gutenberg/widgets';
 
 /**
  * Converts a widget entity record into a block.

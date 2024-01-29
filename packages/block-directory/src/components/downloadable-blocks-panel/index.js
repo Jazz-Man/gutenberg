@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Spinner } from '@wordpress/components';
-import { compose } from '@wordpress/compose';
-import { store as coreStore } from '@wordpress/core-data';
-import { withSelect } from '@wordpress/data';
-import { getBlockType } from '@wordpress/blocks';
+import { __ } from '@gutenberg/i18n';
+import { Spinner } from '@gutenberg/components';
+import { compose } from '@gutenberg/compose';
+import { store as coreStore } from '@gutenberg/core-data';
+import { withSelect } from '@gutenberg/data';
+import { getBlockType } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

@@ -9,18 +9,18 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf, _x } from '@wordpress/i18n';
-import { resolveSelect } from '@wordpress/data';
-import { decodeEntities } from '@wordpress/html-entities';
+import { __, sprintf, _x } from '@gutenberg/i18n';
+import { resolveSelect } from '@gutenberg/data';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Internal dependencies
  */
-import { store as coreStore } from '@wordpress/core-data';
+import { store as coreStore } from '@gutenberg/core-data';
 
-/** @typedef {import('@wordpress/block-editor').InserterMediaRequest} InserterMediaRequest */
-/** @typedef {import('@wordpress/block-editor').InserterMediaItem} InserterMediaItem */
-/** @typedef {import('@wordpress/block-editor').InserterMediaCategory} InserterMediaCategory */
+/** @typedef {import('@gutenberg/block-editor').InserterMediaRequest} InserterMediaRequest */
+/** @typedef {import('@gutenberg/block-editor').InserterMediaItem} InserterMediaItem */
+/** @typedef {import('@gutenberg/block-editor').InserterMediaCategory} InserterMediaCategory */
 
 const getExternalLink = ( url, text ) =>
 	`<a ${ getExternalLinkAttributes( url ) }>${ text }</a>`;

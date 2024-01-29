@@ -12,8 +12,8 @@ import {
 	useSettings,
 	useMultipleOriginColorsAndGradients,
 	SETTINGS_DEFAULTS,
-} from '@wordpress/block-editor';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
+} from '@gutenberg/block-editor';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

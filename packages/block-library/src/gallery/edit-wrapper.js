@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { compose } from '@wordpress/compose';
-import { withNotices } from '@wordpress/components';
+import { compose } from '@gutenberg/compose';
+import { withNotices } from '@gutenberg/components';
 
 /**
  * Internal dependencies

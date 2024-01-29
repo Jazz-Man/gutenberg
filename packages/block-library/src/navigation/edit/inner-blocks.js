@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useEntityBlockEditor } from '@wordpress/core-data';
+import { useEntityBlockEditor } from '@gutenberg/core-data';
 import {
 	useInnerBlocksProps,
 	InnerBlocks,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
-import { useMemo } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
+import { useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

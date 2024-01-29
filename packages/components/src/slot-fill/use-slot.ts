@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useContext, useSyncExternalStore } from '@wordpress/element';
+import { useContext, useSyncExternalStore } from '@gutenberg/element';
 
 /**
  * Internal dependencies

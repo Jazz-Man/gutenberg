@@ -6,10 +6,10 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { RawHTML, useEffect, renderToString } from '@wordpress/element';
-import { speak } from '@wordpress/a11y';
-import { close } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { RawHTML, useEffect, renderToString } from '@gutenberg/element';
+import { speak } from '@gutenberg/a11y';
+import { close } from '@gutenberg/icons';
 
 /**
  * Internal dependencies
@@ -69,7 +69,7 @@ function getStatusLabel( status: NoticeProps[ 'status' ] ) {
  * `Notice` is a component used to communicate feedback to the user.
  *
  *```jsx
- * import { Notice } from `@wordpress/components`;
+ * import { Notice } from `@gutenberg/components`;
  *
  * const MyNotice = () => (
  *   <Notice status="error">An unknown error occurred.</Notice>

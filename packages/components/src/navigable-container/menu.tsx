@@ -6,7 +6,7 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -77,7 +77,7 @@ export function UnforwardedNavigableMenu(
  *  import {
  *    NavigableMenu,
  *    Button,
- *  } from '@wordpress/components';
+ *  } from '@gutenberg/components';
  *
  *  function onNavigate( index, target ) {
  *    console.log( `Navigates to ${ index }`, target );

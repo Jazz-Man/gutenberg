@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useRefEffect } from '@wordpress/compose';
-import { useSelect } from '@wordpress/data';
+import { useRefEffect } from '@gutenberg/compose';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

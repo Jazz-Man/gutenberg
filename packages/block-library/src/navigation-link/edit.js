@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { createBlock } from '@wordpress/blocks';
-import { useSelect, useDispatch } from '@wordpress/data';
+import { createBlock } from '@gutenberg/blocks';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	PanelBody,
 	TextControl,
@@ -15,9 +15,9 @@ import {
 	ToolbarButton,
 	Tooltip,
 	ToolbarGroup,
-} from '@wordpress/components';
-import { displayShortcut, isKeyboardEvent, ENTER } from '@wordpress/keycodes';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { displayShortcut, isKeyboardEvent, ENTER } from '@gutenberg/keycodes';
+import { __ } from '@gutenberg/i18n';
 import {
 	BlockControls,
 	InspectorControls,
@@ -26,17 +26,17 @@ import {
 	store as blockEditorStore,
 	getColorClassName,
 	useInnerBlocksProps,
-} from '@wordpress/block-editor';
-import { isURL, prependHTTP, safeDecodeURI } from '@wordpress/url';
-import { useState, useEffect, useRef } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { isURL, prependHTTP, safeDecodeURI } from '@gutenberg/url';
+import { useState, useEffect, useRef } from '@gutenberg/element';
 import {
 	placeCaretAtHorizontalEdge,
 	__unstableStripHTML as stripHTML,
-} from '@wordpress/dom';
-import { decodeEntities } from '@wordpress/html-entities';
-import { link as linkIcon, addSubmenu } from '@wordpress/icons';
-import { store as coreStore } from '@wordpress/core-data';
-import { useMergeRefs } from '@wordpress/compose';
+} from '@gutenberg/dom';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { link as linkIcon, addSubmenu } from '@gutenberg/icons';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useMergeRefs } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -48,7 +48,7 @@ import { getColors } from '../navigation/edit/utils';
 /**
  * A React hook to determine if it's dragging within the target element.
  *
- * @typedef {import('@wordpress/element').RefObject} RefObject
+ * @typedef {import('@gutenberg/element').RefObject} RefObject
  *
  * @param {RefObject<HTMLElement>} elementRef The target elementRef object.
  *

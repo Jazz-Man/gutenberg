@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { DropdownMenu, MenuItem, MenuGroup } from '@wordpress/components';
-import { moreVertical } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
-import { useState } from '@wordpress/element';
+import { DropdownMenu, MenuItem, MenuGroup } from '@gutenberg/components';
+import { moreVertical } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
+import { useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

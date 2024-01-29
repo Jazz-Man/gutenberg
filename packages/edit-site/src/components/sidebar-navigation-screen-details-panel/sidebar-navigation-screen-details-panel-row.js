@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __experimentalHStack as HStack } from '@wordpress/components';
+import { __experimentalHStack as HStack } from '@gutenberg/components';
 
 export default function SidebarNavigationScreenDetailsPanelRow( {
 	label,

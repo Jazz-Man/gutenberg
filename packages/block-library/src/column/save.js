@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useInnerBlocksProps, useBlockProps } from '@wordpress/block-editor';
+import { useInnerBlocksProps, useBlockProps } from '@gutenberg/block-editor';
 
 export default function save( { attributes } ) {
 	const { verticalAlignment, width } = attributes;

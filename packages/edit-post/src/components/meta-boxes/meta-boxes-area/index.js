@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useRef, useEffect } from '@wordpress/element';
-import { Spinner } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
+import { useRef, useEffect } from '@gutenberg/element';
+import { Spinner } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

@@ -65,9 +65,9 @@ Examples of styles that appear in both the theme and the editor include gallery 
 
 ## JavaScript
 
-JavaScript in Gutenberg uses modern language features of the [ECMAScript language specification](https://www.ecma-international.org/ecma-262/) as well as the [JSX language syntax extension](https://reactjs.org/docs/introducing-jsx.html). These are enabled through a combination of preset configurations, notably [`@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default) which is used as a preset in the project's [Babel](https://babeljs.io/) configuration.
+JavaScript in Gutenberg uses modern language features of the [ECMAScript language specification](https://www.ecma-international.org/ecma-262/) as well as the [JSX language syntax extension](https://reactjs.org/docs/introducing-jsx.html). These are enabled through a combination of preset configurations, notably [`@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default) which is used as a preset in the project's [Babel](https://babeljs.io/) configuration.
 
-While the [staged process](https://tc39.es/process-document/) for introducing a new JavaScript language feature offers an opportunity to use new features before they are considered complete, **the Gutenberg project and the `@wordpress/babel-preset-default` configuration will only target support for proposals which have reached Stage 4 ("Finished")**.
+While the [staged process](https://tc39.es/process-document/) for introducing a new JavaScript language feature offers an opportunity to use new features before they are considered complete, **the Gutenberg project and the `@gutenberg/babel-preset-default` configuration will only target support for proposals which have reached Stage 4 ("Finished")**.
 
 ### Imports
 
@@ -98,7 +98,7 @@ Example:
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 ```
 
 #### Internal dependencies
@@ -154,22 +154,22 @@ While a plugin-only API may often stabilize into a publicly-available API, there
 
 #### Private APIs
 
-Each `@wordpress` package wanting to privately access or expose a private APIs can
-do so by opting-in to `@wordpress/private-apis`:
+Each `@gutenberg` package wanting to privately access or expose a private APIs can
+do so by opting-in to `@gutenberg/private-apis`:
 
 ```js
 // In packages/block-editor/private-apis.js:
-import { __dangerousOptInToUnstableAPIsOnlyForCoreModules } from '@wordpress/private-apis';
+import { __dangerousOptInToUnstableAPIsOnlyForCoreModules } from '@gutenberg/private-apis';
 export const { lock, unlock } =
 	__dangerousOptInToUnstableAPIsOnlyForCoreModules(
 		'I know using unstable features means my theme or plugin will inevitably break in the next version of WordPress.',
-		'@wordpress/block-editor' // Name of the package calling __dangerousOptInToUnstableAPIsOnlyForCoreModules,
+		'@gutenberg/block-editor' // Name of the package calling __dangerousOptInToUnstableAPIsOnlyForCoreModules,
 		// (not the name of the package whose APIs you want to access)
 	);
 ```
 
-Each `@wordpress` package may only opt-in once. The process clearly communicates the extenders are not supposed
-to use it. This document will focus on the usage examples, but you can [find out more about the `@wordpress/private-apis` package in the its README.md](/packages/private-apis/README.md).
+Each `@gutenberg` package may only opt-in once. The process clearly communicates the extenders are not supposed
+to use it. This document will focus on the usage examples, but you can [find out more about the `@gutenberg/private-apis` package in the its README.md](/packages/private-apis/README.md).
 
 Once the package opted-in, you can use the `lock()` and `unlock()` utilities:
 
@@ -227,8 +227,8 @@ unlock( store ).registerPrivateSelectors( {
 
 ```js
 // In packages/package2/MyComponent.js:
-import { store } from '@wordpress/package1';
-import { useSelect } from '@wordpress/data';
+import { store } from '@gutenberg/package1';
+import { useSelect } from '@gutenberg/data';
 // The `unlock` function is exported from the internal private-apis.js file where
 // the opt-in function was called.
 import { unlock } from './lock-unlock';
@@ -269,7 +269,7 @@ lock( privateApis, {
 
 ```js
 // In packages/package2/index.js:
-import { privateApis } from '@wordpress/package1';
+import { privateApis } from '@gutenberg/package1';
 import { unlock } from './lock-unlock';
 
 const {
@@ -317,7 +317,7 @@ Then, export the stable function and `lock()` the unstable function
 inside it:
 
 ```js
-// In @wordpress/package1/index.js:
+// In @gutenberg/package1/index.js:
 import { lock } from './lock-unlock';
 
 // A private function contains all the logic
@@ -343,8 +343,8 @@ lock( privateApis, { privateValidateBlocks } );
 ```
 
 ```js
-// In @wordpress/package2/index.js:
-import { privateApis as package1PrivateApis } from '@wordpress/package1';
+// In @gutenberg/package2/index.js:
+import { privateApis as package1PrivateApis } from '@gutenberg/package1';
 import { unlock } from './lock-unlock';
 
 // The private function may be "unlocked" given the stable function:
@@ -360,7 +360,7 @@ Then, export the stable function and `lock()` the unstable function
 inside it:
 
 ```js
-// In @wordpress/package1/index.js:
+// In @gutenberg/package1/index.js:
 import { lock } from './lock-unlock';
 
 // The private component contains all the logic
@@ -385,8 +385,8 @@ lock( privateApis, { PrivateMyButton } );
 ```
 
 ```js
-// In @wordpress/package2/index.js:
-import { privateApis } from '@wordpress/package1';
+// In @gutenberg/package2/index.js:
+import { privateApis } from '@gutenberg/package1';
 import { unlock } from './lock-unlock';
 
 // The private component may be "unlocked" given the stable component:
@@ -398,7 +398,7 @@ export function MyComponent() {
 
 #### Private editor settings
 
-WordPress extenders cannot update the private block settings on their own. The `updateSettings()` actions of the `@wordpress/block-editor` store will filter out all the settings that are **not** a part of the public API. The only way to actually store them is via the private action `__experimentalUpdateSettings()`.
+WordPress extenders cannot update the private block settings on their own. The `updateSettings()` actions of the `@gutenberg/block-editor` store will filter out all the settings that are **not** a part of the public API. The only way to actually store them is via the private action `__experimentalUpdateSettings()`.
 
 To privatize a block editor setting, add it to the `privateSettings` list in [/packages/block-editor/src/store/actions.js](/packages/block-editor/src/store/actions.js):
 
@@ -535,7 +535,7 @@ It is preferred to implement all components as [function components](https://rea
 
 ## JavaScript documentation using JSDoc
 
-Gutenberg follows the [WordPress JavaScript Documentation Standards](https://make.wordpress.org/core/handbook/best-practices/inline-documentation-standards/javascript/), with additional guidelines relevant for its distinct use of [import semantics](/docs/contributors/code/coding-guidelines.md#imports) in organizing files, the [use of TypeScript tooling](/docs/contributors/code/testing-overview.md#javascript-testing) for types validation, and automated documentation generation using [`@wordpress/docgen`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/docgen).
+Gutenberg follows the [WordPress JavaScript Documentation Standards](https://make.wordpress.org/core/handbook/best-practices/inline-documentation-standards/javascript/), with additional guidelines relevant for its distinct use of [import semantics](/docs/contributors/code/coding-guidelines.md#imports) in organizing files, the [use of TypeScript tooling](/docs/contributors/code/testing-overview.md#javascript-testing) for types validation, and automated documentation generation using [`@gutenberg/docgen`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/docgen).
 
 For additional guidance, consult the following resources:
 
@@ -584,7 +584,7 @@ Use the [TypeScript `import` function](https://www.typescriptlang.org/docs/handb
 Since an imported type declaration can occupy an excess of the available line length and become verbose when referenced multiple times, you are encouraged to create an alias of the external type using a `@typedef` declaration at the top of the file, immediately following [the `import` groupings](/docs/contributors/code/coding-guidelines.md#imports).
 
 ```js
-/** @typedef {import('@wordpress/data').WPDataRegistry} WPDataRegistry */
+/** @typedef {import('@gutenberg/data').WPDataRegistry} WPDataRegistry */
 ```
 
 Note that all custom types defined in another file can be imported.
@@ -597,7 +597,7 @@ When considering which types should be made available from a WordPress package, 
 /** @typedef {import('./registry').WPDataRegistry} WPDataRegistry */
 ```
 
-In this snippet, the `@typedef` will support the usage of the previous example's `import('@wordpress/data')`.
+In this snippet, the `@typedef` will support the usage of the previous example's `import('@gutenberg/data')`.
 
 #### External dependencies
 
@@ -733,7 +733,7 @@ When documenting a [function type](https://github.com/WordPress/gutenberg/blob/a
 
 ### Documenting examples
 
-Because the documentation generated using the `@wordpress/docgen` tool will include `@example` tags if they are defined, it is considered a best practice to include usage examples for functions and components. This is especially important for documented members of a package's public API.
+Because the documentation generated using the `@gutenberg/docgen` tool will include `@example` tags if they are defined, it is considered a best practice to include usage examples for functions and components. This is especially important for documented members of a package's public API.
 
 When documenting an example, use the markdown <code>\`\`\`</code> code block to demarcate the beginning and end of the code sample. An example can span multiple lines.
 

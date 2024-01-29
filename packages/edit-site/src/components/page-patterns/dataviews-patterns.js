@@ -6,25 +6,25 @@ import {
 	Button,
 	Tooltip,
 	Flex,
-} from '@wordpress/components';
-import { getQueryArgs } from '@wordpress/url';
-import { __, _x } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { getQueryArgs } from '@gutenberg/url';
+import { __, _x } from '@gutenberg/i18n';
 import {
 	useState,
 	useMemo,
 	useCallback,
 	useId,
 	useEffect,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 import {
 	BlockPreview,
 	privateApis as blockEditorPrivateApis,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	DataViews,
 	sortByTextFields,
 	getPaginationResults,
-} from '@wordpress/dataviews';
+} from '@gutenberg/dataviews';
 import {
 	Icon,
 	header,
@@ -32,8 +32,8 @@ import {
 	symbolFilled as uncategorized,
 	symbol,
 	lockSmall,
-} from '@wordpress/icons';
-import { usePrevious } from '@wordpress/compose';
+} from '@gutenberg/icons';
+import { usePrevious } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

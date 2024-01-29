@@ -6,13 +6,13 @@ import memoize from 'memize';
 /**
  * WordPress dependencies
  */
-import { calendar as icon } from '@wordpress/icons';
-import { Disabled, Placeholder, Spinner } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import ServerSideRender from '@wordpress/server-side-render';
-import { useBlockProps } from '@wordpress/block-editor';
-import { store as coreStore } from '@wordpress/core-data';
-import { __ } from '@wordpress/i18n';
+import { calendar as icon } from '@gutenberg/icons';
+import { Disabled, Placeholder, Spinner } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import ServerSideRender from '@gutenberg/server-side-render';
+import { useBlockProps } from '@gutenberg/block-editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Returns the year and month of a specified date.
@@ -55,9 +55,9 @@ export default function CalendarEdit( { attributes } ) {
 
 		let _date;
 
-		// FIXME: @wordpress/block-library should not depend on @wordpress/editor.
+		// FIXME: @gutenberg/block-library should not depend on @gutenberg/editor.
 		// Blocks can be loaded into a *non-post* block editor.
-		// eslint-disable-next-line @wordpress/data-no-store-string-literals
+		// eslint-disable-next-line @gutenberg/data-no-store-string-literals
 		const editorSelectors = select( 'core/editor' );
 		if ( editorSelectors ) {
 			const postType = editorSelectors.getEditedPostAttribute( 'type' );

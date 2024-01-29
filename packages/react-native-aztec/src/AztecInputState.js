@@ -7,10 +7,10 @@ import TextInputState from 'react-native/Libraries/Components/TextInput/TextInpu
 /**
  * WordPress dependencies
  */
-import { debounce } from '@wordpress/compose';
-import { hideAndroidSoftKeyboard } from '@wordpress/react-native-bridge';
+import { debounce } from '@gutenberg/compose';
+import { hideAndroidSoftKeyboard } from '@gutenberg/react-native-bridge';
 
-/** @typedef {import('@wordpress/element').RefObject} RefObject */
+/** @typedef {import('@gutenberg/element').RefObject} RefObject */
 
 const focusChangeListeners = [];
 const caretChangeListeners = [];

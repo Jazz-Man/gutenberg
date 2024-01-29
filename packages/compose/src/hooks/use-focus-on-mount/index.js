@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useRef, useEffect, useCallback } from '@wordpress/element';
-import { focus } from '@wordpress/dom';
+import { useRef, useEffect, useCallback } from '@gutenberg/element';
+import { focus } from '@gutenberg/dom';
 
 /**
  * Hook used to focus the first tabbable element on mount.
@@ -12,7 +12,7 @@ import { focus } from '@wordpress/dom';
  *
  * @example
  * ```js
- * import { useFocusOnMount } from '@wordpress/compose';
+ * import { useFocusOnMount } from '@gutenberg/compose';
  *
  * const WithFocusOnMount = () => {
  *     const ref = useFocusOnMount()

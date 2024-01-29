@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useCallback, useRef } from '@wordpress/element';
-import { useDispatch } from '@wordpress/data';
-import { store as noticeStore } from '@wordpress/notices';
+import { useCallback, useRef } from '@gutenberg/element';
+import { useDispatch } from '@gutenberg/data';
+import { store as noticeStore } from '@gutenberg/notices';
 
 function useNavigationNotice( { name, message = '' } = {} ) {
 	const noticeRef = useRef();

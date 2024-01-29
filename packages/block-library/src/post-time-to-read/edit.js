@@ -6,16 +6,16 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { _x, _n, sprintf } from '@wordpress/i18n';
-import { useMemo } from '@wordpress/element';
+import { _x, _n, sprintf } from '@gutenberg/i18n';
+import { useMemo } from '@gutenberg/element';
 import {
 	AlignmentControl,
 	BlockControls,
 	useBlockProps,
-} from '@wordpress/block-editor';
-import { __unstableSerializeAndClean } from '@wordpress/blocks';
-import { useEntityProp, useEntityBlockEditor } from '@wordpress/core-data';
-import { count as wordCount } from '@wordpress/wordcount';
+} from '@gutenberg/block-editor';
+import { __unstableSerializeAndClean } from '@gutenberg/blocks';
+import { useEntityProp, useEntityBlockEditor } from '@gutenberg/core-data';
+import { count as wordCount } from '@gutenberg/wordcount';
 
 /**
  * Average reading rate - based on average taken from

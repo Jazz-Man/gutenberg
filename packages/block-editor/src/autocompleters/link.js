@@ -3,13 +3,13 @@
  */
 // Disable Reason: Needs to be refactored.
 // eslint-disable-next-line no-restricted-imports
-import apiFetch from '@wordpress/api-fetch';
-import { addQueryArgs } from '@wordpress/url';
-import { Icon, page, post } from '@wordpress/icons';
+import apiFetch from '@gutenberg/api-fetch';
+import { addQueryArgs } from '@gutenberg/url';
+import { Icon, page, post } from '@gutenberg/icons';
 
 const SHOWN_SUGGESTIONS = 10;
 
-/** @typedef {import('@wordpress/components').WPCompleter} WPCompleter */
+/** @typedef {import('@gutenberg/components').WPCompleter} WPCompleter */
 
 /**
  * Creates a suggestion list for links to posts or pages.

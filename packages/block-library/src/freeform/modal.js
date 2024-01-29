@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { BlockControls, store } from '@wordpress/block-editor';
+import { BlockControls, store } from '@gutenberg/block-editor';
 import {
 	ToolbarGroup,
 	ToolbarButton,
@@ -9,12 +9,12 @@ import {
 	Button,
 	Flex,
 	FlexItem,
-} from '@wordpress/components';
-import { useEffect, useState, RawHTML } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { fullscreen } from '@wordpress/icons';
-import { useViewportMatch } from '@wordpress/compose';
+} from '@gutenberg/components';
+import { useEffect, useState, RawHTML } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { fullscreen } from '@gutenberg/icons';
+import { useViewportMatch } from '@gutenberg/compose';
 
 function ModalAuxiliaryActions( { onClick, isModalFullScreen } ) {
 	// 'small' to match the rules in editor.scss.

@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { useEntityRecords, store as coreStore } from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useEntityRecords, store as coreStore } from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
 
-import { decodeEntities } from '@wordpress/html-entities';
+import { decodeEntities } from '@gutenberg/html-entities';
 import {
 	__experimentalItemGroup as ItemGroup,
 	Spinner,
-} from '@wordpress/components';
-import { navigation } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { navigation } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

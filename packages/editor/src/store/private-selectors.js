@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { createRegistrySelector } from '@wordpress/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { createRegistrySelector } from '@gutenberg/data';
 
 /**
  * Internal dependencies

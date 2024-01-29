@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { MenuGroup, MenuItem, VisuallyHidden } from '@wordpress/components';
-import { useState } from '@wordpress/element';
-import { __, _x } from '@wordpress/i18n';
-import { external } from '@wordpress/icons';
-import { MoreMenuDropdown } from '@wordpress/interface';
-import { PreferenceToggleMenuItem } from '@wordpress/preferences';
-import { displayShortcut } from '@wordpress/keycodes';
-import { useShortcut } from '@wordpress/keyboard-shortcuts';
-import { useViewportMatch } from '@wordpress/compose';
+import { MenuGroup, MenuItem, VisuallyHidden } from '@gutenberg/components';
+import { useState } from '@gutenberg/element';
+import { __, _x } from '@gutenberg/i18n';
+import { external } from '@gutenberg/icons';
+import { MoreMenuDropdown } from '@gutenberg/interface';
+import { PreferenceToggleMenuItem } from '@gutenberg/preferences';
+import { displayShortcut } from '@gutenberg/keycodes';
+import { useShortcut } from '@gutenberg/keyboard-shortcuts';
+import { useViewportMatch } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

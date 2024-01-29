@@ -6,11 +6,11 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { getBlockSupport } from '@wordpress/blocks';
-import { __experimentalHasSplitBorders as hasSplitBorders } from '@wordpress/components';
-import { Platform, useCallback, useMemo } from '@wordpress/element';
-import { addFilter } from '@wordpress/hooks';
-import { useSelect } from '@wordpress/data';
+import { getBlockSupport } from '@gutenberg/blocks';
+import { __experimentalHasSplitBorders as hasSplitBorders } from '@gutenberg/components';
+import { Platform, useCallback, useMemo } from '@gutenberg/element';
+import { addFilter } from '@gutenberg/hooks';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

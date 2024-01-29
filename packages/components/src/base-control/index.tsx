@@ -24,7 +24,7 @@ export { useBaseControlProps } from './hooks';
  * `BaseControl` is a component used to generate labels and help text for components handling user inputs.
  *
  * ```jsx
- * import { BaseControl, useBaseControlProps } from '@wordpress/components';
+ * import { BaseControl, useBaseControlProps } from '@gutenberg/components';
  *
  * // Render a `BaseControl` for a textarea input
  * const MyCustomTextareaControl = ({ children, ...baseProps }) => (
@@ -107,7 +107,7 @@ const UnconnectedBaseControl = (
  * otherwise use if the `label` prop was passed.
  *
  * @example
- * import { BaseControl } from '@wordpress/components';
+ * import { BaseControl } from '@gutenberg/components';
  *
  * const MyBaseControl = () => (
  * 	<BaseControl help="This button is already accessibly labeled.">

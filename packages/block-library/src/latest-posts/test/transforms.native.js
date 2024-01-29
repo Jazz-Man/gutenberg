@@ -11,7 +11,7 @@ import {
 /**
  * WordPress dependencies
  */
-import apiFetch from '@wordpress/api-fetch';
+import apiFetch from '@gutenberg/api-fetch';
 
 const block = 'Latest Posts';
 const initialHtml = `

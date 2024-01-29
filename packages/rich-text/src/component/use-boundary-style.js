@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useRef } from '@wordpress/element';
+import { useEffect, useRef } from '@gutenberg/element';
 
 /*
  * Calculates and renders the format boundary style when the active formats

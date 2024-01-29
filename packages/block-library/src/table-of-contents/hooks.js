@@ -6,11 +6,11 @@ import fastDeepEqual from 'fast-deep-equal/es6';
 /**
  * WordPress dependencies
  */
-import { useRegistry } from '@wordpress/data';
-import { __unstableStripHTML as stripHTML } from '@wordpress/dom';
-import { useEffect } from '@wordpress/element';
-import { addQueryArgs, removeQueryArgs } from '@wordpress/url';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { useRegistry } from '@gutenberg/data';
+import { __unstableStripHTML as stripHTML } from '@gutenberg/dom';
+import { useEffect } from '@gutenberg/element';
+import { addQueryArgs, removeQueryArgs } from '@gutenberg/url';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 function getLatestHeadings( select, clientId ) {
 	const {
@@ -20,12 +20,12 @@ function getLatestHeadings( select, clientId ) {
 		__experimentalGetGlobalBlocksByName: getGlobalBlocksByName,
 	} = select( blockEditorStore );
 
-	// FIXME: @wordpress/block-library should not depend on @wordpress/editor.
+	// FIXME: @gutenberg/block-library should not depend on @gutenberg/editor.
 	// Blocks can be loaded into a *non-post* block editor, so to avoid
-	// declaring @wordpress/editor as a dependency, we must access its
+	// declaring @gutenberg/editor as a dependency, we must access its
 	// store by string. When the store is not available, editorSelectors
 	// will be null, and the block's saved markup will lack permalinks.
-	// eslint-disable-next-line @wordpress/data-no-store-string-literals
+	// eslint-disable-next-line @gutenberg/data-no-store-string-literals
 	const permalink = select( 'core/editor' ).getPermalink() ?? null;
 
 	const isPaginated = getGlobalBlocksByName( 'core/nextpage' ).length !== 0;

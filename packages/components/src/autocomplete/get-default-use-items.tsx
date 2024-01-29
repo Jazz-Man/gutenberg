@@ -6,8 +6,8 @@ import removeAccents from 'remove-accents';
 /**
  * WordPress dependencies
  */
-import { debounce } from '@wordpress/compose';
-import { useLayoutEffect, useState } from '@wordpress/element';
+import { debounce } from '@gutenberg/compose';
+import { useLayoutEffect, useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	ToolbarButton,
 	PanelBody,
 	ToggleControl,
 	ToolbarGroup,
-} from '@wordpress/components';
-import { BlockControls, InspectorControls } from '@wordpress/block-editor';
-import { edit } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { BlockControls, InspectorControls } from '@gutenberg/block-editor';
+import { edit } from '@gutenberg/icons';
 
 function getResponsiveHelp( checked ) {
 	return checked

@@ -67,11 +67,11 @@ The hook `useEntityProp` can be used by the blocks to get or change meta values.
 Add this code to the JavaScript `src/index.js`:
 
 ```js
-import { registerBlockType } from '@wordpress/blocks';
-import { TextControl } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { useEntityProp } from '@wordpress/core-data';
-import { useBlockProps } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { TextControl } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { useEntityProp } from '@gutenberg/core-data';
+import { useBlockProps } from '@gutenberg/block-editor';
 
 registerBlockType( 'myguten/meta-block', {
 	edit: ( { setAttributes, attributes } ) => {

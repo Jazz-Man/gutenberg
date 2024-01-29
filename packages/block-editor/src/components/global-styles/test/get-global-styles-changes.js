@@ -10,7 +10,7 @@ import {
 	registerBlockType,
 	unregisterBlockType,
 	getBlockTypes,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 describe( 'getGlobalStylesChanges', () => {
 	beforeEach( () => {

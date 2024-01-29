@@ -6,14 +6,14 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useMergeRefs } from '@wordpress/compose';
-import { Popover } from '@wordpress/components';
+import { useMergeRefs } from '@gutenberg/compose';
+import { Popover } from '@gutenberg/components';
 import {
 	forwardRef,
 	useMemo,
 	useReducer,
 	useLayoutEffect,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 
 /**
  * Internal dependencies

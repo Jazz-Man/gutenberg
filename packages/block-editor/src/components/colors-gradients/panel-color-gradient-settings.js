@@ -9,9 +9,9 @@ import classnames from 'classnames';
 import {
 	__experimentalSpacer as Spacer,
 	__experimentalToolsPanel as ToolsPanel,
-} from '@wordpress/components';
-import { useRegistry } from '@wordpress/data';
-import { useInstanceId } from '@wordpress/compose';
+} from '@gutenberg/components';
+import { useRegistry } from '@gutenberg/data';
+import { useInstanceId } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

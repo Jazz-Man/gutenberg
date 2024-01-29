@@ -7,7 +7,7 @@ import { css } from '@emotion/react';
 /**
  * WordPress dependencies
  */
-import { useMemo, Children, cloneElement } from '@wordpress/element';
+import { useMemo, Children, cloneElement } from '@gutenberg/element';
 
 /**
  * Internal dependencies

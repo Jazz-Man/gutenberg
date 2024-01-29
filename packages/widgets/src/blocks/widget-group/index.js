@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { createBlock } from '@wordpress/blocks';
-import { group as icon } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { createBlock } from '@gutenberg/blocks';
+import { group as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

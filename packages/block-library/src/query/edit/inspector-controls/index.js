@@ -10,11 +10,11 @@ import {
 	Notice,
 	__experimentalToolsPanel as ToolsPanel,
 	__experimentalToolsPanelItem as ToolsPanelItem,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
-import { debounce } from '@wordpress/compose';
-import { useEffect, useState, useCallback } from '@wordpress/element';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
+import { debounce } from '@gutenberg/compose';
+import { useEffect, useState, useCallback } from '@gutenberg/element';
 
 /**
  * Internal dependencies

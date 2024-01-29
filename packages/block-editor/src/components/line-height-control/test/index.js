@@ -6,8 +6,8 @@ import { act, fireEvent, render, screen } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
-import { UP, DOWN } from '@wordpress/keycodes';
+import { useState } from '@gutenberg/element';
+import { UP, DOWN } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

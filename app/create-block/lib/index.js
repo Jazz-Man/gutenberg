@@ -50,13 +50,13 @@ program
 	.option( '--category <name>', 'category name for the block' )
 	.option(
 		'--wp-scripts',
-		'enable integration with `@wordpress/scripts` package'
+		'enable integration with `@gutenberg/scripts` package'
 	)
 	.option(
 		'--no-wp-scripts',
-		'disable integration with `@wordpress/scripts` package'
+		'disable integration with `@gutenberg/scripts` package'
 	)
-	.option( '--wp-env', 'enable integration with `@wordpress/env` package' )
+	.option( '--wp-env', 'enable integration with `@gutenberg/env` package' )
 	.option( '--no-plugin', 'scaffold only block files' )
 	.option( '--variant <variant>', 'the variant of the template to use' )
 	.action(

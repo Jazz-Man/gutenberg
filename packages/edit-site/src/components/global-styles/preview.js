@@ -5,18 +5,18 @@ import {
 	__unstableIframe as Iframe,
 	__unstableEditorStyles as EditorStyles,
 	privateApis as blockEditorPrivateApis,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	__unstableMotion as motion,
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	useThrottle,
 	useReducedMotion,
 	useResizeObserver,
-} from '@wordpress/compose';
-import { useLayoutEffect, useState, useMemo } from '@wordpress/element';
+} from '@gutenberg/compose';
+import { useLayoutEffect, useState, useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

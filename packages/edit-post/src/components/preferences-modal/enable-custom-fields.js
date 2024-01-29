@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { Button } from '@wordpress/components';
-import { withSelect } from '@wordpress/data';
-import { store as editorStore } from '@wordpress/editor';
-import { privateApis as preferencesPrivateApis } from '@wordpress/preferences';
-import { getPathAndQueryString } from '@wordpress/url';
+import { useState } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { Button } from '@gutenberg/components';
+import { withSelect } from '@gutenberg/data';
+import { store as editorStore } from '@gutenberg/editor';
+import { privateApis as preferencesPrivateApis } from '@gutenberg/preferences';
+import { getPathAndQueryString } from '@gutenberg/url';
 
 /**
  * Internal dependencies

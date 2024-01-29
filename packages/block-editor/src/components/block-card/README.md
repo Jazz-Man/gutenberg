@@ -13,8 +13,8 @@ In the editor, this component is displayed in two different places: in the block
 Renders a block card with default style.
 
 ```jsx
-import { BlockCard } from '@wordpress/block-editor';
-import { paragraph } from '@wordpress/icons';
+import { BlockCard } from '@gutenberg/block-editor';
+import { paragraph } from '@gutenberg/icons';
 
 const MyBlockCard = () => (
 	<BlockCard

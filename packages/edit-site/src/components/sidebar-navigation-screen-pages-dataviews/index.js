@@ -4,13 +4,13 @@
 import {
 	__experimentalTruncate as Truncate,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
-import { layout } from '@wordpress/icons';
-import { useMemo } from '@wordpress/element';
-import { useEntityRecords, store as coreStore } from '@wordpress/core-data';
-import { decodeEntities } from '@wordpress/html-entities';
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/components';
+import { layout } from '@gutenberg/icons';
+import { useMemo } from '@gutenberg/element';
+import { useEntityRecords, store as coreStore } from '@gutenberg/core-data';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

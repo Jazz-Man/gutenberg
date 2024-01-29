@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { addQueryArgs, hasQueryArg } from '@wordpress/url';
+import { addQueryArgs, hasQueryArg } from '@gutenberg/url';
 
 /**
  * @type {import('../types').APIFetchMiddleware}

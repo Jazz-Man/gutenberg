@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
+import { InspectorControls, useBlockProps } from '@gutenberg/block-editor';
 import {
 	Disabled,
 	PanelBody,
 	RangeControl,
 	ToggleControl,
-} from '@wordpress/components';
-import ServerSideRender from '@wordpress/server-side-render';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import ServerSideRender from '@gutenberg/server-side-render';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Minimum number of comments a user can show using this block.

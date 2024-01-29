@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { audio as icon } from '@wordpress/icons';
+import { audio as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

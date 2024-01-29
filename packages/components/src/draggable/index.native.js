@@ -16,7 +16,7 @@ import Animated, {
 /**
  * WordPress dependencies
  */
-import { createContext, useContext, useRef, useMemo } from '@wordpress/element';
+import { createContext, useContext, useRef, useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

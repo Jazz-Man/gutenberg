@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useState, useRef, useEffect } from '@wordpress/element';
-import isShallowEqual from '@wordpress/is-shallow-equal';
+import { useState, useRef, useEffect } from '@gutenberg/element';
+import isShallowEqual from '@gutenberg/is-shallow-equal';
 
 /**
  * Internal dependencies

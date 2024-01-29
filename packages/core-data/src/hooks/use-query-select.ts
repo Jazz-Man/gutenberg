@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies
@@ -43,8 +43,8 @@ interface QuerySelectResponse< Data > {
  *
  * @example
  * ```js
- * import { useQuerySelect } from '@wordpress/data';
- * import { store as coreDataStore } from '@wordpress/core-data';
+ * import { useQuerySelect } from '@gutenberg/data';
+ * import { store as coreDataStore } from '@gutenberg/core-data';
  *
  * function PageTitleDisplay( { id } ) {
  *   const { data: page, isResolving } = useQuerySelect( ( query ) => {

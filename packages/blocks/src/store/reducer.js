@@ -6,8 +6,8 @@ import { camelCase } from 'change-case';
 /**
  * WordPress dependencies
  */
-import { combineReducers } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
+import { combineReducers } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

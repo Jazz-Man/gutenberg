@@ -50,10 +50,10 @@ export default withPluginContext(
 Install the module
 
 ```bash
-npm install @wordpress/compose --save
+npm install @gutenberg/compose --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## API
 
@@ -187,7 +187,7 @@ In Dialogs/modals, the tabbing must be constrained to the content of the wrapper
 _Usage_
 
 ```js
-import { useConstrainedTabbing } from '@wordpress/compose';
+import { useConstrainedTabbing } from '@gutenberg/compose';
 
 const ConstrainedTabbingExample = () => {
 	const constrainedTabbingRef = useConstrainedTabbing();
@@ -272,7 +272,7 @@ If you can, prefer the use of the inert HTML attribute.
 _Usage_
 
 ```js
-import { useDisabled } from '@wordpress/compose';
+import { useDisabled } from '@gutenberg/compose';
 
 const DisabledExample = () => {
 	const disabledRef = useDisabled();
@@ -312,7 +312,7 @@ Hook used to focus the first tabbable element on mount.
 _Usage_
 
 ```js
-import { useFocusOnMount } from '@wordpress/compose';
+import { useFocusOnMount } from '@gutenberg/compose';
 
 const WithFocusOnMount = () => {
 	const ref = useFocusOnMount();
@@ -340,7 +340,7 @@ Adds the unmount behavior of returning focus to the element which had it previou
 _Usage_
 
 ```js
-import { useFocusReturn } from '@wordpress/compose';
+import { useFocusReturn } from '@gutenberg/compose';
 
 const WithFocusReturn = () => {
 	const ref = useFocusReturn();

@@ -6,8 +6,8 @@ import classNames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { DELETE, BACKSPACE } from '@wordpress/keycodes';
-import { useDispatch } from '@wordpress/data';
+import { DELETE, BACKSPACE } from '@gutenberg/keycodes';
+import { useDispatch } from '@gutenberg/data';
 
 import {
 	InspectorControls,
@@ -15,16 +15,16 @@ import {
 	URLInput,
 	useBlockProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useState } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { useState } from '@gutenberg/element';
 import {
 	Button,
 	PanelBody,
 	PanelRow,
 	TextControl,
-} from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { keyboardReturn } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { keyboardReturn } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

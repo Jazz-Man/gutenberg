@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
+import { __, _x } from '@gutenberg/i18n';
 import {
 	alignNone,
 	positionCenter,
@@ -9,7 +9,7 @@ import {
 	positionRight,
 	stretchFullWidth,
 	stretchWide,
-} from '@wordpress/icons';
+} from '@gutenberg/icons';
 
 export const BLOCK_ALIGNMENTS_CONTROLS = {
 	none: {

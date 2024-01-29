@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { compose } from '@wordpress/compose';
-import { Popover, Button } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { withSelect, withDispatch } from '@wordpress/data';
-import { useCallback, useRef } from '@wordpress/element';
-import { close } from '@wordpress/icons';
+import { compose } from '@gutenberg/compose';
+import { Popover, Button } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { withSelect, withDispatch } from '@gutenberg/data';
+import { useCallback, useRef } from '@gutenberg/element';
+import { close } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

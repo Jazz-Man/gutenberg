@@ -6,9 +6,9 @@ This is done by setting the `target` on `<PluginSidebarMoreMenuItem>` to match t
 ## Example
 
 ```js
-import { registerPlugin } from '@wordpress/plugins';
-import { PluginSidebar, PluginSidebarMoreMenuItem } from '@wordpress/edit-post';
-import { image } from '@wordpress/icons';
+import { registerPlugin } from '@gutenberg/plugins';
+import { PluginSidebar, PluginSidebarMoreMenuItem } from '@gutenberg/edit-post';
+import { image } from '@gutenberg/icons';
 
 const PluginSidebarMoreMenuItemTest = () => (
 	<>

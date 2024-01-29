@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useCallback, useMemo } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
+import { useCallback, useMemo } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
 import {
 	applyFormat,
 	removeFormat,
 	getActiveFormat,
 	useAnchor,
-} from '@wordpress/rich-text';
+} from '@gutenberg/rich-text';
 import {
 	ColorPalette,
 	getColorClassName,
@@ -16,12 +16,12 @@ import {
 	getColorObjectByAttributeValues,
 	store as blockEditorStore,
 	useCachedTruthy,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	Popover,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

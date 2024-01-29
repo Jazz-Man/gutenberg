@@ -15,12 +15,12 @@ import {
 	__experimentalRecursionProvider as RecursionProvider,
 	privateApis as blockEditorPrivateApis,
 	__experimentalUseResizeCanvas as useResizeCanvas,
-} from '@wordpress/block-editor';
-import { useEffect, useRef, useMemo } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import { parse } from '@wordpress/blocks';
-import { store as coreStore } from '@wordpress/core-data';
-import { useMergeRefs } from '@wordpress/compose';
+} from '@gutenberg/block-editor';
+import { useEffect, useRef, useMemo } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import { parse } from '@gutenberg/blocks';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useMergeRefs } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useState } from '@wordpress/element';
+import { useEffect, useState } from '@gutenberg/element';
 import {
 	BlockCanvas,
 	BlockEditorProvider,
 	BlockInspector,
-} from '@wordpress/block-editor';
-import { registerCoreBlocks } from '@wordpress/block-library';
-import '@wordpress/format-library';
+} from '@gutenberg/block-editor';
+import { registerCoreBlocks } from '@gutenberg/block-library';
+import '@gutenberg/format-library';
 
 /**
  * Internal dependencies

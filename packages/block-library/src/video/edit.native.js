@@ -6,19 +6,19 @@ import { View, TouchableWithoutFeedback, Text } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
+import { Component } from '@gutenberg/element';
 import {
 	mediaUploadSync,
 	requestImageFailedRetryDialog,
 	requestImageUploadCancelDialog,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 import {
 	Icon,
 	ToolbarButton,
 	ToolbarGroup,
 	PanelBody,
-} from '@wordpress/components';
-import { withPreferredColorScheme, compose } from '@wordpress/compose';
+} from '@gutenberg/components';
+import { withPreferredColorScheme, compose } from '@gutenberg/compose';
 import {
 	BlockCaption,
 	MediaPlaceholder,
@@ -31,13 +31,13 @@ import {
 	InspectorControls,
 	RichText,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { __, sprintf } from '@wordpress/i18n';
-import { isURL, getProtocol } from '@wordpress/url';
-import { doAction, hasAction } from '@wordpress/hooks';
-import { video as SvgIcon, replace } from '@wordpress/icons';
-import { withDispatch, withSelect } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
+} from '@gutenberg/block-editor';
+import { __, sprintf } from '@gutenberg/i18n';
+import { isURL, getProtocol } from '@gutenberg/url';
+import { doAction, hasAction } from '@gutenberg/hooks';
+import { video as SvgIcon, replace } from '@gutenberg/icons';
+import { withDispatch, withSelect } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

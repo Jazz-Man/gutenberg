@@ -11,7 +11,7 @@ const { v4: uuid } = require( 'uuid' );
 /**
  * WordPress dependencies
  */
-const { test, expect } = require( '@wordpress/e2e-test-utils-playwright' );
+const { test, expect } = require( '@gutenberg/e2e-test-utils-playwright' );
 
 test.use( {
 	coverBlockUtils: async ( { page }, use ) => {

@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-const { test, expect } = require( '@wordpress/e2e-test-utils-playwright' );
+const { test, expect } = require( '@gutenberg/e2e-test-utils-playwright' );
 
 /** @typedef {import('@playwright/test').Page} Page */
-/** @typedef {import('@wordpress/e2e-test-utils-playwright').Editor} Editor */
+/** @typedef {import('@gutenberg/e2e-test-utils-playwright').Editor} Editor */
 
 /**
  * Some tests in this file use the character `|` to represent the caret's position

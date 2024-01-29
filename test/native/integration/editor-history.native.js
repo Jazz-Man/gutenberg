@@ -21,7 +21,7 @@ import {
 import {
 	subscribeOnUndoPressed,
 	subscribeOnRedoPressed,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 
 setupCoreBlocks();
 

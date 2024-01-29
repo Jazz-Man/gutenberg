@@ -20,9 +20,9 @@ import {
 	Children,
 	useRef,
 	cloneElement,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

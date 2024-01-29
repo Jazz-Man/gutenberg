@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { store as interfaceStore } from '@wordpress/interface';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { privateApis as editorPrivateApis } from '@wordpress/editor';
+import { store as interfaceStore } from '@gutenberg/interface';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { privateApis as editorPrivateApis } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

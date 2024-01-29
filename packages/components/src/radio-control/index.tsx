@@ -7,7 +7,7 @@ import type { ChangeEvent } from 'react';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
+import { useInstanceId } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -21,8 +21,8 @@ import { VStack } from '../v-stack';
  * Render a user interface to select the user type using radio inputs.
  *
  * ```jsx
- * import { RadioControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { RadioControl } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const MyRadioControl = () => {
  *   const [ option, setOption ] = useState( 'a' );

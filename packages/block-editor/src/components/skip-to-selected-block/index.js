@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { withSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { Button } from '@wordpress/components';
+import { withSelect } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { Button } from '@gutenberg/components';
 
 /**
  * Internal dependencies

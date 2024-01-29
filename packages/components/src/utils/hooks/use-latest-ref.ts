@@ -6,8 +6,8 @@ import type { RefObject } from 'react';
 /**
  * WordPress dependencies
  */
-import { useRef } from '@wordpress/element';
-import { useIsomorphicLayoutEffect } from '@wordpress/compose';
+import { useRef } from '@gutenberg/element';
+import { useIsomorphicLayoutEffect } from '@gutenberg/compose';
 
 /**
  * Creates a reference for a prop. This is useful for preserving dependency

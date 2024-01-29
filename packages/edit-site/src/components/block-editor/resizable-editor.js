@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useState, useRef, useCallback } from '@wordpress/element';
-import { ResizableBox } from '@wordpress/components';
+import { useState, useRef, useCallback } from '@gutenberg/element';
+import { ResizableBox } from '@gutenberg/components';
 
 /**
  * Internal dependencies

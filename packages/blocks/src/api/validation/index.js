@@ -7,8 +7,8 @@ import fastDeepEqual from 'fast-deep-equal/es6';
 /**
  * WordPress dependencies
  */
-import deprecated from '@wordpress/deprecated';
-import { decodeEntities } from '@wordpress/html-entities';
+import deprecated from '@gutenberg/deprecated';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Internal dependencies

@@ -8,11 +8,11 @@ import {
 	SVG,
 	Path,
 	NavigableMenu,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { forwardRef } from '@wordpress/element';
-import { Icon, edit as editIcon } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { forwardRef } from '@gutenberg/element';
+import { Icon, edit as editIcon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

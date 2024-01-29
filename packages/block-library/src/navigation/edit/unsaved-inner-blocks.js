@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useInnerBlocksProps } from '@wordpress/block-editor';
-import { Disabled } from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
-import { useContext, useEffect, useRef, useMemo } from '@wordpress/element';
+import { useInnerBlocksProps } from '@gutenberg/block-editor';
+import { Disabled } from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
+import { useContext, useEffect, useRef, useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

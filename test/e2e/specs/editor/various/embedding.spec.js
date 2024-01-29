@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-const { test, expect } = require( '@wordpress/e2e-test-utils-playwright' );
+const { test, expect } = require( '@gutenberg/e2e-test-utils-playwright' );
 
 /** @typedef {import('@playwright/test').Page} Page */
-/** @typedef {import('@wordpress/e2e-test-utils-playwright').Editor} Editor */
+/** @typedef {import('@gutenberg/e2e-test-utils-playwright').Editor} Editor */
 
 const EMBED_URLS = [
 	'/oembed/1.0/proxy',

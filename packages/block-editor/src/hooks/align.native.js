@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { addFilter } from '@wordpress/hooks';
-import { hasBlockSupport } from '@wordpress/blocks';
-import { WIDE_ALIGNMENTS } from '@wordpress/components';
+import { addFilter } from '@gutenberg/hooks';
+import { hasBlockSupport } from '@gutenberg/blocks';
+import { WIDE_ALIGNMENTS } from '@gutenberg/components';
 
 const ALIGNMENTS = [ 'left', 'center', 'right' ];
 

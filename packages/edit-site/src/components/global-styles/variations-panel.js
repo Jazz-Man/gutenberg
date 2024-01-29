@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { store as blocksStore } from '@wordpress/blocks';
-import { useSelect } from '@wordpress/data';
-import { __experimentalItemGroup as ItemGroup } from '@wordpress/components';
+import { store as blocksStore } from '@gutenberg/blocks';
+import { useSelect } from '@gutenberg/data';
+import { __experimentalItemGroup as ItemGroup } from '@gutenberg/components';
 /**
  * Internal dependencies
  */

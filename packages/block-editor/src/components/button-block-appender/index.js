@@ -6,11 +6,11 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Button, Tooltip, VisuallyHidden } from '@wordpress/components';
-import { forwardRef } from '@wordpress/element';
-import { _x, sprintf } from '@wordpress/i18n';
-import { Icon, plus } from '@wordpress/icons';
-import deprecated from '@wordpress/deprecated';
+import { Button, Tooltip, VisuallyHidden } from '@gutenberg/components';
+import { forwardRef } from '@gutenberg/element';
+import { _x, sprintf } from '@gutenberg/i18n';
+import { Icon, plus } from '@gutenberg/icons';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

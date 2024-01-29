@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useState } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { useState } from '@gutenberg/element';
 import {
 	VisuallyHidden,
 	__experimentalConfirmDialog as ConfirmDialog,
-} from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __experimentalInspectorPopoverHeader as InspectorPopoverHeader } from '@wordpress/block-editor';
+} from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __experimentalInspectorPopoverHeader as InspectorPopoverHeader } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

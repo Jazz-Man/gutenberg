@@ -10,9 +10,9 @@ import {
 	__experimentalItem as Item,
 	__experimentalHStack as HStack,
 	FlexBlock,
-} from '@wordpress/components';
-import { isRTL } from '@wordpress/i18n';
-import { chevronRightSmall, chevronLeftSmall, Icon } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { isRTL } from '@gutenberg/i18n';
+import { chevronRightSmall, chevronLeftSmall, Icon } from '@gutenberg/icons';
 
 export default function SidebarNavigationItem( {
 	className,

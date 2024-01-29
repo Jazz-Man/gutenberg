@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { sprintf, _n } from '@wordpress/i18n';
-import { Button } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { backup } from '@wordpress/icons';
-import { addQueryArgs } from '@wordpress/url';
+import { sprintf, _n } from '@gutenberg/i18n';
+import { Button } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { backup } from '@gutenberg/icons';
+import { addQueryArgs } from '@gutenberg/url';
 
 /**
  * Internal dependencies

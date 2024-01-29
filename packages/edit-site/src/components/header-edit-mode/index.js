@@ -6,27 +6,27 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useViewportMatch, useReducedMotion } from '@wordpress/compose';
+import { useViewportMatch, useReducedMotion } from '@gutenberg/compose';
 import {
 	BlockToolbar,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
-import { useEffect, useRef, useState } from '@wordpress/element';
-import { PinnedItems } from '@wordpress/interface';
-import { __ } from '@wordpress/i18n';
-import { next, previous } from '@wordpress/icons';
+} from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
+import { useEffect, useRef, useState } from '@gutenberg/element';
+import { PinnedItems } from '@gutenberg/interface';
+import { __ } from '@gutenberg/i18n';
+import { next, previous } from '@gutenberg/icons';
 import {
 	Button,
 	__unstableMotion as motion,
 	Popover,
-} from '@wordpress/components';
-import { store as preferencesStore } from '@wordpress/preferences';
+} from '@gutenberg/components';
+import { store as preferencesStore } from '@gutenberg/preferences';
 import {
 	DocumentBar,
 	store as editorStore,
 	privateApis as editorPrivateApis,
-} from '@wordpress/editor';
+} from '@gutenberg/editor';
 
 /**
  * Internal dependencies

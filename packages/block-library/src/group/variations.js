@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
-import { group, row, stack, grid } from '@wordpress/icons';
+import { __, _x } from '@gutenberg/i18n';
+import { group, row, stack, grid } from '@gutenberg/icons';
 
 const variations = [
 	{

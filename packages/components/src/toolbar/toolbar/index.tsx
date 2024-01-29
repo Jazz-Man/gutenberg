@@ -7,8 +7,8 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { forwardRef, useMemo } from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
+import { forwardRef, useMemo } from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies
@@ -84,8 +84,8 @@ function UnforwardedToolbar(
  * To add controls, simply pass `ToolbarButton` components as children.
  *
  * ```jsx
- * import { Toolbar, ToolbarButton } from '@wordpress/components';
- * import { formatBold, formatItalic, link } from '@wordpress/icons';
+ * import { Toolbar, ToolbarButton } from '@gutenberg/components';
+ * import { formatBold, formatItalic, link } from '@gutenberg/icons';
  *
  * function MyToolbar() {
  *   return (

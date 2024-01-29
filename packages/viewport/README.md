@@ -7,10 +7,10 @@ Viewport is a module for responding to changes in the browser viewport size. It 
 Install the module
 
 ```bash
-npm install @wordpress/viewport --save
+npm install @gutenberg/viewport --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## Usage
 
@@ -30,8 +30,8 @@ The standard set of breakpoint thresholds is as follows:
 The Viewport module registers itself under the `core/viewport` data namespace and is exposed from the package as `store`.
 
 ```js
-import { select } from '@wordpress/data';
-import { store } from '@wordpress/viewport';
+import { select } from '@gutenberg/data';
+import { store } from '@gutenberg/viewport';
 
 const isSmall = select( store ).isViewportMatch( '< medium' );
 ```
@@ -39,8 +39,8 @@ const isSmall = select( store ).isViewportMatch( '< medium' );
 The `isViewportMatch` selector accepts a single string argument `query`. It consists of an optional operator and breakpoint name, separated with a space. The operator can be `<` or `>=`, defaulting to `>=`.
 
 ```js
-import { select } from '@wordpress/data';
-import { store } from '@wordpress/viewport';
+import { select } from '@gutenberg/data';
+import { store } from '@gutenberg/viewport';
 
 const { isViewportMatch } = select( store );
 const isSmall = isViewportMatch( '< medium' );

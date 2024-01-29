@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useRef, useEffect } from '@wordpress/element';
-import { Spinner, SearchControl } from '@wordpress/components';
-import { focus } from '@wordpress/dom';
-import { __ } from '@wordpress/i18n';
-import { useDebouncedInput } from '@wordpress/compose';
+import { useRef, useEffect } from '@gutenberg/element';
+import { Spinner, SearchControl } from '@gutenberg/components';
+import { focus } from '@gutenberg/dom';
+import { __ } from '@gutenberg/i18n';
+import { useDebouncedInput } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

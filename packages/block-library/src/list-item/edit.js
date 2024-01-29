@@ -7,17 +7,17 @@ import {
 	useInnerBlocksProps,
 	BlockControls,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { isRTL, __ } from '@wordpress/i18n';
-import { ToolbarButton } from '@wordpress/components';
+} from '@gutenberg/block-editor';
+import { isRTL, __ } from '@gutenberg/i18n';
+import { ToolbarButton } from '@gutenberg/components';
 import {
 	formatOutdent,
 	formatOutdentRTL,
 	formatIndentRTL,
 	formatIndent,
-} from '@wordpress/icons';
-import { useMergeRefs } from '@wordpress/compose';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/icons';
+import { useMergeRefs } from '@gutenberg/compose';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

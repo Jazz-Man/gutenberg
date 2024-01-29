@@ -20,7 +20,7 @@ A `MenuGroup` should be used to indicate that two or more individual MenuItems a
 ### Usage
 
 ```jsx
-import { MenuGroup, MenuItem } from '@wordpress/components';
+import { MenuGroup, MenuItem } from '@gutenberg/components';
 
 const MyMenuGroup = () => (
 	<MenuGroup label="Settings">

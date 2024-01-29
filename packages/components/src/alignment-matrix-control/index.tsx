@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __, isRTL } from '@wordpress/i18n';
-import { useInstanceId } from '@wordpress/compose';
+import { __, isRTL } from '@gutenberg/i18n';
+import { useInstanceId } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -25,8 +25,8 @@ import type { AlignmentMatrixControlProps } from './types';
  * AlignmentMatrixControl components enable adjustments to horizontal and vertical alignments for UI.
  *
  * ```jsx
- * import { __experimentalAlignmentMatrixControl as AlignmentMatrixControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { __experimentalAlignmentMatrixControl as AlignmentMatrixControl } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const Example = () => {
  * 	const [ alignment, setAlignment ] = useState( 'center center' );

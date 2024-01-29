@@ -3,20 +3,20 @@
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Imports the InspectorControls component, which is used to wrap
  * the block's custom controls that will appear in in the Settings
  * Sidebar when the block is selected.
- * 
- * Also imports the React hook that is used to mark the block wrapper 
+ *
+ * Also imports the React hook that is used to mark the block wrapper
  * element. It provides all the necessary props like the class name.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#inspectorcontrols
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
+import { InspectorControls, useBlockProps } from '@gutenberg/block-editor';
 
 /**
  * Imports the necessary components that will be used to create
@@ -26,7 +26,7 @@ import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
  * @see https://developer.wordpress.org/block-editor/reference-guides/components/text-control/
  * @see https://developer.wordpress.org/block-editor/reference-guides/components/toggle-control/
  */
-import { PanelBody, TextControl, ToggleControl } from '@wordpress/components';
+import { PanelBody, TextControl, ToggleControl } from '@gutenberg/components';
 
 /**
  * Imports the useEffect React Hook. This is used to set an attribute when the

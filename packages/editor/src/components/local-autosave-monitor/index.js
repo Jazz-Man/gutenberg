@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { useCallback, useEffect, useRef } from '@wordpress/element';
-import { ifCondition, usePrevious } from '@wordpress/compose';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { parse } from '@wordpress/blocks';
-import { store as noticesStore } from '@wordpress/notices';
+import { useCallback, useEffect, useRef } from '@gutenberg/element';
+import { ifCondition, usePrevious } from '@gutenberg/compose';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { parse } from '@gutenberg/blocks';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

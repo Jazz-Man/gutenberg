@@ -15,9 +15,9 @@ import {
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { withPreferredColorScheme } from '@wordpress/compose';
-import { __, sprintf } from '@wordpress/i18n';
+import { Component } from '@gutenberg/element';
+import { withPreferredColorScheme } from '@gutenberg/compose';
+import { __, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

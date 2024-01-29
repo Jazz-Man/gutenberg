@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { InnerBlocks, RichText } from '@wordpress/block-editor';
+import { InnerBlocks, RichText } from '@gutenberg/block-editor';
 
 export default function save( { attributes } ) {
 	return (

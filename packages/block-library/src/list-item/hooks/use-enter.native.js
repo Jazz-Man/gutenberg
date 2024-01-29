@@ -5,10 +5,10 @@ import {
 	createBlock,
 	getDefaultBlockName,
 	cloneBlock,
-} from '@wordpress/blocks';
-import { useRef } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+} from '@gutenberg/blocks';
+import { useRef } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

@@ -5,12 +5,12 @@ import {
 	PostTextEditor,
 	PostTitleRaw,
 	store as editorStore,
-} from '@wordpress/editor';
-import { Button } from '@wordpress/components';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { displayShortcut } from '@wordpress/keycodes';
-import { useEffect, useRef } from '@wordpress/element';
+} from '@gutenberg/editor';
+import { Button } from '@gutenberg/components';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { displayShortcut } from '@gutenberg/keycodes';
+import { useEffect, useRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { switchToBlockType } from '@wordpress/blocks';
+import { switchToBlockType } from '@gutenberg/blocks';
 
 function convertBlockToList( block ) {
 	const list = switchToBlockType( block, 'core/list' );

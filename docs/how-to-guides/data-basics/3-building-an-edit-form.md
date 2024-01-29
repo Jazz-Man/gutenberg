@@ -9,8 +9,8 @@ This part is about adding an *Edit* feature to our app. Here's a glimpse of what
 We can't have an *Edit* form without an *Edit* button, so let's start by adding one to our `PagesList` component:
 
 ```js
-import { Button } from '@wordpress/components';
-import { decodeEntities } from '@wordpress/html-entities';
+import { Button } from '@gutenberg/components';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 const PageEditButton = () => (
 	<Button variant="primary">
@@ -58,7 +58,7 @@ The only change in `PagesList` is the additional column labeled _Actions_:
 Our button looks nice but doesn't do anything yet. To display an edit form, we need to have one first – let's create it:
 
 ```js
-import { Button, TextControl } from '@wordpress/components';
+import { Button, TextControl } from '@gutenberg/components';
 function EditPageForm( { pageId, onCancel, onSaveFinished } ) {
 	return (
 		<div className="my-gutenberg-form">
@@ -82,7 +82,7 @@ function EditPageForm( { pageId, onCancel, onSaveFinished } ) {
 Now let's make the button display the form we just created. As this tutorial is not focused on web design, we will wire the two together using a component that requires the least amount of code: [`Modal`](https://developer.wordpress.org/block-editor/reference-guides/components/modal/). Let's update `PageEditButton` accordingly:
 
 ```js
-import { Button, Modal, TextControl } from '@wordpress/components';
+import { Button, Modal, TextControl } from '@gutenberg/components';
 
 function PageEditButton({ pageId }) {
 	const [ isOpen, setOpen ] = useState( false );
@@ -220,7 +220,7 @@ So why is the `content` of an Edited Entity Record a string? Since Javascript is
 We can now update `EditPageForm` accordingly. We can access the actions using the [`useDispatch`](/packages/data/README.md#usedispatch) hook similarly to how we use `useSelect` to access selectors:
 
 ```js
-import { useDispatch } from '@wordpress/data';
+import { useDispatch } from '@gutenberg/data';
 
 function EditPageForm( { pageId, onCancel, onSaveFinished } ) {
 	const page = useSelect(
@@ -441,7 +441,7 @@ function EditPageForm( { pageId, onSaveFinished } ) {
 
 Note that we disable the _save_ button when there are no edits and when the page is currently being saved. This is to prevent the user from accidentally pressing the button twice.
 
-Also, interrupting a *save* in progress is not supported by `@wordpress/data` so we also conditionally disabled the _cancel_ button.
+Also, interrupting a *save* in progress is not supported by `@gutenberg/data` so we also conditionally disabled the _cancel_ button.
 
 Here's what it looks like in action:
 
@@ -453,8 +453,8 @@ Here's what it looks like in action:
 All the pieces are in place, great! Here’s everything we built in this chapter in one place:
 
 ```js
-import { useDispatch } from '@wordpress/data';
-import { Button, Modal, TextControl } from '@wordpress/components';
+import { useDispatch } from '@gutenberg/data';
+import { Button, Modal, TextControl } from '@gutenberg/components';
 
 function PageEditButton( { pageId } ) {
 	const [ isOpen, setOpen ] = useState( false );

@@ -4,7 +4,7 @@
 import {
 	subscribeParentGetHtml,
 	provideToNative_Html as provideToNativeHtml,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 
 // Set up the mocks for getting the HTML output of the editor
 let triggerHtmlSerialization;

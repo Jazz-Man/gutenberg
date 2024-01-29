@@ -5,9 +5,9 @@ import {
 	__experimentalToggleGroupControl as ToggleGroupControl,
 	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
 	__experimentalUnitControl as UnitControl,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useEffect } from '@wordpress/element';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useEffect } from '@gutenberg/element';
 
 function helpText( selfStretch, parentLayout ) {
 	const { orientation = 'horizontal' } = parentLayout;

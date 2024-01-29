@@ -2,7 +2,7 @@
  * WordPress dependencies
  */
 
-import { Slot } from '@wordpress/components';
+import { Slot } from '@gutenberg/components';
 
 const FormatToolbar = () => {
 	return (

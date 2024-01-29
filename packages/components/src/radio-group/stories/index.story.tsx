@@ -12,7 +12,7 @@ import { Radio } from '../radio';
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
+import { useState } from '@gutenberg/element';
 
 const meta: Meta< typeof RadioGroup > = {
 	title: 'Components (Deprecated)/RadioGroup',

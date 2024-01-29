@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { __experimentalHeading as Heading } from '@wordpress/components';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { __experimentalHeading as Heading } from '@gutenberg/components';
 
 /**
  * Internal dependencies

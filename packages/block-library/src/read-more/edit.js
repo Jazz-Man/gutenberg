@@ -5,10 +5,10 @@ import {
 	InspectorControls,
 	RichText,
 	useBlockProps,
-} from '@wordpress/block-editor';
-import { ToggleControl, PanelBody } from '@wordpress/components';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { ToggleControl, PanelBody } from '@gutenberg/components';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
+import { __ } from '@gutenberg/i18n';
 
 export default function ReadMore( {
 	attributes: { content, linkTarget },

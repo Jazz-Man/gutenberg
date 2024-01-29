@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { createRegistry } from '@wordpress/data';
-import { store as blocksStore } from '@wordpress/blocks';
-import { store as noticesStore } from '@wordpress/notices';
-import apiFetch from '@wordpress/api-fetch';
+import { createRegistry } from '@gutenberg/data';
+import { store as blocksStore } from '@gutenberg/blocks';
+import { store as noticesStore } from '@gutenberg/notices';
+import apiFetch from '@gutenberg/api-fetch';
 
 /**
  * Internal dependencies
@@ -12,7 +12,7 @@ import apiFetch from '@wordpress/api-fetch';
 import { loadAssets } from '../load-assets';
 import { store as blockDirectoryStore } from '..';
 
-jest.mock( '@wordpress/api-fetch', () => ( {
+jest.mock( '@gutenberg/api-fetch', () => ( {
 	__esModule: true,
 	default: jest.fn(),
 } ) );

@@ -11,12 +11,12 @@ import {
 	InnerBlocks,
 	JustifyContentControl,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { createBlock, getBlockSupport } from '@wordpress/blocks';
-import { debounce, useResizeObserver } from '@wordpress/compose';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useState, useEffect, useRef, useCallback } from '@wordpress/element';
-import { alignmentHelpers } from '@wordpress/components';
+} from '@gutenberg/block-editor';
+import { createBlock, getBlockSupport } from '@gutenberg/blocks';
+import { debounce, useResizeObserver } from '@gutenberg/compose';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useState, useEffect, useRef, useCallback } from '@gutenberg/element';
+import { alignmentHelpers } from '@gutenberg/components';
 
 /**
  * Internal dependencies

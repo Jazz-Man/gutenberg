@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { renderToString } from '@wordpress/element';
-import { Button, Path, SVG, VisuallyHidden } from '@wordpress/components';
-import { __, _x } from '@wordpress/i18n';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { applyFilters } from '@wordpress/hooks';
-import { store as coreStore } from '@wordpress/core-data';
+import { renderToString } from '@gutenberg/element';
+import { Button, Path, SVG, VisuallyHidden } from '@gutenberg/components';
+import { __, _x } from '@gutenberg/i18n';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { applyFilters } from '@gutenberg/hooks';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

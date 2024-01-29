@@ -6,22 +6,22 @@ import {
 	unstable__bootstrapServerSideBlockDefinitions, // eslint-disable-line camelcase
 	setFreeformContentHandlerName,
 	store as blocksStore,
-} from '@wordpress/blocks';
-import { dispatch } from '@wordpress/data';
-import deprecated from '@wordpress/deprecated';
-import { createRoot } from '@wordpress/element';
+} from '@gutenberg/blocks';
+import { dispatch } from '@gutenberg/data';
+import deprecated from '@gutenberg/deprecated';
+import { createRoot } from '@gutenberg/element';
 import {
 	registerCoreBlocks,
 	__experimentalGetCoreBlocks,
 	__experimentalRegisterExperimentalCoreBlocks,
-} from '@wordpress/block-library';
-import { __experimentalFetchLinkSuggestions as fetchLinkSuggestions } from '@wordpress/core-data';
+} from '@gutenberg/block-library';
+import { __experimentalFetchLinkSuggestions as fetchLinkSuggestions } from '@gutenberg/core-data';
 import {
 	registerLegacyWidgetBlock,
 	registerLegacyWidgetVariations,
 	registerWidgetGroupBlock,
-} from '@wordpress/widgets';
-import { store as preferencesStore } from '@wordpress/preferences';
+} from '@gutenberg/widgets';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

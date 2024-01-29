@@ -1,20 +1,20 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useContext, useState } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { useContext, useState } from '@gutenberg/element';
 import {
 	BlockControls,
 	PlainText,
 	useBlockProps,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	ToolbarButton,
 	Disabled,
 	ToolbarGroup,
 	VisuallyHidden,
-} from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
+} from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

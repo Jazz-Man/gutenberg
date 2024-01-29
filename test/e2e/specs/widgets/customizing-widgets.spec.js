@@ -5,14 +5,14 @@ const {
 	test,
 	expect,
 	Admin,
-} = require( '@wordpress/e2e-test-utils-playwright' );
+} = require( '@gutenberg/e2e-test-utils-playwright' );
 
 /**
  * @typedef {import('@playwright/test').Page} Page
  * @typedef {import('@playwright/test').FrameLocator} FrameLocator
- * @typedef {import('@wordpress/e2e-test-utils-playwright').PageUtils} PageUtils
- * @typedef {import('@wordpress/e2e-test-utils-playwright').RequestUtils} RequestUtils
- * @typedef {import('@wordpress/e2e-test-utils-playwright').Editor} Editor
+ * @typedef {import('@gutenberg/e2e-test-utils-playwright').PageUtils} PageUtils
+ * @typedef {import('@gutenberg/e2e-test-utils-playwright').RequestUtils} RequestUtils
+ * @typedef {import('@gutenberg/e2e-test-utils-playwright').Editor} Editor
  */
 
 test.use( {

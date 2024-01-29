@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { postFeaturedImage as icon } from '@wordpress/icons';
+import { postFeaturedImage as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

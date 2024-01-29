@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { useMemo } from '@wordpress/element';
-import { store as coreStore } from '@wordpress/core-data';
-import { privateApis as editorPrivateApis } from '@wordpress/editor';
+import { useSelect } from '@gutenberg/data';
+import { useMemo } from '@gutenberg/element';
+import { store as coreStore } from '@gutenberg/core-data';
+import { privateApis as editorPrivateApis } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

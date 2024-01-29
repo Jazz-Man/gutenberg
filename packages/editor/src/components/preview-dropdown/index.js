@@ -1,19 +1,19 @@
 /**
  * WordPress dependencies
  */
-import { useViewportMatch } from '@wordpress/compose';
+import { useViewportMatch } from '@gutenberg/compose';
 import {
 	DropdownMenu,
 	MenuGroup,
 	MenuItem,
 	VisuallyHidden,
 	Icon,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { check, desktop, mobile, tablet, external } from '@wordpress/icons';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as preferencesStore } from '@wordpress/preferences';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { check, desktop, mobile, tablet, external } from '@gutenberg/icons';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

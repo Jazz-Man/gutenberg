@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { logged } from '@wordpress/deprecated';
+import { logged } from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

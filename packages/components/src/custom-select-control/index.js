@@ -8,10 +8,10 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Icon, check } from '@wordpress/icons';
-import { __, sprintf } from '@wordpress/i18n';
-import { useCallback, useState } from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
+import { Icon, check } from '@gutenberg/icons';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useCallback, useState } from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

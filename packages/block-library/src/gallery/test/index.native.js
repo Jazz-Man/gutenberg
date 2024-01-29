@@ -21,14 +21,14 @@ import { ActionSheetIOS } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Platform } from '@wordpress/element';
+import { Platform } from '@gutenberg/element';
 import {
 	getOtherMediaOptions,
 	requestImageFailedRetryDialog,
 	requestImageUploadCancelDialog,
-} from '@wordpress/react-native-bridge';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { select } from '@wordpress/data';
+} from '@gutenberg/react-native-bridge';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { select } from '@gutenberg/data';
 
 /**
  * Internal dependencies

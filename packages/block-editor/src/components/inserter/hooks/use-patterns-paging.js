@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useMemo, useState, useEffect } from '@wordpress/element';
-import { useAsyncList, usePrevious } from '@wordpress/compose';
-import { getScrollContainer } from '@wordpress/dom';
+import { useMemo, useState, useEffect } from '@gutenberg/element';
+import { useAsyncList, usePrevious } from '@gutenberg/compose';
+import { getScrollContainer } from '@gutenberg/dom';
 
 const PAGE_SIZE = 20;
 const INITIAL_INSERTER_RESULTS = 5;

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { store as coreDataStore } from '@wordpress/core-data';
+import { store as coreDataStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

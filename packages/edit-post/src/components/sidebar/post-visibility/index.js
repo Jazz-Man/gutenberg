@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { Dropdown, Button } from '@wordpress/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { Dropdown, Button } from '@gutenberg/components';
 import {
 	PostVisibility as PostVisibilityForm,
 	PostVisibilityLabel,
 	PostVisibilityCheck,
 	usePostVisibilityLabel,
 	privateApis as editorPrivateApis,
-} from '@wordpress/editor';
-import { useMemo, useState } from '@wordpress/element';
+} from '@gutenberg/editor';
+import { useMemo, useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

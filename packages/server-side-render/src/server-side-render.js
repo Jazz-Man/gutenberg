@@ -6,13 +6,13 @@ import fastDeepEqual from 'fast-deep-equal/es6';
 /**
  * WordPress dependencies
  */
-import { useDebounce, usePrevious } from '@wordpress/compose';
-import { RawHTML, useEffect, useRef, useState } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
-import apiFetch from '@wordpress/api-fetch';
-import { addQueryArgs } from '@wordpress/url';
-import { Placeholder, Spinner } from '@wordpress/components';
-import { __experimentalSanitizeBlockAttributes } from '@wordpress/blocks';
+import { useDebounce, usePrevious } from '@gutenberg/compose';
+import { RawHTML, useEffect, useRef, useState } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import apiFetch from '@gutenberg/api-fetch';
+import { addQueryArgs } from '@gutenberg/url';
+import { Placeholder, Spinner } from '@gutenberg/components';
+import { __experimentalSanitizeBlockAttributes } from '@gutenberg/blocks';
 
 const EMPTY_OBJECT = {};
 

@@ -99,11 +99,11 @@ To release an RC version of the plugin, enter `rc `in the text field. To release
 
 This will trigger a GitHub Actions (GHA) workflow that will bump the plugin version, build the Gutenberg plugin `.zip` file, create a release draft, and attach the plugin `.zip` file. This part of the process typically takes about six minutes. The workflow will appear at the top of the list, right under the blue banner. Once it is finished, the workflow's status icon will change from a yellow dot to a green checkmark. You can follow along for a more detailed view by clicking on the workflow.
 
-#### Publishing the @wordpress packages to NPM
+#### Publishing the @gutenberg packages to NPM
 
-As part of the release workflow, all of the @wordpress packages are published to NPM. After the [Build Gutenberg Plugin Zip](https://github.com/WordPress/gutenberg/actions/workflows/build-plugin-zip.yml) action has created the draft release, you may see a message that the [Publish npm packages](https://github.com/WordPress/gutenberg/actions/workflows/publish-npm-packages.yml) action requires someone with appropriate permissions to trigger it.
+As part of the release workflow, all of the @gutenberg packages are published to NPM. After the [Build Gutenberg Plugin Zip](https://github.com/WordPress/gutenberg/actions/workflows/build-plugin-zip.yml) action has created the draft release, you may see a message that the [Publish npm packages](https://github.com/WordPress/gutenberg/actions/workflows/publish-npm-packages.yml) action requires someone with appropriate permissions to trigger it.
 
-This message is misleading. You do not need to take any action to publish the @wordpress packages to NPM. The process is automated and will automatically run after the release notes are published.
+This message is misleading. You do not need to take any action to publish the @gutenberg packages to NPM. The process is automated and will automatically run after the release notes are published.
 
 #### Viewing the release draft
 
@@ -477,13 +477,13 @@ Whilst waiting for the GitHub actions build for `wp/latest`[branch to pass](http
     >
     > ```shell
     > npx lerna updated
-    > @wordpress/e2e-tests
-    > @wordpress/jest-preset-default
-    > @wordpress/scripts
+    > @gutenberg/e2e-tests
+    > @gutenberg/jest-preset-default
+    > @gutenberg/scripts
     > lerna success found 3 packages ready to publish
     > ```
 
-Check the versions listed in the current `CHANGELOG.md` file, looking through the commit history of a package e.g [@wordpress/scripts](https://github.com/WordPress/gutenberg/commits/HEAD/packages/scripts) and look out for _"chore(release): publish"_ and _"Update changelogs"_ commits to determine recent version bumps, then looking at the commits since the most recent release should aid with discovering what changes have occurred since the last release.
+Check the versions listed in the current `CHANGELOG.md` file, looking through the commit history of a package e.g [@gutenberg/scripts](https://github.com/WordPress/gutenberg/commits/HEAD/packages/scripts) and look out for _"chore(release): publish"_ and _"Update changelogs"_ commits to determine recent version bumps, then looking at the commits since the most recent release should aid with discovering what changes have occurred since the last release.
 
 Note: You may discover the current version of each package is not up to date, if so updating the previously released versions would be appreciated.
 
@@ -514,7 +514,7 @@ As noted in the [Synchronizing Gutenberg Plugin](#synchronizing-gutenberg-plugin
 In our case, we use the `next` distribution tag for code. Developers that want to install such a version of the package need to type:
 
 ```bash
-npm install @wordpress/components@next
+npm install @gutenberg/components@next
 ```
 
 In order to start the publishing process for development version of npm packages, go to Gutenberg's GitHub repository's Actions tab, and locate the ["Publish npm packages" action](https://github.com/WordPress/gutenberg/actions/workflows/publish-npm-packages.yml). Note the blue banner that says "This workflow has a `workflow_dispatch` event trigger.", and expand the "Run workflow" dropdown on its right hand side.
@@ -524,7 +524,7 @@ In order to start the publishing process for development version of npm packages
 To publish development packages to npm, select `development` from the "Release type" dropdown and leave empty "WordPress major release" input field. Finally, press the green "Run workflow" button. It triggers the npm publishing job, and this needs to be approved by a Gutenberg Core team member. Locate the ["Publish npm packages" action](https://github.com/WordPress/gutenberg/actions/workflows/publish-npm-packages.yml) for the current publishing, and have it [approved](https://docs.github.com/en/actions/managing-workflow-runs/reviewing-deployments#approving-or-rejecting-a-job).
 
 Behind the scenes, the release process is fully automated via `./bin/plugin/cli.js npm-next` command. It ensures
-the `wp/next` branch is synchronized with the latest release branch (`release/X.Y`) created for the Gutenberg plugin. To avoid collisions in the versioning of packages, we always include the newest commit's `sha`, for example, `@wordpress/block-editor@5.2.10-next.645224df70.0`.
+the `wp/next` branch is synchronized with the latest release branch (`release/X.Y`) created for the Gutenberg plugin. To avoid collisions in the versioning of packages, we always include the newest commit's `sha`, for example, `@gutenberg/block-editor@5.2.10-next.645224df70.0`.
 
 [plugin repository]: https://plugins.trac.wordpress.org/browser/gutenberg/
 [package release process]: https://github.com/WordPress/gutenberg/blob/HEAD/packages/README.md#releasing-packages

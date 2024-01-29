@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { CheckboxControl, VisuallyHidden } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { CheckboxControl, VisuallyHidden } from '@gutenberg/components';
 
 const noop = () => {};
 

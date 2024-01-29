@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { useState, useMemo } from '@wordpress/element';
-import { useDispatch } from '@wordpress/data';
-import { Modal, SearchControl } from '@wordpress/components';
-import { useAsyncList } from '@wordpress/compose';
+import { useState, useMemo } from '@gutenberg/element';
+import { useDispatch } from '@gutenberg/data';
+import { Modal, SearchControl } from '@gutenberg/components';
+import { useAsyncList } from '@gutenberg/compose';
 import {
 	BlockContextProvider,
 	store as blockEditorStore,
 	__experimentalBlockPatternsList as BlockPatternsList,
-} from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

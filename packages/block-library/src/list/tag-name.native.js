@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
-import { View } from '@wordpress/primitives';
+import { forwardRef } from '@gutenberg/element';
+import { View } from '@gutenberg/primitives';
 
 function TagName( props, ref ) {
 	const { start, ...extraProps } = props;

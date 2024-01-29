@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { createBlobURL } from '@wordpress/blob';
-import { createBlock, getBlockAttributes } from '@wordpress/blocks';
-import { dispatch } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
-import { __ } from '@wordpress/i18n';
+import { createBlobURL } from '@gutenberg/blob';
+import { createBlock, getBlockAttributes } from '@gutenberg/blocks';
+import { dispatch } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { __ } from '@gutenberg/i18n';
 
 export function stripFirstImage( attributes, { shortcode } ) {
 	const { body } = document.implementation.createHTMLDocument( '' );

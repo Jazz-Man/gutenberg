@@ -6,7 +6,7 @@ import { render, screen } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { Path, SVG } from '@wordpress/primitives';
+import { Path, SVG } from '@gutenberg/primitives';
 
 /**
  * Internal dependencies

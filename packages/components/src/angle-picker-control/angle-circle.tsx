@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useRef } from '@wordpress/element';
-import { __experimentalUseDragging as useDragging } from '@wordpress/compose';
+import { useEffect, useRef } from '@gutenberg/element';
+import { __experimentalUseDragging as useDragging } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

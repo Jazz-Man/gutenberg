@@ -12,13 +12,13 @@ import {
 	parse,
 	serialize,
 	unstable__bootstrapServerSideBlockDefinitions, // eslint-disable-line camelcase
-} from '@wordpress/blocks';
-import { parse as grammarParse } from '@wordpress/block-serialization-default-parser';
+} from '@gutenberg/blocks';
+import { parse as grammarParse } from '@gutenberg/block-serialization-default-parser';
 import {
 	registerCoreBlocks,
 	__experimentalRegisterExperimentalCoreBlocks,
-} from '@wordpress/block-library';
-import prettierConfig from '@wordpress/prettier-config';
+} from '@gutenberg/block-library';
+import prettierConfig from '@gutenberg/prettier-config';
 
 /**
  * Internal dependencies
@@ -36,10 +36,10 @@ import {
 } from '../fixtures';
 
 /* eslint-disable no-restricted-syntax */
-import * as form from '@wordpress/block-library/src/form';
-import * as formInput from '@wordpress/block-library/src/form-input';
-import * as formSubmitButton from '@wordpress/block-library/src/form-submit-button';
-import * as formSubmissionNotification from '@wordpress/block-library/src/form-submission-notification';
+import * as form from '@gutenberg/block-library/src/form';
+import * as formInput from '@gutenberg/block-library/src/form-input';
+import * as formSubmitButton from '@gutenberg/block-library/src/form-submit-button';
+import * as formSubmissionNotification from '@gutenberg/block-library/src/form-submission-notification';
 /* eslint-enable no-restricted-syntax */
 
 const blockBasenames = getAvailableBlockFixturesBasenames();

@@ -1,10 +1,10 @@
 # EditorProvider
 
-EditorProvider is a component which establishes a new post editing context, and serves as the entry point for a new post editor (or post with template editor). 
+EditorProvider is a component which establishes a new post editing context, and serves as the entry point for a new post editor (or post with template editor).
 
 It supports a big number of post types, including post, page, templates, custom post types, patterns, template parts.
 
-All modification and changes are performed to the `@wordpress/core-data` store.
+All modification and changes are performed to the `@gutenberg/core-data` store.
 
 ## Props
 

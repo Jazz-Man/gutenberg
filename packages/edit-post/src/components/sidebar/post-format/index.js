@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { PanelRow } from '@wordpress/components';
+import { PanelRow } from '@gutenberg/components';
 import {
 	PostFormat as PostFormatForm,
 	PostFormatCheck,
-} from '@wordpress/editor';
+} from '@gutenberg/editor';
 
 export function PostFormat() {
 	return (

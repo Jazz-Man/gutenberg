@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useState } from '@wordpress/element';
-import { useInstanceId } from '@wordpress/compose';
-import { chevronRight } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { useState } from '@gutenberg/element';
+import { useInstanceId } from '@gutenberg/compose';
+import { chevronRight } from '@gutenberg/icons';
 
 import {
 	MenuGroup,
@@ -12,7 +12,7 @@ import {
 	Popover,
 	VisuallyHidden,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

@@ -6,12 +6,12 @@ import {
 	MenuItem,
 	MenuItemsChoice,
 	DropdownMenu,
-} from '@wordpress/components';
-import { moreVertical } from '@wordpress/icons';
-import { __, sprintf } from '@wordpress/i18n';
-import { decodeEntities } from '@wordpress/html-entities';
-import { useEffect, useMemo, useState } from '@wordpress/element';
-import { useEntityProp } from '@wordpress/core-data';
+} from '@gutenberg/components';
+import { moreVertical } from '@gutenberg/icons';
+import { __, sprintf } from '@gutenberg/i18n';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { useEffect, useMemo, useState } from '@gutenberg/element';
+import { useEntityProp } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

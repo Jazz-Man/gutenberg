@@ -10,26 +10,26 @@ import { colord } from 'colord';
 /**
  * WordPress dependencies
  */
-import RCTAztecView from '@wordpress/react-native-aztec';
+import RCTAztecView from '@gutenberg/react-native-aztec';
 import {
 	showUserSuggestions,
 	showXpostSuggestions,
-} from '@wordpress/react-native-bridge';
-import { BlockFormatControls } from '@wordpress/block-editor';
-import { getPxFromCssUnit } from '@wordpress/components';
-import { Component } from '@wordpress/element';
+} from '@gutenberg/react-native-bridge';
+import { BlockFormatControls } from '@gutenberg/block-editor';
+import { getPxFromCssUnit } from '@gutenberg/components';
+import { Component } from '@gutenberg/element';
 import {
 	compose,
 	debounce,
 	withPreferredColorScheme,
-} from '@wordpress/compose';
-import { withSelect } from '@wordpress/data';
-import { childrenBlock } from '@wordpress/blocks';
-import { decodeEntities } from '@wordpress/html-entities';
-import { BACKSPACE, DELETE, ENTER } from '@wordpress/keycodes';
-import { isURL } from '@wordpress/url';
-import { atSymbol, plus } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/compose';
+import { withSelect } from '@gutenberg/data';
+import { childrenBlock } from '@gutenberg/blocks';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { BACKSPACE, DELETE, ENTER } from '@gutenberg/keycodes';
+import { isURL } from '@gutenberg/url';
+import { atSymbol, plus } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
 import {
 	applyFormat,
 	getActiveFormat,
@@ -41,7 +41,7 @@ import {
 	toHTMLString,
 	isCollapsed,
 	remove,
-} from '@wordpress/rich-text';
+} from '@gutenberg/rich-text';
 
 /**
  * Internal dependencies

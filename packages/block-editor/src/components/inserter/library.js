@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { forwardRef } from '@wordpress/element';
+import { useSelect } from '@gutenberg/data';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

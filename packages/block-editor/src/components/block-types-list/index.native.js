@@ -14,12 +14,12 @@ import {
 /**
  * WordPress dependencies
  */
-import { useState, useEffect } from '@wordpress/element';
-import { BottomSheet, Gradient } from '@wordpress/components';
+import { useState, useEffect } from '@gutenberg/element';
+import { BottomSheet, Gradient } from '@gutenberg/components';
 import {
 	usePreferredColorScheme,
 	usePreferredColorSchemeStyle,
-} from '@wordpress/compose';
+} from '@gutenberg/compose';
 
 /**
  * Internal dependencies

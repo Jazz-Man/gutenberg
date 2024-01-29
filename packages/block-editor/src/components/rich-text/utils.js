@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { renderToString } from '@wordpress/element';
-import { createBlock } from '@wordpress/blocks';
+import { renderToString } from '@gutenberg/element';
+import { createBlock } from '@gutenberg/blocks';
 
 export function addActiveFormats( value, activeFormats ) {
 	if ( activeFormats?.length ) {

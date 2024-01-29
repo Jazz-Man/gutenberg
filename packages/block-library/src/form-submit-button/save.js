@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
+import { useBlockProps, InnerBlocks } from '@gutenberg/block-editor';
 
 const Save = () => {
 	const blockProps = useBlockProps.save();

@@ -6,13 +6,13 @@ import Textarea from 'react-autosize-textarea';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { store as coreStore } from '@wordpress/core-data';
-import { useMemo } from '@wordpress/element';
-import { __unstableSerializeAndClean } from '@wordpress/blocks';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useInstanceId } from '@wordpress/compose';
-import { VisuallyHidden } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useMemo } from '@gutenberg/element';
+import { __unstableSerializeAndClean } from '@gutenberg/blocks';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useInstanceId } from '@gutenberg/compose';
+import { VisuallyHidden } from '@gutenberg/components';
 
 /**
  * Internal dependencies

@@ -8,11 +8,11 @@ import {
 	__experimentalHeading as Heading,
 	__experimentalText as Text,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
-import { store as editorStore } from '@wordpress/editor';
-import { useSelect } from '@wordpress/data';
-import { __, sprintf } from '@wordpress/i18n';
-import { moreVertical } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { store as editorStore } from '@gutenberg/editor';
+import { useSelect } from '@gutenberg/data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { moreVertical } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

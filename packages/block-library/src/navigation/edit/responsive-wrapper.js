@@ -6,10 +6,10 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { close, Icon } from '@wordpress/icons';
-import { Button } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { getColorClassName } from '@wordpress/block-editor';
+import { close, Icon } from '@gutenberg/icons';
+import { Button } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { getColorClassName } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

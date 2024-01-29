@@ -6,11 +6,11 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Button } from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as interfaceStore } from '@wordpress/interface';
-import { store as editorStore } from '@wordpress/editor';
+import { Button } from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as interfaceStore } from '@gutenberg/interface';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Internal dependencies

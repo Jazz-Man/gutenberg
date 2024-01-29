@@ -6,9 +6,9 @@ import {
 	createBlocksFromInnerBlocksTemplate,
 	store as blocksStore,
 	parse,
-} from '@wordpress/blocks';
-import { useSelect } from '@wordpress/data';
-import { useCallback } from '@wordpress/element';
+} from '@gutenberg/blocks';
+import { useSelect } from '@gutenberg/data';
+import { useCallback } from '@gutenberg/element';
 
 /**
  * Internal dependencies

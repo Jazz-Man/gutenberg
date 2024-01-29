@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { dateI18n, getDate, humanTimeDiff } from '@wordpress/date';
-import { createInterpolateElement } from '@wordpress/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { dateI18n, getDate, humanTimeDiff } from '@gutenberg/date';
+import { createInterpolateElement } from '@gutenberg/element';
 
 export default function StatusLabel( { status, date, short } ) {
 	const relateToNow = humanTimeDiff( date );

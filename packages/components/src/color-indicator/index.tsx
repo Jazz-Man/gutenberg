@@ -7,7 +7,7 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -37,7 +37,7 @@ function UnforwardedColorIndicator(
  * component.
  *
  * ```jsx
- * import { ColorIndicator } from '@wordpress/components';
+ * import { ColorIndicator } from '@gutenberg/components';
  *
  * const MyColorIndicator = () => <ColorIndicator colorValue="#0073aa" />;
  * ```

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { postList as icon } from '@wordpress/icons';
+import { postList as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { safeDecodeURIComponent, cleanForSlug } from '@wordpress/url';
-import { useState } from '@wordpress/element';
-import { __experimentalInspectorPopoverHeader as InspectorPopoverHeader } from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
-import { TextControl, ExternalLink } from '@wordpress/components';
-import { store as coreStore } from '@wordpress/core-data';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { safeDecodeURIComponent, cleanForSlug } from '@gutenberg/url';
+import { useState } from '@gutenberg/element';
+import { __experimentalInspectorPopoverHeader as InspectorPopoverHeader } from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { TextControl, ExternalLink } from '@gutenberg/components';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

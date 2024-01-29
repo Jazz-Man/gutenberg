@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalUseSlotFills as useSlotFills } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
+import { __experimentalUseSlotFills as useSlotFills } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

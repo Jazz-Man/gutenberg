@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { DropdownMenu, MenuGroup, MenuItem } from '@wordpress/components';
-import { moreVertical } from '@wordpress/icons';
+import { useDispatch } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { DropdownMenu, MenuGroup, MenuItem } from '@gutenberg/components';
+import { moreVertical } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

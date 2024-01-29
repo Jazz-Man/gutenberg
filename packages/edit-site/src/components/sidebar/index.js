@@ -6,12 +6,12 @@ import classNames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { memo, useRef } from '@wordpress/element';
+import { memo, useRef } from '@gutenberg/element';
 import {
 	__experimentalNavigatorProvider as NavigatorProvider,
 	__experimentalNavigatorScreen as NavigatorScreen,
-} from '@wordpress/components';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+} from '@gutenberg/components';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

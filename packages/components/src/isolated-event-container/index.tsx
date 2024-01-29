@@ -6,8 +6,8 @@ import type { ComponentPropsWithoutRef, MouseEvent } from 'react';
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
+import { forwardRef } from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
 
 function stopPropagation( event: MouseEvent ) {
 	event.stopPropagation();

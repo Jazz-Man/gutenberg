@@ -6,15 +6,15 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { useAsyncList } from '@wordpress/compose';
-import { unseen, funnel } from '@wordpress/icons';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useAsyncList } from '@gutenberg/compose';
+import { unseen, funnel } from '@gutenberg/icons';
 import {
 	Button,
 	Icon,
 	privateApis as componentsPrivateApis,
 	CheckboxControl,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	Children,
 	Fragment,
@@ -23,7 +23,7 @@ import {
 	useId,
 	useRef,
 	useState,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -339,7 +339,7 @@ function SingleSelectionCheckbox( {
 	const isSelected = selection.includes( id );
 	let selectionLabel;
 	if ( primaryField?.getValue && item ) {
-		// eslint-disable-next-line @wordpress/valid-sprintf
+		// eslint-disable-next-line @gutenberg/valid-sprintf
 		selectionLabel = sprintf(
 			/* translators: %s: item title. */
 			isSelected ? __( 'Deselect item: %s' ) : __( 'Select item: %s' ),

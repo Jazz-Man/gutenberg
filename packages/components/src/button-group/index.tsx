@@ -7,7 +7,7 @@ import type { ForwardedRef } from 'react';
 /**
  * WordPress dependencies
  */
-import { forwardRef } from '@wordpress/element';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies
@@ -32,7 +32,7 @@ function UnforwardedButtonGroup(
  * related buttons, a group should share a common container.
  *
  * ```jsx
- * import { Button, ButtonGroup } from '@wordpress/components';
+ * import { Button, ButtonGroup } from '@gutenberg/components';
  *
  * const MyButtonGroup = () => (
  *   <ButtonGroup>

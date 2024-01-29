@@ -39,7 +39,7 @@ function UnconnectedFlex(
  * `FlexBlock`.
  *
  * ```jsx
- * import { Flex, FlexBlock, FlexItem } from '@wordpress/components';
+ * import { Flex, FlexBlock, FlexItem } from '@gutenberg/components';
  *
  * function Example() {
  *   return (

@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { PanelBody, RadioControl, RangeControl } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useState } from '@wordpress/element';
+import { PanelBody, RadioControl, RangeControl } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useState } from '@gutenberg/element';
 
 /**
  * Internal dependencies

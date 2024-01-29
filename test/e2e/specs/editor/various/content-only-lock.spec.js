@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-const { test, expect } = require( '@wordpress/e2e-test-utils-playwright' );
+const { test, expect } = require( '@gutenberg/e2e-test-utils-playwright' );
 
 test.describe( 'Content-only lock', () => {
 	test.beforeEach( async ( { admin } ) => {
@@ -90,12 +90,12 @@ test.describe( 'Content-only lock', () => {
 			<div class="wp-block-group"><!-- wp:paragraph -->
 			<p>Locked block a</p>
 			<!-- /wp:paragraph -->
-			
+
 			<!-- wp:paragraph -->
 			<p>Locked block b</p>
 			<!-- /wp:paragraph --></div>
 			<!-- /wp:group -->
-			
+
 			<!-- wp:heading -->
 			<h2 class="wp-block-heading"><strong>outside block</strong></h2>
 			<!-- /wp:heading -->` );

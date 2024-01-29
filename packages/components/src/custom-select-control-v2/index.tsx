@@ -6,8 +6,8 @@ import * as Ariakit from '@ariakit/react';
 /**
  * WordPress dependencies
  */
-import { createContext, useContext } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
+import { createContext, useContext } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

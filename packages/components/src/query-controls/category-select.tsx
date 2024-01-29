@@ -7,7 +7,7 @@ import TreeSelect from '../tree-select';
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
+import { useMemo } from '@gutenberg/element';
 import type { CategorySelectProps } from './types';
 
 export default function CategorySelect( {

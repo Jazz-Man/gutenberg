@@ -33,7 +33,7 @@ function UnconnectedItem(
  * import {
  *   __experimentalItemGroup as ItemGroup,
  *   __experimentalItem as Item,
- * } from '@wordpress/components';
+ * } from '@gutenberg/components';
  *
  * function Example() {
  *   return (

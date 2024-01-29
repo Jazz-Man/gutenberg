@@ -24,16 +24,16 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { _x } from '@wordpress/i18n';
-import { useCallback, useState, useEffect } from '@wordpress/element';
-import { useDispatch, useSelect } from '@wordpress/data';
+import { _x } from '@gutenberg/i18n';
+import { useCallback, useState, useEffect } from '@gutenberg/element';
+import { useDispatch, useSelect } from '@gutenberg/data';
 import {
 	useBlockProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { store as coreStore } from '@wordpress/core-data';
-import { View } from '@wordpress/primitives';
-import { getAuthority } from '@wordpress/url';
+} from '@gutenberg/block-editor';
+import { store as coreStore } from '@gutenberg/core-data';
+import { View } from '@gutenberg/primitives';
+import { getAuthority } from '@gutenberg/url';
 
 // The inline preview feature will be released progressible, for this reason
 // the embed will only be considered previewable for the following providers list.

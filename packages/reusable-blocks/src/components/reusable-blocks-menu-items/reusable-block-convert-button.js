@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { hasBlockSupport, isReusableBlock } from '@wordpress/blocks';
+import { hasBlockSupport, isReusableBlock } from '@gutenberg/blocks';
 import {
 	store as blockEditorStore,
 	privateApis as blockEditorPrivateApis,
-} from '@wordpress/block-editor';
-import { useCallback, useState } from '@wordpress/element';
+} from '@gutenberg/block-editor';
+import { useCallback, useState } from '@gutenberg/element';
 import {
 	MenuItem,
 	Modal,
@@ -15,12 +15,12 @@ import {
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
 	ToggleControl,
-} from '@wordpress/components';
-import { symbol } from '@wordpress/icons';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { __, _x, sprintf } from '@wordpress/i18n';
-import { store as noticesStore } from '@wordpress/notices';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/components';
+import { symbol } from '@gutenberg/icons';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { __, _x, sprintf } from '@gutenberg/i18n';
+import { store as noticesStore } from '@gutenberg/notices';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

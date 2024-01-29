@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalSpacer as Spacer } from '@wordpress/components';
+import { __experimentalSpacer as Spacer } from '@gutenberg/components';
 
 /**
  * Internal dependencies

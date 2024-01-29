@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { Card, CardBody } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { useEffect, useRef } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
+import { Card, CardBody } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { useEffect, useRef } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies

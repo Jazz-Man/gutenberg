@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
+import { useState } from '@gutenberg/element';
 
 export function useNavigationTreeNodes<
 	TNode extends { children?: React.ReactNode; [ key: string ]: unknown },

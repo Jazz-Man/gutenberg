@@ -6,10 +6,10 @@ import { sentenceCase } from 'change-case';
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { store as coreStore } from '@wordpress/core-data';
-import { store as editorStore } from '@wordpress/editor';
-import { useSelect } from '@wordpress/data';
+import { __, sprintf } from '@gutenberg/i18n';
+import { store as coreStore } from '@gutenberg/core-data';
+import { store as editorStore } from '@gutenberg/editor';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

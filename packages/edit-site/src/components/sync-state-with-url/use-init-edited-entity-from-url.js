@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useEffect, useMemo } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as coreDataStore } from '@wordpress/core-data';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { useEffect, useMemo } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as coreDataStore } from '@gutenberg/core-data';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

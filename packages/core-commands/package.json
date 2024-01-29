@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/core-commands",
+	"name": "@gutenberg/core-commands",
 	"version": "0.18.0",
 	"description": "WordPress core reusable commands.",
 	"author": "The WordPress Contributors",
@@ -28,16 +28,16 @@
 	"sideEffects": false,
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/block-editor": "workspace:*",
-		"@wordpress/commands": "workspace:*",
-		"@wordpress/core-data": "workspace:*",
-		"@wordpress/data": "workspace:*",
-		"@wordpress/element": "workspace:*",
-		"@wordpress/i18n": "workspace:*",
-		"@wordpress/icons": "workspace:*",
-		"@wordpress/private-apis": "workspace:*",
-		"@wordpress/router": "workspace:*",
-		"@wordpress/url": "workspace:*"
+		"@gutenberg/block-editor": "workspace:*",
+		"@gutenberg/commands": "workspace:*",
+		"@gutenberg/core-data": "workspace:*",
+		"@gutenberg/data": "workspace:*",
+		"@gutenberg/element": "workspace:*",
+		"@gutenberg/i18n": "workspace:*",
+		"@gutenberg/icons": "workspace:*",
+		"@gutenberg/private-apis": "workspace:*",
+		"@gutenberg/router": "workspace:*",
+		"@gutenberg/url": "workspace:*"
 	},
 	"peerDependencies": {
 		"react": "^18.0.0",

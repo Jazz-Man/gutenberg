@@ -7,10 +7,10 @@ JavaScript port of WordPress's automatic paragraph function `autop` and the `rem
 Install the module
 
 ```bash
-npm install @wordpress/autop --save
+npm install @gutenberg/autop --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ### API
 
@@ -25,7 +25,7 @@ A group of regex replaces used to identify text formatted with newlines and repl
 _Usage_
 
 ```js
-import { autop } from '@wordpress/autop';
+import { autop } from '@gutenberg/autop';
 autop( 'my text' ); // "<p>my text</p>"
 ```
 
@@ -47,7 +47,7 @@ Replaces `<p>` tags with two line breaks except where the `<p>` has attributes. 
 _Usage_
 
 ```js
-import { removep } from '@wordpress/autop';
+import { removep } from '@gutenberg/autop';
 removep( '<p>my text</p>' ); // "my text"
 ```
 

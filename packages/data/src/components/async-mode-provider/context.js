@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { createContext } from '@wordpress/element';
+import { createContext } from '@gutenberg/element';
 
 export const Context = createContext( false );
 
@@ -16,8 +16,8 @@ export const AsyncModeConsumer = Consumer;
  * @example
  *
  * ```js
- * import { useSelect, AsyncModeProvider } from '@wordpress/data';
- * import { store as blockEditorStore } from '@wordpress/block-editor';
+ * import { useSelect, AsyncModeProvider } from '@gutenberg/data';
+ * import { store as blockEditorStore } from '@gutenberg/block-editor';
  *
  * function BlockCount() {
  *   const count = useSelect( ( select ) => {

@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { TAB } from '@wordpress/keycodes';
-import { focus } from '@wordpress/dom';
+import { TAB } from '@gutenberg/keycodes';
+import { focus } from '@gutenberg/dom';
 
 /**
  * Internal dependencies
@@ -17,7 +17,7 @@ import useRefEffect from '../use-ref-effect';
  *
  * @example
  * ```js
- * import { useConstrainedTabbing } from '@wordpress/compose';
+ * import { useConstrainedTabbing } from '@gutenberg/compose';
  *
  * const ConstrainedTabbingExample = () => {
  *     const constrainedTabbingRef = useConstrainedTabbing()

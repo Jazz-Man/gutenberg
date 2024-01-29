@@ -7,7 +7,7 @@ Blob utilities for WordPress.
 Install the module
 
 ```bash
-npm install @wordpress/blob --save
+npm install @gutenberg/blob --save
 ```
 
 ## API

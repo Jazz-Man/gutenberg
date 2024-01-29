@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { _n } from '@wordpress/i18n';
+import { _n } from '@gutenberg/i18n';
 import {
 	__experimentalHStack as HStack,
 	__experimentalItem as Item,
 	FlexItem,
-} from '@wordpress/components';
-import { useContext } from '@wordpress/element';
+} from '@gutenberg/components';
+import { useContext } from '@gutenberg/element';
 
 /**
  * Internal dependencies

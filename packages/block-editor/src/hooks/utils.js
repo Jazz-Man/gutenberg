@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { getBlockSupport } from '@wordpress/blocks';
-import { memo, useMemo, useEffect, useId, useState } from '@wordpress/element';
-import { useDispatch } from '@wordpress/data';
-import { createHigherOrderComponent } from '@wordpress/compose';
-import { addFilter } from '@wordpress/hooks';
+import { getBlockSupport } from '@gutenberg/blocks';
+import { memo, useMemo, useEffect, useId, useState } from '@gutenberg/element';
+import { useDispatch } from '@gutenberg/data';
+import { createHigherOrderComponent } from '@gutenberg/compose';
+import { addFilter } from '@gutenberg/hooks';
 
 /**
  * Internal dependencies

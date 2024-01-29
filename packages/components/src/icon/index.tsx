@@ -10,8 +10,8 @@ import {
 	cloneElement,
 	createElement,
 	isValidElement,
-} from '@wordpress/element';
-import { SVG } from '@wordpress/primitives';
+} from '@gutenberg/element';
+import { SVG } from '@gutenberg/primitives';
 
 /**
  * Internal dependencies

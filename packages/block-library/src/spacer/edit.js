@@ -12,11 +12,11 @@ import {
 	getCustomValueFromPreset,
 	getSpacingPresetCssVar,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { ResizableBox } from '@wordpress/components';
-import { useState, useEffect } from '@wordpress/element';
-import { View } from '@wordpress/primitives';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/block-editor';
+import { ResizableBox } from '@gutenberg/components';
+import { useState, useEffect } from '@gutenberg/element';
+import { View } from '@gutenberg/primitives';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

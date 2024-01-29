@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
+import { useMemo } from '@gutenberg/element';
 import {
 	Button,
 	ExternalLink,
@@ -16,16 +16,16 @@ import {
 	__experimentalToolsPanelItem as ToolsPanelItem,
 	__experimentalUnitControl as UnitControl,
 	__experimentalParseQuantityAndUnitFromRawValue as parseQuantityAndUnitFromRawValue,
-} from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
+} from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
 import {
 	InspectorControls,
 	useSettings,
 	__experimentalColorGradientSettingsDropdown as ColorGradientSettingsDropdown,
 	__experimentalUseGradient,
 	__experimentalUseMultipleOriginColorsAndGradients as useMultipleOriginColorsAndGradients,
-} from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

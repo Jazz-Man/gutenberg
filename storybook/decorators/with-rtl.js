@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { addFilter, removeFilter } from '@wordpress/hooks';
+import { addFilter, removeFilter } from '@gutenberg/hooks';
 import {
 	useEffect,
 	useLayoutEffect,
 	useRef,
 	useState,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 
 /**
  * Internal dependencies

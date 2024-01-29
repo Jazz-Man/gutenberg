@@ -8,7 +8,7 @@ This package is not yet published to npm. You can use it locally:
 
 ### Mostly automatic installation
 
-`$ react-native link @wordpress/react-native-bridge`
+`$ react-native link @gutenberg/react-native-bridge`
 
 ### Manual installation
 
@@ -28,18 +28,18 @@ This package is not yet published to npm. You can use it locally:
 
 2. Append the following lines to `android/settings.gradle`:
     ```
-    include ':@wordpress_react-native-bridge'
-    project(':@wordpress_react-native-bridge').projectDir = new File(rootProject.projectDir, './gutenberg/packages/react-native-bridge/android')
+    include ':@gutenberg_react-native-bridge'
+    project(':@gutenberg_react-native-bridge').projectDir = new File(rootProject.projectDir, './gutenberg/packages/react-native-bridge/android')
     ```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
     ```
-      implementation project(':@wordpress_react-native-bridge')
+      implementation project(':@gutenberg_react-native-bridge')
     ```
 
 ## Usage
 
 ```javascript
-import RNReactNativeGutenbergBridge from '@wordpress/react-native-bridge';
+import RNReactNativeGutenbergBridge from '@gutenberg/react-native-bridge';
 
 // TODO: What to do with the module?
 RNReactNativeGutenbergBridge;

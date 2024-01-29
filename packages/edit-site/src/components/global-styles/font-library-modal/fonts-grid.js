@@ -5,8 +5,8 @@ import {
 	__experimentalVStack as VStack,
 	__experimentalText as Text,
 	__experimentalSpacer as Spacer,
-} from '@wordpress/components';
-import { useState, useEffect } from '@wordpress/element';
+} from '@gutenberg/components';
+import { useState, useEffect } from '@gutenberg/element';
 
 function FontsGrid( { title, children, pageSize = 32 } ) {
 	const [ lastItem, setLastItem ] = useState( null );

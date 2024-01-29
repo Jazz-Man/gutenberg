@@ -7,16 +7,16 @@ Utility to make WordPress REST API requests. It's a wrapper around `window.fetch
 Install the module
 
 ```bash
-npm install @wordpress/api-fetch --save
+npm install @gutenberg/api-fetch --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## Usage
 
 ### GET
 ```js
-import apiFetch from '@wordpress/api-fetch';
+import apiFetch from '@gutenberg/api-fetch';
 
 apiFetch( { path: '/wp/v2/posts' } ).then( ( posts ) => {
 	console.log( posts );
@@ -25,8 +25,8 @@ apiFetch( { path: '/wp/v2/posts' } ).then( ( posts ) => {
 
 ### GET with Query Args
 ```js
-import apiFetch from '@wordpress/api-fetch';
-import { addQueryArgs } from '@wordpress/url';
+import apiFetch from '@gutenberg/api-fetch';
+import { addQueryArgs } from '@gutenberg/url';
 
 const queryParams = { include: [1,2,3] }; // Return posts with ID = 1,2,3.
 
@@ -103,7 +103,7 @@ the `api-fetch` package supports middlewares. Middlewares are functions you can 
 **Example**
 
 ```js
-import apiFetch from '@wordpress/api-fetch';
+import apiFetch from '@gutenberg/api-fetch';
 
 apiFetch.use( ( options, next ) => {
 	const start = Date.now();
@@ -122,7 +122,7 @@ The `api-fetch` package provides built-in middlewares you can use to provide a `
 **Nonce middleware**
 
 ```js
-import apiFetch from '@wordpress/api-fetch';
+import apiFetch from '@gutenberg/api-fetch';
 
 const nonce = 'nonce value';
 apiFetch.use( apiFetch.createNonceMiddleware( nonce ) );
@@ -133,7 +133,7 @@ The function returned by `createNonceMiddleware` includes a `nonce` property cor
 **Root URL middleware**
 
 ```js
-import apiFetch from '@wordpress/api-fetch';
+import apiFetch from '@gutenberg/api-fetch';
 
 const rootURL = 'http://my-wordpress-site/wp-json/';
 apiFetch.use( apiFetch.createRootURLMiddleware( rootURL ) );
@@ -148,7 +148,7 @@ The `api-fetch` package uses `window.fetch` for making the requests but you can 
 The example below uses a custom fetch handler for making all the requests with [`axios`](https://github.com/axios/axios).
 
 ```js
-import apiFetch from '@wordpress/api-fetch';
+import apiFetch from '@gutenberg/api-fetch';
 import axios from 'axios';
 
 apiFetch.setFetchHandler( ( options ) => {

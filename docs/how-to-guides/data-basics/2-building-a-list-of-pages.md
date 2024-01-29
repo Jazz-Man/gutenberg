@@ -43,7 +43,7 @@ Before we start, let’s confirm we actually have some pages to fetch. Within WP
 
 If it doesn’t, go ahead and create a few pages – you can use the same titles as on the screenshot above. Be sure to _publish_ and not just _save_ them.
 
-Now that we have the data to work with, let’s dive into the code. We will take advantage of the [`@wordpress/core-data`](https://github.com/WordPress/gutenberg/tree/trunk/packages/core-data) package which provides resolvers, selectors, and actions to work with the WordPress core API. `@wordpress/core-data` builds on top of the [`@wordpress/data`](https://github.com/WordPress/gutenberg/tree/trunk/packages/data) package.
+Now that we have the data to work with, let’s dive into the code. We will take advantage of the [`@gutenberg/core-data`](https://github.com/WordPress/gutenberg/tree/trunk/packages/core-data) package which provides resolvers, selectors, and actions to work with the WordPress core API. `@gutenberg/core-data` builds on top of the [`@gutenberg/data`](https://github.com/WordPress/gutenberg/tree/trunk/packages/data) package.
 
 To fetch the list of pages, we will use the [`getEntityRecords`](/docs/reference-guides/data/data-core/#getentityrecords) selector. In broad strokes, it will issue the correct API request, cache the results, and return the list of the records we need. Here’s how to use it:
 
@@ -58,8 +58,8 @@ If you run that following snippet in your browser’s dev tools, you will see it
 Similarly, the `MyFirstApp` component needs to re-run the selector once the data is available. That’s exactly what the `useSelect` hook does:
 
 ```js
-import { useSelect } from '@wordpress/data';
-import { store as coreDataStore } from '@wordpress/core-data';
+import { useSelect } from '@gutenberg/data';
+import { store as coreDataStore } from '@gutenberg/core-data';
 
 function MyFirstApp() {
 	const pages = useSelect(
@@ -86,9 +86,9 @@ Note that we use an `import` statement inside index.js. This enables the plugin 
 Putting it together, we get the following code:
 
 ```js
-import { useSelect } from '@wordpress/data';
-import { store as coreDataStore } from '@wordpress/core-data';
-import { decodeEntities } from '@wordpress/html-entities';
+import { useSelect } from '@gutenberg/data';
+import { store as coreDataStore } from '@gutenberg/core-data';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 function MyFirstApp() {
 	const pages = useSelect(
@@ -151,7 +151,7 @@ Let’s start by adding a search field:
 
 ```js
 import { useState } from 'react';
-import { SearchControl } from '@wordpress/components';
+import { SearchControl } from '@gutenberg/components';
 
 function MyFirstApp() {
 	const [searchTerm, setSearchTerm] = useState( '' );
@@ -187,8 +187,8 @@ Running that snippet in your browser’s dev tools will trigger a request to `/w
 Let’s mirror this in our `useSelect` call as follows:
 
 ```js
-import { useSelect } from '@wordpress/data';
-import { store as coreDataStore } from '@wordpress/core-data';
+import { useSelect } from '@gutenberg/data';
+import { store as coreDataStore } from '@gutenberg/core-data';
 
 function MyFirstApp() {
 	// ...
@@ -213,9 +213,9 @@ Finally, here’s how `MyFirstApp` looks once we wire it all together:
 ```js
 import { useState } from 'react';
 import { createRoot } from 'react-dom';
-import { SearchControl } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { store as coreDataStore } from '@wordpress/core-data';
+import { SearchControl } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { store as coreDataStore } from '@gutenberg/core-data';
 
 function MyFirstApp() {
 	const [searchTerm, setSearchTerm] = useState( '' );
@@ -248,7 +248,7 @@ Voila! We can now filter the results:
 Let’s take a pause for a moment to consider the downsides of an alternative approach we could have taken - working with the API directly. Imagine we sent the API requests directly:
 
 ```js
-import apiFetch from '@wordpress/api-fetch';
+import apiFetch from '@gutenberg/api-fetch';
 function MyFirstApp() {
 	// ...
 	const [pages, setPages] = useState( [] );
@@ -282,7 +282,7 @@ There is one problem with our search feature. We can’t be quite sure whether i
 A few messages like  _Loading…_ or _No results_ would clear it up. Let’s implement them! First,  `PagesList` has to be aware of the current status:
 
 ```js
-import { SearchControl, Spinner } from '@wordpress/components';
+import { SearchControl, Spinner } from '@gutenberg/components';
 function PagesList( { hasResolved, pages } ) {
 	if ( !hasResolved ) {
 		return <Spinner/>
@@ -314,8 +314,8 @@ We still need to know whether the pages selector `hasResolved` or not. We can fi
 It takes the name of the selector and the _exact same arguments you passed to that selector_ and returns either `true` if the data was already loaded or `false` if we’re still waiting. Let’s add it to `useSelect`:
 
 ```js
-import { useSelect } from '@wordpress/data';
-import { store as coreDataStore } from '@wordpress/core-data';
+import { useSelect } from '@gutenberg/data';
+import { store as coreDataStore } from '@gutenberg/core-data';
 
 function MyFirstApp() {
 	// ...
@@ -335,8 +335,8 @@ function MyFirstApp() {
 There is just one last problem. It is easy to make a typo and end up passing different arguments to `getEntityRecords` and `hasFinishedResolution`. It is critical that they are identical. We can remove this risk by storing the arguments in a variable:
 
 ```js
-import { useSelect } from '@wordpress/data';
-import { store as coreDataStore } from '@wordpress/core-data';
+import { useSelect } from '@gutenberg/data';
+import { store as coreDataStore } from '@gutenberg/core-data';
 function MyFirstApp() {
 	// ...
 	const { pages, hasResolved } = useSelect( select => {
@@ -362,10 +362,10 @@ All the pieces are in place, great! Here’s the complete JavaScript code of our
 ```js
 import { useState } from 'react';
 import { createRoot } from 'react-dom';
-import { SearchControl, Spinner } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { store as coreDataStore } from '@wordpress/core-data';
-import { decodeEntities } from '@wordpress/html-entities';
+import { SearchControl, Spinner } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { store as coreDataStore } from '@gutenberg/core-data';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 function MyFirstApp() {
 	const [ searchTerm, setSearchTerm ] = useState( '' );

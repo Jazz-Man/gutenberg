@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useState, useRef } from '@wordpress/element';
-import { withInstanceId } from '@wordpress/compose';
-import { __, _x } from '@wordpress/i18n';
-import { Button, Notice } from '@wordpress/components';
+import { useState, useRef } from '@gutenberg/element';
+import { withInstanceId } from '@gutenberg/compose';
+import { __, _x } from '@gutenberg/i18n';
+import { Button, Notice } from '@gutenberg/components';
 
 /**
  * Internal dependencies

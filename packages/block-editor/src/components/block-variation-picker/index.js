@@ -6,9 +6,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Button, Placeholder } from '@wordpress/components';
-import { layout } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { Button, Placeholder } from '@gutenberg/components';
+import { layout } from '@gutenberg/icons';
 
 function BlockVariationPicker( {
 	icon = layout,

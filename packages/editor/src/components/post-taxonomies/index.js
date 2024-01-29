@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { Fragment } from '@wordpress/element';
-import { withSelect } from '@wordpress/data';
-import { compose } from '@wordpress/compose';
-import { store as coreStore } from '@wordpress/core-data';
+import { Fragment } from '@gutenberg/element';
+import { withSelect } from '@gutenberg/data';
+import { compose } from '@gutenberg/compose';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

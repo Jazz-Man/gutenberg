@@ -11,10 +11,10 @@ import {
 	registerBlockType,
 	unregisterBlockType,
 	getBlockTypes,
-} from '@wordpress/blocks';
-import { RichText, useBlockProps } from '@wordpress/block-editor';
-import { createRegistry, RegistryProvider } from '@wordpress/data';
-import '@wordpress/block-library';
+} from '@gutenberg/blocks';
+import { RichText, useBlockProps } from '@gutenberg/block-editor';
+import { createRegistry, RegistryProvider } from '@gutenberg/data';
+import '@gutenberg/block-library';
 
 /**
  * Internal dependencies

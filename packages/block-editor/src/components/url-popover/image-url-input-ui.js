@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useRef, useState } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { useRef, useState } from '@gutenberg/element';
 import {
 	ToolbarButton,
 	Button,
@@ -13,8 +13,8 @@ import {
 	SVG,
 	Path,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
-import { link as linkIcon, close } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { link as linkIcon, close } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

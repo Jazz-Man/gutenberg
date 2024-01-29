@@ -1,22 +1,22 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	InspectorControls,
 	useSettings,
 	__experimentalSpacingSizesControl as SpacingSizesControl,
 	isValueSpacingPreset,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	BaseControl,
 	PanelBody,
 	__experimentalUseCustomUnits as useCustomUnits,
 	__experimentalUnitControl as UnitControl,
 	__experimentalParseQuantityAndUnitFromRawValue as parseQuantityAndUnitFromRawValue,
-} from '@wordpress/components';
-import { useInstanceId } from '@wordpress/compose';
-import { View } from '@wordpress/primitives';
+} from '@gutenberg/components';
+import { useInstanceId } from '@gutenberg/compose';
+import { View } from '@gutenberg/primitives';
 
 /**
  * Internal dependencies

@@ -6,7 +6,7 @@
 
 ```jsx
 import { useState } from 'react';
-import { QueryControls } from '@wordpress/components';
+import { QueryControls } from '@gutenberg/components';
 
 const QUERY_DEFAULTS = {
 	category: 1,

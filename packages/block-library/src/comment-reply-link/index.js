@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { commentReplyLink as icon } from '@wordpress/icons';
+import { commentReplyLink as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { Button } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useEntityRecords, store as coreStore } from '@wordpress/core-data';
-import { decodeEntities } from '@wordpress/html-entities';
-import { useState, useMemo, useCallback, useEffect } from '@wordpress/element';
-import { dateI18n, getDate, getSettings } from '@wordpress/date';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { DataViews } from '@wordpress/dataviews';
+import { Button } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useEntityRecords, store as coreStore } from '@gutenberg/core-data';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { useState, useMemo, useCallback, useEffect } from '@gutenberg/element';
+import { dateI18n, getDate, getSettings } from '@gutenberg/date';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { DataViews } from '@gutenberg/dataviews';
 
 /**
  * Internal dependencies

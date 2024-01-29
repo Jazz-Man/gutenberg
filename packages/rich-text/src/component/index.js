@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { useRef, useLayoutEffect, useReducer } from '@wordpress/element';
-import { useMergeRefs, useRefEffect } from '@wordpress/compose';
-import { useRegistry } from '@wordpress/data';
+import { useRef, useLayoutEffect, useReducer } from '@gutenberg/element';
+import { useMergeRefs, useRefEffect } from '@gutenberg/compose';
+import { useRegistry } from '@gutenberg/data';
 
 /**
  * Internal dependencies

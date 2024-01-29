@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { isBlobURL } from '@wordpress/blob';
+import { isBlobURL } from '@gutenberg/blob';
 import {
 	ExternalLink,
 	ResizableBox,
@@ -14,9 +14,9 @@ import {
 	__experimentalToolsPanel as ToolsPanel,
 	__experimentalToolsPanelItem as ToolsPanelItem,
 	__experimentalUseCustomUnits as useCustomUnits,
-} from '@wordpress/components';
-import { useViewportMatch } from '@wordpress/compose';
-import { useSelect, useDispatch } from '@wordpress/data';
+} from '@gutenberg/components';
+import { useViewportMatch } from '@gutenberg/compose';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	BlockControls,
 	InspectorControls,
@@ -27,14 +27,14 @@ import {
 	__experimentalImageEditor as ImageEditor,
 	__experimentalUseBorderProps as useBorderProps,
 	privateApis as blockEditorPrivateApis,
-} from '@wordpress/block-editor';
-import { useEffect, useMemo, useState, useRef } from '@wordpress/element';
-import { __, _x, sprintf, isRTL } from '@wordpress/i18n';
-import { getFilename } from '@wordpress/url';
-import { switchToBlockType } from '@wordpress/blocks';
-import { crop, overlayText, upload } from '@wordpress/icons';
-import { store as noticesStore } from '@wordpress/notices';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/block-editor';
+import { useEffect, useMemo, useState, useRef } from '@gutenberg/element';
+import { __, _x, sprintf, isRTL } from '@gutenberg/i18n';
+import { getFilename } from '@gutenberg/url';
+import { switchToBlockType } from '@gutenberg/blocks';
+import { crop, overlayText, upload } from '@gutenberg/icons';
+import { store as noticesStore } from '@gutenberg/notices';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

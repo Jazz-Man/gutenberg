@@ -10,8 +10,8 @@ import {
 /**
  * WordPress dependencies
  */
-import { useSelect } from '@wordpress/data';
-import { useCallback } from '@wordpress/element';
+import { useSelect } from '@gutenberg/data';
+import { useCallback } from '@gutenberg/element';
 
 /**
  * Internal dependencies

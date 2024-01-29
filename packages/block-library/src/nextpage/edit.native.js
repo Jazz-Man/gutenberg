@@ -6,9 +6,9 @@ import { View } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { withPreferredColorScheme } from '@wordpress/compose';
-import { HorizontalRule } from '@wordpress/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { withPreferredColorScheme } from '@gutenberg/compose';
+import { HorizontalRule } from '@gutenberg/components';
 
 /**
  * Internal dependencies

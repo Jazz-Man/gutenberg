@@ -6,15 +6,15 @@ import { render } from '@testing-library/react';
 /**
  * WordPress dependencies
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies
  */
 import SeparatorEdit from '../edit';
 
-jest.mock( '@wordpress/block-editor', () => ( {
-	...jest.requireActual( '@wordpress/block-editor' ),
+jest.mock( '@gutenberg/block-editor', () => ( {
+	...jest.requireActual( '@gutenberg/block-editor' ),
 	useBlockProps: jest.fn(),
 } ) );
 

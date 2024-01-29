@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useState, useMemo, useEffect } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+import { useState, useMemo, useEffect } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
 import {
 	Button,
 	Flex,
@@ -12,10 +12,10 @@ import {
 	privateApis as componentsPrivateApis,
 	__experimentalText as Text,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
-import { useEntityRecords } from '@wordpress/core-data';
-import { decodeEntities } from '@wordpress/html-entities';
-import { useDebouncedInput } from '@wordpress/compose';
+} from '@gutenberg/components';
+import { useEntityRecords } from '@gutenberg/core-data';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { useDebouncedInput } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

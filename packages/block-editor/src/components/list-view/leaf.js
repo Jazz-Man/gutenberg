@@ -7,9 +7,9 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __experimentalTreeGridRow as TreeGridRow } from '@wordpress/components';
-import { useMergeRefs } from '@wordpress/compose';
-import { forwardRef } from '@wordpress/element';
+import { __experimentalTreeGridRow as TreeGridRow } from '@gutenberg/components';
+import { useMergeRefs } from '@gutenberg/compose';
+import { forwardRef } from '@gutenberg/element';
 
 /**
  * Internal dependencies

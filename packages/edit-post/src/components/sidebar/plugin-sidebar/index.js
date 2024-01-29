@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { ComplementaryArea } from '@wordpress/interface';
-import { useSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { store as editorStore } from '@wordpress/editor';
+import { ComplementaryArea } from '@gutenberg/interface';
+import { useSelect } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { store as keyboardShortcutsStore } from '@gutenberg/keyboard-shortcuts';
+import { store as editorStore } from '@gutenberg/editor';
 
 /**
  * Renders a sidebar when activated. The contents within the `PluginSidebar` will appear as content within the sidebar.
@@ -54,10 +54,10 @@ import { store as editorStore } from '@wordpress/editor';
  * @example
  * ```jsx
  * // Using ESNext syntax
- * import { __ } from '@wordpress/i18n';
- * import { PanelBody } from '@wordpress/components';
- * import { PluginSidebar } from '@wordpress/edit-post';
- * import { more } from '@wordpress/icons';
+ * import { __ } from '@gutenberg/i18n';
+ * import { PanelBody } from '@gutenberg/components';
+ * import { PluginSidebar } from '@gutenberg/edit-post';
+ * import { more } from '@gutenberg/icons';
  *
  * const MyPluginSidebar = () => (
  * 	<PluginSidebar

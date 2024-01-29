@@ -4,7 +4,7 @@
 import {
 	__experimentalStyleProvider as StyleProvider,
 	ToolbarGroup,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

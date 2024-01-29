@@ -11,10 +11,10 @@ import {
 	getBlockSupport,
 	getBlockType,
 	hasBlockSupport,
-} from '@wordpress/blocks';
-import { useInstanceId } from '@wordpress/compose';
-import { addFilter } from '@wordpress/hooks';
-import { useMemo, useEffect } from '@wordpress/element';
+} from '@gutenberg/blocks';
+import { useInstanceId } from '@gutenberg/compose';
+import { addFilter } from '@gutenberg/hooks';
+import { useMemo, useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies

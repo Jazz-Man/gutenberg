@@ -6,14 +6,14 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 import {
 	RichText,
 	BlockControls,
 	AlignmentToolbar,
 	useBlockProps,
-} from '@wordpress/block-editor';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
+} from '@gutenberg/block-editor';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
 
 export default function VerseEdit( {
 	attributes,

@@ -6,7 +6,7 @@ import type { Meta, StoryFn } from '@storybook/react';
 /**
  * WordPress dependencies
  */
-import { shortcutAriaLabel } from '@wordpress/keycodes';
+import { shortcutAriaLabel } from '@gutenberg/keycodes';
 
 /**
  * Internal dependencies

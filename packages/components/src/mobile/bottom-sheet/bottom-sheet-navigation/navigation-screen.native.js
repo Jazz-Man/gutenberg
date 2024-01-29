@@ -16,8 +16,8 @@ import {
 /**
  * WordPress dependencies
  */
-import { BottomSheetContext } from '@wordpress/components';
-import { useRef, useCallback, useContext, useMemo } from '@wordpress/element';
+import { BottomSheetContext } from '@gutenberg/components';
+import { useRef, useCallback, useContext, useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

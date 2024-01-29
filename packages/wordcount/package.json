@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/wordcount",
+	"name": "@gutenberg/wordcount",
 	"version": "3.49.0",
 	"description": "WordPress word count utility.",
 	"author": "The WordPress Contributors",

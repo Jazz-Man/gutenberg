@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useContext, useEffect, useState } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { useContext, useEffect, useState } from '@gutenberg/element';
 import {
 	privateApis as componentsPrivateApis,
 	__experimentalHStack as HStack,
@@ -11,7 +11,7 @@ import {
 	Spinner,
 	Notice,
 	FlexItem,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

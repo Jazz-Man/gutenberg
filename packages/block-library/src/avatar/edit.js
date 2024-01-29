@@ -10,15 +10,15 @@ import {
 	InspectorControls,
 	useBlockProps,
 	__experimentalUseBorderProps as useBorderProps,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	PanelBody,
 	RangeControl,
 	ResizableBox,
 	ToggleControl,
-} from '@wordpress/components';
-import { __, isRTL } from '@wordpress/i18n';
-import { addQueryArgs, removeQueryArgs } from '@wordpress/url';
+} from '@gutenberg/components';
+import { __, isRTL } from '@gutenberg/i18n';
+import { addQueryArgs, removeQueryArgs } from '@gutenberg/url';
 
 /**
  * Internal dependencies

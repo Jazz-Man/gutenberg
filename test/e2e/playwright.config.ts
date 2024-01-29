@@ -8,7 +8,7 @@ import { defineConfig, devices } from '@playwright/test';
 /**
  * WordPress dependencies
  */
-const baseConfig = require( '@wordpress/scripts/config/playwright.config' );
+const baseConfig = require( '@gutenberg/scripts/config/playwright.config' );
 
 const config = defineConfig( {
 	...baseConfig,

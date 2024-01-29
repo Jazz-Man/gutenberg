@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { forwardRef, useEffect, useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { speak } from '@wordpress/a11y';
+import { forwardRef, useEffect, useState } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { speak } from '@gutenberg/a11y';
 
 function InserterListboxGroup( props, ref ) {
 	const [ shouldSpeak, setShouldSpeak ] = useState( false );

@@ -47,7 +47,7 @@ export { plugins };
  *
  * @example
  * ```js
- * import { combineReducers, createReduxStore, register } from '@wordpress/data';
+ * import { combineReducers, createReduxStore, register } from '@gutenberg/data';
  *
  * const prices = ( state = {}, action ) => {
  * 	return action.type === 'SET_PRICE' ?
@@ -89,7 +89,7 @@ export const combineReducers = combineReducersModule;
  *
  * @example
  * ```js
- * import { resolveSelect } from '@wordpress/data';
+ * import { resolveSelect } from '@gutenberg/data';
  * import { store as myCustomStore } from 'my-custom-store';
  *
  * resolveSelect( myCustomStore ).getPrice( 'hammer' ).then(console.log)
@@ -125,7 +125,7 @@ export const suspendSelect = defaultRegistry.suspendSelect;
  *
  * @example
  * ```js
- * import { subscribe } from '@wordpress/data';
+ * import { subscribe } from '@gutenberg/data';
  *
  * const unsubscribe = subscribe( () => {
  * 	// You could use this opportunity to test whether the derived result of a
@@ -149,7 +149,7 @@ export const subscribe = defaultRegistry.subscribe;
 export const registerGenericStore = defaultRegistry.registerGenericStore;
 
 /**
- * Registers a standard `@wordpress/data` store.
+ * Registers a standard `@gutenberg/data` store.
  *
  * @deprecated Use `register` instead.
  *
@@ -170,11 +170,11 @@ export const registerStore = defaultRegistry.registerStore;
 export const use = defaultRegistry.use;
 
 /**
- * Registers a standard `@wordpress/data` store descriptor.
+ * Registers a standard `@gutenberg/data` store descriptor.
  *
  * @example
  * ```js
- * import { createReduxStore, register } from '@wordpress/data';
+ * import { createReduxStore, register } from '@gutenberg/data';
  *
  * const store = createReduxStore( 'demo', {
  *     reducer: ( state = 'OK' ) => state,

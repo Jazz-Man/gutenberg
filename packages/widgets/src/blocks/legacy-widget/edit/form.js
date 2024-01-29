@@ -5,12 +5,12 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useRef, useEffect } from '@wordpress/element';
-import { useDispatch } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
-import { __, sprintf } from '@wordpress/i18n';
-import { Popover } from '@wordpress/components';
-import { useViewportMatch } from '@wordpress/compose';
+import { useRef, useEffect } from '@gutenberg/element';
+import { useDispatch } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { __, sprintf } from '@gutenberg/i18n';
+import { Popover } from '@gutenberg/components';
+import { useViewportMatch } from '@gutenberg/compose';
 /**
  * Internal dependencies
  */

@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { useRef } from '@wordpress/element';
-import { useRefEffect } from '@wordpress/compose';
-import { ENTER } from '@wordpress/keycodes';
-import { useSelect, useDispatch, useRegistry } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { useRef } from '@gutenberg/element';
+import { useRefEffect } from '@gutenberg/compose';
+import { ENTER } from '@gutenberg/keycodes';
+import { useSelect, useDispatch, useRegistry } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 import {
 	hasBlockSupport,
 	createBlock,
 	getDefaultBlockName,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 export function useOnEnter( props ) {
 	const { batch } = useRegistry();

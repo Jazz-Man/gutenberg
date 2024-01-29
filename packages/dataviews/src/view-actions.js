@@ -4,10 +4,10 @@
 import {
 	Button,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { memo } from '@wordpress/element';
-import { settings } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { memo } from '@gutenberg/element';
+import { settings } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

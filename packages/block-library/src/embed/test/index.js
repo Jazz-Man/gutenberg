@@ -6,7 +6,7 @@ import {
 	unregisterBlockType,
 	registerBlockVariation,
 	unregisterBlockVariation,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies
@@ -25,7 +25,7 @@ import metadata from '../block.json';
 
 const { name: DEFAULT_EMBED_BLOCK, attributes } = metadata;
 
-jest.mock( '@wordpress/data/src/components/use-select', () => () => ( {} ) );
+jest.mock( '@gutenberg/data/src/components/use-select', () => () => ( {} ) );
 
 describe( 'utils', () => {
 	beforeAll( () => {

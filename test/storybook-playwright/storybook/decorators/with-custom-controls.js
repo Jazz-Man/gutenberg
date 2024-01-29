@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useId, useState } from '@wordpress/element';
+import { useId, useState } from '@gutenberg/element';
 
 export const WithCustomControls = ( Story, context ) => {
 	const textareaId = useId();

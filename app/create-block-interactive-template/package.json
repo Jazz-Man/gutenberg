@@ -1,7 +1,7 @@
 {
-	"name": "@wordpress/create-block-interactive-template",
+	"name": "@gutenberg/create-block-interactive-template",
 	"version": "1.12.0",
-	"description": "Template for @wordpress/create-block to create interactive blocks with the Interactivity API.",
+	"description": "Template for @gutenberg/create-block to create interactive blocks with the Interactivity API.",
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
 	"keywords": [

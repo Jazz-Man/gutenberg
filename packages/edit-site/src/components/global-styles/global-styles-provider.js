@@ -7,10 +7,10 @@ import { isPlainObject } from 'is-plain-object';
 /**
  * WordPress dependencies
  */
-import { useMemo, useCallback } from '@wordpress/element';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { privateApis as blockEditorPrivateApis } from '@wordpress/block-editor';
+import { useMemo, useCallback } from '@gutenberg/element';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { privateApis as blockEditorPrivateApis } from '@gutenberg/block-editor';
 
 /**
  * Internal dependencies

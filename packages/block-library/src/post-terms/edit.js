@@ -13,13 +13,13 @@ import {
 	useBlockProps,
 	useBlockDisplayInformation,
 	RichText,
-} from '@wordpress/block-editor';
-import { createBlock, getDefaultBlockName } from '@wordpress/blocks';
-import { Spinner, TextControl } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { decodeEntities } from '@wordpress/html-entities';
-import { __ } from '@wordpress/i18n';
-import { store as coreStore } from '@wordpress/core-data';
+} from '@gutenberg/block-editor';
+import { createBlock, getDefaultBlockName } from '@gutenberg/blocks';
+import { Spinner, TextControl } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { decodeEntities } from '@gutenberg/html-entities';
+import { __ } from '@gutenberg/i18n';
+import { store as coreStore } from '@gutenberg/core-data';
 
 /**
  * Internal dependencies

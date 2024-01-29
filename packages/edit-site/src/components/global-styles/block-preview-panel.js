@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { BlockPreview } from '@wordpress/block-editor';
-import { getBlockType, getBlockFromExample } from '@wordpress/blocks';
-import { __experimentalSpacer as Spacer } from '@wordpress/components';
-import { useMemo } from '@wordpress/element';
+import { BlockPreview } from '@gutenberg/block-editor';
+import { getBlockType, getBlockFromExample } from '@gutenberg/blocks';
+import { __experimentalSpacer as Spacer } from '@gutenberg/components';
+import { useMemo } from '@gutenberg/element';
 
 const BlockPreviewPanel = ( { name, variation = '' } ) => {
 	const blockExample = getBlockType( name )?.example;

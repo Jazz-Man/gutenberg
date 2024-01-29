@@ -12,7 +12,7 @@ import {
 	isCurrentURL,
 	openTypographyToolsPanelMenu,
 	canvas,
-} from '@wordpress/e2e-test-utils';
+} from '@gutenberg/e2e-test-utils';
 
 describe( 'Change detection', () => {
 	let handleInterceptedRequest, hadInterceptedSave;

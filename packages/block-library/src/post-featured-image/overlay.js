@@ -9,7 +9,7 @@ import classnames from 'classnames';
 import {
 	RangeControl,
 	__experimentalToolsPanelItem as ToolsPanelItem,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 import {
 	InspectorControls,
 	withColors,
@@ -17,9 +17,9 @@ import {
 	__experimentalUseGradient,
 	__experimentalUseMultipleOriginColorsAndGradients as useMultipleOriginColorsAndGradients,
 	__experimentalUseBorderProps as useBorderProps,
-} from '@wordpress/block-editor';
-import { compose } from '@wordpress/compose';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { compose } from '@gutenberg/compose';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

@@ -1,22 +1,22 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * WordPress dependencies
  */
-import { RichTextToolbarButton } from '@wordpress/block-editor';
+import { RichTextToolbarButton } from '@gutenberg/block-editor';
 import {
 	TextControl,
 	SelectControl,
 	Button,
 	Popover,
 	__experimentalHStack as HStack,
-} from '@wordpress/components';
-import { useState } from '@wordpress/element';
-import { applyFormat, removeFormat, useAnchor } from '@wordpress/rich-text';
-import { language as languageIcon } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { useState } from '@gutenberg/element';
+import { applyFormat, removeFormat, useAnchor } from '@gutenberg/rich-text';
+import { language as languageIcon } from '@gutenberg/icons';
 
 const name = 'core/language';
 const title = __( 'Language' );

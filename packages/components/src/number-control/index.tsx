@@ -7,11 +7,11 @@ import type { ForwardedRef, KeyboardEvent, MouseEvent } from 'react';
 /**
  * WordPress dependencies
  */
-import { useRef, forwardRef } from '@wordpress/element';
-import { isRTL, __ } from '@wordpress/i18n';
-import { plus as plusIcon, reset as resetIcon } from '@wordpress/icons';
-import { useMergeRefs } from '@wordpress/compose';
-import deprecated from '@wordpress/deprecated';
+import { useRef, forwardRef } from '@gutenberg/element';
+import { isRTL, __ } from '@gutenberg/i18n';
+import { plus as plusIcon, reset as resetIcon } from '@gutenberg/icons';
+import { useMergeRefs } from '@gutenberg/compose';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

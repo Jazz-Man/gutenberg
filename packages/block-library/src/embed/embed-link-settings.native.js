@@ -1,15 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
+import { __, sprintf } from '@gutenberg/i18n';
 import {
 	LinkSettingsNavigation,
 	FooterMessageLink,
-} from '@wordpress/components';
-import { isURL } from '@wordpress/url';
-import { useDispatch } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
-import { useCallback, useEffect, useRef, useState } from '@wordpress/element';
+} from '@gutenberg/components';
+import { isURL } from '@gutenberg/url';
+import { useDispatch } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
+import { useCallback, useEffect, useRef, useState } from '@gutenberg/element';
 
 const EmbedLinkSettings = ( {
 	autoFocus,

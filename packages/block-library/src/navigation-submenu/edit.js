@@ -6,16 +6,16 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
+import { useSelect, useDispatch } from '@gutenberg/data';
 import {
 	PanelBody,
 	TextControl,
 	TextareaControl,
 	ToolbarButton,
 	ToolbarGroup,
-} from '@wordpress/components';
-import { displayShortcut, isKeyboardEvent } from '@wordpress/keycodes';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { displayShortcut, isKeyboardEvent } from '@gutenberg/keycodes';
+import { __ } from '@gutenberg/i18n';
 import {
 	BlockControls,
 	InnerBlocks,
@@ -25,15 +25,15 @@ import {
 	useBlockProps,
 	store as blockEditorStore,
 	getColorClassName,
-} from '@wordpress/block-editor';
-import { isURL, prependHTTP } from '@wordpress/url';
-import { useState, useEffect, useRef } from '@wordpress/element';
-import { placeCaretAtHorizontalEdge } from '@wordpress/dom';
-import { link as linkIcon, removeSubmenu } from '@wordpress/icons';
-import { useResourcePermissions } from '@wordpress/core-data';
-import { speak } from '@wordpress/a11y';
-import { createBlock } from '@wordpress/blocks';
-import { useMergeRefs, usePrevious } from '@wordpress/compose';
+} from '@gutenberg/block-editor';
+import { isURL, prependHTTP } from '@gutenberg/url';
+import { useState, useEffect, useRef } from '@gutenberg/element';
+import { placeCaretAtHorizontalEdge } from '@gutenberg/dom';
+import { link as linkIcon, removeSubmenu } from '@gutenberg/icons';
+import { useResourcePermissions } from '@gutenberg/core-data';
+import { speak } from '@gutenberg/a11y';
+import { createBlock } from '@gutenberg/blocks';
+import { useMergeRefs, usePrevious } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -59,7 +59,7 @@ const DEFAULT_BLOCK = {
 /**
  * A React hook to determine if it's dragging within the target element.
  *
- * @typedef {import('@wordpress/element').RefObject} RefObject
+ * @typedef {import('@gutenberg/element').RefObject} RefObject
  *
  * @param {RefObject<HTMLElement>} elementRef The target elementRef object.
  *

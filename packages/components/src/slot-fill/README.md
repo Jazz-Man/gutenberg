@@ -21,7 +21,7 @@ import {
 	Fill,
 	Panel,
 	PanelBody,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 const MySlotFillProvider = () => {
 	const MyPanelSlot = () => (

@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { MenuGroup, MenuItem } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { MenuGroup, MenuItem } from '@gutenberg/components';
 import {
 	getBlockMenuDefaultClassName,
 	switchToBlockType,
-} from '@wordpress/blocks';
-import { useState, useMemo } from '@wordpress/element';
+} from '@gutenberg/blocks';
+import { useState, useMemo } from '@gutenberg/element';
 
 /**
  * Internal dependencies

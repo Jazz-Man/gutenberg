@@ -11,7 +11,7 @@ import {
 	sendMediaUpload,
 	subscribeMediaSave,
 	subscribeMediaUpload,
-} from '@wordpress/react-native-bridge';
+} from '@gutenberg/react-native-bridge';
 
 /**
  * Internal dependencies

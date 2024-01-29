@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
-import { _x } from '@wordpress/i18n';
+import { useMemo } from '@gutenberg/element';
+import { _x } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

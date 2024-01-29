@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { useEffect } from '@wordpress/element';
-import { useStateWithHistory } from '@wordpress/compose';
-import { registerCoreBlocks } from '@wordpress/block-library';
+import { useEffect } from '@gutenberg/element';
+import { useStateWithHistory } from '@gutenberg/compose';
+import { registerCoreBlocks } from '@gutenberg/block-library';
 import {
 	BlockEditorProvider,
 	BlockCanvas,
 	BlockToolbar,
-} from '@wordpress/block-editor';
-import { Button } from '@wordpress/components';
-import { undo as undoIcon, redo as redoIcon } from '@wordpress/icons';
+} from '@gutenberg/block-editor';
+import { Button } from '@gutenberg/components';
+import { undo as undoIcon, redo as redoIcon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

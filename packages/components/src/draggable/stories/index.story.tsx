@@ -7,9 +7,9 @@ import type { DragEvent } from 'react';
 /**
  * WordPress dependencies
  */
-import { useInstanceId } from '@wordpress/compose';
-import { useState } from '@wordpress/element';
-import { Icon, more } from '@wordpress/icons';
+import { useInstanceId } from '@gutenberg/compose';
+import { useState } from '@gutenberg/element';
+import { Icon, more } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

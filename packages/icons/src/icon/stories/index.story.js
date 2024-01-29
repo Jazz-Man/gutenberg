@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useState, Fragment } from '@wordpress/element';
+import { useState, Fragment } from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { getProtocol, prependHTTP } from '@wordpress/url';
-import { useCallback } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
+import { getProtocol, prependHTTP } from '@gutenberg/url';
+import { useCallback } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

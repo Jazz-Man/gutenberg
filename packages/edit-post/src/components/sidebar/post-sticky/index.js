@@ -5,7 +5,7 @@ import {
 	PostSticky as PostStickyForm,
 	PostStickyCheck,
 	privateApis as editorPrivateApis,
-} from '@wordpress/editor';
+} from '@gutenberg/editor';
 
 /**
  * Internal dependencies

@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { store as coreStore } from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
-import { InterfaceSkeleton } from '@wordpress/interface';
-import { __, sprintf } from '@wordpress/i18n';
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { EditorSnackbars } from '@wordpress/editor';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
+import { InterfaceSkeleton } from '@gutenberg/interface';
+import { __, sprintf } from '@gutenberg/i18n';
+import { store as keyboardShortcutsStore } from '@gutenberg/keyboard-shortcuts';
+import { EditorSnackbars } from '@gutenberg/editor';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

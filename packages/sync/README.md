@@ -7,7 +7,7 @@ Sync data between multiple peers and persist in a local database.
 Install the module
 
 ```bash
-npm install @wordpress/sync --save
+npm install @gutenberg/sync --save
 ```
 
 ## API

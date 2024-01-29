@@ -6,12 +6,12 @@ import { AccessibilityInfo, Platform } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
-import { Dropdown, ToolbarButton, Picker } from '@wordpress/components';
-import { Component } from '@wordpress/element';
-import { withDispatch, withSelect } from '@wordpress/data';
-import { compose, withPreferredColorScheme } from '@wordpress/compose';
-import { isUnmodifiedDefaultBlock } from '@wordpress/blocks';
+import { __, _x } from '@gutenberg/i18n';
+import { Dropdown, ToolbarButton, Picker } from '@gutenberg/components';
+import { Component } from '@gutenberg/element';
+import { withDispatch, withSelect } from '@gutenberg/data';
+import { compose, withPreferredColorScheme } from '@gutenberg/compose';
+import { isUnmodifiedDefaultBlock } from '@gutenberg/blocks';
 import {
 	Icon,
 	plus,
@@ -19,8 +19,8 @@ import {
 	plusCircleFilled,
 	insertAfter,
 	insertBefore,
-} from '@wordpress/icons';
-import { setBlockTypeImpressions } from '@wordpress/react-native-bridge';
+} from '@gutenberg/icons';
+import { setBlockTypeImpressions } from '@gutenberg/react-native-bridge';
 
 /**
  * Internal dependencies

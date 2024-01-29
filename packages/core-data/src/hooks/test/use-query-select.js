@@ -5,7 +5,7 @@ import {
 	createReduxStore,
 	createRegistry,
 	RegistryProvider,
-} from '@wordpress/data';
+} from '@gutenberg/data';
 
 /**
  * External dependencies

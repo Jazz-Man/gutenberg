@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { didAction } from '@wordpress/hooks';
+import { didAction } from '@gutenberg/hooks';
 
 /**
  * Internal dependencies

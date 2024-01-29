@@ -6,10 +6,10 @@ import {
 	useBlockProps,
 	useInnerBlocksProps,
 	store as blockEditorStore,
-} from '@wordpress/block-editor';
-import { ToolbarButton } from '@wordpress/components';
-import { useDispatch, useSelect, useRegistry } from '@wordpress/data';
-import { isRTL, __ } from '@wordpress/i18n';
+} from '@gutenberg/block-editor';
+import { ToolbarButton } from '@gutenberg/components';
+import { useDispatch, useSelect, useRegistry } from '@gutenberg/data';
+import { isRTL, __ } from '@gutenberg/i18n';
 import {
 	formatListBullets,
 	formatListBulletsRTL,
@@ -17,10 +17,10 @@ import {
 	formatListNumberedRTL,
 	formatOutdent,
 	formatOutdentRTL,
-} from '@wordpress/icons';
-import { createBlock } from '@wordpress/blocks';
-import { useCallback, useEffect, Platform } from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
+} from '@gutenberg/icons';
+import { createBlock } from '@gutenberg/blocks';
+import { useCallback, useEffect, Platform } from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

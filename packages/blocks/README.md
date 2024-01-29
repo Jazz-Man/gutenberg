@@ -13,10 +13,10 @@ For more context, refer to [_What Are Little Blocks Made Of?_](https://make.word
 Install the module
 
 ```bash
-npm install @wordpress/blocks --save
+npm install @gutenberg/blocks --save
 ```
 
-_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
+_This package assumes that your code will run in an **ES2015+** environment. If you're using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@gutenberg/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code._
 
 ## API
 
@@ -482,8 +482,8 @@ Registers a new block collection to group blocks in the same namespace in the in
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { registerBlockCollection, registerBlockType } from '@wordpress/blocks';
+import { __ } from '@gutenberg/i18n';
+import { registerBlockCollection, registerBlockType } from '@gutenberg/blocks';
 
 // Register the collection.
 registerBlockCollection( 'my-collection', {
@@ -514,9 +514,9 @@ For more information on connecting the styles with CSS [the official documentati
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { registerBlockStyle } from '@wordpress/blocks';
-import { Button } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { registerBlockStyle } from '@gutenberg/blocks';
+import { Button } from '@gutenberg/components';
 
 const ExampleComponent = () => {
 	return (
@@ -548,8 +548,8 @@ For more in-depth information on registering a custom block see the [Create a bl
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { registerBlockType } from '@wordpress/blocks';
+import { __ } from '@gutenberg/i18n';
+import { registerBlockType } from '@gutenberg/blocks';
 
 registerBlockType( 'namespace/block-name', {
 	title: __( 'My First Block' ),
@@ -576,9 +576,9 @@ For more information on block variations see [the official documentation ](https
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { registerBlockVariation } from '@wordpress/blocks';
-import { Button } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { registerBlockVariation } from '@gutenberg/blocks';
+import { Button } from '@gutenberg/components';
 
 const ExampleComponent = () => {
 	return (
@@ -617,14 +617,14 @@ _Returns_
 
 ### serializeRawBlock
 
-Serializes a block node into the native HTML-comment-powered block format. CAVEAT: This function is intended for re-serializing blocks as parsed by valid parsers and skips any validation steps. This is NOT a generic serialization function for in-memory blocks. For most purposes, see the following functions available in the `@wordpress/blocks` package:
+Serializes a block node into the native HTML-comment-powered block format. CAVEAT: This function is intended for re-serializing blocks as parsed by valid parsers and skips any validation steps. This is NOT a generic serialization function for in-memory blocks. For most purposes, see the following functions available in the `@gutenberg/blocks` package:
 
 _Related_
 
 -   serializeBlock
 -   serialize For more on the format of block nodes as returned by valid parsers:
--   `@wordpress/block-serialization-default-parser` package
--   `@wordpress/block-serialization-spec-parser` package
+-   `@gutenberg/block-serialization-default-parser` package
+-   `@gutenberg/block-serialization-spec-parser` package
 
 _Parameters_
 
@@ -642,10 +642,10 @@ Sets the block categories.
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { store as blocksStore, setCategories } from '@wordpress/blocks';
-import { useSelect } from '@wordpress/data';
-import { Button } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { store as blocksStore, setCategories } from '@gutenberg/blocks';
+import { useSelect } from '@gutenberg/data';
+import { Button } from '@gutenberg/components';
 
 const ExampleComponent = () => {
 	// Retrieve the list of current categories.
@@ -681,7 +681,7 @@ Assigns the default block name.
 _Usage_
 
 ```js
-import { setDefaultBlockName } from '@wordpress/blocks';
+import { setDefaultBlockName } from '@gutenberg/blocks';
 
 const ExampleComponent = () => {
 	return (
@@ -713,7 +713,7 @@ This function lets you select a different block to group other blocks in instead
 _Usage_
 
 ```js
-import { setGroupingBlockName } from '@wordpress/blocks';
+import { setGroupingBlockName } from '@gutenberg/blocks';
 
 const ExampleComponent = () => {
 	return (
@@ -783,9 +783,9 @@ Unregisters a block style for the given block.
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { unregisterBlockStyle } from '@wordpress/blocks';
-import { Button } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { unregisterBlockStyle } from '@gutenberg/blocks';
+import { Button } from '@gutenberg/components';
 
 const ExampleComponent = () => {
 	return (
@@ -812,8 +812,8 @@ Unregisters a block.
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { unregisterBlockType } from '@wordpress/blocks';
+import { __ } from '@gutenberg/i18n';
+import { unregisterBlockType } from '@gutenberg/blocks';
 
 const ExampleComponent = () => {
 	return (
@@ -841,9 +841,9 @@ Unregisters a block variation defined for the given block type.
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { unregisterBlockVariation } from '@wordpress/blocks';
-import { Button } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { unregisterBlockVariation } from '@gutenberg/blocks';
+import { Button } from '@gutenberg/components';
 
 const ExampleComponent = () => {
 	return (
@@ -870,9 +870,9 @@ Updates a category.
 _Usage_
 
 ```js
-import { __ } from '@wordpress/i18n';
-import { updateCategory } from '@wordpress/blocks';
-import { Button } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { updateCategory } from '@gutenberg/blocks';
+import { Button } from '@gutenberg/components';
 
 const ExampleComponent = () => {
 	return (

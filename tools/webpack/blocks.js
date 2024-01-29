@@ -8,7 +8,7 @@ const fastGlob = require( 'fast-glob' );
 /**
  * WordPress dependencies
  */
-const DependencyExtractionWebpackPlugin = require( '@wordpress/dependency-extraction-webpack-plugin' );
+const DependencyExtractionWebpackPlugin = require( '@gutenberg/dependency-extraction-webpack-plugin' );
 
 /**
  * Internal dependencies
@@ -48,7 +48,7 @@ function escapeRegExp( string ) {
 
 const createEntrypoints = () => {
 	/*
-	 * Returns an array of paths to block view files within the `@wordpress/block-library` package.
+	 * Returns an array of paths to block view files within the `@gutenberg/block-library` package.
 	 * These paths can be matched by the regex `blockViewRegex` in order to extract
 	 * the block's filename.
 	 *

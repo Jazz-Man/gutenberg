@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { formatListNumbered as icon } from '@wordpress/icons';
-import { registerFormatType } from '@wordpress/rich-text';
+import { formatListNumbered as icon } from '@gutenberg/icons';
+import { registerFormatType } from '@gutenberg/rich-text';
 
 /**
  * Internal dependencies

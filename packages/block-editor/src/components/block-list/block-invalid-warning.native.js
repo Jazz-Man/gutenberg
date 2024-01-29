@@ -6,9 +6,9 @@ import { TouchableWithoutFeedback } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { createBlock, getBlockType } from '@wordpress/blocks';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { createBlock, getBlockType } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies
@@ -58,7 +58,7 @@ export default function BlockInvalidWarning( { clientId } ) {
 		>
 			<Warning
 				title={ blockTitle }
-				// eslint-disable-next-line @wordpress/i18n-no-collapsible-whitespace
+				// eslint-disable-next-line @gutenberg/i18n-no-collapsible-whitespace
 				message={ __(
 					'Problem displaying block. \nTap to attempt block recovery.'
 				) }

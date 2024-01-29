@@ -14,7 +14,7 @@ import {
 	__experimentalDropdownContentWrapper as DropdownContentWrapper,
 	__experimentalHStack as HStack,
 	__experimentalToolsPanelItem as ToolsPanelItem,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

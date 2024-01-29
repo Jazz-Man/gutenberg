@@ -6,14 +6,14 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { speak } from '@wordpress/a11y';
-import { __, _x, sprintf } from '@wordpress/i18n';
-import { Dropdown, Button } from '@wordpress/components';
-import { forwardRef, Component } from '@wordpress/element';
-import { withDispatch, withSelect } from '@wordpress/data';
-import { compose, ifCondition } from '@wordpress/compose';
-import { createBlock, store as blocksStore } from '@wordpress/blocks';
-import { plus } from '@wordpress/icons';
+import { speak } from '@gutenberg/a11y';
+import { __, _x, sprintf } from '@gutenberg/i18n';
+import { Dropdown, Button } from '@gutenberg/components';
+import { forwardRef, Component } from '@gutenberg/element';
+import { withDispatch, withSelect } from '@gutenberg/data';
+import { compose, ifCondition } from '@gutenberg/compose';
+import { createBlock, store as blocksStore } from '@gutenberg/blocks';
+import { plus } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

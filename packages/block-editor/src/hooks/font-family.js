@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { addFilter } from '@wordpress/hooks';
-import { hasBlockSupport } from '@wordpress/blocks';
-import TokenList from '@wordpress/token-list';
-import { privateApis as componentsPrivateApis } from '@wordpress/components';
+import { addFilter } from '@gutenberg/hooks';
+import { hasBlockSupport } from '@gutenberg/blocks';
+import TokenList from '@gutenberg/token-list';
+import { privateApis as componentsPrivateApis } from '@gutenberg/components';
 
 /**
  * Internal dependencies

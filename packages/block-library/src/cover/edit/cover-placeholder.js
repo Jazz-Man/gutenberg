@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { BlockIcon, MediaPlaceholder } from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
-import { cover as icon } from '@wordpress/icons';
+import { BlockIcon, MediaPlaceholder } from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
+import { cover as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

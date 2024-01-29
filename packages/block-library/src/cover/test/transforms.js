@@ -7,7 +7,7 @@ import {
 	registerBlockType,
 	switchToBlockType,
 	unregisterBlockType,
-} from '@wordpress/blocks';
+} from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

@@ -11,7 +11,7 @@ import {
 	getColorClassName,
 	useBlockProps,
 	useInnerBlocksProps,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 const migrateAttributes = ( attributes ) => {
 	if ( ! attributes.tagName ) {

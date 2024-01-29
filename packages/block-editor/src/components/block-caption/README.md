@@ -11,7 +11,7 @@ The `BlockCaption` component renders block-level UI for adding and editing capti
 Renders an editable caption field designed specifically for block-level use.
 
 ```jsx
-import { BlockCaption, RichText } from '@wordpress/block-editor';
+import { BlockCaption, RichText } from '@gutenberg/block-editor';
 
 const MyBlockCaption = (
 	clientId,

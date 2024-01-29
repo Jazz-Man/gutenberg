@@ -15,10 +15,10 @@ import {
 	cloneElement,
 	isValidElement,
 	useCallback,
-} from '@wordpress/element';
-import { isRTL } from '@wordpress/i18n';
-import { check, chevronRightSmall } from '@wordpress/icons';
-import { SVG, Circle } from '@wordpress/primitives';
+} from '@gutenberg/element';
+import { isRTL } from '@gutenberg/i18n';
+import { check, chevronRightSmall } from '@gutenberg/icons';
+import { SVG, Circle } from '@gutenberg/primitives';
 
 /**
  * Internal dependencies

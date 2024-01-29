@@ -6,8 +6,8 @@ import { useNavigation } from '@react-navigation/native';
 /**
  * WordPress dependencies
  */
-import { TextControl, Icon } from '@wordpress/components';
-import { chevronRight } from '@wordpress/icons';
+import { TextControl, Icon } from '@gutenberg/components';
+import { chevronRight } from '@gutenberg/icons';
 
 const HelpTopicRow = ( { label, icon, screenName, isLastItem } ) => {
 	const navigation = useNavigation();

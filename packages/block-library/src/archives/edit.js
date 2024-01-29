@@ -6,10 +6,10 @@ import {
 	ToggleControl,
 	SelectControl,
 	Disabled,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import ServerSideRender from '@wordpress/server-side-render';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { InspectorControls, useBlockProps } from '@gutenberg/block-editor';
+import ServerSideRender from '@gutenberg/server-side-render';
 
 export default function ArchivesEdit( { attributes, setAttributes } ) {
 	const { showLabel, showPostCounts, displayAsDropdown, type } = attributes;

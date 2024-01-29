@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { toggleFormat } from '@wordpress/rich-text';
-import { RichTextToolbarButton } from '@wordpress/block-editor';
-import { superscript as superscriptIcon } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { toggleFormat } from '@gutenberg/rich-text';
+import { RichTextToolbarButton } from '@gutenberg/block-editor';
+import { superscript as superscriptIcon } from '@gutenberg/icons';
 
 const name = 'core/superscript';
 const title = __( 'Superscript' );

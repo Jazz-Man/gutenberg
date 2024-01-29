@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/nux",
+	"name": "@gutenberg/nux",
 	"version": "8.11.0",
 	"description": "NUX (New User eXperience) module for WordPress.",
 	"author": "The WordPress Contributors",
@@ -31,13 +31,13 @@
 	],
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/components": "workspace:*",
-		"@wordpress/compose": "workspace:*",
-		"@wordpress/data": "workspace:*",
-		"@wordpress/deprecated": "workspace:*",
-		"@wordpress/element": "workspace:*",
-		"@wordpress/i18n": "workspace:*",
-		"@wordpress/icons": "workspace:*",
+		"@gutenberg/components": "workspace:*",
+		"@gutenberg/compose": "workspace:*",
+		"@gutenberg/data": "workspace:*",
+		"@gutenberg/deprecated": "workspace:*",
+		"@gutenberg/element": "workspace:*",
+		"@gutenberg/i18n": "workspace:*",
+		"@gutenberg/icons": "workspace:*",
 		"rememo": "^4.0.2"
 	},
 	"peerDependencies": {

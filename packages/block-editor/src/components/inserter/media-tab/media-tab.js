@@ -6,17 +6,17 @@ import classNames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __, isRTL } from '@wordpress/i18n';
-import { useViewportMatch } from '@wordpress/compose';
+import { __, isRTL } from '@gutenberg/i18n';
+import { useViewportMatch } from '@gutenberg/compose';
 import {
 	__experimentalItemGroup as ItemGroup,
 	__experimentalItem as Item,
 	__experimentalHStack as HStack,
 	FlexBlock,
 	Button,
-} from '@wordpress/components';
-import { useCallback, useMemo } from '@wordpress/element';
-import { Icon, chevronRight, chevronLeft } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { useCallback, useMemo } from '@gutenberg/element';
+import { Icon, chevronRight, chevronLeft } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

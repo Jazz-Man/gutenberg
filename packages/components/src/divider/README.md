@@ -13,7 +13,7 @@ import {
 	__experimentalDivider as Divider,
 	__experimentalText as Text,
 	__experimentalVStack as VStack,
-} from `@wordpress/components`;
+} from `@gutenberg/components`;
 
 function Example() {
 	return (

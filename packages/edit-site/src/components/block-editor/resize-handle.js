@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { LEFT, RIGHT } from '@wordpress/keycodes';
-import { VisuallyHidden } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { LEFT, RIGHT } from '@gutenberg/keycodes';
+import { VisuallyHidden } from '@gutenberg/components';
 
 const DELTA_DISTANCE = 20; // The distance to resize per keydown in pixels.
 

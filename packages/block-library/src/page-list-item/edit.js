@@ -5,10 +5,10 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
-import { decodeEntities } from '@wordpress/html-entities';
+import { useBlockProps, useInnerBlocksProps } from '@gutenberg/block-editor';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Internal dependencies

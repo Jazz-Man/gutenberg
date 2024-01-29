@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
-import { BottomSheet, withSpokenMessages } from '@wordpress/components';
+import { useMemo } from '@gutenberg/element';
+import { BottomSheet, withSpokenMessages } from '@gutenberg/components';
 
 /**
  * Internal dependencies

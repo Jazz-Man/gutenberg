@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { select } from '@wordpress/data';
-import { uploadMedia } from '@wordpress/media-utils';
+import { select } from '@gutenberg/data';
+import { uploadMedia } from '@gutenberg/media-utils';
 
 /**
  * Internal dependencies

@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useCommandLoader } from '@wordpress/commands';
-import { __ } from '@wordpress/i18n';
-import { useMemo } from '@wordpress/element';
-import { useSelect } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
+import { useCommandLoader } from '@gutenberg/commands';
+import { __ } from '@gutenberg/i18n';
+import { useMemo } from '@gutenberg/element';
+import { useSelect } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
 import {
 	post,
 	page,
@@ -13,9 +13,9 @@ import {
 	symbolFilled,
 	styles,
 	navigation,
-} from '@wordpress/icons';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
-import { getQueryArg, addQueryArgs, getPath } from '@wordpress/url';
+} from '@gutenberg/icons';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
+import { getQueryArg, addQueryArgs, getPath } from '@gutenberg/url';
 
 /**
  * Internal dependencies

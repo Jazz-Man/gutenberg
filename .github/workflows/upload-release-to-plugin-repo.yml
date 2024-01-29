@@ -132,7 +132,7 @@ jobs:
             - name: Configure git user name and email
               run: |
                   git config user.name "Gutenberg Repository Automation"
-                  git config user.email gutenberg@wordpress.org
+                  git config user.email gutenberg@gutenberg.org
 
             - name: Commit the Changelog update
               run: |

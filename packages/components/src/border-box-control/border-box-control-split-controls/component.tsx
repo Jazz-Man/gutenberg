@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useMemo, useState } from '@wordpress/element';
-import { useMergeRefs } from '@wordpress/compose';
+import { __ } from '@gutenberg/i18n';
+import { useMemo, useState } from '@gutenberg/element';
+import { useMergeRefs } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

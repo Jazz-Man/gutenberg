@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/plugins",
+	"name": "@gutenberg/plugins",
 	"version": "6.17.0",
 	"description": "Plugins module for WordPress.",
 	"author": "The WordPress Contributors",
@@ -27,12 +27,12 @@
 	"types": "build-types",
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@wordpress/components": "workspace:*",
-		"@wordpress/compose": "workspace:*",
-		"@wordpress/element": "workspace:*",
-		"@wordpress/hooks": "workspace:*",
-		"@wordpress/icons": "workspace:*",
-		"@wordpress/is-shallow-equal": "workspace:*",
+		"@gutenberg/components": "workspace:*",
+		"@gutenberg/compose": "workspace:*",
+		"@gutenberg/element": "workspace:*",
+		"@gutenberg/hooks": "workspace:*",
+		"@gutenberg/icons": "workspace:*",
+		"@gutenberg/is-shallow-equal": "workspace:*",
 		"memize": "^2.0.1"
 	},
 	"peerDependencies": {

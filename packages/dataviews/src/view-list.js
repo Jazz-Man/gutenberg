@@ -6,15 +6,15 @@ import classNames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useAsyncList } from '@wordpress/compose';
+import { useAsyncList } from '@gutenberg/compose';
 import {
 	__experimentalHStack as HStack,
 	__experimentalVStack as VStack,
 	Button,
-} from '@wordpress/components';
-import { ENTER, SPACE } from '@wordpress/keycodes';
-import { info } from '@wordpress/icons';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { ENTER, SPACE } from '@gutenberg/keycodes';
+import { info } from '@gutenberg/icons';
+import { __ } from '@gutenberg/i18n';
 
 export default function ViewList( {
 	view,

@@ -22,14 +22,14 @@ By default the default control will be used to render the default (ie: "All") se
 
 ```jsx
 import { useState } from 'react';
-import { registerBlockType } from '@wordpress/blocks';
+import { registerBlockType } from '@gutenberg/blocks';
 import {
 	InspectorControls,
 	ResponsiveBlockControl,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	DimensionControl,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 registerBlockType( 'my-plugin/my-block', {
 	// ...

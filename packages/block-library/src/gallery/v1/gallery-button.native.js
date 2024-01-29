@@ -6,7 +6,7 @@ import { StyleSheet, TouchableOpacity } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { Icon } from '@wordpress/components';
+import { Icon } from '@gutenberg/components';
 
 /**
  * Internal dependencies

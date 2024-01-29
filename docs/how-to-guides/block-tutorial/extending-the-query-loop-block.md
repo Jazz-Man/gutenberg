@@ -198,7 +198,7 @@ Notice that we have also disabled the `postType` control. When the user selects 
 Because our plugin uses custom attributes that we need to query, we want to add our own controls to allow the users to select those instead of the ones we have just disabled from the core inspector controls. We can do this via a [React HOC](https://reactjs.org/docs/higher-order-components.html) hooked into a [block filter](https://developer.wordpress.org/block-editor/reference-guides/filters/block-filters/), like so:
 
 ```jsx
-import { InspectorControls } from '@wordpress/block-editor';
+import { InspectorControls } from '@gutenberg/block-editor';
 
 export const withBookQueryControls = ( BlockEdit ) => ( props ) => {
 	// We only want to add these controls if it is our variation,
@@ -221,7 +221,7 @@ export const withBookQueryControls = ( BlockEdit ) => ( props ) => {
 addFilter( 'editor.BlockEdit', 'core/query', withBookQueryControls );
 ```
 
-Of course, you'll be responsible for implementing the logic of your control (you might want to take a look at [`@wordpress/components`](https://www.npmjs.com/package/@wordpress/components) to make your controls fit seamlessly within the Gutenberg UI). Any extra parameter you assign within the `query` object inside the blocks attributes can be used to create a custom query according to your needs, with a little extra effort.
+Of course, you'll be responsible for implementing the logic of your control (you might want to take a look at [`@gutenberg/components`](https://www.npmjs.com/package/@gutenberg/components) to make your controls fit seamlessly within the Gutenberg UI). Any extra parameter you assign within the `query` object inside the blocks attributes can be used to create a custom query according to your needs, with a little extra effort.
 
 Currently, you'll likely have to implement slightly different paths to make the query behave correctly both on the front-end side (i.e. on the end user's side) and to show the correct preview on the editor side.
 

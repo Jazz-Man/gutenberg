@@ -1,6 +1,6 @@
 /**
  * WordPress dependencies
  */
-import { store } from '@wordpress/interactivity';
+import { store } from '@gutenberg/interactivity';
 
 store( 'tovdom', {} );

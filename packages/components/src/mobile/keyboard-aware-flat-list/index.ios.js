@@ -13,8 +13,8 @@ import {
 	useEffect,
 	forwardRef,
 	useImperativeHandle,
-} from '@wordpress/element';
-import { useThrottle } from '@wordpress/compose';
+} from '@gutenberg/element';
+import { useThrottle } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -26,7 +26,7 @@ import useTextInputCaretPosition from './use-text-input-caret-position';
 const DEFAULT_FONT_SIZE = 16;
 const AnimatedScrollView = Animated.createAnimatedComponent( ScrollView );
 
-/** @typedef {import('@wordpress/element').RefObject} RefObject */
+/** @typedef {import('@gutenberg/element').RefObject} RefObject */
 /**
  * React component that provides a FlatList that is aware of the keyboard state and can scroll
  * to the currently focused TextInput.

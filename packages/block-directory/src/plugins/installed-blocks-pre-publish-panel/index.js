@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { _n, sprintf } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { blockDefault } from '@wordpress/icons';
+import { _n, sprintf } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { blockDefault } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

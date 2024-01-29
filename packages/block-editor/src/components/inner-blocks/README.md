@@ -9,8 +9,8 @@ Refer to the [implementation of the Columns block](https://github.com/WordPress/
 In a block's `edit` implementation, render `InnerBlocks`. Then, in the `save` implementation, render `InnerBlocks.Content`. This will be replaced automatically with the content of the nested blocks.
 
 ```jsx
-import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
+import { registerBlockType } from '@gutenberg/blocks';
+import { useBlockProps, InnerBlocks } from '@gutenberg/block-editor';
 
 registerBlockType( 'my-plugin/my-block', {
 	// ...

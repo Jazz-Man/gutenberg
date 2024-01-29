@@ -5,11 +5,11 @@ import {
 	Button,
 	__unstableMotion as motion,
 	__unstableAnimatePresence as AnimatePresence,
-} from '@wordpress/components';
-import { chevronLeftSmall, chevronRightSmall } from '@wordpress/icons';
-import { useReducedMotion, useInstanceId } from '@wordpress/compose';
-import { _x, isRTL } from '@wordpress/i18n';
-import { Fragment } from '@wordpress/element';
+} from '@gutenberg/components';
+import { chevronLeftSmall, chevronRightSmall } from '@gutenberg/icons';
+import { useReducedMotion, useInstanceId } from '@gutenberg/compose';
+import { _x, isRTL } from '@gutenberg/i18n';
+import { Fragment } from '@gutenberg/element';
 
 function LinkSettingsDrawer( { children, settingsOpen, setSettingsOpen } ) {
 	const prefersReducedMotion = useReducedMotion();

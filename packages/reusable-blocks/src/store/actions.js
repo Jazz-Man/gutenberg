@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { store as blockEditorStore } from '@wordpress/block-editor';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
 import {
 	createBlock,
 	isReusableBlock,
 	parse,
 	serialize,
-} from '@wordpress/blocks';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/blocks';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Returns a generator converting a reusable block into a static block.

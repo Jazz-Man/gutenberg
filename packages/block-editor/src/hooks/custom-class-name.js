@@ -6,10 +6,10 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { addFilter } from '@wordpress/hooks';
-import { TextControl } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { hasBlockSupport } from '@wordpress/blocks';
+import { addFilter } from '@gutenberg/hooks';
+import { TextControl } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { hasBlockSupport } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { RichText } from '@wordpress/block-editor';
-import { createBlock } from '@wordpress/blocks';
+import { RichText } from '@gutenberg/block-editor';
+import { createBlock } from '@gutenberg/blocks';
 
 const transforms = {
 	from: [

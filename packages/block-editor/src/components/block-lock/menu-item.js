@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { useReducer } from '@wordpress/element';
-import { MenuItem } from '@wordpress/components';
-import { lockOutline, unlock } from '@wordpress/icons';
+import { __ } from '@gutenberg/i18n';
+import { useReducer } from '@gutenberg/element';
+import { MenuItem } from '@gutenberg/components';
+import { lockOutline, unlock } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

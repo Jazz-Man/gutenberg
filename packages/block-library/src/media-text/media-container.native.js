@@ -11,8 +11,8 @@ import {
 	requestImageFailedRetryDialog,
 	requestImageUploadCancelDialog,
 	requestImageFullscreenPreview,
-} from '@wordpress/react-native-bridge';
-import { Icon, Image, IMAGE_DEFAULT_FOCAL_POINT } from '@wordpress/components';
+} from '@gutenberg/react-native-bridge';
+import { Icon, Image, IMAGE_DEFAULT_FOCAL_POINT } from '@gutenberg/components';
 import {
 	MEDIA_TYPE_IMAGE,
 	MEDIA_TYPE_VIDEO,
@@ -21,12 +21,12 @@ import {
 	MediaUploadProgress,
 	VIDEO_ASPECT_RATIO,
 	VideoPlayer,
-} from '@wordpress/block-editor';
-import { Component } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import { isURL, getProtocol } from '@wordpress/url';
-import { compose, withPreferredColorScheme } from '@wordpress/compose';
-import { media as icon } from '@wordpress/icons';
+} from '@gutenberg/block-editor';
+import { Component } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import { isURL, getProtocol } from '@gutenberg/url';
+import { compose, withPreferredColorScheme } from '@gutenberg/compose';
+import { media as icon } from '@gutenberg/icons';
 
 /**
  * Internal dependencies

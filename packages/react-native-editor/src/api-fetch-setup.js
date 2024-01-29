@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { fetchRequest, postRequest } from '@wordpress/react-native-bridge';
-import apiFetch from '@wordpress/api-fetch';
-import { applyFilters } from '@wordpress/hooks';
+import { fetchRequest, postRequest } from '@gutenberg/react-native-bridge';
+import apiFetch from '@gutenberg/api-fetch';
+import { applyFilters } from '@gutenberg/hooks';
 
 const SUPPORTED_METHODS = [ 'GET', 'POST' ];
 // Please add only wp.org API paths here!

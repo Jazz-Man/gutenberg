@@ -11,12 +11,12 @@ import {
 	__experimentalHeading as Heading,
 	__experimentalUseNavigator as useNavigator,
 	__experimentalVStack as VStack,
-} from '@wordpress/components';
-import { isRTL, __, sprintf } from '@wordpress/i18n';
-import { chevronRight, chevronLeft } from '@wordpress/icons';
-import { store as coreStore } from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+} from '@gutenberg/components';
+import { isRTL, __, sprintf } from '@gutenberg/i18n';
+import { chevronRight, chevronLeft } from '@gutenberg/icons';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

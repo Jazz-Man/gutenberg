@@ -6,8 +6,8 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __experimentalHStack as HStack } from '@wordpress/components';
-import { forwardRef } from '@wordpress/element';
+import { __experimentalHStack as HStack } from '@gutenberg/components';
+import { forwardRef } from '@gutenberg/element';
 
 const PostPanelRow = forwardRef( ( { className, label, children }, ref ) => {
 	return (

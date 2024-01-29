@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import RCTAztecView from '@wordpress/react-native-aztec';
-import { useCallback, useEffect, useState } from '@wordpress/element';
+import RCTAztecView from '@gutenberg/react-native-aztec';
+import { useCallback, useEffect, useState } from '@gutenberg/element';
 
 /**
  * Hook that listens to caret changes from AztecView TextInputs.

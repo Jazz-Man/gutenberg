@@ -6,16 +6,16 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { useRegistry, useSelect, useDispatch } from '@wordpress/data';
-import { useRef, useMemo, useEffect } from '@wordpress/element';
-import { useEntityRecord, store as coreStore } from '@wordpress/core-data';
+import { useRegistry, useSelect, useDispatch } from '@gutenberg/data';
+import { useRef, useMemo, useEffect } from '@gutenberg/element';
+import { useEntityRecord, store as coreStore } from '@gutenberg/core-data';
 import {
 	Placeholder,
 	Spinner,
 	ToolbarButton,
 	ToolbarGroup,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 import {
 	useInnerBlocksProps,
 	__experimentalRecursionProvider as RecursionProvider,
@@ -26,9 +26,9 @@ import {
 	privateApis as blockEditorPrivateApis,
 	store as blockEditorStore,
 	BlockControls,
-} from '@wordpress/block-editor';
-import { privateApis as patternsPrivateApis } from '@wordpress/patterns';
-import { parse, cloneBlock } from '@wordpress/blocks';
+} from '@gutenberg/block-editor';
+import { privateApis as patternsPrivateApis } from '@gutenberg/patterns';
+import { parse, cloneBlock } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

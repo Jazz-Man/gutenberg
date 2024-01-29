@@ -14,8 +14,8 @@ import { useState } from 'react';
 /**
  * WordPress dependencies
  */
-import { PanelColorSettings } from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
+import { PanelColorSettings } from '@gutenberg/block-editor';
+import { __ } from '@gutenberg/i18n';
 
 // ...
 

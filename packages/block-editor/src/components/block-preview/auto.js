@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useResizeObserver, useRefEffect } from '@wordpress/compose';
-import { useSelect } from '@wordpress/data';
-import { memo, useMemo } from '@wordpress/element';
-import { Disabled } from '@wordpress/components';
+import { useResizeObserver, useRefEffect } from '@gutenberg/compose';
+import { useSelect } from '@gutenberg/data';
+import { memo, useMemo } from '@gutenberg/element';
+import { Disabled } from '@gutenberg/components';
 
 /**
  * Internal dependencies

@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useCallback } from '@wordpress/element';
+import { useCallback } from '@gutenberg/element';
 
 /**
  * Internal dependencies

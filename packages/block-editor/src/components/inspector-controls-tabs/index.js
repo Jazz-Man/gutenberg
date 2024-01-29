@@ -4,7 +4,7 @@
 import {
 	Button,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

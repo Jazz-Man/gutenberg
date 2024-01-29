@@ -7,7 +7,7 @@ import {
 	__experimentalItem as Item,
 	FlexItem,
 	__experimentalHStack as HStack,
-} from '@wordpress/components';
+} from '@gutenberg/components';
 
 /**
  * Internal dependencies

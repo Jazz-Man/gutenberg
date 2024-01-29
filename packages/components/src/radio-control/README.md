@@ -51,7 +51,7 @@ Designs with a radio button selected by default make a strong suggestion to the 
 Render a user interface to select the user type using radio inputs.
 
 ```jsx
-import { RadioControl } from '@wordpress/components';
+import { RadioControl } from '@gutenberg/components';
 import { useState } from 'react';
 
 const MyRadioControl = () => {

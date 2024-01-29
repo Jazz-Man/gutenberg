@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { useState } from '@wordpress/element';
+import { useState } from '@gutenberg/element';
 
 type Props< T > = {
 	defaultValue?: T;

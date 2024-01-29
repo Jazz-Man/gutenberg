@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { getBlockType } from '@wordpress/blocks';
+import { getBlockType } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

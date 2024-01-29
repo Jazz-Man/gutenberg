@@ -7,11 +7,11 @@ import FastImage from 'react-native-fast-image';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Icon } from '@wordpress/components';
-import { image, offline } from '@wordpress/icons';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
-import { useEffect, useState, Platform } from '@wordpress/element';
+import { __ } from '@gutenberg/i18n';
+import { Icon } from '@gutenberg/components';
+import { image, offline } from '@gutenberg/icons';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
+import { useEffect, useState, Platform } from '@gutenberg/element';
 
 /**
  * Internal dependencies

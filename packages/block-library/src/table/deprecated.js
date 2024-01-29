@@ -12,7 +12,7 @@ import {
 	useBlockProps,
 	__experimentalGetBorderClassesAndStyles as getBorderClassesAndStyles,
 	__experimentalGetColorClassesAndStyles as getColorClassesAndStyles,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 
 // As the previous arbitrary colors won't match theme color palettes, the hex
 // value will be mapped to the style.color.background attribute as if it was

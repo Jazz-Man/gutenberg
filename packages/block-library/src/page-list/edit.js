@@ -6,7 +6,7 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { createBlock } from '@wordpress/blocks';
+import { createBlock } from '@gutenberg/blocks';
 import {
 	InspectorControls,
 	BlockControls,
@@ -15,7 +15,7 @@ import {
 	getColorClassName,
 	store as blockEditorStore,
 	Warning,
-} from '@wordpress/block-editor';
+} from '@gutenberg/block-editor';
 import {
 	PanelBody,
 	ToolbarButton,
@@ -23,11 +23,11 @@ import {
 	Notice,
 	ComboboxControl,
 	Button,
-} from '@wordpress/components';
-import { __, sprintf } from '@wordpress/i18n';
-import { useMemo, useState, useEffect, useCallback } from '@wordpress/element';
-import { useEntityRecords } from '@wordpress/core-data';
-import { useSelect, useDispatch } from '@wordpress/data';
+} from '@gutenberg/components';
+import { __, sprintf } from '@gutenberg/i18n';
+import { useMemo, useState, useEffect, useCallback } from '@gutenberg/element';
+import { useEntityRecords } from '@gutenberg/core-data';
+import { useSelect, useDispatch } from '@gutenberg/data';
 
 /**
  * Internal dependencies

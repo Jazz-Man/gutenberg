@@ -1,14 +1,14 @@
 /**
  * WordPress dependencies
  */
-import { useEntityRecord, store as coreStore } from '@wordpress/core-data';
+import { useEntityRecord, store as coreStore } from '@gutenberg/core-data';
 import {
 	__experimentalUseNavigator as useNavigator,
 	Spinner,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
-import { decodeEntities } from '@wordpress/html-entities';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
+import { useSelect } from '@gutenberg/data';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Internal dependencies

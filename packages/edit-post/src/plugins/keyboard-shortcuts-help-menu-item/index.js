@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { MenuItem } from '@wordpress/components';
-import { withDispatch } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-import { displayShortcut } from '@wordpress/keycodes';
-import { store as interfaceStore } from '@wordpress/interface';
+import { MenuItem } from '@gutenberg/components';
+import { withDispatch } from '@gutenberg/data';
+import { __ } from '@gutenberg/i18n';
+import { displayShortcut } from '@gutenberg/keycodes';
+import { store as interfaceStore } from '@gutenberg/interface';
 
 /**
  * Internal dependencies

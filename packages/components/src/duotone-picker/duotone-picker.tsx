@@ -6,8 +6,8 @@ import fastDeepEqual from 'fast-deep-equal/es6';
 /**
  * WordPress dependencies
  */
-import { useMemo } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
+import { useMemo } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies
@@ -23,8 +23,8 @@ import type { DuotonePickerProps } from './types';
 
 /**
  * ```jsx
- * import { DuotonePicker, DuotoneSwatch } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { DuotonePicker, DuotoneSwatch } from '@gutenberg/components';
+ * import { useState } from '@gutenberg/element';
  *
  * const DUOTONE_PALETTE = [
  * 	{ colors: [ '#8c00b7', '#fcff41' ], name: 'Purple and yellow', slug: 'purple-yellow' },

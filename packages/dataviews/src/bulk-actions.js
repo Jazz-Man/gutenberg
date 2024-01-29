@@ -5,9 +5,9 @@ import {
 	privateApis as componentsPrivateApis,
 	Button,
 	Modal,
-} from '@wordpress/components';
-import { __, sprintf, _n } from '@wordpress/i18n';
-import { useMemo, useState, useCallback } from '@wordpress/element';
+} from '@gutenberg/components';
+import { __, sprintf, _n } from '@gutenberg/i18n';
+import { useMemo, useState, useCallback } from '@gutenberg/element';
 
 /**
  * Internal dependencies

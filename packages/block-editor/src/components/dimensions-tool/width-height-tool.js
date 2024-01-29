@@ -9,15 +9,15 @@ import styled from '@emotion/styled';
 import {
 	__experimentalToolsPanelItem as ToolsPanelItem,
 	__experimentalUnitControl as UnitControl,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 const SingleColumnToolsPanelItem = styled( ToolsPanelItem )`
 	grid-column: span 1;
 `;
 
 /**
- * @typedef {import('@wordpress/components/build-types/unit-control/types').WPUnitControlUnit} WPUnitControlUnit
+ * @typedef {import('@gutenberg/components/build-types/unit-control/types').WPUnitControlUnit} WPUnitControlUnit
  */
 
 /**

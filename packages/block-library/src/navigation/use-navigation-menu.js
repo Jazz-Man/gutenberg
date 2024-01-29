@@ -5,8 +5,8 @@ import {
 	store as coreStore,
 	useResourcePermissions,
 	useEntityRecords,
-} from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
+} from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
 
 /**
  * Internal dependencies

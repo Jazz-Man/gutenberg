@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { MenuItem } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { MenuItem } from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 
 export default function ConvertToRegularBlocks( { clientId, onClose } ) {
 	const { getBlocks } = useSelect( blockEditorStore );

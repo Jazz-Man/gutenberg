@@ -5,7 +5,7 @@
 /**
  * WordPress dependencies
  */
-import { createSlotFill } from '@wordpress/components';
+import { createSlotFill } from '@gutenberg/components';
 
 const { Fill, Slot } = createSlotFill( 'PluginTemplateSettingPanel' );
 
@@ -19,7 +19,7 @@ PluginTemplateSettingPanel.Slot = Slot;
  * @example
  * ```jsx
  * // Using ESNext syntax
- * import { PluginTemplateSettingPanel } from '@wordpress/edit-site';
+ * import { PluginTemplateSettingPanel } from '@gutenberg/edit-site';
  *
  * const MyTemplateSettingTest = () => (
  * 		<PluginTemplateSettingPanel>

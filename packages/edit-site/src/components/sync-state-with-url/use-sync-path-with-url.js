@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __experimentalUseNavigator as useNavigator } from '@wordpress/components';
-import { useEffect, useRef } from '@wordpress/element';
-import { privateApis as routerPrivateApis } from '@wordpress/router';
+import { __experimentalUseNavigator as useNavigator } from '@gutenberg/components';
+import { useEffect, useRef } from '@gutenberg/element';
+import { privateApis as routerPrivateApis } from '@gutenberg/router';
 
 /**
  * Internal dependencies

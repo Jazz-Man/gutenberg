@@ -1,9 +1,9 @@
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
-import { ToggleControl, SelectControl } from '@wordpress/components';
-import { useMemo, useCallback, Platform } from '@wordpress/element';
+import { __, _x } from '@gutenberg/i18n';
+import { ToggleControl, SelectControl } from '@gutenberg/components';
+import { useMemo, useCallback, Platform } from '@gutenberg/element';
 
 const options = [
 	{ value: 'auto', label: __( 'Auto' ) },

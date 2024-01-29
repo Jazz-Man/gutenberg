@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { renderToString } from '@wordpress/element';
-import deprecated from '@wordpress/deprecated';
+import { renderToString } from '@gutenberg/element';
+import deprecated from '@gutenberg/deprecated';
 
 /**
  * Internal dependencies

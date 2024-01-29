@@ -4,10 +4,10 @@
 import {
 	PanelBody,
 	__experimentalUseSlotFills as useSlotFills,
-} from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { useLayoutEffect, useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { useLayoutEffect, useState } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

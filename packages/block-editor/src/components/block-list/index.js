@@ -11,18 +11,18 @@ import {
 	useSelect,
 	useDispatch,
 	useRegistry,
-} from '@wordpress/data';
+} from '@gutenberg/data';
 import {
 	useViewportMatch,
 	useMergeRefs,
 	useDebounce,
-} from '@wordpress/compose';
+} from '@gutenberg/compose';
 import {
 	createContext,
 	useMemo,
 	useCallback,
 	useEffect,
-} from '@wordpress/element';
+} from '@gutenberg/element';
 
 /**
  * Internal dependencies

@@ -18,9 +18,9 @@ import {
 	Dropdown,
 	Button,
 	privateApis as componentsPrivateApis,
-} from '@wordpress/components';
-import { useCallback } from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { useCallback } from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
 
 /**
  * Internal dependencies

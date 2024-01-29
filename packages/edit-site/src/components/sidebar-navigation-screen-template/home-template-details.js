@@ -1,16 +1,16 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { debounce } from '@wordpress/compose';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { store as coreStore } from '@wordpress/core-data';
+import { __ } from '@gutenberg/i18n';
+import { debounce } from '@gutenberg/compose';
+import { useSelect, useDispatch } from '@gutenberg/data';
+import { store as coreStore } from '@gutenberg/core-data';
 import {
 	CheckboxControl,
 	__experimentalInputControl as InputControl,
 	__experimentalNumberControl as NumberControl,
-} from '@wordpress/components';
-import { useState, useEffect } from '@wordpress/element';
+} from '@gutenberg/components';
+import { useState, useEffect } from '@gutenberg/element';
 
 /**
  * Internal dependencies

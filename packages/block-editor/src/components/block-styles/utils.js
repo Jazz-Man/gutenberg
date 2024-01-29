@@ -1,8 +1,8 @@
 /**
  * WordPress dependencies
  */
-import TokenList from '@wordpress/token-list';
-import { _x } from '@wordpress/i18n';
+import TokenList from '@gutenberg/token-list';
+import { _x } from '@gutenberg/i18n';
 
 /**
  * Returns the active style from the given className.

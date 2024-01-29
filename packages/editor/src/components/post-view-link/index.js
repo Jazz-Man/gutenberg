@@ -1,12 +1,12 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Button } from '@wordpress/components';
-import { external } from '@wordpress/icons';
-import { store as coreStore } from '@wordpress/core-data';
-import { useSelect } from '@wordpress/data';
-import { store as preferencesStore } from '@wordpress/preferences';
+import { __ } from '@gutenberg/i18n';
+import { Button } from '@gutenberg/components';
+import { external } from '@gutenberg/icons';
+import { store as coreStore } from '@gutenberg/core-data';
+import { useSelect } from '@gutenberg/data';
+import { store as preferencesStore } from '@gutenberg/preferences';
 
 /**
  * Internal dependencies

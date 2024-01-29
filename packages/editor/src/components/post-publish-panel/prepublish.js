@@ -1,13 +1,13 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Icon, PanelBody } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import { wordpress } from '@wordpress/icons';
-import { filterURLForDisplay } from '@wordpress/url';
-import { store as coreStore } from '@wordpress/core-data';
-import { decodeEntities } from '@wordpress/html-entities';
+import { __ } from '@gutenberg/i18n';
+import { Icon, PanelBody } from '@gutenberg/components';
+import { useSelect } from '@gutenberg/data';
+import { wordpress } from '@gutenberg/icons';
+import { filterURLForDisplay } from '@gutenberg/url';
+import { store as coreStore } from '@gutenberg/core-data';
+import { decodeEntities } from '@gutenberg/html-entities';
 
 /**
  * Internal dependencies

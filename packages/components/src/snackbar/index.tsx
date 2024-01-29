@@ -7,10 +7,10 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { speak } from '@wordpress/a11y';
-import { useEffect, forwardRef, renderToString } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
-import warning from '@wordpress/warning';
+import { speak } from '@gutenberg/a11y';
+import { useEffect, forwardRef, renderToString } from '@gutenberg/element';
+import { __ } from '@gutenberg/i18n';
+import warning from '@gutenberg/warning';
 
 /**
  * Internal dependencies

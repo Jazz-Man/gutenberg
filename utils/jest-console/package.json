@@ -1,5 +1,5 @@
 {
-	"name": "@wordpress/jest-console",
+	"name": "@gutenberg/jest-console",
 	"version": "7.20.0",
 	"description": "Custom Jest matchers for the Console object.",
 	"author": "The WordPress Contributors",

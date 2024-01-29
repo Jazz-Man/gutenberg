@@ -7,10 +7,10 @@ import { StyleSheet } from 'react-native';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Icon, check, chevronRight } from '@wordpress/icons';
-import { usePreferredColorSchemeStyle } from '@wordpress/compose';
-import { BottomSheet, PanelBody } from '@wordpress/components';
+import { __ } from '@gutenberg/i18n';
+import { Icon, check, chevronRight } from '@gutenberg/icons';
+import { usePreferredColorSchemeStyle } from '@gutenberg/compose';
+import { BottomSheet, PanelBody } from '@gutenberg/components';
 
 /**
  * Internal dependencies

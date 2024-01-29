@@ -11,8 +11,8 @@ import {
 	RichText,
 	__experimentalGetBorderClassesAndStyles as getBorderClassesAndStyles,
 	__experimentalGetColorClassesAndStyles as getColorClassesAndStyles,
-} from '@wordpress/block-editor';
-import { __unstableStripHTML as stripHTML } from '@wordpress/dom';
+} from '@gutenberg/block-editor';
+import { __unstableStripHTML as stripHTML } from '@gutenberg/dom';
 
 const getNameFromLabelV1 = ( content ) => {
 	return (

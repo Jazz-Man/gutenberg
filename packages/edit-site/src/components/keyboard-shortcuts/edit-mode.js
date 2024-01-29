@@ -1,11 +1,11 @@
 /**
  * WordPress dependencies
  */
-import { useShortcut } from '@wordpress/keyboard-shortcuts';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-import { store as interfaceStore } from '@wordpress/interface';
-import { createBlock } from '@wordpress/blocks';
+import { useShortcut } from '@gutenberg/keyboard-shortcuts';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { store as blockEditorStore } from '@gutenberg/block-editor';
+import { store as interfaceStore } from '@gutenberg/interface';
+import { createBlock } from '@gutenberg/blocks';
 
 /**
  * Internal dependencies

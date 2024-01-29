@@ -9,10 +9,10 @@ import {
 	placeCaretAtHorizontalEdge,
 	placeCaretAtVerticalEdge,
 	isRTL,
-} from '@wordpress/dom';
-import { UP, DOWN, LEFT, RIGHT } from '@wordpress/keycodes';
-import { useDispatch, useSelect } from '@wordpress/data';
-import { useRefEffect } from '@wordpress/compose';
+} from '@gutenberg/dom';
+import { UP, DOWN, LEFT, RIGHT } from '@gutenberg/keycodes';
+import { useDispatch, useSelect } from '@gutenberg/data';
+import { useRefEffect } from '@gutenberg/compose';
 
 /**
  * Internal dependencies

@@ -5,10 +5,10 @@ import {
 	Button,
 	__experimentalHStack as HStack,
 	SelectControl,
-} from '@wordpress/components';
-import { createInterpolateElement, memo } from '@wordpress/element';
-import { sprintf, __, _x } from '@wordpress/i18n';
-import { chevronRight, chevronLeft } from '@wordpress/icons';
+} from '@gutenberg/components';
+import { createInterpolateElement, memo } from '@gutenberg/element';
+import { sprintf, __, _x } from '@gutenberg/i18n';
+import { chevronRight, chevronLeft } from '@gutenberg/icons';
 
 const Pagination = memo( function Pagination( {
 	view,

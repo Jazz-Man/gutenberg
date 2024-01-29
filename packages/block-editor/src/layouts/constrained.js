@@ -6,8 +6,8 @@ import {
 	__experimentalUnitControl as UnitControl,
 	__experimentalToggleGroupControl as ToggleGroupControl,
 	__experimentalToggleGroupControlOptionIcon as ToggleGroupControlOptionIcon,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+} from '@gutenberg/components';
+import { __ } from '@gutenberg/i18n';
 import {
 	Icon,
 	positionCenter,
@@ -15,8 +15,8 @@ import {
 	justifyLeft,
 	justifyCenter,
 	justifyRight,
-} from '@wordpress/icons';
-import { getCSSRules } from '@wordpress/style-engine';
+} from '@gutenberg/icons';
+import { getCSSRules } from '@gutenberg/style-engine';
 
 /**
  * Internal dependencies

@@ -1,10 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
-import { switchToBlockType } from '@wordpress/blocks';
-import { useDispatch } from '@wordpress/data';
-import { store as noticesStore } from '@wordpress/notices';
+import { __, _x } from '@gutenberg/i18n';
+import { switchToBlockType } from '@gutenberg/blocks';
+import { useDispatch } from '@gutenberg/data';
+import { store as noticesStore } from '@gutenberg/notices';
 
 /**
  * Internal dependencies

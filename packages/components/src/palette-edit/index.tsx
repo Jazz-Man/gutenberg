@@ -12,13 +12,13 @@ import {
 	useEffect,
 	useCallback,
 	useMemo,
-} from '@wordpress/element';
-import { __, sprintf } from '@wordpress/i18n';
-import { lineSolid, moreVertical, plus } from '@wordpress/icons';
+} from '@gutenberg/element';
+import { __, sprintf } from '@gutenberg/i18n';
+import { lineSolid, moreVertical, plus } from '@gutenberg/icons';
 import {
 	__experimentalUseFocusOutside as useFocusOutside,
 	useDebounce,
-} from '@wordpress/compose';
+} from '@gutenberg/compose';
 
 /**
  * Internal dependencies
@@ -340,7 +340,7 @@ const EMPTY_ARRAY: Color[] = [];
  * Allows editing a palette of colors or gradients.
  *
  * ```jsx
- * import { PaletteEdit } from '@wordpress/components';
+ * import { PaletteEdit } from '@gutenberg/components';
  * const MyPaletteEdit = () => {
  *   const [ controlledColors, setControlledColors ] = useState( colors );
  *
