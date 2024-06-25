@@ -1,3 +1,30 @@
 {
-	"$schema": "https://turbo.build/schema.json"
+	"$schema": "https://turbo.build/schema.json",
+	"pipeline": {
+		"build:ts:clear": {
+			"dependsOn": [
+				"^build:ts:clear"
+			]
+		},
+		"build:ts": {
+			"dependsOn": [
+//				"build:ts:clear",
+				"^build:ts"
+			],
+			"outputs": [
+				"build/**",
+				"build-types/**"
+//				"tsconfig.tsbuildinfo"
+			],
+			"cache": true
+		},
+		"test": {
+			"dependsOn": [
+				"build"
+			]
+		}
+	},
+	"globalDependencies": [
+		"tsconfig.json"
+	]
 }

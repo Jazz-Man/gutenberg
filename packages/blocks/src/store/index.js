@@ -21,12 +21,12 @@ import { unlock } from '../lock-unlock';
  *
  * @type {Object}
  */
-export const store = createReduxStore( STORE_NAME, {
+export const store = createReduxStore(STORE_NAME, {
 	reducer,
 	selectors,
 	actions,
-} );
+});
 
-register( store );
-unlock( store ).registerPrivateSelectors( privateSelectors );
-unlock( store ).registerPrivateActions( privateActions );
+register(store);
+unlock(store).registerPrivateSelectors(privateSelectors);
+unlock(store).registerPrivateActions(privateActions);

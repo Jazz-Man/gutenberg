@@ -6,11 +6,11 @@ import { generateRule } from '../utils';
 
 const fontSize = {
 	name: 'fontSize',
-	generate: ( style: Style, options: StyleOptions ) => {
+	generate: (style: Style, options: StyleOptions) => {
 		return generateRule(
 			style,
 			options,
-			[ 'typography', 'fontSize' ],
+			['typography', 'fontSize'],
 			'fontSize'
 		);
 	},
@@ -18,11 +18,11 @@ const fontSize = {
 
 const fontStyle = {
 	name: 'fontStyle',
-	generate: ( style: Style, options: StyleOptions ) => {
+	generate: (style: Style, options: StyleOptions) => {
 		return generateRule(
 			style,
 			options,
-			[ 'typography', 'fontStyle' ],
+			['typography', 'fontStyle'],
 			'fontStyle'
 		);
 	},
@@ -30,11 +30,11 @@ const fontStyle = {
 
 const fontWeight = {
 	name: 'fontWeight',
-	generate: ( style: Style, options: StyleOptions ) => {
+	generate: (style: Style, options: StyleOptions) => {
 		return generateRule(
 			style,
 			options,
-			[ 'typography', 'fontWeight' ],
+			['typography', 'fontWeight'],
 			'fontWeight'
 		);
 	},
@@ -42,11 +42,11 @@ const fontWeight = {
 
 const fontFamily = {
 	name: 'fontFamily',
-	generate: ( style: Style, options: StyleOptions ) => {
+	generate: (style: Style, options: StyleOptions) => {
 		return generateRule(
 			style,
 			options,
-			[ 'typography', 'fontFamily' ],
+			['typography', 'fontFamily'],
 			'fontFamily'
 		);
 	},
@@ -54,11 +54,11 @@ const fontFamily = {
 
 const letterSpacing = {
 	name: 'letterSpacing',
-	generate: ( style: Style, options: StyleOptions ) => {
+	generate: (style: Style, options: StyleOptions) => {
 		return generateRule(
 			style,
 			options,
-			[ 'typography', 'letterSpacing' ],
+			['typography', 'letterSpacing'],
 			'letterSpacing'
 		);
 	},
@@ -66,11 +66,11 @@ const letterSpacing = {
 
 const lineHeight = {
 	name: 'lineHeight',
-	generate: ( style: Style, options: StyleOptions ) => {
+	generate: (style: Style, options: StyleOptions) => {
 		return generateRule(
 			style,
 			options,
-			[ 'typography', 'lineHeight' ],
+			['typography', 'lineHeight'],
 			'lineHeight'
 		);
 	},
@@ -78,11 +78,11 @@ const lineHeight = {
 
 const textColumns = {
 	name: 'textColumns',
-	generate: ( style: Style, options: StyleOptions ) => {
+	generate: (style: Style, options: StyleOptions) => {
 		return generateRule(
 			style,
 			options,
-			[ 'typography', 'textColumns' ],
+			['typography', 'textColumns'],
 			'columnCount'
 		);
 	},
@@ -90,11 +90,11 @@ const textColumns = {
 
 const textDecoration = {
 	name: 'textDecoration',
-	generate: ( style: Style, options: StyleOptions ) => {
+	generate: (style: Style, options: StyleOptions) => {
 		return generateRule(
 			style,
 			options,
-			[ 'typography', 'textDecoration' ],
+			['typography', 'textDecoration'],
 			'textDecoration'
 		);
 	},
@@ -102,11 +102,11 @@ const textDecoration = {
 
 const textTransform = {
 	name: 'textTransform',
-	generate: ( style: Style, options: StyleOptions ) => {
+	generate: (style: Style, options: StyleOptions) => {
 		return generateRule(
 			style,
 			options,
-			[ 'typography', 'textTransform' ],
+			['typography', 'textTransform'],
 			'textTransform'
 		);
 	},
@@ -114,11 +114,11 @@ const textTransform = {
 
 const writingMode = {
 	name: 'writingMode',
-	generate: ( style: Style, options: StyleOptions ) => {
+	generate: (style: Style, options: StyleOptions) => {
 		return generateRule(
 			style,
 			options,
-			[ 'typography', 'writingMode' ],
+			['typography', 'writingMode'],
 			'writingMode'
 		);
 	},

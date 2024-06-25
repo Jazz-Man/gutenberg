@@ -4,24 +4,24 @@
  * @param {Node} node The node to be processed.
  * @return {void}
  */
-export default function msListIgnore( node ) {
-	if ( node.nodeType !== node.ELEMENT_NODE ) {
+export default function msListIgnore(node) {
+	if (node.nodeType !== node.ELEMENT_NODE) {
 		return;
 	}
 
-	const style = node.getAttribute( 'style' );
+	const style = node.getAttribute('style');
 
-	if ( ! style || ! style.includes( 'mso-list' ) ) {
+	if (!style || !style.includes('mso-list')) {
 		return;
 	}
 
-	const rules = style.split( ';' ).reduce( ( acc, rule ) => {
-		const [ key, value ] = rule.split( ':' );
-		acc[ key.trim().toLowerCase() ] = value.trim().toLowerCase();
+	const rules = style.split(';').reduce((acc, rule) => {
+		const [key, value] = rule.split(':');
+		acc[key.trim().toLowerCase()] = value.trim().toLowerCase();
 		return acc;
-	}, {} );
+	}, {});
 
-	if ( rules[ 'mso-list' ] === 'ignore' ) {
+	if (rules['mso-list'] === 'ignore') {
 		node.remove();
 	}
 }

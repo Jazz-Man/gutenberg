@@ -1,3 +1,3 @@
-declare module '@gutenberg/data' {
-	export * from '@gutenberg/data/build-types/index';
-}
+// declare module '@gutenberg/data' {
+// 	export * from '@gutenberg/data/build-types/index';
+// }

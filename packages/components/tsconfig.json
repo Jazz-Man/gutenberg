@@ -1,19 +1,20 @@
 {
-	"extends": "../../tsconfig.base.json",
+	"extends": "@gutenberg/config/tsconfig.json",
 	"compilerOptions": {
 		"rootDir": "src",
+		"baseUrl": "src",
+		"outDir": "build",
 		"declarationDir": "build-types",
-		"types": [
-			"gutenberg-env",
-			"gutenberg-test-env",
-			"dom-scroll-into-view",
-			"jest",
-			"@testing-library/jest-dom"
-		],
+//		"types": [
+//			"gutenberg-env",
+//			"dom-scroll-into-view",
+//			"jest",
+//			"@testing-library/jest-dom"
+//		],
 		// TODO: Remove `skipLibCheck` after resolving duplicate declaration of the `process` variable
 		// between `@types/webpack-env` (from @storybook packages) and `gutenberg-env`.
 		"skipLibCheck": true,
-		"strictNullChecks": true
+//		"strictNullChecks": true
 	},
 	"references": [
 		{ "path": "../a11y" },

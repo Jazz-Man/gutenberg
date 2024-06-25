@@ -1,13 +1,15 @@
 {
-	"extends": "../../tsconfig.base.json",
+	"extends": "@gutenberg/config/tsconfig.json",
 	"compilerOptions": {
 		"rootDir": "src",
+		"baseUrl": "src",
+		"outDir": "build",
 		"declarationDir": "build-types",
 
 		"noImplicitAny": false,
 		"strictNullChecks": false
 	},
-//	"references": [ { "path": "../escape-html" } ],
+	"references": [ { "path": "../escape-html" } ],
 	"include": [ "src/**/*" ],
 	"exclude": [
 		"src/test"

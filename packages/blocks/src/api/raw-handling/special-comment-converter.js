@@ -18,18 +18,18 @@ import { remove, replace } from '@gutenberg/dom';
  * @param {Document} doc  The document of the node.
  * @return {void}
  */
-export default function specialCommentConverter( node, doc ) {
-	if ( node.nodeType !== node.COMMENT_NODE ) {
+export default function specialCommentConverter(node, doc) {
+	if (node.nodeType !== node.COMMENT_NODE) {
 		return;
 	}
 
-	if ( node.nodeValue === 'nextpage' ) {
-		replace( node, createNextpage( doc ) );
+	if (node.nodeValue === 'nextpage') {
+		replace(node, createNextpage(doc));
 		return;
 	}
 
-	if ( node.nodeValue.indexOf( 'more' ) === 0 ) {
-		moreCommentConverter( node, doc );
+	if (node.nodeValue.indexOf('more') === 0) {
+		moreCommentConverter(node, doc);
 	}
 }
 
@@ -42,9 +42,9 @@ export default function specialCommentConverter( node, doc ) {
  * @param {Document} doc  The document of the node.
  * @return {void}
  */
-function moreCommentConverter( node, doc ) {
+function moreCommentConverter(node, doc) {
 	// Grab any custom text in the comment.
-	const customText = node.nodeValue.slice( 4 ).trim();
+	const customText = node.nodeValue.slice(4).trim();
 
 	/*
 	 * When a `<!--more-->` comment is found, we need to look for any
@@ -53,73 +53,73 @@ function moreCommentConverter( node, doc ) {
 	 */
 	let sibling = node;
 	let noTeaser = false;
-	while ( ( sibling = sibling.nextSibling ) ) {
+	while ((sibling = sibling.nextSibling)) {
 		if (
 			sibling.nodeType === sibling.COMMENT_NODE &&
 			sibling.nodeValue === 'noteaser'
 		) {
 			noTeaser = true;
-			remove( sibling );
+			remove(sibling);
 			break;
 		}
 	}
 
-	const moreBlock = createMore( customText, noTeaser, doc );
+	const moreBlock = createMore(customText, noTeaser, doc);
 
 	// If our `<!--more-->` comment is in the middle of a paragraph, we should
 	// split the paragraph in two and insert the more block in between. If not,
 	// the more block will eventually end up being inserted after the paragraph.
 	if (
-		! node.parentNode ||
+		!node.parentNode ||
 		node.parentNode.nodeName !== 'P' ||
 		node.parentNode.childNodes.length === 1
 	) {
-		replace( node, moreBlock );
+		replace(node, moreBlock);
 	} else {
-		const childNodes = Array.from( node.parentNode.childNodes );
-		const nodeIndex = childNodes.indexOf( node );
+		const childNodes = Array.from(node.parentNode.childNodes);
+		const nodeIndex = childNodes.indexOf(node);
 		const wrapperNode = node.parentNode.parentNode || doc.body;
 
-		const paragraphBuilder = ( acc, child ) => {
-			if ( ! acc ) {
-				acc = doc.createElement( 'p' );
+		const paragraphBuilder = (acc, child) => {
+			if (!acc) {
+				acc = doc.createElement('p');
 			}
 
-			acc.appendChild( child );
+			acc.appendChild(child);
 
 			return acc;
 		};
 
 		// Split the original parent node and insert our more block
 		[
-			childNodes.slice( 0, nodeIndex ).reduce( paragraphBuilder, null ),
+			childNodes.slice(0, nodeIndex).reduce(paragraphBuilder, null),
 			moreBlock,
-			childNodes.slice( nodeIndex + 1 ).reduce( paragraphBuilder, null ),
+			childNodes.slice(nodeIndex + 1).reduce(paragraphBuilder, null),
 		].forEach(
-			( element ) =>
-				element && wrapperNode.insertBefore( element, node.parentNode )
+			(element) =>
+				element && wrapperNode.insertBefore(element, node.parentNode)
 		);
 
 		// Remove the old parent paragraph
-		remove( node.parentNode );
+		remove(node.parentNode);
 	}
 }
 
-function createMore( customText, noTeaser, doc ) {
-	const node = doc.createElement( 'wp-block' );
+function createMore(customText, noTeaser, doc) {
+	const node = doc.createElement('wp-block');
 	node.dataset.block = 'core/more';
-	if ( customText ) {
+	if (customText) {
 		node.dataset.customText = customText;
 	}
-	if ( noTeaser ) {
+	if (noTeaser) {
 		// "Boolean" data attribute.
 		node.dataset.noTeaser = '';
 	}
 	return node;
 }
 
-function createNextpage( doc ) {
-	const node = doc.createElement( 'wp-block' );
+function createNextpage(doc) {
+	const node = doc.createElement('wp-block');
 	node.dataset.block = 'core/nextpage';
 
 	return node;

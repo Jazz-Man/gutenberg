@@ -6,14 +6,14 @@ import { generateRule } from '../utils';
 
 const minHeight = {
 	name: 'minHeight',
-	generate: ( style: Style, options: StyleOptions ) => {
+	generate: (style: Style, options: StyleOptions) => {
 		return generateRule(
 			style,
 			options,
-			[ 'dimensions', 'minHeight' ],
+			['dimensions', 'minHeight'],
 			'minHeight'
 		);
 	},
 };
 
-export default [ minHeight ];
+export default [minHeight];

@@ -18,8 +18,8 @@ import { BLOCK_ICON_DEFAULT, DEPRECATED_ENTRY_KEYS } from '../api/constants';
 
 /** @typedef {import('../api/registration').WPBlockType} WPBlockType */
 
-const error = ( ...args ) => window?.console?.error?.( ...args );
-const warn = ( ...args ) => window?.console?.warn?.( ...args );
+const error = (...args) => window?.console?.error?.(...args);
+const warn = (...args) => window?.console?.warn?.(...args);
 
 /**
  * Mapping of legacy category slugs to their latest normal values, used to
@@ -44,8 +44,8 @@ const LEGACY_CATEGORY_MAPPING = {
  * @return {WPBlockType | undefined} The block, if it has been processed and can be registered; otherwise `undefined`.
  */
 export const processBlockType =
-	( name, blockSettings ) =>
-	( { select } ) => {
+	(name, blockSettings) =>
+	({ select }) => {
 		const blockType = {
 			name,
 			icon: BLOCK_ICON_DEFAULT,
@@ -59,7 +59,7 @@ export const processBlockType =
 			variations: [],
 			blockHooks: {},
 			save: () => null,
-			...select.getBootstrappedBlockType( name ),
+			...select.getBootstrappedBlockType(name),
 			...blockSettings,
 		};
 
@@ -70,17 +70,14 @@ export const processBlockType =
 			null
 		);
 
-		if (
-			settings.description &&
-			typeof settings.description !== 'string'
-		) {
-			deprecated( 'Declaring non-string block descriptions', {
+		if (settings.description && typeof settings.description !== 'string') {
+			deprecated('Declaring non-string block descriptions', {
 				since: '6.2',
-			} );
+			});
 		}
 
-		if ( settings.deprecated ) {
-			settings.deprecated = settings.deprecated.map( ( deprecation ) =>
+		if (settings.deprecated) {
+			settings.deprecated = settings.deprecated.map((deprecation) =>
 				Object.fromEntries(
 					Object.entries(
 						// Only keep valid deprecation keys.
@@ -92,43 +89,41 @@ export const processBlockType =
 							{
 								// Omit deprecation keys here so that deprecations
 								// can opt out of specific keys like "supports".
-								...omit( blockType, DEPRECATED_ENTRY_KEYS ),
+								...omit(blockType, DEPRECATED_ENTRY_KEYS),
 								...deprecation,
 							},
 							blockType.name,
 							deprecation
 						)
-					).filter( ( [ key ] ) =>
-						DEPRECATED_ENTRY_KEYS.includes( key )
-					)
+					).filter(([key]) => DEPRECATED_ENTRY_KEYS.includes(key))
 				)
 			);
 		}
 
-		if ( ! isPlainObject( settings ) ) {
-			error( 'Block settings must be a valid object.' );
+		if (!isPlainObject(settings)) {
+			error('Block settings must be a valid object.');
 			return;
 		}
 
-		if ( typeof settings.save !== 'function' ) {
-			error( 'The "save" property must be a valid function.' );
+		if (typeof settings.save !== 'function') {
+			error('The "save" property must be a valid function.');
 			return;
 		}
-		if ( 'edit' in settings && ! isValidElementType( settings.edit ) ) {
-			error( 'The "edit" property must be a valid component.' );
+		if ('edit' in settings && !isValidElementType(settings.edit)) {
+			error('The "edit" property must be a valid component.');
 			return;
 		}
 
 		// Canonicalize legacy categories to equivalent fallback.
-		if ( LEGACY_CATEGORY_MAPPING.hasOwnProperty( settings.category ) ) {
-			settings.category = LEGACY_CATEGORY_MAPPING[ settings.category ];
+		if (LEGACY_CATEGORY_MAPPING.hasOwnProperty(settings.category)) {
+			settings.category = LEGACY_CATEGORY_MAPPING[settings.category];
 		}
 
 		if (
 			'category' in settings &&
-			! select
+			!select
 				.getCategories()
-				.some( ( { slug } ) => slug === settings.category )
+				.some(({ slug }) => slug === settings.category)
 		) {
 			warn(
 				'The block "' +
@@ -140,17 +135,17 @@ export const processBlockType =
 			delete settings.category;
 		}
 
-		if ( ! ( 'title' in settings ) || settings.title === '' ) {
-			error( 'The block "' + name + '" must have a title.' );
+		if (!('title' in settings) || settings.title === '') {
+			error('The block "' + name + '" must have a title.');
 			return;
 		}
-		if ( typeof settings.title !== 'string' ) {
-			error( 'Block titles must be strings.' );
+		if (typeof settings.title !== 'string') {
+			error('Block titles must be strings.');
 			return;
 		}
 
-		settings.icon = normalizeIconObject( settings.icon );
-		if ( ! isValidIcon( settings.icon.src ) ) {
+		settings.icon = normalizeIconObject(settings.icon);
+		if (!isValidIcon(settings.icon.src)) {
 			error(
 				'The icon passed is invalid. ' +
 					'The icon should be a string, an element, a function, or an object following the specifications documented in https://developer.wordpress.org/block-editor/developers/block-api/block-registration/#icon-optional'

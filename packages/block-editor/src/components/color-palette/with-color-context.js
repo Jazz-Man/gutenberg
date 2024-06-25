@@ -8,27 +8,27 @@ import { createHigherOrderComponent } from '@gutenberg/compose';
  */
 import { useSettings } from '../use-settings';
 
-export default createHigherOrderComponent( ( WrappedComponent ) => {
-	return ( props ) => {
-		const [ colorsFeature, enableCustomColors ] = useSettings(
+export default createHigherOrderComponent((WrappedComponent) => {
+	return (props) => {
+		const [colorsFeature, enableCustomColors] = useSettings(
 			'color.palette',
 			'color.custom'
 		);
 		const {
 			colors = colorsFeature,
-			disableCustomColors = ! enableCustomColors,
+			disableCustomColors = !enableCustomColors,
 		} = props;
 		const hasColorsToChoose =
-			( colors && colors.length > 0 ) || ! disableCustomColors;
+			(colors && colors.length > 0) || !disableCustomColors;
 		return (
 			<WrappedComponent
-				{ ...{
+				{...{
 					...props,
 					colors,
 					disableCustomColors,
 					hasColorsToChoose,
-				} }
+				}}
 			/>
 		);
 	};
-}, 'withColorContext' );
+}, 'withColorContext');

@@ -213,20 +213,20 @@ To mitigate this, consider whether any work you perform can be altered to run on
 For example, if you are adding components that only need to render when the block is _selected_, then you can use the block's "selected" state (`props.isSelected`) to conditionalize your rendering.
 
 ```js
-const withMyPluginControls = createHigherOrderComponent( ( BlockEdit ) => {
-	return ( props ) => {
-		return (
-			<>
-				<BlockEdit { ...props } />
-				{ props.isSelected && {
-					<InspectorControls>
-						<PanelBody>My custom control</PanelBody>
-					</InspectorControls>
-				}}
-			</>
-		);
-	};
-}, 'withMyPluginControls' );
+const withMyPluginControls = createHigherOrderComponent((BlockEdit) => {
+    return (props) => {
+        return (
+            <>
+                <BlockEdit {...props} />
+                {props.isSelected && {
+                    <InspectorControls>
+                    <PanelBody>My custom control</PanelBody>
+                    </InspectorControls>
+                }}
+            </>
+        );
+    };
+}, 'withMyPluginControls');
 ```
 
 ### `editor.BlockListBlock`

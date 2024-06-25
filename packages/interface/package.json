@@ -25,13 +25,17 @@
 	"main": "build/index.js",
 	"module": "build-module/index.js",
 	"react-native": "src/index",
+	"types": "build-types",
 	"sideEffects": [
 		"build-style/**",
 		"src/**/*.scss",
 		"{src,build,build-module}/{index.js,store/index.js}"
 	],
+	"scripts": {
+		"build:ts": "tsc --build",
+		"build:ts:clear": "tsc --build --clean"
+	},
 	"dependencies": {
-		"@babel/runtime": "^7.16.0",
 		"@gutenberg/a11y": "workspace:*",
 		"@gutenberg/components": "workspace:*",
 		"@gutenberg/compose": "workspace:*",
@@ -52,5 +56,8 @@
 	},
 	"publishConfig": {
 		"access": "public"
+	},
+	"devDependencies": {
+		"@gutenberg/config": "workspace:*"
 	}
 }

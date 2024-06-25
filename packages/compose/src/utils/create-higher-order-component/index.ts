@@ -4,12 +4,12 @@
 import { pascalCase } from 'change-case';
 import type { ComponentType } from 'react';
 
-type GetProps< C > = C extends ComponentType< infer P > ? P : never;
+type GetProps<C> = C extends ComponentType<infer P> ? P : never;
 
-export type WithoutInjectedProps< C, I > = Omit< GetProps< C >, keyof I >;
+export type WithoutInjectedProps<C, I> = Omit<GetProps<C>, keyof I>;
 
-export type WithInjectedProps< C, I > = ComponentType<
-	WithoutInjectedProps< C, I > & I
+export type WithInjectedProps<C, I> = ComponentType<
+	WithoutInjectedProps<C, I> & I
 >;
 
 /**
@@ -22,12 +22,12 @@ export type WithInjectedProps< C, I > = ComponentType<
  * @return Component class with generated display name assigned.
  */
 export function createHigherOrderComponent<
-	TInner extends ComponentType< any >,
-	TOuter extends ComponentType< any >,
->( mapComponent: ( Inner: TInner ) => TOuter, modifierName: string ) {
-	return ( Inner: TInner ) => {
-		const Outer = mapComponent( Inner );
-		Outer.displayName = hocName( modifierName, Inner );
+	TInner extends ComponentType<any>,
+	TOuter extends ComponentType<any>,
+>(mapComponent: (Inner: TInner) => TOuter, modifierName: string) {
+	return (Inner: TInner) => {
+		const Outer = mapComponent(Inner);
+		Outer.displayName = hocName(modifierName, Inner);
 		return Outer;
 	};
 }
@@ -43,9 +43,9 @@ export function createHigherOrderComponent<
  * @param Inner Wrapped component inside higher-order component.
  * @return       Wrapped name of higher-order component.
  */
-const hocName = ( name: string, Inner: ComponentType< any > ) => {
+const hocName = (name: string, Inner: ComponentType<any>) => {
 	const inner = Inner.displayName || Inner.name || 'Component';
-	const outer = pascalCase( name ?? '' );
+	const outer = pascalCase(name ?? '');
 
-	return `${ outer }(${ inner })`;
+	return `${outer}(${inner})`;
 };

@@ -10,14 +10,14 @@ import { createHigherOrderComponent } from '@gutenberg/compose';
 import type { WPPlugin } from '../../api';
 
 export interface PluginContext {
-	name: null | WPPlugin[ 'name' ];
-	icon: null | WPPlugin[ 'icon' ];
+	name: null | WPPlugin['name'];
+	icon: null | WPPlugin['icon'];
 }
 
-const Context = createContext< PluginContext >( {
+const Context = createContext<PluginContext>({
 	name: null,
 	icon: null,
-} );
+});
 
 export const PluginContextProvider = Context.Provider;
 
@@ -27,7 +27,7 @@ export const PluginContextProvider = Context.Provider;
  * @return {PluginContext} Plugin context
  */
 export function usePluginContext() {
-	return useContext( Context );
+	return useContext(Context);
 }
 
 /**
@@ -41,20 +41,20 @@ export function usePluginContext() {
  * @return {Component} Enhanced component with injected context as props.
  */
 export const withPluginContext = (
-	mapContextToProps: < T >(
+	mapContextToProps: <T>(
 		context: PluginContext,
 		props: T
 	) => T & PluginContext
 ) =>
-	createHigherOrderComponent( ( OriginalComponent ) => {
-		return ( props ) => (
+	createHigherOrderComponent((OriginalComponent) => {
+		return (props) => (
 			<Context.Consumer>
-				{ ( context ) => (
+				{(context) => (
 					<OriginalComponent
-						{ ...props }
-						{ ...mapContextToProps( context, props ) }
+						{...props}
+						{...mapContextToProps(context, props)}
 					/>
-				) }
+				)}
 			</Context.Consumer>
 		);
-	}, 'withPluginContext' );
+	}, 'withPluginContext');

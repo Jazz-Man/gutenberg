@@ -14,26 +14,26 @@ import { RichTextData } from '@gutenberg/rich-text';
 export { matcher as node } from './node';
 export { matcher as children } from './children';
 
-export function html( selector, multilineTag ) {
-	return ( domNode ) => {
+export function html(selector, multilineTag) {
+	return (domNode) => {
 		let match = domNode;
 
-		if ( selector ) {
-			match = domNode.querySelector( selector );
+		if (selector) {
+			match = domNode.querySelector(selector);
 		}
 
-		if ( ! match ) {
+		if (!match) {
 			return '';
 		}
 
-		if ( multilineTag ) {
+		if (multilineTag) {
 			let value = '';
 			const length = match.children.length;
 
-			for ( let index = 0; index < length; index++ ) {
-				const child = match.children[ index ];
+			for (let index = 0; index < length; index++) {
+				const child = match.children[index];
 
-				if ( child.nodeName.toLowerCase() !== multilineTag ) {
+				if (child.nodeName.toLowerCase() !== multilineTag) {
 					continue;
 				}
 
@@ -47,9 +47,9 @@ export function html( selector, multilineTag ) {
 	};
 }
 
-export const richText = ( selector, preserveWhiteSpace ) => ( el ) => {
-	const target = selector ? el.querySelector( selector ) : el;
+export const richText = (selector, preserveWhiteSpace) => (el) => {
+	const target = selector ? el.querySelector(selector) : el;
 	return target
-		? RichTextData.fromHTMLElement( target, { preserveWhiteSpace } )
+		? RichTextData.fromHTMLElement(target, { preserveWhiteSpace })
 		: RichTextData.empty();
 };

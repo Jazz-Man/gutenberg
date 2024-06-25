@@ -3,22 +3,22 @@
  */
 import classnames from 'classnames';
 
-export default function NavigableRegion( {
+export default function NavigableRegion({
 	children,
 	className,
 	ariaLabel,
 	as: Tag = 'div',
 	...props
-} ) {
+}) {
 	return (
 		<Tag
-			className={ classnames( 'interface-navigable-region', className ) }
-			aria-label={ ariaLabel }
+			className={classnames('interface-navigable-region', className)}
+			aria-label={ariaLabel}
 			role="region"
 			tabIndex="-1"
-			{ ...props }
+			{...props}
 		>
-			{ children }
+			{children}
 		</Tag>
 	);
 }

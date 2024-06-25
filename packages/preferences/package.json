@@ -27,8 +27,12 @@
 	"module": "build-module/index.js",
 	"react-native": "src/index",
 	"sideEffects": false,
+	"types": "build-types",
+	"scripts": {
+		"build:ts": "tsc --build",
+		"build:ts:clear": "tsc --build --clean"
+	},
 	"dependencies": {
-		"@babel/runtime": "^7.16.0",
 		"@gutenberg/a11y": "workspace:*",
 		"@gutenberg/components": "workspace:*",
 		"@gutenberg/compose": "workspace:*",

@@ -20,7 +20,9 @@
 	.components-panel__header {
 		position: sticky;
 		top: 0;
-		z-index: z-index(".interface-complementary-area .components-panel__header");
+		z-index: z-index(
+			".interface-complementary-area .components-panel__header"
+		);
 
 		&.edit-post-sidebar__panel-tabs {
 			top: $panel-header-height;
@@ -60,6 +62,7 @@
 	div.components-toolbar {
 		box-shadow: none;
 		margin-bottom: 1.5em;
+
 		&:last-child {
 			margin-bottom: 0;
 		}

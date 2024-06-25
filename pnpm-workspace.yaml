@@ -2,3 +2,4 @@ packages:
     - 'packages/*'
     - 'utils/*'
     - 'app/*'
+    - 'react-native/*'

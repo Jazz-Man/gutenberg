@@ -18,9 +18,9 @@
 		"checkJs": false
 	},
 	"references": [
-		{ "path": "../api-fetch" },
-		{ "path": "../keycodes" },
-		{ "path": "../url" }
+		{ "path": "../../packages/api-fetch" },
+		{ "path": "../../packages/keycodes" },
+		{ "path": "../../packages/url" }
 	],
 	"include": [ "src/**/*" ]
 }

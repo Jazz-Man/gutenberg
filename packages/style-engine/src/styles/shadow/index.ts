@@ -6,9 +6,9 @@ import { generateRule } from '../utils';
 
 const shadow = {
 	name: 'shadow',
-	generate: ( style: Style, options: StyleOptions ) => {
-		return generateRule( style, options, [ 'shadow' ], 'boxShadow' );
+	generate: (style: Style, options: StyleOptions) => {
+		return generateRule(style, options, ['shadow'], 'boxShadow');
 	},
 };
 
-export default [ shadow ];
+export default [shadow];

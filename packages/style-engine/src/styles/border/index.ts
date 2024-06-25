@@ -11,9 +11,9 @@ import { generateRule, generateBoxRules, camelCaseJoin } from '../utils';
  *
  * @return A function that generates CSS rules.
  */
-function createBorderGenerateFunction( path: string[] ): GenerateFunction {
-	return ( style, options ) =>
-		generateRule( style, options, path, camelCaseJoin( path ) );
+function createBorderGenerateFunction(path: string[]): GenerateFunction {
+	return (style, options) =>
+		generateRule(style, options, path, camelCaseJoin(path));
 }
 
 /**
@@ -23,64 +23,64 @@ function createBorderGenerateFunction( path: string[] ): GenerateFunction {
  *
  * @return A function that generates CSS rules.
  */
-function createBorderEdgeGenerateFunction( edge: BoxEdge ): GenerateFunction {
-	return ( style, options ) => {
-		return [ 'color', 'style', 'width' ].flatMap( ( key ) => {
-			const path = [ 'border', edge, key ];
-			return createBorderGenerateFunction( path )( style, options );
-		} );
+function createBorderEdgeGenerateFunction(edge: BoxEdge): GenerateFunction {
+	return (style, options) => {
+		return ['color', 'style', 'width'].flatMap((key) => {
+			const path = ['border', edge, key];
+			return createBorderGenerateFunction(path)(style, options);
+		});
 	};
 }
 
 const color: StyleDefinition = {
 	name: 'color',
-	generate: createBorderGenerateFunction( [ 'border', 'color' ] ),
+	generate: createBorderGenerateFunction(['border', 'color']),
 };
 
 const radius: StyleDefinition = {
 	name: 'radius',
-	generate: ( style, options ) => {
+	generate: (style, options) => {
 		return generateBoxRules(
 			style,
 			options,
-			[ 'border', 'radius' ],
+			['border', 'radius'],
 			{
 				default: 'borderRadius',
 				individual: 'border%sRadius',
 			},
-			[ 'topLeft', 'topRight', 'bottomLeft', 'bottomRight' ]
+			['topLeft', 'topRight', 'bottomLeft', 'bottomRight']
 		);
 	},
 };
 
 const borderStyle: StyleDefinition = {
 	name: 'style',
-	generate: createBorderGenerateFunction( [ 'border', 'style' ] ),
+	generate: createBorderGenerateFunction(['border', 'style']),
 };
 
 const width: StyleDefinition = {
 	name: 'width',
-	generate: createBorderGenerateFunction( [ 'border', 'width' ] ),
+	generate: createBorderGenerateFunction(['border', 'width']),
 };
 
 const borderTop: StyleDefinition = {
 	name: 'borderTop',
-	generate: createBorderEdgeGenerateFunction( 'top' ),
+	generate: createBorderEdgeGenerateFunction('top'),
 };
 
 const borderRight: StyleDefinition = {
 	name: 'borderRight',
-	generate: createBorderEdgeGenerateFunction( 'right' ),
+	generate: createBorderEdgeGenerateFunction('right'),
 };
 
 const borderBottom: StyleDefinition = {
 	name: 'borderBottom',
-	generate: createBorderEdgeGenerateFunction( 'bottom' ),
+	generate: createBorderEdgeGenerateFunction('bottom'),
 };
 
 const borderLeft: StyleDefinition = {
 	name: 'borderLeft',
-	generate: createBorderEdgeGenerateFunction( 'left' ),
+	generate: createBorderEdgeGenerateFunction('left'),
 };
 
 export default [

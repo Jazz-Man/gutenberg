@@ -12,11 +12,11 @@ import { store as preferencesStore } from '@gutenberg/preferences';
  *
  * @return {Object} Action object.
  */
-export const setDefaultComplementaryArea = ( scope, area ) => ( {
+export const setDefaultComplementaryArea = (scope, area) => ({
 	type: 'SET_DEFAULT_COMPLEMENTARY_AREA',
 	scope,
 	area,
-} );
+});
 
 /**
  * Enable the complementary area.
@@ -25,28 +25,28 @@ export const setDefaultComplementaryArea = ( scope, area ) => ( {
  * @param {string} area  Area identifier.
  */
 export const enableComplementaryArea =
-	( scope, area ) =>
-	( { registry, dispatch } ) => {
+	(scope, area) =>
+	({ registry, dispatch }) => {
 		// Return early if there's no area.
-		if ( ! area ) {
+		if (!area) {
 			return;
 		}
 
 		const isComplementaryAreaVisible = registry
-			.select( preferencesStore )
-			.get( scope, 'isComplementaryAreaVisible' );
+			.select(preferencesStore)
+			.get(scope, 'isComplementaryAreaVisible');
 
-		if ( ! isComplementaryAreaVisible ) {
+		if (!isComplementaryAreaVisible) {
 			registry
-				.dispatch( preferencesStore )
-				.set( scope, 'isComplementaryAreaVisible', true );
+				.dispatch(preferencesStore)
+				.set(scope, 'isComplementaryAreaVisible', true);
 		}
 
-		dispatch( {
+		dispatch({
 			type: 'ENABLE_COMPLEMENTARY_AREA',
 			scope,
 			area,
-		} );
+		});
 	};
 
 /**
@@ -55,16 +55,16 @@ export const enableComplementaryArea =
  * @param {string} scope Complementary area scope.
  */
 export const disableComplementaryArea =
-	( scope ) =>
-	( { registry } ) => {
+	(scope) =>
+	({ registry }) => {
 		const isComplementaryAreaVisible = registry
-			.select( preferencesStore )
-			.get( scope, 'isComplementaryAreaVisible' );
+			.select(preferencesStore)
+			.get(scope, 'isComplementaryAreaVisible');
 
-		if ( isComplementaryAreaVisible ) {
+		if (isComplementaryAreaVisible) {
 			registry
-				.dispatch( preferencesStore )
-				.set( scope, 'isComplementaryAreaVisible', false );
+				.dispatch(preferencesStore)
+				.set(scope, 'isComplementaryAreaVisible', false);
 		}
 	};
 
@@ -77,26 +77,26 @@ export const disableComplementaryArea =
  * @return {Object} Action object.
  */
 export const pinItem =
-	( scope, item ) =>
-	( { registry } ) => {
+	(scope, item) =>
+	({ registry }) => {
 		// Return early if there's no item.
-		if ( ! item ) {
+		if (!item) {
 			return;
 		}
 
 		const pinnedItems = registry
-			.select( preferencesStore )
-			.get( scope, 'pinnedItems' );
+			.select(preferencesStore)
+			.get(scope, 'pinnedItems');
 
 		// The item is already pinned, there's nothing to do.
-		if ( pinnedItems?.[ item ] === true ) {
+		if (pinnedItems?.[item] === true) {
 			return;
 		}
 
-		registry.dispatch( preferencesStore ).set( scope, 'pinnedItems', {
+		registry.dispatch(preferencesStore).set(scope, 'pinnedItems', {
 			...pinnedItems,
-			[ item ]: true,
-		} );
+			[item]: true,
+		});
 	};
 
 /**
@@ -106,21 +106,21 @@ export const pinItem =
  * @param {string} item  Item identifier.
  */
 export const unpinItem =
-	( scope, item ) =>
-	( { registry } ) => {
+	(scope, item) =>
+	({ registry }) => {
 		// Return early if there's no item.
-		if ( ! item ) {
+		if (!item) {
 			return;
 		}
 
 		const pinnedItems = registry
-			.select( preferencesStore )
-			.get( scope, 'pinnedItems' );
+			.select(preferencesStore)
+			.get(scope, 'pinnedItems');
 
-		registry.dispatch( preferencesStore ).set( scope, 'pinnedItems', {
+		registry.dispatch(preferencesStore).set(scope, 'pinnedItems', {
 			...pinnedItems,
-			[ item ]: false,
-		} );
+			[item]: false,
+		});
 	};
 
 /**
@@ -129,14 +129,14 @@ export const unpinItem =
  * @param {string} scope       The feature scope (e.g. core/edit-post).
  * @param {string} featureName The feature name.
  */
-export function toggleFeature( scope, featureName ) {
-	return function ( { registry } ) {
-		deprecated( `dispatch( 'core/interface' ).toggleFeature`, {
+export function toggleFeature(scope, featureName) {
+	return function ({ registry }) {
+		deprecated(`dispatch( 'core/interface' ).toggleFeature`, {
 			since: '6.0',
 			alternative: `dispatch( 'core/preferences' ).toggle`,
-		} );
+		});
 
-		registry.dispatch( preferencesStore ).toggle( scope, featureName );
+		registry.dispatch(preferencesStore).toggle(scope, featureName);
 	};
 }
 
@@ -150,16 +150,14 @@ export function toggleFeature( scope, featureName ) {
  *
  * @return {Object} Action object.
  */
-export function setFeatureValue( scope, featureName, value ) {
-	return function ( { registry } ) {
-		deprecated( `dispatch( 'core/interface' ).setFeatureValue`, {
+export function setFeatureValue(scope, featureName, value) {
+	return function ({ registry }) {
+		deprecated(`dispatch( 'core/interface' ).setFeatureValue`, {
 			since: '6.0',
 			alternative: `dispatch( 'core/preferences' ).set`,
-		} );
+		});
 
-		registry
-			.dispatch( preferencesStore )
-			.set( scope, featureName, !! value );
+		registry.dispatch(preferencesStore).set(scope, featureName, !!value);
 	};
 }
 
@@ -171,14 +169,14 @@ export function setFeatureValue( scope, featureName, value ) {
  *
  * @return {Object} Action object.
  */
-export function setFeatureDefaults( scope, defaults ) {
-	return function ( { registry } ) {
-		deprecated( `dispatch( 'core/interface' ).setFeatureDefaults`, {
+export function setFeatureDefaults(scope, defaults) {
+	return function ({ registry }) {
+		deprecated(`dispatch( 'core/interface' ).setFeatureDefaults`, {
 			since: '6.0',
 			alternative: `dispatch( 'core/preferences' ).setDefaults`,
-		} );
+		});
 
-		registry.dispatch( preferencesStore ).setDefaults( scope, defaults );
+		registry.dispatch(preferencesStore).setDefaults(scope, defaults);
 	};
 }
 
@@ -189,7 +187,7 @@ export function setFeatureDefaults( scope, defaults ) {
  *
  * @return {Object} Action object.
  */
-export function openModal( name ) {
+export function openModal(name) {
 	return {
 		type: 'OPEN_MODAL',
 		name,

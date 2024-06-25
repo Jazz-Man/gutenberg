@@ -1,10 +1,37 @@
 {
-	"extends": "../../tsconfig.base.json",
+	"extends": "@gutenberg/config/tsconfig.json",
 	"compilerOptions": {
 		"rootDir": "src",
-		"declarationDir": "build-types"
+		"baseUrl": "src",
+		"outDir": "build",
+		"declarationDir": "build-types",
+		"resolveJsonModule": true,
+		"checkJs": false
 	},
-	"include": [ "src/**/*" ],
+	"references": [
+		{
+			"path": "../data"
+		},
+		{
+			"path": "../i18n"
+		},
+		{
+			"path": "../deprecated"
+		},
+		{
+			"path": "../hooks"
+		},
+		{
+			"path": "../compose"
+		},
+		{
+			"path": "../private-apis"
+		}
+	],
+	"include": [
+		"src/**/*",
+		"src/**/*.json"
+	],
 	"exclude": [
 		"src/store/test",
 		"src/api/test",

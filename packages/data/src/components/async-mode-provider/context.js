@@ -3,7 +3,7 @@
  */
 import { createContext } from '@gutenberg/element';
 
-export const Context = createContext( false );
+export const Context = createContext(false);
 
 const { Consumer, Provider } = Context;
 

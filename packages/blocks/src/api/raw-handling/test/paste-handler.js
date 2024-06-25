@@ -61,22 +61,22 @@ const tableWithHeaderFooterAndBodyUsingRowspan = `
 	</tfoot>
 </table>`;
 
-describe( 'pasteHandler', () => {
-	beforeAll( () => {
+describe('pasteHandler', () => {
+	beforeAll(() => {
 		initAndRegisterTableBlock();
 		initAndRegisterVideoBlock();
-	} );
+	});
 
-	it( 'can handle a table with thead, tbody and tfoot using colspan', () => {
-		const [ result ] = pasteHandler( {
+	it('can handle a table with thead, tbody and tfoot using colspan', () => {
+		const [result] = pasteHandler({
 			HTML: tableWithHeaderFooterAndBodyUsingColspan,
 			tagName: 'p',
-		} );
+		});
 
-		expect( console ).toHaveLogged();
+		expect(console).toHaveLogged();
 
 		delete result.attributes.caption;
-		expect( result.attributes ).toEqual( {
+		expect(result.attributes).toEqual({
 			hasFixedLayout: false,
 			head: [
 				{
@@ -102,21 +102,21 @@ describe( 'pasteHandler', () => {
 					],
 				},
 			],
-		} );
-		expect( result.name ).toEqual( 'core/table' );
-		expect( result.isValid ).toBeTruthy();
-	} );
+		});
+		expect(result.name).toEqual('core/table');
+		expect(result.isValid).toBeTruthy();
+	});
 
-	it( 'can handle a table with thead, tbody and tfoot using rowspan', () => {
-		const [ result ] = pasteHandler( {
+	it('can handle a table with thead, tbody and tfoot using rowspan', () => {
+		const [result] = pasteHandler({
 			HTML: tableWithHeaderFooterAndBodyUsingRowspan,
 			tagName: 'p',
-		} );
+		});
 
-		expect( console ).toHaveLogged();
+		expect(console).toHaveLogged();
 
 		delete result.attributes.caption;
-		expect( result.attributes ).toEqual( {
+		expect(result.attributes).toEqual({
 			hasFixedLayout: false,
 			head: [
 				{
@@ -126,7 +126,7 @@ describe( 'pasteHandler', () => {
 					],
 				},
 				{
-					cells: [ { content: 'Header Cell', tag: 'th' } ],
+					cells: [{ content: 'Header Cell', tag: 'th' }],
 				},
 			],
 			body: [
@@ -137,7 +137,7 @@ describe( 'pasteHandler', () => {
 					],
 				},
 				{
-					cells: [ { content: 'Cell Data', tag: 'td' } ],
+					cells: [{ content: 'Cell Data', tag: 'td' }],
 				},
 			],
 			foot: [
@@ -148,25 +148,25 @@ describe( 'pasteHandler', () => {
 					],
 				},
 				{
-					cells: [ { content: 'Footer Cell', tag: 'td' } ],
+					cells: [{ content: 'Footer Cell', tag: 'td' }],
 				},
 			],
-		} );
-		expect( result.name ).toEqual( 'core/table' );
-		expect( result.isValid ).toBeTruthy();
-	} );
+		});
+		expect(result.name).toEqual('core/table');
+		expect(result.isValid).toBeTruthy();
+	});
 
-	it( 'can handle a video', () => {
-		const [ result ] = pasteHandler( {
+	it('can handle a video', () => {
+		const [result] = pasteHandler({
 			HTML: '<video controls src="https://example.com/media.mp4" autoplay loop muted controls playsinline preload="auto" poster="https://example.com/media.jpg"></video>',
 			tagName: 'p',
 			preserveWhiteSpace: false,
-		} );
+		});
 
-		expect( console ).toHaveLogged();
+		expect(console).toHaveLogged();
 
 		delete result.attributes.caption;
-		expect( result.attributes ).toEqual( {
+		expect(result.attributes).toEqual({
 			autoplay: true,
 			loop: true,
 			muted: true,
@@ -176,8 +176,8 @@ describe( 'pasteHandler', () => {
 			poster: 'https://example.com/media.jpg',
 			src: 'https://example.com/media.mp4',
 			tracks: [],
-		} );
-		expect( result.name ).toEqual( 'core/video' );
-		expect( result.isValid ).toBeTruthy();
-	} );
-} );
+		});
+		expect(result.name).toEqual('core/video');
+		expect(result.isValid).toBeTruthy();
+	});
+});

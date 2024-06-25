@@ -4,14 +4,14 @@
 import showdown from 'showdown';
 
 // Reuse the same showdown converter.
-const converter = new showdown.Converter( {
+const converter = new showdown.Converter({
 	noHeaderId: true,
 	tables: true,
 	literalMidWordUnderscores: true,
 	omitExtraWLInCodeBlocks: true,
 	simpleLineBreaks: true,
 	strikethrough: true,
-} );
+});
 
 /**
  * Corrects the Slack Markdown variant of the code block.
@@ -23,15 +23,15 @@ const converter = new showdown.Converter( {
  *
  * @return {string} The corrected Markdown.
  */
-function slackMarkdownVariantCorrector( text ) {
+function slackMarkdownVariantCorrector(text) {
 	return text.replace(
 		/((?:^|\n)```)([^\n`]+)(```(?:$|\n))/,
-		( match, p1, p2, p3 ) => `${ p1 }\n${ p2 }\n${ p3 }`
+		(match, p1, p2, p3) => `${p1}\n${p2}\n${p3}`
 	);
 }
 
-function bulletsToAsterisks( text ) {
-	return text.replace( /(^|\n)•( +)/g, '$1*$2' );
+function bulletsToAsterisks(text) {
+	return text.replace(/(^|\n)•( +)/g, '$1*$2');
 }
 
 /**
@@ -42,8 +42,8 @@ function bulletsToAsterisks( text ) {
  *
  * @return {string} HTML.
  */
-export default function markdownConverter( text ) {
+export default function markdownConverter(text) {
 	return converter.makeHtml(
-		slackMarkdownVariantCorrector( bulletsToAsterisks( text ) )
+		slackMarkdownVariantCorrector(bulletsToAsterisks(text))
 	);
 }

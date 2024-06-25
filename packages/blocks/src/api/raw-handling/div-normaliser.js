@@ -3,10 +3,10 @@
  */
 import normaliseBlocks from './normalise-blocks';
 
-export default function divNormaliser( node ) {
-	if ( node.nodeName !== 'DIV' ) {
+export default function divNormaliser(node) {
+	if (node.nodeName !== 'DIV') {
 		return;
 	}
 
-	node.innerHTML = normaliseBlocks( node.innerHTML );
+	node.innerHTML = normaliseBlocks(node.innerHTML);
 }

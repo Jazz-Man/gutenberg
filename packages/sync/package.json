@@ -26,6 +26,10 @@
 	"react-native": "src/index",
 	"types": "build-types",
 	"sideEffects": false,
+	"scripts": {
+		"build:ts": "tsc --build",
+		"build:ts:clear": "tsc --build --clean"
+	},
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
 		"@types/simple-peer": "^9.11.5",

@@ -19,8 +19,8 @@ const DEFAULT_FONT_SIZES = [];
  *
  * @return {string} Capitalized string.
  */
-const upperFirst = ( [ firstLetter, ...rest ] ) =>
-	firstLetter.toUpperCase() + rest.join( '' );
+const upperFirst = ([firstLetter, ...rest]) =>
+	firstLetter.toUpperCase() + rest.join('');
 
 /**
  * Higher-order component, which handles font size logic for class generation,
@@ -32,40 +32,40 @@ const upperFirst = ( [ firstLetter, ...rest ] ) =>
  *
  * @return {Function} Higher-order component.
  */
-export default ( ...fontSizeNames ) => {
+export default (...fontSizeNames) => {
 	/*
 	 * Computes an object whose key is the font size attribute name as passed in the array,
 	 * and the value is the custom font size attribute name.
 	 * Custom font size is automatically compted by appending custom followed by the font size attribute name in with the first letter capitalized.
 	 */
 	const fontSizeAttributeNames = fontSizeNames.reduce(
-		( fontSizeAttributeNamesAccumulator, fontSizeAttributeName ) => {
+		(fontSizeAttributeNamesAccumulator, fontSizeAttributeName) => {
 			fontSizeAttributeNamesAccumulator[
 				fontSizeAttributeName
-			] = `custom${ upperFirst( fontSizeAttributeName ) }`;
+			] = `custom${upperFirst(fontSizeAttributeName)}`;
 			return fontSizeAttributeNamesAccumulator;
 		},
 		{}
 	);
 
 	return createHigherOrderComponent(
-		compose( [
+		compose([
 			createHigherOrderComponent(
-				( WrappedComponent ) => ( props ) => {
-					const [ fontSizes ] = useSettings( 'typography.fontSizes' );
+				(WrappedComponent) => (props) => {
+					const [fontSizes] = useSettings('typography.fontSizes');
 					return (
 						<WrappedComponent
-							{ ...props }
-							fontSizes={ fontSizes || DEFAULT_FONT_SIZES }
+							{...props}
+							fontSizes={fontSizes || DEFAULT_FONT_SIZES}
 						/>
 					);
 				},
 				'withFontSizes'
 			),
-			( WrappedComponent ) => {
+			(WrappedComponent) => {
 				return class extends Component {
-					constructor( props ) {
-						super( props );
+					constructor(props) {
+						super(props);
 
 						this.setters = this.createSetters();
 
@@ -73,7 +73,7 @@ export default ( ...fontSizeNames ) => {
 					}
 
 					createSetters() {
-						return Object.entries( fontSizeAttributeNames ).reduce(
+						return Object.entries(fontSizeAttributeNames).reduce(
 							(
 								settersAccumulator,
 								[
@@ -82,9 +82,9 @@ export default ( ...fontSizeNames ) => {
 								]
 							) => {
 								const upperFirstFontSizeAttributeName =
-									upperFirst( fontSizeAttributeName );
+									upperFirst(fontSizeAttributeName);
 								settersAccumulator[
-									`set${ upperFirstFontSizeAttributeName }`
+									`set${upperFirstFontSizeAttributeName}`
 								] = this.createSetFontSize(
 									fontSizeAttributeName,
 									customFontSizeAttributeName
@@ -99,20 +99,20 @@ export default ( ...fontSizeNames ) => {
 						fontSizeAttributeName,
 						customFontSizeAttributeName
 					) {
-						return ( fontSizeValue ) => {
+						return (fontSizeValue) => {
 							const fontSizeObject = this.props.fontSizes?.find(
-								( { size } ) => size === Number( fontSizeValue )
+								({ size }) => size === Number(fontSizeValue)
 							);
-							this.props.setAttributes( {
-								[ fontSizeAttributeName ]:
+							this.props.setAttributes({
+								[fontSizeAttributeName]:
 									fontSizeObject && fontSizeObject.slug
 										? fontSizeObject.slug
 										: undefined,
-								[ customFontSizeAttributeName ]:
+								[customFontSizeAttributeName]:
 									fontSizeObject && fontSizeObject.slug
 										? undefined
 										: fontSizeValue,
-							} );
+							});
 						};
 					}
 
@@ -124,20 +124,20 @@ export default ( ...fontSizeNames ) => {
 							customFontSizeAttributeName,
 							fontSizeAttributeName
 						) => {
-							if ( previousState[ fontSizeAttributeName ] ) {
+							if (previousState[fontSizeAttributeName]) {
 								// If new font size is name compare with the previous slug.
-								if ( attributes[ fontSizeAttributeName ] ) {
+								if (attributes[fontSizeAttributeName]) {
 									return (
-										attributes[ fontSizeAttributeName ] !==
-										previousState[ fontSizeAttributeName ]
+										attributes[fontSizeAttributeName] !==
+										previousState[fontSizeAttributeName]
 											.slug
 									);
 								}
 								// If font size is not named, update when the font size value changes.
 								return (
-									previousState[ fontSizeAttributeName ]
+									previousState[fontSizeAttributeName]
 										.size !==
-									attributes[ customFontSizeAttributeName ]
+									attributes[customFontSizeAttributeName]
 								);
 							}
 							// In this case we need to build the font size object.
@@ -145,18 +145,16 @@ export default ( ...fontSizeNames ) => {
 						};
 
 						if (
-							! Object.values( fontSizeAttributeNames ).some(
+							!Object.values(fontSizeAttributeNames).some(
 								didAttributesChange
 							)
 						) {
 							return null;
 						}
 
-						const newState = Object.entries(
-							fontSizeAttributeNames
-						)
-							.filter( ( [ key, value ] ) =>
-								didAttributesChange( value, key )
+						const newState = Object.entries(fontSizeAttributeNames)
+							.filter(([key, value]) =>
+								didAttributesChange(value, key)
 							)
 							.reduce(
 								(
@@ -167,22 +165,19 @@ export default ( ...fontSizeNames ) => {
 									]
 								) => {
 									const fontSizeAttributeValue =
-										attributes[ fontSizeAttributeName ];
+										attributes[fontSizeAttributeName];
 									const fontSizeObject = getFontSize(
 										fontSizes,
 										fontSizeAttributeValue,
-										attributes[
-											customFontSizeAttributeName
-										]
+										attributes[customFontSizeAttributeName]
 									);
-									newStateAccumulator[
-										fontSizeAttributeName
-									] = {
-										...fontSizeObject,
-										class: getFontSizeClass(
-											fontSizeAttributeValue
-										),
-									};
+									newStateAccumulator[fontSizeAttributeName] =
+										{
+											...fontSizeObject,
+											class: getFontSizeClass(
+												fontSizeAttributeValue
+											),
+										};
 									return newStateAccumulator;
 								},
 								{}
@@ -197,18 +192,18 @@ export default ( ...fontSizeNames ) => {
 					render() {
 						return (
 							<WrappedComponent
-								{ ...{
+								{...{
 									...this.props,
 									fontSizes: undefined,
 									...this.state,
 									...this.setters,
-								} }
+								}}
 							/>
 						);
 					}
 				};
 			},
-		] ),
+		]),
 		'withFontSizes'
 	);
 };

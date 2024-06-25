@@ -9,10 +9,10 @@ const color = {
 	generate: (
 		style: Style,
 		options: StyleOptions,
-		path: string[] = [ 'outline', 'color' ],
+		path: string[] = ['outline', 'color'],
 		ruleKey: string = 'outlineColor'
 	): GeneratedCSSRule[] => {
-		return generateRule( style, options, path, ruleKey );
+		return generateRule(style, options, path, ruleKey);
 	},
 };
 
@@ -21,10 +21,10 @@ const offset = {
 	generate: (
 		style: Style,
 		options: StyleOptions,
-		path: string[] = [ 'outline', 'offset' ],
+		path: string[] = ['outline', 'offset'],
 		ruleKey: string = 'outlineOffset'
 	): GeneratedCSSRule[] => {
-		return generateRule( style, options, path, ruleKey );
+		return generateRule(style, options, path, ruleKey);
 	},
 };
 
@@ -33,10 +33,10 @@ const outlineStyle = {
 	generate: (
 		style: Style,
 		options: StyleOptions,
-		path: string[] = [ 'outline', 'style' ],
+		path: string[] = ['outline', 'style'],
 		ruleKey: string = 'outlineStyle'
 	): GeneratedCSSRule[] => {
-		return generateRule( style, options, path, ruleKey );
+		return generateRule(style, options, path, ruleKey);
 	},
 };
 
@@ -45,11 +45,11 @@ const width = {
 	generate: (
 		style: Style,
 		options: StyleOptions,
-		path: string[] = [ 'outline', 'width' ],
+		path: string[] = ['outline', 'width'],
 		ruleKey: string = 'outlineWidth'
 	): GeneratedCSSRule[] => {
-		return generateRule( style, options, path, ruleKey );
+		return generateRule(style, options, path, ruleKey);
 	},
 };
 
-export default [ color, outlineStyle, offset, width ];
+export default [color, outlineStyle, offset, width];

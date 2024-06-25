@@ -22,41 +22,40 @@ import { getRawTransforms } from './get-raw-transforms';
  *
  * @return {Array} An array of blocks.
  */
-export function htmlToBlocks( html, handler ) {
-	const doc = document.implementation.createHTMLDocument( '' );
+export function htmlToBlocks(html, handler) {
+	const doc = document.implementation.createHTMLDocument('');
 
 	doc.body.innerHTML = html;
 
-	return Array.from( doc.body.children ).flatMap( ( node ) => {
-		const rawTransform = findTransform(
-			getRawTransforms(),
-			( { isMatch } ) => isMatch( node )
+	return Array.from(doc.body.children).flatMap((node) => {
+		const rawTransform = findTransform(getRawTransforms(), ({ isMatch }) =>
+			isMatch(node)
 		);
 
-		if ( ! rawTransform ) {
+		if (!rawTransform) {
 			// Until the HTML block is supported in the native version, we'll parse it
 			// instead of creating the block to generate it as an unsupported block.
-			if ( Platform.isNative ) {
+			if (Platform.isNative) {
 				return parse(
-					`<!-- wp:html -->${ node.outerHTML }<!-- /wp:html -->`
+					`<!-- wp:html -->${node.outerHTML}<!-- /wp:html -->`
 				);
 			}
 			return createBlock(
 				// Should not be hardcoded.
 				'core/html',
-				getBlockAttributes( 'core/html', node.outerHTML )
+				getBlockAttributes('core/html', node.outerHTML)
 			);
 		}
 
 		const { transform, blockName } = rawTransform;
 
-		if ( transform ) {
-			return transform( node, handler );
+		if (transform) {
+			return transform(node, handler);
 		}
 
 		return createBlock(
 			blockName,
-			getBlockAttributes( blockName, node.outerHTML )
+			getBlockAttributes(blockName, node.outerHTML)
 		);
-	} );
+	});
 }

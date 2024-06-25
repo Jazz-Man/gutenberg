@@ -1,0 +1,22 @@
+{
+	"extends": "@gutenberg/config/tsconfig.json",
+	"compilerOptions": {
+		"rootDir": "src",
+		"baseUrl": "src",
+		"outDir": "build",
+		"declarationDir": "build-types"
+	},
+	"references": [
+		{
+			"path": "../compose"
+		},
+		{
+			"path": "../data"
+		}
+	],
+	"include": [ "src/**/*" ],
+	"exclude": [
+		"**/test/**",
+		"src/**/*.native.js"
+	]
+}

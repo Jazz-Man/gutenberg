@@ -1,8 +1,24 @@
 {
-	"extends": "../../tsconfig.base.json",
+	"extends": "@gutenberg/config/tsconfig.json",
 	"compilerOptions": {
 		"rootDir": "src",
+		"baseUrl": "src",
+		"outDir": "build",
 		"declarationDir": "build-types"
 	},
-	"include": [ "src/**/*" ],
+	"references": [
+		{
+			"path": "../url"
+		},
+		{
+			"path": "../private-apis"
+		},
+		{
+			"path": "../element"
+		}
+	],
+	"include": [
+		"src/**/*",
+		"node_modules/history/*.d.ts"
+	]
 }

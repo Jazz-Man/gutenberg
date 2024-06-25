@@ -8,24 +8,21 @@ import deepFreeze from 'deep-freeze';
  */
 import { getSupportedStyles } from '../private-selectors';
 
-const keyBlocksByName = ( blocks ) =>
-	blocks.reduce(
-		( result, block ) => ( { ...result, [ block.name ]: block } ),
-		{}
-	);
+const keyBlocksByName = (blocks) =>
+	blocks.reduce((result, block) => ({ ...result, [block.name]: block }), {});
 
-describe( 'private selectors', () => {
-	describe( 'getSupportedStyles', () => {
-		const getState = ( blocks ) => {
-			return deepFreeze( {
-				blockTypes: keyBlocksByName( blocks ),
-			} );
+describe('private selectors', () => {
+	describe('getSupportedStyles', () => {
+		const getState = (blocks) => {
+			return deepFreeze({
+				blockTypes: keyBlocksByName(blocks),
+			});
 		};
 
-		it( 'return the list of globally supported panels (no block name)', () => {
-			const supports = getSupportedStyles( getState( [] ) );
+		it('return the list of globally supported panels (no block name)', () => {
+			const supports = getSupportedStyles(getState([]));
 
-			expect( supports ).toEqual( [
+			expect(supports).toEqual([
 				'background',
 				'backgroundColor',
 				'color',
@@ -42,13 +39,13 @@ describe( 'private selectors', () => {
 				'contentSize',
 				'wideSize',
 				'blockGap',
-			] );
-		} );
+			]);
+		});
 
-		it( 'return the list of globally supported panels including link specific styles', () => {
-			const supports = getSupportedStyles( getState( [] ), null, 'link' );
+		it('return the list of globally supported panels including link specific styles', () => {
+			const supports = getSupportedStyles(getState([]), null, 'link');
 
-			expect( supports ).toEqual( [
+			expect(supports).toEqual([
 				'background',
 				'backgroundColor',
 				'color',
@@ -66,17 +63,13 @@ describe( 'private selectors', () => {
 				'wideSize',
 				'blockGap',
 				'textDecoration',
-			] );
-		} );
+			]);
+		});
 
-		it( 'return the list of globally supported panels including heading specific styles', () => {
-			const supports = getSupportedStyles(
-				getState( [] ),
-				null,
-				'heading'
-			);
+		it('return the list of globally supported panels including heading specific styles', () => {
+			const supports = getSupportedStyles(getState([]), null, 'heading');
 
-			expect( supports ).toEqual( [
+			expect(supports).toEqual([
 				'background',
 				'backgroundColor',
 				'color',
@@ -94,35 +87,32 @@ describe( 'private selectors', () => {
 				'blockGap',
 				'textTransform',
 				'letterSpacing',
-			] );
-		} );
+			]);
+		});
 
-		it( 'return an empty list for unknown blocks', () => {
+		it('return an empty list for unknown blocks', () => {
+			const supports = getSupportedStyles(getState([]), 'unkown/block');
+
+			expect(supports).toEqual([]);
+		});
+
+		it('return empty by default for blocks without support keys', () => {
 			const supports = getSupportedStyles(
-				getState( [] ),
-				'unkown/block'
-			);
-
-			expect( supports ).toEqual( [] );
-		} );
-
-		it( 'return empty by default for blocks without support keys', () => {
-			const supports = getSupportedStyles(
-				getState( [
+				getState([
 					{
 						name: 'core/example-block',
 						supports: {},
 					},
-				] ),
+				]),
 				'core/example-block'
 			);
 
-			expect( supports ).toEqual( [] );
-		} );
+			expect(supports).toEqual([]);
+		});
 
-		it( 'return the allowed styles according to the blocks support keys', () => {
+		it('return the allowed styles according to the blocks support keys', () => {
 			const supports = getSupportedStyles(
-				getState( [
+				getState([
 					{
 						name: 'core/example-block',
 						supports: {
@@ -138,11 +128,11 @@ describe( 'private selectors', () => {
 							},
 						},
 					},
-				] ),
+				]),
 				'core/example-block'
 			);
 
-			expect( supports ).toEqual( [
+			expect(supports).toEqual([
 				'fontFamily',
 				'fontSize',
 				'fontStyle',
@@ -151,7 +141,7 @@ describe( 'private selectors', () => {
 				'textDecoration',
 				'textTransform',
 				'letterSpacing',
-			] );
-		} );
-	} );
-} );
+			]);
+		});
+	});
+});

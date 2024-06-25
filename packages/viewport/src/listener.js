@@ -9,7 +9,12 @@ import { dispatch } from '@gutenberg/data';
  */
 import { store } from './store';
 
-const addDimensionsEventListener = ( breakpoints, operators ) => {
+/**
+ *
+ * @param {*} breakpoints
+ * @param {*} operators
+ */
+const addDimensionsEventListener = (breakpoints, operators) => {
 	/**
 	 * Callback invoked when media query state should be updated. Is invoked a
 	 * maximum of one time per call stack.
@@ -17,9 +22,10 @@ const addDimensionsEventListener = ( breakpoints, operators ) => {
 	const setIsMatching = debounce(
 		() => {
 			const values = Object.fromEntries(
-				queries.map( ( [ key, query ] ) => [ key, query.matches ] )
+				queries.map(([key, query]) => [key, query.matches])
 			);
-			dispatch( store ).setIsMatching( values );
+			// @ts-ignore
+			dispatch(store).setIsMatching(values);
 		},
 		0,
 		{ leading: true }
@@ -34,20 +40,24 @@ const addDimensionsEventListener = ( breakpoints, operators ) => {
 	 *
 	 * @type {Object<string,MediaQueryList>}
 	 */
-	const operatorEntries = Object.entries( operators );
-	const queries = Object.entries( breakpoints ).flatMap(
-		( [ name, width ] ) => {
-			return operatorEntries.map( ( [ operator, condition ] ) => {
-				const list = window.matchMedia(
-					`(${ condition }: ${ width }px)`
-				);
-				list.addEventListener( 'change', setIsMatching );
-				return [ `${ operator } ${ name }`, list ];
-			} );
-		}
-	);
+	/**
+	 * @todo remove after migration to ts
+	 * @type {[string, unknown][]}
+	 */
+	const operatorEntries = Object.entries(operators);
+	/**
+	 *
+	 * @type {any[]}
+	 */
+	const queries = Object.entries(breakpoints).flatMap(([name, width]) => {
+		return operatorEntries.map(([operator, condition]) => {
+			const list = window.matchMedia(`(${condition}: ${width}px)`);
+			list.addEventListener('change', setIsMatching);
+			return [`${operator} ${name}`, list];
+		});
+	});
 
-	window.addEventListener( 'orientationchange', setIsMatching );
+	window.addEventListener('orientationchange', setIsMatching);
 
 	// Set initial values.
 	setIsMatching();

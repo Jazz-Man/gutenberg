@@ -13,7 +13,7 @@ import { processBlockType } from './process-block-type';
  * @param {string}      name      Block name.
  * @param {WPBlockType} blockType Block type metadata.
  */
-export function addBootstrappedBlockType( name, blockType ) {
+export function addBootstrappedBlockType(name, blockType) {
 	return {
 		type: 'ADD_BOOTSTRAPPED_BLOCK_TYPE',
 		name,
@@ -28,15 +28,13 @@ export function addBootstrappedBlockType( name, blockType ) {
  * @param {string}      name      Block name.
  * @param {WPBlockType} blockType Unprocessed block type settings.
  */
-export function addUnprocessedBlockType( name, blockType ) {
-	return ( { dispatch } ) => {
-		dispatch( { type: 'ADD_UNPROCESSED_BLOCK_TYPE', name, blockType } );
-		const processedBlockType = dispatch(
-			processBlockType( name, blockType )
-		);
-		if ( ! processedBlockType ) {
+export function addUnprocessedBlockType(name, blockType) {
+	return ({ dispatch }) => {
+		dispatch({ type: 'ADD_UNPROCESSED_BLOCK_TYPE', name, blockType });
+		const processedBlockType = dispatch(processBlockType(name, blockType));
+		if (!processedBlockType) {
 			return;
 		}
-		dispatch.addBlockTypes( processedBlockType );
+		dispatch.addBlockTypes(processedBlockType);
 	};
 }

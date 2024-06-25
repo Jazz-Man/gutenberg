@@ -9,10 +9,10 @@ import PreferencesModalTabs from './components/preferences-modal-tabs';
 import { lock } from './lock-unlock';
 
 export const privateApis = {};
-lock( privateApis, {
+lock(privateApis, {
 	PreferenceBaseOption,
 	PreferenceToggleControl,
 	PreferencesModal,
 	PreferencesModalSection,
 	PreferencesModalTabs,
-} );
+});

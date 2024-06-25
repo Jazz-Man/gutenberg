@@ -1,0 +1,24 @@
+{
+	"extends": "@gutenberg/config/tsconfig.json",
+	"compilerOptions": {
+		"rootDir": "src",
+		"baseUrl": "src",
+		"outDir": "build",
+		"declarationDir": "build-types"
+	},
+	"references": [
+		{
+			"path": "../components"
+		},
+		{
+			"path": "../element"
+		},
+		{
+			"path": "../viewport"
+		}
+	],
+	"include": [ "src/**/*" ],
+	"exclude": [
+		"**/test/**"
+	]
+}

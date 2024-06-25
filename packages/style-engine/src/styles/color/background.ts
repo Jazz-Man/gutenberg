@@ -6,11 +6,11 @@ import { generateRule } from '../utils';
 
 const background = {
 	name: 'background',
-	generate: ( style: Style, options: StyleOptions ) => {
+	generate: (style: Style, options: StyleOptions) => {
 		return generateRule(
 			style,
 			options,
-			[ 'color', 'background' ],
+			['color', 'background'],
 			'backgroundColor'
 		);
 	},

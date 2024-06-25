@@ -1,0 +1,40 @@
+{
+	"extends": "@gutenberg/config/tsconfig.json",
+	"compilerOptions": {
+		"rootDir": "src",
+		"baseUrl": "src",
+		"outDir": "build",
+		"declarationDir": "build-types"
+	},
+
+	"references": [
+		{
+			"path": "../element"
+		},
+		{
+			"path": "../data"
+		},
+		{
+			"path": "../compose"
+		},
+		{
+			"path": "../i18n"
+		},
+		{
+			"path": "../api-fetch"
+		},
+		{
+			"path": "../url"
+		},
+		{
+			"path": "../components"
+		},
+		{
+			"path": "../blocks"
+		}
+	],
+	"include": [ "src/**/*" ],
+	"exclude": [
+		"src/test"
+	]
+}

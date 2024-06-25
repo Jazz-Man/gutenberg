@@ -12,10 +12,10 @@ import deprecated from '@gutenberg/deprecated';
  * @param {Component} OriginalComponent The component to enhance.
  * @return {Component} The same component.
  */
-export function withBlockContentContext( OriginalComponent ) {
-	deprecated( 'wp.blocks.withBlockContentContext', {
+export function withBlockContentContext(OriginalComponent) {
+	deprecated('wp.blocks.withBlockContentContext', {
 		since: '6.1',
-	} );
+	});
 
 	return OriginalComponent;
 }

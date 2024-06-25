@@ -32,7 +32,7 @@
 		"@gutenberg/compose": "workspace:*",
 		"@gutenberg/element": "workspace:*",
 		"@gutenberg/i18n": "workspace:*",
-		"change-case": "^4.1.2"
+		"change-case": "5.4.2"
 	},
 	"peerDependencies": {
 		"react": "^18.0.0",

@@ -19,7 +19,7 @@ import { store as blocksStore } from '../store';
  * @return {WPBlockCategory[]} Block categories.
  */
 export function getCategories() {
-	return select( blocksStore ).getCategories();
+	return select(blocksStore).getCategories();
 }
 
 /**
@@ -57,8 +57,8 @@ export function getCategories() {
  * };
  * ```
  */
-export function setCategories( categories ) {
-	dispatch( blocksStore ).setCategories( categories );
+export function setCategories(categories) {
+	dispatch(blocksStore).setCategories(categories);
 }
 
 /**
@@ -87,6 +87,6 @@ export function setCategories( categories ) {
  * };
  * ```
  */
-export function updateCategory( slug, category ) {
-	dispatch( blocksStore ).updateCategory( slug, category );
+export function updateCategory(slug, category) {
+	dispatch(blocksStore).updateCategory(slug, category);
 }

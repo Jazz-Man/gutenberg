@@ -30,57 +30,58 @@ import useRefEffect from '../use-ref-effect';
  * };
  * ```
  */
-export default function useDisabled( {
+// @ts-ignore
+export default function useDisabled({
 	isDisabled: isDisabledProp = false,
-} = {} ) {
+} = {}) {
 	return useRefEffect(
-		( node ) => {
-			if ( isDisabledProp ) {
+		(node) => {
+			if (isDisabledProp) {
 				return;
 			}
 
 			const defaultView = node?.ownerDocument?.defaultView;
-			if ( ! defaultView ) {
+			if (!defaultView) {
 				return;
 			}
 
 			/** A variable keeping track of the previous updates in order to restore them. */
 			const updates: Function[] = [];
 			const disable = () => {
-				node.childNodes.forEach( ( child ) => {
-					if ( ! ( child instanceof defaultView.HTMLElement ) ) {
+				node.childNodes.forEach((child) => {
+					if (!(child instanceof defaultView.HTMLElement)) {
 						return;
 					}
-					if ( ! child.getAttribute( 'inert' ) ) {
-						child.setAttribute( 'inert', 'true' );
-						updates.push( () => {
-							child.removeAttribute( 'inert' );
-						} );
+					if (!child.getAttribute('inert')) {
+						child.setAttribute('inert', 'true');
+						updates.push(() => {
+							child.removeAttribute('inert');
+						});
 					}
-				} );
+				});
 			};
 
 			// Debounce re-disable since disabling process itself will incur
 			// additional mutations which should be ignored.
-			const debouncedDisable = debounce( disable, 0, {
+			const debouncedDisable = debounce(disable, 0, {
 				leading: true,
-			} );
+			});
 			disable();
 
 			/** @type {MutationObserver | undefined} */
-			const observer = new window.MutationObserver( debouncedDisable );
-			observer.observe( node, {
+			const observer = new window.MutationObserver(debouncedDisable);
+			observer.observe(node, {
 				childList: true,
-			} );
+			});
 
 			return () => {
-				if ( observer ) {
+				if (observer) {
 					observer.disconnect();
 				}
 				debouncedDisable.cancel();
-				updates.forEach( ( update ) => update() );
+				updates.forEach((update) => update());
 			};
 		},
-		[ isDisabledProp ]
+		[isDisabledProp]
 	);
 }

@@ -28,9 +28,11 @@
 	"react-native": "src/index",
 	"types": "build-types",
 	"sideEffects": false,
+	"scripts": {
+		"build:ts": "tsc --build",
+		"build:ts:clear": "tsc --build --clean"
+	},
 	"dependencies": {
-		"@babel/runtime": "^7.16.0",
-		"@types/mousetrap": "^1.6.8",
 		"@gutenberg/deprecated": "workspace:*",
 		"@gutenberg/dom": "workspace:*",
 		"@gutenberg/element": "workspace:*",
@@ -48,5 +50,8 @@
 	},
 	"publishConfig": {
 		"access": "public"
+	},
+	"devDependencies": {
+		"@gutenberg/config": "workspace:*"
 	}
 }

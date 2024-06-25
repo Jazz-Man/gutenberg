@@ -14,51 +14,51 @@ import { useViewportMatch } from '@gutenberg/compose';
 import '../store';
 import withViewportMatch from '../with-viewport-match';
 
-jest.mock( '@gutenberg/compose/src/hooks/use-viewport-match' );
+jest.mock('@gutenberg/compose/src/hooks/use-viewport-match');
 
-const Component = ( { isWide, isSmall, isLarge, isLessThanSmall } ) => {
+const Component = ({ isWide, isSmall, isLarge, isLessThanSmall }) => {
 	return (
 		<div>
-			<span>{ isWide && 'Is wide' }</span>
-			<span>{ isSmall && 'Is small' }</span>
-			<span>{ isLarge && 'Is large' }</span>
-			<span>{ isLessThanSmall && 'Is less than small' }</span>
+			<span>{isWide && 'Is wide'}</span>
+			<span>{isSmall && 'Is small'}</span>
+			<span>{isLarge && 'Is large'}</span>
+			<span>{isLessThanSmall && 'Is less than small'}</span>
 		</div>
 	);
 };
 
-describe( 'withViewportMatch()', () => {
-	afterEach( () => {
+describe('withViewportMatch()', () => {
+	afterEach(() => {
 		useViewportMatch.mockClear();
-	} );
+	});
 
-	it( 'should render with result of query as custom prop name', () => {
-		const EnhancedComponent = withViewportMatch( {
+	it('should render with result of query as custom prop name', () => {
+		const EnhancedComponent = withViewportMatch({
 			isWide: '>= wide',
 			isSmall: '>= small',
 			isLarge: 'large',
 			isLessThanSmall: '< small',
-		} )( Component );
+		})(Component);
 
-		useViewportMatch.mockReturnValueOnce( false );
-		useViewportMatch.mockReturnValueOnce( true );
-		useViewportMatch.mockReturnValueOnce( true );
-		useViewportMatch.mockReturnValueOnce( false );
+		useViewportMatch.mockReturnValueOnce(false);
+		useViewportMatch.mockReturnValueOnce(true);
+		useViewportMatch.mockReturnValueOnce(true);
+		useViewportMatch.mockReturnValueOnce(false);
 
-		render( <EnhancedComponent /> );
+		render(<EnhancedComponent />);
 
-		expect( useViewportMatch.mock.calls ).toEqual( [
-			[ 'wide', '>=' ],
-			[ 'small', '>=' ],
-			[ 'large', '>=' ],
-			[ 'small', '<' ],
-		] );
+		expect(useViewportMatch.mock.calls).toEqual([
+			['wide', '>='],
+			['small', '>='],
+			['large', '>='],
+			['small', '<'],
+		]);
 
-		expect( screen.getByText( 'Is small' ) ).toBeInTheDocument();
-		expect( screen.getByText( 'Is large' ) ).toBeInTheDocument();
-		expect( screen.queryByText( 'Is wide' ) ).not.toBeInTheDocument();
+		expect(screen.getByText('Is small')).toBeInTheDocument();
+		expect(screen.getByText('Is large')).toBeInTheDocument();
+		expect(screen.queryByText('Is wide')).not.toBeInTheDocument();
 		expect(
-			screen.queryByText( 'Is less than small' )
+			screen.queryByText('Is less than small')
 		).not.toBeInTheDocument();
-	} );
-} );
+	});
+});

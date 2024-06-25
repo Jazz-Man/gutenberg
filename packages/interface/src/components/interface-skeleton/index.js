@@ -8,8 +8,8 @@ import classnames from 'classnames';
  */
 import { forwardRef, useEffect } from '@gutenberg/element';
 import {
-	__unstableUseNavigateRegions as useNavigateRegions,
 	__unstableMotion as motion,
+	__unstableUseNavigateRegions as useNavigateRegions,
 } from '@gutenberg/components';
 import { __, _x } from '@gutenberg/i18n';
 import { useMergeRefs } from '@gutenberg/compose';
@@ -19,18 +19,18 @@ import { useMergeRefs } from '@gutenberg/compose';
  */
 import NavigableRegion from '../navigable-region';
 
-function useHTMLClass( className ) {
-	useEffect( () => {
+function useHTMLClass(className) {
+	useEffect(() => {
 		const element =
-			document && document.querySelector( `html:not(.${ className })` );
-		if ( ! element ) {
+			document && document.querySelector(`html:not(.${className})`);
+		if (!element) {
 			return;
 		}
-		element.classList.toggle( className );
+		element.classList.toggle(className);
 		return () => {
-			element.classList.toggle( className );
+			element.classList.toggle(className);
 		};
-	}, [ className ] );
+	}, [className]);
 }
 
 const headerVariants = {
@@ -62,47 +62,47 @@ function InterfaceSkeleton(
 	},
 	ref
 ) {
-	const navigateRegionsProps = useNavigateRegions( shortcuts );
+	const navigateRegionsProps = useNavigateRegions(shortcuts);
 
-	useHTMLClass( 'interface-interface-skeleton__html-container' );
+	useHTMLClass('interface-interface-skeleton__html-container');
 
 	const defaultLabels = {
 		/* translators: accessibility text for the top bar landmark region. */
-		header: _x( 'Header', 'header landmark area' ),
+		header: _x('Header', 'header landmark area'),
 		/* translators: accessibility text for the content landmark region. */
-		body: __( 'Content' ),
+		body: __('Content'),
 		/* translators: accessibility text for the secondary sidebar landmark region. */
-		secondarySidebar: __( 'Block Library' ),
+		secondarySidebar: __('Block Library'),
 		/* translators: accessibility text for the settings landmark region. */
-		sidebar: __( 'Settings' ),
+		sidebar: __('Settings'),
 		/* translators: accessibility text for the publish landmark region. */
-		actions: __( 'Publish' ),
+		actions: __('Publish'),
 		/* translators: accessibility text for the footer landmark region. */
-		footer: __( 'Footer' ),
+		footer: __('Footer'),
 	};
 
 	const mergedLabels = { ...defaultLabels, ...labels };
 
 	return (
 		<div
-			{ ...( enableRegionNavigation ? navigateRegionsProps : {} ) }
-			ref={ useMergeRefs( [
+			{...(enableRegionNavigation ? navigateRegionsProps : {})}
+			ref={useMergeRefs([
 				ref,
 				enableRegionNavigation ? navigateRegionsProps.ref : undefined,
-			] ) }
-			className={ classnames(
+			])}
+			className={classnames(
 				className,
 				'interface-interface-skeleton',
 				navigateRegionsProps.className,
-				!! footer && 'has-footer'
-			) }
+				!!footer && 'has-footer'
+			)}
 		>
 			<div className="interface-interface-skeleton__editor">
-				{ !! header && (
+				{!!header && (
 					<NavigableRegion
-						as={ motion.div }
+						as={motion.div}
 						className="interface-interface-skeleton__header"
-						aria-label={ mergedLabels.header }
+						aria-label={mergedLabels.header}
 						initial={
 							isDistractionFree
 								? 'hidden'
@@ -118,69 +118,69 @@ function InterfaceSkeleton(
 								? 'hidden'
 								: 'distractionFreeInactive'
 						}
-						variants={ headerVariants }
+						variants={headerVariants}
 						transition={
 							isDistractionFree
 								? { type: 'tween', delay: 0.8 }
 								: undefined
 						}
 					>
-						{ header }
+						{header}
 					</NavigableRegion>
-				) }
-				{ isDistractionFree && (
+				)}
+				{isDistractionFree && (
 					<div className="interface-interface-skeleton__header">
-						{ editorNotices }
+						{editorNotices}
 					</div>
-				) }
+				)}
 				<div className="interface-interface-skeleton__body">
-					{ !! secondarySidebar && (
+					{!!secondarySidebar && (
 						<NavigableRegion
 							className="interface-interface-skeleton__secondary-sidebar"
-							ariaLabel={ mergedLabels.secondarySidebar }
+							ariaLabel={mergedLabels.secondarySidebar}
 						>
-							{ secondarySidebar }
+							{secondarySidebar}
 						</NavigableRegion>
-					) }
-					{ !! notices && (
+					)}
+					{!!notices && (
 						<div className="interface-interface-skeleton__notices">
-							{ notices }
+							{notices}
 						</div>
-					) }
+					)}
 					<NavigableRegion
 						className="interface-interface-skeleton__content"
-						ariaLabel={ mergedLabels.body }
+						ariaLabel={mergedLabels.body}
 					>
-						{ content }
+						{content}
 					</NavigableRegion>
-					{ !! sidebar && (
+					{!!sidebar && (
 						<NavigableRegion
 							className="interface-interface-skeleton__sidebar"
-							ariaLabel={ mergedLabels.sidebar }
+							ariaLabel={mergedLabels.sidebar}
 						>
-							{ sidebar }
+							{sidebar}
 						</NavigableRegion>
-					) }
-					{ !! actions && (
+					)}
+					{!!actions && (
 						<NavigableRegion
 							className="interface-interface-skeleton__actions"
-							ariaLabel={ mergedLabels.actions }
+							ariaLabel={mergedLabels.actions}
 						>
-							{ actions }
+							{actions}
 						</NavigableRegion>
-					) }
+					)}
 				</div>
 			</div>
-			{ !! footer && (
+			{!!footer && (
 				<NavigableRegion
 					className="interface-interface-skeleton__footer"
-					ariaLabel={ mergedLabels.footer }
+					ariaLabel={mergedLabels.footer}
 				>
-					{ footer }
+					{footer}
 				</NavigableRegion>
-			) }
+			)}
 		</div>
 	);
 }
 
-export default forwardRef( InterfaceSkeleton );
+export default forwardRef(InterfaceSkeleton);

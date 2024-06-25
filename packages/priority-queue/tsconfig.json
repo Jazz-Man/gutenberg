@@ -1,9 +1,10 @@
 {
-	"extends": "../../tsconfig.base.json",
+	"extends": "@gutenberg/config/tsconfig.json",
 	"compilerOptions": {
 		"rootDir": "src",
-		"declarationDir": "build-types",
-		"types": [ "requestidlecallback" ]
+		"baseUrl": "src",
+		"outDir": "build",
+		"declarationDir": "build-types"
 	},
 	"include": [ "src/**/*" ],
 	"exclude": [

@@ -19,7 +19,7 @@ import { RichTextData } from '@gutenberg/rich-text';
 import { BLOCK_ICON_DEFAULT } from './constants';
 import { getBlockType, getDefaultBlockName } from './registration';
 
-extend( [ namesPlugin, a11yPlugin ] );
+extend([namesPlugin, a11yPlugin]);
 
 /**
  * Array of icon colors containing a color to be used if the icon color
@@ -27,7 +27,7 @@ extend( [ namesPlugin, a11yPlugin ] );
  *
  * @type {Object}
  */
-const ICON_COLORS = [ '#191e23', '#f8f9f9' ];
+const ICON_COLORS = ['#191e23', '#f8f9f9'];
 
 /**
  * Determines whether the block's attributes are equal to the default attributes
@@ -37,21 +37,21 @@ const ICON_COLORS = [ '#191e23', '#f8f9f9' ];
  *
  * @return {boolean} Whether the block is an unmodified block.
  */
-export function isUnmodifiedBlock( block ) {
-	return Object.entries( getBlockType( block.name )?.attributes ?? {} ).every(
-		( [ key, definition ] ) => {
-			const value = block.attributes[ key ];
+export function isUnmodifiedBlock(block) {
+	return Object.entries(getBlockType(block.name)?.attributes ?? {}).every(
+		([key, definition]) => {
+			const value = block.attributes[key];
 
 			// Every attribute that has a default must match the default.
-			if ( definition.hasOwnProperty( 'default' ) ) {
+			if (definition.hasOwnProperty('default')) {
 				return value === definition.default;
 			}
 
 			// The rich text type is a bit different from the rest because it
 			// has an implicit default value of an empty RichTextData instance,
 			// so check the length of the value.
-			if ( definition.type === 'rich-text' ) {
-				return ! value?.length;
+			if (definition.type === 'rich-text') {
+				return !value?.length;
 			}
 
 			// Every attribute that doesn't have a default should be undefined.
@@ -68,8 +68,8 @@ export function isUnmodifiedBlock( block ) {
  *
  * @return {boolean} Whether the block is an unmodified default block.
  */
-export function isUnmodifiedDefaultBlock( block ) {
-	return block.name === getDefaultBlockName() && isUnmodifiedBlock( block );
+export function isUnmodifiedDefaultBlock(block) {
+	return block.name === getDefaultBlockName() && isUnmodifiedBlock(block);
 }
 
 /**
@@ -80,13 +80,13 @@ export function isUnmodifiedDefaultBlock( block ) {
  * @return {boolean} True if the parameter is a valid icon and false otherwise.
  */
 
-export function isValidIcon( icon ) {
+export function isValidIcon(icon) {
 	return (
-		!! icon &&
-		( typeof icon === 'string' ||
-			isValidElement( icon ) ||
+		!!icon &&
+		(typeof icon === 'string' ||
+			isValidElement(icon) ||
 			typeof icon === 'function' ||
-			icon instanceof Component )
+			icon instanceof Component)
 	);
 }
 
@@ -101,27 +101,27 @@ export function isValidIcon( icon ) {
  *
  * @return {WPBlockTypeIconDescriptor} Object describing the icon.
  */
-export function normalizeIconObject( icon ) {
+export function normalizeIconObject(icon) {
 	icon = icon || BLOCK_ICON_DEFAULT;
-	if ( isValidIcon( icon ) ) {
+	if (isValidIcon(icon)) {
 		return { src: icon };
 	}
 
-	if ( 'background' in icon ) {
-		const colordBgColor = colord( icon.background );
-		const getColorContrast = ( iconColor ) =>
-			colordBgColor.contrast( iconColor );
-		const maxContrast = Math.max( ...ICON_COLORS.map( getColorContrast ) );
+	if ('background' in icon) {
+		const colordBgColor = colord(icon.background);
+		const getColorContrast = (iconColor) =>
+			colordBgColor.contrast(iconColor);
+		const maxContrast = Math.max(...ICON_COLORS.map(getColorContrast));
 
 		return {
 			...icon,
 			foreground: icon.foreground
 				? icon.foreground
 				: ICON_COLORS.find(
-						( iconColor ) =>
-							getColorContrast( iconColor ) === maxContrast
+						(iconColor) =>
+							getColorContrast(iconColor) === maxContrast
 				  ),
-			shadowColor: colordBgColor.alpha( 0.3 ).toRgbString(),
+			shadowColor: colordBgColor.alpha(0.3).toRgbString(),
 		};
 	}
 
@@ -137,9 +137,9 @@ export function normalizeIconObject( icon ) {
  *
  * @return {?Object} Block type.
  */
-export function normalizeBlockType( blockTypeOrName ) {
-	if ( typeof blockTypeOrName === 'string' ) {
-		return getBlockType( blockTypeOrName );
+export function normalizeBlockType(blockTypeOrName) {
+	if (typeof blockTypeOrName === 'string') {
+		return getBlockType(blockTypeOrName);
 	}
 
 	return blockTypeOrName;
@@ -155,17 +155,17 @@ export function normalizeBlockType( blockTypeOrName ) {
  *
  * @return {string} The block label.
  */
-export function getBlockLabel( blockType, attributes, context = 'visual' ) {
+export function getBlockLabel(blockType, attributes, context = 'visual') {
 	const { __experimentalLabel: getLabel, title } = blockType;
 
-	const label = getLabel && getLabel( attributes, { context } );
+	const label = getLabel && getLabel(attributes, { context });
 
-	if ( ! label ) {
+	if (!label) {
 		return title;
 	}
 
 	// Strip any HTML (i.e. RichText formatting) before returning.
-	return stripHTML( label );
+	return stripHTML(label);
 }
 
 /**
@@ -189,7 +189,7 @@ export function getAccessibleBlockLabel(
 	// `title` is already localized, `label` is a user-supplied value.
 	const title = blockType?.title;
 	const label = blockType
-		? getBlockLabel( blockType, attributes, 'accessibility' )
+		? getBlockLabel(blockType, attributes, 'accessibility')
 		: '';
 	const hasPosition = position !== undefined;
 
@@ -199,11 +199,11 @@ export function getAccessibleBlockLabel(
 	// handle that.
 	const hasLabel = label && label !== title;
 
-	if ( hasPosition && direction === 'vertical' ) {
-		if ( hasLabel ) {
+	if (hasPosition && direction === 'vertical') {
+		if (hasLabel) {
 			return sprintf(
 				/* translators: accessibility text. 1: The block title. 2: The block row number. 3: The block label.. */
-				__( '%1$s Block. Row %2$d. %3$s' ),
+				__('%1$s Block. Row %2$d. %3$s'),
 				title,
 				position,
 				label
@@ -212,15 +212,15 @@ export function getAccessibleBlockLabel(
 
 		return sprintf(
 			/* translators: accessibility text. 1: The block title. 2: The block row number. */
-			__( '%1$s Block. Row %2$d' ),
+			__('%1$s Block. Row %2$d'),
 			title,
 			position
 		);
-	} else if ( hasPosition && direction === 'horizontal' ) {
-		if ( hasLabel ) {
+	} else if (hasPosition && direction === 'horizontal') {
+		if (hasLabel) {
 			return sprintf(
 				/* translators: accessibility text. 1: The block title. 2: The block column number. 3: The block label.. */
-				__( '%1$s Block. Column %2$d. %3$s' ),
+				__('%1$s Block. Column %2$d. %3$s'),
 				title,
 				position,
 				label
@@ -229,16 +229,16 @@ export function getAccessibleBlockLabel(
 
 		return sprintf(
 			/* translators: accessibility text. 1: The block title. 2: The block column number. */
-			__( '%1$s Block. Column %2$d' ),
+			__('%1$s Block. Column %2$d'),
 			title,
 			position
 		);
 	}
 
-	if ( hasLabel ) {
+	if (hasLabel) {
 		return sprintf(
 			/* translators: accessibility text. %1: The block title. %2: The block label. */
-			__( '%1$s Block. %2$s' ),
+			__('%1$s Block. %2$s'),
 			title,
 			label
 		);
@@ -246,17 +246,17 @@ export function getAccessibleBlockLabel(
 
 	return sprintf(
 		/* translators: accessibility text. %s: The block title. */
-		__( '%s Block' ),
+		__('%s Block'),
 		title
 	);
 }
 
-export function getDefault( attributeSchema ) {
-	if ( attributeSchema.default !== undefined ) {
+export function getDefault(attributeSchema) {
+	if (attributeSchema.default !== undefined) {
 		return attributeSchema.default;
 	}
 
-	if ( attributeSchema.type === 'rich-text' ) {
+	if (attributeSchema.type === 'rich-text') {
 		return new RichTextData();
 	}
 }
@@ -269,48 +269,47 @@ export function getDefault( attributeSchema ) {
  * @param {Object} attributes The block's attributes.
  * @return {Object} The sanitized attributes.
  */
-export function __experimentalSanitizeBlockAttributes( name, attributes ) {
+export function __experimentalSanitizeBlockAttributes(name, attributes) {
 	// Get the type definition associated with a registered block.
-	const blockType = getBlockType( name );
+	const blockType = getBlockType(name);
 
-	if ( undefined === blockType ) {
-		throw new Error( `Block type '${ name }' is not registered.` );
+	if (undefined === blockType) {
+		throw new Error(`Block type '${name}' is not registered.`);
 	}
 
-	return Object.entries( blockType.attributes ).reduce(
-		( accumulator, [ key, schema ] ) => {
-			const value = attributes[ key ];
+	return Object.entries(blockType.attributes).reduce(
+		(accumulator, [key, schema]) => {
+			const value = attributes[key];
 
-			if ( undefined !== value ) {
-				if ( schema.type === 'rich-text' ) {
-					if ( value instanceof RichTextData ) {
-						accumulator[ key ] = value;
-					} else if ( typeof value === 'string' ) {
-						accumulator[ key ] =
-							RichTextData.fromHTMLString( value );
+			if (undefined !== value) {
+				if (schema.type === 'rich-text') {
+					if (value instanceof RichTextData) {
+						accumulator[key] = value;
+					} else if (typeof value === 'string') {
+						accumulator[key] = RichTextData.fromHTMLString(value);
 					}
 				} else if (
 					schema.type === 'string' &&
 					value instanceof RichTextData
 				) {
-					accumulator[ key ] = value.toHTMLString();
+					accumulator[key] = value.toHTMLString();
 				} else {
-					accumulator[ key ] = value;
+					accumulator[key] = value;
 				}
 			} else {
-				const _default = getDefault( schema );
-				if ( undefined !== _default ) {
-					accumulator[ key ] = _default;
+				const _default = getDefault(schema);
+				if (undefined !== _default) {
+					accumulator[key] = _default;
 				}
 			}
 
-			if ( [ 'node', 'children' ].indexOf( schema.source ) !== -1 ) {
+			if (['node', 'children'].indexOf(schema.source) !== -1) {
 				// Ensure value passed is always an array, which we're expecting in
 				// the RichText component to handle the deprecated value.
-				if ( typeof accumulator[ key ] === 'string' ) {
-					accumulator[ key ] = [ accumulator[ key ] ];
-				} else if ( ! Array.isArray( accumulator[ key ] ) ) {
-					accumulator[ key ] = [];
+				if (typeof accumulator[key] === 'string') {
+					accumulator[key] = [accumulator[key]];
+				} else if (!Array.isArray(accumulator[key])) {
+					accumulator[key] = [];
 				}
 			}
 
@@ -328,14 +327,14 @@ export function __experimentalSanitizeBlockAttributes( name, attributes ) {
  *
  * @return {string[]} The attribute names that have the provided role.
  */
-export function __experimentalGetBlockAttributesNamesByRole( name, role ) {
-	const attributes = getBlockType( name )?.attributes;
-	if ( ! attributes ) return [];
-	const attributesNames = Object.keys( attributes );
-	if ( ! role ) return attributesNames;
+export function __experimentalGetBlockAttributesNamesByRole(name, role) {
+	const attributes = getBlockType(name)?.attributes;
+	if (!attributes) return [];
+	const attributesNames = Object.keys(attributes);
+	if (!role) return attributesNames;
 	return attributesNames.filter(
-		( attributeName ) =>
-			attributes[ attributeName ]?.__experimentalRole === role
+		(attributeName) =>
+			attributes[attributeName]?.__experimentalRole === role
 	);
 }
 
@@ -347,8 +346,8 @@ export function __experimentalGetBlockAttributesNamesByRole( name, role ) {
  *
  * @return {Object} Object with omitted keys.
  */
-export function omit( object, keys ) {
+export function omit(object, keys) {
 	return Object.fromEntries(
-		Object.entries( object ).filter( ( [ key ] ) => ! keys.includes( key ) )
+		Object.entries(object).filter(([key]) => !keys.includes(key))
 	);
 }

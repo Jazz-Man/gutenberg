@@ -24,48 +24,48 @@ import { styleDefinitions } from './styles';
  *
  * @return A generated stylesheet or inline style declarations.
  */
-export function compileCSS( style: Style, options: StyleOptions = {} ): string {
-	const rules = getCSSRules( style, options );
+export function compileCSS(style: Style, options: StyleOptions = {}): string {
+	const rules = getCSSRules(style, options);
 
 	// If no selector is provided, treat generated rules as inline styles to be returned as a single string.
-	if ( ! options?.selector ) {
+	if (!options?.selector) {
 		const inlineRules: string[] = [];
-		rules.forEach( ( rule ) => {
-			inlineRules.push( `${ kebabCase( rule.key ) }: ${ rule.value };` );
-		} );
-		return inlineRules.join( ' ' );
+		rules.forEach((rule) => {
+			inlineRules.push(`${kebabCase(rule.key)}: ${rule.value};`);
+		});
+		return inlineRules.join(' ');
 	}
 
 	const groupedRules = rules.reduce(
-		( acc: Record< string, GeneratedCSSRule[] >, rule ) => {
+		(acc: Record<string, GeneratedCSSRule[]>, rule) => {
 			const { selector } = rule;
-			if ( ! selector ) {
+			if (!selector) {
 				return acc;
 			}
-			if ( ! acc[ selector ] ) {
-				acc[ selector ] = [];
+			if (!acc[selector]) {
+				acc[selector] = [];
 			}
-			acc[ selector ].push( rule );
+			acc[selector].push(rule);
 			return acc;
 		},
 		{}
 	);
-	const selectorRules = Object.keys( groupedRules ).reduce(
-		( acc: string[], subSelector: string ) => {
+	const selectorRules = Object.keys(groupedRules).reduce(
+		(acc: string[], subSelector: string) => {
 			acc.push(
-				`${ subSelector } { ${ groupedRules[ subSelector ]
+				`${subSelector} { ${groupedRules[subSelector]
 					.map(
-						( rule: GeneratedCSSRule ) =>
-							`${ kebabCase( rule.key ) }: ${ rule.value };`
+						(rule: GeneratedCSSRule) =>
+							`${kebabCase(rule.key)}: ${rule.value};`
 					)
-					.join( ' ' ) } }`
+					.join(' ')} }`
 			);
 			return acc;
 		},
 		[]
 	);
 
-	return selectorRules.join( '\n' );
+	return selectorRules.join('\n');
 }
 
 /**
@@ -83,11 +83,11 @@ export function getCSSRules(
 	options: StyleOptions = {}
 ): GeneratedCSSRule[] {
 	const rules: GeneratedCSSRule[] = [];
-	styleDefinitions.forEach( ( definition: StyleDefinition ) => {
-		if ( typeof definition.generate === 'function' ) {
-			rules.push( ...definition.generate( style, options ) );
+	styleDefinitions.forEach((definition: StyleDefinition) => {
+		if (typeof definition.generate === 'function') {
+			rules.push(...definition.generate(style, options));
 		}
-	} );
+	});
 
 	return rules;
 }

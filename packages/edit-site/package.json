@@ -67,7 +67,7 @@
 		"@gutenberg/viewport": "workspace:*",
 		"@gutenberg/widgets": "workspace:*",
 		"@gutenberg/wordcount": "workspace:*",
-		"change-case": "^4.1.2",
+		"change-case": "5.4.2",
 		"classnames": "^2.3.1",
 		"colord": "^2.9.2",
 		"deepmerge": "^4.3.0",

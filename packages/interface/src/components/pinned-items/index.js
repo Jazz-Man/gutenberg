@@ -6,24 +6,24 @@ import classnames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { Slot, Fill } from '@gutenberg/components';
+import { Fill, Slot } from '@gutenberg/components';
 
-function PinnedItems( { scope, ...props } ) {
-	return <Fill name={ `PinnedItems/${ scope }` } { ...props } />;
+function PinnedItems({ scope, ...props }) {
+	return <Fill name={`PinnedItems/${scope}`} {...props} />;
 }
 
-function PinnedItemsSlot( { scope, className, ...props } ) {
+function PinnedItemsSlot({ scope, className, ...props }) {
 	return (
-		<Slot name={ `PinnedItems/${ scope }` } { ...props }>
-			{ ( fills ) =>
+		<Slot name={`PinnedItems/${scope}`} {...props}>
+			{(fills) =>
 				fills?.length > 0 && (
 					<div
-						className={ classnames(
+						className={classnames(
 							className,
 							'interface-pinned-items'
-						) }
+						)}
 					>
-						{ fills }
+						{fills}
 					</div>
 				)
 			}

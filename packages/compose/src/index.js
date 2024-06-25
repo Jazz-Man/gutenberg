@@ -14,7 +14,6 @@ export { default as ifCondition } from './higher-order/if-condition';
 export { default as pure } from './higher-order/pure';
 export { default as withGlobalEvents } from './higher-order/with-global-events';
 export { default as withInstanceId } from './higher-order/with-instance-id';
-export { default as withSafeTimeout } from './higher-order/with-safe-timeout';
 export { default as withState } from './higher-order/with-state';
 
 // Hooks.
@@ -46,3 +45,4 @@ export { default as useRefEffect } from './hooks/use-ref-effect';
 export { default as __experimentalUseDropZone } from './hooks/use-drop-zone';
 export { default as useFocusableIframe } from './hooks/use-focusable-iframe';
 export { default as __experimentalUseFixedWindowList } from './hooks/use-fixed-window-list';
+export { default as withSafeTimeout } from './higher-order/with-safe-timeout';

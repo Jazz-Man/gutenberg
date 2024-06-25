@@ -20,13 +20,13 @@ const CLASS_ATTR_SCHEMA = {
  *
  * @return {string[]} Array of class names assigned to the root element.
  */
-export function getHTMLRootElementClasses( innerHTML ) {
+export function getHTMLRootElementClasses(innerHTML) {
 	const parsed = parseWithAttributeSchema(
-		`<div data-custom-class-name>${ innerHTML }</div>`,
+		`<div data-custom-class-name>${innerHTML}</div>`,
 		CLASS_ATTR_SCHEMA
 	);
 
-	return parsed ? parsed.trim().split( /\s+/ ) : [];
+	return parsed ? parsed.trim().split(/\s+/) : [];
 }
 
 /**
@@ -41,25 +41,25 @@ export function getHTMLRootElementClasses( innerHTML ) {
  *
  * @return {Object} Filtered block attributes.
  */
-export function fixCustomClassname( blockAttributes, blockType, innerHTML ) {
-	if ( hasBlockSupport( blockType, 'customClassName', true ) ) {
+export function fixCustomClassname(blockAttributes, blockType, innerHTML) {
+	if (hasBlockSupport(blockType, 'customClassName', true)) {
 		// To determine difference, serialize block given the known set of
 		// attributes, with the exception of `className`. This will determine
 		// the default set of classes. From there, any difference in innerHTML
 		// can be considered as custom classes.
 		const { className: omittedClassName, ...attributesSansClassName } =
 			blockAttributes;
-		const serialized = getSaveContent( blockType, attributesSansClassName );
-		const defaultClasses = getHTMLRootElementClasses( serialized );
-		const actualClasses = getHTMLRootElementClasses( innerHTML );
+		const serialized = getSaveContent(blockType, attributesSansClassName);
+		const defaultClasses = getHTMLRootElementClasses(serialized);
+		const actualClasses = getHTMLRootElementClasses(innerHTML);
 
 		const customClasses = actualClasses.filter(
-			( className ) => ! defaultClasses.includes( className )
+			(className) => !defaultClasses.includes(className)
 		);
 
-		if ( customClasses.length ) {
-			blockAttributes.className = customClasses.join( ' ' );
-		} else if ( serialized ) {
+		if (customClasses.length) {
+			blockAttributes.className = customClasses.join(' ');
+		} else if (serialized) {
 			delete blockAttributes.className;
 		}
 	}

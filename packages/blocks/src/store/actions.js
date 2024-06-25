@@ -10,6 +10,7 @@ import { processBlockType } from './process-block-type';
 
 /** @typedef {import('../api/registration').WPBlockVariation} WPBlockVariation */
 /** @typedef {import('../api/registration').WPBlockType} WPBlockType */
+
 /** @typedef {import('./reducer').WPBlockCategory} WPBlockCategory */
 
 /**
@@ -23,10 +24,10 @@ import { processBlockType } from './process-block-type';
  *
  * @return {Object} Action object.
  */
-export function addBlockTypes( blockTypes ) {
+export function addBlockTypes(blockTypes) {
 	return {
 		type: 'ADD_BLOCK_TYPES',
-		blockTypes: Array.isArray( blockTypes ) ? blockTypes : [ blockTypes ],
+		blockTypes: Array.isArray(blockTypes) ? blockTypes : [blockTypes],
 	};
 }
 
@@ -45,22 +46,22 @@ export function addBlockTypes( blockTypes ) {
  * In this scenario some filters would not get applied for all blocks because they are registered too late.
  */
 export function reapplyBlockTypeFilters() {
-	return ( { dispatch, select } ) => {
+	return ({ dispatch, select }) => {
 		const processedBlockTypes = [];
-		for ( const [ name, settings ] of Object.entries(
+		for (const [name, settings] of Object.entries(
 			select.getUnprocessedBlockTypes()
-		) ) {
-			const result = dispatch( processBlockType( name, settings ) );
-			if ( result ) {
-				processedBlockTypes.push( result );
+		)) {
+			const result = dispatch(processBlockType(name, settings));
+			if (result) {
+				processedBlockTypes.push(result);
 			}
 		}
 
-		if ( ! processedBlockTypes.length ) {
+		if (!processedBlockTypes.length) {
 			return;
 		}
 
-		dispatch.addBlockTypes( processedBlockTypes );
+		dispatch.addBlockTypes(processedBlockTypes);
 	};
 }
 
@@ -87,10 +88,10 @@ export function __experimentalReapplyBlockFilters() {
  *
  * @return {Object} Action object.
  */
-export function removeBlockTypes( names ) {
+export function removeBlockTypes(names) {
 	return {
 		type: 'REMOVE_BLOCK_TYPES',
-		names: Array.isArray( names ) ? names : [ names ],
+		names: Array.isArray(names) ? names : [names],
 	};
 }
 
@@ -105,10 +106,10 @@ export function removeBlockTypes( names ) {
  *
  * @return {Object} Action object.
  */
-export function addBlockStyles( blockName, styles ) {
+export function addBlockStyles(blockName, styles) {
 	return {
 		type: 'ADD_BLOCK_STYLES',
-		styles: Array.isArray( styles ) ? styles : [ styles ],
+		styles: Array.isArray(styles) ? styles : [styles],
 		blockName,
 	};
 }
@@ -124,10 +125,10 @@ export function addBlockStyles( blockName, styles ) {
  *
  * @return {Object} Action object.
  */
-export function removeBlockStyles( blockName, styleNames ) {
+export function removeBlockStyles(blockName, styleNames) {
 	return {
 		type: 'REMOVE_BLOCK_STYLES',
-		styleNames: Array.isArray( styleNames ) ? styleNames : [ styleNames ],
+		styleNames: Array.isArray(styleNames) ? styleNames : [styleNames],
 		blockName,
 	};
 }
@@ -143,10 +144,10 @@ export function removeBlockStyles( blockName, styleNames ) {
  *
  * @return {Object} Action object.
  */
-export function addBlockVariations( blockName, variations ) {
+export function addBlockVariations(blockName, variations) {
 	return {
 		type: 'ADD_BLOCK_VARIATIONS',
-		variations: Array.isArray( variations ) ? variations : [ variations ],
+		variations: Array.isArray(variations) ? variations : [variations],
 		blockName,
 	};
 }
@@ -162,12 +163,12 @@ export function addBlockVariations( blockName, variations ) {
  *
  * @return {Object} Action object.
  */
-export function removeBlockVariations( blockName, variationNames ) {
+export function removeBlockVariations(blockName, variationNames) {
 	return {
 		type: 'REMOVE_BLOCK_VARIATIONS',
-		variationNames: Array.isArray( variationNames )
+		variationNames: Array.isArray(variationNames)
 			? variationNames
-			: [ variationNames ],
+			: [variationNames],
 		blockName,
 	};
 }
@@ -182,7 +183,7 @@ export function removeBlockVariations( blockName, variationNames ) {
  *
  * @return {Object} Action object.
  */
-export function setDefaultBlockName( name ) {
+export function setDefaultBlockName(name) {
 	return {
 		type: 'SET_DEFAULT_BLOCK_NAME',
 		name,
@@ -200,7 +201,7 @@ export function setDefaultBlockName( name ) {
  *
  * @return {Object} Action object.
  */
-export function setFreeformFallbackBlockName( name ) {
+export function setFreeformFallbackBlockName(name) {
 	return {
 		type: 'SET_FREEFORM_FALLBACK_BLOCK_NAME',
 		name,
@@ -218,7 +219,7 @@ export function setFreeformFallbackBlockName( name ) {
  *
  * @return {Object} Action object.
  */
-export function setUnregisteredFallbackBlockName( name ) {
+export function setUnregisteredFallbackBlockName(name) {
 	return {
 		type: 'SET_UNREGISTERED_FALLBACK_BLOCK_NAME',
 		name,
@@ -237,7 +238,7 @@ export function setUnregisteredFallbackBlockName( name ) {
  *
  * @return {Object} Action object.
  */
-export function setGroupingBlockName( name ) {
+export function setGroupingBlockName(name) {
 	return {
 		type: 'SET_GROUPING_BLOCK_NAME',
 		name,
@@ -254,7 +255,7 @@ export function setGroupingBlockName( name ) {
  *
  * @return {Object} Action object.
  */
-export function setCategories( categories ) {
+export function setCategories(categories) {
 	return {
 		type: 'SET_CATEGORIES',
 		categories,
@@ -272,7 +273,7 @@ export function setCategories( categories ) {
  *
  * @return {Object} Action object.
  */
-export function updateCategory( slug, category ) {
+export function updateCategory(slug, category) {
 	return {
 		type: 'UPDATE_CATEGORY',
 		slug,
@@ -292,7 +293,7 @@ export function updateCategory( slug, category ) {
  *
  * @return {Object} Action object.
  */
-export function addBlockCollection( namespace, title, icon ) {
+export function addBlockCollection(namespace, title, icon) {
 	return {
 		type: 'ADD_BLOCK_COLLECTION',
 		namespace,
@@ -311,7 +312,7 @@ export function addBlockCollection( namespace, title, icon ) {
  *
  * @return {Object} Action object.
  */
-export function removeBlockCollection( namespace ) {
+export function removeBlockCollection(namespace) {
 	return {
 		type: 'REMOVE_BLOCK_COLLECTION',
 		namespace,

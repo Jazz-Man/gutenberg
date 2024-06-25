@@ -4,77 +4,77 @@
 import type { CSSProperties } from 'react';
 
 type BoxVariant = 'margin' | 'padding';
-export interface Box< T extends BoxVariant | undefined = undefined > {
-	top?: CSSProperties[ T extends undefined ? 'top' : `${ T }Top` ];
-	right?: CSSProperties[ T extends undefined ? 'right' : `${ T }Right` ];
-	bottom?: CSSProperties[ T extends undefined ? 'bottom' : `${ T }Bottom` ];
-	left?: CSSProperties[ T extends undefined ? 'left' : `${ T }Left` ];
+export interface Box<T extends BoxVariant | undefined = undefined> {
+	top?: CSSProperties[T extends undefined ? 'top' : `${T}Top`];
+	right?: CSSProperties[T extends undefined ? 'right' : `${T}Right`];
+	bottom?: CSSProperties[T extends undefined ? 'bottom' : `${T}Bottom`];
+	left?: CSSProperties[T extends undefined ? 'left' : `${T}Left`];
 }
 
 export type BoxEdge = 'top' | 'right' | 'bottom' | 'left';
 
 // `T` is one of the values in `BorderIndividualProperty`. The expected CSSProperties key is something like `borderTopColor`.
-export interface BorderIndividualStyles< T extends BoxEdge > {
-	color?: CSSProperties[ `border${ Capitalize< T > }Color` ];
-	style?: CSSProperties[ `border${ Capitalize< T > }Style` ];
-	width?: CSSProperties[ `border${ Capitalize< T > }Width` ];
+export interface BorderIndividualStyles<T extends BoxEdge> {
+	color?: CSSProperties[`border${Capitalize<T>}Color`];
+	style?: CSSProperties[`border${Capitalize<T>}Style`];
+	width?: CSSProperties[`border${Capitalize<T>}Width`];
 }
 
 export interface Style {
 	background?: {
 		backgroundImage: {
-			url?: CSSProperties[ 'backgroundImage' ];
+			url?: CSSProperties['backgroundImage'];
 			source?: string;
 		};
-		backgroundPosition?: CSSProperties[ 'backgroundPosition' ];
-		backgroundRepeat?: CSSProperties[ 'backgroundRepeat' ];
-		backgroundSize?: CSSProperties[ 'backgroundSize' ];
+		backgroundPosition?: CSSProperties['backgroundPosition'];
+		backgroundRepeat?: CSSProperties['backgroundRepeat'];
+		backgroundSize?: CSSProperties['backgroundSize'];
 	};
 	border?: {
-		color?: CSSProperties[ 'borderColor' ];
+		color?: CSSProperties['borderColor'];
 		radius?:
-			| CSSProperties[ 'borderRadius' ]
+			| CSSProperties['borderRadius']
 			| {
-					topLeft?: CSSProperties[ 'borderTopLeftRadius' ];
-					topRight?: CSSProperties[ 'borderTopRightRadius' ];
-					bottomLeft?: CSSProperties[ 'borderBottomLeftRadius' ];
-					bottomRight?: CSSProperties[ 'borderBottomLeftRadius' ];
+					topLeft?: CSSProperties['borderTopLeftRadius'];
+					topRight?: CSSProperties['borderTopRightRadius'];
+					bottomLeft?: CSSProperties['borderBottomLeftRadius'];
+					bottomRight?: CSSProperties['borderBottomLeftRadius'];
 			  };
-		style?: CSSProperties[ 'borderStyle' ];
-		width?: CSSProperties[ 'borderWidth' ];
-		top?: BorderIndividualStyles< 'top' >;
-		right?: BorderIndividualStyles< 'right' >;
-		bottom?: BorderIndividualStyles< 'bottom' >;
-		left?: BorderIndividualStyles< 'left' >;
+		style?: CSSProperties['borderStyle'];
+		width?: CSSProperties['borderWidth'];
+		top?: BorderIndividualStyles<'top'>;
+		right?: BorderIndividualStyles<'right'>;
+		bottom?: BorderIndividualStyles<'bottom'>;
+		left?: BorderIndividualStyles<'left'>;
 	};
 	dimensions?: {
-		minHeight?: CSSProperties[ 'minHeight' ];
+		minHeight?: CSSProperties['minHeight'];
 	};
 	spacing?: {
-		margin?: CSSProperties[ 'margin' ] | Box< 'margin' >;
-		padding?: CSSProperties[ 'padding' ] | Box< 'padding' >;
+		margin?: CSSProperties['margin'] | Box<'margin'>;
+		padding?: CSSProperties['padding'] | Box<'padding'>;
 	};
 	typography?: {
-		fontSize?: CSSProperties[ 'fontSize' ];
-		fontFamily?: CSSProperties[ 'fontFamily' ];
-		fontWeight?: CSSProperties[ 'fontWeight' ];
-		fontStyle?: CSSProperties[ 'fontStyle' ];
-		letterSpacing?: CSSProperties[ 'letterSpacing' ];
-		lineHeight?: CSSProperties[ 'lineHeight' ];
-		textColumns?: CSSProperties[ 'columnCount' ];
-		textDecoration?: CSSProperties[ 'textDecoration' ];
-		textTransform?: CSSProperties[ 'textTransform' ];
-		writingMode?: CSSProperties[ 'writingMode' ];
+		fontSize?: CSSProperties['fontSize'];
+		fontFamily?: CSSProperties['fontFamily'];
+		fontWeight?: CSSProperties['fontWeight'];
+		fontStyle?: CSSProperties['fontStyle'];
+		letterSpacing?: CSSProperties['letterSpacing'];
+		lineHeight?: CSSProperties['lineHeight'];
+		textColumns?: CSSProperties['columnCount'];
+		textDecoration?: CSSProperties['textDecoration'];
+		textTransform?: CSSProperties['textTransform'];
+		writingMode?: CSSProperties['writingMode'];
 	};
 	color?: {
-		text?: CSSProperties[ 'color' ];
-		background?: CSSProperties[ 'backgroundColor' ];
-		gradient?: CSSProperties[ 'background' ];
+		text?: CSSProperties['color'];
+		background?: CSSProperties['backgroundColor'];
+		gradient?: CSSProperties['background'];
 	};
 	elements?: {
 		link?: {
 			color?: {
-				text?: CSSProperties[ 'color' ];
+				text?: CSSProperties['color'];
 			};
 		};
 	};
@@ -103,7 +103,7 @@ export interface GeneratedCSSRule {
 }
 
 export interface GenerateFunction {
-	( style: Style, options: StyleOptions ): GeneratedCSSRule[];
+	(style: Style, options: StyleOptions): GeneratedCSSRule[];
 }
 
 export interface StyleDefinition {

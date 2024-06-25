@@ -2,10 +2,10 @@
 	"extends": "@gutenberg/config/tsconfig.json",
 	"compilerOptions": {
 		"baseUrl": "src",
+		"rootDir": "src",
 		"outDir": "./build",
 		"declarationDir": "build-types",
-		"rootDir": "src"
 	},
-	"exclude": ["*.js", "*.d.ts"],
+
 	"include": ["src/**/*"]
 }

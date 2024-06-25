@@ -2,5 +2,30 @@
 	"name": "@gutenberg/config",
 	"private": true,
 	"version": "0.0.0",
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@tsconfig/recommended": "1.0.3",
+		"@types/babel__core": "7.20.5",
+		"@types/eslint": "7.28.0",
+		"@types/estree": "0.0.50",
+		"@types/gradient-parser": "0.1.3",
+		"@types/highlight-words-core": "1.2.1",
+		"@types/istanbul-lib-report": "3.0.0",
+		"@types/jest": "29.5.11",
+		"@types/mime": "2.0.3",
+		"@types/mousetrap": "^1.6.15",
+		"@types/node": "20.11.5",
+		"@types/npm-package-arg": "6.1.1",
+		"@types/prettier": "2.4.4",
+		"@types/qs": "6.9.7",
+		"@types/react": "18.0.21",
+		"@types/react-dates": "21.8.3",
+		"@types/react-dom": "18.0.6",
+		"@types/requestidlecallback": "0.3.7",
+		"@types/semver": "7.3.8",
+		"@types/sprintf-js": "1.1.2",
+		"@types/testing-library__jest-dom": "^5.9.1",
+		"@types/uuid": "8.3.1",
+		"csstype": "3.1.3"
+	}
 }

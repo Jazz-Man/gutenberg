@@ -28,13 +28,13 @@ import {
  * @return Value of the object property at the specified path.
  */
 export const getStyleValueByPath = (
-	object: Record< any, any >,
+	object: Record<any, any>,
 	path: string[]
 ) => {
 	let value: any = object;
-	path.forEach( ( fieldName: string ) => {
-		value = value?.[ fieldName ];
-	} );
+	path.forEach((fieldName: string) => {
+		value = value?.[fieldName];
+	});
 	return value;
 };
 
@@ -54,14 +54,14 @@ export function generateRule(
 	path: string[],
 	ruleKey: string
 ): GeneratedCSSRule[] {
-	const styleValue: string | undefined = getStyleValueByPath( style, path );
+	const styleValue: string | undefined = getStyleValueByPath(style, path);
 
 	return styleValue
 		? [
 				{
 					selector: options?.selector,
 					key: ruleKey,
-					value: getCSSVarFromStyleValue( styleValue ),
+					value: getCSSVarFromStyleValue(styleValue),
 				},
 		  ]
 		: [];
@@ -83,44 +83,41 @@ export function generateBoxRules(
 	options: StyleOptions,
 	path: string[],
 	ruleKeys: CssRulesKeys,
-	individualProperties: string[] = [ 'top', 'right', 'bottom', 'left' ]
+	individualProperties: string[] = ['top', 'right', 'bottom', 'left']
 ): GeneratedCSSRule[] {
-	const boxStyle: Box | string | undefined = getStyleValueByPath(
-		style,
-		path
-	);
-	if ( ! boxStyle ) {
+	const boxStyle: Box | string | undefined = getStyleValueByPath(style, path);
+	if (!boxStyle) {
 		return [];
 	}
 
 	const rules: GeneratedCSSRule[] = [];
-	if ( typeof boxStyle === 'string' ) {
-		rules.push( {
+	if (typeof boxStyle === 'string') {
+		rules.push({
 			selector: options?.selector,
 			key: ruleKeys.default,
 			value: boxStyle,
-		} );
+		});
 	} else {
 		const sideRules = individualProperties.reduce(
-			( acc: GeneratedCSSRule[], side: string ) => {
+			(acc: GeneratedCSSRule[], side: string) => {
 				const value: string | undefined = getCSSVarFromStyleValue(
-					getStyleValueByPath( boxStyle, [ side ] )
+					getStyleValueByPath(boxStyle, [side])
 				);
-				if ( value ) {
-					acc.push( {
+				if (value) {
+					acc.push({
 						selector: options?.selector,
 						key: ruleKeys?.individual.replace(
 							'%s',
-							upperFirst( side )
+							upperFirst(side)
 						),
 						value,
-					} );
+					});
 				}
 				return acc;
 			},
 			[]
 		);
-		rules.push( ...sideRules );
+		rules.push(...sideRules);
 	}
 
 	return rules;
@@ -133,26 +130,26 @@ export function generateBoxRules(
  *
  * @return string A CSS var value.
  */
-export function getCSSVarFromStyleValue( styleValue: string ): string {
+export function getCSSVarFromStyleValue(styleValue: string): string {
 	if (
 		typeof styleValue === 'string' &&
-		styleValue.startsWith( VARIABLE_REFERENCE_PREFIX )
+		styleValue.startsWith(VARIABLE_REFERENCE_PREFIX)
 	) {
 		const variable = styleValue
-			.slice( VARIABLE_REFERENCE_PREFIX.length )
-			.split( VARIABLE_PATH_SEPARATOR_TOKEN_ATTRIBUTE )
-			.map( ( presetVariable ) =>
-				kebabCase( presetVariable, {
+			.slice(VARIABLE_REFERENCE_PREFIX.length)
+			.split(VARIABLE_PATH_SEPARATOR_TOKEN_ATTRIBUTE)
+			.map((presetVariable) =>
+				kebabCase(presetVariable, {
 					splitRegexp: [
 						/([a-z0-9])([A-Z])/g, // fooBar => foo-bar, 3Bar => 3-bar
 						/([0-9])([a-z])/g, // 3bar => 3-bar
 						/([A-Za-z])([0-9])/g, // Foo3 => foo-3, foo3 => foo-3
 						/([A-Z])([A-Z][a-z])/g, // FOOBar => foo-bar
 					],
-				} )
+				})
 			)
-			.join( VARIABLE_PATH_SEPARATOR_TOKEN_STYLE );
-		return `var(--wp--${ variable })`;
+			.join(VARIABLE_PATH_SEPARATOR_TOKEN_STYLE);
+		return `var(--wp--${variable})`;
 	}
 	return styleValue;
 }
@@ -164,9 +161,9 @@ export function getCSSVarFromStyleValue( styleValue: string ): string {
  *
  * @return String with the first letter capitalized.
  */
-export function upperFirst( string: string ): string {
-	const [ firstLetter, ...rest ] = string;
-	return firstLetter.toUpperCase() + rest.join( '' );
+export function upperFirst(string: string): string {
+	const [firstLetter, ...rest] = string;
+	return firstLetter.toUpperCase() + rest.join('');
 }
 
 /**
@@ -176,9 +173,9 @@ export function upperFirst( string: string ): string {
  *
  * @return camelCase string.
  */
-export function camelCaseJoin( strings: string[] ): string {
-	const [ firstItem, ...rest ] = strings;
-	return firstItem.toLowerCase() + rest.map( upperFirst ).join( '' );
+export function camelCaseJoin(strings: string[]): string {
+	const [firstItem, ...rest] = strings;
+	return firstItem.toLowerCase() + rest.map(upperFirst).join('');
 }
 
 /**
@@ -194,10 +191,10 @@ export function camelCaseJoin( strings: string[] ): string {
  *
  * @return {string} Decoded URI if possible.
  */
-export function safeDecodeURI( uri: string ): string {
+export function safeDecodeURI(uri: string): string {
 	try {
-		return decodeURI( uri );
-	} catch ( uriError ) {
+		return decodeURI(uri);
+	} catch (uriError) {
 		return uri;
 	}
 }

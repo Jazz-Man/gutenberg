@@ -10,7 +10,7 @@ import { useDispatch, useSelect } from '@gutenberg/data';
 import { store as interfaceStore } from '../../store';
 import complementaryAreaContext from '../complementary-area-context';
 
-function ComplementaryAreaToggle( {
+function ComplementaryAreaToggle({
 	as = Button,
 	scope,
 	identifier,
@@ -18,30 +18,30 @@ function ComplementaryAreaToggle( {
 	selectedIcon,
 	name,
 	...props
-} ) {
+}) {
 	const ComponentToUse = as;
 	const isSelected = useSelect(
-		( select ) =>
-			select( interfaceStore ).getActiveComplementaryArea( scope ) ===
+		(select) =>
+			select(interfaceStore).getActiveComplementaryArea(scope) ===
 			identifier,
-		[ identifier, scope ]
+		[identifier, scope]
 	);
 	const { enableComplementaryArea, disableComplementaryArea } =
-		useDispatch( interfaceStore );
+		useDispatch(interfaceStore);
 	return (
 		<ComponentToUse
-			icon={ selectedIcon && isSelected ? selectedIcon : icon }
-			aria-controls={ identifier.replace( '/', ':' ) }
-			onClick={ () => {
-				if ( isSelected ) {
-					disableComplementaryArea( scope );
+			icon={selectedIcon && isSelected ? selectedIcon : icon}
+			aria-controls={identifier.replace('/', ':')}
+			onClick={() => {
+				if (isSelected) {
+					disableComplementaryArea(scope);
 				} else {
-					enableComplementaryArea( scope, identifier );
+					enableComplementaryArea(scope, identifier);
 				}
-			} }
-			{ ...props }
+			}}
+			{...props}
 		/>
 	);
 }
 
-export default complementaryAreaContext( ComplementaryAreaToggle );
+export default complementaryAreaContext(ComplementaryAreaToggle);

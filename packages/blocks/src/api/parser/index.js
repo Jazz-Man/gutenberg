@@ -65,12 +65,9 @@ import { applyBuiltInValidationFixes } from './apply-built-in-validation-fixes';
  *
  * @return {WPRawBlock} The block's name and attributes, changed accordingly if a match was found
  */
-function convertLegacyBlocks( rawBlock ) {
-	const [ correctName, correctedAttributes ] =
-		convertLegacyBlockNameAndAttributes(
-			rawBlock.blockName,
-			rawBlock.attrs
-		);
+function convertLegacyBlocks(rawBlock) {
+	const [correctName, correctedAttributes] =
+		convertLegacyBlockNameAndAttributes(rawBlock.blockName, rawBlock.attrs);
 	return {
 		...rawBlock,
 		blockName: correctName,
@@ -87,7 +84,7 @@ function convertLegacyBlocks( rawBlock ) {
  *
  * @return {WPRawBlock} The normalized block object.
  */
-export function normalizeRawBlock( rawBlock, options ) {
+export function normalizeRawBlock(rawBlock, options) {
 	const fallbackBlockName = getFreeformContentHandlerName();
 
 	// If the grammar parsing don't produce any block name, use the freeform block.
@@ -102,9 +99,9 @@ export function normalizeRawBlock( rawBlock, options ) {
 	if (
 		rawBlockName === fallbackBlockName &&
 		rawBlockName === 'core/freeform' &&
-		! options?.__unstableSkipAutop
+		!options?.__unstableSkipAutop
 	) {
-		rawInnerHTML = autop( rawInnerHTML ).trim();
+		rawInnerHTML = autop(rawInnerHTML).trim();
 	}
 
 	return {
@@ -123,22 +120,22 @@ export function normalizeRawBlock( rawBlock, options ) {
  *
  * @return {WPRawBlock} The unregistered block object.
  */
-function createMissingBlockType( rawBlock ) {
+function createMissingBlockType(rawBlock) {
 	const unregisteredFallbackBlock =
 		getUnregisteredTypeHandlerName() || getFreeformContentHandlerName();
 
 	// Preserve undelimited content for use by the unregistered type
 	// handler. A block node's `innerHTML` isn't enough, as that field only
 	// carries the block's own HTML and not its nested blocks.
-	const originalUndelimitedContent = serializeRawBlock( rawBlock, {
+	const originalUndelimitedContent = serializeRawBlock(rawBlock, {
 		isCommentDelimited: false,
-	} );
+	});
 
 	// Preserve full block content for use by the unregistered type
 	// handler, block boundaries included.
-	const originalContent = serializeRawBlock( rawBlock, {
+	const originalContent = serializeRawBlock(rawBlock, {
 		isCommentDelimited: true,
-	} );
+	});
 
 	return {
 		blockName: unregisteredFallbackBlock,
@@ -162,22 +159,19 @@ function createMissingBlockType( rawBlock ) {
  * @param {import('../registration').WPBlockType} blockType
  * @return {WPBlock}                              validated block, with auto-fixes if initially invalid
  */
-function applyBlockValidation( unvalidatedBlock, blockType ) {
+function applyBlockValidation(unvalidatedBlock, blockType) {
 	// Attempt to validate the block.
-	const [ isValid ] = validateBlock( unvalidatedBlock, blockType );
+	const [isValid] = validateBlock(unvalidatedBlock, blockType);
 
-	if ( isValid ) {
+	if (isValid) {
 		return { ...unvalidatedBlock, isValid, validationIssues: [] };
 	}
 
 	// If the block is invalid, attempt some built-in fixes
 	// like custom classNames handling.
-	const fixedBlock = applyBuiltInValidationFixes(
-		unvalidatedBlock,
-		blockType
-	);
+	const fixedBlock = applyBuiltInValidationFixes(unvalidatedBlock, blockType);
 	// Attempt to validate the block once again after the built-in fixes.
-	const [ isFixedValid, validationIssues ] = validateBlock(
+	const [isFixedValid, validationIssues] = validateBlock(
 		unvalidatedBlock,
 		blockType
 	);
@@ -193,21 +187,21 @@ function applyBlockValidation( unvalidatedBlock, blockType ) {
  *
  * @return {WPBlock | undefined} Fully parsed block.
  */
-export function parseRawBlock( rawBlock, options ) {
-	let normalizedBlock = normalizeRawBlock( rawBlock, options );
+export function parseRawBlock(rawBlock, options) {
+	let normalizedBlock = normalizeRawBlock(rawBlock, options);
 
 	// During the lifecycle of the project, we renamed some old blocks
 	// and transformed others to new blocks. To avoid breaking existing content,
 	// we added this function to properly parse the old content.
-	normalizedBlock = convertLegacyBlocks( normalizedBlock );
+	normalizedBlock = convertLegacyBlocks(normalizedBlock);
 
 	// Try finding the type for known block name.
-	let blockType = getBlockType( normalizedBlock.blockName );
+	let blockType = getBlockType(normalizedBlock.blockName);
 
 	// If not blockType is found for the specified name, fallback to the "unregistedBlockType".
-	if ( ! blockType ) {
-		normalizedBlock = createMissingBlockType( normalizedBlock );
-		blockType = getBlockType( normalizedBlock.blockName );
+	if (!blockType) {
+		normalizedBlock = createMissingBlockType(normalizedBlock);
+		blockType = getBlockType(normalizedBlock.blockName);
 	}
 
 	// If it's an empty freeform block or there's no blockType (no missing block handler)
@@ -218,15 +212,15 @@ export function parseRawBlock( rawBlock, options ) {
 	const isFallbackBlock =
 		normalizedBlock.blockName === getFreeformContentHandlerName() ||
 		normalizedBlock.blockName === getUnregisteredTypeHandlerName();
-	if ( ! blockType || ( ! normalizedBlock.innerHTML && isFallbackBlock ) ) {
+	if (!blockType || (!normalizedBlock.innerHTML && isFallbackBlock)) {
 		return;
 	}
 
 	// Parse inner blocks recursively.
 	const parsedInnerBlocks = normalizedBlock.innerBlocks
-		.map( ( innerBlock ) => parseRawBlock( innerBlock, options ) )
+		.map((innerBlock) => parseRawBlock(innerBlock, options))
 		// See https://github.com/WordPress/gutenberg/pull/17164.
-		.filter( ( innerBlock ) => !! innerBlock );
+		.filter((innerBlock) => !!innerBlock);
 
 	// Get the fully parsed block.
 	const parsedBlock = createBlock(
@@ -240,7 +234,7 @@ export function parseRawBlock( rawBlock, options ) {
 	);
 	parsedBlock.originalContent = normalizedBlock.innerHTML;
 
-	const validatedBlock = applyBlockValidation( parsedBlock, blockType );
+	const validatedBlock = applyBlockValidation(parsedBlock, blockType);
 	const { validationIssues } = validatedBlock;
 
 	// Run the block deprecation and migrations.
@@ -253,7 +247,7 @@ export function parseRawBlock( rawBlock, options ) {
 		blockType
 	);
 
-	if ( ! updatedBlock.isValid ) {
+	if (!updatedBlock.isValid) {
 		// Preserve the original unprocessed version of the block
 		// that we received (no fixes, no deprecations) so that
 		// we can save it as close to exactly the same way as
@@ -264,23 +258,23 @@ export function parseRawBlock( rawBlock, options ) {
 	}
 
 	if (
-		! validatedBlock.isValid &&
+		!validatedBlock.isValid &&
 		updatedBlock.isValid &&
-		! options?.__unstableSkipMigrationLogs
+		!options?.__unstableSkipMigrationLogs
 	) {
 		/* eslint-disable no-console */
-		console.groupCollapsed( 'Updated Block: %s', blockType.name );
+		console.groupCollapsed('Updated Block: %s', blockType.name);
 		console.info(
 			'Block successfully updated for `%s` (%o).\n\nNew content generated by `save` function:\n\n%s\n\nContent retrieved from post body:\n\n%s',
 			blockType.name,
 			blockType,
-			getSaveContent( blockType, updatedBlock.attributes ),
+			getSaveContent(blockType, updatedBlock.attributes),
 			updatedBlock.originalContent
 		);
 		console.groupEnd();
 		/* eslint-enable no-console */
-	} else if ( ! validatedBlock.isValid && ! updatedBlock.isValid ) {
-		validationIssues.forEach( ( { log, args } ) => log( ...args ) );
+	} else if (!validatedBlock.isValid && !updatedBlock.isValid) {
+		validationIssues.forEach(({ log, args }) => log(...args));
 	}
 
 	return updatedBlock;
@@ -307,12 +301,12 @@ export function parseRawBlock( rawBlock, options ) {
  *
  * @return {Array} Block list.
  */
-export default function parse( content, options ) {
-	return grammarParse( content ).reduce( ( accumulator, rawBlock ) => {
-		const block = parseRawBlock( rawBlock, options );
-		if ( block ) {
-			accumulator.push( block );
+export default function parse(content, options) {
+	return grammarParse(content).reduce((accumulator, rawBlock) => {
+		const block = parseRawBlock(rawBlock, options);
+		if (block) {
+			accumulator.push(block);
 		}
 		return accumulator;
-	}, [] );
+	}, []);
 }

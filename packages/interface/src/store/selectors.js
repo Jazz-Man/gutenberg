@@ -14,8 +14,8 @@ import { store as preferencesStore } from '@gutenberg/preferences';
  * @return {string | null | undefined} The complementary area that is active in the given scope.
  */
 export const getActiveComplementaryArea = createRegistrySelector(
-	( select ) => ( state, scope ) => {
-		const isComplementaryAreaVisible = select( preferencesStore ).get(
+	(select) => (state, scope) => {
+		const isComplementaryAreaVisible = select(preferencesStore).get(
 			scope,
 			'isComplementaryAreaVisible'
 		);
@@ -23,26 +23,26 @@ export const getActiveComplementaryArea = createRegistrySelector(
 		// Return `undefined` to indicate that the user has never toggled
 		// visibility, this is the vanilla default. Other code relies on this
 		// nuance in the return value.
-		if ( isComplementaryAreaVisible === undefined ) {
+		if (isComplementaryAreaVisible === undefined) {
 			return undefined;
 		}
 
 		// Return `null` to indicate the user hid the complementary area.
-		if ( isComplementaryAreaVisible === false ) {
+		if (isComplementaryAreaVisible === false) {
 			return null;
 		}
 
-		return state?.complementaryAreas?.[ scope ];
+		return state?.complementaryAreas?.[scope];
 	}
 );
 
 export const isComplementaryAreaLoading = createRegistrySelector(
-	( select ) => ( state, scope ) => {
-		const isVisible = select( preferencesStore ).get(
+	(select) => (state, scope) => {
+		const isVisible = select(preferencesStore).get(
 			scope,
 			'isComplementaryAreaVisible'
 		);
-		const identifier = state?.complementaryAreas?.[ scope ];
+		const identifier = state?.complementaryAreas?.[scope];
 
 		return isVisible && identifier === undefined;
 	}
@@ -58,12 +58,9 @@ export const isComplementaryAreaLoading = createRegistrySelector(
  * @return {boolean} True if the item is pinned and false otherwise.
  */
 export const isItemPinned = createRegistrySelector(
-	( select ) => ( state, scope, item ) => {
-		const pinnedItems = select( preferencesStore ).get(
-			scope,
-			'pinnedItems'
-		);
-		return pinnedItems?.[ item ] ?? true;
+	(select) => (state, scope, item) => {
+		const pinnedItems = select(preferencesStore).get(scope, 'pinnedItems');
+		return pinnedItems?.[item] ?? true;
 	}
 );
 
@@ -78,7 +75,7 @@ export const isItemPinned = createRegistrySelector(
  * @return {boolean} Is the feature enabled?
  */
 export const isFeatureActive = createRegistrySelector(
-	( select ) => ( state, scope, featureName ) => {
+	(select) => (state, scope, featureName) => {
 		deprecated(
 			`select( 'core/interface' ).isFeatureActive( scope, featureName )`,
 			{
@@ -87,7 +84,7 @@ export const isFeatureActive = createRegistrySelector(
 			}
 		);
 
-		return !! select( preferencesStore ).get( scope, featureName );
+		return !!select(preferencesStore).get(scope, featureName);
 	}
 );
 
@@ -99,6 +96,6 @@ export const isFeatureActive = createRegistrySelector(
  *
  * @return {boolean} Whether the modal is active.
  */
-export function isModalActive( state, modalName ) {
+export function isModalActive(state, modalName) {
 	return state.activeModal === modalName;
 }

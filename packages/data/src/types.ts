@@ -4,21 +4,21 @@
 // eslint-disable-next-line no-restricted-imports
 import type { combineReducers as reduxCombineReducers } from 'redux';
 
-type MapOf< T > = { [ name: string ]: T };
+type MapOf<T> = { [name: string]: T };
 
-export type ActionCreator = ( ...args: any[] ) => any | Generator;
+export type ActionCreator = (...args: any[]) => any | Generator;
 export type Resolver = Function | Generator;
 export type Selector = Function;
 
-export type AnyConfig = ReduxStoreConfig< any, any, any >;
+export type AnyConfig = ReduxStoreConfig<any, any, any>;
 
-export interface StoreInstance< Config extends AnyConfig > {
-	getSelectors: () => SelectorsOf< Config >;
-	getActions: () => ActionCreatorsOf< Config >;
-	subscribe: ( listener: () => void ) => () => void;
+export interface StoreInstance<Config extends AnyConfig> {
+	getSelectors: () => SelectorsOf<Config>;
+	getActions: () => ActionCreatorsOf<Config>;
+	subscribe: (listener: () => void) => () => void;
 }
 
-export interface StoreDescriptor< Config extends AnyConfig > {
+export interface StoreDescriptor<Config extends AnyConfig> {
 	/**
 	 * Store Name
 	 */
@@ -27,53 +27,50 @@ export interface StoreDescriptor< Config extends AnyConfig > {
 	/**
 	 * Creates a store instance
 	 */
-	instantiate: ( registry: DataRegistry ) => StoreInstance< Config >;
+	instantiate: (registry: DataRegistry) => StoreInstance<Config>;
 }
 
 export interface ReduxStoreConfig<
 	State,
-	ActionCreators extends MapOf< ActionCreator >,
+	ActionCreators extends MapOf<ActionCreator>,
 	Selectors,
 > {
 	initialState?: State;
-	reducer: ( state: any, action: any ) => any;
+	reducer: (state: any, action: any) => any;
 	actions?: ActionCreators;
-	resolvers?: MapOf< Resolver >;
+	resolvers?: MapOf<Resolver>;
 	selectors?: Selectors;
-	controls?: MapOf< Function >;
+	controls?: MapOf<Function>;
 }
 
 // Return type for the useSelect() hook.
-export type UseSelectReturn< F extends MapSelect | StoreDescriptor< any > > =
+export type UseSelectReturn<F extends MapSelect | StoreDescriptor<any>> =
 	F extends MapSelect
-		? ReturnType< F >
-		: F extends StoreDescriptor< any >
-		? CurriedSelectorsOf< F >
+		? ReturnType<F>
+		: F extends StoreDescriptor<any>
+		? CurriedSelectorsOf<F>
 		: never;
 
 // Return type for the useDispatch() hook.
-export type UseDispatchReturn< StoreNameOrDescriptor > =
-	StoreNameOrDescriptor extends StoreDescriptor< any >
-		? ActionCreatorsOf< ConfigOf< StoreNameOrDescriptor > >
+export type UseDispatchReturn<StoreNameOrDescriptor> =
+	StoreNameOrDescriptor extends StoreDescriptor<any>
+		? ActionCreatorsOf<ConfigOf<StoreNameOrDescriptor>>
 		: StoreNameOrDescriptor extends undefined
 		? DispatchFunction
 		: any;
 
-export type DispatchFunction = < StoreNameOrDescriptor >(
+export type DispatchFunction = <StoreNameOrDescriptor>(
 	store: StoreNameOrDescriptor
-) => DispatchReturn< StoreNameOrDescriptor >;
+) => DispatchReturn<StoreNameOrDescriptor>;
 
-export type DispatchReturn< StoreNameOrDescriptor > =
-	StoreNameOrDescriptor extends StoreDescriptor< any >
-		? ActionCreatorsOf< ConfigOf< StoreNameOrDescriptor > >
+export type DispatchReturn<StoreNameOrDescriptor> =
+	StoreNameOrDescriptor extends StoreDescriptor<any>
+		? ActionCreatorsOf<ConfigOf<StoreNameOrDescriptor>>
 		: unknown;
 
-export type MapSelect = (
-	select: SelectFunction,
-	registry: DataRegistry
-) => any;
+export type MapSelect = (select: SelectFunction, registry: DataRegistry) => any;
 
-export type SelectFunction = < S >( store: S ) => CurriedSelectorsOf< S >;
+export type SelectFunction = <S>(store: S) => CurriedSelectorsOf<S>;
 
 /**
  * Callback for store's `subscribe()` method that
@@ -81,10 +78,10 @@ export type SelectFunction = < S >( store: S ) => CurriedSelectorsOf< S >;
  */
 export type ListenerFunction = () => void;
 
-export type CurriedSelectorsOf< S > = S extends StoreDescriptor<
-	ReduxStoreConfig< any, any, infer Selectors >
+export type CurriedSelectorsOf<S> = S extends StoreDescriptor<
+	ReduxStoreConfig<any, any, infer Selectors>
 >
-	? { [ key in keyof Selectors ]: CurriedState< Selectors[ key ] > }
+	? { [key in keyof Selectors]: CurriedState<Selectors[key]> }
 	: never;
 
 /**
@@ -108,10 +105,10 @@ export type CurriedSelectorsOf< S > = S extends StoreDescriptor<
  * interdependent generic parameters.
  * For more context, see https://github.com/WordPress/gutenberg/pull/41578
  */
-type CurriedState< F > = F extends SelectorWithCustomCurrySignature
-	? F[ 'CurriedSignature' ]
-	: F extends ( state: any, ...args: infer P ) => infer R
-	? ( ...args: P ) => R
+type CurriedState<F> = F extends SelectorWithCustomCurrySignature
+	? F['CurriedSignature']
+	: F extends (state: any, ...args: infer P) => infer R
+	? (...args: P) => R
 	: F;
 
 /**
@@ -158,12 +155,12 @@ export interface SelectorWithCustomCurrySignature {
 }
 
 export interface DataRegistry {
-	register: ( store: StoreDescriptor< any > ) => void;
+	register: (store: StoreDescriptor<any>) => void;
 }
 
 export interface DataEmitter {
 	emit: () => void;
-	subscribe: ( listener: () => void ) => () => void;
+	subscribe: (listener: () => void) => () => void;
 	pause: () => void;
 	resume: () => void;
 	isPaused: boolean;
@@ -171,47 +168,47 @@ export interface DataEmitter {
 
 // Type Helpers.
 
-export type ConfigOf< S > = S extends StoreDescriptor< infer C > ? C : never;
+export type ConfigOf<S> = S extends StoreDescriptor<infer C> ? C : never;
 
-export type ActionCreatorsOf< Config extends AnyConfig > =
-	Config extends ReduxStoreConfig< any, infer ActionCreators, any >
-		? PromisifiedActionCreators< ActionCreators >
+export type ActionCreatorsOf<Config extends AnyConfig> =
+	Config extends ReduxStoreConfig<any, infer ActionCreators, any>
+		? PromisifiedActionCreators<ActionCreators>
 		: never;
 
 // Takes an object containing all action creators for a store and updates the
 // return type of each action creator to account for internal registry details --
 // for example, dispatched actions are wrapped with a Promise.
 export type PromisifiedActionCreators<
-	ActionCreators extends MapOf< ActionCreator >,
+	ActionCreators extends MapOf<ActionCreator>,
 > = {
-	[ Action in keyof ActionCreators ]: PromisifyActionCreator<
-		ActionCreators[ Action ]
+	[Action in keyof ActionCreators]: PromisifyActionCreator<
+		ActionCreators[Action]
 	>;
 };
 
 // Wraps action creator return types with a Promise and handles thunks.
-export type PromisifyActionCreator< Action extends ActionCreator > = (
-	...args: Parameters< Action >
+export type PromisifyActionCreator<Action extends ActionCreator> = (
+	...args: Parameters<Action>
 ) => Promise<
-	ReturnType< Action > extends ( ..._args: any[] ) => any
-		? ThunkReturnType< Action >
-		: ReturnType< Action >
+	ReturnType<Action> extends (..._args: any[]) => any
+		? ThunkReturnType<Action>
+		: ReturnType<Action>
 >;
 
 // A thunk is an action creator which returns a function, which can optionally
 // return a Promise. The double ReturnType unwraps the innermost function's
 // return type, and Awaited gets the type the Promise resolves to. If the return
 // type is not a Promise, Awaited returns that original type.
-export type ThunkReturnType< Action extends ActionCreator > = Awaited<
-	ReturnType< ReturnType< Action > >
+export type ThunkReturnType<Action extends ActionCreator> = Awaited<
+	ReturnType<ReturnType<Action>>
 >;
 
-type SelectorsOf< Config extends AnyConfig > = Config extends ReduxStoreConfig<
+type SelectorsOf<Config extends AnyConfig> = Config extends ReduxStoreConfig<
 	any,
 	any,
 	infer Selectors
 >
-	? { [ name in keyof Selectors ]: Function }
+	? { [name in keyof Selectors]: Function }
 	: never;
 
 export type combineReducers = typeof reduxCombineReducers;

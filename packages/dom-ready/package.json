@@ -26,8 +26,9 @@
 	"react-native": "src/index",
 	"types": "build-types",
 	"sideEffects": false,
-	"dependencies": {
-		"@babel/runtime": "^7.16.0"
+	"scripts": {
+		"build:ts": "tsc --build",
+		"build:ts:clear": "tsc --build --clean"
 	},
 	"publishConfig": {
 		"access": "public"

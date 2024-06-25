@@ -33,7 +33,7 @@
 	"dependencies": {
 		"@gutenberg/lazy-import": "workspace:*",
 		"chalk": "^4.0.0",
-		"change-case": "^4.1.2",
+		"change-case": "5.4.2",
 		"check-node-version": "^4.1.0",
 		"commander": "^9.2.0",
 		"execa": "^4.0.2",

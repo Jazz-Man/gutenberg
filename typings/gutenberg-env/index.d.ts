@@ -6,6 +6,6 @@ interface Environment {
 interface Process {
 	env: Environment;
 }
-declare var process: Process;
+// declare var process: Process;
 
 declare var SCRIPT_DEBUG: boolean;

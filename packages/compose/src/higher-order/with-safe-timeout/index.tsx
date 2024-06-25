@@ -11,6 +11,7 @@ import type {
 	WithoutInjectedProps,
 } from '../../utils/create-higher-order-component';
 import { createHigherOrderComponent } from '../../utils/create-higher-order-component';
+import type { TimeoutsType } from '../../types';
 
 /**
  * We cannot use the `Window['setTimeout']` and `Window['clearTimeout']`
@@ -21,8 +22,8 @@ import { createHigherOrderComponent } from '../../utils/create-higher-order-comp
  * `setTimeout` only accepts a function (not a string) and an optional delay.
  */
 interface TimeoutProps {
-	setTimeout: ( fn: () => void, delay: number ) => number;
-	clearTimeout: ( id: number ) => void;
+	setTimeout: (fn: () => void, delay: number) => number;
+	clearTimeout: (id: number) => void;
 }
 
 /**
@@ -30,37 +31,35 @@ interface TimeoutProps {
  * that ought to be bound to a component's lifecycle.
  */
 const withSafeTimeout = createHigherOrderComponent(
-	< C extends WithInjectedProps< C, TimeoutProps > >(
-		OriginalComponent: C
-	) => {
-		type WrappedProps = WithoutInjectedProps< C, TimeoutProps >;
-		return class WrappedComponent extends Component< WrappedProps > {
-			timeouts: number[];
+	<C extends WithInjectedProps<C, TimeoutProps>>(OriginalComponent: C) => {
+		type WrappedProps = WithoutInjectedProps<C, TimeoutProps>;
+		return class WrappedComponent extends Component<WrappedProps> {
+			timeouts: Array<TimeoutsType>;
 
-			constructor( props: WrappedProps ) {
-				super( props );
+			constructor(props: WrappedProps) {
+				super(props);
 				this.timeouts = [];
-				this.setTimeout = this.setTimeout.bind( this );
-				this.clearTimeout = this.clearTimeout.bind( this );
+				this.setTimeout = this.setTimeout.bind(this);
+				this.clearTimeout = this.clearTimeout.bind(this);
 			}
 
 			componentWillUnmount() {
-				this.timeouts.forEach( clearTimeout );
+				this.timeouts.forEach(clearTimeout);
 			}
 
-			setTimeout( fn: () => void, delay: number ) {
-				const id = setTimeout( () => {
+			setTimeout(fn: () => void, delay: number) {
+				const id = setTimeout(() => {
 					fn();
-					this.clearTimeout( id );
-				}, delay );
-				this.timeouts.push( id );
+					this.clearTimeout(id);
+				}, delay);
+				this.timeouts.push(id);
 				return id;
 			}
 
-			clearTimeout( id: number ) {
-				clearTimeout( id );
+			clearTimeout(id: TimeoutsType) {
+				clearTimeout(id);
 				this.timeouts = this.timeouts.filter(
-					( timeoutId ) => timeoutId !== id
+					(timeoutId) => timeoutId !== id
 				);
 			}
 
@@ -68,9 +67,9 @@ const withSafeTimeout = createHigherOrderComponent(
 				return (
 					// @ts-ignore
 					<OriginalComponent
-						{ ...this.props }
-						setTimeout={ this.setTimeout }
-						clearTimeout={ this.clearTimeout }
+						{...this.props}
+						setTimeout={this.setTimeout}
+						clearTimeout={this.clearTimeout}
 					/>
 				);
 			}

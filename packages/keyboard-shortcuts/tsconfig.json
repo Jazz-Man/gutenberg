@@ -1,8 +1,25 @@
 {
-	"extends": "../../tsconfig.base.json",
+	"extends": "@gutenberg/config/tsconfig.json",
 	"compilerOptions": {
 		"rootDir": "src",
-		"declarationDir": "build-types"
+		"baseUrl": "src",
+		"outDir": "build",
+		"declarationDir": "build-types",
+		"checkJs": false
 	},
-	"include": [ "src/**/*" ],
+	"references": [
+		{
+			"path": "../element"
+		},
+		{
+			"path": "../data"
+		},
+		{
+			"path": "../keycodes"
+		},
+		{
+			"path": "../deprecated"
+		}
+	],
+	"include": [ "src/**/*" ]
 }

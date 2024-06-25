@@ -1,9 +1,11 @@
 {
-	"extends": "../../tsconfig.base.json",
+	"extends": "@gutenberg/config/tsconfig.json",
 	"compilerOptions": {
 		"rootDir": "src",
+		"baseUrl": "src",
+		"outDir": "build",
 		"declarationDir": "build-types",
-		"noUnusedParameters": false,
+//		"noUnusedParameters": false,
 		"checkJs": false
 	},
 	"references": [
@@ -15,5 +17,10 @@
 		{ "path": "../priority-queue" },
 		{ "path": "../redux-routine" }
 	],
-	"include": [ "src/**/*" ]
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"src/**/**/test"
+	]
 }

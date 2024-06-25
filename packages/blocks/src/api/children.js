@@ -22,7 +22,7 @@ import * as node from './node';
  *
  * @return {Element} A serialize-capable element.
  */
-export function getSerializeCapableElement( children ) {
+export function getSerializeCapableElement(children) {
 	// The fact that block children are compatible with the element serializer is
 	// merely an implementation detail that currently serves to be true, but
 	// should not be mistaken as being a guarantee on the external API. The
@@ -39,12 +39,12 @@ export function getSerializeCapableElement( children ) {
  *
  * @return {Array<WPBlockNode>} An array of individual block nodes.
  */
-function getChildrenArray( children ) {
-	deprecated( 'wp.blocks.children.getChildrenArray', {
+function getChildrenArray(children) {
+	deprecated('wp.blocks.children.getChildrenArray', {
 		since: '6.1',
 		version: '6.3',
 		link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/',
-	} );
+	});
 
 	// The fact that block children are compatible with the element serializer
 	// is merely an implementation detail that currently serves to be true, but
@@ -60,29 +60,29 @@ function getChildrenArray( children ) {
  *
  * @return {WPBlockChildren} Concatenated block node.
  */
-export function concat( ...blockNodes ) {
-	deprecated( 'wp.blocks.children.concat', {
+export function concat(...blockNodes) {
+	deprecated('wp.blocks.children.concat', {
 		since: '6.1',
 		version: '6.3',
 		alternative: 'wp.richText.concat',
 		link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/',
-	} );
+	});
 
 	const result = [];
-	for ( let i = 0; i < blockNodes.length; i++ ) {
-		const blockNode = Array.isArray( blockNodes[ i ] )
-			? blockNodes[ i ]
-			: [ blockNodes[ i ] ];
-		for ( let j = 0; j < blockNode.length; j++ ) {
-			const child = blockNode[ j ];
+	for (let i = 0; i < blockNodes.length; i++) {
+		const blockNode = Array.isArray(blockNodes[i])
+			? blockNodes[i]
+			: [blockNodes[i]];
+		for (let j = 0; j < blockNode.length; j++) {
+			const child = blockNode[j];
 			const canConcatToPreviousString =
 				typeof child === 'string' &&
-				typeof result[ result.length - 1 ] === 'string';
+				typeof result[result.length - 1] === 'string';
 
-			if ( canConcatToPreviousString ) {
-				result[ result.length - 1 ] += child;
+			if (canConcatToPreviousString) {
+				result[result.length - 1] += child;
 			} else {
-				result.push( child );
+				result.push(child);
 			}
 		}
 	}
@@ -98,19 +98,19 @@ export function concat( ...blockNodes ) {
  *
  * @return {WPBlockChildren} Block children equivalent to DOM nodes.
  */
-export function fromDOM( domNodes ) {
-	deprecated( 'wp.blocks.children.fromDOM', {
+export function fromDOM(domNodes) {
+	deprecated('wp.blocks.children.fromDOM', {
 		since: '6.1',
 		version: '6.3',
 		alternative: 'wp.richText.create',
 		link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/',
-	} );
+	});
 
 	const result = [];
-	for ( let i = 0; i < domNodes.length; i++ ) {
+	for (let i = 0; i < domNodes.length; i++) {
 		try {
-			result.push( node.fromDOM( domNodes[ i ] ) );
-		} catch ( error ) {
+			result.push(node.fromDOM(domNodes[i]));
+		} catch (error) {
 			// Simply ignore if DOM node could not be converted.
 		}
 	}
@@ -125,17 +125,17 @@ export function fromDOM( domNodes ) {
  *
  * @return {string} String HTML representation of block node.
  */
-export function toHTML( children ) {
-	deprecated( 'wp.blocks.children.toHTML', {
+export function toHTML(children) {
+	deprecated('wp.blocks.children.toHTML', {
 		since: '6.1',
 		version: '6.3',
 		alternative: 'wp.richText.toHTMLString',
 		link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/',
-	} );
+	});
 
-	const element = getSerializeCapableElement( children );
+	const element = getSerializeCapableElement(children);
 
-	return renderToString( element );
+	return renderToString(element);
 }
 
 /**
@@ -146,23 +146,23 @@ export function toHTML( children ) {
  *
  * @return {Function} hpq matcher.
  */
-export function matcher( selector ) {
-	deprecated( 'wp.blocks.children.matcher', {
+export function matcher(selector) {
+	deprecated('wp.blocks.children.matcher', {
 		since: '6.1',
 		version: '6.3',
 		alternative: 'html source',
 		link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/',
-	} );
+	});
 
-	return ( domNode ) => {
+	return (domNode) => {
 		let match = domNode;
 
-		if ( selector ) {
-			match = domNode.querySelector( selector );
+		if (selector) {
+			match = domNode.querySelector(selector);
 		}
 
-		if ( match ) {
-			return fromDOM( match.childNodes );
+		if (match) {
+			return fromDOM(match.childNodes);
 		}
 
 		return [];

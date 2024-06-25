@@ -1,9 +1,10 @@
 {
-	"extends": "../../tsconfig.base.json",
+	"extends": "@gutenberg/config/tsconfig.json",
 	"compilerOptions": {
 		"rootDir": "src",
-		"declarationDir": "build-types",
-		"types": [ "gutenberg-env" ]
+		"baseUrl": "src",
+		"outDir": "build",
+		"declarationDir": "build-types"
 	},
 	"references": [
 		{ "path": "../deprecated" },
@@ -16,9 +17,10 @@
 	],
 	"include": [ "src/**/*" ],
 	"exclude": [
-		"src/higher-order/**/test",
-		"src/higher-order/test",
-		"src/hooks/**/test",
-		"src/utils/**/test",
+		"src/**/**/test",
+		"src/**/**/*.native.*",
+		"src/**/**/*.android.*",
+		"src/**/**/*.ios.*",
+		"node_modules"
 	]
 }

@@ -6,34 +6,34 @@ import { generateRule, safeDecodeURI } from '../utils';
 
 const backgroundImage = {
 	name: 'backgroundImage',
-	generate: ( style: Style, options: StyleOptions ) => {
+	generate: (style: Style, options: StyleOptions) => {
 		const _backgroundImage = style?.background?.backgroundImage;
 		const _backgroundSize = style?.background?.backgroundSize;
 
 		const styleRules: GeneratedCSSRule[] = [];
 
-		if ( ! _backgroundImage ) {
+		if (!_backgroundImage) {
 			return styleRules;
 		}
 
-		if ( _backgroundImage?.source === 'file' && _backgroundImage?.url ) {
-			styleRules.push( {
+		if (_backgroundImage?.source === 'file' && _backgroundImage?.url) {
+			styleRules.push({
 				selector: options.selector,
 				key: 'backgroundImage',
 				// Passed `url` may already be encoded. To prevent double encoding, decodeURI is executed to revert to the original string.
-				value: `url( '${ encodeURI(
-					safeDecodeURI( _backgroundImage.url )
-				) }' )`,
-			} );
+				value: `url( '${encodeURI(
+					safeDecodeURI(_backgroundImage.url)
+				)}' )`,
+			});
 		}
 
 		// If no background size is set, but an image is, default to cover.
-		if ( _backgroundSize === undefined ) {
-			styleRules.push( {
+		if (_backgroundSize === undefined) {
+			styleRules.push({
 				selector: options.selector,
 				key: 'backgroundSize',
 				value: 'cover',
-			} );
+			});
 		}
 
 		return styleRules;
@@ -42,11 +42,11 @@ const backgroundImage = {
 
 const backgroundRepeat = {
 	name: 'backgroundRepeat',
-	generate: ( style: Style, options: StyleOptions ) => {
+	generate: (style: Style, options: StyleOptions) => {
 		return generateRule(
 			style,
 			options,
-			[ 'background', 'backgroundRepeat' ],
+			['background', 'backgroundRepeat'],
 			'backgroundRepeat'
 		);
 	},
@@ -54,13 +54,13 @@ const backgroundRepeat = {
 
 const backgroundSize = {
 	name: 'backgroundSize',
-	generate: ( style: Style, options: StyleOptions ) => {
+	generate: (style: Style, options: StyleOptions) => {
 		const _backgroundSize = style?.background?.backgroundSize;
 		const _backgroundPosition = style?.background?.backgroundPosition;
 
 		const styleRules: GeneratedCSSRule[] = [];
 
-		if ( _backgroundSize === undefined ) {
+		if (_backgroundSize === undefined) {
 			return styleRules;
 		}
 
@@ -68,7 +68,7 @@ const backgroundSize = {
 			...generateRule(
 				style,
 				options,
-				[ 'background', 'backgroundSize' ],
+				['background', 'backgroundSize'],
 				'backgroundSize'
 			)
 		);
@@ -78,15 +78,15 @@ const backgroundSize = {
 			_backgroundSize === 'contain' &&
 			_backgroundPosition === undefined
 		) {
-			styleRules.push( {
+			styleRules.push({
 				selector: options.selector,
 				key: 'backgroundPosition',
 				value: 'center',
-			} );
+			});
 		}
 
 		return styleRules;
 	},
 };
 
-export default [ backgroundImage, backgroundRepeat, backgroundSize ];
+export default [backgroundImage, backgroundRepeat, backgroundSize];

@@ -31,21 +31,21 @@ import classnames from 'classnames';
  * @param {*} object
  * @return {*} Object cleaned from falsy values
  */
-export const cleanEmptyObject = ( object ) => {
+export const cleanEmptyObject = (object) => {
 	if (
 		object === null ||
 		typeof object !== 'object' ||
-		Array.isArray( object )
+		Array.isArray(object)
 	) {
 		return object;
 	}
 
-	const cleanedNestedObjects = Object.entries( object )
-		.map( ( [ key, value ] ) => [ key, cleanEmptyObject( value ) ] )
-		.filter( ( [ , value ] ) => value !== undefined );
-	return ! cleanedNestedObjects.length
+	const cleanedNestedObjects = Object.entries(object)
+		.map(([key, value]) => [key, cleanEmptyObject(value)])
+		.filter(([, value]) => value !== undefined);
+	return !cleanedNestedObjects.length
 		? undefined
-		: Object.fromEntries( cleanedNestedObjects );
+		: Object.fromEntries(cleanedNestedObjects);
 };
 
 export function transformStyles(
@@ -57,42 +57,38 @@ export function transformStyles(
 	results
 ) {
 	// If there are no active supports return early.
-	if (
-		Object.values( activeSupports ?? {} ).every(
-			( isActive ) => ! isActive
-		)
-	) {
+	if (Object.values(activeSupports ?? {}).every((isActive) => !isActive)) {
 		return result;
 	}
 	// If the condition verifies we are probably in the presence of a wrapping transform
 	// e.g: nesting paragraphs in a group or columns and in that case the styles should not be transformed.
-	if ( results.length === 1 && result.innerBlocks.length === source.length ) {
+	if (results.length === 1 && result.innerBlocks.length === source.length) {
 		return result;
 	}
 	// For cases where we have a transform from one block to multiple blocks
 	// or multiple blocks to one block we apply the styles of the first source block
 	// to the result(s).
-	let referenceBlockAttributes = source[ 0 ]?.attributes;
+	let referenceBlockAttributes = source[0]?.attributes;
 	// If we are in presence of transform between more than one block in the source
 	// that has more than one block in the result
 	// we apply the styles on source N to the result N,
 	// if source N does not exists we do nothing.
-	if ( results.length > 1 && source.length > 1 ) {
-		if ( source[ index ] ) {
-			referenceBlockAttributes = source[ index ]?.attributes;
+	if (results.length > 1 && source.length > 1) {
+		if (source[index]) {
+			referenceBlockAttributes = source[index]?.attributes;
 		} else {
 			return result;
 		}
 	}
 	let returnBlock = result;
-	Object.entries( activeSupports ).forEach( ( [ support, isActive ] ) => {
-		if ( isActive ) {
-			migrationPaths[ support ].forEach( ( path ) => {
+	Object.entries(activeSupports).forEach(([support, isActive]) => {
+		if (isActive) {
+			migrationPaths[support].forEach((path) => {
 				const styleValue = getValueFromObjectPath(
 					referenceBlockAttributes,
 					path
 				);
-				if ( styleValue ) {
+				if (styleValue) {
 					returnBlock = {
 						...returnBlock,
 						attributes: setImmutably(
@@ -102,9 +98,9 @@ export function transformStyles(
 						),
 					};
 				}
-			} );
+			});
 		}
-	} );
+	});
 	return returnBlock;
 }
 
@@ -118,38 +114,34 @@ export function transformStyles(
  *
  * @return {boolean} Whether serialization should occur.
  */
-export function shouldSkipSerialization(
-	blockNameOrType,
-	featureSet,
-	feature
-) {
-	const support = getBlockSupport( blockNameOrType, featureSet );
+export function shouldSkipSerialization(blockNameOrType, featureSet, feature) {
+	const support = getBlockSupport(blockNameOrType, featureSet);
 	const skipSerialization = support?.__experimentalSkipSerialization;
 
-	if ( Array.isArray( skipSerialization ) ) {
-		return skipSerialization.includes( feature );
+	if (Array.isArray(skipSerialization)) {
+		return skipSerialization.includes(feature);
 	}
 
 	return skipSerialization;
 }
 
-export function useStyleOverride( { id, css, assets, __unstableType } = {} ) {
+export function useStyleOverride({ id, css, assets, __unstableType } = {}) {
 	const { setStyleOverride, deleteStyleOverride } = unlock(
-		useDispatch( blockEditorStore )
+		useDispatch(blockEditorStore)
 	);
 	const fallbackId = useId();
-	useEffect( () => {
+	useEffect(() => {
 		// Unmount if there is CSS and assets are empty.
-		if ( ! css && ! assets ) return;
+		if (!css && !assets) return;
 		const _id = id || fallbackId;
-		setStyleOverride( _id, {
+		setStyleOverride(_id, {
 			id,
 			css,
 			assets,
 			__unstableType,
-		} );
+		});
 		return () => {
-			deleteStyleOverride( _id );
+			deleteStyleOverride(_id);
 		};
 	}, [
 		id,
@@ -159,7 +151,7 @@ export function useStyleOverride( { id, css, assets, __unstableType } = {} ) {
 		fallbackId,
 		setStyleOverride,
 		deleteStyleOverride,
-	] );
+	]);
 }
 
 /**
@@ -172,7 +164,7 @@ export function useStyleOverride( { id, css, assets, __unstableType } = {} ) {
  *
  * @return {Object} Settings object.
  */
-export function useBlockSettings( name, parentLayout ) {
+export function useBlockSettings(name, parentLayout) {
 	const [
 		backgroundImage,
 		backgroundSize,
@@ -271,7 +263,7 @@ export function useBlockSettings( name, parentLayout ) {
 		'color.button'
 	);
 
-	const rawSettings = useMemo( () => {
+	const rawSettings = useMemo(() => {
 		return {
 			background: {
 				backgroundImage,
@@ -395,27 +387,27 @@ export function useBlockSettings( name, parentLayout ) {
 		isTextEnabled,
 		isHeadingEnabled,
 		isButtonEnabled,
-	] );
+	]);
 
-	return useSettingsForBlockElement( rawSettings, name );
+	return useSettingsForBlockElement(rawSettings, name);
 }
 
-export function createBlockEditFilter( features ) {
+export function createBlockEditFilter(features) {
 	// We don't want block controls to re-render when typing inside a block.
 	// `memo` will prevent re-renders unless props change, so only pass the
 	// needed props and not the whole attributes object.
-	features = features.map( ( settings ) => {
-		return { ...settings, Edit: memo( settings.edit ) };
-	} );
+	features = features.map((settings) => {
+		return { ...settings, Edit: memo(settings.edit) };
+	});
 	const withBlockEditHooks = createHigherOrderComponent(
-		( OriginalBlockEdit ) => ( props ) => {
+		(OriginalBlockEdit) => (props) => {
 			const context = useBlockEditContext();
 			// CAUTION: code added before this line will be executed for all
 			// blocks, not just those that support the feature! Code added
 			// above this line should be carefully evaluated for its impact on
 			// performance.
 			return [
-				...features.map( ( feature, i ) => {
+				...features.map((feature, i) => {
 					const {
 						Edit,
 						hasSupport,
@@ -423,21 +415,18 @@ export function createBlockEditFilter( features ) {
 						shareWithChildBlocks,
 					} = feature;
 					const shouldDisplayControls =
-						context[ mayDisplayControlsKey ] ||
-						( context[ mayDisplayParentControlsKey ] &&
-							shareWithChildBlocks );
+						context[mayDisplayControlsKey] ||
+						(context[mayDisplayParentControlsKey] &&
+							shareWithChildBlocks);
 
-					if (
-						! shouldDisplayControls ||
-						! hasSupport( props.name )
-					) {
+					if (!shouldDisplayControls || !hasSupport(props.name)) {
 						return null;
 					}
 
 					const neededProps = {};
-					for ( const key of attributeKeys ) {
-						if ( props.attributes[ key ] ) {
-							neededProps[ key ] = props.attributes[ key ];
+					for (const key of attributeKeys) {
+						if (props.attributes[key]) {
+							neededProps[key] = props.attributes[key];
 						}
 					}
 
@@ -445,59 +434,59 @@ export function createBlockEditFilter( features ) {
 						<Edit
 							// We can use the index because the array length
 							// is fixed per page load right now.
-							key={ i }
-							name={ props.name }
-							isSelected={ props.isSelected }
-							clientId={ props.clientId }
-							setAttributes={ props.setAttributes }
+							key={i}
+							name={props.name}
+							isSelected={props.isSelected}
+							clientId={props.clientId}
+							setAttributes={props.setAttributes}
 							__unstableParentLayout={
 								props.__unstableParentLayout
 							}
 							// This component is pure, so only pass needed
 							// props!!!
-							{ ...neededProps }
+							{...neededProps}
 						/>
 					);
-				} ),
-				<OriginalBlockEdit key="edit" { ...props } />,
+				}),
+				<OriginalBlockEdit key="edit" {...props} />,
 			];
 		},
 		'withBlockEditHooks'
 	);
-	addFilter( 'editor.BlockEdit', 'core/editor/hooks', withBlockEditHooks );
+	addFilter('editor.BlockEdit', 'core/editor/hooks', withBlockEditHooks);
 }
 
-function BlockProps( { index, useBlockProps, setAllWrapperProps, ...props } ) {
-	const wrapperProps = useBlockProps( props );
-	const setWrapperProps = ( next ) =>
-		setAllWrapperProps( ( prev ) => {
-			const nextAll = [ ...prev ];
-			nextAll[ index ] = next;
+function BlockProps({ index, useBlockProps, setAllWrapperProps, ...props }) {
+	const wrapperProps = useBlockProps(props);
+	const setWrapperProps = (next) =>
+		setAllWrapperProps((prev) => {
+			const nextAll = [...prev];
+			nextAll[index] = next;
 			return nextAll;
-		} );
+		});
 	// Setting state after every render is fine because this component is
 	// pure and will only re-render when needed props change.
-	useEffect( () => {
+	useEffect(() => {
 		// We could shallow compare the props, but since this component only
 		// changes when needed attributes change, the benefit is probably small.
-		setWrapperProps( wrapperProps );
+		setWrapperProps(wrapperProps);
 		return () => {
-			setWrapperProps( undefined );
+			setWrapperProps(undefined);
 		};
-	} );
+	});
 	return null;
 }
 
-const BlockPropsPure = memo( BlockProps );
+const BlockPropsPure = memo(BlockProps);
 
-export function createBlockListBlockFilter( features ) {
+export function createBlockListBlockFilter(features) {
 	const withBlockListBlockHooks = createHigherOrderComponent(
-		( BlockListBlock ) => ( props ) => {
-			const [ allWrapperProps, setAllWrapperProps ] = useState(
-				Array( features.length ).fill( undefined )
+		(BlockListBlock) => (props) => {
+			const [allWrapperProps, setAllWrapperProps] = useState(
+				Array(features.length).fill(undefined)
 			);
 			return [
-				...features.map( ( feature, i ) => {
+				...features.map((feature, i) => {
 					const {
 						hasSupport,
 						attributeKeys = [],
@@ -505,17 +494,17 @@ export function createBlockListBlockFilter( features ) {
 					} = feature;
 
 					const neededProps = {};
-					for ( const key of attributeKeys ) {
-						if ( props.attributes[ key ] ) {
-							neededProps[ key ] = props.attributes[ key ];
+					for (const key of attributeKeys) {
+						if (props.attributes[key]) {
+							neededProps[key] = props.attributes[key];
 						}
 					}
 
 					if (
 						// Skip rendering if none of the needed attributes are
 						// set.
-						! Object.keys( neededProps ).length ||
-						! hasSupport( props.name )
+						!Object.keys(neededProps).length ||
+						!hasSupport(props.name)
 					) {
 						return null;
 					}
@@ -524,25 +513,25 @@ export function createBlockListBlockFilter( features ) {
 						<BlockPropsPure
 							// We can use the index because the array length
 							// is fixed per page load right now.
-							key={ i }
-							index={ i }
-							useBlockProps={ useBlockProps }
+							key={i}
+							index={i}
+							useBlockProps={useBlockProps}
 							// This component is pure, so we must pass a stable
 							// function reference.
-							setAllWrapperProps={ setAllWrapperProps }
-							name={ props.name }
+							setAllWrapperProps={setAllWrapperProps}
+							name={props.name}
 							// This component is pure, so only pass needed
 							// props!!!
-							{ ...neededProps }
+							{...neededProps}
 						/>
 					);
-				} ),
+				}),
 				<BlockListBlock
 					key="edit"
-					{ ...props }
-					wrapperProps={ allWrapperProps
-						.filter( Boolean )
-						.reduce( ( acc, wrapperProps ) => {
+					{...props}
+					wrapperProps={allWrapperProps
+						.filter(Boolean)
+						.reduce((acc, wrapperProps) => {
 							return {
 								...acc,
 								...wrapperProps,
@@ -555,7 +544,7 @@ export function createBlockListBlockFilter( features ) {
 									...wrapperProps.style,
 								},
 							};
-						}, props.wrapperProps || {} ) }
+						}, props.wrapperProps || {})}
 				/>,
 			];
 		},
@@ -568,29 +557,29 @@ export function createBlockListBlockFilter( features ) {
 	);
 }
 
-export function createBlockSaveFilter( features ) {
-	function extraPropsFromHooks( props, name, attributes ) {
-		return features.reduce( ( accu, feature ) => {
+export function createBlockSaveFilter(features) {
+	function extraPropsFromHooks(props, name, attributes) {
+		return features.reduce((accu, feature) => {
 			const { hasSupport, attributeKeys = [], addSaveProps } = feature;
 
 			const neededAttributes = {};
-			for ( const key of attributeKeys ) {
-				if ( attributes[ key ] ) {
-					neededAttributes[ key ] = attributes[ key ];
+			for (const key of attributeKeys) {
+				if (attributes[key]) {
+					neededAttributes[key] = attributes[key];
 				}
 			}
 
 			if (
 				// Skip rendering if none of the needed attributes are
 				// set.
-				! Object.keys( neededAttributes ).length ||
-				! hasSupport( name )
+				!Object.keys(neededAttributes).length ||
+				!hasSupport(name)
 			) {
 				return accu;
 			}
 
-			return addSaveProps( accu, name, neededAttributes );
-		}, props );
+			return addSaveProps(accu, name, neededAttributes);
+		}, props);
 	}
 	addFilter(
 		'blocks.getSaveContent.extraProps',
@@ -601,11 +590,11 @@ export function createBlockSaveFilter( features ) {
 	addFilter(
 		'blocks.getSaveContent.extraProps',
 		'core/editor/hooks',
-		( props ) => {
+		(props) => {
 			// Previously we had a filter deleting the className if it was an empty
 			// string. That filter is no longer running, so now we need to delete it
 			// here.
-			if ( props.hasOwnProperty( 'className' ) && ! props.className ) {
+			if (props.hasOwnProperty('className') && !props.className) {
 				delete props.className;
 			}
 

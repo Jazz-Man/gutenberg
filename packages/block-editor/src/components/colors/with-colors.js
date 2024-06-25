@@ -24,8 +24,8 @@ import { unlock } from '../../lock-unlock';
  *
  * @return {string} Capitalized string.
  */
-const upperFirst = ( [ firstLetter, ...rest ] ) =>
-	firstLetter.toUpperCase() + rest.join( '' );
+const upperFirst = ([firstLetter, ...rest]) =>
+	firstLetter.toUpperCase() + rest.join('');
 
 /**
  * Higher order component factory for injecting the `colorsArray` argument as
@@ -35,10 +35,10 @@ const upperFirst = ( [ firstLetter, ...rest ] ) =>
  *
  * @return {Function} The higher order component.
  */
-const withCustomColorPalette = ( colorsArray ) =>
+const withCustomColorPalette = (colorsArray) =>
 	createHigherOrderComponent(
-		( WrappedComponent ) => ( props ) => (
-			<WrappedComponent { ...props } colors={ colorsArray } />
+		(WrappedComponent) => (props) => (
+			<WrappedComponent {...props} colors={colorsArray} />
 		),
 		'withCustomColorPalette'
 	);
@@ -51,21 +51,21 @@ const withCustomColorPalette = ( colorsArray ) =>
  */
 const withEditorColorPalette = () =>
 	createHigherOrderComponent(
-		( WrappedComponent ) => ( props ) => {
-			const [ userPalette, themePalette, defaultPalette ] = useSettings(
+		(WrappedComponent) => (props) => {
+			const [userPalette, themePalette, defaultPalette] = useSettings(
 				'color.palette.custom',
 				'color.palette.theme',
 				'color.palette.default'
 			);
 			const allColors = useMemo(
 				() => [
-					...( userPalette || [] ),
-					...( themePalette || [] ),
-					...( defaultPalette || [] ),
+					...(userPalette || []),
+					...(themePalette || []),
+					...(defaultPalette || []),
 				],
-				[ userPalette, themePalette, defaultPalette ]
+				[userPalette, themePalette, defaultPalette]
 			);
-			return <WrappedComponent { ...props } colors={ allColors } />;
+			return <WrappedComponent {...props} colors={allColors} />;
 		},
 		'withEditorColorPalette'
 	);
@@ -79,46 +79,46 @@ const withEditorColorPalette = () =>
  *
  * @return {Component} The component that can be used as a HOC.
  */
-function createColorHOC( colorTypes, withColorPalette ) {
-	const { kebabCase } = unlock( componentsPrivateApis );
-	const colorMap = colorTypes.reduce( ( colorObject, colorType ) => {
+function createColorHOC(colorTypes, withColorPalette) {
+	const { kebabCase } = unlock(componentsPrivateApis);
+	const colorMap = colorTypes.reduce((colorObject, colorType) => {
 		return {
 			...colorObject,
-			...( typeof colorType === 'string'
-				? { [ colorType ]: kebabCase( colorType ) }
-				: colorType ),
+			...(typeof colorType === 'string'
+				? { [colorType]: kebabCase(colorType) }
+				: colorType),
 		};
-	}, {} );
+	}, {});
 
-	return compose( [
+	return compose([
 		withColorPalette,
-		( WrappedComponent ) => {
+		(WrappedComponent) => {
 			return class extends Component {
-				constructor( props ) {
-					super( props );
+				constructor(props) {
+					super(props);
 
 					this.setters = this.createSetters();
 					this.colorUtils = {
 						getMostReadableColor:
-							this.getMostReadableColor.bind( this ),
+							this.getMostReadableColor.bind(this),
 					};
 
 					this.state = {};
 				}
 
-				getMostReadableColor( colorValue ) {
+				getMostReadableColor(colorValue) {
 					const { colors } = this.props;
-					return getMostReadableColor( colors, colorValue );
+					return getMostReadableColor(colors, colorValue);
 				}
 
 				createSetters() {
-					return Object.keys( colorMap ).reduce(
-						( settersAccumulator, colorAttributeName ) => {
+					return Object.keys(colorMap).reduce(
+						(settersAccumulator, colorAttributeName) => {
 							const upperFirstColorAttributeName =
-								upperFirst( colorAttributeName );
-							const customColorAttributeName = `custom${ upperFirstColorAttributeName }`;
+								upperFirst(colorAttributeName);
+							const customColorAttributeName = `custom${upperFirstColorAttributeName}`;
 							settersAccumulator[
-								`set${ upperFirstColorAttributeName }`
+								`set${upperFirstColorAttributeName}`
 							] = this.createSetColor(
 								colorAttributeName,
 								customColorAttributeName
@@ -129,22 +129,22 @@ function createColorHOC( colorTypes, withColorPalette ) {
 					);
 				}
 
-				createSetColor( colorAttributeName, customColorAttributeName ) {
-					return ( colorValue ) => {
+				createSetColor(colorAttributeName, customColorAttributeName) {
+					return (colorValue) => {
 						const colorObject = getColorObjectByColorValue(
 							this.props.colors,
 							colorValue
 						);
-						this.props.setAttributes( {
-							[ colorAttributeName ]:
+						this.props.setAttributes({
+							[colorAttributeName]:
 								colorObject && colorObject.slug
 									? colorObject.slug
 									: undefined,
-							[ customColorAttributeName ]:
+							[customColorAttributeName]:
 								colorObject && colorObject.slug
 									? undefined
 									: colorValue,
-						} );
+						});
 					};
 				}
 
@@ -152,20 +152,18 @@ function createColorHOC( colorTypes, withColorPalette ) {
 					{ attributes, colors },
 					previousState
 				) {
-					return Object.entries( colorMap ).reduce(
-						( newState, [ colorAttributeName, colorContext ] ) => {
+					return Object.entries(colorMap).reduce(
+						(newState, [colorAttributeName, colorContext]) => {
 							const colorObject = getColorObjectByAttributeValues(
 								colors,
-								attributes[ colorAttributeName ],
+								attributes[colorAttributeName],
 								attributes[
-									`custom${ upperFirst(
-										colorAttributeName
-									) }`
+									`custom${upperFirst(colorAttributeName)}`
 								]
 							);
 
 							const previousColorObject =
-								previousState[ colorAttributeName ];
+								previousState[colorAttributeName];
 							const previousColor = previousColorObject?.color;
 							/**
 							 * The "and previousColorObject" condition checks that a previous color object was already computed.
@@ -176,10 +174,10 @@ function createColorHOC( colorTypes, withColorPalette ) {
 								previousColor === colorObject.color &&
 								previousColorObject
 							) {
-								newState[ colorAttributeName ] =
+								newState[colorAttributeName] =
 									previousColorObject;
 							} else {
-								newState[ colorAttributeName ] = {
+								newState[colorAttributeName] = {
 									...colorObject,
 									class: getColorClassName(
 										colorContext,
@@ -196,19 +194,19 @@ function createColorHOC( colorTypes, withColorPalette ) {
 				render() {
 					return (
 						<WrappedComponent
-							{ ...{
+							{...{
 								...this.props,
 								colors: undefined,
 								...this.state,
 								...this.setters,
 								colorUtils: this.colorUtils,
-							} }
+							}}
 						/>
 					);
 				}
 			};
 		},
-	] );
+	]);
 }
 
 /**
@@ -233,11 +231,11 @@ function createColorHOC( colorTypes, withColorPalette ) {
  *
  * @return {Function} Higher-order component.
  */
-export function createCustomColorsHOC( colorsArray ) {
-	return ( ...colorTypes ) => {
-		const withColorPalette = withCustomColorPalette( colorsArray );
+export function createCustomColorsHOC(colorsArray) {
+	return (...colorTypes) => {
+		const withColorPalette = withCustomColorPalette(colorsArray);
 		return createHigherOrderComponent(
-			createColorHOC( colorTypes, withColorPalette ),
+			createColorHOC(colorTypes, withColorPalette),
 			'withCustomColors'
 		);
 	};
@@ -267,10 +265,10 @@ export function createCustomColorsHOC( colorsArray ) {
  *
  * @return {Function} Higher-order component.
  */
-export default function withColors( ...colorTypes ) {
+export default function withColors(...colorTypes) {
 	const withColorPalette = withEditorColorPalette();
 	return createHigherOrderComponent(
-		createColorHOC( colorTypes, withColorPalette ),
+		createColorHOC(colorTypes, withColorPalette),
 		'withColors'
 	);
 }

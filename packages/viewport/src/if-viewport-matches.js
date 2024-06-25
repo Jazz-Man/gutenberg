@@ -2,15 +2,15 @@
  * WordPress dependencies
  */
 import {
-	ifCondition,
 	compose,
 	createHigherOrderComponent,
+	ifCondition,
 } from '@gutenberg/compose';
 
 /**
  * Internal dependencies
  */
-import withViewportMatch from './with-viewport-match';
+import withViewportMatch from './with-viewport-match.js';
 
 /**
  * Higher-order component creator, creating a new component which renders if
@@ -32,14 +32,16 @@ import withViewportMatch from './with-viewport-match';
  *
  * @return {Function} Higher-order component.
  */
-const ifViewportMatches = ( query ) =>
+
+const ifViewportMatches = (query) =>
 	createHigherOrderComponent(
-		compose( [
-			withViewportMatch( {
+		// @ts-ignore
+		compose([
+			withViewportMatch({
 				isViewportMatch: query,
-			} ),
-			ifCondition( ( props ) => props.isViewportMatch ),
-		] ),
+			}),
+			ifCondition((/** @type {any} */ props) => props.isViewportMatch),
+		]),
 		'ifViewportMatches'
 	);
 

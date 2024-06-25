@@ -117,7 +117,9 @@ html.interface-interface-skeleton__html-container {
 		// button to open the sidebar that is shown when navigating regions needs to
 		// be above the footer. See `edit-post-layout__toggle-sidebar-panel`.
 		.is-sidebar-opened & {
-			z-index: z-index(".interface-interface-skeleton__sidebar {greater than small}");
+			z-index: z-index(
+				".interface-interface-skeleton__sidebar {greater than small}"
+			);
 		}
 	}
 }
@@ -138,7 +140,7 @@ html.interface-interface-skeleton__html-container {
 
 .interface-interface-skeleton__header {
 	flex-shrink: 0;
-	height: auto;  // Keep the height flexible.
+	height: auto; // Keep the height flexible.
 	border-bottom: $border-width solid $gray-200;
 	z-index: z-index(".interface-interface-skeleton__header");
 	color: $gray-900;
