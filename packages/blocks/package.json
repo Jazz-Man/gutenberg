@@ -54,9 +54,9 @@
 		"react-is": "^18.2.0",
 		"rememo": "^4.0.2",
 		"remove-accents": "^0.5.0",
-		"showdown": "^1.9.1",
+		"showdown": "^2.1.0",
 		"simple-html-tokenizer": "^0.5.7",
-		"uuid": "^9.0.1"
+		"uuid": "^14.0.2"
 	},
 	"peerDependencies": {
 		"react": "^18.0.0"
